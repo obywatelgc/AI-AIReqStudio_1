@@ -1,6 +1,6 @@
 # Opis projektu
 Zbudowałem workspace w Visual Studio Code, którego zadaniem jest generowanie specyfikacji wymagań na podstawie materiałów (wymagań) klienta oraz dokumentacji systemów informatycznych.
-Narzędzie będzie wykorzystywało model LLM (GPT) oraz rozszerzenie COdex. Specyfikacja będzie posiadało określoną strukturę - opisaną w /spec/10-aktywacja.md
+Narzędzie będzie wykorzystywało model LLM (GPT) oraz rozszerzenie COdex. Specyfikacja będzie posiadało określoną strukturę - opisaną w /spec/10-spw.md
 
 Obsługa narzędzie będzie realizowna przez wykonywanie odpowiednich promptów w codex i praca na plikach projektu.
 
@@ -30,9 +30,45 @@ Utrzymanie kontroli nad AI
 
 
 
+# Praca z narzędziem
+
+1. Uzupełniasz tylko parametry w project-parameters.md (nazwa projektu, klient, język, styl, ścieżki).
+2. Trzymasz stały „silnik” w project-prompt.md (bez danych klienta).
+3. W każdej sesji odpalasz prompt startowy do Codex:
+
+Propmpty:
+```markdown
+Pracujemy w tym repo. Najpierw wczytaj:
+- project-parameters.md
+- project-prompt.md
+- spec/00-outline.md
+- pliki źródłowe z doc/
+
+Następnie potwierdź: projekt, klient, język, styl, zakres.
+Nie generuj treści, dopóki nie potwierdzisz konfiguracji.
+```
+
+4. Potem prompt zadaniowy, np. dla rozdziału:
+```
+Na podstawie doc/* uzupełnij spec/10-spw.md.
+Wymagania:
+- ID: RQ-ACT-###
+- każde wymaganie: opis, uzasadnienie, AC (Given/When/Then)
+- sekcje: Obsługa błędów i Zagadnienia otwarte muszą pozostać
+- bez domysłów: brak danych -> OPEN-QUESTION-###
+```
+
+5. Na końcu prompt walidacyjny:
+```
+Zrób review spójności:
+- zgodność z spec/00-outline.md
+- unikalność ID wymagań
+- spójność terminologii
+- lista braków i pytań otwartych
+```
 
 
-
+##################################### POPRZEDNI OPIS
 
 
 # Minimalny „standard promptów” do pracy w czacie w VSC

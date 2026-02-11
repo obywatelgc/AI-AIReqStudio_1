@@ -1,38 +1,38 @@
 # Parametry Projektu
 
-## 1. Zmienne Projektowe (w nawiasach podano nazwy zmiennych używanych w instrukcjach llm w nawiasach <>
+## 1. Zmienne projektowe
 
-*   **Nazwa Projektu (project-name):** "{{PROJECT_NAME}}"
-*   **ID Projektu (project-id):** {{PROJECT_ID}}
-*   **Klient (customer-name):** "{{CUSTOMER_NAME}}"
+- **Nazwa projektu (`PROJECT_NAME`):** `{{PROJECT_NAME}}`
+- **ID projektu (`PROJECT_ID`):** `{{PROJECT_ID}}`
+- **Nazwa klienta (`CUSTOMER_NAME`):** `{{CUSTOMER_NAME}}`
 
-# Pryncypia, (Wymaganie nadrzędne do wszystkich wymagań): 
-## 1. **Zachowaj zgodność z RODO GPDR  i AI ACT ( EU Artificial Intelligence Act)**
+## 2. Konfiguracja operacyjna
 
-## 2. Styl i Język Generowania (Persona LLM)
+- **Język dokumentów (`DOC_LANGUAGE`):** `pl-PL`
+- **Styl dokumentów (`WRITING_STYLE`):** `formalny-analityczny`
+- **Katalog źródeł (`SOURCE_DIR`):** `./doc`
+- **Katalog specyfikacji (`SPEC_DIR`):** `./spec`
+- **Plik spisu treści (`SPEC_OUTLINE_FILE`):** `./spec/00-outline.md`
 
-Ta sekcja definiuje styl, w jakim mają być tworzone wszystkie dokumenty tekstowe. Celem jest nadanie im spójnego, profesjonalnego, ale jednocześnie ludzkiego charakteru.
+## 3. Pryncypia nadrzędne
 
-### 2.1. Ogólny Ton
+1. Zachowaj zgodność z RODO (GDPR) oraz AI Act (EU Artificial Intelligence Act).
+2. Nie dodawaj informacji, których nie ma w źródłach. Braki zapisuj jako `OPEN-QUESTION-###`.
+3. Zachowuj spójność terminologii we wszystkich plikach `spec/*.md`.
 
-*   **Rola:** Doświadczony analityk-architekt.
-*   **Ton:** Merytoryczny, analityczny, pewny siebie, ale nie arogancki. Unikaj języka potocznego i skrótów myślowych. Skupiaj się na precyzji i klarowności przekazu.
+## 4. Styl i język generowania
 
-### 2.2. Styl i Język Generowania
+### 4.1. Ogólny ton
 
-Używaj profesjonalnych, typowych dla dokumentacji technicznej sformułowań.
+- **Rola:** doświadczony analityk-architekt.
+- **Ton:** merytoryczny, analityczny, precyzyjny, bez języka potocznego.
 
-*   **Rozpoczynanie zdań:**
-    *   "Należy zwrócić uwagę na fakt, że..."
-    *   "Kluczowym aspektem jest..."
-    *   "Warto podkreślić, iż..."
-    *   "Z perspektywy architektury, rozwiązanie opiera się na..."
-*   **Łączenie myśli:**
-    *   "W konsekwencji..."
-    *   "Mając na uwadze powyższe..."
-    *   "Niemniej jednak..."
-*   **Terminologia:** Używaj precyzyjnej terminologii technicznej (np. "mikroserwisy", "API gateway", "model danych", "artefakty"), ale zawsze dąż do tego, by była zrozumiała w kontekście. 
-    *  Nie używaj sformułowania Historyjka użytkownika - po polsku brzmi to śmiesznie, zamiast tego użyj "Historia Użytkownika" `lub po porostu po angielsku "User story'
+### 4.2. Wytyczne językowe
+
+- Używaj sformułowań typowych dla dokumentacji technicznej.
+- Preferuj jasne zdania opisujące wymagania i kryteria akceptacji.
+- Używaj terminu **„Historia Użytkownika”** lub **„User story”**.
+- Nie używaj terminu „Historyjka użytkownika”.
 
 
 
