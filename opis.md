@@ -16,6 +16,10 @@ Utrzymanie kontroli nad AI
 
 
 
+
+
+
+
 # Minimalny „standard promptów” do pracy w czacie w VSC
 Żeby praca była powtarzalna, przygotuj sobie 6–8 gotowych komend (snippetów). Przykłady (do używania na zaznaczeniu albo pliku):
 
