@@ -1,3 +1,18 @@
+# Opis projektu
+Zbudowałem workspace w Visual Studio Code, którego zadaniem jest generowanie specyfikacji wymagań na podstawie materiałów (wymagań) klienta oraz dokumentacji systemów informatycznych.
+Narzędzie będzie wykorzystywało model LLM (GPT) oraz rozszerzenie COdex. Specyfikacja będzie posiadało określoną strukturę - opisaną w /spec/10-aktywacja.md
+
+Obsługa narzędzie będzie realizowna przez wykonywanie odpowiednich promptów w codex i praca na plikach projektu.
+
+Chciałbym w pliku project-parameters.md zawrzeć najważniejsze parametry projektu np. 
+-nazwę projektu, 
+- nazwę klienta 
+- Styl i Język Generowania dokumentóe
+
+Dodatkowo w pliku (project-prompt.md) będzie głowny prompt który określa sposób pracy LLM.
+
+Jak to obsłużyć, jak z tym pracować w VSC i Codex?
+
 # Struktura katalogów
 /doc - dokumetnacja systemów których dotyczy analiza w formacie MD
     /cpb - dokumentacja CBP w podzile na obszary /Przelewy, Rachunki itd. w soobnych plikach

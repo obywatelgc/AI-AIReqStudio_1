@@ -1,7 +1,7 @@
 <!-- AI-CONSTRAINTS
 Zakres: Aktywacja usługi księgowej CashDirector
 Format: RQ-ACT-###
-Źródła: /kb/kb_activation.md, /spec/99-conventions.md
+Źródła: /kb/kb_activation.md, /project-parameters.md
 -->
 
 # Aktywacja usługi CashDirector
