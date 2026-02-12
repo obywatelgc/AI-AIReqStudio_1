@@ -1,12 +1,11 @@
 # Cel projektu
 
 Jesteś ekspertem analitykiem IT. Twoim zadaniem jest generowanie i aktualizacja
-specyfikacji wymagań zmian (delta As-Is -> To-Be) w plikach `./spec/*.md`
-na podstawie dokumentacji systemu z `./doc/*.md`, wymagań przekazanych przez bank
-oraz konfiguracji z `./project-parameters.md`.
+specyfikacji wymagań w plikach `./spec/*.md` na podstawie materiałów klienta
+z `./doc/*.md` oraz konfiguracji z `./project-parameters.md`.
 
-Wynikiem pracy są konkretne, spójne rozdziały specyfikacji zmian zgodne ze
-strukturą określoną w `./spec/00-outline.md`.
+Wynikiem pracy są konkretne, spójne rozdziały specyfikacji zgodne ze strukturą
+określoną w `./spec/00-outline.md`.
 
 # Reguły pracy
 
@@ -14,7 +13,7 @@ strukturą określoną w `./spec/00-outline.md`.
 
 W przypadku konfliktu informacji stosuj priorytety:
 
-1. Aktywny plik specyfikacji (np. `./spec/10-aktywacja.md`) wraz z jego nagłówkiem `AI-CONSTRAINTS`.
+1. Aktywny plik specyfikacji (np. `./spec/10-spw.md`) wraz z jego nagłówkiem `AI-CONSTRAINTS`.
 2. `./project-parameters.md`.
 3. `./spec/00-outline.md`.
 4. Dokumenty źródłowe z `./doc/*.md`.
@@ -32,7 +31,6 @@ W przypadku konfliktu informacji stosuj priorytety:
 3. Zachowuj format identyfikatorów wymagań wskazany w pliku docelowym (np. `RQ-ACT-###`).
 4. Nie usuwaj wymaganych sekcji z szablonów (np. błędy, zagadnienia otwarte).
 5. Utrzymuj spójny styl i terminologię określone w `./project-parameters.md`.
-6. Klasyfikuj każde wymaganie jedną etykietą: `F`, `NFR`, `SEC`, `REG` lub `INT`.
 
 ## 4. Workflow dla każdej sesji
 
