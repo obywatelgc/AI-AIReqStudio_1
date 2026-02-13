@@ -33,6 +33,8 @@ W przypadku konfliktu informacji stosuj priorytety:
 3. Zachowuj format identyfikatorów wymagań wskazany w pliku docelowym (np. `RQ-ACT-###`).
 4. Nie usuwaj wymaganych sekcji z szablonów (np. błędy, zagadnienia otwarte).
 5. Utrzymuj spójny styl i terminologię określone w `./project-parameters.md`.
+6. Traktuj `{{VAR}}` jako zmienną z `./project-parameters.md` i zawsze rozwijaj ją mentalnie przed pisaniem/oceną treści.
+7. Jeśli rozdział ma blok `SPW-SECTION` z polem `Generowanie: POMIŃ`, nie generuj ani nie modyfikuj treści tego rozdziału (pozostaw do uzupełnienia ręcznego).
 
 ## 4. Workflow dla każdej sesji
 

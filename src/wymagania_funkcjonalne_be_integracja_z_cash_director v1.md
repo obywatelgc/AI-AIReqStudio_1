@@ -30,13 +30,26 @@ W Systemie BE w menu głowym dodana zostanie opcja "eKsiegowość" która w zale
 - zaprezentuje ekran aktywacji (usługa nie aktywna)
 - przekieruje użyktkownika do CB (ułsuga aktywna)
 
+**DEC-ACT-001 Status aktywacji usługi (dla firmy)**  
+System BE utrzymuje status aktywacji usługi CashDirector w ujęciu firmy (kontekstu firmowego) i wykorzystuje go do decyzji o prezentacji ekranu aktywacji lub przekierowaniu do CashDirector po wybraniu opcji „eKsięgowość”.
+
+**DEC-ACT-002 Dostępność w kontekstach**  
+Funkcjonalność aktywacji usługi CashDirector jest dostępna w kontekście firmowym (mikro oraz korporacyjnym).
+
+**DEC-ACT-003 Uprawnienie funkcjonalne**  
+Dostęp do uruchomienia procesu aktywacji usługi CashDirector jest kontrolowany uprawnieniem funkcjonalnym „eKsięgowość – aktywacja”.
+
+**DEC-ACT-004 Audyt/Rejestr zdarzeń**  
+System BE rejestruje uruchomienie procesu aktywacji usługi CashDirector w Rejestrze zdarzeń jako typ zdarzenia „Aktywacja usługi CashDirector”.
+
 **WM-02 Obsługa zgód i regulaminów**  
 System BE musi umożliwiać pobranie, prezentację oraz rejestrację akceptacji zgód, regulaminów i umów wymaganych do aktywacji usługi CashDirector.
 Zakładamy, że BE zaprezentuje zgody, które wskaże Bank. Wykorzystane zostaną usł
 
 Dodatkowo na formularzu udostępnione zostaną (w formie plików do pobrania) pliki wskazane przez Bank (regualminy, formularze umów). Nie zakładamy generowania umów po stronie BE, podpisywania dokumentów oraz ich wysłania do KLienta. Na formularzu zaprezentowane zostaną wyłącznie treści oraz pliki wskazane przez Bank.
 
-TODO: Makieta
+**WM-02a Ekran aktywacji: zgody i regulaminy**  
+System BE musi udostępnić ekran aktywacji usługi CashDirector umożliwiający prezentację treści zgód/regulaminów/umów oraz pobranie plików wskazanych przez Bank, wraz z mechanizmem rejestracji akceptacji przez użytkownika.
 
 **WM-03 Rejestracja firmy w CashDirector**  
 System BE musi przekazywać dane identyfikacyjne firmy oraz właściciela do systemu CashDirector w celu rejestracji usługi.
@@ -157,4 +170,3 @@ System BE musi zapewnić spójność danych pomiędzy systemami Banku i CashDire
 
 **WM-31 Audytowalność zdarzeń**  
 System BE musi zapewnić możliwość audytu kluczowych zdarzeń integracyjnych, w szczególności aktywacji, dezaktywacji oraz płatności.
-

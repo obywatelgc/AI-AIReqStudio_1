@@ -1,4 +1,4 @@
-# Opis projektu
+﻿# Opis projektu
 To jest framework dokumentacyjny/MVP procesu analitycznego. Służy do systematycznego generowania i utrzymywania specyfikacji wymagań na podstawie dokumentów wejściowych, z kontrolą jakości i śladowaniem źródeł.
 Aktualnie repo zawiera głównie szablony, reguły i przykładowe dane wejściowe.
 
@@ -119,6 +119,25 @@ Zrób review spójności:
 „Wypisz decyzje wymagane od biznesu/architekta + konsekwencje wyborów.”
 
 
-TODO
 
-TODO - skrypt który dzieli całą dokumentację na obszary
+Lista tematów do rozważenia:
+- skrypt który dzieli całą dokumentację na obszary
+
+
+# TOOLS
+
+## Renderowanie placeholer'ów
+
+Markdown sam z siebie nie „podstawi” {{PROJECT_NAME}} — musisz mieć etap renderowania (zamiany placeholderów na wartości).
+LLM robi to automatycznie ma podstawie założeń z project-prompt.md pkt. 3.6
+
+Ustaw wartość w project-parameters.md w formacie:
+- **Nazwa projektu (PROJECT_NAME):** Integracja BE z CashDirector``
+W dowolnym pliku używaj placeholdera:
+{{PROJECT_NAME}}
+Wygeneruj wersje „z podstawionymi wartościami” skryptem:
+do osobnego katalogu (bez nadpisywania źródeł):
+render-placeholders.ps1 -OutDir rendered
+albo nadpisując pliki (in-place):
+render-placeholders.ps1 -InPlace
+Skrypt jest w render-placeholders.ps1 i domyślnie renderuje pliki z spec/, src/, doc/ oraz opis.md i project-prompt.md, biorąc wartości z project-parameters.md.
