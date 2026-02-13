@@ -1,0 +1,24 @@
+{
+  "chunk_id": "DOC-000117",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (Visiona)"
+    }
+  ],
+  "section_title": "Karty (Visiona)",
+  "text": "Miniaplikacja *Karty* zapewnia dostęp do listy kart (debetowych, kredytowych), do których Użytkownik jest uprawniony.\n\nSystem Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Karty* z dwóch głównych poziomów:\n\n* widżetu *Karty* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),\n\nWidżet karty kredytowej\n\nimage::Karty/image1.png[image,width=274,height=381]\n\nWidżet karty debetowej\n\nimage::Karty/image2.png[image,width=278,height=378]\n\n* menu bocznego po wybraniu opcji _Karty_.\n\nimage::Karty/image3.png[image,width=248,height=662]\n\nW każdym z poziomów miniaplikacji dla Użytkownika dostępne są formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach.\n\nUżytkownik posiadający dostęp do miniaplikacji *Karty* ma możliwość:\n\n* przeglądania listy swoich kart lub wszystkich kart danego rachunku,\n* przeglądania informacji szczegółowych na temat karty,\n* modyfikacji nazwy własnej karty,\n* przeglądania historii operacji wykonywanych kartą/na rachunku karty,\n* zmiany limitów na karcie,\n* przeglądania wyciągów z rachunku karty,\n* zastrzeżenia karty,\n* spłaty karty kredytowej,\n* przeglądania blokad na rachunku karty.\n\nNOTE: Funkcjonalność kart dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia do funkcjonalności. Uprawnienia nadawane są przez Administratora w opcji _Ustawienia → Uprawnienia Użytkowników_.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 4,
+      "line_end": 38
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000014",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Logowanie do systemu"
+    },
+    {
+      "level": 4,
+      "title": "Logowanie do systemu za pomocą aplikacji mobilnej Asseco BSGo"
+    },
+    {
+      "level": 5,
+      "title": "Logowanie po rejestracji urządzenia"
+    }
+  ],
+  "section_title": "Logowanie po rejestracji urządzenia",
+  "text": "Użytkownik ma możliwość zalogowania się do systemu Asseco EBP za pomocą aplikacji mobilnej Asseco BSGo, jeżeli posiada sparowane aktywne urządzenie oraz hasło stałe.\n\nProces logowania za pomocą aplikacji mobilnej Asseco BSGo do systemu Asseco EBP przebiega w następujący sposób:\n\n* Użytkownik wpisuje numer identyfikacyjny i hasło (ustawione przez Użytkownika w momencie pierwszego logowania po sparowaniu urządzenia, zmienione w aplikacji lub zresetowane przez operatora w module BackOffice) i wybiera przycisk [ZALOGUJ],\n\nimage::main/image14.png[]\n\nimage::main/image15.png[]\n\n* system Asseco EBP prezentuje ekran informujący o wysłaniu dyspozycji logowania do aplikacji Asseco BSGo,\n\nimage::main/image16.png[]\n\n* system Asseco EBP za pośrednictwem systemu GUARDIAN wysyła do aplikacji Asseco BSGo powiadomienie PUSH o nowej dyspozycji logowania,\n* aplikacja Asseco BSGo wyświetla na urządzeniu mobilnym baner powiadomienia PUSH z informacją o oczekującym powiadomieniu,\n* Użytkownik wybiera baner powiadomienia PUSH, które uruchamia aplikację mobilną Asseco BSGo lub bezpośrednio uruchamia aplikację z systemu operacyjnego urządzenia mobilnego,\n* Użytkownik loguje się do aplikacji mobilnej Asseco BSGo za pomocą kodu PIN lub danych biometrycznych,\n\nLogowanie za pomocą PIN. +\n\nimage::main/image17.png[]\n\nJeśli użytkownik nie pamięta kodu PIN powienien użyć opcji [NIE PAMIĘTAM KODU PIN], zostanie przeniesiony do okna, gdzię będzie mógł rozpocząć proces ponownego parowania urządzenia. W tym celu należy wybrać przycisk [ROZPOCZNIJ PROCES PAROWANIA]. Następnie w aplikacji Asseco EBP przejść do strony logowania, wpisać login i hasło. Kolejne kroki są identyczne jak podczas pierwszego parowania urządzenia. +\n\nW przypadku logowania za pomocą danych biometrycznych, Użytkownik loguje się za pomocą odcisku palca.\n\nimage::main/image17a.png[]\n\n* aplikacja mobilna Asseco BSGo pobiera z systemu GUARDIAN dane do logowania,\n* aplikacja mobilna Asseco BSGo prezentuje dane dyspozycji logowania,\n* Użytkownik weryfikuje wyświetlone dane oraz potwierdza realizację dyspozycji logowania,\n\nimage::main/image18.png[]\n\n* Następnie użytkownik potwierdza logowanie za pomocą PIN.\n\nimage::main/image18a.png[]\n\n* aplikacja podpisuje dyspozycje za pomocą klucza prywatnego,\n* aplikacja Asseco BSGo wysyła podpisaną dyspozycję do systemu GUARDIAN,\n* system GUARDIAN weryfikuje (z użyciem klucza publicznego) podpis dyspozycji złożony w aplikacji mobilnej Asseco BSGo oraz przekazuje wynik do aplikacji Asseco BSGo oraz Asseco EBP (weryfikacja pozytywna),\n* Użytkownik zostaje zalogowany do systemu Asseco EBP,\n* aplikacja mobilna Asseco BSGo prezentuje potwierdzenie autoryzacji dyspozycji,\n\nimage::main/image19.png[]\n\nW przypadku, gdy Użytkownik nie potwierdził autoryzacji dyspozycji logowania w określonym czasie po wskazaniu dyspozycji w aplikacji mobilnej Asseco BSGo, wówczas zostanie zaprezentowany następujący komunikat:\n\n* _Upłynął czas akceptacji dyspozycji_.\n\nW przypadku odrzucenia autoryzacji w aplikacji mobilnej Asseco BSGo zostanie zaprezentowany komunikat:\n\n* _Autoryzacja została odrzucona_.\n\nimage::main/image20.png[]\n\nW przypadku, gdy operator w module BackOffice opublikował nową wersję regulaminu dla aplikacji mobilnej Asseco BSGo, to Użytkownik podczas procesu logowania do aplikacji Asseco EBP musi potwierdzić zapoznanie się i akceptację nowego regulaminu w aplikacji mobilnej.\n\nW celu akceptacji nowego regulaminu:\n\n* Użytkownik wpisuje numer identyfikacyjny (login) i hasło na stronie logowania aplikacji Asseco EBP,\n* system Asseco EBP prezentuje ekran informujący o wysłaniu dyspozycji logowania do aplikacji Asseco BSGo,\n* system Asseco EBP za pośrednictwem systemu GUARDIAN wysyła do aplikacji Asseco BSGo powiadomienie PUSH o nowej dyspozycji logowania,\n* aplikacja Asseco BSGo wyświetla na urządzeniu mobilnym baner powiadomienia PUSH z informacją o oczekującym powiadomieniu,\n* Użytkownik wybiera baner powiadomienia PUSH,\n* system wyświetla ekran z informacją o konieczności zatwierdzenia regulaminu\n\nimage::main/image267.png[image,width=301,height=433]\n\n* Użytkownik w celu zatwierdzenia regulaminu wybiera przycisk [WRÓĆ DO REGULAMINU],\n* system prezentuje stronę główną aplikacji mobilnej z krótką informacją, udostępnia do  pobrania plik regulaminu (plik.pdf) oraz umożliwia zatwierdzenie zapoznania się z nowym regulaminem,\n\nimage::main/image268.png[image,width=301,height=433]\n\n* Użytkownik zaznacza opcję 'Zapoznałem się z regulaminem' i wybiera przycisk [AKCEPTUJĘ REGULAMIN]\n* system wyświetla stronę logowania,\n\nimage::main/image269.png[image,width=301,height=433]\n\n* Użytkownik loguje się do aplikacji mobilnej i potwierdza dyspozycję logowania do systemu Asseco EBP,\n* Użytkownik zostaje zalogowany do systemu Asseco EBP.\n\n\n\nW procesie logowania do systemu Asseco EBP za pomocą aplikacji mobilnej Asseco BSGo, na etapie uwierzytelnienia może pojawić się komunikat z informacją o błędzie:\n\n* _Błąd na etapie uwierzytelniania_ w przypadku, gdy:\n\n** podano niepoprawne hasło,\n** inny błąd techniczny.\n\n* _Błąd uwierzytelnienia_ w przypadku:\n\n** braku podpisania dyspozycji w określonym czasie,\n** odrzucenia autoryzacji w aplikacji mobilnej Asseco BSGo.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 201,
+      "line_end": 298
+    }
+  ]
+}

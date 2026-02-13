@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000082",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Ustawienia logowania"
+    }
+  ],
+  "section_title": "Ustawienia logowania",
+  "text": "Klient ma możliwość zdefiniowania obrazka bezpieczeństwa.\n\nZdefiniowany obrazek jest prezentowany za każdym razem przy <<obrazek-bezpieczenstwa-logowanie,logowaniu>> do systemu po wpisaniu loginu (drugi krok\nlogowania):\n\nimage::main/ol6.png[]\n\nObrazek bezpieczeństwa nie jest prezentowany w aplikacji mobilnej BSGo, a jedynie w przeglądarce internetowej.\n\n[NOTE]\nFunkcjonalność sterowana jest parametrami banking.feature.flags.loginImageEnabled i userFeatureToggle.loginImages.\n\nUżytkownik może wybrać obrazek z listy obrazków bezpieczeństwa przygotowanych przez operatora ABP Admin Console\nw konsoli administracyjnej.\n\nPo zalogowaniu do bankowości klientowi (w przeglądarce internetowej), który nie zdefiniował obrazka bezpieczeństwa\nprezentowany jest <<pop-up-obrazek-bezpieczenstwa,pop-up>> prezentujący dostępne obrazki z zachętą do wyboru. Przykładowe obrazki bezpieczeństwa:\n\nimage::main/ol1.png[]\n\n* po wybraniu [Przejdź do ustawień] - następuje przejście do opcji Ustawienia logowania bez wybranego obrazka,\n* po wskazaniu obrazka - następuje przejście do opcji _Ustawienia logowania_ z wybranym obrazkiem.\n\nKlient ma możliwość zdefiniowania/zmiany obrazka bezpieczeństwa\nw opcji _Ustawienia logowania_ (Ustawienia -> Ustawienia logowania).\n\n[NOTE]\nUstawienie obrazka bezpieczeństwa nie jest dostępne w aplikacji mobilnej BSGo.\n\n* przykład ekranu - gdy Klient nie ma ustawionego obrazka bezpieczeństwa:\n\nimage::main/ol2.png[]\n\n* przykład ekranu - gdy Klient zmienia ustawiony obrazek bezpieczeństwa:\n\nimage::main/ol7.png[]\n\nPo wybraniu [Zmień obrazek logowania] zostają zaprezentowane aktualne obrazki bezpieczeństwa możliwe do wyboru:\n\nimage::main/ol8.png[]\n\nPo wskazaniu obrazka bezpieczeństwa pojawia się możliwość zapisu wyboru:\n\nimage::main/ol9.png[]\n\nDokończenie procesu definiowania obrazka wymaga autoryzacji.\nPo wybraniu [Zapisz] zaprezentowana zostaje sekcja podpisu\nzgodna z przypisaną do użytkownika metodą autoryzacji.\n\nimage::main/ol4.png[]\n\nPotwierdzenie ustawienia obrazka bezpieczeństwa:\n\nimage::main/ol5.png[]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 2770,
+      "line_end": 2826
+    }
+  ]
+}

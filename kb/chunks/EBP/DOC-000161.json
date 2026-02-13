@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000161",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista przelewów - podgląd listy"
+    },
+    {
+      "level": 4,
+      "title": "Lista przelewów - filtry"
+    }
+  ],
+  "section_title": "Lista przelewów - filtry",
+  "text": "W celu zawężenia prezentacji listy dyspozycji, Użytkownik ma możliwość zastosowania filtrów: prostego oraz zawansowanego.\n\nFiltr prosty umożliwia wyszukanie po treści. W tym celu należy wpisać w pole *Wyszukaj* tekst i poczekać na wyfiltrowanie rezultatów. Wyszukane dyspozycje będą z określonego przedziału czasowego (data od-do), który można zmienić.\n\nUżycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtru zaawansowanego dla następujących pól:\n\n* *Z rachunku* - numer rachunku obciążanego w postaci zamaskowanej,\n\n* *Rachunek odbiorcy* - pole do wpisania numeru rachunku odbiorcy,\n\n* *Rodzaj przelewu* – wybór z wartości: _Wszystkie, Zwykły, Własny, Walutowy, Podatkowy, Cykliczny, Sorbnet, ExpressElixir,_\n\n* *Typ dyspozycji* - wybór z wartości: _Wszystkie, Edycja cyklicznego, Anulowana,_ +\n* *Kwota od, do* - zakres kwot (od-do), dla których ma zostać wyświetlona lista dyspozycji, +\n* *Status* – status dyspozycji, wybór wartości__: Zaznacz wszystkie, Nowy, W akceptacji, Do akceptacji, Gotowy do przekazania, Przekazany do realizacji, W realizacji, Aktywny przelew odroczony, Aktywny, Anulowany, Odrzucona, Zrealizowany, Zawieszony__, +\n* *Pokaż przelewy w paczkach* – włączenie/wyłączenie prezentacji dyspozycji przelewów zawartych w paczkach,\n\n* *Typ sortowania* - wybór z wartości: _Data dostarczenia, Data wprowadzenia_, +\n* *Liczba transakcji na stronie.*\n\nimage::Lista_zlecen/image6.png[image,width=604,height=251]\n\nZastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 74,
+      "line_end": 98
+    }
+  ]
+}

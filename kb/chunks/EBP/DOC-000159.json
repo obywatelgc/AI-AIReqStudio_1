@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000159",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista przelewów - podgląd listy"
+    },
+    {
+      "level": 4,
+      "title": "Możliwość zaznaczania przelewów na liście"
+    }
+  ],
+  "section_title": "Możliwość zaznaczania przelewów na liście",
+  "text": "Dla przelewów, będących na _Liście zleceń_ z lewej strony wiersza znajdują się checkboxy umożliwiające zaznaczenie poszczególnych pozycji. Po zaznaczeniu wybranych pozycji pojawia się informacja o łącznej kwocie przelewów zaznaczonych.\n\nZaznaczenie dyspozycji wykorzystywane jest podczas korzystania z *panelu akcji zbiorczych* znajdującego się nad tabelą. Są to przyciski: [AKCEPTUJ], [PRZEKAŻ DO REALIZACJI] i [DODATKOWE OPCJE].\n\nimage::Lista_zlecen/image3.png[image,width=604,height=265]\n\nPrzelewy pochodzące z paczek nie mają możliwości zaznaczenia (temat został przybliżony w rozdziale _Filtry_), checkbox w tym przypadku nie jest prezentowany, a więc nie jest możliwe wykonanie akcji z *panelu akcji zbiorczych* (opisanych w dalszej części dokumentacji). Nie ma również możliwości wykonania akcji z *panelu akcji pojedynczych*. Dostępna jest wyłącznie opcja przejścia do szczegółów paczki.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 58,
+      "line_end": 66
+    }
+  ]
+}

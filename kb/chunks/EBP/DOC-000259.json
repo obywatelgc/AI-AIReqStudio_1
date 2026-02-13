@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000259",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Przelewy transgraniczne (system transakcyjny DefBank)"
+    },
+    {
+      "level": 4,
+      "title": "Przelew walutowy transgraniczny"
+    }
+  ],
+  "section_title": "Przelew walutowy transgraniczny",
+  "text": "W przypadku realizacji przelewu walutowego w walucie innej niż waluta rachunku, system na formularzu drugiego kroku realizacji przelewu, po rozwinięciu opcji *Pokaż dodatkowe informacje*, zaprezentuje następujące informacje:\n\n* Szacunkowy kurs przewalutowania w następujący sposób, np.:\n\n** przelew z EUR w CHF: _1 EUR = x CHF_\n\n** przelew z PLN w EUR: _1 EUR = x PLN_\n\noraz poniżej:\n\n* Link *REGULAMIN KOSZTÓW PRZEWALUTOWANIA* – po naciśnięciu którego, Użytkownik zostaje przekierowany na stronę z informacją o regulaminie kosztów przewalutowania,\n* Checkobox _Zgadzam się na przewalutowanie środków po kursie obowiązującym w momencie wykonania dyspozycji w banku oraz zapoznałem/am się z regulaminem banku –_ potwierdzający zgodę na przewalutowanie środków oraz zapoznanie się Użytkownika z regulaminem,\n* Komunikat: _Wymagana akceptacja regulaminu Banku._\n\nW przypadku realizacji przelewu walutowego z rachunku o tej samej walucie, co waluta przelewu, system nie będzie prezentował w/w informacji.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 1718,
+      "line_end": 1735
+    }
+  ]
+}

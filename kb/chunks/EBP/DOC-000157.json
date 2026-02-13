@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000157",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista przelewów"
+    }
+  ],
+  "section_title": "Lista przelewów",
+  "text": "Po wyborze opcji _Lista zleceń_ prezentowana jest lista dyspozycji przelewów do autoryzacji oraz dalszej obsługi, czyli dyspozycji, które zostały wprowadzone ręcznie przez Użytkownika lub zaimportowane z plików, ale nie zostały jeszcze podpisane i obsłużone.\n\nSystem umożliwia zapisanie następujących dyspozycji w celu późniejszej autoryzacji oraz obsługi:\n\n* przelewów zwykłych ELIXIR/SORBNET, podatku (również z datą przyszłą),\n\n* przelewów własnych,\n\n* przelewu walutowego,\n\n* dyspozycji zlecenia stałego (przelew zwykły ELIXIR z opcją powtarzania).\n\nFunkcjonalność Listy przelewów z opcji Lista zleceń obejmuje następujące możliwości:\n\n* filtrowania prostego, +\n* filtrowania zaawansowanego, +\n* wykonania akcji na wybranej dyspozycji *(panel akcji pojedynczych)* +\n* wykonania akcji na zaznaczonych dyspozycjach *(panel akcji zbiorczych)*\n\nNOTE: Funkcjonalność dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia. Uprawnienia ustawiane są przez Administratora w opcji Ustawienia → Uprawnienia Użytkowników.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 10,
+      "line_end": 31
+    }
+  ]
+}

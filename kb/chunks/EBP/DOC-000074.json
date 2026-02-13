@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000074",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Konfiguracja powiadomień"
+    }
+  ],
+  "section_title": "Konfiguracja powiadomień",
+  "text": "W opcji _Ustawienia → Konfiguracja powiadomień_ Użytkownik ma możliwość włączenia i konfiguracji powiadomień dla kontekstu indywidualnego.\n\nNa formularzu KONFIGURACJA POWIADOMIEŃ dostępny jest parametr _Wysyłka powiadomień,_ umożliwiający Użytkownikowi włączenie/wyłączenie konfiguracji powiadomień:\n\n* WŁĄCZONA – przesunięcie suwaka w prawo umożliwia włączenie funkcjonalności,\n* WYŁĄCZONA – przesunięcie suwaka w lewo umożliwia wyłączenie funkcjonalności.\n\nWyłączona funkcjonalność konfiguracji powiadomień\n\nimage::main/image1031.png[image,width=604,height=203]\n\nWłączona funkcyjność konfiguracji powiadomień\n\nimage::main/image1032.png[image,width=604,height=187]\n\nAby Użytkownik miał możliwość zarządzania uprawnieniami, musi zostać włączony parametr _Konfiguracja powiadomień._ Po włączeniu usługi na formularzu KONFIGURACJA POWIADOMIEŃ system udostępni parametry, umożliwiające konfigurację powiadomień, podzielone na następujące sekcje:\n\n* Parametry ogólne:\n\n** *Godzina wysyłki powiadomień* – zakres godzin, od-do, w których mają być wysyłane powiadomienia. Kliknięcie w obszar pól z godzinami otwiera okno zegara, za pomocą którego można określić zakres godzin, +\nimage:main/image1033.png[image,width=207,height=268] +\nW oknie zegara dostępne są następujące przyciski:\n*** Wyczyść – po naciśnięciu następuje usunięcie wybranej przez Użytkownika godziny, oraz zamkniecie zegara i powrót do formularza KONFIGURACJA POWIADOMIEŃ,\n*** Anuluj – po naciśnięciu następuje anulowanie wybranej godziny oraz zamknięcie zegara i powrót do formularza KONFIGURACJA POWIADOMIEŃ,\n*** Cofnij – przycisk jest dostępny w momencie wskazania przez Użytkownika godziny. Po naciśnięciu następuje anulowanie wybranej godziny i minuty, wówczas system na formularzu zegara prezentuje aktualny czas, oraz Użytkownik ma możliwość wyboru innej godziny i minuty.\n*** OK – przycisk potwierdza wybór godziny i następuje powrót do formularza KONFIGURACJA POWIADOMIEŃ.\n\n* Konfiguracja powiadomień dla wybranych funkcjonalności, w podziale na:\n\n** Rachunki,\n** Lokaty,\n** Logowanie,\n** Przelewy.\n\nimage::main/image1034.png[image,width=604,height=286]\n\nW dolnej części formularza KONFIGURACJA POWIADOMIEŃ dostępne są:\n\n* Informacja prezentowana na formularzu zawsze po włączeniu parametru _Wysyłka powiadomień,_\n\nimage:main/image1035.png[image,width=604,height=61]\n\n* Przycisk [DALEJ] – zmiana konfiguracji wymaga zatwierdzenia przez Użytkownika, za pomocą dostępnej metody autoryzacji. Po naciśnięciu przycisku [DALEJ], system prezentuje formularz KONFIGURACJA POWIADOMIEŃ z podsumowaniem wprowadzonej konfiguracji powiadomień oraz oczekuje na zatwierdzenie zmian.\n\nimage::main/image1036.png[image,width=465,height=773]\n\nPo poprawnej autoryzacji, system wyświetli okno z potwierdzeniem:\n\nimage::main/image1037.png[image,width=464,height=263]\n\nNa potwierdzeniu dostępny jest przycisk [OK], po naciśnięciu którego system przechodzi do formularza KONFIGURACJA POWIADOMIEŃ.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 2415,
+      "line_end": 2467
+    }
+  ]
+}

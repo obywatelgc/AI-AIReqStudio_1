@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000382",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu wyciągów"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie MT940 WIRT (format CEB)"
+    }
+  ],
+  "section_title": "Plik w formacie MT940 WIRT (format CEB)",
+  "text": "Plik eksportu wyciągów w formacie MT940 WIRT (format CEB) składa się z 1 sekcji, podzielonej na bloki, których układ jest\nnastępujący:\n\n\nNagłówek wyciągu:\n\n[source, txt]\n----\n:20:\n:25:\n:28C:\n:60F:\n----\n\nBlok operacji:\n\n[source, txt]\n----\n:61:\n:86:\n----\n\nBlok końca wyciągu:\n\n[source, txt]\n----\n:62F:\n----\n\nOznaczenia użyte w opisie formatu:\nStatus pola: M - obowiązkowy, O - opcjonalny\n\nUżyte oznaczenia dla formatu danych w kolejnych polach: +\n*n* - tylko cyfry, +\n*a* - tylko litery, +\n*c* - tylko znaki alfanumeryczne, +\n*x* - dowolne znaki alfanumeryczne łącznie z przecinkami, spacjami , itp., +\n*d* - liczba oznaczająca kwotę (separatorem dziesiętnym musi być przecinek ‘,’). +\n\n[underline]##Przykłady oznaczania formatu pól:## +\n*2n* - maksymalnie 2 cyfry, +\n*3!a* - dokładnie 3 litery, +\n*4*35x* - do 4 linii, każda po maksymalnie 35 dowolnych znaków alfanumerycznych.\n\n*Specyfikacja pól w pliku MT940 WIRT (format CEB):*\n\n[cols=\"2,6,3,10\",options=\"header\",]\n|====================\n|*Etykieta* |*Nazwa* |*Format* |*Opis*\n.2+<.^|:20: .2+<.^|Numer referencyjny <.^|6!n/9n |\nPierwszy ciąg znaków to data początkowa wyciągu w formacie RRMMDD.\n\nDrugi ciąg znaków to modulo Klienta.\n\n|[underline]##Przykład:## |‘:**20**:060302/123456’\n.2+<.^|:25: .2+<.^|Identyfikator rachunku <.^|2!a26!n |\nNumer IBAN rachunku, gdzie: +\nIBAN=PLSSBBBBBBBBRRRRRRRRRRRRRRRR +\nPL - kod kraju długości 2!a +\n/ - znak poprzedzający cyfry kontrolne +\nSS - cyfry kontrolne długości 2!n +\nBBBBBBBB-numer jednostki banku długości 8!n +\nRRRRRRRRRRRRRRRR-identyfikator rachunku w jednostce banku długości 16!n +\n|[underline]##Przykład 1:## |‘:*25*:PL/51101010231234567890123456’\n.2+<.^|:28C: .2+<.^|Numer zestawienia <.^|n|\nNumer wyciągu w systemie Asseco EBP może mieć różną postać w zależności od okresu jaki obejmuje.\n|[underline]##Przykład:## |‘:**28C**:8’\n.6+<.^|:60F: .6+<.^|Saldo początkowe wyciągu <.^|11!a6!n3!a15d |Format całego pola – łącznie do 25 znaków. Poniżej znajduje się opis w rozbiciu na poszczególne sekcje.\n|1!a |Strona – znak ‘C’ dla salda kredytowego lub znak ‘D’ dla salda debetowego.\n|6!n |Data początkowa zestawienia operacji w formacie RRMMDD.\n|3!a |Symbol waluty.\n|15d |Kwota salda początkowego początkowego wyciągu.\n|[underline]##Przykład:## |‘:**60F**:C060302PLN12,34’\n.6+<.^|:61: .6+<.^|Szczegóły każdej operacji. <.^|6!n4!n2a15d\n|Format całego pola - łącznie do 27 znaków (nie wliczając znaków nowej linii). Poniżej znajduje się opis w rozbiciu na poszczególne sekcje.\n|6!n |Data waluty w formacie RRMMDD.\n|4!n |Data księgowania w formacie MMDD.\n|1!a|Strona – znak ‘C’ dla salda kredytowego lub znak ‘D’ dla salda debetowego.\n|15d |Kwota operacji.\n|[underline]##Przykład:## | ‘:**61**:1804200420C10,00\n\n|:86: |Szczegóły operacji 2+| Pole złożone z podpól, których szczegółowy opis zamieszczono w części: +\nSpecyfikacja podpól dla pola :86:\n.6+<.^|:62F: .6+<.^|Saldo końcowe wyciągu. <.^|1!a6!n3!a15d |Format całego pola - łącznie do 25 znaków. Poniżej znajduje się opis w rozbiciu na poszczególne sekcje.\n|1!a |Strona - znak ‘C’ dla salda kredytowego lub znak ‘D’ dla salda debetowego.\n|6!n |Data końcowa zestawienia obrotów dziennych w formacie RRMMDD.\n|3!l |Symbol waluty.\n|15d |Kwota salda końcowego wyciągu.\n|[underline]##Przykład:## |‘:**62**F:C180420PLN50,11’\n|====================\n\n*Specyfikacja podpól dla pola :86:* +\n\n**Założenia**: +\nPole :86: składa się z podpól oznaczonych etykietami - zestaw podpól zamieszczono w poniższej tabeli. +\nPodpola oznaczone statusem M są obowiązkowe, podpola o statusie O są opcjonalne. +\nSeparatorem podpól jest znak <. +\nPodpola prezentowane są w nowych liniach (za wyjątkiem podpola 10). +\nJeżeli podpole jest puste, wówczas całe podpole, łącznie z etykietą nie jest w pliku prezentowane. +\n\n[width=\"100%\",cols=\"4,3,3,10\",options=\"header\"]\n|====================\n|*Etykieta* |*Status* |*Format* |*Opis*\n|<10 |M |10n |Numer referencyjny\n\n              Kolejny numer operacji na rachunku\n\n              np. <1024755\n\n|<20 |O |35x |Tytuł operacji - linia1\n|<21 |O |35x |Tytuł operacji - linia2\n|<22 |O |35x |Tytuł operacji - linia3\n|<23 |O |35x |Tytuł operacji - linia4\n|<27 |M |35x |Nazwa kontrahenta - linia 1\n|<28 |O |35x |Nazwa kontrahenta - linia 2\n|<29 |O |35x |Adres kontrahenta (ulica)\n|<30 |M |8x |Identyfikator jednostki bankowej kontrahenta (BSC lub SWIFT BIC). Dla identyfikatora jednostki banku w tym polu przedstawiane są znaki od 3 do 10\n|<31 |M |16x |Identyfikator rachunku kontrahenta (skrócony) dla prezentacji. W przypadku rachunku NRB w tym polu przedstawiane są znaki od 11 do 26\n|<38 |O |34x |Numer rachunku kontrahenta\n|<60 |O |35x |Adres kontrahenta (miasto)\n|<61 |O |34x |Numer rachunku kontrahenta (wirtualny)\n|====================\n\n[underline]##Przykładowe dane dla pola **86**:##\n\n[source, txt]\n----\n:86:<103\n<20wpłata gotowkowa\n<27JAN\n<28TEST\n<29TESTOWA 6/16\n<3086420002\n<3833864200023001840003580001\n<6085-666 MIASTO\n<6107864210708002000000000001\n----\n\n[underline]##Poniżej przedstawiono przykład pliku eksportu wyciągów w formacie MT940_WIRT:##\n\n[source, txt]\n----\n:20:191018/368\n:25:/PL35910100032002000003680002\n:28C:16/2019\n:60F:C191018PLN25777,03\n:61:1910181018D1,25\n:86:<101\n<20cykliczne wlasne (przelew testowy w\n<21lasny)\n<27IMIE TESTOWE ul. TESTOWA 2/B 23-\n<28456 MIEJSCOWOSC\n<3091010003\n<312002000003680001\n<3862910100032002000003680001\n:61:1910181018C5,26\n:86:<102\n<20wlasny\n<27NAZWA TESTOWA ul. TESTOWA 1/A 12-\n<28345 MIEJSCOWOSC\n<3091010003\n<312002000003670005\n<3803910100032002000003670005\n:62F:C191018PLN25781,04\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 4454,
+      "line_end": 4620
+    }
+  ]
+}

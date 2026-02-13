@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000091",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Rachunki"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie historii operacji na rachunku"
+    },
+    {
+      "level": 4,
+      "title": "Akcje na wybranej operacji na rachunku"
+    }
+  ],
+  "section_title": "Akcje na wybranej operacji na rachunku",
+  "text": "Kliknięcie w wiersz wybranej operacji na formularzu HISTORIA RACHUNKU, powoduje wyświetlenie dodatkowych informacji na temat operacji:\n\nimage::Rachunki/image32.png[image,width=604,height=122]\n\n* *Typ operacji* – nazwa typu wykonanej operacji,\n* *Saldo po operacji* – saldo rachunku po wykonaniu operacji.\n\nDodatkowo prezentowany jest określony zestaw akcji:\n\n* [PONÓW] – umożliwia ponowne wykonanie przelewu wychodzącego, przycisk jest dostępny wyłącznie w odniesieniu do przelewów jednorazowych: przelew zwykły, podatku, własny,\n* [SZCZEGÓŁY] – umożliwia przeglądanie informacji szczegółowych na temat wybranej transakcji,\n* [POBIERZ PDF] – umożliwia wygenerowanie wydruku potwierdzenia pojedynczej operacji historycznej w formacie _PDF_.\n\nRachunki typu VAT w historii operacji nie posiadają przycisku [PONÓW].\n\nPonowne kliknięcie w obszar rozwiniętego wiersza wybranej operacji powoduje jego zwinięcie.\n\nW górnej część formularza HISTORIA RACHUNKU dostępne są przyciski:\n\n* image:Rachunki/image21.png[image,width=45,height=53] – umożliwiający powrót do formularza RACHUNKI,\n\n* image:Rachunki/image22.png[image,width=48,height=61]– umożliwiający przejście do głównego menu.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Rachunki.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Rachunki.adoc",
+      "line_start": 329,
+      "line_end": 352
+    }
+  ]
+}

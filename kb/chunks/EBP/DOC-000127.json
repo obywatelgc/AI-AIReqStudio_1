@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000127",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (Visiona)"
+    },
+    {
+      "level": 3,
+      "title": "Zmiana limitów karty"
+    }
+  ],
+  "section_title": "Zmiana limitów karty",
+  "text": "Aby zmienić limity karty należy na formularzu SZCZEGÓŁY KARTY, po rozwinięciu opcji [DANE LIMITU – POKAŻ], wybrać przycisk [ZMIEŃ LIMIT], albo należy kliknąć w obszar wybranego wiersza, a następnie wybrać opcję [ZMIEŃ LIMIT]. Wyświetlany jest wówczas formularz ZMIANA LIMITU KARTY, umożliwiający zmianę limitów wybranej karty.\n\nimage::Karty/image38.png[image,width=604,height=292]\n\nNa formularzu ZMIANA LIMITU KARTY system prezentuje następujące informacje:\n\n* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), którego dotyczą prezentowane limity, pole zablokowane do edycji,\n* *Dzienny limit wartości operacji gotówkowych*, wraz z następującymi parametrami:\n\n** Kwota dziennego limitu operacji gotówkowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,\n** Min – minimalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,\n** Maks – maksymalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,\n** Do maksymalnej wysokości limitu –checkbox, po zaznaczeniu którego system w polu *Dzienny limit wartości operacji gotówkowych* wstawia maksymalną wartość limitu, bez możliwości zmiany (pole zablokowane do edycji),\n\n* *Dzienny limit wartości operacji bezgotówkowych*, wraz z następującymi parametrami:\n\n** Kwota dziennego limitu operacji bezgotówkowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,\n** Min – minimalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,\n** Maks – maksymalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,\n** Do maksymalnej wysokości limitu – checkbox, po zaznaczeniu którego system w polu *Dzienny limit wartości operacji bezgotówkowych*, wstawia maksymalną wartość limitu, bez możliwości zmiany (pole zablokowane do edycji),\n\n* *Dzienny limit wartości operacji internetowych*, wraz z następującymi parametrami:\n\n** Kwota dziennego limitu operacji internetowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,\n** Min – minimalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,\n** Maks – maksymalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,\n** Do maksymalnej wysokości limitu – checkbox, po zaznaczeniu którego system w polu *Dzienny limit wartości operacji internetowych*, wstawia maksymalną kwotę limitu, bez możliwości zmiany (pole zablokowane do edycji).\n\nW górnej część formularza ZMIANA LIMITU KARTY dostępne są przyciski:\n\n* image:Karty/image36.png[image,width=45,height=53] – umożliwiający powrót do formularza KARTY z listą kart,\n\n* image:Karty/image37.png[image,width=48,height=61]– umożliwiający przejście do pulpitu.\n\nNa formularzu ZMIANA LIMITU KARTY Użytkownik ma możliwość zmiany wszystkich trzech zaprezentowanych limitów, przez wprowadzenie kwoty albo zaznaczenie checkbox, oddzielnie dla każdego limitu.\n\nSystem kontroluje minimalną i maksymalną kwotę limitu wprowadzoną przez Użytkownika, w przypadku gdy wprowadzona kwota jest mniejsza od minimalnej, albo większa od maksymalnej system prezentuje odpowiedni komunikat i nie pozwala na przejście do drugiego kroku potwierdzenia operacji.\n\nimage::Karty/image39.png[image,width=604,height=767]\n\nPo wprowadzeniu zmiany wysokości limitu Użytkownik musi zatwierdzić wprowadzone zmiany naciskając przycisk [ZMIEŃ LIMIT]. Zmiana limitu karty wymaga autoryzacji dyspozycji klienta za pomocą dostępnej metody autoryzacji.\n\nimage::Karty/image40.png[image,width=600,height=184]\n\nW górnej część formularza ZMIANA LIMITU KARTY dostępne są przyciski:\n\n* image:Karty/image36.png[image,width=45,height=53] – umożliwiający powrót do formularza pierwszego kroku ZMIANA LIMITU KARTY,\n\n* image:Karty/image37.png[image,width=48,height=61]– umożliwiający przejście do pulpitu.\n\nPo poprawnej akceptacji zmiany limitów karty zostanie zaprezentowany komunikat jak na poniższym ekranie wraz z przyciskiem [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.\n\nimage::Karty/image41.png[image,width=528,height=319]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 343,
+      "line_end": 397
+    }
+  ]
+}

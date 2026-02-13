@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000256",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Eksport statusów przelewów"
+    }
+  ],
+  "section_title": "Eksport statusów przelewów",
+  "text": "Z poziomu miniaplikacji *Przelewy* w kontekście firmowym Użytkownik ma dostęp do eksportu statusów przelewów - przycisk [DODATKOWE OPCJE] opcja *Eksport statusów*.\n\nimage::Przelewy/image70.png[image,width=604,height=157]\n\nObsługiwane są następujące formaty:\n\n* XML o określonej, stałej strukturze,\n\n* konfigurowalny format liniowy (tekstowy).\n\nKonfiguracja formatów eksportu statusów przelewów wykonywana jest w opcji _Ustawienia → Ustawienia importu i eksportu_.\n\nPo wybraniu opcji eksportu pojawia się okienko _Eksport statusów przelewów._ Użytkownik ma możliwość określania zakresu danych przeznaczonych do eksportu:\n\nimage::Przelewy/image71.png[image,width=604,height=376]\n\n* *Przelew z rachunku* - rachunku (lub wielu rachunków),\n\n* *Data od … Data do* - okresu dat,\n\n* *Status przelewów* - następujących statusów przelewów:\n\n** Anulowane,\n\n** Odrzucone,\n\n** Zrealizowane.\n\nUżycie przycisku [DALEJ] uruchamia proces eksportu i generuje plik w określonym formacie.\n\n*W przypadku pracy w kontekście klienta indywidulanego* eksport statusów przelewów nie jest dostępny.\n\nNOTE: Szczegółowy opis struktur plików eksportu statusów przelewów znajduje się w odrębnej dokumentacji importu/eksportu danych w systemie Asseco EBP.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 1613,
+      "line_end": 1647
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "chunk_id": "DOC-000143",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Wniosek o kartę debetową (CardOn)"
+    }
+  ],
+  "section_title": "Wniosek o kartę debetową (CardOn)",
+  "text": "Na liście *Wniosków* (aplikacja Karty -> Wnioski) prezentowane są wnioski wprowadzone przez\nklienta w swoim imieniu lub dla osób trzecich.\n\nimage::Karty/K_wniosek10.jpg[]\n\nWniosek po poprawnym złożeniu przyjmuje status \"Nowy\", a po przyjęciu przez system zewnętrzny\n(CardOn) zmienia status na \"Wysłany do analizy\".\n\nWniosek po pozytywnym rozpatrzeniu zmienia status na \"Zatwierdzony przez Bank\".\n\nWniosek o kartę w statusie \"Przekazany do produkcji\" jest ostatecznym statusem wniosku.\nPrezentowany jest w sekcji \"Zakończone\" wnioski.\nOznacza, że wniosek został zaakceptowany i została wystawiona dyspozycja produkcji karty.\n\nimage::Karty/K_wniosek11.jpg[]\n\nWniosek w statusie \"Odrzucony\" - status ostateczny, wniosek został odrzucony\nKlient może złożyć nowy wniosek o kartę.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 798,
+      "line_end": 818
+    }
+  ]
+}

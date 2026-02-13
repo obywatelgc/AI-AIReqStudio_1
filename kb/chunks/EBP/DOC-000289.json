@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000289",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Wiadomości"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie szczegółów wiadomości"
+    }
+  ],
+  "section_title": "Przeglądanie szczegółów wiadomości",
+  "text": "Aby przejść do szczegółów wiadomości/komunikatu należy z poziomu listy wiadomości wybrać wiadomość/komunikat, którego szczegóły mają być przeglądane. Wyświetlane jest wówczas okno *Wiadomości*, na którym prezentowane są następujące dane:\n\nimage::Wiadomosci/image9.png[image]\n\n* *Tytuł*,\n\n* *Typ* - typ wiadomości,\n\n* *Nadawca* - nadawca wiadomości,\n\n* *Treść* - treść wiadomości,\n\n* *Data i godzina* - termin wysłania wiadomości.\n\nW zależności od rodzaju wiadomości (opcje konfigorwalne przez Bank) Użytkownik może mieć dostępne dodatkowe opcje:\n\n* Usuń wiadomość - umożliwia usunięcie wiadomosci,\n\n* Akceptuj - umożliwa akceptację wiadomości (po akceptacji wyświetli się data akceptacji),\n\n* Zapoznałem/am się - umożliwia potwierdzenie zapoznania się z wiadomością (po zapoznaniu system wyświetli datę).\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Wiadomosci.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Wiadomosci.adoc",
+      "line_start": 92,
+      "line_end": 114
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000067",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Filtrowanie adresów IP"
+    }
+  ],
+  "section_title": "Filtrowanie adresów IP",
+  "text": "Opcja _Ustawienia → Filtrowanie adresów IP_ umożliwia konfigurację usługi filtrowania adresów IP w zakresie Użytkowników uprawnionych do logowania się do systemu Asseco EBP w kontekście firmy i indywidualnym.\n\nWłączenie funkcjonalności filtrowania adresów IP jest możliwe tylko na poziomie globalnym (na firmie) przez administratora, natomiast zarządzanie i konfiguracja kontroli adresów IP jest możliwa na dwóch poziomach:\n\n* globalnym – po zalogowaniu Użytkownika do sytemu Asseco EBP w kontekście firmowym,\n* indywidualnym – po zalogowaniu Użytkownika do sytemu Asseco EBP w kontekście indywidualnym.\n\nFormularz KONFIGURACJA DOSTĘPU prezentowany w kontekście firmowym\n\nimage::main/image151.png[image,width=612,height=164]\n\nFormularz KONFIGURACJA DOSTĘPU prezentowany w kontekście indywidualnym\n\nimage::main/image152.png[image,width=612,height=167]\n\nNa formularzu KONFIGURACJA DOSTĘPU prezentowane są następujące dane:\n\n* Użytkownik – (pole prezentowane tylko dla administratora po zalogowaniu Użytkownika do systemu w kontekście firmowym, w kontekście indywidualnym niedostępne), rozwijana lista prezentująca Użytkowników uprawnionych do logowania się do systemu Asseco EBP w kontekście firmy oraz umożliwia wybór Użytkownika w zakresie którego będzie wprowadzana konfiguracja:\n\n** Firma – globalne zarządzanie konfiguracją adresów IP,\n** Użytkownik – lista uprawnionych Użytkowników, którzy mogą logować się do systemu Asseco EBP w kontekście tej firmy.\n\nimage::main/image153.png[image,width=221,height=228]\n\n* Znacznik aktywna/nieaktywna – wskaźnik informujący o globalnym włączeniu lub wyłączeniu funkcjonalności filtrowania adresów IP.\n\n*ZNACZNIK AKTYWNOŚCI/NIEAKTYWNOŚCI DLA KONTEKSTU FIRMOWEGO*\n\nKonfiguracja nieaktywna\n\nimage::main/image154.png[image,width=612,height=81]\n\nKonfiguracja aktywna\n\nimage::main/image155.png[image,width=608,height=80]\n\n*ZNACZNIK AKTYWNOŚCI/NIEAKTYWNOŚCI DLA KONTEKSTU INDYWIDUALNEGO*\n\nKonfiguracja nieaktywna\n\nimage::main/image156.png[image,width=611,height=81]\n\nKonfiguracja aktywna\n\nimage::main/image157.png[image,width=611,height=80]\n\n* Nazwa własna – nazwa adresu IP nadana przez Użytkownika podczas parametryzacji,\n* Adres IP – adresy IP, z których nawiązywane będą połączenia do systemu Asseco EBP,\n* Status Konfiguracji – prezentowane wartości:\n\n** Włączony – włączona kontrola adresu IP podczas logowania Użytkownika do systemu Asseco EBP w kontekście tej firmy,\n** Wyłączony – wyłączona kontrola adresu IP podczas logowania Użytkownika do systemu Asseco EBP w kontekście tej firmy,\n\n* Status dostępu – status dostępu do systemu Asseco EBP ze wskazanego adresu IP:\n\n** Udzielono dostępu – możliwość zalogowania się do systemu Asseco EBP z tego adresu IP,\n** Zabroniono dostępu – brak możliwości zalogowania się do systemu Asseco EBP z tego adresu IP.\n\nDodatkowo prezentowany jest określony zestaw akcji:\n\n* [ZARZĄDZAJ] – w zależności od wyboru Użytkownika (w polu _Użytkownik_), będzie możliwe:\n\n** Dla Firmy:\n\n*** globalne włączenie funkcjonalności filtrowania adresów IP,\n*** definiowanie częstotliwości kontroli oraz adresów IP na poziomie globalnym.\n\n** Dla Użytkownika\n\n*** definiowanie częstotliwości kontroli oraz adresów IP na poziomie indywidualnym.\n\n* [NOWA KONFIGURACJA] – opcja w zależności od wyboru Użytkownika (w polu _Użytkownik_), będzie umożliwiała:\n\n** Dla Firmy:\n\n*** definicja adresów IP na poziomie globalnym (dla wszystkich Użytkowników), z których użytkownicy będą albo nie będą mogli się zalogować do systemu Asseco EBP w kontekście tej firmy,\n\n** Dla Użytkownika\n\n*** definicja adresów IP na poziomie globalnym (dla wybranego Użytkownika), z których Użytkownik będzie albo nie będzie mógł się zalogować do systemu Asseco EBP w kontekście firmy.\n\nZ poziomu formularza KONFIGURACJA DOSTĘPU Użytkownik będzie miał możliwość wykonania akcji, za pomocą następujących przycisków:\n\n* image:main/image158.png[image,width=53,height=49] – edycja, umożliwia zmianę wprowadzonej konfiguracji,\n* image:main/image159.png[image,width=41,height=43] – usunięcie, umożliwia usunięcie wprowadzonej konfiguracji.\n\nW górnej część formularza dostępne są przyciski:\n\n* image:main/image160.png[image,width=45,height=53] – umożliwiający powrót do formularza USTAWIENIA,\n* image:main/image161.png[image,width=48,height=61]– umożliwiający przejście do głównego menu.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 2096,
+      "line_end": 2187
+    }
+  ]
+}

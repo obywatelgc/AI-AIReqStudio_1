@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000372",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu wyciągów"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie XML (format CEB)"
+    }
+  ],
+  "section_title": "Plik w formacie XML (format CEB)",
+  "text": "W formacie XML (format CEB) dozwolone są następujące tagi:\n\n[cols=\"5,4\",options=\"header\",]\n|===========================================================\n|Tagi |Opis\n|<wyciagi data_od=\"data poczatku\" data_do=\"data konca\" rachunek=\"numer rachunku\" opis=\"opis rachunku\" waluta=\"waluta rachunku\" nazwa=\"nazwa klienta\"></wyciagi>|Otwiera i zamyka format eksportu w XML.\n|<wyciag data=\"data wyciagu\" rachunek=\"numer rachunku\" opis=\"opis rachunku\" waluta=\"waluta rachunku\" nazwa=\"nazwa klienta\"></wyciag> |Otwiera i zamyka dane dla jednego wyciągu.\n|<saldo_otwarcia></saldo_otwarcia> | Zawiera <kwota></kwota> i <strona></strona>.\n|<kwota></kwota> |Kwota otwarcia\n|<strona></strona> |Strona (C/D).\n|<operacja></operacja> |Otwiera i zamyka dane dla jednej operacji.\n|<pozycja></pozycja>\t|Pozycja operacji na liście.\n|<data_waluty></data_waluty> |Data waluty.\n|<opis></opis> |Opis transakcji.\n|<bank></bank> |Numer banku.\n|<rachunek></rachunek> |Numer rachunku.\n|<kwota></kwota> |Kwota operacji.\n|<strona></strona> |Strona operacji.\n|<waluta></waluta> |Waluta operacji.\n|<nazwa1></nazwa1> |Nazwa odbiorcy (dla strony Wn) lub nadawcy (dla strony Ma) -linia1.\n|<nazwa2></nazwa2> |Nazwa odbiorcy – linia 2.\n|<nazwa3></nazwa3> |Nazwa odbiorcy – linia 3.\n|<nazwa4></nazwa4> |Nazwa odbiorcy – linia 4.\n|<tresc_1></tresc_1> |Opis operacji – linia 1.\n|<tresc_2></tresc_2> |Opis operacji – linia 2.\n|<tresc_3></tresc_3> |Opis operacji – linia 3.\n|<tresc_4></tresc_4> |Opis operacji – linia 4.\n|<data_ksiegowa></data_ksiegowa> |Data księgowa.\n|<saldo_zamkniecia></saldo_zamkniecia>| Zawiera <kwota></kwota> i <strona></strona>.\n|<kwota></kwota> |Kwota zamknięcia.\n|<strona></strona> |Strona (C/D).\n|===========================================================\n\nKażde powtórzenie tagów <operacja> ... </operacja> jest traktowane jako kolejna operacja z wyciągu.\nKażde powtórzenie tagów <wyciag> ... </wyciag> jest traktowane jako kolejny wyciąg z listy.\n\nPolskie znaki kodowane są w ISO 8859-2.\n\n[underline]##Poniżej przedstawiono przykład pliku eksportu wyciągów w formacie XML (format CEB):##\n\n[source, xml]\n----\n<?xml version=\"1.0\" encoding=\"ISO-8859-2\"?>\n<WYCIAGI data_od=\"2019-12-04\" data_do=\"2019-12-06\" rachunek=\"51910100032002000007240002\" opis=\"RB AH\" waluta=\"PLN\" nazwa=\"JAN TESTOWY\">\n  <WYCIAG data=\"2019-12-06\" rachunek=\"51910100032002000007240002\" opis=\"RB AH\" waluta=\"PLN\" nazwa=\"JAN TESTOWY\">\n    <SALDO_OTWARCIA>\n      <KWOTA>0.00</KWOTA>\n      <STRONA>C</STRONA>\n    </SALDO_OTWARCIA>\n    <OPERACJA>\n      <POZYCJA>1</POZYCJA>\n      <DATA_WALUTY>2019-12-04</DATA_WALUTY>\n      <OPIS>Uruchomienie pozyczki</OPIS>\n      <BANK>91010003</BANK>\n      <RACHUNEK>32910100031002000007240001</RACHUNEK>\n      <KWOTA>34510.00</KWOTA>\n      <STRONA>C</STRONA>\n      <WALUTA>PLN</WALUTA>\n      <NAZWA1>JAN TESTOWY</NAZWA1>\n      <NAZWA2>ul. TEST 1/1</NAZWA2>\n      <NAZWA3>11-11 MIEJSCOWOSC</NAZWA3>\n      <NAZWA4/>\n      <TRESC1>Uruchomienie pozyczki</TRESC1>\n      <TRESC2>nr KHM\\1900369</TRESC2>\n      <TRESC3/>\n      <TRESC4/>\n    </OPERACJA>\n    <OPERACJA>\n      <POZYCJA>2</POZYCJA>\n      <DATA_WALUTY>2019-12-04</DATA_WALUTY>\n      <OPIS>Lokata nr SDN\\1901402</OPIS>\n      <BANK>91010003</BANK>\n      <RACHUNEK>27910100033002000007240001</RACHUNEK>\n      <KWOTA>700.00</KWOTA>\n      <STRONA>D</STRONA>\n      <WALUTA>PLN</WALUTA>\n      <NAZWA1>JAN TESTOWY</NAZWA1>\n      <NAZWA2>ul. TEST 1/1</NAZWA2>\n      <NAZWA3>11-11 MIEJSCOWOSC</NAZWA3>\n      <NAZWA4/>\n      <TRESC1>Lokata nr SDN\\1901402</TRESC1>\n      <TRESC2>- załozenie</TRESC2>\n      <TRESC3/>\n      <TRESC4/>\n    </OPERACJA>\n    <OPERACJA>\n      <POZYCJA>3</POZYCJA>\n      <DATA_WALUTY>2019-12-04</DATA_WALUTY>\n      <OPIS>Pobranie opłaty lub prowizji: Przelewy wewnętrzne</OPIS>\n      <RACHUNEK/>\n      <KWOTA>2.00</KWOTA>\n      <STRONA>D</STRONA>\n      <WALUTA>PLN</WALUTA>\n      <NAZWA1>Bank Spółdzielczy</NAZWA1>\n      <NAZWA2/>\n      <NAZWA3/>\n      <NAZWA4/>\n      <TRESC1>Pobranie oplaty lub prowizji: Przelewy wewnetrzne</TRESC1>\n      <TRESC2/>\n      <TRESC3/>\n      <TRESC4/>\n    </OPERACJA>\n    <OPERACJA>\n      <POZYCJA>4</POZYCJA>\n      <DATA_WALUTY>2019-12-05</DATA_WALUTY>\n      <OPIS>test</OPIS>\n      <BANK>15400004</BANK>\n      <RACHUNEK>57154000046487348673786138</RACHUNEK>\n      <KWOTA>2.00</KWOTA>\n      <STRONA>D</STRONA>\n      <WALUTA>PLN</WALUTA>\n      <NAZWA1>Testowy Odbiorca</NAZWA1>\n      <NAZWA2>ulica Testowa 100/ABCD,</NAZWA2>\n      <NAZWA3>12-345 Testowa Miejscowosc</NAZWA3>\n      <NAZWA4/>\n      <TRESC1>test</TRESC1>\n      <TRESC2/>\n      <TRESC3/>\n      <TRESC4/>\n    </OPERACJA>\n    <SALDO_ZAMKNIECIA>\n      <KWOTA>33806.00</KWOTA>\n      <STRONA>C</STRONA>\n    </SALDO_ZAMKNIECIA>\n  </WYCIAG>\n</WYCIAGI>\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 3486,
+      "line_end": 3614
+    }
+  ]
+}

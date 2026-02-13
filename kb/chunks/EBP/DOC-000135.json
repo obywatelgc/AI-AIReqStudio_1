@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000135",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (GryfCard)"
+    },
+    {
+      "level": 3,
+      "title": "Widżet karty"
+    }
+  ],
+  "section_title": "Widżet karty",
+  "text": "Widżet *Karty* może być w dwóch rozmiarach: standardowym i rozszerzonym.\n\nNa widżecie standardowym jest możliwość:\n\n* wyboru karty w celu zaprezentowaniu skróconych informacji o niej, czyli:\n** numer karty częściowo zamaskowany,\n** dane właściciela,\n** data ważności,\n** rodzaj karty,\n** limit kredytu. Ponadto dostępne są akcje:\n* [SPŁAĆ KARTĘ] - przejście do spłaty karty (przycisk dostępny w zależności od rodzaju karty),,\n* [SZCZEGOŁY] - przejście do szczegółów wybranej karty.\n\nimage::Karty/image2k.png[]\n\nNa widżecie rozszerzonym prócz tych samych informacji co na widoku standardowym dodatkowo prezentowane są:\n\n* informacja o ostatniej transakcji na karcie:\n** kwota,\n** tytuł,\n** data,\n(w przypadku braku ostatnich transakcji wyświetli się odpowiedni komunikat).\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 626,
+      "line_end": 649
+    }
+  ]
+}

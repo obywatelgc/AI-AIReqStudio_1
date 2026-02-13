@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000158",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista przelewów - podgląd listy"
+    }
+  ],
+  "section_title": "Lista przelewów - podgląd listy",
+  "text": "Dyspozycje przelewów z poziomu Listy zleceń prezentowane są w formie listy. Na liście wyświetlane są dyspozycje z domyślnego przedziału czasowego – od miesiąca wstecz do miesiąca w przód (ze względu na dyspozycje z datą przyszłą). Lista jest stronicowana.\n\nimage::Lista_zlecen/image2.png[]\n\nDla każdej dyspozycji dostępne są następujące informacje:\n\n* *Data dostarczenia* – data realizacji dyspozycji, +\n* *Status* – status przelewu, +\n* *Odbiorca* – nazwa odbiorcy płatności, numer rachunku odbiorcy, +\n* *Referencje/Opis* – referencje/tytuł płatności przelewu, +\n* *Kwota* - kwota płatności wraz z symbolem waluty.\n\nWybranie wiersza dyspozycji powoduje jego rozwinięcie i prezentację dodatkowych informacji:\n\n* *Rodzaj przelewu* – np. przelew zwykły, przelew podatku, +\n* *Z rachunku* – numer rachunku nadawcy.\n\nDla każdej dyspozycji prezentowany jest *panel akcji pojedynczych* (przyciski [AKCEPTUJ] i [DODATKOWE OPCJE]), czyli zestaw akcji jakie można wykonać na dyspozycji o określonym statusie. Dodatkowo na dostępność wybranych akcji wpływają uprawnienia, które posiada Użytkownik (uprawnienia są ustawiane przez Administratora Użytkowników w opcji _Ustawienia→Uprawnienia Użytkowników_).\n\nPonowne kliknięcie zwija wiersz dyspozycji.\n\nPod listą prezentowane jest podsumowanie dyspozycji per strona oraz per całość, w podziale na waluty. W przypadku gdy lista rekordów na liście mieści się na jednej stronie, to system prezentuje wyłącznie podsumowanie całości.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 33,
+      "line_end": 56
+    }
+  ]
+}

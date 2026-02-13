@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000088",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Rachunki"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie listy rachunków"
+    },
+    {
+      "level": 4,
+      "title": "Modyfikacja nazwy własnej rachunku"
+    }
+  ],
+  "section_title": "Modyfikacja nazwy własnej rachunku",
+  "text": "W celu ułatwienia identyfikacji rachunku, Użytkownik ma możliwość modyfikacji nazwy produktu z poziomu:\n\n* listy rachunków za pomocą ikonki image:Rachunki/image15.png[image,width=50,height=53]znajdującej się przy nazwie rachunku\n\nimage::Rachunki/image16.png[image,width=412,height=135]\n\n* szczegółów rachunku za pomocą ikonki image:Rachunki/image15.png[image,width=50,height=53]znajdującej się przy polu *Nazwa własna*.\n\nimage::Rachunki/image17.png[image,width=525,height=78]\n\nObok pola dostępne są przyciski:\n\n* image:Rachunki/image18.png[image,width=38,height=51]– umożliwia zapisanie zmienionej nazwy własnej rachunku. Nazwę własną rachunku zapisać można także po jej wprowadzeniu i użyciu klawisza [Enter] z klawiatury.\n* image:Rachunki/image19.png[image,width=39,height=41]– umożliwia rezygnację ze zmiany nazwy własnej rachunku.\n\nW przypadku, gdy Użytkownik usunie wprowadzoną w polu nazwę własną rachunku, system przyporządkowuje mu nazwę systemową.\n\nNazwa własna przypisana jest do Użytkownika co oznacza, że ten sam produkt u różnych Użytkowników może posiadać różną nazwę.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Rachunki.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Rachunki.adoc",
+      "line_start": 183,
+      "line_end": 202
+    }
+  ]
+}

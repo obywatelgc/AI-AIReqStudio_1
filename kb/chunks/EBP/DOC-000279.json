@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000279",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przepływy"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie informacji o odbiorcy przepływów danego miesiąca"
+    }
+  ],
+  "section_title": "Przeglądanie informacji o odbiorcy przepływów danego miesiąca",
+  "text": "Aby przejść do informacji o odbiorcach, należy z poziomu podsumowania przepływów kliknąć w obszar wybranego wiersza i wybrać przycisk _[Odbiorcy]_.\n\nWyświetlany jest wówczas formularz ODBIORCY, prezentujący listę wszystkich odbiorców przepływów z danego miesiąca__.__\n\nimage::Przeplywy/image23.png[image,width=604,height=180]\n\nSystem umożliwia filtrowanie odbiorców za pomocą pola do wyszukiwania znajdującego się nad listą, a następnie już po wpisaniu pierwszej litery/cyfry/znaku w polu system filtruje listę.\n\nimage::Przeplywy/image18.png[]\n\nKliknięcie w wiersz wybranego odbiorcy powoduje wyświetlenie dodatkowych informacji:\n\n* *Liczba transakcji* – liczby transakcji do odbiorcy,\n* *Numer rachunku* – numer rachunku odbiorcy.\n\nimage::Przeplywy/image25.png[]\n\nPonowne kliknięcie w obszar rozwiniętego wiersza odbiorcy powoduje zwinięcie dodatkowych informacji.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przeplywy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przeplywy.adoc",
+      "line_start": 109,
+      "line_end": 128
+    }
+  ]
+}

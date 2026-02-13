@@ -1,0 +1,24 @@
+{
+  "chunk_id": "DOC-000005",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 3,
+      "title": "Wprowadzenie"
+    }
+  ],
+  "section_title": "Wprowadzenie",
+  "text": "Asseco EBP (Enterprise Banking Platform) jest unikalnym rozwiązaniem bankowości internetowej i mobilnej opartym na najnowszej generacji Platformie internetowego dostępu Użytkownika do produktów i usług biznesowych.\n\nDzięki zastosowaniu innowacyjnej koncepcji ekosystemu miniaplikacji, rozwiązanie to pozwala na osiągnięcie przewagi konkurencyjnej poprzez swobodne kształtowanie usług oferowanych Użytkownikowi na Platformie zdalnego dostępu.\n\nRozwiązanie Asseco EBP wyróżnia innowacyjna koncepcja udostępniania funkcjonalności systemu dla klientów instytucji poprzez komponenty zwane miniaplikacjami. Miniaplikacje wraz z Platformą stanowiącą środowisko ich działania, tworzą swoisty ekosystem, w którym komunikacja odbywa się za pomocą ujednoliconego protokołu.\n\nOtwartość architektury rozwiązania pozwala na opracowywanie nieograniczonej liczby miniaplikacji, o dowolnej skali złożoności bez konieczności dostosowywania aplikacji do pracy na różnych urządzeniach.\n\nSystem Asseco EBP automatycznie dostosowuje swój wygląd i funkcjonalność do urządzenia, z którego Użytkownik korzysta w danym momencie (jedno spójne rozwiązanie dla bankowości internetowej i mobilnej).\n\nRozwiązanie Asseco EBP pozwala na swobodne dopasowanie funkcjonalności do indywidualnych potrzeb i oczekiwań Użytkownika.\n\n*Platforma* to uniwersalna platforma dostępu internetowego do usług biznesowych. Stanowi środowisko działania miniaplikacji, a tym samym bazę do stworzenia systemu udostępnionego Użytkownikom, poprzez dodawane miniaplikacje.\n\n*Miniaplikacja* jest programowym modułem funkcjonalnym, osadzonym na Platformie, udostępniającym odbiorcom usługi świadczone przez instytucję, funkcjonalność biznesową np. Płatności.\n\nMiniaplikacja integruje funkcjonalność tego samego obszaru funkcjonalnego np. Płatności i korzysta ze specyfikacji usług dostępnych na Platformie.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 9,
+      "line_end": 27
+    }
+  ]
+}

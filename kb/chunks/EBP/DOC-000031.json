@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000031",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Metody autoryzacji zleceń"
+    },
+    {
+      "level": 4,
+      "title": "Kod PIN + kod SMS"
+    }
+  ],
+  "section_title": "Kod PIN + kod SMS",
+  "text": "W przypadku Użytkowników posiadających przypisaną metodę autoryzacji Kod PIN + Kod SMS, autoryzacja zleceń następuje po wprowadzeniu poprawnego kodu PIN oraz przesłanego kodu SMS.\n\nOperator w module Asseco BackOffice wyszukuje osobę i ustawia *Priorytetowe urządzenie do autoryzacji* na _Kod PIN + Kod SMS_ oraz ustawia hasło tymczasowe. Wygenerowane hasło tymczasowe zostaje wysłane za pomocą SMS na numer telefonu Użytkownika.\n\nJeśli Użytkownik ma ustawiony sposób autoryzacji na Kod PIN + kod SMS lub zrestartował PIN za pomocą administratora banku to po zalogowaniu system zaprezentuje komunikat zalecający zmianę PINu do autoryzacji.\n\nimage::main/image731.png[image,width=479,height=230]\n\nWybór przycisku [USTAW TERAZ] powoduje przeniesienie Użytkownika do formatki ZMIANA PIN DO AUTORYZACJI. PIN ważny jest przez określony czas (np. 15 min).\n\nimage::main/image732.png[image,width=612,height=310]\n\nUżytkownik musi wpisać obecny PIN tymczasowy, który otrzymał za pomocą SMS oraz wpisać i powtórzyć nowy PIN, a następnie kliknąć przycisk [ZATWIERDŹ].\n\nNowy PIN musi być zgodny z zasadami bezpieczeństwa zgodnie z informacją w dolnej części formularza, tzn.:\n\n* musi składać się z 4-8 znaków,\n* musi zawierać przynajmniej jedną wielką literę,\n* musi zawierać przynajmniej jedną małą literę,\n* musi zawierać przynajmniej jeden znak specjalny,\n* musi zawierać przynajmniej jedną cyfrę,\n* może zawierać wyłącznie znaki ze zbioru: +\n0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()-_=+[\\{]}\\|;:\",<.>/?.\n\nPo zatwierdzeniu zmian, system prezentuje komunikat: _PIN został zmieniony_.\n\nimage::main/image733.png[image,width=459,height=255]\n\nNatomiast wybór przycisku [PRZYPOMNIJ PÓŹNIEJ] spowoduje, że system wyświetli komunikat o konieczności zmiany PIN po ponownym zalogowaniu.\n\nJeśli Użytkownik nie zmieni PIN do autoryzacji bezpośrednio po zalogowaniu i przejdzie do wykonania przelewów, to przy wejściu Użytkownika na formularz potwierdzenia przelewu, system wymusza zmianę PINu, prezentując odpowiedni komunikat:\n\nimage::main/image734.png[image,width=463,height=283]\n\nWybór przycisku [PRZEJDŹ DO USTAWIEŃ] powoduje przeniesienie Użytkownika do formatki ZMIANA PIN DO AUTORYZACJI. PIN ważny jest przez określony czas (np. 15 min).\n\nPo zmianie PINu tymczasowego, aby zautoryzować dyspozycję Użytkownik będzie musiał:\n\n* podać PIN w polu _Podaj PIN,_\n* podać kod SMS w polu _Podaj kod SMS,_\n* zatwierdzić zmiany za pomocą przycisku [AKCEPTUJ].\n\nimage::main/image735.png[image,width=504,height=210]\n\nW przypadku poprawnej weryfikacji danych system zaprezentuje komunikat o poprawnej autoryzacji.\n\nW przypadku wprowadzenia błędnego PINu albo kodu SMS, system wyświetli odpowiedni komunikat:\n\nimage::main/image736.png[image,width=575,height=288]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 636,
+      "line_end": 686
+    }
+  ]
+}

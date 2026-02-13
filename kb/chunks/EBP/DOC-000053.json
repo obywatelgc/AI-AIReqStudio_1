@@ -1,0 +1,40 @@
+{
+  "chunk_id": "DOC-000053",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Uprawnienia Użytkowników"
+    },
+    {
+      "level": 5,
+      "title": "Uprawnienia funkcjonalne"
+    },
+    {
+      "level": 6,
+      "title": "Uprawnienia dla Rachunków"
+    }
+  ],
+  "section_title": "Uprawnienia dla Rachunków",
+  "text": "Administrator ma możliwość zarządzania następującymi uprawnieniami funkcjonalnymi do rachunków:\n\nimage::main/image138.jpg[image,width=612,height=29]\n\n* Przeglądanie – opcja steruje dostępem (prezentacją) miniaplikacji Rachunki. Jeżeli brak uprawnienia to Użytkownik nie widzi miniaplikacji Rachunki, ukryty jest widżet i opcja w menu. W opcjach wyboru rachunku obciążanego przy realizacji przelewu, lista rachunków jest dostępna.\n* Saldo – oznacza, że Użytkownik ma dostępną informacje o kwocie dostępnych środków (dotyczy również prezentacji w szczegółach rachunku na listach wyboru rachunku, widżet itd.).\n* Historia operacji – oznacza, że Użytkownik ma dostęp do wszystkich opcji dla historii operacji rachunku, dotyczy również:\n\n** eksportu statusów operacji (opcja _Przelewy → Eksport statusów_),\n** blokad na rachunku (opcja _Rachunki –> Blokady_).\n\n* Grupy rachunków - opcja steruje dostępem do edycji zbioru grup i przypisaniem rachunków do grup rachunków, opcja dostępna przy włączonym przełączniku accountGroups,\n* Wyciągi – oznacza, że Użytkownik ma dostęp do przeglądania listy wyciągów i pobierania (nie jest połączone z uprawnieniem Saldo).\n\nDodatkowe informacje:\n\n* prezentacja wykresu salda na rachunku na widżet jest zależna od uprawnienia: Saldo.\n* dostęp do opcji _podgląd historii operacji_ jest zależny wyłącznie od uprawnienia historii operacji, prezentacja salda na podsumowaniu oraz przy operacji na zestawieniu nie jest zależna od uprawnienia Saldo.\n* administrator będzie mógł nadawać pozostałe uprawnienia tylko wtedy gdy Użytkownik będzie miał nadane uprawnienie _Przeglądnie_, w innym przypadku pozostałe uprawnienia będą wyszarzone.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 1787,
+      "line_end": 1807
+    }
+  ]
+}

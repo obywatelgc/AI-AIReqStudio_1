@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000029",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Metody autoryzacji zleceń"
+    },
+    {
+      "level": 4,
+      "title": "Mobilny podpis"
+    }
+  ],
+  "section_title": "Mobilny podpis",
+  "text": "W przypadku Użytkowników posiadających przypisaną metodę autoryzacji Mobilny podpis, autoryzacja zleceń następuje po akceptacji operacji w aplikacji mobilnej Asseco BSGo na sparowanym urządzeniu autoryzującym.\n\nW procesie autoryzacji dyspozycji za pomocą aplikacji mobilnej Asseco BSGo mogą wystąpić następujące komunikaty informujące o błędzie:\n\n* _Nastąpiło przekroczenie czasu oczekiwania na autoryzację_, w przypadku:\n\n** braku podpisania dyspozycji w określonym czasie.\n\n* _Autoryzacja została odrzucona_, w przypadku:\n\n** odrzucenia autoryzacji w aplikacji mobilnej Asseco BSGo.\n\n* _Brak odpowiedzi z serwera autoryzującego_, w przypadku gdy:\n\n** serwer autoryzacyjny nie zwrócił informacji w określonym czasie.\n\n* _Błąd autoryzacji_, w przypadku:\n\n** błędu w systemie autoryzacyjnym.\n\n* _Brakuje powiązanego urządzenia do autoryzacji mobilnej_, w przypadku gdy:\n\n** Użytkownik nie posiada aktywnego urządzenia mobilnego.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 570,
+      "line_end": 594
+    }
+  ]
+}

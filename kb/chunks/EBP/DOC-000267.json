@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000267",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Doładowania"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie historii doładowań"
+    }
+  ],
+  "section_title": "Przeglądanie historii doładowań",
+  "text": "Po kliknięciu w tytuł widżetu *Doładowania* lub poprzez wybór opcji z bocznego menu _Doładowania_ wyświetlane jest okno prezentujące historię doładowań:\n\nimage::Doladowania/image3.png[image,width=604,height=264]\n\nUżytkownik po wybraniu odpowiedniej wartości w polu *Lista doładowań,* ma możliwość przeglądania doładowań:\n\n* zrealizowanych,\n* odrzuconych,\n* w realizacji.\n\nimage::Doladowania/image4.png[image,width=267,height=196]\n\nNa historii doładowań dla każdego doładowania dostępne są następujące informacje:\n\n* *Data wykonania* – data wykonania doładowania (data w formacie DD.MM.RRRR),\n* *Numer telefonu* – numer telefonu, na który złożono doładowanie,\n* *Kwota* – kwota doładowania wraz z walutą.\n\nWybranie doładowania z listy (poprzez kliknięcie w rekord na liście) powoduje wyświetlenie dodatkowej informacji:\n\n* *Operator* – nazwa Operatora,\n\noraz przycisk *[SZCZEGÓŁY]* – który przenosi do szczegółów doładowania.\n\nW górnej części formularza _Historia doładowań_ dostępne są następujące przyciski:\n\n* [NOWE DOŁADOWANIE] – umożliwiający zlecenie nowego doładowania telefonu,\n* [SZABLONY] – przenosi do szablonów doładowań, gdzie możliwe jest zarządzanie szablonami,\n\nSystem umożliwia także filtrowanie listy doładowań po wybraniu ikony image:Doladowania/image5.png[image,width=48,height=54]znajdującej się nad listą, a następnie po wpisaniu danych w polu wyszukiwania:\n\nimage::Doladowania/image6.png[image,width=355,height=59]\n\nSystem filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnego doładowania w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści.\n\nAby powrócić do pełnej listy doładowań należy kliknąć w ikonę image:Doladowania/image7.png[image,width=50,height=56]w polu wyszukiwania.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Doladowania.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Doladowania.adoc",
+      "line_start": 39,
+      "line_end": 76
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "chunk_id": "DOC-000280",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przepływy"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie szczegółowych informacji o przepływach w miesiącu"
+    }
+  ],
+  "section_title": "Przeglądanie szczegółowych informacji o przepływach w miesiącu",
+  "text": "Aby przejść do szczegółowych informacji na temat przepływów w wybranym miesiącu, należy z poziomu podsumowania przepływów kliknąć w obszar wybranego wiersza i wybrać przycisk _[Szczegóły]_.\n\nWyświetlany jest wówczas formularz SZCZEGÓŁY MIESIĄCA.\n\nimage::Przeplywy/image27.png[]\n\nNa formularzu prezentowana jest lista typów operacji składających się na miesięczne przepływy (odrębnie dla przychodów, odrębnie dla wydatków). Użytkownik ma możliwość przechodzenia między poszczególnymi stronami (Przychody, Wydatki) wybierając odpowiednią pozycję z listy rozwijalnej.\n\nSystem umożliwia filtrowanie prezentowanych danych za pomocą:\n\n* pola wyszukiwania znajdującego się nad listą, a następnie już po wpisaniu pierwszej litery/cyfry/znaku w polu system filtruje listę.\n\nimage::Przeplywy/image18.png[]\n\n* rozwijanej listy, przez wybór jednej z dwóch dostępnych wartości:\n\nimage::Przeplywy/image29.png[]\n\nKliknięcie w wiersz wybranej z listy pozycji, powoduje wyświetlenie dodatkowych formularzy:\n\nFormularz z listą przychodów\n\nimage::Przeplywy/image30.png[]\n\nFormularz z listą wydatków\n\nimage::Przeplywy/image31.png[]\n\nPowyższe formularze prezentują dodatkowe informacje:\n\n* Liczba transakcji – liczba transakcji danego typu,\n* [Szczegóły] – umożliwiająca przejście do listy wszystkich nadawców lub odbiorców (w zależności od wyboru Użytkownika).\n\nW zależności od wyboru Przychody/Wydatki, naciśnięcie na formularzu SZCZEGÓŁY MIESIĄCA opcji [Szczegóły] powoduje wyświetlenie:\n\n* dla przychodów formularza NADAWCY\n\nimage::Przeplywy/image32.png[]\n\n* dla wydatków formularza ODBIORCY\n\nimage::Przeplywy/image33.png[]\n\nNa liście prezentowane są informacje na temat nadawcy bądź odbiorcy zgodnie z opisem odpowiednio w rozdziałach _Przeglądanie informacji o nadawcy przepływów danego miesiąca_ oraz _Przeglądanie informacji o odbiorcy przepływów danego miesiąca_.\n:imagesdir: images\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przeplywy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przeplywy.adoc",
+      "line_start": 130,
+      "line_end": 174
+    },
+    {
+      "source_file": "miniapps/Miniaplikacja_Autodealing.adoc",
+      "line_start": 1,
+      "line_end": 2
+    }
+  ]
+}

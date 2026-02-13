@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000101",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lokaty"
+    },
+    {
+      "level": 3,
+      "title": "Modyfikacja nazwy własnej lokaty"
+    }
+  ],
+  "section_title": "Modyfikacja nazwy własnej lokaty",
+  "text": "W celu ułatwienia identyfikacji lokat, Użytkownik ma możliwość modyfikacji nazwy produktu z poziomu:\n\n* listy lokat za pomocą ikonki image:Lokaty/image13.png[image,width=42,height=43] znajdującej się przy nazwie lokaty\n\nimage::Lokaty/image14.png[image,width=353,height=100]\n\n* szczegółów lokaty za pomocą ikonki image:Lokaty/image13.png[image,width=42,height=43] znajdującej się przy polu _Nazwa własna_.\n\nimage::Lokaty/image15.png[image,width=477,height=92]\n\nW celu ułatwienia identyfikacji lokaty, Użytkownik z poziomu szczegółów lokaty ma możliwość ustawienia nazwy własnej dla lokaty za pomocą ikony image:Lokaty/image13.png[image,width=42,height=43]znajdującej się obok pola _Twoja nazwa_. Wybranie ikony uaktywnia pole do wprowadzenia nazwy własnej lokaty.\n\nW przypadku, gdy Użytkownik usunie wprowadzoną w polu nazwę własną lokaty, system przyporządkowuje mu nazwę systemową.\n\nNazwa własna przypisana jest do Użytkownika, co oznacza, że ten sam produkt u różnych Użytkowników może posiadać różną nazwę.\n\nObok pola dostępne są przyciski:\n\n* image:Lokaty/image16.png[image,width=44,height=50] – umożliwia zapisanie nazwy własnej lokaty. Nazwę własną lokaty można zapisać również po jej wprowadzeniu i użyciu klawisza [Enter] z klawiatury.\n* image:Lokaty/image17.png[image,width=43,height=50] – umożliwia rezygnację z ustawienia nazwy własnej lokaty.\n\nW przypadku, gdy Użytkownik usunie wprowadzoną w polu nazwę własną lokaty, system przyporządkowuje mu nazwę systemową z pola _Typ lokaty_.\n\nNazwa własna przypisana jest do Użytkownika co oznacza, że ten sam produkt u różnych Użytkowników może posiadać różną nazwę.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lokaty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lokaty.adoc",
+      "line_start": 156,
+      "line_end": 181
+    }
+  ]
+}

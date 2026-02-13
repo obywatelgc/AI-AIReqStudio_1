@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000104",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lokaty"
+    },
+    {
+      "level": 3,
+      "title": "Założenie lokaty"
+    }
+  ],
+  "section_title": "Założenie lokaty",
+  "text": "ent użytkownikowi może zostać automatycznie wysłana kampania powitalna na Nośnik Trwały, o ile została skonfigurowana w systemie Asseco ABP Advisory Console.\n\nKampania powitalna to pakiet dokumentów przygotowany przez operatora systemu Asseco ABP Advisory Console (Kampanie informacyjne > Pakiety > \"Kampania powitalna na Nośniku Trwałym\"). Opis znajduje się w dokumentacji DOC.UZT_Asseco_ABP_MDT_4.15.002C.pdf. Przygotowane dokumenty zostają wysłane i zaprezentowane na liście <<e-Dokumenty,e-Dokumentów>> w systemie Asseco EBP.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lokaty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lokaty.adoc",
+      "line_start": 228,
+      "line_end": 333
+    }
+  ]
+}

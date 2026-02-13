@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000218",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie listy przelewów"
+    }
+  ],
+  "section_title": "Przeglądanie listy przelewów",
+  "text": "Po kliknięciu w tytuł widżetu lub poprzez wybór opcji z bocznego menu *Przelewy* wyświetlane jest okno prezentujące listę przelewów o statusach:\n\n* Aktywne,\n* Odrzucone,\n* Anulowane,\n* Zawieszone,\n* Zrealizowane.\n\nWidoczne są wszystkie przelewy jednorazowe oczekujące na realizację, w tym przelewy zwykłe (ELIXIR/EXPRESS ELIXIR/SORBNET), podatkowe, na rachunek własny, walutowe (SWIFT) oraz przelewy cykliczne (zlecenia stałe z uwzględnieniem zleceń stałych zakładanych w systemie transakcyjnym). Dodatkowo na liście przelewów prezentowane są również przelewy składane z wykorzystaniem systemu Paybynet oferowanego przez Krajową Izbę Rozliczeniową S.A.\n\nimage::Przelewy/image3.png[]\n\nDla każdego przelewu z listy prezentowane są następujące informacje:\n\n* *Data realizacji* - data realizacji przelewu, z możliwością zmiany kierunku sortowania,\n\n* *Odbiorca przelewu* - dane odbiorcy przelewu,\n\n* *Tytuł przelewu*,\n\n* *Kwota* - kwota przelewu wraz z symbolem waluty.\n\nPo kliknięciu w wiersz wybranego przelewu wyświetlane są dodatkowe informacje na temat przelewu:\n\n* *Rodzaj przelewu* - typ przelewu; dla zleceń stałych dodatkowo prezentowana jest wartość cykliczny,\n\n* *Przelew z rachunku* - numer rachunku, z którego będzie wykonana płatność. Dla urządzeń o małych rozdzielczościach (smartfonów), numer rachunku prezentowany jest w postaci zamaskowanej, dla pozostałych urządzeń wyświetlany jest pełny numer rachunku.\n\nimage::Przelewy/image4.png[image,width=604,height=112]\n\nPo rozwinięciu wiersza przelewu dostępne są przyciski:\n\n* [SZCZEGÓŁY] - prezentacja szczegółów płatności.\n\n* [EDYTUJ] - edycja aktywnej płatności zaplanowanej,\n\n* [ANULUJ] - anulowanie aktywnej płatności zaplanowanej,\n\nPonowne kliknięcie w obszar rozwiniętego wiersza przelewu powoduje zwinięcie dodatkowych informacji i przycisków prezentowanych dla przelewu.\n\nNOTE: Dostępność akcji dla Użytkownika zależy od posiadania odpowiednich uprawnień nadanych przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.\n\nLista przelewów jest stronicowana. Przejście do kolejnych stron następuje poprzez wybór przycisków nawigacyjnych znajdujących się pod listą. Dodatkowo Użytkownik może wybrać liczbę wierszy, która ma być prezentowana na jednej stronie (dostęne wartości do wyboru to: 10, 20, 50 lub 100).\n\nSystem umożliwia także filtrowanie przelewów za pomocą dedykowanego pola wyszukiwania, znajdującego się nad listą. Po wpisaniu w polu danych system rozpoczyna wyszukiwanie:\n\nimage::Przelewy/image5.png[image,width=286,height=54]\n\nSystem filtruje listę już po wpisaniu pierwszej litery / cyfry / znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej płatności w sytuacji, gdy nie znajdzie w systemie treści wprowadzonej w polu wyszukiwania.\n\nNOTE: W przypadku, gdy lista płatności jest stronicowana filtrowanie list dotyczy wyłącznie zakresu bieżącej strony listy.\n\nAby powrócić do pełnej listy przelewów należy kliknąć w ikonę image:Przelewy/image6.png[image,width=51,height=47] w polu wyszukiwania.\n\nimage::Przelewy/image7.png[image,width=327,height=65]\n\nUżycie przycisku [Pokaż filtry] rozwija dodatkowe opcje do filtrowania przelewów:\n\n* *Pokaż transakcje* - umożliwia Użytkownikowi filtrowanie przelewów ze względu na status transakcji:\n** Aktywne,\n** Odrzucone,\n** Anulowane,\n** Zawieszone,\n** Zrealizowane.\n\n* *Rodzaj przelewu* - umożliwia Użytkownikowi filtrowanie przelewów ze względu na rodzaj:\n** Wszystkie,\n** Zwykły,\n** Własny,\n** Podatkowy,\n** Walutowy - SWIFT\n\n* *Zlecenia stałe* - umożliwia Użytkownikowi wyfiltrowanie zleceń stałych.\n\nimage::Przelewy/image7a.png[]\n\nKonieczne do wyfiltrowania przelewów jest użycie przycisku [FILTRUJ].\n\nAby zamknąć opcje filtrów należy użyć przycisku [Ukryj filtry].\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 64,
+      "line_end": 144
+    }
+  ]
+}

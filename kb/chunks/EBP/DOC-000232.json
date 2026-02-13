@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000232",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Przelewy"
+    },
+    {
+      "level": 4,
+      "title": "Zlecenie przelewu własnego (korekta własna)"
+    }
+  ],
+  "section_title": "Zlecenie przelewu własnego (korekta własna)",
+  "text": "Złożenie zlecenia płatności z rachunku własnego, na ten sam rachunek własny jest możliwe dla  przelewu własnego wykonywanego z kontekstu firmowego (opcja dostępna jest dla bankowości korzystającej z systemu transkcyjnego DefBank).\nUżytkownik wybiera na formatce nowego przelewu typ płatności _Własny_, a następnie zaznaczy checkbox \"Korekta własna\".\n\nimage::Przelewy/image30kw.png[]\n\nNastępnie Użytkownik wypełnia poniższe dane:\n\n* *Typ* - pole zawiera wybraną wcześniej wartość _Własny._ Kliknięcie w pole prezentuje listę typów przelewów i daje możliwość zmiany typu składanego przelewu; pole wymagalne,\n\n* *Przelew z rachunku* - rachunek obciążany; w polu należy wybrać spośród dostępnych rachunków własnych Użytkownika - rachunek do obciążenia, w polu automatycznie podstawiany jest domyślny rachunek do obciążenia, który można zmienić; pole wymagalne;\n\n* *Korekta własna* - checkbox, służy do wykonania przelewu własnego na ten sam rachunek,\n\n* *Na rachunek* - rachunek uznawany; pole z automatu zostanie wypełnione rachunkiem nadawcy, na który mają zostać przelane środki,\n\n* *Odbiorca* - odbiorca przelewu; w polu prezentowane są dane uprawnionej do rachunku firmy,\n\n* *Kwota* - kwota przelewu wyrażona w walucie rachunku,\n\n* *Tytuł* - tytuł przelewu, pole wymagane, pole może zawierać maksymalnie 140 znaków,\n\nNOTE: Dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: `!@#$%^&*()_+=\\\\{}[]:;'<>?,./\\äÄöÖüÜß.\n\n* *Data realizacji* - data realizacji przelewu; domyślnie wstawiana jest data bieżąca. Pole nie jest edytowalne.\n\n* *Referencje* - pole służące do definiowania własnego opisu dla danego przelewu przez Użytkownika, pole widoczne w aplikacji internetowej i nie jest przenoszone do systemu transakcyjnego, pole niewymagalne (dostępne w kontekście firmowym),\n\n\n* [DALEJ] – przejście do kroku 2,\n\n* [DODAJ DO LISTY ZLECEŃ] – przycisk umożliwia zapisanie przelewu na _Listę zleceń_ w statusie _Nowy_.\n\nNa formularzu potwierdzenia danych przelewu (krok 2) system wyświetla formularz z wprowadzonymi danymi w trybie podglądu wraz z zestawem akcji opisanych w rozdziale *Dostępne akcje na drugim kroku nowego przelewu.*\n\nNOTE: Użycie ikony image:Przelewy/image31.png[image,width=40,height=36] powoduje powrót do pierwszego kroku i możliwość poprawy danych przelewu.\n\nPo dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, Użytkownikowi wyświetlane jest potwierdzenie przekazania dyspozycji do realizacji:\n\nimage::Przelewy/image32.png[image,width=512,height=313]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 557,
+      "line_end": 597
+    }
+  ]
+}

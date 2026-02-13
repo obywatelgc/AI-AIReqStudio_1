@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000252",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Import przelewów"
+    },
+    {
+      "level": 4,
+      "title": "Import przelewów podatkowych"
+    }
+  ],
+  "section_title": "Import przelewów podatkowych",
+  "text": "Import przelewów zwykłych dostępny jest po wyborze opcji _Import przelewów podatkowych_.\n\nPo wybraniu opcji importu pojawia się okienko _Import przelewów podatkowych_ z możliwością wybrania pliku z danymi.\n\nimage::Przelewy/image67.png[image,width=604,height=196]\n\nW zależności od parametryzacji banku, podczas importu przelewów istnieje możliwość zablokowania środków dla przelewów odroczonych:\n\nimage::Przelewy/image63a.png[]\n\nNa formularzu dostępny jest przycisk:\n\n* [WYBIERZ PLIK] - umożliwia wskazanie lokalizacji i nazwy pliku do importu,\n\nUżycie ikony image:Przelewy/image31.png[image,width=40,height=36] powoduje wycofanie się z wczytywania pliku.\n\nimage::Przelewy/image68.png[image,width=604,height=239]\n\nPo wyborze pliku na formularzu dostępne są przyciski:\n\n* [ZMIEŃ] - umożliwia zmianę wcześniej wybranego pliku importu,\n\n* [DALEJ] - uruchamia proces importu.\n\nPodczas procesu plik jest sprawdzany pod względem zgodności z ustaloną strukturą. Kolejne okno _Import przelewów podatkowych_ informuje o sprawdzeniu pliku i prezentuje następujące dane:\n\nimage::Przelewy/image69.png[image,width=604,height=280]\n\n* *Poprawne* - liczba poprawnych przelewów o prawidłowych danych po weryfikacji systemu,\n\n* *Błędy* - liczba błędnych przelewów.\n\nNOTE: Dalsza obsługa procesu importu jak w przypadku przelewów zwykłych.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 1306,
+      "line_end": 1340
+    }
+  ]
+}

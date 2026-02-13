@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000187",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Paczki przelewów - panel akcji pojedynczych dla paczki"
+    }
+  ],
+  "section_title": "Paczki przelewów - panel akcji pojedynczych dla paczki",
+  "text": "Dla każdej paczki z listy (po kliknięciu w wiersz) dostępny jest określony zestaw akcji (*panel akcji pojedynczych*) - przyciski: [AKCEPTUJ] i [DODATKOWE OPCJE]) dla każdej paczki.\n\nPoniżej znajduje się zestaw akcji w przypadku gdy Użytkownik posiada odpowiednie uprawnienia nadane przez Administratora Użytkowników w opcji _Ustawienia→Uprawnienia Użytkowników._\n\nimage::Lista_zlecen/image29.png[image,width=604,height=253]\n\nAkcje na wybranej paczce:\n\n* *Akceptuj* - autoryzacja paczki (tylko dla paczki w statusie _Nowa, Do akceptacji_) oraz pogrupowane w [DODATKOWE OPCJE],\n\n* *Przekaż do realizacji* - przekazanie paczki do realizacji (tylko dla paczki w statusie _Gotowa do przekazania_),\n\n* *Rozpakuj* - rozpakowanie paczki (tylko dla paczki w statusie _Nowa_),\n\n* *Edytuj* - edycja danych paczki (tylko dla paczki w statusie _Nowa_),\n\n* *Kopiuj* - skopiowanie paczki,\n\n* *Usuń* - usunięcie paczki (tylko dla paczki w statusie Nowa),\n\n* *Wycofaj akcept* - wycofanie akceptów paczki (tylko dla paczki w statusie _Do akceptacji, W akceptacji, Gotowa do przekazania_),\n\n* *Szczegóły* - szczegóły paczki, skąd można przejść do listy przelewów w paczce.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 549,
+      "line_end": 573
+    }
+  ]
+}

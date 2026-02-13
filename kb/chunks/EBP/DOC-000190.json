@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000190",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Podgląd szczegółów paczki"
+    }
+  ],
+  "section_title": "Podgląd szczegółów paczki",
+  "text": "Podgląd szczegółów paczki dostępny jest z poziomu *panelu akcji pojedynczych*. Na formatce prezentowane są następujące dane:\n\n* *Typ* - typ dyspozycji – paczka,\n\n* *Nazwa* - nazwa paczki,\n\n* *Status* - status paczki,\n\n* *Referencje* - referencje paczki,\n\n* *Liczba przelewów* - liczba przelewów w paczce.\n\nimage::Lista_zlecen/image31.png[image,width=604,height=202]\n\nDodatkowo wyświetlane jest zestawienie informacji dotyczących przelewów zawartych w paczce:\n\n* Listę rachunków obciążanych i liczba przelewów złożonych z poszczególnych rachunków, łączną kwotą wraz z walutą,\n\n* Listę typów przelewów zawartych w paczce z łączną kwotą z podziałem na waluty,\n\n* Listę walut, liczbę przelewów w danej walucie wraz z łączną kwotą.\n\nimage::Lista_zlecen/image32.png[image,width=604,height=240]\n\nZ poziomu szczegółów paczki dostępne są także następujące akcje:\n\n* *Akceptuj* - autoryzacja paczki (tylko dla paczki w statusie _Nowa, Do akceptacji_),\n\n* *Lista przelewów* - podgląd listy przelewów w paczce,\n\noraz pogrupowane w [DODATKOWE OPCJE]\n\n* *Przekaż do realizacji* - przekazanie paczki do realizacji (tylko dla paczki w statusie _Gotowa do przekazania_),\n\n* *Rozpakuj* - rozpakowanie paczki (tylko dla paczki w statusie _Nowa_),\n\n* *Edytuj* - edycja danych paczki (tylko dla paczki w statusie _Nowa_),\n\n* *Kopiuj* - kopiowanie paczki przelewów (skopiowana paczka otrzyma status _Nowa_),\n\n* *Usuń* - usunięcie paczki (tylko dla paczki w statusie _Nowa_),\n\n* *Kopiuj przelewy* - kopiowanie przelewów z paczki,\n\n* *Wycofaj akcept* - wycofanie akceptów paczki (tylko dla paczki w statusie _Do akceptacji, W akceptacji_).\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 605,
+      "line_end": 651
+    }
+  ]
+}

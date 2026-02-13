@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000150",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (Visiona - GAPI)"
+    },
+    {
+      "level": 3,
+      "title": "Zmiana limitów karty"
+    }
+  ],
+  "section_title": "Zmiana limitów karty",
+  "text": "Zmiana limitów karty jest możliwa z poziomu:\n\n* Listy kart - wybór opcji \"Zmień limity\":\n\nimage::Karty/K_lista_kart1.jpg[]\n\n* Szczegółów karty po wybraniu \"Dane limitów - pokaż\":\n\nimage::Karty/K_szcz_f2.jpg[]\n\nprezentowana jest wartość limitów karty z możliwością ich zmiany \"Zmień limity\"\n\nimage::Karty/K_szcz_f1.jpg[]\n\nFormularz \"Zmiany limitów karty\":\n\nimage::Karty/K_limit_f1.jpg[]\n\nUżytkownik ma możliwość zmiany limitów, przez wprowadzenie wartości kwoty albo\nzaznaczenie pola wyboru przy każdym z limitów.\n\nDane formularza:\n\n* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i\n4 ostatnie cyfry numeru karty),\n* *Dzienny limit wartości operacji gotówkowych*, wraz z następującymi parametrami:\n\n** Kwota dziennego limitu operacji gotówkowych wraz z walutą – system podpowiada obecną\nkwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,\n** Min – minimalna kwota limitu, którą Użytkownik może ustawić, pole informacyjne,\n** Maks – maksymalna kwota limitu, którą Użytkownik może ustawić, pole informacyjne,\n** Do maksymalnej wysokości limitu – pole wyboru, po zaznaczeniu którego system\nw polu *Dzienny limit wartości operacji gotówkowych* wstawia maksymalną\nwartość limitu, bez możliwości zmiany (pole zablokowane do edycji),\n\n* *Dzienny limit wartości operacji bezgotówkowych*, wraz z następującymi parametrami:\n\n** Kwota dziennego limitu operacji bezgotówkowych wraz z walutą – system podpowiada\nobecną kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,\n** Min – minimalna kwota limitu, którą Użytkownik może ustawić, pole informacyjne,\n** Maks – maksymalna kwota limitu, którą Użytkownik może ustawić, pole informacyjne,\n** Do maksymalnej wysokości limitu – pole wyboru, po zaznaczeniu którego system\nw polu *Dzienny limit wartości operacji bezgotówkowych*, wstawia maksymalną\nwartość limitu, bez możliwości zmiany (pole zablokowane do edycji),\n\n* *Dzienny limit wartości operacji internetowych*, wraz z następującymi parametrami:\n\n** Kwota dziennego limitu operacji internetowych wraz z walutą – system podpowiada\nobecną kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,\n** Min – minimalna kwota limitu, którą Użytkownik może ustawić, pole informacyjne,\n** Maks – maksymalna kwota limitu, którą Użytkownik może ustawić, pole informacyjne,\n** Do maksymalnej wysokości limitu – pole wyboru, po zaznaczeniu którego system\nw polu *Dzienny limit wartości operacji internetowych*, wstawia maksymalną kwotę\nlimitu, bez możliwości zmiany (pole zablokowane do edycji).\n\nSystem kontroluje minimalną i maksymalną kwotę limitu wprowadzoną\nprzez Użytkownika, w przypadku gdy wprowadzona kwota jest mniejsza od\nminimalnej, albo większa od maksymalnej system prezentuje odpowiedni\nkomunikat i nie pozwala na przejście do drugiego kroku potwierdzenia operacji.\n\n\nZmiany wymagają akceptacji i podpisu przypisanym środkiem autoryzacji:\n\nimage::Karty/K_limit_f2.jpg[]\n\nPo poprawnej akceptacji zostanie wyświetlony komunikat potwierdzenia:\n\nimage::Karty/K_limit_f3.jpg[image,width=328,height=259]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 1400,
+      "line_end": 1469
+    }
+  ]
+}

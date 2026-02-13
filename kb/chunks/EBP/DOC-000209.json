@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000209",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Edycja przelewu z paczki"
+    }
+  ],
+  "section_title": "Edycja przelewu z paczki",
+  "text": "Edycja przelewu z paczki może być wykonana z poziomu:\n\n* listy przelewów, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*),\n\na następnie użyciu opcji *Edytuj* w [DODATKOWE OPCJE]:\n\nimage::Lista_zlecen/image53.png[image,width=604,height=230]\n\nWybór opcji *Edytuj* powoduje wyświetlenie okna prezentującego szczegółowe informacje dla przelewu w trybie edycji. Po zmodyfikowaniu danych należy potwierdzić zmiany. Edycja przelewów z listy zleceń możliwa jest dla wszystkich typów dyspozycji obsługiwanych na liście zleceń. W procesie edycji przelewu data realizacji przelewu ustawiana jest na najbliższy dzień roboczy. Walidacje przy edycji są takie jak dla nowego przelewu,\n\nNOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do edycji przelewów. Edycja dostępna jest dla przelewów o statusie _Nowy_.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 1035,
+      "line_end": 1047
+    }
+  ]
+}

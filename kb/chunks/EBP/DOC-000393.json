@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000393",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu operacji z analityki płatności masowych"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie MT940"
+    }
+  ],
+  "section_title": "Plik w formacie MT940",
+  "text": "ykład:## |‘:**62**F:C060302PLN25,00’\n.7+<.^|:60M:\n\n(:62M:)\n\n.7+<.^|Saldo początkowe (końcowe) części zestawienia ob. d. <.^|1!l6!c3!l15k |Format całego pola - łącznie do 25 znaków. Poniżej znajduje się opis w rozbiciu na poszczególne sekcje.\n|1!l |Strona - znak ‘C’ dla salda kredytowego lub znak ‘D’ dla salda debetowego.\n|6!c |Data początkowa (końcowa) części zestawienia operacji w formacie RRMMDD.\n|3!l |Symbol waluty.\n|15k |Kwota salda początkowego (końcowego) części zestawienia operacji.\n|[underline]##Przykład 1:## |‘:**60M**:C060302PLN12,34’\n|[underline]##Przykład 2:## |‘:**62M**:C060302PLN25,00’\n|====================\n\n[source, txt]\n----\n{1:F0127803                 }{2:O940          27803                           N}{4:\n:20:000605/27803\n:25:43880900052001000278030001\n:28:\n:60F:D000605PLN0,00\n:61:1803110311C1,00FMSCNONREF          //1\n:86:86880900052001000278030003\nJanina Testowa ul. Testowa 20tytul testowy//69880900053232323000000009\n:61:1803110311C1,00FMSCNONREF          //2\n:86:\nKatarzyna Testowaprzelew testowy//26880900053232323000000007\n:62F:C200713PLN96160,87\n-}\n----\n\nNOTE: W przypadku eksportu pliku z ANALITYKi zbiorczej, w pliku MT940 pominietę zostanie modulo.\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 5166,
+      "line_end": 5315
+    }
+  ]
+}

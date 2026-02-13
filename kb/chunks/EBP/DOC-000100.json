@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000100",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lokaty"
+    },
+    {
+      "level": 3,
+      "title": "Akcje na wybranej lokacie"
+    }
+  ],
+  "section_title": "Akcje na wybranej lokacie",
+  "text": "Kliknięcie w wiersz wybranej lokaty powoduje wyświetlenie dodatkowych informacji na temat lokaty.\n\nimage::Lokaty/image12.png[image,width=604,height=116]\n\nSystem prezentuje:\n\n* *Oprocentowanie* – aktualne oprocentowanie lokaty,\n* *Okres lokaty* – długość trwania lokaty,\n* *Data kapitalizacji* – data kapitalizacji (data w formacie DD.MM.RRRR).\n* *Dokumenty* - regulaminy i linki (opcja konfigurowalna w module BackOffice).\n\nDodatkowo prezentowany jest określony zestaw akcji:\n\n* [SZCZEGÓŁY] – opcja umożliwiająca przeglądanie informacji szczegółowych na temat lokaty,\n* [DOPŁAĆ] – opcja umożliwiająca dopłatę do lokaty (o ile produkt na to pozwala),\n* [ZERWIJ] – opcja umożliwiająca zerwanie lokaty,\n* [WYCIĄGI] - opcja umożliwiająca pobranie wyciągu w formacie pdf, opcja dostępna w zależności od parametryzacji Banku dla bankowości korzystającej z systemu transakcyjnego def3000/CB.\n\nPonowne kliknięcie w obszar rozwiniętego wiersza lokaty powoduje zwinięcie dodatkowych informacji i przycisków prezentowanych dla lokaty.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lokaty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lokaty.adoc",
+      "line_start": 134,
+      "line_end": 154
+    }
+  ]
+}

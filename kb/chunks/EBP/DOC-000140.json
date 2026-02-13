@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000140",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (GryfCard)"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie historii operacji wykonanych kartą"
+    }
+  ],
+  "section_title": "Przeglądanie historii operacji wykonanych kartą",
+  "text": "Aby przejść do historii operacji wykonanych kartą płatniczą należy z poziomu rozwiniętych szczegółów karty (na liście karty) wybrać przycisk [HISTORIA KARTY]. Wyświetlane jest wówczas okno Historia karty prezentujące listę operacji wykonanych przy użyciu karty płatniczej/kredytowej:\n\nimage::Karty/image13k.png[]\n\nPosiadacz głównej karty kredytowej ma możliwość wyświetlenia wszystkich operacji wykonanych kartą płatniczą oraz operacji wykonanych na rachunku związanym z tą kartą. Posiadacz dodatkowej karty kredytowej ma możliwość wyświetlenia wszystkich operacji na rachunku wykonanych tylko tą kartą.\n\nW celu zawężenia prezentacji listy operacji wykonanych kartą, Użytkownik ma możliwość zastosowania filtrów: prostego oraz zawansowanego.\n\nimage::Karty/image9k.png[]\n\nFiltr prosty umożliwia wyszukanie po treści. W tym celu należy wpisać w pole *Wyszukaj* tekst oraz nacisnąć przycisk [ENTER].\n\nUżycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtru zaawansowanego dla następujących pól:\n\n* *Ostatnie … dni* - liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana historia\noperacji wykonanych kartą płatniczą, domyślnie 30 dni,\n* *Zakres dat* - zakres dat,  klikniecie w obszar pól z datami otwiera okno kalendarza, za pomocą, którego można określić zakres dat (maksymalnie 90 dni wstecz),\n* *Nazwa lub tytuł operacji* - możliwość wyszukania nazwy lub tytułu operacji,\n* *Zakres operacji* - filtr dostępny dla historii operacji karty kredytowej. Możliwość wyboru:\n** _Wszystkie operacje,_\n** _Tylko operacje wykonywane kartą._\n* *Kwota od, Kwota do* - zakres kwot (od - do), dla których ma zostać wyświetlona historia operacji wykonanych kartą płatniczą.\n\nZastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 749,
+      "line_end": 774
+    }
+  ]
+}

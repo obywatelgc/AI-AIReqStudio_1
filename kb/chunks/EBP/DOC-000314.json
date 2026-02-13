@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000314",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Lista dyspozycji e-Faktur"
+    },
+    {
+      "level": 4,
+      "title": "Podgląd szczegółów dyspozycji e-Faktury"
+    }
+  ],
+  "section_title": "Podgląd szczegółów dyspozycji e-Faktury",
+  "text": "Aby z listy dyspozycji faktur przejść do szczegółów wybranej dyspozycji należy kliknąć w obszar wybranego wiersza i w [DODATKOWE OPCJE] wybrać przycisk [SZCZEGÓŁY]. Wyświetlane jest wówczas okno prezentujące szczegółowe informacje dla dyspozycji faktury:\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_lista_dyspozycji_szczegoly.png[]\n\nDostępna opcja [DODATKOWE OPCJE] umożliwia:\n\n* *Wyślij* - umożliwia wysłanie dyspozycji faktury do KSeF,\n* *Usuń* - usunięcie dyspozycji faktury,\n* *Pobierz PDF* - umożliwia pobranie danych faktury w formie pliku _PDF_,\n* *Podgląd PDF* - wizualizacja faktury w formie pliku _PDF_.\n\nZ poziomu szczegółów dyspozycji faktury Użytkownik ma możliwość podglądu informacji o akcjach jakie miały miejsce na danej dyspozycji (np. dodanie dyspozycji). Sekcja zawiera informacje o imieniu i nazwisku Użytkownika, który daną akcję wykonał oraz dacie i godzinie, w której akcja nastąpiła.\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_lista_dyspozycji_szczegoly_historia.png[]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 424,
+      "line_end": 439
+    }
+  ]
+}

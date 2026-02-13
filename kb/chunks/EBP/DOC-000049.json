@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000049",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Rachunek domyślny"
+    }
+  ],
+  "section_title": "Rachunek domyślny",
+  "text": "Opcja _Ustawienia_ _→_ _Rachunek domyślny_ służy do ustawienia rachunku domyślnego, który jest podpowiadany Użytkownikowi np. podczas składania przelewów.\n\nimage::main/image131.png[image,width=566,height=117]\n\nW celu ustawienia rachunku domyślnego, Użytkownik wybiera rachunek z listy dostępnych i zatwierdza zmiany za pomocą przycisku [ZAPISZ].\n\nimage::main/image132.png[image,width=86,height=43]\n\nPo zapisaniu system prezentuje komunikat z informacją:\n\nimage::main/image133.png[image,width=361,height=209]\n\nUstawienie i zmiana rachunku domyślnego nie wymaga zatwierdzenia przez Użytkownika za pomocą dostępnej metody autoryzacji.\n\nW górnej części formularza RACHUNEK DOMYŚLNY znajdują się przyciski:\n\n* image:main/image85.png[image,width=39,height=44] – umożliwiający powrót do formularza USTAWIENIA,\n* image:main/image86.png[image,width=43,height=55]– umożliwiający przejście do głównego menu.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 1597,
+      "line_end": 1616
+    }
+  ]
+}

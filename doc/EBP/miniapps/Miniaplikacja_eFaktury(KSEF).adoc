@@ -1,0 +1,933 @@
+:imagesdir: images
+
+= e_Faktura (KSeF)
+
+Miniaplikacja *e-Faktura (KSeF)* umożliwia aktywację dostępu Klienta do Krajowego Systemu e-Faktur (KSeF), udostępnionego przez Ministerstwo Finansów oraz obsługę e-Faktur udostępnionych w KSeF.
+
+System Asseco EBP zapewnia użytkownikowi dostęp do miniaplikacji *e-Faktura (KSeF)* z poziomu menu bocznego po wybraniu opcji _e-Faktura (KSeF)_.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_menu.png[]
+
+
+
+W miniaplikacji *e-Faktura (KSeF)* użytkownik ma możliwość:
+
+* aktywacji dostępu do Krajowego Systemu e-Faktur (KSeF),
+* podglądu faktur udostępnionych w KSeF,
+* eksportu faktury do pliku _XML_,
+* pobrania faktury w formie pliku _PDF_,
+* opłacenia faktur zakupowych,
+* wystawienia faktury i przekazania jej do KSeF,
+* importu faktur z pliku _XML_.
+
+== Aktywacja dostępu do KSeF
+
+Po wybraniu miniaplikacji *e-Faktura (KSeF)* z menu bocznego użytkownik ma możliwość aktywacji dostępu do Krajowego Systemu e-Faktur (KSeF) z użyciem certyfikatu kwalifikowanego lub tokena (wygenerowanego na stronie Ministerstwa Finansów).
+System prezentuje treści opisujące użytkownikowi funkcjonalność *e-Faktura (KSeF)* z opcją przejścia do aktywacji dostępu.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_aktywacja_1.png[]
+
+Po naciśnięciu przycisku [PRZEJDŹ DO AKTYWACJI] Użytkownik otrzymuje ekran z wyborem sposobu aktywacji funkcjonalności:
+
+image::e-Faktury(KSeF)/e_faktura_ksef_aktywacja_2.png[image,width=267,height=196]
+
+=== Aktywacja dostępu do KSeF - certyfikat kwalifikowany
+
+W celu aktywacji e-faktury certyfikatem kwalifikacyjnym należy pobrać plik, a następnie podpisać go z wykorzystaniem certyfikatu na komputerze użytkownika lub Profilu Zaufanego.
+
+image::e-Faktury(KSeF)/aktywacja_certyfikat.png[]
+
+Po wczytaniu podpisanego pliku następuje poprawna aktywacja do KSeF.
+
+image::e-Faktury(KSeF)/aktywacja_certyfikat_1.png[]
+
+=== Aktywacja dostępu do KSeF - token
+
+Na ekranie aktywacji funkcjonalności za pomocą tokena system prezentuje informacje w jaki sposób użytkownik może pozyskać token.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_aktywacja_token_1.png[]
+
+Po poprawnej aktywacji użytkownik otrzymuje potwierdzenie o nadaniu dostępu do KSeF.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_aktywacja_token_2.png[]
+
+== Lista e-Faktur
+
+=== Przeglądanie listy e-Faktur
+
+Po wybraniu miniaplikacji *e-Faktura (KSeF)* z menu bocznego dla użytkownika, posiadającego dostęp do KSeF, wyświetlana jest lista e-Faktur udostępnionych w KSeF.
+
+Dla każdej faktury z listy prezentowane są następujące informacje:
+
+* *Data wystawienia*,
+* *Podmiot*,
+* *Numer faktury* - zawiera również informację o statusie faktury,
+* *Kwota netto*,
+* *Kwota brutto*.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_lista_1.png[]
+
+Po kliknięciu w wiersz wybranej faktury wyświetlane są dodatkowe informacje na temat faktury:
+
+* *Numer KSeF*,
+* *Rodzaj faktury*,
+
+dodatkowo dla faktur sprzedażowych dane dotyczące Nadawcy:
+
+* *Nabywca*,
+* *Adres nabywcy*,
+* *Typ identyfikatora nabywcy*,
+
+dla faktur zakupowych, podmiotu innego, podmiotu upoważnionego dane dotyczące Sprzedawcy:
+
+* *Sprzedawca*,
+* *Adres sprzedawcy*,
+* *Typ identyfikatora sprzedawcy*.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_lista_2.png[]
+
+Lista faktur jest stronicowana. Przejście do kolejnych stron następuje poprzez wybór przycisków
+nawigacyjnych znajdujących się pod listą.
+
+=== Akcje na pojedynczej e-Fakturze
+
+Po rozwinięciu wybranej faktury dostępne są opcje:
+
+
+* [WYSTAW PODOBNĄ FAKTURĘ] - opcja dostępna dla faktur sprzedażowych,
+
+* [ZAPŁAĆ (PRZELEW ZWYKŁY)] - opcja dostępna dla faktur zakupowych,
+
+* [ZAPŁAĆ (PRZELEW WALUTOWY)] - opcja dostępna dla faktur zakupowych,
+
+* [DODATKOWE OPCJE]:
+
+** *Oznacz jako opłacona*/*Oznacz jako nieopłacona* - umożliwia zmianę statusu faktury,
+** *Historia płatności* - umożliwia podgląd operacji spłaty faktury,
+** *Pobierz PDF* - umożliwia pobranie danych faktury w formie pliku _PDF_,
+** *Pobierz XML* - umożliwia eksport danych faktury do pliku _XML_,
+** *Szczegóły* - prezentacja szczegółów faktury.
+
+=== Akcje zbiorcze na liście e-Faktur
+
+Na liście faktur z lewej strony wiersza znajdują się kwadraty (checkbox) umożliwiające zaznaczenie poszczególnych pozycji.
+
+Zaznaczenie faktur wykorzystywane jest podczas korzystania z *panelu akcji zbiorczych* znajdującego się nad tabelą. Jest to przycisk [DODATKOWE OPCJE], który zawiera akcje:
+
+* *Dodaj do listy zleceń/Dodaj do koszyka* - wygenerowanie przelewów dla wybranyuch faktur
+* *Oznacz jako opłacona*/*Oznacz jako nieopłacona* - zmianę statusów faktur,
+* *Pobierz PDF* - pobranie archiwum _ZIP_ z plikami _PDF_ z danymi wybranych faktur,
+* *Pobierz XML* - pobranie archiwum _ZIP_ z wybranymi fakturami w formacie _XML_.
+
+
+=== Filtrowanie listy e-Faktur
+
+W celu zawężenia prezentacji listy faktur, Użytkownik ma możliwość zastosowania filtrów: prostego oraz zawansowanego.
+
+Filtr prosty umożliwia wyszukanie po numerze faktury. W tym celu należy wpisać w polu do wyszukiwania z ikoną lupki numer faktury oraz nacisnąć przycisk [ENTER].
+
+image::e-Faktury(KSeF)/e_faktura_ksef_filtry_1.png[]
+
+Aby powrócić do pełnej listy faktur należy kliknąć w ikonę X w polu wyszukiwania.
+
+Użycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtru zaawansowanego dla następujących pól:
+
+* *Ostatnie ... dni* - liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana lista faktur, domyślnie 30 dni,
+* *Zakres dat* - zakres dat, dla których ma zostać wyświetlona lista faktur, od miesiąca wstecz do daty bieżącej. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą, którego można określić zakres dat,
+
+image::e-Faktury(KSeF)/e_faktura_ksef_filtry_2.png[]
+
+* *Podmiot*:
+
+** _Wszystkie_,
+
+** _Faktury sprzedażowe_,
+
+** _Faktury zakupowe_,
+
+** _Faktury podmiotu innego_,
+
+** _Faktury podmiotu upoważnionego_,
+
+* *Status* - pole zwierające statusy opłacenia faktur:
+
+** _Wszystkie_,
+
+** _Opłacona_,
+
+** _Nieopłacona_,
+
+* *Kwota*:
+
+** _Netto_,
+
+** _Brutto_,
+
+* *Kwota od*, *Kwota do* - zakres kwot (od - do), dla których ma zostać wyświetlona lista faktur.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_filtry_3.png[]
+
+Zastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].
+
+=== Podgląd szczegółów e-Faktury
+
+Aby z listy faktur przejść do szczegółów wybranej faktury należy kliknąć w obszar wybranego wiersza i w [DODATKOWE OPCJE] wybrać przycisk [SZCZEGÓŁY]. Wyświetlane jest wówczas okno prezentujące szczegółowe informacje dla faktury:
+
+image::e-Faktury(KSeF)/e_faktura_ksef_szczegoly_1.png[]
+
+Dostępna opcja [DODATKOWE OPCJE] umożliwia:
+
+* *Zapłać (przelew zwykły)/Zapłać (przelew walutowy)* - zainicjowanie płatności za fakturę,
+* *Oznacz jako opłacona*/*Oznacz jako nieopłacona* - zmianę statusu faktury,
+* *Pobierz PDF* - pobranie danych faktury w formie pliku _PDF_,
+* *Podgląd PDF* - wizualizacja faktury w formie pliku _PDF_,
+* *Pobierz XML* - eksport danych faktury do pliku _XML_.
+
+=== Płatność za e-Faktury
+
+W miniaplikacji *e-Faktura (KSeF)* Użytkownik ma możliwość opłacenia faktur zakupowych.
+
+==== Pojedynczy przelew za e-Fakturę
+
+Aby zlecić płatność za fakturę należy z listy faktur kliknąć w obszar wybranego wiersza a następnie wybrać opcję:
+
+* [ZAPŁAĆ (PRZELEW ZWYKŁY)] - dla faktur w walucie PLN,
+* [ZAPŁAĆ (PRZELEW WALUTOWY)] - dla faktur w walucie obcej.
+
+Opcja jest także dostępna z okna _Szczegóły faktury_.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_platnosc_pojedyncza_1.png[]
+
+Po zainicjowaniu płatności Użytkownik przekierowywany jest na formatkę przelewu zwykłego lub walutowego z uzupełnieniem danych przelewu danymi z faktury.
+
+
+
+Po przejściu do przelewu zablokowana jest możliwość zmiany typu przelewu.
+
+Jeżeli Użytkownik ma dostępny rachunek bieżący, który powiązany jest z rachunkiem VAT, domyślnie zostaje wybrany ten rachunek i zaznaczony checkbox *Przelew VAT*.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_platnosc_pojedyncza_vat.png[]
+
+Po poprawnej realizacji przelewu system oznacza fakturę jako opłaconą.
+
+==== Zbiorczy przelew z wybranych e-Faktur
+
+Aby wygenerować przelewy dla wybranych faktur, należy zaznaczyć faktury zakupowe z listy oraz w *panelu akcji zbiorczych* wybrać akcję:
+
+* [DODAJ DO LISTY ZLECEŃ] - w kontekście firmowym,
+* [DODAJ DO KOSZYKA ZLECEŃ] - w kontekście indywidualnym.
+
+Opcja jest dostępna tylko dla faktur zakupowych wystawionych w PLN i na rachunki PL.
+
+Użytkownik przekierowywany jest na formularz _Przelewy dla wybranych faktur_, na którym system prezentuje listę wybranych wcześniej faktur oraz wymaga wybranie rachunku do obciążenia.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_platnosc_zbiorcza_1.png[]
+
+Po kliknięciu w [DODAJ DO LISTY ZLECEŃ] lub [DODAJ DO KOSZYKA ZLECEŃ] system generuje przelewy dla wybranych faktur i prezentuje następujące dane:
+
+* *Poprawne* - liczba poprawnych przelewów o prawidłowych danych po weryfikacji systemu, które zostały dodane do _Listy zleceń_ lub _Koszyka_.
+
+* *Błędy* - liczba błędnych przelewów.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_platnosc_zbiorcza_2.png[]
+
+Wygenerowane przelewy dostępne są na _Liście zleceń_ lub _Koszyku_.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_platnosc_zbiorcza_3.png[]
+
+=== Historia płatności
+
+Z poziomu listy faktur i szczegółów wybranej faktury system daje możliwość podglądu operacji spłaty faktury. Opcja jest dostępna tylko dla faktur zakupowych.
+
+Aby przejść do historii płatności należy kliknąć w obszar wybranego wiersza i w [DODATKOWE OPCJE] wybrać przycisk [HISTORIA PŁATNOŚCI]. Wyświetlana jest wówczas formatka prezentująca listę zleconych płatności za fakturę.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_historia_platnosci.png[]
+
+Dla każdej operacji z listy prezentowane są następujące informacje:
+
+* *Data realizacji*,
+* *Tytuł*,
+* *Status*,
+* *Kwota*.
+
+Po kliknięciu w wiersz wybranej płatności wyświetlane są dodatkowe informacje na temat przelewu:
+
+* *Nadawca*,
+* *Odbiorca*,
+* *Typ*,
+* *Rodzaj przelewu*,
+* *Data wprowadzenia*.
+
+=== Zmiana statusu e-Faktury
+
+Dla faktur sprzedażowych i zakupowych użytkownik może samodzielnie zmieniać status faktury z opłaconej na nieopłaconą i odwrotnie.
+
+==== Zbiorcza zmiana statusu e-Faktury
+
+Użytkownik ma możliwość zbiorczej zmiany statusu faktury poprzez wybranie faktur  z listy (zaznaczenie checboxów obok danej faktury) i naciśnięcie przycisku [Dodatkowe opcje] dostępnego nad listą faktur.
+
+image::e-Faktury(KSeF)/faktury_zbiorcza_zmiana_statusu.png[]
+
+Po wybraniu opcji zmiany statusu faktury a następnie  wybraniu [Akceptuj] system wyświetla potwierdzenie zmiany statusu wybranych faktur. Na liście faktur zmianiony status jest widoczny od razu dla wybranych faktur.
+
+image::e-Faktury(KSeF)/faktury_zbiorcza_zmiana_statusu_akcep.png[]
+
+==== Pojedyncza zmiana statusu e-Faktury
+
+Aby zmianić status dla jednej faktury użytkownik może skorzystac z opcji do zbiorczej zmiany status lub skorzystac z przycisku [Dodatkowe opcje] dostępnego po rozwinięciu krótkich szczegółów danej faktury.
+
+image::e-Faktury(KSeF)/faktura_zmiana_statusu.png[]
+
+Po wybraniu opcji zmiany statusu faktury a następnie  wybraniu [Akceptuj] system wyświetla potwierdzenie zmiany statusu wybranej faktury. Na liście faktur zmianiony status jest widoczny od razu.
+
+image::e-Faktury(KSeF)/faktura_zmiana_statusu_akcept.png[]
+
+
+=== Pobranie danych e-Faktury w formie pliku _PDF_
+
+W miniaplikacji *e-Faktura (KSeF)* system umożliwia wygenerowanie pliku _PDF_ z danymi faktury. Aby pobrać pojedynczą fakturę należy kliknąć w wiersz wybranej faktury i w [DODATKOWE OPCJE] wybrać akcję [POBIERZ PDF]. Opcja jest także dostępna z okna _Szczegóły faktury_.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_pobierz_pdf_1.png[]
+
+System również umożliwia generowanie wizualizacji faktury w formie pliku _PDF_. W tym celu należy w _Szczegółach faktury_ w [DODATKOWE OPCJE] wybrać akcję [PODGLĄD PDF].
+
+image::e-Faktury(KSeF)/e_faktura_ksef_pobierz_pdf_3.png[]
+
+Aby pobrać archiwum _ZIP_ z plikami _PDF_ należy zaznaczyć faktury i w *panelu akcji zbiorczych* wybrać akcję [Pobierz PDF].
+
+image::e-Faktury(KSeF)/e_faktura_ksef_pobierz_pdf_2.png[]
+
+=== Eksport e-Faktury do pliku _XML_
+
+W miniaplikacji *e-Faktura (KSeF)* system daje możliwość pobrania faktury w formacie _XML_. Aby pobrać pojedynczą fakturę należy kliknąć w wiersz wybranej faktury i w [DODATKOWE OPCJE] wybrać akcję [POBIERZ XML]. Opcja jest także dostępna z okna _Szczegóły faktury_.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_pobierz_xml_1.png[]
+
+Aby pobrać archiwum _ZIP_ z plikami _XML_ należy zaznaczyć faktury i w *panelu akcji zbiorczych* wybrać akcję [Pobierz XML].
+
+image::e-Faktury(KSeF)/e_faktura_ksef_pobierz_xml_2.png[]
+
+
+
+== Lista dyspozycji e-Faktur
+
+=== Przeglądanie listy dyspozycji e-Faktur
+
+W miniaplikacji *e-Faktura (KSeF)* w zakładce _Dyspozycje faktur_ prezentowana jest lista dyspozycji faktur do wysłania do KSeF.
+
+Dla każdej dyspozycji faktury z listy prezentowane są następujące informacje:
+
+* *Data wystawienia*,
+* *Status*,
+* *Numer faktury*,
+* *Kwota netto*,
+* *Kwota brutto*.
+
+Po kliknięciu w wiersz wybranej dyspozycji faktury wyświetlane są dodatkowe informacje na temat faktury:
+
+* *Rodzaj faktury*,
+* *Nabywca*,
+* *Adres nabywcy*,
+* *Typ identyfikatyora nabywcy*,
+
+image::e-Faktury(KSeF)/e_faktura_ksef_lista_dyspozycji.png[]
+
+Lista dyspozycji faktur jest stronicowana. Przejście do kolejnych stron następuje poprzez wybór przycisków
+nawigacyjnych znajdujących się pod listą.
+
+=== Akcje na pojedynczej dyspozycji e-Faktury
+
+Po rozwinięciu wybranej dyspozycji faktury dostępne są opcje:
+
+* [WYSTAW PODOBNĄ FAKTURĘ],
+
+* [DODATKOWE OPCJE]:
+
+** *Wyślij* - umożliwia wysłanie dyspozycji faktury do KSeF,
+** *Usuń* - usunięcie dyspozycji faktury,
+** *Pobierz PDF* - umożliwia pobranie danych faktury w formie pliku _PDF_,
+** *Szczegóły* - prezentacja szczegółów faktury.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_lista_dyspozycji_akcje.png[]
+
+=== Akcje zbiorcze na liście dyspozycji e-Faktur
+
+Na liście dyspozycji faktur z lewej strony wiersza znajdują się kwadraty (checkbox) umożliwiające zaznaczenie poszczególnych pozycji.
+
+Zaznaczenie dyspozycji faktur wykorzystywane jest podczas korzystania z *panelu akcji zbiorczych* znajdującego się nad tabelą. Jest to przycisk [DODATKOWE OPCJE], który zawiera akcje:
+
+* *Wyślij* - wysłanie wybranych dyspozycji faktur do KSeF,
+* *Usuń* - usunięcie wybranych dyspozycji faktur.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_lista_dyspozycji_akcje_zbiorcze.png[]
+
+=== Filtrowanie listy dyspozycji e-Faktur
+
+W celu zawężenia prezentacji listy dyspozycji faktur, Użytkownik ma możliwość zastosowania filtrów: prostego oraz zawansowanego.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_lista_dyspozycji_filtry.png[]
+
+Filtr prosty umożliwia wyszukanie po numerze faktury. W tym celu należy wpisać w polu do wyszukiwania z ikoną lupki numer faktury oraz nacisnąć przycisk [ENTER].
+
+Aby powrócić do pełnej listy dyspozycji faktur należy kliknąć w ikonę X w polu wyszukiwania.
+
+Użycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtru zaawansowanego dla następujących pól:
+
+* *Ostatnie ... dni* - liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana lista dyspozycji faktur, domyślnie 30 dni,
+* *Zakres dat* - zakres dat, dla których ma zostać wyświetlona lista dyspozycji faktur, od miesiąca wstecz do daty bieżącej. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą, którego można określić zakres dat,
+
+image::e-Faktury(KSeF)/e_faktura_ksef_filtry_2.png[]
+
+* *Rodzaj faktury* - pole zwierające rodzaje faktur:
+
+** _Wszystkie_,
+
+** _Podstawowa_,
+
+** _Zaliczkowa_,
+
+** _Rozliczeniowa_,
+
+** _Korygująca - fakturę postawową_,
+
+** _Korygująca - fakturę zaliczkową_,
+
+** _Korygująca - fakturę rozliczeniową_,
+
+** _Korygująca - korekta zbiorcza_,
+
+* *Status* - pole zwierające statusy dyspozycji faktur:
+
+** _Wszystkie_,
+
+** _Gotowy do wysłania_,
+
+** _Oczekujący na wysyłkę_,
+
+** _Przetwarzany_,
+
+** _Dodany_,
+
+** _Odrzucony_,
+
+* *Kwota*:
+
+** _Netto_,
+
+** _Brutto_,
+
+* *Kwota od*, *Kwota do* - zakres kwot (od - do), dla których ma zostać wyświetlona lista dyspozycji faktur.
+
+Zastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].
+
+=== Podgląd szczegółów dyspozycji e-Faktury
+
+Aby z listy dyspozycji faktur przejść do szczegółów wybranej dyspozycji należy kliknąć w obszar wybranego wiersza i w [DODATKOWE OPCJE] wybrać przycisk [SZCZEGÓŁY]. Wyświetlane jest wówczas okno prezentujące szczegółowe informacje dla dyspozycji faktury:
+
+image::e-Faktury(KSeF)/e_faktura_ksef_lista_dyspozycji_szczegoly.png[]
+
+Dostępna opcja [DODATKOWE OPCJE] umożliwia:
+
+* *Wyślij* - umożliwia wysłanie dyspozycji faktury do KSeF,
+* *Usuń* - usunięcie dyspozycji faktury,
+* *Pobierz PDF* - umożliwia pobranie danych faktury w formie pliku _PDF_,
+* *Podgląd PDF* - wizualizacja faktury w formie pliku _PDF_.
+
+Z poziomu szczegółów dyspozycji faktury Użytkownik ma możliwość podglądu informacji o akcjach jakie miały miejsce na danej dyspozycji (np. dodanie dyspozycji). Sekcja zawiera informacje o imieniu i nazwisku Użytkownika, który daną akcję wykonał oraz dacie i godzinie, w której akcja nastąpiła.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_lista_dyspozycji_szczegoly_historia.png[]
+
+=== Wysłanie dyspozycji e-Faktury do KSeF
+
+Po wprowadzeniu danych danej faktury i wybraniu opcji [Autoryzuj i wyślij] dyspozycja faktury jest od razu wysyłana do KSeF, natomiast po wybraniu opcji [Autoryzuj], dyspozycja trafia na listę dyspozycji w statusie _Gotowy do wysłania_.
+
+
+
+Aby wysłać taką dyspozycję faktury do KSeF, należy na takiej dyspozycji wybrać opcję [Wyślij], który znajduje się w opcjach dodatkowych na krótkich szczegółach dyspozycji, a następnie zaakceptować wysłanie poprzez przycisk [Akceptuj].
+
+image::e-Faktury(KSeF)/dyspozycja_gotowy_do_wyslania-wyslij.png[]
+
+Po poprawnej akcpetacji wysłania dyspozycji faktury do KSeF, system prezentuje odpowiedni komunikat informujący o poprawności wysyłki dyspozycji.
+
+image::e-Faktury(KSeF)/dyspozycja_gotowy_do_wyslania-wyslij_potwierdzenie.png[]
+
+Wysłana dyspozycja faktury do KSeF na liście dyspozycji faktur jest w statusie _Dodany_.
+
+=== Usunięcie dyspozycji e-Faktury
+
+Dla dyspozycji faktury w statusie _Gotowy do wysłania_ użytkownik ma możliwość usunięcia takiej dyspozycji.
+
+Aby to zrobić, należy wybrać przycisk [Usuń], który znajduje się w opcjach dodatkowych w krótkich szczegółąch dyspozycji a następnie zaakceptować usunięcie poprzez przycisk [Akceptuj].
+
+image::e-Faktury(KSeF)/dyspozycja-usun.png[]
+
+Po poprawnym usunięciu system prezentuje odpowiedni komunikat potwierdzający usunięcie dyspozycji z listy.
+
+image::e-Faktury(KSeF)/dyspozycja-usun-potwierdzenie.png[]
+
+=== Wystaw podobną fakturę
+
+Użytkownik może wystawić fakturę podobną do już istniejącej faktury na liście. Służy do tego przycisk [Wystaw podobną fakturę] dostępny po rozwinięciu krótkich szczegółów faktury na liscie faktur lub na liście dyspozycji faktur.
+
+image::e-Faktury(KSeF)/fv_wystaw_podobna.png[]
+
+Po wybraniu przycisku [Wystaw podobną fakturę] na danej fakturze otwiera się formularz nowej faktury z uzupełnionymi danymi faktury, które użytkownik może dowolnie edytować.
+W przypadku gdy numer faktury jest taki sam jak numer istniejącej faktury, system przy polu _Kolejny numer faktury_ wyświatla komunikat informacyjny.
+
+image::e-Faktury(KSeF)/fv_wystaw_podobna_nr_fv.png[]
+
+=== Pobranie danych e-Faktury w formie pliku _PDF_
+
+W zakładce _Dyspozycje faktur_ system umożliwia wygenerowanie pliku _PDF_ z danymi pojedynczej dyspozycji faktury. Aby pobrać plik należy kliknąć w wiersz wybranej dyspozycji faktury i w [DODATKOWE OPCJE] wybrać akcję [POBIERZ PDF]. Opcja jest także dostępna z poziomu _Szczegółów dyspozycji faktury_.
+
+image::e-Faktury(KSeF)/e_faktura_ksef_lista_dyspozycji_pdf.png[]
+
+System również umożliwia generowania wizualizacji faktury w formie pliku _PDF_. W tym celu należy w szczegółach dyspozycji faktury w [DODATKOWE OPCJE] wybrać akcję [PODGLĄD PDF].
+
+image::e-Faktury(KSeF)/e_faktura_ksef_lista_dyspozycji_podglad_pdf.png[]
+
+
+== Wystawienie e-Faktury
+
+Do wystawienia nowej faktury służy przycisk [Wprowadź fakturę] dostępny po naciśnięciu przycisku [Wystaw fakturę] w miniaplikacji faktury (KSeF).
+
+image::e-Faktury(KSeF)/faktury_Wprowadz_fakture.png[]
+
+
+Użytkownik ma możliwość wprowadzenia faktury:
+
+* *Podstawowej* - domyślny ustawiony rodzaj faktury,
+* *Zaliczkowej*,
+* *Rozliczeniowej*,
+* *Korygującej - fakturę podstawową*,
+* *Korygującej - fakturę zaliczkową*,
+* *Korygującej - fakturę rozliczeniową*,
+* *Korygującej - korekta zbiorcza*.
+
+
+image::e-Faktury(KSeF)/faktura_nowa_rodzaje.png[]
+
+
+=== Faktura podstawowa
+
+Na formularzu nowej faktury podstawowej dostępne są następujące sekcje:
+
+* *Nabywca* - dane nabywcy faktury
+* *Sprzedawca* -  dane sprzedawcy faktury -  domyślnie uzupełnione danymi użytkownika zalogowanego do systemu
+
+image::e-Faktury(KSeF)/fv_pod_nabywca_sprzedawca.png[]
+
+* *Szczegóły faktury* - informacje dotyczące numeru faktury, dacie wystawinia itp.
+
+image::e-Faktury(KSeF)/fv_pod_szczegoly.png[]
+
+* *Pozycje na fakturze* - informacje o zamówionych towarach lub usługach
+
+image::e-Faktury(KSeF)/fv_pod_pozycje.png[]
+
+Aby wprowadzić nową lub kolejną pozycje na fakturze należy wybrać przycisk [Dodaj nową pozycję] lub odpowiednio [Dodaj kolejną pozycje] i uzupełnić dane nowej pozycji.
+
+image::e-Faktury(KSeF)/fv_pod_pozycje_dodaj.png[]
+
+Każdą dodaną pozycję na fakturze użytownik może edytować lub usunąć poprzez wybranie przycisku [Usuń], [Edytuj] dostępnych po rozwinięciu szczegółów wybranej pozycji.
+
+image::e-Faktury(KSeF)/fv_pod_pozycje_edytuj_usun.png[]
+
+* *Adnotacje*
+
+image::e-Faktury(KSeF)/fv_zal_adnotacje.png[]
+
+* *Płatności* -  informacja o ewentualnych dokonanych płatnościach za fakturę
+
+image::e-Faktury(KSeF)/fv_zal_platnosci.png[]
+
+* *Dodatkowe informacje*
+
+image::e-Faktury(KSeF)/fv_zal_dodatkowe_informacje.png[]
+
+* *Warunki transakcji*
+
+image::e-Faktury(KSeF)/fv_zal_warunki_transakcji.png[]
+
+* *Pozostałe informacje na fakturze*
+
+image::e-Faktury(KSeF)/fv_zal_pozostałe_inf.png[]
+
+
+
+=== Faktura zaliczkowa
+
+Na formularzu nowej faktury zaliczkowej dostępne są następujące sekcje:
+
+* *Nabywca* - dane nabywcy faktury
+* *Sprzedawca* -  dane sprzedawcy faktury -  domyślnie uzupełnione danymi użytkownika zalogowanego do systemu
+
+image::e-Faktury(KSeF)/fv_zal_nabywca_sprzedawca.png[]
+
+* *Szczegóły faktury* - informacje dotyczące numeru faktury, dacie wystawinia itp.
+
+image::e-Faktury(KSeF)/fv_zal_szczególy.png[]
+
+
+* *Zamówienie* - informacje o kwocie zaliczki i zamówionych towarach lub usługach
+
+image::e-Faktury(KSeF)/fv_zal_zamowienie.png[]
+
+Aby wprowadzić nowe lub kolejne zamówienie należy wybrać przycisk [Dodaj nowe zamówienie] lub odpowiednio [Dodaj kolejne zamówienie] i uzupełnić dane nowego zamówienia.
+
+image::e-Faktury(KSeF)/fv_zal_dodaj_zamowienie.png[]
+
+Każde dodane zamówienie użytownik może edytować lub usunąć poprzez wybranie przycisku [Usuń], [Edytuj] dostępnych po rozwinięciu szczegółów wybranego zamówienia.
+
+image::e-Faktury(KSeF)/fv_zal_zamowienie_edycja_usun.png[]
+
+* *Adnotacje*
+
+image::e-Faktury(KSeF)/fv_zal_adnotacje.png[]
+
+* *Płatności* -  informacja o ewentualnych dokonanych płatnościach za fakturę
+
+image::e-Faktury(KSeF)/fv_zal_platnosci.png[]
+
+* *Dodatkowe informacje*
+
+image::e-Faktury(KSeF)/fv_zal_dodatkowe_informacje.png[]
+
+* *Warunki transakcji*
+
+image::e-Faktury(KSeF)/fv_zal_warunki_transakcji.png[]
+
+* *Pozostałe informacje na fakturze*
+
+image::e-Faktury(KSeF)/fv_zal_pozostałe_inf.png[]
+
+
+
+
+
+=== Faktura rozliczeniowa
+
+Na formularzu nowej faktury rozliczeniowej dostępne są następujące sekcje:
+
+* *Nabywca* - dane nabywcy faktury
+* *Sprzedawca* -  dane sprzedawcy faktury -  domyślnie uzupełnione danymi użytkownika zalogowanego do systemu
+
+image::e-Faktury(KSeF)/fv_rozl_nabywca_sprzedawca.png[]
+
+* *Szczegóły faktury* - informacje dotyczące numeru faktury, dacie wystawinia itp.
+
+image::e-Faktury(KSeF)/fv_rozl_szczegóły.png[]
+
+* *Pozycje na fakturze* - informacje o zamówionych towarach lub usługach
+
+image::e-Faktury(KSeF)/fv_rozl_pozycje.png[]
+
+Aby wprowadzić nową lub kolejną pozycje na fakturze należy wybrać przycisk [Dodaj nową pozycję] lub odpowiednio [Dodaj kolejną pozycje] i uzupełnić dane nowej pozycji.
+
+image::e-Faktury(KSeF)/fv_pod_pozycje_dodaj.png[]
+
+Każdą dodaną pozycję na fakturze użytownik może edytować lub usunąć poprzez wybranie przycisku [Usuń], [Edytuj] dostępnych po rozwinięciu szczegółów wybranej pozycji.
+
+image::e-Faktury(KSeF)/fv_rozl_pozycje_edycuj_usun.png[]
+
+* *Adnotacje*
+
+image::e-Faktury(KSeF)/fv_zal_adnotacje.png[]
+
+* *Płatności* -  informacja o ewentualnych dokonanych płatnościach za fakturę
+
+image::e-Faktury(KSeF)/fv_zal_platnosci.png[]
+
+* *Dodatkowe informacje*
+
+image::e-Faktury(KSeF)/fv_zal_dodatkowe_informacje.png[]
+
+* *Warunki transakcji*
+
+image::e-Faktury(KSeF)/fv_zal_warunki_transakcji.png[]
+
+* *Pozostałe informacje na fakturze*
+
+image::e-Faktury(KSeF)/fv_zal_pozostałe_inf.png[]
+
+=== Faktura korygująca - fakturę podstawową
+
+
+Na formularzu nowej faktury korygującej fakturę podstawową dostępne są następujące sekcje:
+
+
+* *Dane faktury korygowanej*
+* *Dane identyfikacyjne faktury korygowanej*
+
+image::e-Faktury(KSeF)/fv_kor_pod_dane.png[]
+
+* *Nabywca* - dane nabywcy faktury przed i po korekcie (jeżeli uległy zmianie)
+
+image::e-Faktury(KSeF)/fv_kor_pod_nabywca.png[]
+
+
+* *Sprzedawca* -  dane sprzedawcy faktury przed i po korekcie( jeżeli uległu zmianie) -  domyślnie uzupełnione danymi użytkownika zalogowanego do systemu
+
+image::e-Faktury(KSeF)/fv_kor_pod_sprzedawca.png[]
+
+* *Szczegóły faktury* - informacje dotyczące numeru faktury, dacie wystawinia itp.
+
+image::e-Faktury(KSeF)/fv_pod_szczegoly.png[]
+
+* *Pozycje na fakturze* - informacje o zamówionych towarach lub usługach przed i po korekcie. Liczba pozycji przed korektą musi się rownać ilości pozycji po korekcie.
+
+image::e-Faktury(KSeF)/fv_kor_pod_pozycje.png[]
+
+Aby wprowadzić nową lub kolejną pozycje na fakturze należy wybrać przycisk [Dodaj nową pozycję] lub odpowiednio [Dodaj kolejną pozycje] i uzupełnić dane nowej pozycji.
+
+image::e-Faktury(KSeF)/fv_pod_pozycje_dodaj.png[]
+
+Każdą dodaną pozycję na fakturze użytownik może edytować lub usunąć poprzez wybranie przycisku [Usuń], [Edytuj] dostępnych po rozwinięciu szczegółów wybranej pozycji.
+
+image::e-Faktury(KSeF)/fv_kor_pod_pozycje_edytuj_usun.png[]
+
+* *Adnotacje*
+
+image::e-Faktury(KSeF)/fv_zal_adnotacje.png[]
+
+* *Płatności* -  informacja o ewentualnych dokonanych płatnościach za fakturę
+
+image::e-Faktury(KSeF)/fv_zal_platnosci.png[]
+
+* *Dodatkowe informacje*
+
+image::e-Faktury(KSeF)/fv_zal_dodatkowe_informacje.png[]
+
+* *Warunki transakcji*
+
+image::e-Faktury(KSeF)/fv_zal_warunki_transakcji.png[]
+
+* *Pozostałe informacje na fakturze*
+
+image::e-Faktury(KSeF)/fv_zal_pozostałe_inf.png[]
+
+
+
+=== Faktura korygująca - fakturę zaliczkową
+
+Na formularzu nowej faktury korygującej fakturę zaliczkową dostępne są następujące sekcje:
+
+
+* *Dane faktury korygowanej*
+* *Dane identyfikacyjne faktury korygowanej*
+
+
+image::e-Faktury(KSeF)/fv_kor_zal_dane.png[]
+
+* *Nabywca* - dane nabywcy faktury przed i po korekcie (jeżeli uległy zmianie)
+
+image::e-Faktury(KSeF)/fv_kor_pod_nabywca.png[]
+
+
+* *Sprzedawca* -  dane sprzedawcy faktury przed i po korekcie( jeżeli uległu zmianie) -  domyślnie uzupełnione danymi użytkownika zalogowanego do systemu
+
+image::e-Faktury(KSeF)/fv_kor_pod_sprzedawca.png[]
+
+* *Szczegóły faktury* - informacje dotyczące numeru faktury, dacie wystawinia itp.
+
+image::e-Faktury(KSeF)/fv_kor_zal_szczegoly.png[]
+
+* *Zamówienie* - informacje o zamówionych towarach lub usługach przed i po korekcie. Liczba zamówień przed korektą musi się rownać ilości zamówień po korekcie.
+
+image::e-Faktury(KSeF)/fv_kor_zal_zamowienie.png[]
+
+Aby dodać nowe lub kolejne zamowienie na fakturze należy wybrać przycisk [Dodaj nowe zamówienie] lub odpowiednio [Dodaj kolejne zamówienie] i uzupełnić dane nowego zamówienia.
+
+image::e-Faktury(KSeF)/fv_kor_zal_nowe_zamowienie.png[]
+
+Każde dodane zamówienie  na fakturze użytownik może edytować lub usunąć poprzez wybranie przycisku [Usuń], [Edytuj] dostępnych po rozwinięciu szczegółów wybranego zamówienia.
+
+image::e-Faktury(KSeF)/fv_kor_zal_zamowienie_edytuj_usun.png[]
+
+* *Adnotacje*
+
+image::e-Faktury(KSeF)/fv_zal_adnotacje.png[]
+
+* *Płatności* -  informacja o ewentualnych dokonanych płatnościach za fakturę
+
+image::e-Faktury(KSeF)/fv_zal_platnosci.png[]
+
+* *Dodatkowe informacje*
+
+image::e-Faktury(KSeF)/fv_zal_dodatkowe_informacje.png[]
+
+* *Warunki transakcji*
+
+image::e-Faktury(KSeF)/fv_zal_warunki_transakcji.png[]
+
+* *Pozostałe informacje na fakturze*
+
+image::e-Faktury(KSeF)/fv_zal_pozostałe_inf.png[]
+
+
+
+=== Faktura korygująca - fakturę rozliczeniową
+
+Na formularzu nowej faktury korygującej fakturę rozliczeniową dostępne są następujące sekcje:
+
+
+* *Dane faktury korygowanej*
+* *Dane identyfikacyjne faktury korygowanej*
+
+image::e-Faktury(KSeF)/fv_kor_rozl_dane.png[]
+
+* *Nabywca* - dane nabywcy faktury przed i po korekcie (jeżeli uległy zmianie)
+
+image::e-Faktury(KSeF)/fv_kor_pod_nabywca.png[]
+
+
+* *Sprzedawca* -  dane sprzedawcy faktury przed i po korekcie( jeżeli uległu zmianie) -  domyślnie uzupełnione danymi użytkownika zalogowanego do systemu
+
+image::e-Faktury(KSeF)/fv_kor_pod_sprzedawca.png[]
+
+* *Szczegóły faktury* - informacje dotyczące numeru faktury, dacie wystawinia itp.
+
+image::e-Faktury(KSeF)/fv_kor_roz_szczegoly.png[]
+
+
+* *Pozycje na fakturze* - informacje o zamówionych towarach lub usługach przed i po korekcie. Liczba pozycji przed korektą musi się rownać ilości pozycji po korekcie.
+
+image::e-Faktury(KSeF)/fv_kor_rozl_pozycje.png[]
+
+Aby wprowadzić nową lub kolejną pozycje na fakturze należy wybrać przycisk [Dodaj nową pozycję] lub odpowiednio [Dodaj kolejną pozycje] i uzupełnić dane nowej pozycji.
+
+image::e-Faktury(KSeF)/fv_kor_rozl_pozycje_dodaj.png[]
+
+Każdą dodaną pozycję na fakturze użytownik może edytować lub usunąć poprzez wybranie przycisku [Usuń], [Edytuj] dostępnych po rozwinięciu szczegółów wybranej pozycji.
+
+image::e-Faktury(KSeF)/fv_kor_rozl_pozycje_edytuj_usun.png[]
+
+* *Adnotacje*
+
+image::e-Faktury(KSeF)/fv_zal_adnotacje.png[]
+
+* *Płatności* -  informacja o ewentualnych dokonanych płatnościach za fakturę
+
+image::e-Faktury(KSeF)/fv_zal_platnosci.png[]
+
+* *Dodatkowe informacje*
+
+image::e-Faktury(KSeF)/fv_zal_dodatkowe_informacje.png[]
+
+* *Warunki transakcji*
+
+image::e-Faktury(KSeF)/fv_zal_warunki_transakcji.png[]
+
+* *Pozostałe informacje na fakturze*
+
+image::e-Faktury(KSeF)/fv_zal_pozostałe_inf.png[]
+
+
+
+=== Faktura korygująca - korekta zbiorcza
+
+
+Na formularzu nowej faktury korygującej - korekta zbiorcza dostępne są następujące sekcje:
+
+
+* *Dane faktury korygowanej*
+* *Dane identyfikacyjne faktury korygowanej*
+
+image::e-Faktury(KSeF)/fv_kor_zbiorcza_dane.png[]
+
+* *Nabywca* - dane nabywcy faktury przed i po korekcie (jeżeli uległy zmianie)
+
+image::e-Faktury(KSeF)/fv_kor_pod_nabywca.png[]
+
+
+* *Sprzedawca* -  dane sprzedawcy faktury przed i po korekcie( jeżeli uległu zmianie) -  domyślnie uzupełnione danymi użytkownika zalogowanego do systemu
+
+image::e-Faktury(KSeF)/fv_kor_pod_sprzedawca.png[]
+
+* *Szczegóły faktury* - informacje dotyczące numeru faktury, dacie wystawinia itp.
+
+image::e-Faktury(KSeF)/fv_kor_zbiorcza_szczegoly.png[]
+
+
+* *Rabat* - wartość udzielonego rabatu
+
+image::e-Faktury(KSeF)/fv_kor_zbiorcza_tavat.png[]
+
+Aby wprowadzić nowy lub kolejny rabat na fakturze należy wybrać przycisk [Dodaj nowy rabat] lub odpowiednio [Dodaj kolejny rabat] i uzupełnić dane nowego rabatu.
+
+image::e-Faktury(KSeF)/fv_kor_zbiorcza_rabat_dodaj.png[]
+
+Każdy dodany rabat na fakturze użytownik może edytować lub usunąć poprzez wybranie przycisku [Usuń], [Edytuj] dostępnych po rozwinięciu szegółów wybranego rabatu.
+
+image::e-Faktury(KSeF)/fv_kor_zbior_rabat_edycja_usun.png[]
+
+* *Towary i usługi* - użytkownik okrśla czy rabat dotyczy wszystkich towarów i usług na rzecz dango nabywcy w danym okresie. W przypadku gdy rabat nie dotyczy wszystkich towarów i usług, użytkownik musi uzupełnić listę pozycji na fakturze których dotyczy rabat - przycisk [Dodaj nową pozycję].
+Dodane towary i usługi użytkownik może edytować i usuwać.
+
+image::e-Faktury(KSeF)/fv_kor_zbiorcza_towary.png[]
+
+
+* *Adnotacje*
+
+image::e-Faktury(KSeF)/fv_zal_adnotacje.png[]
+
+* *Płatności* -  informacja o ewentualnych dokonanych płatnościach za fakturę
+
+image::e-Faktury(KSeF)/fv_zal_platnosci.png[]
+
+* *Dodatkowe informacje*
+
+image::e-Faktury(KSeF)/fv_zal_dodatkowe_informacje.png[]
+
+* *Warunki transakcji*
+
+image::e-Faktury(KSeF)/fv_zal_warunki_transakcji.png[]
+
+* *Pozostałe informacje na fakturze*
+
+image::e-Faktury(KSeF)/fv_zal_pozostałe_inf.png[]
+
+
+
+=== Podsumowanie danych wprowadzonej faktury
+
+Po kliknięciu [Dalej]  na formularzu nowej faktury system przenosi użytkownika do okna z podsumowaniem wprowadznych danych. Dane jakie są prezentowane na podsumowaniu to:
+
+* *Rodzaj faktury*,
+* *Sprzedawca*,
+* *NIP*,
+* *Nabywca*,
+* *Typ identyfikatora*,
+* *Kolejny numer faktury*,
+* *Status*,
+* *Data wystawienia, z zastrzeżeniem art. 106na ust. 1 ustawy*,
+* *Wartość netto*,
+* *Kwota podatku*,
+* *Wartość brutto*,
+* *Zamówienie / Pozycje / Rabat* -  w zależności od rodzaju wprowadzonej faktury,
+* *Podumowanie stawek podatku*,
+* *Przyciski [Autoryzuj] i [Autoryzuj i wyślij]*.
+
+image::e-Faktury(KSeF)/fv_zal_podsumowanie.png[]
+
+Po wybraniu przycisku [Autoryzuj] system tworzy dyspozycje takiej faktury, która przyjmuje status _Gotowa do wysłania_.
+
+Po wybraniu przycisku [Autoryzuj i wyślij], system wysyłą fakture do systemu KSeF - dyspozycja na liscie dyspozycji ma status _Dodana_.
+
+
+== Import e-Faktury
+
+Użytkownik ma możliwość importu faktury. Służy do tego przycisk [Wczytaj fakturę], który jest dostępny po naciśnięciu przycisku [Wystaw fakturę].
+
+
+image::e-Faktury(KSeF)/fv_wczytaj_fv.png[]
+
+Wymagany format pliku do importu to XML.
+
+image::e-Faktury(KSeF)/fv_import_fv.png[]
+
+
+Po wczytaniu poprawnego pliku, pojawia się okno z  podsumowaniem z danymi faktury, gdzie użytkownik może wysłać fakture do KSeF lub tylko zautoryzować, wtedy wczytana fv trafia na liste dyspozycji faktury w statusie _Gotowy do wysłania_.
+
+
+image::e-Faktury(KSeF)/fv_import_podsumowanie.png[]

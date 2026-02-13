@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000360",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu operacji z historii rachunku"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie liniowym"
+    }
+  ],
+  "section_title": "Plik w formacie liniowym",
+  "text": "W pliku eksportu zestawienia operacji z historii rachunku w formacie liniowym informacja o pojedynczej operacji zajmuje jedną linię (rekord) zakończoną znakami <CRLF>. Każda linia składa się z pól zawierających poszczególne dane operacji. Pola występują w pliku w określonej kolejności, zgodnie z opisem struktury zdefiniowanym w pliku _schema.ini_. Pola oddzielone są separatorem (określonym w pliku \"schema.ini\") lub są stałej długości.\n\nDopuszczalny zestaw pól opisujących dane operacji wraz z formatem danych dla każdego pola przedstawiono w poniższej tabeli.\n\nTypy danych stosowane przy opisie pól: +\n*N* - pole numeryczne, +\n*C* - pole tekstowe, +\n*D* - data w formacie RRRR-MM-DD, gdzie RRRR - rok, MM - miesiąc, DD - dzień, (np. 2010-04-01), +\n*K* - pole zawierające kwotę. Kwota w formacie Zł.GR. +\n\n[width=\"100%\",cols=\"4,3,3,10\",options=\"header\"]\n|====================\n|*Pole* |*Długość* |*Typ* |*Opis*\n|DATA |10 |D |Data waluty\n|RODZAJ |100 |C |Rodzaj operacji\n|KWOTA |12/2 |K |Kwota operacji\n|STRONA |1 |C |Strona operacji: D - Debit (Winien), C - Credit (Ma)\n|WALUTA |3 |C |Waluta rachunku obciążanego (dla strony MA) lub uznawanego (dla strony WN)\n|NAZWA1 |35 |C |Nazwa kontrahenta - wiersz 1\n|NAZWA2 |35 |C |Nazwa kontrahenta - wiersz 2\n|NAZWA3 |35 |C |Nazwa kontrahenta - wiersz 3\n|NAZWA4 |35 |C |Nazwa kontrahenta - wiersz 4\n|TRESC1 |35 |C |Treść operacji - wiersz 1\n|TRESC2 |35 |C |Treść operacji - wiersz 2\n|TRESC3 |35 |C |Treść operacji - wiersz 3\n|TRESC4 |35 |C |Treść operacji - wiersz 4\n|====================\n\n[underline]##Przykładowy opis struktury dla pliku z danymi o operacjach z historii rachunku:##\n\n[source, txt]\n----\n[operacje_biez.txt]\nColNameHeader=False\nFormat=Delimited(;)\nAmountFormat=,\nMaxScanRows=25\nCharacterSet=OEM\nCol1=DATA Char Width 10\nCol2=RODZAJ Char Width 100\nCol3=KWOTA Float\nCol4=STRONA Char Width 1\nCol5=WALUTA Char Width 3\nCol6=NAZWA1 Char Width 35\nCol7=NAZWA2 Char Width 35\nCol8=NAZWA3 Char Width 35\nCol9=NAZWA4 Char Width 35\nCol10=TRESC1 Char Width 35\nCol11=TRESC2 Char Width 35\nCol12=TRESC3 Char Width 35\nCol13=TRESC4 Char Width 35\n----\n\nWARNING: Nazwy pól w opisie struktury powinny być pisane dużymi literami.\n\nRodzaj separatora pól rekordu określa parametr Format.\n\nFormat=Delimited (x) oznacza, że pola rekordu oddzielone są znakiem x - w poniższym przykładzie średnikiem.\n\nFormat=FixedLength oznacza plik stałopozycyjny, w którym pola rekordu mają stałą długość. W takim przypadku konieczne jest określenie długości poszczególnych pól w opisie struktury.\n\nAmountFormat umożliwia zdefiniowanie separatora kwoty (pozycja opcjonalna). W przypadku braku skonfigurowania znacznika zostanie zastosowany domyślny separator (dla formatu liniowego jest to kropka).\nWartość znacznika AmountFormat może zawierać wyłącznie jeden znak. W przypadku podania więcej niż jednego znaku system zgłosi błąd struktury.\n\n\nParametry MaxScanRows oraz CharacterSet zostały umieszczone w opisie struktury dla zachowania zgodności ze standardem ODBC. Parametry te są ignorowane przez aplikację Asseco EBP i w opisie struktury _schema.ini_ mogą zostać pominięte.\n\nPolskie znaki kodowane są w UTF-8.\n\nParametr ColNameHeader może przyjmować tylko wartość _False_. W przypadku wpisania innej wartości dla parametru lub pominięcia parametru w pliku _schema.ini_, aplikacja przyjmuje domyślną wartość parametru - _False_.\n\n[underline]##Przykładowa zawartość pliku eksportu operacji z historii rachunku w formacie liniowym:##\n\n[source, txt]\n----\n2009-07-04;Przelew wychodzacy wewnetrzny;500;D;PLN;BANK W MIESCIE;IE;ul. Testowa 1 00-111 MIASTO;;Przelew wychodzacy wewnetrzny;Na rachunek: 50 1610 1133 3003 0000 6956 0028;Odbiorca: BANK W MIESCIE,IE,ul. Testowa 1;;\n2009-07-04;Przelew wychodzacy do Urzedu Skarbowego;11,11;D;PLN;Urzad Skarbowy Miasto;;;;Przelew do Urzedu Skarbowego na rachunek :;51 1010 1078 0024 1122 2100 0000;Typ identyfikatora: PESEL;Identyfikator: 79020107897;\n2009-07-04;Przelew wychodzacy zewnetrzny;1;D;PLN;Test;;;;Przelew wychodzacy zewnetrzny;Na rachunek: 08 1320 1117 3004 4000 0024 0001;Prowadzony na rzecz: Test,,,;Tytulem: 1;\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 2374,
+      "line_end": 2454
+    }
+  ]
+}

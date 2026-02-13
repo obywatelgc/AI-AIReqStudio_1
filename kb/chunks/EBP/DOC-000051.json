@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000051",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Uprawnienia Użytkowników"
+    }
+  ],
+  "section_title": "Uprawnienia Użytkowników",
+  "text": "W opcji _Ustawienia_ _→ Uprawnienia Użytkowników_ (opcja dostępna wyłącznie dla dministratora klienta korporacyjnego), administrator ma możliwość zarządzania uprawnieniami Użytkowników do poszczególnych rachunków oraz funkcjonalności w systemie.\n\nimage::main/image134.png[image,width=590,height=164]\n\nW górnej części formularza UPRAWNIENIA Użytkowników dostępne są następujące przyciski:\n\n* image:main/image85.png[image,width=39,height=44] – umożliwiający powrót do formularza USTAWIENIA,\n* image:main/image86.png[image,width=43,height=55]– umożliwiający przejście do głównego menu.\n\nNa formularzu UPRAWNIENIA Użytkowników, dostępne są następujące parametry:\n\n* wybór Użytkownika – administrator musi wybrać z listy wartości Użytkownika, któremu chce nadać uprawnienia,\n* zakres uprawnień – administrator musi wybrać z listy wartości jedną z dwóch dostępnych na liście wartości:\n\n** Funkcjonalne – uprawnienia pozwalające na zarządzanie dostępem do funkcjonalności w systemie Asseco EBP,\n** Rachunki – uprawnienia w zakresie możliwości ich obciążania lub oglądania.\n\nimage::main/image135.png[image,width=490,height=163]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 1742,
+      "line_end": 1761
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "chunk_id": "DOC-000003",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    }
+  ],
+  "section_title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego",
+  "text": "ualizacja dokumentacji\n|15.11.2024 |6.10.0C | Aktualizacja dokumentacji Karty (Visiona-GAPI), Wniosek o kartę (CardOn)| Aktualizacja dokumentacji\n|05.12.2024 |6.10.1C | Aktualizacja dokumentacji Przepływy| Aktualizacja dokumentacji\n|30.12.2024 |6.10.2aC | Aktualizacja dokumentacji Przelew Sorbnet walidacja| Aktualizacja dokumentacji\n|21.01.2025 |6.10.3C | Aktualizacja dokumentacji e-Faktura (KSeF)| Aktualizacja dokumentacji\n|28.01.2025 |6.10.3C | Aktualizacja dokumentacji Uprawnienia do rachunków| Aktualizacja dokumentacji\n|24.03.2025 |6.11.0C | Aktualizacja dokumentacji Ogólna |Aktualizacja dokumentacji\n|09.07.2025 |6.13.0C | Wniosek o kartę kredytową |Aktualizacja dokumentacji\n|03.10.2025 |6.14.1C | Formaty danych i struktury plików| Aktualizacja dokumentacji\n|23.10.2025 |6.14.3C | Nowy standard w formatach płatności| Aktualizacja dokumentacji\n|04.11.2025 |6.14.3C | Karty| Aktualizacja dokumentacji\n|===\n\n\n:imagesdir: images\n",
+  "primary_source_file": "CustomerWebUserGuide.adoc",
+  "provenance": [
+    {
+      "source_file": "CustomerWebUserGuide.adoc",
+      "line_start": 4,
+      "line_end": 111
+    },
+    {
+      "source_file": "CustomerWebUserGuide.adoc",
+      "line_start": 113,
+      "line_end": 113
+    },
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 1,
+      "line_end": 2
+    }
+  ]
+}

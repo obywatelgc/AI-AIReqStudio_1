@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000136",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (GryfCard)"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie listy kart"
+    }
+  ],
+  "section_title": "Przeglądanie listy kart",
+  "text": "Po kliknięciu w tytuł widżetu *Karty* lub poprzez wybór opcji z bocznego menu Karty wyświetlane jest okno prezentujące listę kart, do których uprawniony jest Użytkownik:\n\nimage::Karty/image3k.png[]\n\nNa liście kart, dla każdej karty dostępne są następujące informacje:\n\n* *Nazwa i numer* - nazwa karty (nadana przez system), numer karty częściowo zamaskowany,\n\n* *Rodzaj karty* - rodzaj karty (debetowa, kredytowa),\n\n* *Właściciel* - imię i nazwisko właściciela karty,\n\n* *Aktywność* - dostępne statusy _Aktywna, Nieaktywna,_\n\n* *Status* - status karty, dostępne statusy: _Ważna, Nieważna, Zablokowana, Zastrzeżona, Do aktywacji._ Wartość\nprezentowana jako status zależy od:\n\n** daty zastrzeżenia: jeśli data zastrzeżenia jest przed datą aktualną - prezentowany jest status _Zastrzeżona,_\n\n** daty zablokowania: jeśli data zablokowania jest przed datą aktualną - prezentowany jest status _Zablokowana,_\n\n** daty ważności: jeśli data końca ważności jest przed datą aktualną - prezentowany jest status _Nieważna._\n\nJeśli powyższe warunki nie są spełnione - karta posiada status _Ważna (Aktywna/Nieaktywna)._\nSystem umożliwia także filtrowanie listy kart po wybraniu ikony znajdującej się nad listą, a następnie po wpisaniu danych w polu wyszukiwania:\n\nimage::Karty/image4k.png[]\n\nSystem filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej karty w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści.\n\nDodatkowo Użytkownik mam możliwość filtrowania kart po statusie karty poprzez wybór wartości z dostępnej listy: _Wszystkie, Ważna (wartość domyślna) , Nieważna, Zablokowana, Zastrzeżona, Do aktywacji._\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 651,
+      "line_end": 683
+    }
+  ]
+}

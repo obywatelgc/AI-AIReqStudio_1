@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000125",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (Visiona)"
+    },
+    {
+      "level": 3,
+      "title": "Modyfikacja nazwy własnej karty"
+    }
+  ],
+  "section_title": "Modyfikacja nazwy własnej karty",
+  "text": "W celu ułatwienia identyfikacji karty, Użytkownik ma możliwość modyfikacji nazwy produktu z poziomu:\n\n* listy kart za pomocą ikonki image:Karty/image24.png[image,width=43,height=40]znajdującej się przy nazwie karty\n\nimage::Karty/image25.png[image,width=310,height=93]\n\n* szczegółów karty za pomocą ikonki image:Karty/image24.png[image,width=43,height=40]znajdującej się przy polu *Nazwa własna*.\n\nimage::Karty/image26.png[image,width=422,height=72]\n\nObok pola dostępne są przyciski:\n\n* image:Karty/image27.png[image,width=38,height=41]– umożliwia zapisanie zmienionej nazwy własnej karty. Nazwę własną karty zapisać można także po jej wprowadzeniu i użyciu klawisza [Enter] z klawiatury.\n* image:Karty/image28.png[image,width=32,height=39]– umożliwia rezygnację ze zmiany nazwy własnej karty.\n\nW przypadku, gdy Użytkownik usunie wprowadzoną w polu nazwę własną karty, system przyporządkowuje mu nazwę systemową.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 268,
+      "line_end": 285
+    }
+  ]
+}

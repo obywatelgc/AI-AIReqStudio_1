@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000171",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista przelewów - opis wybranych akcji"
+    },
+    {
+      "level": 4,
+      "title": "Akceptacja pojedynczego przelewu z Listy zleceń"
+    }
+  ],
+  "section_title": "Akceptacja pojedynczego przelewu z Listy zleceń",
+  "text": "Akceptacja przelewu może być wykonana z poziomu:\n\n* listy przelewów, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*),\n\n* *panelu akcji zbiorczych* po uprzednim jego zaznaczeniu, a następnie użyciu opcji *Akceptuj*.\n\nWybór opcji *Akceptuj* powoduje wyświetlenie szczegółów przelewu wraz z sekcją do podpisu. Po zaakceptowaniu przelewu zostanie wyświetlone okno potwierdzenia.\n\nProces akceptacji weryfikuje schemat akceptacji oraz limit kwotowy akceptacji.\n\nNOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do akceptowania przelewów. Akceptowanie dostępne jest dla statusu przelewu _Nowy_.\n\nNOTE: W przypadku włączonej usługi recipientWhiteList przelewy dodatkowo podlegaja weryfikacji wg <<akc-poj-biala-lista-podatnikow,białej listy podatników VAT>>\n\n[[akc-poj-biala-lista-podatnikow]]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 253,
+      "line_end": 268
+    }
+  ]
+}

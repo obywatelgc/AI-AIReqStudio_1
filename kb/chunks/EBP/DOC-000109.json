@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000109",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Kredyty"
+    },
+    {
+      "level": 3,
+      "title": "Widżet Kredyty"
+    }
+  ],
+  "section_title": "Widżet Kredyty",
+  "text": "Widżet *Kredyty* może być prezentowany w dwóch rozmiarach: standardowym i rozszerzonym. W zależności od wielkości po najechaniu myszką na prawy górny róg widżetu widoczne są następujące ikony:\n\n• ikona image:Kredyty/image3.png[image,width=43,height=58]– powoduje rozszerzenie widżetu o dodatkowe informacje,\n\n• ikona image:Kredyty/image4.png[image,width=43,height=68]– powoduje powrót do rozmiaru standardowego.\n\nWidżet standardowy\n\nimage::Kredyty/image5.png[image,width=307,height=295]\n\nNa widżecie standardowym jest możliwość:\n\n* wyboru kredytu w celu zaprezentowaniu skróconych informacji o nim, czyli:\n\n** *Nazwy kredytu* – nazwa kredytu,\n** *Najbliższa rata* – kwoty najbliższej raty wraz z walutą,\n** *Termin* – data płatności najbliższej raty (data w formacie DD.MM.RRRR),\n** *Saldo kredytu* – saldo kredytu.\n\nW dolnej części widżetu dostępne są akcje:\n\n* [SPŁAĆ RATĘ] – umożliwia spłatę raty kredytu,\n* [SZCZEGÓŁY] – umożliwia przejście do szczegółów wybranego kredytu.\n\nWidżet rozszerzony\n\nimage::Kredyty/image6.png[image,width=272,height=435]\n\nNa widżecie rozszerzonym prócz tych samych informacji co na widoku standardowym dodatkowo prezentowane są:\n\n* *Pozostało do spłaty* - wykres kołowy, procentowo obrazujący ile pozostało do spłaty wraz z informacją o ilości rat.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Kredyty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Kredyty.adoc",
+      "line_start": 32,
+      "line_end": 64
+    }
+  ]
+}

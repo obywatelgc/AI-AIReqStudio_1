@@ -1,0 +1,24 @@
+{
+  "chunk_id": "DOC-000108",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Kredyty"
+    }
+  ],
+  "section_title": "Kredyty",
+  "text": "Miniaplikacja *Kredyty* zapewnia dostęp do produktów kredytowych, do których Użytkownik jest uprawniony.\n\nSystem Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Kredyty* z dwóch głównych poziomów:\n\n* widżetu *Kredyty* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),\n\nimage::Kredyty/image1.png[image,width=272,height=265]\n\n* menu bocznego po wybraniu opcji _Kredyty._\n\nimage::Kredyty/image2.png[image,width=227,height=50]\n\nW każdym z poziomów miniaplikacji dla Użytkownika dostępne są formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach.\n\nUżytkownik posiadający dostęp do miniaplikacji Kredyty ma możliwość:\n\n* przeglądania skróconych informacji o kredytach na widżecie miniaplikacji *Kredyty*,\n* przeglądania listy kredytów,\n* modyfikacji nazwy własnej kredytu,\n* przeglądania szczegółów kredytów,\n* przeglądania harmonogramu spłat kredytu,\n* przeglądania i pobierania historii operacji kredytu,\n* spłaty raty kredytu.\n\nNOTE: Funkcjonalność kredytów dostępne jest dla Użytkownika, który posiada odpowiednie uprawnienia do funkcjonalności. Uprawnienia ustawiane są przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Kredyty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Kredyty.adoc",
+      "line_start": 4,
+      "line_end": 30
+    }
+  ]
+}

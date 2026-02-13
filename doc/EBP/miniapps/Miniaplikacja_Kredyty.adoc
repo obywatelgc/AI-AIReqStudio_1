@@ -1,0 +1,306 @@
+:imagesdir: images
+
+= Kredyty
+
+Miniaplikacja *Kredyty* zapewnia dostęp do produktów kredytowych, do których Użytkownik jest uprawniony.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Kredyty* z dwóch głównych poziomów:
+
+* widżetu *Kredyty* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),
+
+image::Kredyty/image1.png[image,width=272,height=265]
+
+* menu bocznego po wybraniu opcji _Kredyty._
+
+image::Kredyty/image2.png[image,width=227,height=50]
+
+W każdym z poziomów miniaplikacji dla Użytkownika dostępne są formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach.
+
+Użytkownik posiadający dostęp do miniaplikacji Kredyty ma możliwość:
+
+* przeglądania skróconych informacji o kredytach na widżecie miniaplikacji *Kredyty*,
+* przeglądania listy kredytów,
+* modyfikacji nazwy własnej kredytu,
+* przeglądania szczegółów kredytów,
+* przeglądania harmonogramu spłat kredytu,
+* przeglądania i pobierania historii operacji kredytu,
+* spłaty raty kredytu.
+
+NOTE: Funkcjonalność kredytów dostępne jest dla Użytkownika, który posiada odpowiednie uprawnienia do funkcjonalności. Uprawnienia ustawiane są przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.
+
+== Widżet Kredyty
+
+Widżet *Kredyty* może być prezentowany w dwóch rozmiarach: standardowym i rozszerzonym. W zależności od wielkości po najechaniu myszką na prawy górny róg widżetu widoczne są następujące ikony:
+
+• ikona image:Kredyty/image3.png[image,width=43,height=58]– powoduje rozszerzenie widżetu o dodatkowe informacje,
+
+• ikona image:Kredyty/image4.png[image,width=43,height=68]– powoduje powrót do rozmiaru standardowego.
+
+Widżet standardowy
+
+image::Kredyty/image5.png[image,width=307,height=295]
+
+Na widżecie standardowym jest możliwość:
+
+* wyboru kredytu w celu zaprezentowaniu skróconych informacji o nim, czyli:
+
+** *Nazwy kredytu* – nazwa kredytu,
+** *Najbliższa rata* – kwoty najbliższej raty wraz z walutą,
+** *Termin* – data płatności najbliższej raty (data w formacie DD.MM.RRRR),
+** *Saldo kredytu* – saldo kredytu.
+
+W dolnej części widżetu dostępne są akcje:
+
+* [SPŁAĆ RATĘ] – umożliwia spłatę raty kredytu,
+* [SZCZEGÓŁY] – umożliwia przejście do szczegółów wybranego kredytu.
+
+Widżet rozszerzony
+
+image::Kredyty/image6.png[image,width=272,height=435]
+
+Na widżecie rozszerzonym prócz tych samych informacji co na widoku standardowym dodatkowo prezentowane są:
+
+* *Pozostało do spłaty* - wykres kołowy, procentowo obrazujący ile pozostało do spłaty wraz z informacją o ilości rat.
+
+== Przeglądanie listy kredytów
+
+Po kliknięciu w tytuł widżetu *Kredyty* lub poprzez wybór opcji z bocznego menu _Kredyty_ wyświetlane jest okno prezentujące listę kredytów, do których Użytkownik jest uprawniony:
+
+image::Kredyty/image7.png[image,width=604,height=219]
+
+Na liście kredytów, dla każdego kredytu dostępne są następujące informacje:
+
+* *Typ kredytu* – nazwa produktu lub nazwa własna kredytu, wraz z numer rachunku kredytu,
+* *Kolejna rata* – kwota najbliższej raty wraz z walutą,
+* *Termin płatności* – data płatności najbliższej raty.
+
+W górnej części formularza KREDYTY dostępny jest filtr prosty, umożliwiający filtrowanie listy kredytów po wpisaniu danych w polu wyszukiwania:
+
+image::Kredyty/image8.png[image,width=356,height=57]
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnego kredytu w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści.
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnego rachunku w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści. Aby powrócić do pełnej listy rachunków należy kliknąć w ikonę image:Kredyty/image9.png[image,width=56,height=54]w polu wyszukiwania.
+
+== Akcje na wybranym kredycie
+
+Kliknięcie w wiersz wybranego kredytu powoduje wyświetlenie dodatkowych informacji na temat kredytu.
+
+image::Kredyty/image10.png[image,width=603,height=203]
+
+Na formularzu rozszerzonym dostępne są dodatkowe informacje:
+
+* *Saldo bieżące* – kwota kredytu pozostała do spłaty wraz z walutą,
+* *Oprocentowanie* – oprocentowanie kredytu,
+* *Zaległości* – kwota zaległości w spłacie wraz z walutą,
+* *Najbliższe raty* – lista trzech najbliższych rat kredytu, wraz z informacją o dacie i kwocie najbliższej raty.
+
+Dodatkowo prezentowany jest określony zestaw akcji:
+
+* [SPŁAĆ RATĘ] – umożliwia spłatę raty kredytu,
+* [HARMONOGRAM] – opcja umożliwia przeglądanie harmonogramu spłat kredytu,
+* [HISTORIA KREDYTU] – opcja umożliwia przeglądanie operacji kredytu,
+* [SZCZEGÓŁY] – opcja umożliwia przeglądanie szczegółowych informacji na temat kredytu.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza kredytu, powoduje zwinięcie dodatkowych informacji i przycisków prezentowanych dla kredytu.
+
+== Modyfikacja nazwy własnej kredytu
+
+W celu ułatwienia identyfikacji kredytu, Użytkownik ma możliwość modyfikacji nazwy produktu z poziomu:
+
+* listy kredytów za pomocą ikonki image:Kredyty/image11.png[image,width=50,height=53]znajdującej się przy nazwie kredytu
+
+image::Kredyty/image12.png[image,width=343,height=118]
+
+* szczegółów kredytu za pomocą ikonki image:Kredyty/image11.png[image,width=50,height=53]znajdującej się przy polu *Nazwa własna*.
+
+image::Kredyty/image13.png[image,width=468,height=68]
+
+Obok pola dostępne są przyciski:
+
+* image:Kredyty/image14.png[image,width=38,height=51]– umożliwia zapisanie zmienionej nazwy własnej kredytu. Nazwę własną kredytu zapisać można także po jej wprowadzeniu i użyciu klawisza [Enter] z klawiatury.
+* image:Kredyty/image15.png[image,width=39,height=41]– umożliwia rezygnację ze zmiany nazwy własnej kredytu.
+
+W przypadku, gdy Użytkownik usunie wprowadzoną w polu nazwę własną kredytu, system przyporządkowuje mu nazwę systemową.
+
+Nazwa własna przypisana jest do Użytkownika co oznacza, że ten sam produkt u różnych Użytkowników może posiadać różną nazwę.
+
+==  Przeglądanie szczegółów kredytu
+
+Aby przejść do szczegółów wybranego kredytu należy kliknąć w obszar wybranego wiersza i wybrać przycisk [SZCZEGÓŁY]. System wyświetla formularz SZCZEGÓŁY RACHUNKU.
+
+image::Kredyty/image16.png[image,width=604,height=259]
+
+Na formularzu prezentowane są następujące dane:
+
+* *Numer umowy* – numer umowy,
+* *Numer rachunku* – numer kredytu w formacie NRB,
+* *Waluta rachunku* – symbol waluty w jakiej prowadzony jest kredyt,
+* *Nazwa własna* – nazwa kredytu nadana przez klienta,
+* *Przyznana kwota* – saldo początkowe kredytu wraz z walutą,
+* *Saldo bieżące* – aktualne saldo kredytu wraz z walutą,
+* *Kolejna rata* – kwota kolejnej raty wraz z walutą,
+* *Termin kolejnej raty* – data spłaty kolejnej raty kredytu (data w formacie DD.MM.RRRR),
+* *Nadpłata* – kwota nadpłaty kredytu wraz z walutą (nadpłata kapitału, odsetek, ubezpieczeń),
+* *Zaległości* – kwota zaległości kredytu wraz z walutą (suma zaległego kapitału i zaległych odsetek),
+* *Oprocentowanie* – oprocentowanie kredytu,
+* *Data zapadalności* – data końca kredytu (data w formacie DD.MM.RRRR),
+* *Twój status* – stosunek własności zalogowanego klienta względem rachunku.
+
+Nad szczegółami kredytu dostępne są:
+
+* Przyciski:
+
+** image:Kredyty/image17.png[image,width=43,height=46] – umożliwiający przejście do formularza KREDYTY,
+** image:Kredyty/image18.png[image,width=49,height=57]– umożliwiający wyjście do menu głównego.
+
+* [DODATKOWE OPCJE] – pogrupowane akcje, w skład których wchodzą:
+** *Harmonogram* – opcja umożliwia przeglądanie harmonogramu spłat kredytu,
+** *Historia* – opcja umożliwia przeglądanie operacji kredytu.
+
+image::Kredyty/image19.png[image,width=209,height=129]
+
+== Przeglądanie harmonogramu spłat kredytu
+
+Aby przejść do harmonogramu wybranego kredytu, należy kliknąć w obszar wybranego wiersza na liście kredytów i wybrać przycisk [HARMONOGRAM].
+
+image::Kredyty/image20.png[image,width=603,height=247]
+
+Dla harmonogramu spłat kredytu dostępne są następujące informacje:
+
+* *Data płatności* – termin płatności raty (data w formacie DD.MM.RRRR),
+* *Kwota* – kwota raty wraz z walutą (suma kapitału i odsetek do zapłaty).
+
+W celu zawężenia prezentacji listy rat, Użytkownik ma możliwość zastosowania filtru prostego, po wpisaniu danych w polu wyszukiwania znajdującego się nad listą:
+
+image::Kredyty/image21.png[image,width=356,height=63]
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej operacji w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści. Aby powrócić do pełnej listy należy kliknąć w ikonę image:Kredyty/image22.png[image,width=41,height=42]w polu wyszukiwania.
+
+W górnej części formularza NAJBLIŻSZE RATY dostępne są przyciski:
+
+* image:Kredyty/image17.png[image,width=43,height=46] – umożliwiający przejście do formularza KREDYTY,
+* image:Kredyty/image18.png[image,width=49,height=57] – umożliwiający wyjście do menu głównego.
+
+Kliknięcie w obszar wybranej pozycji harmonogramu spłat, powoduje wyświetlenie dodatkowych informacji dla operacji:
+
+* *Część kapitałowa* – kwota stanowiąca kapitał wybranej raty kredytu wraz z walutą,
+* *Część odsetkowa* – kwota stanowiąca odsetki wybranej raty kredytu wraz z walutą.
+
+image::Kredyty/image23.png[image,width=604,height=114]
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza wybranej pozycji harmonogramu spłaty powoduje jego zwinięcie.
+
+Lista z harmonogramem spłat podlega stronicowaniu. Przejście do kolejnych stron następuje poprzez wybór przycisków nawigacyjnych znajdujących się pod listą.
+
+image::Kredyty/image24.png[image,width=294,height=62]
+
+== Przeglądanie historii kredytu
+
+Aby przejść do historii wybranego kredytu, należy kliknąć w obszar wybranego wiersza na liście kredytów i wybrać przycisk [HISTORIA KREDYTU].
+
+image::Kredyty/image25.png[]
+
+Na formularzu HISTORIA KREDYTU dostępne są następujące informacje:
+
+* *Data transakcji* – data transakcji (data w formacie DD.MM.RRRR),
+* *Tytuł* – tytuł operacji,
+* *Rodzaj transakcji*,
+* *Kwota* – kwota operacji wraz z walutą (suma kapitału i odsetek do zapłaty).
+
+W celu zawężenia prezentacji listy operacji kredytu, Użytkownik ma możliwość zastosowania filtrów:
+
+* Prostego – umożliwia wyszukanie po treści, w tym celu należy wpisać w polu *Wyszukaj* tekst oraz nacisnąć przycisk [ENTER].
+
+image::Kredyty/image26.png[image,width=358,height=55]
+
+Działanie wyszukiwania jest analogiczne jak w innych częściach systemu.
+
+* Zaawansowanego – użycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtra zaawansowanego dla następujących pól:
+
+** *Ostatnie* – liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana historia operacji kredytu, domyślnie 30 dni,
+** *Zakres dat* – zakres dat, od-do, dla których ma zostać wyświetlona historia rachunku, od miesiąca wstecz do daty bieżącej, jest to alternatywa dla pola *Ostatnie*. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą, którego można określić zakres dat.
+
+image::Kredyty/image27.png[image,width=357,height=408]
+
+Zastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].
+
+W górnej części formularza HISTORIA KREDYTU dostępne są przyciski:
+
+* image:Kredyty/image17.png[image,width=43,height=46] – umożliwiający przejście do formularza KREDYTY,
+* image:Kredyty/image18.png[image,width=49,height=57]– umożliwiający wyjście do menu głównego.
+
+Pod listą historii operacji prezentowane jest podsumowanie danych, widocznych na danej stronie zawierające:
+
+* *Podsumowanie strony*:
+
+** *Wpływy* – łączna dla wszystkich operacji widocznych na stronie, kwota wpłat wraz z walutą,
+** *Obciążenia* – łączna dla wszystkich operacji widocznych na stronie, kwota wypłat wraz z walutą.
+
+* *Podsumowanie*
+
+** *Wpływy* – łączna dla wszystkich operacji widocznych na stronie, kwota wpłat wraz z walutą,
+** *Obciążenia* – łączna dla wszystkich operacji widocznych na stronie, kwota wypłat wraz z walutą.
+
+Nad historią kredytu dostępny jest przycisk [POBIERZ] umożliwiający pobranie historii operacji na kredycie do pliku w formacie pdf.
+
+Kliknięcie w wybraną operację z listy powoduje wyświetlenie dodatkowych informacji dla operacji.
+
+image::Kredyty/image28.png[image,width=604,height=124]
+
+System prezentuje następujące informacje:
+
+* *Spłata kapitału* – kwota kapitału wraz z walutą,
+* *Spłata odsetek* – kwota odsetek wraz z walutą,
+* *Nadpłata* – kwota nadpłat wraz z walutą,
+* *Pozostałe* – pozostała kwota do spłaty wraz z walutą,
+* *Saldo po* – saldo kredytu po spłacie
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza powoduje zwinięcie dodatkowych informacji.
+
+== Spłata raty kredytu
+
+Aby spłacić ratkę, należy kliknąć w obszar wybranego wiersza na liście kredytów i wybrać przycisk [SPŁAĆ RATĘ].
+
+image::Kredyty/image29.png[]
+
+Aby dokonać spłaty raty kredytu należy w polu:
+
+* *Z rachunku* – wskazać rachunek, z którego ma nastąpić spłata raty, z listy rachunków, do których Użytkownik jest uprawniony. W przypadku gdy w opcji Ustawienia → Rachunek domyślny, ustawiony jest rachunek domyślny, system w polu tym podstawi ten rachunek, jednak Użytkownik ma możliwość zmiany rachunku przez wybranie z listy dostępnych,
+* *Kwota* – w polu domyślnie podstawiana jest kwota kolejnej raty w walucie kredytu, Użytkownik ma jednak możliwość wprowadzenia dowolnej kwoty spłaty,
+* *Data realizacji* – domyślnie ustawiana jest bieząca data realizacji.
+
+W górnej części formularza SPŁAĆ RATĘ KREDYTU dostępne są:
+
+* Przyciski:
+
+** image:Kredyty/image17.png[image,width=43,height=46] – umożliwiający przejście do formularza KREDYTY z listą kredytów,
+** image:Kredyty/image18.png[image,width=49,height=57]– umożliwiający wyjście do menu głównego
+
+* Akcja:
+
+** [SPŁAĆ RATĘ] – przejście do kroku drugiego, autoryzacji spłaty raty kredytu.
+** [DODAJ DO LISTY ZLECEŃ] - umożliwia zapisanie dyspozycji spłaty raty w koszyku zleceń.
+
+Po określeniu parametrów spłaty raty i naciśnięciu przycisku [SPŁAĆ RATĘ] system przechodzi na drugi krok potwierdzenia dyspozycji.
+
+image::Kredyty/image31.png[]
+
+Na formularzu SPŁATA RATY KREDYTU dostępne są:
+
+* Pole:
+
+** *Podaj PIN/Podaj kod SMS* – jedyne aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji,
+
+* Akcja:
+
+** [AKCEPTUJ] – zatwierdzenie operacji spłaty raty kredytu
+
+* Przyciski:
+
+** image:Kredyty/image17.png[image,width=43,height=46] – umożliwiający przejście do formularza pierwszego kroku spłaty raty kredytu,
+** image:Kredyty/image18.png[image,width=49,height=57]– umożliwiający wyjście do menu głównego
+
+Po dokonaniu akceptacji przez naciśnięcie przycisku [WYŚLIJ], Użytkownikowi wyświetlane jest potwierdzenie przekazania dyspozycji do realizacji wraz z przyciskiem służącym do powrotu do pulpitu.
+
+image::Kredyty/image32.png[image,width=600,height=344]

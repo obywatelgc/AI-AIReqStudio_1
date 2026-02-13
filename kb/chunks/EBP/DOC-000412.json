@@ -1,0 +1,24 @@
+{
+  "chunk_id": "DOC-000412",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Kontekst zbiorczy"
+    }
+  ],
+  "section_title": "Kontekst zbiorczy",
+  "text": "Funkcjonalność *Kontekstu zbiorczego* zapewnia możliwość pracy w Systemie Asseco EBP w kontekście kilku firm równocześnie.\nOpis aktywacji kontekstu zbiorczego w module Back Office znajduje się w dokumentacji Użytkownika Back_Office.\n\nDostępność funkcjonalności jest uzależniona od usługi _manageAggregateContext_ odpowiedzialnej za udostępnienie zarządzania kontekstem zbiorczym.\n\nKontekst zbiorczy jest dostępny w górnym menu:\n\nimage::kontekstZbiorczy/image9.jpg[]\n\nFunkcjonalność Kontekstu zbiorczego zapewnia Użytkownikowi możliwość obsługi rachunków kilku klientów firmowych.\nNa liście rachunków, kredytów i lokat prezentowane są rachunki klientów przypisanych do kontekstu zbiorczego.\n\nMożliwości Użytkownika uzależnione są od uprawnień nadanych w ustawieniach systemu w opcji Ustawienia (więcej w rozdziale Informacje ogólne).\n\nPo wybraniu kontekstu zbiorczego użytkownik ma dostęp do poniższych opcji w menu Ustawienia:\n\nimage::kontekstZbiorczy/image8.jpg[]\n\nWybór kafla *Kontekst zbiorczy* w opcji Ustawienia umożliwia zarządzanie ustawieniami kontekstu zbiorczego:\n\n* dodawaniem/usuwaniem firm z kontekstu, do których użytkownik ma uprawnienia (np. jest użytkownikiem firmy),\n* konfiguracją formatu importu i eksportu.\n\nNOTE: Do kontekstu zbiorczego nie ma możliwości dodania firmy, która obsługuje multimodulo (ma podpięte modula podrzędne).\n\nOpcja wyboru przy firmie obsługującej multimodulo jest niedostępna.\n\nimage::kontekstZbiorczy/image4.jpg[]\n\nPo wskazaniu firmy, która ma być dołączona do obsługi w ramach kontekstu zbiorczego, wyświetlane są uprawnienia użytkownika.\n\nNOTE: Aby zarządzać efektywnie firmami w ramach kontekstu zbiorczego, użytkownik musi mieć takie same uprawnienia dla każdej z firm.\n\nUprawnienia wyświetlane w prawej części okna są wynikiem iloczynu uprawnień.\nOznacza to, że uprawnienie jest zaznaczone tylko wtedy, gdy użytkownik ma dane uprawnienie w ramach wszystkich firm należących do kontekstu zbiorczego.\n\nPrzykładowo:\n\nUprawnienia fimy 1:\n\nimage::kontekstZbiorczy/image2.jpg[]\n\nUprawnienia frimy 2:\n\nimage::kontekstZbiorczy/image3.jpg[]\n\nUprawnienia użytkownika w kontekście zbiorczym, do którego należą firmy 1 i firmy 2:\n\nimage::kontekstZbiorczy/image4.jpg[]\n\nZmiany należy zapisać za pomocą opcji [Zapisz] znajdującej się w dolnej części ekranu.\nPo zapisie prezentowane jest potwierdzenie:\n\nimage::kontekstZbiorczy/image10.jpg[image,width=284,height=202]\n\nDla kontekstu zbiorczego możliwe jest również ustawienie formatu importu i eksportu w dolnej części ekranu:\n\nimage::kontekstZbiorczy/image11.jpg[]\n",
+  "primary_source_file": "chapters/Kontekst_Zbiorczy.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Kontekst_Zbiorczy.adoc",
+      "line_start": 4,
+      "line_end": 65
+    }
+  ]
+}

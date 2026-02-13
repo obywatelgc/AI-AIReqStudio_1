@@ -1,0 +1,33 @@
+{
+  "chunk_id": "DOC-000264",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Płatności Masowe"
+    },
+    {
+      "level": 3,
+      "title": "Analityka dla rachunków masowych."
+    }
+  ],
+  "section_title": "Analityka dla rachunków masowych.",
+  "text": "W prawym górnym rogu miniaplikacji dostępny jest przycisk [ANALITYKA]. Po wybraniu tej opcji system wyświetla ekran z domyślnie wyfiltrowanymi danymi. Ekran dostępny jest również po wyborze przycisku [ANALITYKA] na ekranie *_Płatności masowe_* i rozwinięciu wiersza z danymi rachunku (opis przycisku w sekcji _Dostępne opcje na wybranym rachunku_).\n\nNa ekranie prezentowane są dane:\n\n* *data księgowania* - data księgowania operacji,\n* *odbiorca/nadawca* – dane nadawcy operacji,\n* *numer rachunku* – numer rachunku uznawany,\n* *kwota* – kwota płatności.\n\nimage::Platnosci_Masowe/image15.png[image,width=604,height=276]\n\nPo kliknięciu na danej operacji prezentowany jest dodatkowo opis operacji.\n\nimage::Platnosci_Masowe/image16.png[image,width=604,height=87]\n\nNa ekranie *_Analityka_* domyślnie system prezentuje dane za ostatnie 30 dni, a w przypadku braku transakcji wyświetlany jest komunikat:\n\nimage::Platnosci_Masowe/image17.png[image,width=296,height=130]\n\nDostępna jest możliwość wpisania kryteriów wyszukiwania. Po wybraniu ikony image:Platnosci_Masowe/image8.png[image,width=56,height=53] znajdującej się nad listą, system umożliwia wpisanie danych, według których ma nastąpić wyszukanie danych.\n\nimage::Platnosci_Masowe/image9.png[image,width=360,height=58]\n\nAby powrócić do pełnej listy rachunków należy kliknąć w ikonę image:Platnosci_Masowe/image10.png[image,width=35,height=34]w polu wyszukiwania.\n\nNa ekranie dostępny jest również przycisk image:Platnosci_Masowe/image18.png[image,width=190,height=75], po wyborze którego prezentowane są dodatkowe kryteria wyszukiwania.\n\nimage::Platnosci_Masowe/image19.png[image,width=604,height=193]\n\nDostępne kryteria wyszukiwania:\n\n* *Ostatnie* – liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana historia operacji, domyślnie 30 dni,\n\n* *Zakres dat* – możliwość wyboru z kalendarza po wyborze ikony image:Platnosci_Masowe/image20.png[image,width=61,height=51], znajdującej się przy lewej stronie pól lub wpisania daty, od i do jakiej dane mają być wyświetlane,\n\nimage::Platnosci_Masowe/image21.png[image,width=307,height=349]\n\n* *Rachunki własne* – możliwość wyboru wszystkich lub wybranych rachunków, domyślna wartość _Wszystkie rachunki_,\n* *NRB wirtualny* – możliwość wpisania numeru rachunku wirtualnego,\n* *Kwota od* – pole na wpisanie kwoty, od jakiej ma nastąpić wyszukiwanie,\n* *Kwota do* – pole na wpisanie kwoty, do jakiej ma nastąpić wyszukiwanie.\n\nPo wyborze przycisku [FILTRUJ], system zaprezentuje dane zgodne z wprowadzonymi kryteriami wyszukiwania.\n\nAby zrezygnować z sekcji filtrowania należy wybrać przycisk image:Platnosci_Masowe/image22.png[image,width=162,height=62], który powoduje zwinięcie sekcji.\n:imagesdir: images\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Platnosci_Masowe.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Platnosci_Masowe.adoc",
+      "line_start": 94,
+      "line_end": 139
+    },
+    {
+      "source_file": "miniapps/Miniaplikacja_Doladowania.adoc",
+      "line_start": 1,
+      "line_end": 2
+    }
+  ]
+}

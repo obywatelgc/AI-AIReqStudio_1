@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000293",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Aktywacja dostępu do KSeF"
+    }
+  ],
+  "section_title": "Aktywacja dostępu do KSeF",
+  "text": "Po wybraniu miniaplikacji *e-Faktura (KSeF)* z menu bocznego użytkownik ma możliwość aktywacji dostępu do Krajowego Systemu e-Faktur (KSeF) z użyciem certyfikatu kwalifikowanego lub tokena (wygenerowanego na stronie Ministerstwa Finansów).\nSystem prezentuje treści opisujące użytkownikowi funkcjonalność *e-Faktura (KSeF)* z opcją przejścia do aktywacji dostępu.\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_aktywacja_1.png[]\n\nPo naciśnięciu przycisku [PRZEJDŹ DO AKTYWACJI] Użytkownik otrzymuje ekran z wyborem sposobu aktywacji funkcjonalności:\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_aktywacja_2.png[image,width=267,height=196]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 24,
+      "line_end": 33
+    }
+  ]
+}

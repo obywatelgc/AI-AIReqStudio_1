@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000032",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Wybór kontekstu przez Użytkownika w systemie Asseco EBP"
+    }
+  ],
+  "section_title": "Wybór kontekstu przez Użytkownika w systemie Asseco EBP",
+  "text": "System Asseco EBP udostępnia nowoczesny tryb pracy, pozwalający na wybór przez Użytkownika kontekstu (indywidulnego, firmowego), w jakim będzie zalogowany w systemie Asseco EBP. Funkcjonalność ta umożliwia Użytkownikowi w trakcie pracy, swobodne przełączanie się pomiędzy kontekstami i w zależności od jego wyboru działanie jako Użytkownik detaliczny (kontekst indywidualny) i obsługę rachunków indywidualnych lub jako Użytkownik firmowy (kontekst firmowy) i obsługę rachunków firmowych.\n\nW module Asseco BackOffice jest możliwość sterowania kontekstami, operator ma możliwość ustawienia Użytkownikowi aktywnego/domyślnego kontekstu w jakim będzie się logował do systemu Asseco EBP.\n\nObsługa kontekstów obejmuje następujące warianty:\n\n* Użytkownik posiada kontekst indywidualny, a nie posiada firmowego. W takim przypadku, po zalogowaniu Użytkownik nie ma dostępu do zmiany kontekstu. System oferuje funkcjonalności dla Użytkowników detalicznych.\n* Użytkownik posiada kontekst firmowy lub mikro i jest Użytkownikiem technicznym. W takim przypadku, po zalogowaniu Użytkownik nie ma dostępu do zmiany kontekstu.\n* Użytkownik posiada nieaktywny kontekst firmowy lub mikro. W takim przypadku, po zalogowaniu Użytkownik nie ma dostępu do zmiany kontekstu. System oferuje funkcjonalności dla Użytkowników detalicznych.\n* Użytkownik posiada aktywny kontekst firmowy lub mikro, ale kontekst ten nie jest domyślny. W takim przypadku, po zalogowaniu Użytkownik jest w kontekście indywidualnym, ale ma możliwość zmiany na kontekst firmowy lub mikro.\n* Użytkownik posiada aktywny kontekst firmowy lub mikro i jest on domyślny. W takim przypadku, po zalogowaniu Użytkownik jest w kontekście firmowym lub mikro i ma możliwość zmiany na kontekst indywidualny.\n* Użytkownik posiada wiele przypisanych kontekstów firmowych i mikro. Po zalogowaniu system prezentuje listę kontekstów. Lista zawiera nazwy aktywnych kontekstów firmowych oraz kontekst indywidualny.\n\nW górnym menu, Użytkownik ma możliwość podglądu i zmiany kontekstu, w którym obecnie jest zalogowany\n\nimage::main/image39.png[image,width=610,height=46]\n\nPo naciśnięciu image:main/image40.png[image,width=36,height=36]system prezentuje listę dostępnych dla Użytkownika kontekstów.\n\nimage::main/image41.png[]\n\nWybór kontekstu z listy powoduje przełączenie Użytkownika w kontekście którym będzie zalogowany w systemie Asseco EBP.\n\nAby zmienić kontekst z poziomu firmy należy wybrać przycisk image:main/image40.png[image,width=36,height=36] i kliknąć w wybrany kontekst.\n\nimage::main/image41a.png[]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 688,
+      "line_end": 715
+    }
+  ]
+}

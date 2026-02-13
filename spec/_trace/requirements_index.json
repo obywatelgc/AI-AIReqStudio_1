@@ -1,0 +1,516 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-02-13T22:07:56+01:00",
+  "generator": {
+    "tool": "tools/parse_requirements.py",
+    "tool_version": "0.1.0"
+  },
+  "source": {
+    "file": "src/wymagania.md",
+    "format": "markdown",
+    "encoding": "utf-8",
+    "document_hash": "sha256:b999ac6e8a400d7c6ea1c1d470cb7c58a97feb58d94fb4db593114d182ed5d2e"
+  },
+  "statistics": {
+    "total_requirements": 31,
+    "requirements_by_type": {
+      "WM": 31
+    },
+    "requirements_by_section_h3": [
+      {
+        "section_h3": "(no_h3)",
+        "count": 4
+      },
+      {
+        "section_h3": "4.1 Aktywacja usługi CashDirector",
+        "count": 4
+      },
+      {
+        "section_h3": "4.10 Przekazywanie historii operacji bankowych",
+        "count": 3
+      },
+      {
+        "section_h3": "4.2 Rejestracja i parowanie firmy",
+        "count": 2
+      },
+      {
+        "section_h3": "4.3 Logowanie jednokrotne (SSO)",
+        "count": 2
+      },
+      {
+        "section_h3": "4.4 Pobieranie danych rachunków",
+        "count": 2
+      },
+      {
+        "section_h3": "4.5 Dezaktywacja usługi – inicjowana przez Bank",
+        "count": 4
+      },
+      {
+        "section_h3": "4.6 Dezaktywacja usługi – inicjowana przez CashDirector",
+        "count": 3
+      },
+      {
+        "section_h3": "4.7 Inicjowanie płatności",
+        "count": 3
+      },
+      {
+        "section_h3": "4.8 Aktualizacja statusu płatności",
+        "count": 2
+      },
+      {
+        "section_h3": "4.9 Przekazywanie leadów",
+        "count": 2
+      }
+    ],
+    "warnings_count": 4,
+    "errors_count": 0
+  },
+  "warnings": [
+    {
+      "code": "REQ_OUTSIDE_H3",
+      "message": "Requirement WM-28 found without an active H3 (###) section.",
+      "req_id": "WM-28",
+      "source_ref": {
+        "file": "src\\wymagania.md",
+        "line": 159
+      },
+      "severity": "warning"
+    },
+    {
+      "code": "REQ_OUTSIDE_H3",
+      "message": "Requirement WM-29 found without an active H3 (###) section.",
+      "req_id": "WM-29",
+      "source_ref": {
+        "file": "src\\wymagania.md",
+        "line": 162
+      },
+      "severity": "warning"
+    },
+    {
+      "code": "REQ_OUTSIDE_H3",
+      "message": "Requirement WM-30 found without an active H3 (###) section.",
+      "req_id": "WM-30",
+      "source_ref": {
+        "file": "src\\wymagania.md",
+        "line": 168
+      },
+      "severity": "warning"
+    },
+    {
+      "code": "REQ_OUTSIDE_H3",
+      "message": "Requirement WM-31 found without an active H3 (###) section.",
+      "req_id": "WM-31",
+      "source_ref": {
+        "file": "src\\wymagania.md",
+        "line": 171
+      },
+      "severity": "warning"
+    }
+  ],
+  "errors": [],
+  "requirements": [
+    {
+      "req_id": "WM-01",
+      "req_id_raw": "WM-01",
+      "req_type": "WM",
+      "title": "Aktywacja usługi CashDirector",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.1 Aktywacja usługi CashDirector",
+      "line_start": 27,
+      "line_end": 44,
+      "anchor": "wm-01-aktywacja-uslugi-cashdirector",
+      "body_markdown": "System BE musi umożliwiać klientowi uruchomienie procesu aktywacji usługi CashDirector z poziomu bankowości elektronicznej.\nW Systemie BE w menu głowym dodana zostanie opcja \"eKsiegowość\" która w zależności czy Klient aktywował usługę:\n- zaprezentuje ekran aktywacji (usługa nie aktywna)\n- przekieruje użyktkownika do CB (ułsuga aktywna)\n\n**DEC-ACT-001 Status aktywacji usługi (dla firmy)**  \nSystem BE utrzymuje status aktywacji usługi CashDirector w ujęciu firmy (kontekstu firmowego) i wykorzystuje go do decyzji o prezentacji ekranu aktywacji lub przekierowaniu do CashDirector po wybraniu opcji „eKsięgowość”.\n\n**DEC-ACT-002 Dostępność w kontekstach**  \nFunkcjonalność aktywacji usługi CashDirector jest dostępna w kontekście firmowym (mikro oraz korporacyjnym).\n\n**DEC-ACT-003 Uprawnienie funkcjonalne**  \nDostęp do uruchomienia procesu aktywacji usługi CashDirector jest kontrolowany uprawnieniem funkcjonalnym „eKsięgowość – aktywacja”.\n\n**DEC-ACT-004 Audyt/Rejestr zdarzeń**  \nSystem BE rejestruje uruchomienie procesu aktywacji usługi CashDirector w Rejestrze zdarzeń jako typ zdarzenia „Aktywacja usługi CashDirector”.\n",
+      "body_sha256": "sha256:81cdabc8e599c38d0539aefc003760229e23734010adff8a6764ca275bf3f459"
+    },
+    {
+      "req_id": "WM-02",
+      "req_id_raw": "WM-02",
+      "req_type": "WM",
+      "title": "Obsługa zgód i regulaminów",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.1 Aktywacja usługi CashDirector",
+      "line_start": 45,
+      "line_end": 53,
+      "anchor": "wm-02-obsluga-zgod-i-regulaminow",
+      "body_markdown": "System BE musi umożliwiać pobranie, prezentację oraz rejestrację akceptacji zgód, regulaminów i umów wymaganych do aktywacji usługi CashDirector.\nZakładamy, że BE zaprezentuje zgody, które wskaże Bank. Wykorzystane zostaną usł\n\nDodatkowo na formularzu udostępnione zostaną (w formie plików do pobrania) pliki wskazane przez Bank (regualminy, formularze umów). Nie zakładamy generowania umów po stronie BE, podpisywania dokumentów oraz ich wysłania do KLienta. Na formularzu zaprezentowane zostaną wyłącznie treści oraz pliki wskazane przez Bank.\n\n**WM-02a Ekran aktywacji: zgody i regulaminy**  \nSystem BE musi udostępnić ekran aktywacji usługi CashDirector umożliwiający prezentację treści zgód/regulaminów/umów oraz pobranie plików wskazanych przez Bank, wraz z mechanizmem rejestracji akceptacji przez użytkownika.\n",
+      "body_sha256": "sha256:c8be01352b858997bc7e2cd0d553220a3b600054f534dd1b119059a70c418ef5"
+    },
+    {
+      "req_id": "WM-03",
+      "req_id_raw": "WM-03",
+      "req_type": "WM",
+      "title": "Rejestracja firmy w CashDirector",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.1 Aktywacja usługi CashDirector",
+      "line_start": 54,
+      "line_end": 56,
+      "anchor": "wm-03-rejestracja-firmy-w-cashdirector",
+      "body_markdown": "System BE musi przekazywać dane identyfikacyjne firmy oraz właściciela do systemu CashDirector w celu rejestracji usługi.\n",
+      "body_sha256": "sha256:7bbca3b7d0ccb7a45edf39fd164f41746a05d0e6028eddf07b0be53cdc49ee58"
+    },
+    {
+      "req_id": "WM-04",
+      "req_id_raw": "WM-04",
+      "req_type": "WM",
+      "title": "Obsługa błędu aktywacji",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.1 Aktywacja usługi CashDirector",
+      "line_start": 57,
+      "line_end": 59,
+      "anchor": "wm-04-obsluga-bledu-aktywacji",
+      "body_markdown": "System BE musi przerwać proces aktywacji i zaprezentować klientowi komunikat o błędzie w przypadku niepowodzenia rejestracji usługi.\n",
+      "body_sha256": "sha256:3f8fccddc115b7f22c1555e69e8a0c309d6e708777d9b5e153e6fa072058766a"
+    },
+    {
+      "req_id": "WM-05",
+      "req_id_raw": "WM-05",
+      "req_type": "WM",
+      "title": "Parowanie firmy i użytkownika",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.2 Rejestracja i parowanie firmy",
+      "line_start": 63,
+      "line_end": 65,
+      "anchor": "wm-05-parowanie-firmy-i-uzytkownika",
+      "body_markdown": "System BE musi umożliwiać parowanie firmy i użytkownika z istniejącymi rekordami w CashDirector przy użyciu identyfikatorów zewnętrznych.\n",
+      "body_sha256": "sha256:bdf3ff8bd3ce546b3c8f5662e6ddaf4a1ac865971d0c7602dff974069a90a70f"
+    },
+    {
+      "req_id": "WM-06",
+      "req_id_raw": "WM-06",
+      "req_type": "WM",
+      "title": "Obsługa istniejących danych w CashDirector",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.2 Rejestracja i parowanie firmy",
+      "line_start": 66,
+      "line_end": 68,
+      "anchor": "wm-06-obsluga-istniejacych-danych-w-cashdirector",
+      "body_markdown": "System BE musi obsługiwać scenariusz, w którym firma lub użytkownik istnieje już w systemie CashDirector.\n",
+      "body_sha256": "sha256:7479994c53b28bf883ed8a6f564fbdfdfe2308f7a52d7f80e124417bf83e2a12"
+    },
+    {
+      "req_id": "WM-07",
+      "req_id_raw": "WM-07",
+      "req_type": "WM",
+      "title": "Logowanie jednokrotne do CashDirector",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.3 Logowanie jednokrotne (SSO)",
+      "line_start": 72,
+      "line_end": 74,
+      "anchor": "wm-07-logowanie-jednokrotne-do-cashdirector",
+      "body_markdown": "System BE musi umożliwiać logowanie użytkownika do CashDirector z wykorzystaniem mechanizmu SSO.\n",
+      "body_sha256": "sha256:709a908a8e78d3dfff353380800fd727dd68c5b3309210eb5906418a1e6d761d"
+    },
+    {
+      "req_id": "WM-08",
+      "req_id_raw": "WM-08",
+      "req_type": "WM",
+      "title": "Zarządzanie tokenami dostępowymi",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.3 Logowanie jednokrotne (SSO)",
+      "line_start": 75,
+      "line_end": 77,
+      "anchor": "wm-08-zarzadzanie-tokenami-dostepowymi",
+      "body_markdown": "System BE musi obsługiwać pobieranie i odświeżanie tokenów dostępowych wykorzystywanych w integracji z CashDirector.\n",
+      "body_sha256": "sha256:427dc18b1eb72c10d6f6417b4d0f05500bc648f20b7a31f690977ce88fce5e27"
+    },
+    {
+      "req_id": "WM-09",
+      "req_id_raw": "WM-09",
+      "req_type": "WM",
+      "title": "Udostępnianie rachunków klienta",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.4 Pobieranie danych rachunków",
+      "line_start": 81,
+      "line_end": 83,
+      "anchor": "wm-09-udostepnianie-rachunkow-klienta",
+      "body_markdown": "System BE musi umożliwiać przekazywanie do CashDirector listy rachunków klienta wraz z informacją o dostępnych saldach.\n",
+      "body_sha256": "sha256:520b8b677dd5be8ee7e06f8fb8021f2ec513cdeb22aaa0355ae7d268931d2650"
+    },
+    {
+      "req_id": "WM-10",
+      "req_id_raw": "WM-10",
+      "req_type": "WM",
+      "title": "Autoryzacja dostępu do danych rachunkowych",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.4 Pobieranie danych rachunków",
+      "line_start": 84,
+      "line_end": 86,
+      "anchor": "wm-10-autoryzacja-dostepu-do-danych-rachunkowych",
+      "body_markdown": "System BE musi zapewnić, że dane rachunkowe są udostępniane wyłącznie po poprawnej autoryzacji użytkownika.\n",
+      "body_sha256": "sha256:7fa8c3c057051f32792b92fee8de0536de44960633416e51211910edd3dbe0ad"
+    },
+    {
+      "req_id": "WM-11",
+      "req_id_raw": "WM-11",
+      "req_type": "WM",
+      "title": "Inicjacja dezaktywacji przez klienta",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.5 Dezaktywacja usługi – inicjowana przez Bank",
+      "line_start": 90,
+      "line_end": 92,
+      "anchor": "wm-11-inicjacja-dezaktywacji-przez-klienta",
+      "body_markdown": "System BE musi umożliwiać klientowi zainicjowanie procesu dezaktywacji usługi CashDirector.\n",
+      "body_sha256": "sha256:dae686f5fa5e4d0a1357a719c8bc94f370a35952126515e5633e6f4f24aae5e6"
+    },
+    {
+      "req_id": "WM-12",
+      "req_id_raw": "WM-12",
+      "req_type": "WM",
+      "title": "Rejestracja dezaktywacji usługi",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.5 Dezaktywacja usługi – inicjowana przez Bank",
+      "line_start": 93,
+      "line_end": 95,
+      "anchor": "wm-12-rejestracja-dezaktywacji-uslugi",
+      "body_markdown": "System BE musi rejestrować dezaktywację usługi CashDirector w systemie CashDirector.\n",
+      "body_sha256": "sha256:f886219d9b931eb329f7b607ce8655daca698a3715458f5c1d93d9d138e9efeb"
+    },
+    {
+      "req_id": "WM-13",
+      "req_id_raw": "WM-13",
+      "req_type": "WM",
+      "title": "Dezaktywacja firmy i użytkowników",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.5 Dezaktywacja usługi – inicjowana przez Bank",
+      "line_start": 96,
+      "line_end": 98,
+      "anchor": "wm-13-dezaktywacja-firmy-i-uzytkownikow",
+      "body_markdown": "System BE musi umożliwiać dezaktywację firmy oraz użytkowników powiązanych z usługą CashDirector.\n",
+      "body_sha256": "sha256:c8bc465ba0d34907d71c7a8050b4e940aa14afad348bddba5f76631f789aa445"
+    },
+    {
+      "req_id": "WM-14",
+      "req_id_raw": "WM-14",
+      "req_type": "WM",
+      "title": "Obsługa błędów dezaktywacji",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.5 Dezaktywacja usługi – inicjowana przez Bank",
+      "line_start": 99,
+      "line_end": 101,
+      "anchor": "wm-14-obsluga-bledow-dezaktywacji",
+      "body_markdown": "System BE musi obsługiwać błędy procesu dezaktywacji i zapewnić spójność statusu usługi.\n",
+      "body_sha256": "sha256:c0a34a9f83e999b5873d19a89f238869d8e9124749d68ba8f5f8a9c52a36398c"
+    },
+    {
+      "req_id": "WM-15",
+      "req_id_raw": "WM-15",
+      "req_type": "WM",
+      "title": "Obsługa żądania dezaktywacji z CashDirector",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.6 Dezaktywacja usługi – inicjowana przez CashDirector",
+      "line_start": 105,
+      "line_end": 107,
+      "anchor": "wm-15-obsluga-zadania-dezaktywacji-z-cashdirector",
+      "body_markdown": "System BE musi obsługiwać żądanie dezaktywacji usługi CashDirector inicjowane po stronie CashDirector.\n",
+      "body_sha256": "sha256:ccea577f081327267ae22879b0104bb194cbf7af2a6697e0221fb93763328da7"
+    },
+    {
+      "req_id": "WM-16",
+      "req_id_raw": "WM-16",
+      "req_type": "WM",
+      "title": "Autoryzacja dezaktywacji",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.6 Dezaktywacja usługi – inicjowana przez CashDirector",
+      "line_start": 108,
+      "line_end": 110,
+      "anchor": "wm-16-autoryzacja-dezaktywacji",
+      "body_markdown": "System BE musi przeprowadzić autoryzację użytkownika przed potwierdzeniem dezaktywacji usługi.\n",
+      "body_sha256": "sha256:0ebe4f82dfa8409588dd538b153a506a2ab6e3a1e5198f0dab13fecf75191c8b"
+    },
+    {
+      "req_id": "WM-17",
+      "req_id_raw": "WM-17",
+      "req_type": "WM",
+      "title": "Rejestracja statusu dezaktywacji",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.6 Dezaktywacja usługi – inicjowana przez CashDirector",
+      "line_start": 111,
+      "line_end": 113,
+      "anchor": "wm-17-rejestracja-statusu-dezaktywacji",
+      "body_markdown": "System BE musi zapisać status dezaktywacji usługi CashDirector w systemach bankowych.\n",
+      "body_sha256": "sha256:5b4ab29d10c0cb02f8945e4f37dea73c7ab284ff2b24e2ffca832b7a55dc5d2c"
+    },
+    {
+      "req_id": "WM-18",
+      "req_id_raw": "WM-18",
+      "req_type": "WM",
+      "title": "Inicjowanie płatności z CashDirector",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.7 Inicjowanie płatności",
+      "line_start": 117,
+      "line_end": 119,
+      "anchor": "wm-18-inicjowanie-platnosci-z-cashdirector",
+      "body_markdown": "System BE musi umożliwiać inicjowanie płatności zleconych w systemie CashDirector.\n",
+      "body_sha256": "sha256:28571657ffdf45947e466ba72d82e0711535aae5f0a46242b3c9964d0291df28"
+    },
+    {
+      "req_id": "WM-19",
+      "req_id_raw": "WM-19",
+      "req_type": "WM",
+      "title": "Autoryzacja płatności w BE",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.7 Inicjowanie płatności",
+      "line_start": 120,
+      "line_end": 122,
+      "anchor": "wm-19-autoryzacja-platnosci-w-be",
+      "body_markdown": "System BE musi przekierować użytkownika do bankowości elektronicznej w celu autoryzacji płatności.\n",
+      "body_sha256": "sha256:03e28197ffbfbf7fd5ded0822bf272283b2f2728ee2b7e95e64f88961b92dd3b"
+    },
+    {
+      "req_id": "WM-20",
+      "req_id_raw": "WM-20",
+      "req_type": "WM",
+      "title": "Walidacja płatności",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.7 Inicjowanie płatności",
+      "line_start": 123,
+      "line_end": 125,
+      "anchor": "wm-20-walidacja-platnosci",
+      "body_markdown": "System BE musi weryfikować poprawność danych płatności oraz dostępność środków.\n",
+      "body_sha256": "sha256:e1c3c23976d003d788b87847b90ecafddd3d5a2ffc7c8fec4f69cec890793e46"
+    },
+    {
+      "req_id": "WM-21",
+      "req_id_raw": "WM-21",
+      "req_type": "WM",
+      "title": "Aktualizacja statusu płatności",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.8 Aktualizacja statusu płatności",
+      "line_start": 129,
+      "line_end": 131,
+      "anchor": "wm-21-aktualizacja-statusu-platnosci",
+      "body_markdown": "System BE musi przekazywać do CashDirector informacje o zmianie statusu płatności.\n",
+      "body_sha256": "sha256:7d7766199a1002c11316184f74297a2550557b51776ab279764a0f61f5379be9"
+    },
+    {
+      "req_id": "WM-22",
+      "req_id_raw": "WM-22",
+      "req_type": "WM",
+      "title": "Idempotentność statusów płatności",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.8 Aktualizacja statusu płatności",
+      "line_start": 132,
+      "line_end": 134,
+      "anchor": "wm-22-idempotentnosc-statusow-platnosci",
+      "body_markdown": "System BE musi zapewnić idempotentność aktualizacji statusów płatności przekazywanych do CashDirector.\n",
+      "body_sha256": "sha256:c32561f33bd07a2c0f7cc37b23825fc740139dcad93678d3690986bfdd07f7a6"
+    },
+    {
+      "req_id": "WM-23",
+      "req_id_raw": "WM-23",
+      "req_type": "WM",
+      "title": "Identyfikacja leada sprzedażowego",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.9 Przekazywanie leadów",
+      "line_start": 138,
+      "line_end": 140,
+      "anchor": "wm-23-identyfikacja-leada-sprzedazowego",
+      "body_markdown": "System BE musi umożliwiać identyfikację leada sprzedażowego w trakcie procesów bankowych związanych z obsługą klienta instytucjonalnego.\n",
+      "body_sha256": "sha256:87cdc1380e1592f4f6447999146a2f96a3a3278aaf62086eec22e60700f9b9d8"
+    },
+    {
+      "req_id": "WM-24",
+      "req_id_raw": "WM-24",
+      "req_type": "WM",
+      "title": "Przekazanie leada do CashDirector",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.9 Przekazywanie leadów",
+      "line_start": 141,
+      "line_end": 143,
+      "anchor": "wm-24-przekazanie-leada-do-cashdirector",
+      "body_markdown": "System BE musi umożliwiać przekazanie danych leada sprzedażowego do systemu CashDirector po uzyskaniu wymaganych zgód klienta.\n",
+      "body_sha256": "sha256:04d0a28b7ceeb7e9e6e2ce9281785a0f9f0714ac1a147541e4069c5cc4a1f83c"
+    },
+    {
+      "req_id": "WM-25",
+      "req_id_raw": "WM-25",
+      "req_type": "WM",
+      "title": "Przekazywanie historii operacji",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.10 Przekazywanie historii operacji bankowych",
+      "line_start": 147,
+      "line_end": 149,
+      "anchor": "wm-25-przekazywanie-historii-operacji",
+      "body_markdown": "System BE musi umożliwiać przekazywanie historii operacji bankowych do systemu CashDirector.\n",
+      "body_sha256": "sha256:a0b2be64eeb5d7ad728bf2b3e14058bc30d58ef761b2a2a3643c3af6b75cca81"
+    },
+    {
+      "req_id": "WM-26",
+      "req_id_raw": "WM-26",
+      "req_type": "WM",
+      "title": "Obsługa różnych wariantów integracji",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.10 Przekazywanie historii operacji bankowych",
+      "line_start": 150,
+      "line_end": 152,
+      "anchor": "wm-26-obsluga-roznych-wariantow-integracji",
+      "body_markdown": "System BE musi obsługiwać przekazywanie danych operacji bankowych w modelu REST API lub zdarzeniowym.\n",
+      "body_sha256": "sha256:53893ca031fc67eb6e1d78101ad2b581218e73333546b3eef5a73f8cef9949d2"
+    },
+    {
+      "req_id": "WM-27",
+      "req_id_raw": "WM-27",
+      "req_type": "WM",
+      "title": "Zakres przekazywanych danych transakcyjnych",
+      "section_h2": "4. Wymagania funkcjonalne",
+      "section_h3": "4.10 Przekazywanie historii operacji bankowych",
+      "line_start": 153,
+      "line_end": 155,
+      "anchor": "wm-27-zakres-przekazywanych-danych-transakcyjnych",
+      "body_markdown": "System BE musi przekazywać minimalny zestaw danych transakcyjnych wymaganych do obsługi księgowej.\n",
+      "body_sha256": "sha256:3d8f2171ccbc11c1c3833049045c4b724319ef18312d3fc38ece9e36bba1fc6c"
+    },
+    {
+      "req_id": "WM-28",
+      "req_id_raw": "WM-28",
+      "req_type": "WM",
+      "title": "Rejestrowanie błędów integracyjnych",
+      "section_h2": "5. Obsługa błędów i scenariusze alternatywne",
+      "section_h3": null,
+      "line_start": 159,
+      "line_end": 161,
+      "anchor": "wm-28-rejestrowanie-bledow-integracyjnych",
+      "body_markdown": "System BE musi rejestrować i monitorować błędy występujące w procesach integracyjnych.\n",
+      "body_sha256": "sha256:4c1aac5940aa3762b8a14b53a48987529c99e1f5d5cf8648cff81c517b61a53b"
+    },
+    {
+      "req_id": "WM-29",
+      "req_id_raw": "WM-29",
+      "req_type": "WM",
+      "title": "Komunikaty dla użytkownika",
+      "section_h2": "5. Obsługa błędów i scenariusze alternatywne",
+      "section_h3": null,
+      "line_start": 162,
+      "line_end": 164,
+      "anchor": "wm-29-komunikaty-dla-uzytkownika",
+      "body_markdown": "System BE musi prezentować użytkownikowi czytelne komunikaty w przypadku niepowodzenia realizacji procesu.\n",
+      "body_sha256": "sha256:334e30dcfb777a955001b2220abb685fab35e8509c0620ab6cb5c4f2bd991cdb"
+    },
+    {
+      "req_id": "WM-30",
+      "req_id_raw": "WM-30",
+      "req_type": "WM",
+      "title": "Spójność danych integracyjnych",
+      "section_h2": "6. Wymagania końcowe",
+      "section_h3": null,
+      "line_start": 168,
+      "line_end": 170,
+      "anchor": "wm-30-spojnosc-danych-integracyjnych",
+      "body_markdown": "System BE musi zapewnić spójność danych pomiędzy systemami Banku i CashDirector.\n",
+      "body_sha256": "sha256:a45d022170e6cde10bde1bfb131340a350bd0240cc9f3162487ac318054a6e61"
+    },
+    {
+      "req_id": "WM-31",
+      "req_id_raw": "WM-31",
+      "req_type": "WM",
+      "title": "Audytowalność zdarzeń",
+      "section_h2": "6. Wymagania końcowe",
+      "section_h3": null,
+      "line_start": 171,
+      "line_end": 172,
+      "anchor": "wm-31-audytowalnosc-zdarzen",
+      "body_markdown": "System BE musi zapewnić możliwość audytu kluczowych zdarzeń integracyjnych, w szczególności aktywacji, dezaktywacji oraz płatności.\n",
+      "body_sha256": "sha256:0763a9335a230734c03f648b8daafbae300f51d4dc12329ff033669a4a043b59"
+    }
+  ]
+}

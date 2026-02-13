@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000213",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista płac"
+    }
+  ],
+  "section_title": "Lista płac",
+  "text": "Lista płac to zbiór pogrupowanych przelewów w paczkę. Obsługa  znajduje się w opcji _Lista zleceń_ w zakładce _Lista płac_.\n\nSystem pozwala utworzyć paczki tylko z poziomu:\n\n* Importu przelewów w opcji _Przelewy_.\n\nPodczas importu przelewów (opcja _Przelewy_) Użytkownik ma możliwość utworzenia paczki przelewów z importu Listy płac.\n\nMożliwość utworzenia paczki znajduje się na drugim kroku importu przelewów. Za pomocą przycisku [ZAPISZ I STWÓRZ LISTĘ PŁAC] system przenosi do opcji tworzenia paczki.\n\nimage::Lista_zlecen/58.png[]\n\nNowo utworzona paczka otrzymuje status _Nowa_.\n\nNOTE: Importowane przelewy do listy zleceń nie mają obsługi pola „data przelewu”, są to przelewy z datą bieżącą. Import paczki nie będzie podlegał autoryzacji. Autoryzacji podlegać będzie paczka na etapie jej realizacji.\n\n\nFunkcjonalność _Listy płac_ obejmuje następujące możliwości:\n\n* filtrowania,\n\n* wykonania akcji na wybranej paczce (*panel akcji pojedynczych*),\n\n* wykonania akcji na zaznaczonych paczkach (*panel akcji zbiorczych*).\n\nNOTE: Funkcjonalność Listy płac dostępna jest dla Użytkownika korzystającego z systemów bankowości opartej na Def3000/CB,  który posiada odpowiednie uprawnienia do listy płac.\n\nWARNING: Jeśli chociaż jeden przelew z listy płac zostanie odrzucony przez system transakcyjny, cała paczka zostanie odrzucona.\n\nPozostałe opcje są analogiczne do opisu funkcjonalności dla paczek przelewów.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 1105,
+      "line_end": 1136
+    }
+  ]
+}

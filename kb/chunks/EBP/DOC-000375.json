@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000375",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu wyciągów"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie MT940"
+    }
+  ],
+  "section_title": "Plik w formacie MT940",
+  "text": "|Strona - znak ‘C’ dla salda kredytowego lub znak ‘D’ dla salda debetowego.\n|6!c |Data początkowa (końcowa) części zestawienia operacji w formacie RRMMDD.\n|3!l |Symbol waluty.\n|15k |Kwota salda początkowego (końcowego) części zestawienia operacji.\n|[underline]##Przykład 1:## |‘:**60M**:C060302PLN12,34’\n|[underline]##Przykład 2:## |‘:**62M**:C060302PLN25,00’\n|====================\n\nSpecyfikacja podpól dla pola :86: +\n\n**Założenia**: +\nPole :86: składa się z podpól oznaczonych etykietami - zestaw podpól zamieszczono w poniższej tabeli. +\nPodpola oznaczone statusem M są obowiązkowe, podpola o statusie O są opcjonalne. +\nSeparatorem podpól jest znak <. +\nPodpola prezentowane są w nowych liniach (za wyjątkiem podpola 10). +\nJeżeli podpole jest puste, wówczas całe podpole, łącznie z etykietą nie jest w pliku prezentowane. +\n\n[width=\"100%\",cols=\"4,3,3,10\",options=\"header\"]\n|====================\n|*Etykieta* |*Status* |*Format* |*Opis*\n|<10 |M |10n |Numer referencyjny\n\n              Kolejny numer operacji na rachunku\n\n              np. <1024755\n\n|<20 |O |35x |Tytuł operacji - linia1\n|<21 |O |35x |Tytuł operacji - linia2\n|<22 |O |35x |Tytuł operacji - linia3\n|<23 |O |35x |Tytuł operacji - linia4\n|<27 |M |35x |Nazwa kontrahenta - linia 1\n|<28 |O |35x |Nazwa kontrahenta - linia 2\n|<29 |O |35x |Adres kontrahenta (ulica)\n|<30 |M |8x |Identyfikator jednostki bankowej kontrahenta (BSC lub SWIFT BIC). Dla identyfikatora jednostki banku w tym polu przedstawiane są znaki od 3 do 10\n|<31 |M |16x |Identyfikator rachunku kontrahenta (skrócony) dla prezentacji. W przypadku rachunku NRB w tym polu przedstawiane są znaki od 11 do 26\n|<38 |O |34x |Numer rachunku kontrahenta\n|<60 |O |35x |Adres kontrahenta (miasto)\n|====================\n\n[underline]##Przykładowe dane dla pola **86**:##\n\n[source, txt]\n----\n:86:<103\n<20wpłata gotowkowa\n<27JAN\n<28TEST\n<29TESTOWA 6/16\n<3086420002\n<313001840003580001\n<3833864200023001840003580001\n<6085-666 MIASTO\n----\n\n[underline]##Poniżej przedstawiono przykład pliku eksportu wyciągów w formacie MT940:##\n\n[source, txt]\n----\n{1:F01210                   }{2:O940          210                             N}{4:\n:20:240901/210\n:25:80216000032999000002100005\n:28:1\n:60F:C240901PLN45698,00\n:61:2409010901D15,00FMSCNONREF          //1\nPrzelew wychodzacy zewnetrzny\n:86:\nOdbiorca Szablonowytestowy z szablonu\n:61:2409010901D10,00FMSCNONREF          //2\nPobranie oplaty\n:86:\nBankOPLATY i PROWIZJIE-testowy z szablonu\n:61:2409010901D15,00FMSCNONREF          //3\nPrzelew wychodzacy zewnetrzny\n:86:Odbiorca Szablonowytestowy z szablonu\n:61:2409010901D10,00FMSCNONREF          //4\nPobranie oplaty\n:86:\nBankOPLATY i PROWIZJIE-testowy z szablonu\n:62F:240901PLN45648,00\n-}\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 3699,
+      "line_end": 3907
+    }
+  ]
+}

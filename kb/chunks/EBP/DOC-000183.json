@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000183",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista przelewów - tworzenie paczki przelewów"
+    },
+    {
+      "level": 4,
+      "title": "Dodawanie przelewu do paczki (istniejącej paczki)"
+    }
+  ],
+  "section_title": "Dodawanie przelewu do paczki (istniejącej paczki)",
+  "text": "Do istniejącej paczki Użytkownik ma możliwość dodawania kolejnych dyspozycji przelewów. Istniejąca paczka musi mieć status _Nowa_, a istniejące przelewy status _Nowy_.\n\nAkcja dodawania przelewów do paczki może być wykonana z poziomu:\n\n* listy przelewów, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*),\n\n* z *panelu akcji zbiorczych*, a następnie użycia opcji *Dodaj do paczki*.\n\nPo wybraniu lub zaznaczeniu dyspozycji przelewów i wybraniu opcji *Dodaj do paczki* zaprezentowany zostanie formularz z listą paczek w statusie _Nowa_.\n\nimage::Lista_zlecen/image25.png[image,width=604,height=166]\n\nPo wskazaniu paczki za pomocą przycisku [WYBIERZ] zostanie wyświetlone okno potwierdzenia.\n\nNOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do przeglądania i dodawania paczek.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 481,
+      "line_end": 497
+    }
+  ]
+}

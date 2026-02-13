@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000327",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Wystawienie e-Faktury"
+    },
+    {
+      "level": 4,
+      "title": "Podsumowanie danych wprowadzonej faktury"
+    }
+  ],
+  "section_title": "Podsumowanie danych wprowadzonej faktury",
+  "text": "Po kliknięciu [Dalej]  na formularzu nowej faktury system przenosi użytkownika do okna z podsumowaniem wprowadznych danych. Dane jakie są prezentowane na podsumowaniu to:\n\n* *Rodzaj faktury*,\n* *Sprzedawca*,\n* *NIP*,\n* *Nabywca*,\n* *Typ identyfikatora*,\n* *Kolejny numer faktury*,\n* *Status*,\n* *Data wystawienia, z zastrzeżeniem art. 106na ust. 1 ustawy*,\n* *Wartość netto*,\n* *Kwota podatku*,\n* *Wartość brutto*,\n* *Zamówienie / Pozycje / Rabat* -  w zależności od rodzaju wprowadzonej faktury,\n* *Podumowanie stawek podatku*,\n* *Przyciski [Autoryzuj] i [Autoryzuj i wyślij]*.\n\nimage::e-Faktury(KSeF)/fv_zal_podsumowanie.png[]\n\nPo wybraniu przycisku [Autoryzuj] system tworzy dyspozycje takiej faktury, która przyjmuje status _Gotowa do wysłania_.\n\nPo wybraniu przycisku [Autoryzuj i wyślij], system wysyłą fakture do systemu KSeF - dyspozycja na liscie dyspozycji ma status _Dodana_.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 893,
+      "line_end": 917
+    }
+  ]
+}

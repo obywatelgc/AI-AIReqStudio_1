@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000341",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktury plików importu przelewów zwykłych oraz podatku"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie XML"
+    }
+  ],
+  "section_title": "Plik w formacie XML",
+  "text": "Dla pliku przelewów w formacie XML dozwolone jest stosowanie następujących tagów:\n\n[cols=\"3,5\",options=\"header\",]\n|===========================================================\n|Tagi |Opis\n|<przelewy></przelewy>|Otwiera i zamyka format importu w XML.\n|<przelew></przelew>\t|Otwiera i zamyka dane dla jednego przelewu.\n|<rach_obc></rach_obc>\t|Numer rachunku nadawcy przelewu.\n|<bank></bank>|Numer banku odbiorcy przelewu.\n|<rachunek></rachunek>|Numer rachunku odbiorcy przelewu.\n|<nazwa></nazwa>\t|Nazwa odbiorcy przelewu.\n|<kwota></kwota>\t|Kwota przelewu.\n|<tresc></tresc>\t|Treść przelewu.\n|<nip_odb></nip_odb>\t|NIP odbiorcy.\n|===========================================================\n\nKażde powtórzenie tagów <przelew> ... </przelew> jest interpretowane przez aplikację jako nowy przelew.\n\nWARNING: Nazwy tagów w opisie struktury powinny być pisane małymi literami. Kolejność poszczególnych tagów w pliku musi być zachowana.\n\nPolskie znaki są kodowane w formacie ISO 8859-2 lub WINDOWS-1250.\n\n[underline]##Przykładowa zawartość pliku importu przelewów zwykłych w formacie XML:##\n\n[source, xml]\n----\n<?xml version=\"1.0\" encoding=\"iso-8859-2\"?>\n<przelewy>\n<przelew>\n    <rach_obc>80216000032999000002100005</rach_obc>\n    <bank>10800001</bank>\n    <rachunek>95103010453335457952126563</rachunek>\n    <nazwa>Janina Testowa</nazwa>\n    <kwota>15</kwota>\n    <tresc>faktura nr 12345</tresc>\n</przelew>\n<przelew>\n    <referencje>ReferencjeZwykly2</referencje>\n    <rach_obc>80216000032999000002100005</rach_obc>\n    <bank>10800001</bank>\n    <rachunek>63108000011232123211548412</rachunek>\n    <nazwa>Piotr Testowy ul. Testowa 1</nazwa>\n    <kwota>73.12</kwota>\n    <nip_odb>5220003782</nip_odb>\n    <tresc>oplata za wynajecie mieszkania</tresc>\n</przelew>\n</przelewy>\n----\n\nNOTE: Format importu Listy płac w formacie XML, jest taki sam jak dla przelewów zwykłych. Użycie tagów <data></data> dla wskazania daty realizacji będzie pomijane i importowane przelewy zapiszą się zgodnie z datą bieżącą (COT również nie jest weryfikowany).\n\n\n*Przelewy podatku*\n\nDla pliku przelewów podatku w formacie XML dozwolone jest stosowanie następujących tagów:\n\n[cols=\"3,5\",options=\"header\",]\n|===========================================================\n|Tagi |Opis\n|<przelewy></przelewy>|Otwiera i zamyka format importu w XML.\n|<przelew></przelew>\t|Otwiera i zamyka dane dla jednego przelewu.\n|<rach_obc></rach_obc>\t|Numer rachunku nadawcy przelewu.\n|<bank></bank>|Numer banku odbiorcy przelewu.\n|<rachunek></rachunek>|Numer rachunku odbiorcy przelewu.\n|<nazwa></nazwa>\t|Nazwa odbiorcy przelewu, w przypadku przelewu podatkowego - nazwa Urzędu Skarbowego.\n|<kwota></kwota>\t|Kwota przelewu.\n|<tresc></tresc>\t|Treść przelewu. Dla przelewu do US (tekst TI, OKR, SFP, TXT jest staly) /TI/typ identyfikatora numer identyfikatora/OKR/okres w formacie RRTXXxx, gdzie RR - rok, T - oznaczenie typu(R - rok, P - polrocze, K - kwartal, M - miesiac, D - dekada, J - dzien), XXxx - oznaczenie polrocza, kwartalu, miesiaca i dekady lub miesiaca i dnia/SFP/symbol formularza/TXT/identyfikacja wplaty.\n|===========================================================\n\nKażde powtórzenie tagów *<przelew> ... </przelew>* jest interpretowane przez aplikację jako nowy przelew.\n\nPolskie znaki są kodowane w formacie ISO 8859-2 lub WINDOWS-1250.\n\n[underline]##Przykładowa zawartość pliku importu przelewów podatku w formacie XML:##\n\n[source, xml]\n----\n<?xml version=\"1.0\" encoding=\"iso-8859-2\"?>\n<przelewy>\n<przelew>\n    <rach_obc>80216000032999000002100005</rach_obc>\n    <bank>10800001</bank>\n    <rachunek>98101010780024112222000000</rachunek>\n    <nazwa>Urzad Skarbowy</nazwa>\n    <kwota>123.10</kwota>\n    <tresc>/TI/N8000007816|/OKR/04R/SFP/VAT-8|/TXT/podatek</tresc>\n</przelew>\n</przelewy>\n----\n\n[underline]##Przykładowa zawartość pliku importu przelewu VAT w formacie XML:##\n\n[source, xml]\n----\n<?xml version=\"1.0\" encoding=\"iso-8859-2\"?>\n<przelewy>\n<przelew>\n    <rach_obc>35 1610 1133 2003 0220 0002 0004</rach_obc>\n    <bank>13200006</bank>\n    <rachunek>55132000061234567890123456</rachunek>\n    <nazwa>Jan Testowy</nazwa>\n    <kwota>2.20</kwota>\n    <tresc>/VAT/1.00/IDC/Identyfikator/INV/Faktura/TXT/tytuł</tresc>\n</przelew>\n</przelewy>\n----\n\nDla przelewu VAT pole *tresc* ma następującą strukturę:\n\n* */VAT/* - znacznik który określa dany przelew jako przelew VAT/1,00/kwota przelewu VAT,\n* */IDC/* - typ dokumentu identyfikacji podatkowej, znacznik w polu *tresc* który określa przelew jako przelew VAT/Identyfikator/numer identyfikatora podatkowego,\n* */INV/* - faktura, znacznik który warunkuje przelew jako przelew VAT/ Faktura/numer faktury,\n* */TXT/* - tekst wolny, pole nieobowiązkowe/tytuł/tytuł przelewu.\n\nIstnieje również możliwość importu przelewu VAT w formacie XML w osobnych znacznikach:\n\n[cols=\"5,5\",options=\"header\",]\n|===========================================================\n|Tagi |Opis\n|<kwota_vat></kwota_vat> |Kwota VAT.\n|<inv></inv> |Numer faktury.\n|<idc></idc> |Identyfikator podatkowy.\n|===========================================================\n\n[underline]##Przykładowa zawartość pliku importu przelewu VAT w formacie XML:##\n\n[source, xml]\n----\n<?xml version=\"1.0\" encoding=\"iso-8859-2\"?>\n<przelewy>\n<przelew>\n    <rach_obc>43 8809 0005 2001 0002 7900 0001</rach_obc>\n    <bank>13200006</bank>\n    <rachunek>55132000061234567890123456</rachunek>\n    <nazwa>Jan Testowy</nazwa>\n    <kwota>2.20</kwota>\n    <kwota_vat>2</kwota_vat>\n    <inv>123</inv>\n    <idc>123456789</idc>\n    <tresc>przelew vat</tresc>\n</przelew>\n</przelewy>\n----\n\nNOTE: W przypadku importu przelewów VAT, jeśli pole tytuł jest odpowiednio sformatowane, to ma ono wyższy priorytet niż użycie dodatkowych znaczników.\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 117,
+      "line_end": 263
+    }
+  ]
+}

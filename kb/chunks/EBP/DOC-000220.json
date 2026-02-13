@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000220",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie listy przelewów"
+    },
+    {
+      "level": 4,
+      "title": "Podgląd szczegółów przelewu"
+    }
+  ],
+  "section_title": "Podgląd szczegółów przelewu",
+  "text": "Aby z listy przelewów przejść do szczegółów wybranego przelewu (płatności zaplanowanej) należy kliknąć w obszar wybranego wiersza i wybrać przycisk [SZCZEGÓŁY].\n\nimage::Przelewy/image12.png[image,width=604,height=86]\n\nWyświetlane jest wówczas okno prezentujące szczegółowe informacje dla przelewu:\n\nimage::Przelewy/image13.png[image,width=604,height=458]\n\nLista danych prezentowanych w szczegółach przelewu jest zależna od typu przelewu.\n\nW przypadku przelewów cyklicznych na formularzu szczegółów przelewu wyświetlany jest dodatkowo link *Pokaż historię realizacji* umożliwiający wyświetlenie historii realizacji przelewu cyklicznego.\n\nW przypadku przelewu odroczonego, system prezentuje pole BLOKADA ŚRODKÓW (pole widoczne jest dla Użytkowników korzystajacych z bankowości korzystającej z systemu transkcyjnego def3000/CB).\n\nW przypadku włączonej usługi _recipientWhiteList_ dane kontrahenta NIP i rachunek podlegają *weryfikacji wg białej listy podatników VAT*.\nW kontekście firmowym i zbiorczym w szczegółach przelewu prezentowany jest wynik weryfikacji wg białej listy podatników VAT wykonany\nna dzień jej dodania/akceptacji/przekazania do realizacji (w zależności od statusu).\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 162,
+      "line_end": 181
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000191",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Edycja paczki przelewów"
+    }
+  ],
+  "section_title": "Edycja paczki przelewów",
+  "text": "Edycja paczki przelewów może być wykonana z poziomu:\n\n* listy paczek, po kliknięciu w wiersz wybranej paczki (*panel akcji pojedynczych*),\n\n* szczegółów paczki,\n\na następnie użyciu opcji *Edytuj*.\n\nWybór opcji *Edytuj* powoduje wyświetlenie okna prezentującego szczegółowe informacje dla paczki w trybie edycji.\n\nimage::Lista_zlecen/image33.png[image,width=604,height=258]\n\nEdycja obejmuje:\n\n* nazwę paczki (wymagane),\n\n* pole referencje (niewymagane).\n\nPo zmodyfikowaniu danych należy zapisać zmiany. System zapisuje wprowadzone zmiany oraz prezentuje okno z potwierdzeniem.\n\nimage::Lista_zlecen/image34.png[image,width=555,height=318]\n\nNOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do edycji paczek. Edycja dostępna jest dla paczek o statusie _Nowa_.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 653,
+      "line_end": 677
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000345",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktury plików importu przelewów zwykłych oraz podatku"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie liniowym"
+    }
+  ],
+  "section_title": "Plik w formacie liniowym",
+  "text": "a_odb_linia2;nazwa_odb_linia3;nazwa_odb_linia4;48 8355 0009 1234 5678 9012 3456;123,45;tytul_plat_linia1;tytul_plat_linia2;tytul_plat_linia3;tytul_platn_linia4;2010-01-02\nReferencje2;97161011332003000001230002;Jan Testowy;ul.Testowa 1;80-000 Miasto;;51 1010 1023 1234 5678 90123456;55,11;zaplata za fVAT 01/2013;;;;2013-01-10\n----\n[underline]##Przykładowa zawartość pliku importu przelewów podatku w formacie liniowym:##\n\n[source, txt]\n----\nReferencje;97161011332003000001230002;nazwa_odb_linia1;nazwa_odb_linia2;nazwa_odb_linia3;nazwa_odb_linia4;48 8355 0009 1234 5678 9012 3456;123,45;tytul_plat_linia1;tytul_plat_linia2;tytul_plat_linia3;tytul_platn_linia4;2010-01-02\nReferencje2;97161011332003000001230002;Jan Testowy;ul.Testowa 1;80-000 Miasto;;51 1010 1023 1234 5678 90123456;55,11;zaplata za fVAT 01/2013;;;;2013-01-10\n----\n\n[underline]##Przykładowa zawartość pliku importu przelewów VAT w formacie liniowym:##\n\n[source, txt]\n----\nReferencje;30910100032002000015960001;07101000712222174587369300;Drugi Urzad Skarbowy;VAT-7;2;AB1234567;09;M;08;Identyfikacja;10,24;05-09-2023\n----\n\nIstnieje również możliwość importu przelewu VAT w formacie liniowym w osobnych znacznikach:\n\n[width=\"100%\",cols=\"4,3,3,10\",options=\"header\"]\n|====================\n|*Pole* |*Długość* |*Typ* |*Opis*\n|VAT^*^ |12/2 |K |Kwota VAT\n|IDC|14 |C |Identyfikator podatkowy\n|INV |35 |C |Numer faktury\n|====================\n\n_^*^System będzie pozwalał na wprowadzenie etykiety KWOTA_VAT albo VAT._\n\n[underline]##Przykładowy opis struktury z pliku _schema.ini_ definiującej dane przelewów VAT:##\n\n\n[source, ini]\n----\n\n[przel_lin.txt]\nColNameHeader=False\nFormat=Delimited(;)\nDateTimeFormat=dd-MM-yyyy\nMaxScanRows=25\nCharacterSet=OEM\nCol1=REFERENCJE Char Width 16\nCol2=RACH_OBC Char Width 34\nCol3=NAZWA Char Width 140\nCol4=RACHUNEK Char Width 34\nCol5=KWOTA Float\nCol6=VAT Float\nCol7=TRESC1 Char Width 35\nCol8=TRESC2 Char Width 35\nCol9=TRESC3 Char Width 35\nCol10=TRESC4 Char Width 35\nCol11=INV Char Width 35\nCol12=IDC Char Width 35\nCol13=TXT Char Width 33\nCol14=DATA_ZLECENIA Char Width 10\n\n----\n\n[underline]##Przykładowa zawartość pliku importu przelewów VAT w formacie liniowym:##\n\n[source, txt]\n----\nReferencjeVAT;30910100032002000015960001;Jan Testowy ul.Testowa 1 80-000 Miasto;98194000089029982630800420;55,11;2,14;tresc1;tresc2;zaplata za fVAT 01/2013;;FV123;12234334;tytul;05-09-2023\n----\n\nNOTE: W przypadku importu przelewów VAT, jeśli pole tytuł jest odpowiednio sformatowane, to ma ono wyższy priorytet niż użycie dodatkowych znaczników.\n\nNOTE: Format importu Listy płac w formacie liniowym, jest taki sam jak dla przelewów zwykłych. Pozycja dotycząca daty będzie pomijana i importowane przelewy zapiszą się zgodnie z datą bieżącą (COT również nie jest weryfikowany).\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 412,
+      "line_end": 601
+    }
+  ]
+}

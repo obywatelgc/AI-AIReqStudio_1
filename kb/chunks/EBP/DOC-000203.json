@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000203",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista przelewów w paczce"
+    }
+  ],
+  "section_title": "Lista przelewów w paczce",
+  "text": "Funkcjonalność opcji Listy przelewów z poziomu szczegółów paczki obejmuje następujące możliwości:\n\n* filtrowania prostego,\n\n* filtrowania zaawansowanego,\n\n* wykonania akcji na wybranej dyspozycji (*panel akcji pojedynczych*):\n\n** [DODATKOWE OPCJE]:\n\n*** Kopiuj,\n\n*** Szczegóły,\n\n*** Wypakuj z paczki,\n\n*** Edytuj,\n\n*** Usuń,\n\n* wykonania akcji na zaznaczonych dyspozycjach (*panel akcji zbiorczych*):\n\n** Wypakuj z paczki,\n\n** Usuń,\n\n** Kopiuj.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 881,
+      "line_end": 909
+    }
+  ]
+}

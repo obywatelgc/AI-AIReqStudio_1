@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000110",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Kredyty"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie listy kredytów"
+    }
+  ],
+  "section_title": "Przeglądanie listy kredytów",
+  "text": "Po kliknięciu w tytuł widżetu *Kredyty* lub poprzez wybór opcji z bocznego menu _Kredyty_ wyświetlane jest okno prezentujące listę kredytów, do których Użytkownik jest uprawniony:\n\nimage::Kredyty/image7.png[image,width=604,height=219]\n\nNa liście kredytów, dla każdego kredytu dostępne są następujące informacje:\n\n* *Typ kredytu* – nazwa produktu lub nazwa własna kredytu, wraz z numer rachunku kredytu,\n* *Kolejna rata* – kwota najbliższej raty wraz z walutą,\n* *Termin płatności* – data płatności najbliższej raty.\n\nW górnej części formularza KREDYTY dostępny jest filtr prosty, umożliwiający filtrowanie listy kredytów po wpisaniu danych w polu wyszukiwania:\n\nimage::Kredyty/image8.png[image,width=356,height=57]\n\nSystem filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnego kredytu w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści.\n\nSystem filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnego rachunku w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści. Aby powrócić do pełnej listy rachunków należy kliknąć w ikonę image:Kredyty/image9.png[image,width=56,height=54]w polu wyszukiwania.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Kredyty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Kredyty.adoc",
+      "line_start": 66,
+      "line_end": 84
+    }
+  ]
+}

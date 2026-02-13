@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000149",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (Visiona - GAPI)"
+    },
+    {
+      "level": 3,
+      "title": "Aktywacja karty"
+    }
+  ],
+  "section_title": "Aktywacja karty",
+  "text": "Po otrzymaniu karty Klient może aktywować kartę poprzez wybranie opcji [Aktywuj]:\n\n* z poziomu listy Kart w wierszu karty o statusie _Wyprodukowana_:\n\nimage::Karty/K_karta_akt1.jpg[]\n\n* lub na formularzu szczegółów karty:\n\nimage::Karty/K_karta_akt2.jpg[]\n\nPo wyborze opcji [Aktywuj] wyświetlony zostaje formularz z następującymi danymi\n(w zależności od typu karty):\n\nFormularz aktywacji karty debetowej:\n\nimage::Karty/K_karta_akt3.jpg[]\n\nUżytkownik powinien podać datę ważności (w formacie MM/RR) karty odczytaną z\nfizycznej karty i wybrać [Akceptuj]\n\nDane formularza:\n\n* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze\ni 4 ostatnie cyfry numeru karty),\n* *Nazwa i typ karty* – typ karty: Kredytowa, Debetowa,\n* *Numer rachunku powiązanego z kartą* - dla karty debetowej to numer rachunku,\ndo którego wydano kartę,\n* *Imię i nazwisko okaziciela* – imię i nazwisko właściciela karty,\n* *Imię i nazwisko na karcie* – imię i nazwisko umieszczone na karcie.\n\nPodpisać przypisanym środkiem autoryzacji:\n\nimage::Karty/K_karta_akt4.jpg[]\n\nPo poprawnej akceptacji zostanie zaprezentowane potwierdzenie:\n\nimage::Karty/K_karta_akt5.jpg[image,width=328,height=259]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 1359,
+      "line_end": 1398
+    }
+  ]
+}

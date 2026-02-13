@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000394",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu operacji z analityki płatności masowych"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie MT940/MultiCash"
+    }
+  ],
+  "section_title": "Plik w formacie MT940/MultiCash",
+  "text": "Plik eksportu operacji z analityki płatności masowych w formacie MT940/MultiCash posiada taka samą strukturę jak w przypadku struktury w formacie MT940 za wyjątkiem prezentacji dodatkowych danych w polu *86*.\n\nPolskie znaki kodowane są w ISO 8859-2.\n\nPoniżej zaprezentowano specyfikację podpól dla pola *:86:*\n\nZałożenia:\n\nPole *:86:* składa się z podpól oznaczonych etykietami - zestaw podpól zamieszczono w poniższej tabeli.\n\nSeparatorem podpól jest znak <.\n\nW przypadku, gdy podpole nie posiada wartości całe podpole (łącznie z etykietą) jest również prezentowane.\n\n[cols=\"3,15\",options=\"header\",]\n|================================================================================================================\n|*Etykieta* |*Opis*\n|<10 |Numer porządkowy\n|<20 |Tytuł operacji – linia1\n|<21 |Tytuł operacji – linia2\n|<22 |Tytuł operacji – linia3\n|<23 |Tytuł operacji – linia4\n|<27 |Nazwa kontrahenta - beneficjenta dla zleceń wychodzących, zleceniodawcy dla zleceń przychodzących\n|<28 |Nazwa kontrahenta - beneficjenta dla zleceń wychodzących, zleceniodawcy dla zleceń przychodzących\n|<38 |Numer rachunku kontrahenta – beneficjenta dla zleceń wychodzących, zleceniodawcy dla zleceń przychodzących.\n|<61 |Numer rachunku wirtualnego,\n|================================================================================================================\n\n[underline]##Przykład pliku eksportu operacji z analityki płatności masowych w formacie MT940/MulltiCash:##\n\n[source, txt]\n----\n{1:F0100                   }{2:O940          100                             N}{4:\n:20:170607/61506\n:25:05156000132203000615060017\n:28:/1\n:60F:C170607PLN15,00\n:61:1706070607C25,50FMSCNONREF         //1\n:86:<101<20Naliczenie odsetek<21<22<23<27JAN TEST<28TEST<3805156000132203000615060017\n:61:1706070607D5,00FMSCNONREF          //2\n:86:<102<20Naliczenie odsetek<21<22<23<27JAN TEST<28TEST<38\n:61:1706070607D1,88FMSCNONREF          //3\n:86:<103<20tytul platnosci 1<21tytul platnosci 2<22tytul platnosci 3<23ty\ntul platnosci 4<27Alicja Test<28Nazwa kontrahenta<38021560113\n72108008635910001\n:62F:C170607PLN10,00\n-}\n----\n\nNOTE: W przypadku eksportu pliku z ANALITYKi zbiorczej, w pliku MT940/MultiCash pominietę zostanie modulo.\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 5317,
+      "line_end": 5368
+    }
+  ]
+}

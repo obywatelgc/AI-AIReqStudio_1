@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000129",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (Visiona)"
+    },
+    {
+      "level": 3,
+      "title": "Zastrzeżenie karty"
+    }
+  ],
+  "section_title": "Zastrzeżenie karty",
+  "text": "Aby zastrzec kartę należy na formularzu KARTY kliknąć w obszar karty, a następnie wybrać opcję [ZASTRZEŻ].\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 433,
+      "line_end": 435
+    }
+  ]
+}

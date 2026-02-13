@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000287",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Wiadomości"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie listy wiadomości"
+    }
+  ],
+  "section_title": "Przeglądanie listy wiadomości",
+  "text": "Po wybraniu opcji *Wiadomości* z nagłówka systemu, wyświetlana jest lista komunikatów Banku oraz powiadomień systemowych. W przypadku, gdy Użytkownik komunikował się z Bankiem poprzez wysyłanie wiadomości tekstowych, one również znajdą się na liście.\n\nimage::Wiadomosci/image3.png[image]\n\nNa liście znajdują się następujące informacje:\n\n* *Data* - data wiadomości - w formacie DD.MM.RRRR, dla poszczególnych kategorii treści prezentowana jest następująca data:\n\n** Wiadomości - data wysłania wiadomości przez Bank (lub Użytkownika do Banku).\n\n** Komunikaty - data wysłania komunikatu przez Bank,\n\n** Powiadomienia - data wygenerowania powiadomienia przez system,\n\n* *Typ* - kategoria treści:\n\n** Wiadomość - wiadomość wysłana z Banku do Użytkownika,\n\n** Komunikat Banku - komunikaty wysyłane do wszystkich Klientów, komunikaty wysyłane do konkretnego Klienta,\n\n** Powiadomienie - powiadomienia systemowe,\n\n* *Tytuł* - temat wiadomości.\n\nLista wiadomości jest stronicowana.\n\nWidok wiadomości sortowany jest w kolejności od najnowszej do najstarszej. Wiadomości nowe prezentowane są pogrubioną czcionką.\n\nSystem umożliwia filtrowanie listy po wpisaniu danych w polu wyszukiwania:\n\nimage::Wiadomosci/image5.png[image]\n\nSystem filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej wiadomości/powiadomienia systemowego w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści. Aby powrócić do pełnej listy wiadomości należy kliknąć w ikonę [X] w polu wyszukiwania.\n\nimage::Wiadomosci/image7.png[image]\n\nUżycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtru zaawansowanego dla następujących pól:\n\n* *Ostatnie* - liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana lista wiadomości, domyślnie 30 dni,\n\n* *Zakres dat* - zakres dat, dla których ma zostać wyświetlona lista wiadomości, od miesiąca wstecz do daty bieżącej. Alternatywa dla pola *Ostatnie*. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą którego można określić zakres dat,\n\n* *Rodzaj wiadomości* - pole zwierające rodzaje transakcji:\n\n** Wszystkie,\n\n** Komunikaty,\n\n** Powiadomienia,\n\n** Wiadomości,\n\n* *Status* - status wiadomości; dostępne wartości:\n\n** Odczytane i nieodczytane,\n\n** Odczytane,\n\n** Nieodczytane.\n\nZastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Wiadomosci.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Wiadomosci.adoc",
+      "line_start": 16,
+      "line_end": 78
+    }
+  ]
+}

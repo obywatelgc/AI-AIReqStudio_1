@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000052",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Uprawnienia Użytkowników"
+    },
+    {
+      "level": 5,
+      "title": "Uprawnienia funkcjonalne"
+    }
+  ],
+  "section_title": "Uprawnienia funkcjonalne",
+  "text": "Na formularzu UPRAWNIENIA Użytkowników po wyborze w parametrze _Uprawnienia_ wartości _Funkcjonalne_, administrator ma możliwość nadania poszczególnym Użytkownikom (uprawnionym do firmy) uprawnień do poszczególnych funkcji systemu.\n\nimage::main/image136.png[]\n\nUżytkownik może nadać albo odebrać uprawnienia pojedynczo albo za pomocą przycisków:\n\n[WSZYSTKIE] – zaznaczenie/odznaczenie wszystkich uprawnień,\n\n[PASYWNE] – zaznaczenie/odznaczenie wszystkich uprawnień pasywnych,\n\nW dolnej części formularza UPRAWNIENIA Użytkowników dostępna jest akcja:\n\n* [ZAPISZ ZMIANY] – pozwalająca na zapisanie wprowadzonych zmian.\n\nPo naciśnięciu [ZAPISZ ZMIANY] system zapisuje wprowadzone zmiany, oraz prezentuje komunikat potwierdzający zapisanie wprowadzonych przez Użytkownika zmian.\n\nimage::main/image137.png[image,width=376,height=215]\n\nZmiana uprawnień, nie wymaga zatwierdzenia przez Użytkownika za pomocą dostępnej metody autoryzacji.\n\nZmiany uprawnień wymagają przelogowania Użytkownika, którego dotyczą wprowadzone zmiany.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 1763,
+      "line_end": 1785
+    }
+  ]
+}

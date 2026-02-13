@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000048",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Rejestr zdarzeń"
+    }
+  ],
+  "section_title": "Rejestr zdarzeń",
+  "text": "W opcji _Ustawienia → Rejestr zdarzeń_, Użytkownik ma możliwość przeglądania akcji wykonanych w danym kanale.\n\nimage::main/image126.png[image,width=612,height=308]\n\nW celu zawężenia prezentacji listy zdarzeń, system umożliwia zastosowania filtru zaawansowanego za pomocą przycisku [POKAŻ FILTRY].\n\nimage::main/image127.png[image,width=609,height=62]\n\nUżytkownik ma możliwość ustawiania filtru zaawansowanego dla następujących pól:\n\n* Ostatnie – liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana historia zdarzeń, domyślnie 30 dni,\n* Zakres dat - zakres dat od do, dla których ma zostać wyświetlona historia zdarzeń, od miesiąca wstecz do daty bieżącej (alternatywa dla pola Ostatnie). Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą którego można określić zakres dat wybierając konkretną datę z kalendarza.\n\nimage::main/image128.png[image,width=292,height=335]\n\n* Kanał – kanał, w którym zaistniało zdarzenie, wybór z listy kanałów: WWW,IVR.\n\nimage::main/image129.png[image,width=249,height=150]\n\n* Typ zdarzenia – typ wyszukiwanego zdarzenie (wybór konkretnego zdarzenia z listy wartości), na liście dostępne są następujące typy zdarzeń:\n\n** Zmiana ustawień udostępnienia rachunku,\n** Złożenie przelewu,\n** Usunięcie przelewu,\n** Autoryzacja przelewu,\n** Modyfikacja przelewu,\n** Dodanie przelewu do listy zleceń,\n** Złożenie wniosku,\n** Anulowanie wniosku,\n** Autoryzacja wniosku,\n** Przeczytanie komunikatu przez Użytkownika,\n** Usuniecie komunikatu przez Użytkownika,\n** Zmiana ustawień udostępnienia do umów,\n** Zmiana ustawień udostępnienia Użytkownika,\n** Zmiana nazwy własnej produktu,\n** Zmiana konfiguracji ustawień i wyglądu,\n** Zmiana konfiguracji skrótów,\n** Zmiana hasła,\n** Dodanie szablonu,\n** Usuniecie szablonu,\n** Modyfikacja szablonu,\n** Aktywacja karty,\n** Modyfikacja odbiorcy,\n** Usunięcie odbiorcy,\n** Wysłanie wiadomości,\n** Przeczytanie wiadomości,\n** Archiwizacja wiadomości,\n** Odpowiedź na wiadomość,\n** Złożenie dyspozycji otwarcia zlecenia stałego,\n** Anulowanie dyspozycji otwarcia zlecenia stałego,\n** Autoryzacja dyspozycji otwarcia zlecenia stałego,\n** Dodanie dyspozycji otwarcia zlecenia stałego do listy zleceń,\n** Złożenie dyspozycji modyfikacji zlecenia stałego,\n** Anulowanie dyspozycji modyfikacji zlecenia stałego,\n** Autoryzacja dyspozycji modyfikacji zlecenia stałego,\n** Dodanie dyspozycji modyfikacji zlecenia stałego do listy zleceń,\n** Złożenie dyspozycji zerwania zlecenia stałego,\n** Anulowanie dyspozycji zerwania zlecenia stałego,\n** Dodanie dyspozycji zerwania zlecenia stałego do listy zleceń,\n** Złożenie dyspozycji otwarcia przelewu odroczonego,\n** Anulowanie dyspozycji otwarcia przelewu odroczonego,\n** Autoryzacja dyspozycji otwarcia przelewu odroczonego,\n** Dodanie dyspozycji otwarcia przelewu odroczonego do listy zleceń,\n** Złożenie dyspozycji modyfikacji przelewu odroczonego,\n** Anulowanie dyspozycji modyfikacji przelewu odroczonego,\n** Autoryzacja dyspozycji modyfikacji przelewu odroczonego,\n** Dodanie dyspozycji modyfikacji przelewu odroczonego do listy zleceń,\n** Złożenie dyspozycji zerwania przelewu odroczonego,\n** Anulowanie dyspozycji zerwania przelewu odroczonego,\n** Dodanie dyspozycji zerwania przelewu odroczonego do listy zleceń,\n** Złożenie dyspozycji otwarcia lokaty,\n** Anulowanie dyspozycji otwarcia lokaty,\n** Autoryzacja dyspozycji otwarcia lokaty,\n** Dodanie dyspozycji otwarcia lokaty do listy zleceń,\n** Złożenie dyspozycji zerwania lokaty,\n** Anulowanie dyspozycji zerwania lokaty,\n** Dodanie dyspozycji zerwania lokaty do listy zleceń,\n** Złożenie dyspozycji doładowania,\n** Anulowanie dyspozycji doładowania,\n** Autoryzacja dyspozycji doładowania,\n** Dodanie dyspozycji doładowania do listy zleceń,\n** Poprawne logowanie,\n** Niepoprawne logowanie,\n** Zmiana hasła logowania,\n** Zmiana hasła autoryzacji,\n** Skopiowanie przelewu na liście zleceń,\n** Wypakowanie przelewu z paczki,\n** Usuniecie przelewu z paczki,\n** Utworzenie kopii przelewu z paczki,\n** Dodanie paczki zleceń,\n** Dodanie zleceń do paczki,\n** Utworzenie kopii paczki,\n** Podpisanie paczki,\n** Wycofanie podpisu,\n** Przekazanie do realizacji,\n** Modyfikacja paczki,\n** Usunięcie paczki,\n** Edycja przelewu w paczce,\n** Utworzenie filtru IP,\n** Edycja filtru IP,\n** Utworzenie filtru czasu dostępu,\n** Edycja filtru czasu dostępu,\n** Usunięcie filtru IP,\n** Usunięcie filtru czasu dostępu,\n** Import przelewów,\n** Import szablonów.\n\nLista zdarzeń jest stronicowana, Użytkownik ma możliwość przejścia do kolejnych stron za pomocą przycisków nawigacji znajdujących się w dolanej części formularza.\n\nimage::main/image130.png[image,width=248,height=55]\n\nZastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].\n\nW górnej części formularza REJESTR ZDARZEŃ znajdują się przyciski:\n\n* image:main/image85.png[image,width=39,height=44] – umożliwiający powrót do formularza USTAWIENIA,\n* image:main/image86.png[image,width=43,height=55]– umożliwiający przejście do głównego menu.\n\n\n[[rachunek-domyslny]]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 1475,
+      "line_end": 1595
+    }
+  ]
+}

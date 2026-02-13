@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000164",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista przelewów - opis wybranych akcji"
+    },
+    {
+      "level": 4,
+      "title": "Dostępność akcji w zależności od statusu zlecenia"
+    }
+  ],
+  "section_title": "Dostępność akcji w zależności od statusu zlecenia",
+  "text": "System udostępnia (wyświetla) Użytkownikowi jedynie te akcje na dyspozycji, (akcje pojedyncze, zbiorcze, na szczegółach), które są możliwe do wykonania z uwagi na uprawnienia Użytkownika oraz stan dyspozycji. Przykładowo dla dyspozycji przelewu dostępna jest akcja edycji danych dyspozycji, jeśli dyspozycja znajduje się w statusie _Nowy_ oraz Użytkownik posiada uprawnienie do edycji.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 153,
+      "line_end": 155
+    }
+  ]
+}

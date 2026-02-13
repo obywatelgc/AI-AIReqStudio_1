@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000242",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie listy szablonów przelewów"
+    },
+    {
+      "level": 4,
+      "title": "Dodanie szablonu przelewu"
+    }
+  ],
+  "section_title": "Dodanie szablonu przelewu",
+  "text": "Z poziomu *Listy szablonów* za pomocą przycisku [NOWY SZABLON] Użytkownik ma możliwość dodania następujących szablonów przelewów:\n\n* szablon przelewu zwykłego,\n\n* szablon przelewu walutowego,\n\n* szablon przelewu podatkowego.\n\nWybór typu szablonu przelewu dostępny jest po przejściu na formatkę nowego szablonu.\n\nNOTE: Dla kontekstu firmowego jest możliwe dodania szablonu zaufanego za pomocą checkboxa image:Przelewy/image44a.png[]. Możliwość dodania szablonu zaufanego dla kontekstu firmowego zależy od parametryzacji banku. Opcja dostępna jest dla wszystkich typów przelewu.\nJej wybór spowoduje, że przelew z szablonu zaufanego nie będzie wymagał autoryzacji, a pola dotyczące danych odbiorcy będą nieedytowalne podczas wprowadzania przelewu. Szablon będzie traktowany jako zaufany tylko dla Użytkownika, który utworzył szablon.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 919,
+      "line_end": 932
+    }
+  ]
+}

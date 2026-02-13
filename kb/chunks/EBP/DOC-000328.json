@@ -1,0 +1,33 @@
+{
+  "chunk_id": "DOC-000328",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Import e-Faktury"
+    }
+  ],
+  "section_title": "Import e-Faktury",
+  "text": "Użytkownik ma możliwość importu faktury. Służy do tego przycisk [Wczytaj fakturę], który jest dostępny po naciśnięciu przycisku [Wystaw fakturę].\n\n\nimage::e-Faktury(KSeF)/fv_wczytaj_fv.png[]\n\nWymagany format pliku do importu to XML.\n\nimage::e-Faktury(KSeF)/fv_import_fv.png[]\n\n\nPo wczytaniu poprawnego pliku, pojawia się okno z  podsumowaniem z danymi faktury, gdzie użytkownik może wysłać fakture do KSeF lub tylko zautoryzować, wtedy wczytana fv trafia na liste dyspozycji faktury w statusie _Gotowy do wysłania_.\n\n\nimage::e-Faktury(KSeF)/fv_import_podsumowanie.png[]\n:imagesdir: images\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 919,
+      "line_end": 933
+    },
+    {
+      "source_file": "miniapps/Miniaplikacja_Powierniczne.adoc",
+      "line_start": 1,
+      "line_end": 2
+    }
+  ]
+}

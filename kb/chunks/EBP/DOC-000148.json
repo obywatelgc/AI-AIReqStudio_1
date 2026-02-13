@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000148",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Wniosek o kartę debetową (CardOn)"
+    },
+    {
+      "level": 3,
+      "title": "Nowy wniosek o kartę kredytową (CardOn)"
+    }
+  ],
+  "section_title": "Nowy wniosek o kartę kredytową (CardOn)",
+  "text": "yzacji.\n\n\nPo podpisaniu umowy w bankowości wniosek zyskuje status _Umowa oczekuje na realizację_\nzaś po podpisaniu przez bank _Umowa podpisana_.\n\n\nJeśli umowa została podpisana w bankowści internetowej oraz otrzymała status\n_Umowa podpisana_, wówczas dokument umowy wraz z dokumentami towarzyszącymi\njest wysyłany na adres email firmy. Załączniki zabezpieczone są zgodnie z konfiguracją systemu.\nW zależności od konfiguracji hasło użytkownika dostępne jest w bankowości internetowej\nlub wysyłane na numer telefonu.\n\n*_Weryfikacja zastrzeżenia numeru PESEL_*\n\nSprawdzenie następuje podczas podpisania umowy o kartę kredytową, tuż przed jej autoryzacją.\nOznacza, to, że jeśli użytkownik zdecyduje się na ostateczne podpisanie umowy w oddziale\nto na pracowniku banku spada obowiązek weryfikacji.\nStatus zastrzeżenia numeru PESEL jest weryfikowany tylko dla wniosków o karty indywidualne\ni dotyczy wyłącznie osoby składającej wniosek.\n\nW przypadku otrzymania informacji o zastrzeżeniu wyświetlony zostanie komunikat:\n\"Twój PESEL jest zastrzeżony. Aby podpisać umowę, Twój PESEL nie powinien być zastrzeżony.\nMożesz cofnąć zastrzeżenie numeru PESEL, aby kontynuować finalizację umowy.\"\n\nW szczególnym przypadku, gdy nie udało się zweryfikować stanu numeru PESEL, zostanie\nwyświetlony komunikat:\n\"Nie mogliśmy sprawdzić czy Twój PESEL jest zastrzeżony. Przepraszamy, z przyczyn\ntechnicznych nie udało nam się zweryfikować zastrzeżenia Twojego numeru PESEL.\nAby podpisać umowę, Twój PESEL nie powinien być zastrzeżony. Spróbuj ponownie\nw późniejszym terminie lub skontaktuj się z Bankiem.\n\nW obu przypadkach operację podpisania umowy można powtórzyć po zdjęciu zastrzeżenia\nnumeru PESEL.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 1016,
+      "line_end": 1355
+    }
+  ]
+}

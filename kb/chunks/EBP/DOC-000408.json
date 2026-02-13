@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000408",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Multimodulo"
+    },
+    {
+      "level": 3,
+      "title": "Przelewy"
+    }
+  ],
+  "section_title": "Przelewy",
+  "text": "Użytkownik (modulo nadrzędne) ma również możliwość składania przelewów z rachunków firm podrzędnych (modul podrzędnych).\n",
+  "primary_source_file": "chapters/Multimodulo.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Multimodulo.adoc",
+      "line_start": 24,
+      "line_end": 26
+    }
+  ]
+}

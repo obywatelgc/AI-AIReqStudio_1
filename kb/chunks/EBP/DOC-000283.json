@@ -1,0 +1,33 @@
+{
+  "chunk_id": "DOC-000283",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Autodealing"
+    },
+    {
+      "level": 3,
+      "title": "Multidealing"
+    }
+  ],
+  "section_title": "Multidealing",
+  "text": "W celu udostępnienia funkcjonalności obsługi wielu systemów zewnętrznych, należy włączyć usługę *cbp.externalsystem*.\n\nDo poprawnego połączenia z wieloma systemami zewnętrznymi wymagane jest ustawienie następujących parametrów w tabelach EXTERNAL_SYSTEM oraz EXTERNAL_SYSTEM_USER na bazie systemu Asseco EBP.\n\nW tabeli EXTERNAL_SYSTEM należy ustawić następujące parametry (wszystkie obowiązkowe):\n\n* *SYMBOL* – symbol systemu zewnętrznego,\n* *NAME* – nazwa systemu zewnętrznego,\n* *URL* – bazowy URL systemu zewnętrznego, na bazie którego będzie zbudowany url z żądaniem otwarcia aplikacji zewnętrznej,\n* *VALIDATE_URL* – URL usługi walidującej Użytkownika systemu zewnętrznego.\n\nPodczas przypisywania identyfikatora Użytkownikowi w systemie Asseco BackOffice w tabeli EXTERNAL_SYSTEM_USER zapisywane są następujące dane:\n\n* USER_ID – identyfikator Użytkownika Asseco EBP,\n* CLIENT_ID – identyfikator klienta (ID_KL_DEF) Asseco EBP,\n* EXTERNAL_SYSTEM_USER_ID – identyfikator Użytkownika w systemie zewnętrznym,\n* EXTERNAL_SYSTEM_SYMBOL – symbol systemu zewnętrznego, pole powinno mieć swój odpowiednik w _EXTERNAL_SYSTEM.SYMBOL_,\n* STATUS – status w systemie zewnętrznym.\n\nPo autentykacji Użytkownika w systemie zewnętrznym nie będzie bieżącej kontroli sesji w systemie Asseco EBP, czyli możliwe będzie korzystanie przez klienta z aplikacji zewnętrznej niezależnie od zamknięcia aplikacji Asseco EBP lub wygaśnięcia sesji aplikacji Asseco EBP, aż do czasu wygaśnięcia ważności tokenaSSO.\n\nKażda miniaplikacja Autodealing dostępna jest w menu bocznym systemu oraz na pulpicie jako odrębna pozycja.\n\nimage::Autodealing/image7.png[image,width=157,height=498]\n\nimage::Autodealing/image8.png[image,width=603,height=136]\n\nFunkcjonalność uruchamiania miniaplikacji Autodealing została opisana w rozdziale Autodealing.\n:imagesdir: images\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Autodealing.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Autodealing.adoc",
+      "line_start": 67,
+      "line_end": 95
+    },
+    {
+      "source_file": "miniapps/Miniaplikacja_Tarcza_Finansowa_PFR.adoc",
+      "line_start": 1,
+      "line_end": 2
+    }
+  ]
+}

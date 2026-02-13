@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000303",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Lista e-Faktur"
+    },
+    {
+      "level": 4,
+      "title": "Płatność za e-Faktury"
+    },
+    {
+      "level": 5,
+      "title": "Zbiorczy przelew z wybranych e-Faktur"
+    }
+  ],
+  "section_title": "Zbiorczy przelew z wybranych e-Faktur",
+  "text": "Aby wygenerować przelewy dla wybranych faktur, należy zaznaczyć faktury zakupowe z listy oraz w *panelu akcji zbiorczych* wybrać akcję:\n\n* [DODAJ DO LISTY ZLECEŃ] - w kontekście firmowym,\n* [DODAJ DO KOSZYKA ZLECEŃ] - w kontekście indywidualnym.\n\nOpcja jest dostępna tylko dla faktur zakupowych wystawionych w PLN i na rachunki PL.\n\nUżytkownik przekierowywany jest na formularz _Przelewy dla wybranych faktur_, na którym system prezentuje listę wybranych wcześniej faktur oraz wymaga wybranie rachunku do obciążenia.\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_platnosc_zbiorcza_1.png[]\n\nPo kliknięciu w [DODAJ DO LISTY ZLECEŃ] lub [DODAJ DO KOSZYKA ZLECEŃ] system generuje przelewy dla wybranych faktur i prezentuje następujące dane:\n\n* *Poprawne* - liczba poprawnych przelewów o prawidłowych danych po weryfikacji systemu, które zostały dodane do _Listy zleceń_ lub _Koszyka_.\n\n* *Błędy* - liczba błędnych przelewów.\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_platnosc_zbiorcza_2.png[]\n\nWygenerowane przelewy dostępne są na _Liście zleceń_ lub _Koszyku_.\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_platnosc_zbiorcza_3.png[]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 214,
+      "line_end": 237
+    }
+  ]
+}

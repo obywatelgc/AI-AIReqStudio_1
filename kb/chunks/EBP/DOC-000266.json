@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000266",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Doładowania"
+    },
+    {
+      "level": 3,
+      "title": "Widżet Doładowania"
+    }
+  ],
+  "section_title": "Widżet Doładowania",
+  "text": "Na widżecie *Doładowania* jest możliwość:\n\nimage::Doladowania/image1.png[image,width=252,height=235]\n\n* przejścia do formularza _Nowe doładowanie_ - przycisk [DOŁADUJ TELEFON],\n* przejścia do formularza _Nowe doładowanie_ z wypełnionym numerem telefonu - lista rozwijalna _Wybierz zapisany telefon_,\n* przejścia do zarządzania szablonami doładowań – przycisk [ZARZĄDZAJ SZABLONAMI].\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Doladowania.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Doladowania.adoc",
+      "line_start": 29,
+      "line_end": 37
+    }
+  ]
+}

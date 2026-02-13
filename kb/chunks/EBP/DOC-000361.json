@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000361",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu operacji z historii rachunku"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie MT940"
+    }
+  ],
+  "section_title": "Plik w formacie MT940",
+  "text": "Plik eksportu zestawienia operacji z historii rachunku w formacie MT940 składa się z 3 sekcji: pierwszej, drugiej i czwartej.\n\nSekcje pierwsza i druga rozpoczynają się i kończą w pierwszej linii komunikatu. Również ich pola znajdują się w pierwszej linii pliku. Sekcja czwarta rozpoczyna się w pierwszej linii jednak każde jej pole umieszczone musi być w nowej linii – również zamknięcie sekcji czwartej znajduje się w nowej, ostatniej linii komunikatu. Sekcje otwierają i zamykają znaki klamry: '{' i '}'.\n\nPolskie znaki kodowane są w ISO 8859-2.\n\nUkład sekcji i ich pól (opis pól znajduje się w dalszej części dokumentacji) dla komunikatu MT940 jest następujący:\n\n[source, txt]\n----\n{1:F01                     }{2:O940                                          N}{4:\n:20:\n:25:\n:28:\n:60F: (lub :60M:)\n:61:\n:86:\n:62F: (lub :62M:)\n-}\n----\n*Warunki budowania pliku:*\n\n* przed każdą linią stosuje się ciąg znaków <CR><LF>\n\n* żadna z linii nie może być pusta lub składać się z samej spacji,\n\n* żadna z linii (z wyjątkiem ostatniej linii sekcji 4 oraz linii składowych pola :86:) nie może zaczynać się od znaku ‘-’ (myślnika),\n\n* zestaw dopuszczalnych znaków SWIFT zawiera znaki: 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '/', '', '?', ':', '(', ')', '.', ',', ''', '+', '\\{', '}', 'CR', 'LF', ' '.\n\nUżyte oznaczenia dla formatu danych w kolejnych polach: +\n*c* - tylko cyfry. +\n*n* - tylko cyfry i spacje. +\n*l* - tylko litery. +\n*z* - tylko litery i cyfry (c i l). +\n*s* - wszystkie znaki dopuszczane przez SWIFT. +\n*k* - liczba oznaczająca kwotę (separatorem dziesiętnym musi być przecinek ‘,’ a część dziesiętna musi zawsze być określona dwiema cyframi, np.: ‘12,25’ lub ‘1234,00’.\n\n[underline]##Przykłady oznaczania formatu pól:## +\n6c - maksymalnie sześć cyfr, +\n5n - maksymalnie pięć cyfr wraz ze spacjami, np.: ’12 34’, lub ‘12345’. +\n4!l - dokładnie 4 litery, +\n5*65s - do pięciu linii, każda po maksymalnie 65 dowolnych znaków SWIFT.\n\n*Specyfikacja pól w pliku MT940*\n\n[cols=\"2,6,3,10\",options=\"header\",]\n|====================\n|*Etykieta* |*Nazwa* |*Format* |*Opis*\n.2+<.^|F01 .2+<.^|Nagłówek sekcji 1 <.^|22!n |\nModulo Klienta.\n\nPole uzupełniane od tyłu spacjami do 22 znaków.\n\n|[underline]##Przykład:## |‘**F01**123456 ’\n.2+<.^|O940 .2+<.^|Nagłówek sekcji 2 <.^|42!nN |\nModulo Klienta poprzedzone 10 znakami spacji.\n\nPole uzupełniane od tyłu spacjami do 43 (razem z końcowym znakiem ‘N’).\n\nPierwsze 10 znaków to spacje. Ostatni znak to ‘N’.\n\n|[underline]##Przykład:## |*‘0940* 123456 N’\n.2+<.^|:20: .2+<.^|Numer referencyjny <.^|6!c/9c |\nPierwszy ciąg znaków to data początkowa zestawienia w formacie RRMMDD.\n\nDrugi ciąg znaków to modulo Klienta.\n\n|[underline]##Przykład:## |‘:**20**:060302/123456’\n.3+<.^|:25: .3+<.^|Identyfikator rachunku <.^|32n |Numer NRB rachunku.\n|[underline]##Przykład 1:## |‘:**25**:12 3456 7890 1234 5678 9012 3456’\n|[underline]##Przykład 2:## |‘:**25**:12345678901234567890123456’\n.2+<.^|:28: .2+<.^|Numer zestawienia <.^|5c/3c a|\nPierwszy ciąg znaków to identyfikator zestawienia (w przykładzie ‘10’). Dla zestawienia nie posiadającego identyfikatora prezentowany jest ciąg pusty.\n\nDrugi ciąg znaków to numer sekwencyjny kolejnych części zestawienia (w przykładzie ‘4’).\n\n|[underline]##Przykład:## |‘:**28**:10/4’\n.6+<.^|:60F: .6+<.^|Saldo początkowe zestawienia ob. d. <.^|1!l6!c3!l15k |Format całego pola – łącznie do 25 znaków. Poniżej znajduje się opis w rozbiciu na poszczególne sekcje.\n|1!l |Strona – znak ‘C’ dla salda kredytowego lub znak ‘D’ dla salda debetowego.\n|6!c |Data początkowa zestawienia operacji w formacie RRMMDD.\n|3!l |Symbol waluty.\n|15k |Kwota salda początkowego zestawienia operacji.\n|[underline]##Przykład:## |‘:**60F**:C060302PLN12,34’\n.6+<.^|:61: .6+<.^|Szczegóły każdej operacji. <.^|6!c1!l15k22!s4c\n\n<CR><LF>20s\n\n|Format całego pola - łącznie do 68 znaków (nie wliczając znaków nowej linii). Poniżej znajduje się opis w rozbiciu na poszczególne sekcje.\n|6!c |Data waluty w formacie RRMMDD.\n|4!n |Data księgowania w formacie MMDD.\n|1!l |Strona – znak ‘C’ dla salda kredytowego lub znak ‘D’ dla salda debetowego.\n|15k |Kwota operacji.\n|22!s4c |\nReferencja operacji składająca się *ze stałego ciągu 22 znaków*: ‘FMSCNONREF //’ oraz liczby porządkowej operacji na zestawieniu.\n\nPrzykład: ‘FMSCNONREF //7’.\n\n.3+<.^|:86: .3+<.^|Szczegóły operacji <.^|Oddzielne pole typu s\n|Numer rachunku beneficjenta transakcji zakończony kombinacją znaków <CR><LF>.\n|5*65s |\nNazwa kontrahenta i tytuł płatności (każdą linię poprzedza kombinacja znaków <CR><LF>).\n\nPole nie jest uzupełniane pustymi liniami ani znakami spacji.\n\n|[underline]##Przykład:##|\n‘:**86**:12123456781234567890123456\n\nFIRMA S.A.ul. Testowa 1400-111 Miasto Szkolenie, nr uczestnika 123’\n\n.6+<.^|:62F: .6+<.^|Saldo końcowe zestawienia ob. d. <.^|1!l6!c3!l15k |Format całego pola - łącznie do 25 znaków. Poniżej znajduje się opis w rozbiciu na poszczególne sekcje.\n|1!l |Strona - znak ‘C’ dla salda kredytowego lub znak ‘D’ dla salda debetowego.\n|6!c |Data końcowa zestawienia obrotów dziennych w formacie RRMMDD.\n|3!l |Symbol waluty.\n|15k |Kwota salda końcowego zestawienia operacji.\n|[underline]##Przykład:## |‘:**62**F:C060302PLN25,00’\n.7+<.^|:60M:\n\n(:62M:)\n\n.7+<.^|Saldo początkowe (końcowe) części zestawienia ob. d. <.^|1!l6!c3!l15k |Format całego pola - łącznie do 25 znaków. Poniżej znajduje się opis w rozbiciu na poszczególne sekcje.\n|1!l |Strona - znak ‘C’ dla salda kredytowego lub znak ‘D’ dla salda debetowego.\n|6!c |Data początkowa (końcowa) części zestawienia operacji w formacie RRMMDD.\n|3!l |Symbol waluty.\n|15k |Kwota salda początkowego (końcowego) części zestawienia operacji.\n|[underline]##Przykład 1:## |‘:**60M**:C060302PLN12,34’\n|[underline]##Przykład 2:## |‘:**62M**:C060302PLN25,00’\n|========\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 2456,
+      "line_end": 2625
+    }
+  ]
+}

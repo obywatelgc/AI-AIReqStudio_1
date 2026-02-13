@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000402",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Mapowanie pól CEB/EBP w formcie liniowym"
+    },
+    {
+      "level": 4,
+      "title": "Format eskportu wyciągów"
+    }
+  ],
+  "section_title": "Format eskportu wyciągów",
+  "text": "[cols=\",\",options=\"header\",]\n|===========================================================\n2+| Wyciągi\n|Pole w systemie CEB |Pole w systemie EBP\n|ID_TR_DEF\t|ID\n|DATA_WALUTY\t|DATA_WALUTY\n|DATA_TRANSAKCJI\t|DATA_KSIEGOWA\n|TRESC_D\t|TRESC_D\n|BANK\t|BANK\n|RACHUNEK\t|RACHUNEK\n|KWOTA\t|KWOTA\n|STRONA\t|STRONA\n|WALUTA\t|WALUTA\n|NAZWA1\t|NAZWA1\n|NAZWA2\t|NAZWA2\n|NAZWA3\t|NAZWA3\n|NAZWA4\t|NAZWA4\n|TRESC1\t|TRESC1\n|TRESC2\t|TRESC2\n|TRESC3\t|TRESC3\n|TRESC4\t|TRESC4\n|===========================================================\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 5892,
+      "line_end": 5915
+    }
+  ]
+}

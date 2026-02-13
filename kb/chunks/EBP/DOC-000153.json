@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000153",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (Visiona - GAPI)"
+    },
+    {
+      "level": 3,
+      "title": "Zastrzeżenie karty (na stałe)"
+    }
+  ],
+  "section_title": "Zastrzeżenie karty (na stałe)",
+  "text": "Zastrzeżenie karty (na stałe) jest możliwe z poziomu listy kart:\n\nimage::Karty/K_lista_kart1.jpg[]\n\nWybranie opcji [Zastrzeż] (na stałe) otwiera formularz:\n\nimage::Karty/K_karta_zastrz1.jpg[]\n\nNależy wskazać przyczynę zastrzegania karty:\n\n* Karta została zgubiona\n* Karta zostałą skradziona\n* Inny powód z polem tekstowym, gdzie należy opisać przyczynę zastrzegania:\n\nimage::Karty/K_karta_zastrz2.jpg[]\n\nPo wskazaniu ww. powodów prezentowany jest komunikat informacyjny:\n\n\"Czy na pewno chcesz zastrzec kartę? Proces jest nieodwracalny i ponowne\nkorzystanie z karty wiąże się z zamówieniem nowej. Pamiętaj, że masz\nmożliwość czasowego zablokowania karty.\"\n\n\n* *Karta uległa zniszczeniu*\n\nimage::Karty/K_karta_zastrz3.jpg[]\n\nPo wskazaniu powodu \"Karta uległa zniszczeniu\" prezentowany jest komunikat informacyjny:\n\n\"Ta karta będzie działać do czasu, gdy otrzymasz nową kartę i ją aktywujesz.\nTransakcje nową kartą będziesz potwierdzać tym samym PIN-em co teraz.\nMożesz go zmienić w dowolnej chwili w Bankowości Elektronicznej.\"\n\nNa liście kart w przypadku zniszczenia karty prezentowane są dwa rekordy karty.\nKarta dotychczasowa jest aktywna i nadal można z niej korzystać.\n\nimage::Karty/K_karta_list_wznaw.jpg[]\n\nProces zastrzeżenia karty wymaga akceptacji i podpisu przypisanym środkiem\nautoryzacji:\n\nimage::Karty/K_karta_zastrz4.jpg[]\n\nPo poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:\n\nimage::Karty/K_karta_zastrz5.jpg[image,width=304,height=207]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 1504,
+      "line_end": 1551
+    }
+  ]
+}

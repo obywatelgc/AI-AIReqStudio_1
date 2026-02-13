@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000257",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Przelewy transgraniczne (system transakcyjny DefBank)"
+    }
+  ],
+  "section_title": "Przelewy transgraniczne (system transakcyjny DefBank)",
+  "text": "Użytkownik systemu Asseco EBP, ma możliwość zlecenia następujących rodzajów płatności transgranicznych:\n\n* Przelew własny transgraniczny,\n* Przelew walutowy transgraniczny.\n\nTworzenie wymienionych płatności jest identyczne, jak tworzenie danego typu przelewu. Przelewy transgraniczne automatycznie zostaną rozpoznane przez system Asseco EBP w przypadku, gdy:\n\n* przelew na rachunek własny zostanie wykonany w różnych walutach,\n* przelew walutowy, jeśli waluta NRB nadawcy i waluta przelewu są różne.\n\nDla przelewu transgranicznego na drugim kroku, po rozwinięciu opcji *Pokaż dodatkowe informacje,* system wyświetli uzupełniające dane:\n\n* Szacunkowy kurs przewalutowania,\n\noraz poniżej:\n\n* Link *REGULAMIN KOSZTÓW PRZEWALUTOWANIA* – po naciśnięciu którego, Użytkownik zostaje przekierowany na stronę z informacją o regulaminie kosztów przewalutowania,\n* Checkobox _Zgadzam się na przewalutowanie środków po kursie obowiązującym w momencie wykonania dyspozycji w banku oraz zapoznałem/am się z regulaminem banku_ _–_ potwierdzający zgodę na przewalutowanie środków oraz zapoznanie się Użytkownika z regulaminem,\n* Komunikat: _Wymagana akceptacja regulaminu Banku._\n\nimage::Przelewy/image2t.png[image,width=604,height=320]\n\nWyżej wymienione informacje są widoczne dla Użytkownika, w następujących opcjach:\n\n* Lista zleceń, podczas wykonywania akcji:\n\n** edycji przelewu,\n** ponowienia przelewu,\n\n\nW przypadku, gdy w systemie Asseco BackOffice w opcji _System -> Parametry -> Dane Banku_, nie zostały wprowadzone wartości dla parametrów:\n\n* Płatności transgraniczne - komunikat PL,\n* Płatności transgraniczne - komunikat EN,\n* Płatności transgraniczne (link - PL),\n* Płatności transgraniczne (link - EN),\n* Płatności transgraniczne dla firm (link - PL),\n* Płatności transgraniczne dla firm (link - EN)\n\nwówczas na formularzu przelewu system Asseco EBP:\n\n* nie będzie prezentował linku do regulaminu,\n* zaprezentuje checkbox __Zgadzam się na przewalutowanie środków po kursie obowiązującym w momencie wykonania dyspozycji w bank__u - potwierdzający zgodę na przewalutowanie środków,\n* zaprezentuje komunikat: _Wymagana akceptacja oświadczenia._\n\nimage::Przelewy/image3t.png[image,width=604,height=289]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 1649,
+      "line_end": 1696
+    }
+  ]
+}

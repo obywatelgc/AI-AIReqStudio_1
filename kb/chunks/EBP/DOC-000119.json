@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000119",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (Visiona)"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie listy kart"
+    }
+  ],
+  "section_title": "Przeglądanie listy kart",
+  "text": "Po kliknięciu w tytuł widżetu *Karty* lub poprzez wybór opcji z bocznego menu _Karty_ wyświetlane jest okno prezentujące listę kart, do których Użytkownik jest uprawniony:\n\nimage::Karty/image10.png[image,width=604,height=140]\n\nNa liście kart, dla każdej karty dostępne są następujące informacje:\n\n* *Nazwa i numer* – nazwa karty (nadana przez system), numer karty częściowo zamaskowany (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),\n* *Rodzaj* – rodzaj karty Kredytowa, Debetowa, Obciążeniowa (z określeniem główna/dodatkowa),\n* *Posiadacz* – imię i nazwisko właściciela karty,\n* *Aktywność* – dostępne statusy: _Aktywna, Nieaktywna_,\n* *Status* – status karty, dostępne statusy: _Ważna, Nieważna, Zablokowana, Zastrzeżona._ Wartość prezentowana w polu STATUS zależy od:\n\n** daty zastrzeżenia – jeśli data zastrzeżenia jest przed datą aktualną, wówczas prezentowany jest status _Zastrzeżona_,\n** daty zablokowania – jeśli data zablokowania jest przed datą aktualną, wówczas prezentowany jest status _Zablokowana_,\n** daty ważności – jeśli data końca ważności jest przed datą aktualną, wówczas prezentowany jest status _Nieważna_. Jeśli powyższe warunki nie są spełnione – karta posiada status _Ważna_ (_Aktywna/Nieaktywna_).\n\nSystem umożliwia także filtrowanie listy kart, za pomocą:\n\n* *Filtra prostego* – filtrowanie listy kart następuje po wpisaniu danych w polu wyszukiwania znajdującego się nad listą:\n\nimage::Karty/image11.png[image,width=360,height=58]\n\nSystem filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej karty, w sytuacji gdy nie znajdzie wprowadzonej w polu wyszukiwania treści.\n\nAby powrócić do pełnej listy rachunków należy kliknąć w ikonę image:Karty/image12.png[image,width=56,height=54] w polu wyszukiwania.\n\n* *Pola Status* – umożliwia filtrowanie kart po statusie karty poprzez wybór wartości z dostępnej listy:\n\n** Wszystkie,\n** _Ważna_ (wartość domyślna) ,\n** _Zablokowana,_\n** _Zastrzeżona,_\n** _Do aktywacji._\n\nimage::Karty/image13.png[image,width=194,height=227]\n\nW górnej części formularza KARTY dostępny jest przycisk:\n\n* image:Karty/image14.png[image,width=42,height=47]– umożliwiający wyjście do pulpitu.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 79,
+      "line_end": 119
+    }
+  ]
+}

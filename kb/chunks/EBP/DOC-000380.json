@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000380",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu wyciągów"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie MT940/MultiCash"
+    }
+  ],
+  "section_title": "Plik w formacie MT940/MultiCash",
+  "text": "Plik eksportu wyciągów w formacie MT940/Multicash składa się z 1 sekcji, podzielonej na bloki, których układ jest następujący:\n\nNagłówek wyciągu: +\n:20: +\n:25: +\n:28C: +\n:60F: +\nBlok operacji: +\n:61: +\n:86: +\nBlok końca wyciągu: +\n:62F: +\n\nOznaczenia użyte w opisie formatu:\n\nStatus pola: M - obowiązkowy, O - opcjonalny\n\nFormat  danych: +\n*n* - tylko cyfry  +\n*a* - tylko litery  +\n*c* - tylko znaki alfanumeryczne  +\n*x*- dowolne znaki alfanumeryczne łącznie z przecinkami, spacjami , itp.  +\n*d*- liczba oznaczająca kwotę (separatorem dziesiętnym musi być przecinek ‘,’)  +\n\nPrzykłady oznaczania formatu pól: +\n*2n* - maksymalnie 2 cyfry +\n*3!a* - dokładnie 3 litery; +\n*4*35x* - do 4 linii, każda po maksymalnie 35 dowolnych znaków alfanumerycznych +\n\nSpecyfikacja pól w pliku MT940/Multicash:\n\n[cols=\"2,6,3,10\",options=\"header\",]\n|====================\n|*Etykieta* |*Nazwa* |*Format* |*Opis*\n.2+<.^|:20: .2+<.^|Numer referencyjny <.^|6!n/9n |\nPierwszy ciąg znaków to data początkowa wyciągu w formacie RRMMDD.\n\nDrugi ciąg znaków to modulo Klienta.\n\n|[underline]##Przykład:## |‘**:20:**060302/123456’\n.2+<.^|:25: .2+<.^|Identyfikator rachunku <.^|2!a26!n |\nNumer IBAN rachunku,\ngdzie IBAN=PLSSBBBBBBBBRRRRRRRRRRRRRRRR\nPL- kod kraju długości 2!a\nSS-cyfry kontrolne długości 2!n\nBBBBBBBB-numer jednostki banku długości 8!n\nRRRRRRRRRRRRRRRR-identyfikator rachunku w jednostce banku długości 16!n\n\n|[underline]##Przykład:## |‘**:25:**PL51101010231234567890123456’\n\n.2+<.^|:28C: .2+<.^|Numer zestawienia <.^|c |\nNumer wyciągu w systemie Asseco EBP może mieć różną postać w zależności od okresu jaki obejmuje, np.:\n\n• 2009/6\n\n• 8\n\n• 2010-03-21 - 2010-03-31\n\n|[underline]##Przykład:## |‘:**28C**:2009/6’\n.6+<.^|:60F: .6+<.^|Saldo początkowe wyciągu <.^|1!a6!n3!a15d |Format całego pola – łącznie do 25 znaków. Poniżej znajduje się opis w rozbiciu na poszczególne sekcje.\n|1!a |Strona – znak ‘C’ dla salda kredytowego lub znak ‘D’ dla salda debetowego.\n|6!n |Data początkowa wyciągu w formacie RRMMDD.\n|3!a |Symbol waluty.\n|15d |Kwota salda początkowego wyciągu.\n|[underline]##Przykład:## |‘:**60F**:C060302PLN12,34’\n.7+<.^|:61: .7+<.^|Szczegóły każdej operacji. <.^|6!n4!n2a15d\n|Format całego pola - łącznie do 27 znaków (nie wliczając znaków nowej linii). Poniżej znajduje się opis w rozbiciu na poszczególne sekcje.\n|6!n |Data waluty w formacie RRMMDD.\n|4!n|Data księgowania w formacie MMDD.\n|2a |Strona księgowania C/RC/D/RD\n|15d |Kwota operacji.\n|22!s4c |Referencja operacji składająca się ze stałego ciągu 22 znaków: ‘FMSCNONREF //’ oraz liczby porządkowej operacji na zestawieniu.\n[underline]##Przykład:## ‘FMSCNONREF //1’\n\n|[underline]##Przykład:## | ‘**:61:**1803310331D1,00FMSCNONREF          //1’\n\n<.^|:86: <.^|Szczegóły operacji 2+.^|\nPole złożone z podpól, których szczegółowy opis zamieszczono w części Specyfikacja podpól dla pola :86:\n\n.6+<.^|:62F: .6+<.^|Saldo końcowe wyciągu. <.^|1!a6!n3!a15d |Format całego pola - łącznie do 25 znaków. Poniżej znajduje się opis w rozbiciu na poszczególne sekcje.\n|1!a |Strona - znak ‘C’ dla salda kredytowego lub znak ‘D’ dla salda debetowego.\n|6!n |Data końcowa zestawienia obrotów w formacie RRMMDD.\n|3!a |Symbol waluty.\n|5d |Kwota salda końcowego wyciągu.\n|[underline]##Przykład:## |‘**:62F:**C060302PLN25,00’\n\n|====================\n\n\nSpecyfikacja podpól dla pola *:86:*\n\nZałożenia:\nPole *:86:* składa się z podpól oznaczonych etykietami - zestaw podpól zamieszczono w poniższej tabeli\nPodpola oznaczone statusem M są obowiązkowe, podpola o statusie O są opcjonalne.\nSeparatorem podpól jest znak <\nPodpola prezentowane są w nowych liniach (za wyjątkiem podpola *10*).\nJeżeli podpole jest puste, wówczas całe podpole, łącznie z etykietą nie jest w pliku prezentowane.\n\n[width=\"100%\",cols=\"4,3,3,10\",options=\"header\"]\n|====================\n|*Etykieta* |*Status* |*Format* |*Opis*\n|<10 |M |10n |Numer referencyjny\n\n              Kolejny numer operacji na rachunku\n\n              np. <1024755\n\n|<20 |O |35x |Tytuł operacji - linia1\n|<21 |O |35x |Tytuł operacji - linia2\n|<22 |O |35x |Tytuł operacji - linia3\n|<23 |O |35x |Tytuł operacji - linia4\n|<27 |M |35x |Nazwa kontrahenta - linia 1\n|<28 |O |35x |Nazwa kontrahenta - linia 2\n|<29 |O |35x |Adres kontrahenta (ulica)\n|<30 |M |8x |Identyfikator jednostki bankowej kontrahenta (BSC lub SWIFT BIC). Dla identyfikatora jednostki banku w tym polu przedstawiane są znaki od 3 do 10\n|<31 |M |16x |Identyfikator rachunku kontrahenta (skrócony) dla prezentacji. W przypadku rachunku NRB w tym polu przedstawiane są znaki od 11 do 26\n|<38 |O |34x |Numer rachunku kontrahenta\n|<60 |O |35x |Adres kontrahenta (miasto)\n|====================\n\n[underline]##Przykład pliku eksportu wyciągów w formacie MT940/MulltiCash:##\n\n[source, txt]\n----\n:20:180331/27801\n:25:PL44880900052001000278010001\n:28C:1803377\n:60F:C180331PLN45022,71\n:61:1803310331D1,11FMSCNONREF          //1\n:86:<101\n<20tytul\n<27testowy\n<3087971026\n<315820666365012086\n<3891879710265820666365012086\n:61:1803310331D1,11FMSCNONREF          //2\n:86:<102\n<20tytul\n<27testowy\n<3087971026\n<315820666365012086\n<3891879710265820666365012086\n:61:1803310331D7,54FMSCNONREF          //3\n:86:<103\n<20pr.od prz.\n<27FIRMA TEST\n<30\n<31\n:61:1803310331D3,11FMSCNONREF          //4\n:86:<104\n<20prow.za zlec.st.\n<27FIRMA TEST\n<30\n<31\n:61:1803310331C0,01FMSCNONREF          //5\n:86:<105\n<20przeksieg.ods.Ma\n<27FIRMA TEST\n<3088090005\n<312001000278010002\n<3817880900052001000278010002\n:62F:C180331PLN45009,85\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 4222,
+      "line_end": 4387
+    }
+  ]
+}

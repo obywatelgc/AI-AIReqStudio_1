@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000118",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (Visiona)"
+    },
+    {
+      "level": 3,
+      "title": "Widżet karty"
+    }
+  ],
+  "section_title": "Widżet karty",
+  "text": "Widżet *Karty* może być w dwóch rozmiarach: standardowym i rozszerzonym. W zależności od wielkości, po najechaniu myszką na prawy górny róg widżetu widoczne są następujące ikony:\n\n* ikona image:Karty/image4.png[image,width=50,height=61]– powoduje rozszerzenie widżetu o dodatkowe informacje,\n* ikona image:Karty/image5.png[image,width=47,height=64]– powoduje powrót do rozmiaru standardowego.\n\nNa widżecie standardowym możliwe jest:\n\n* wybranie karty w celu zaprezentowania skróconych informacji o niej, czyli:\n\n** *Nazwa i numer* – nazwa karty (nadana przez system), numer karty częściowo zamaskowany (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), obok nazwy karty dostępny jest przycisk image:Karty/image6.png[image,width=37,height=43]umożliwiający rozwinięcie listy z dostępnymi kartami. Użytkownik ma możliwość wybrania innej dostępnej na liście karty, której dane zostaną zaprezentowane na widżecie, +\nimage:Karty/image7.png[image,width=183,height=185]\n** *Dostępne środki* – kwota dostępnych środków wraz z walutą,\n** *Właściciel* – dane właściciela karty,\n** *Data ważności* – data ważności karty (w formacie MM/RRRR),\n** *Rodzaj karty* – _Kredytowa , Debetowa, Obciążeniowa_,\n** *Limit kredytu* – kwota limitu wraz z walutą.\n\n* uruchomienie następujących akcji:\n\n** [SPŁAĆ KARTĘ] – akcja dostępna tylko dla kart kredytowych, umożliwia spłatę karty kredytowej,\n** [SZCZEGÓŁY] – umożliwia przejście do szczegółów wybranej karty.\n\nNa widżecie rozszerzonym oprócz tych samych informacji co na widoku standardowym dodatkowo prezentowane są:\n\n* Ostatnia transakcja – informacja o ostatniej transakcji na karcie:\n** *Kwota* – kwota transakcji wraz z walutą,\n** *Tytuł* – tytuł transakcji,\n** *Data* – data transakcji (data w formacie DD.MM.RRRR).\n\nWidżet rozszerzony karty kredytowej\n\nimage::Karty/image8.png[image,width=275,height=526]\n\nWidżet rozszerzony karty debetowej\n\nimage::Karty/image9.png[image,width=276,height=526]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 40,
+      "line_end": 77
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000197",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Akceptacja paczek"
+    },
+    {
+      "level": 4,
+      "title": "Akceptacja zbiorcza wielu paczek"
+    }
+  ],
+  "section_title": "Akceptacja zbiorcza wielu paczek",
+  "text": "Akcja akceptacja zbiorcza wielu paczek dostępna jest w *panelu akcji zbiorczych*. W celu skorzystania z akceptacji zbiorczej paczek należy zaznaczyć paczki na liście, a następnie wybrać akcję zbiorczą *Akceptuj*.\n\nimage::Lista_zlecen/image41.png[image,width=604,height=176]\n\nSystem zaprezentuje podsumowanie zaznaczonych paczek.\n\nUżytkownik ma możliwość od razu zaakceptować zaznaczone paczki zdefiniowanym urządzeniem autoryzacyjnym, albo zanim to zrobi podejrzeć listę wszystkich przelewów w zaznaczonych paczkach – opcja _Lista przelewów_. Powrót z listy przelewów kieruje ponownie na formatkę podsumowania z sekcją do podpisu.\n\nimage::Lista_zlecen/image42.png[image,width=604,height=235]\n\nProces akceptacji weryfikuje schemat akceptacji oraz limit kwotowy akceptacji.\n\nNOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do akceptowania paczek. Akceptowanie dostępne jest dla statusu paczki _Nowa_.\n\nNOTE: W przypadku włączonej usługi recipientWhiteList dane kontrahenta dodatkowo podlegają weryfikacji wg <<akc-zb-paczek-biala-lista-podatnikow,białej listy podatników VAT>>\n\n[[akc-zb-paczek-biala-lista-podatnikow]]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 779,
+      "line_end": 796
+    }
+  ]
+}

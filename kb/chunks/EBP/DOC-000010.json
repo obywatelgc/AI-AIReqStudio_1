@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000010",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Logowanie do systemu"
+    },
+    {
+      "level": 4,
+      "title": "Kontrola usługi filtrowania IP w procesie logowania Użytkownika"
+    }
+  ],
+  "section_title": "Kontrola usługi filtrowania IP w procesie logowania Użytkownika",
+  "text": "Funkcjonalność kontroli adresów IP dostępna jest tylko dla Użytkowników logujących się do systemu Asseco EBP w kontekście firmowym oraz w kontekście indywidualnym.\n\nW zależności od parametryzacji w opcji _Ustawienia -> Filtrowanie adresów IP_ następuje weryfikacja publicznych adresów IP, z których użytkownicy logują się w kontekście indywidualnym oraz firmowym do systemu Asseco EBP.\n\nWłączenie funkcjonalności kontroli adresów IP może być wykonane tylko globalnie (na firmie), natomiast konfiguracja adresów IP może być wykonana zarówno globalnie (na firmie) jak i indywidualnie (na każdym Użytkowniku uprawnionym do tej firmy).\n\nJeżeli w systemie Asseco EBP została wyłączona globalna kontrola adresów IP, wówczas logowanie Użytkownika do systemu Asseco EBP jest dozwolone z każdego adresu IP. W przeciwnym wypadku (gdy jest włączona) to zgodnie z konfiguracją w opcji _Ustawienia -> Filtrowanie adresów IP_ następuje weryfikacja adresu IP, z jakiego Użytkownik loguje się do systemu Asseco EBP.\n\nSystem umożliwia wprowadzenie konfiguracji adresów IP na dwóch poziomach:\n\n* globalnym – po zalogowaniu Użytkownika do sytemu Asseco EBP w kontekście firmowym,\n* indywidualnym – po zalogowaniu Użytkownika do sytemu Asseco EBP w kontekście indywidualnym.\n\nW przypadku gdy w opcji _Ustawienia -> Filtrowanie adresów IP_ wprowadzono globalną konfigurację adresów IP (na firmie), natomiast takiej konfiguracji nie zdefiniowano na Użytkowniku, wówczas podczas logowania tego Użytkownika do systemu Asseco EBP w kontekście tej firmy, system będzie weryfikował ustawienia globalne. W sytuacji gdy wprowadzono konfigurację adresów IP zarówno globalną (na firmie) i indywidualną (na Użytkowniku), wówczas podczas logowania Użytkownika do systemu Asseco EBP w kontekście tej firmy, system będzie weryfikował ustawienia indywidulane dla tego Użytkownik z pominięciem ustawień globalnych.\n\nAdres IP dozwolony oznacza adres IP, z którego Użytkownik będzie mógł uzyskać dostęp do systemu Asseco EBP. Adres IP zabroniony oznacza adres IP, z którego nie będzie możliwości dostępu do systemu Asseco EBP przez Użytkownika, dla którego taki adres został zdefiniowany.\n\nW przypadku zablokowania dostępu do systemu Asseco EBP na podstawie adresu IP, system wyświetli komunikat informujący o braku możliwości zalogowania do systemu z powodu niepoprawnego adresu IP.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 84,
+      "line_end": 103
+    }
+  ]
+}

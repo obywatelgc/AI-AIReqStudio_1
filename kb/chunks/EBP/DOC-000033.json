@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000033",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Pulpit"
+    }
+  ],
+  "section_title": "Pulpit",
+  "text": "Użytkownikowi po zalogowaniu do systemu Asseco EBP zostaje wyświetlany pulpit z miniaplikacjami w formie widżetów (kafli). Pulpit stanowi także obszar roboczy Użytkownika, w którym prezentowana jest otwarta miniaplikacja.\n\nUkład miniaplikacji na pulpicie jest indywidualnie pamiętany dla Użytkownika w ramach danego kontekstu. Kliknięcie w obszar wybranego widżetu powoduje przejście do wybranej miniaplikacji.\n\nimage::main/image42.png[image,width=612,height=301]\n\nW górnej części formularza, system prezentuje menu z następującymi informacjami/opcjami:\n\n* image:main/image43.png[image,width=47,height=44]– kliknięcie w opcję powoduje ukrycie/zaprezentowanie menu bocznego MOJE MINIAPLIKACJE,\n* image:main/image44.png[image,width=184,height=53] – informacja na temat kontekstu w jakim zalogowany jest Użytkownik wraz z opcją umożliwiającą zmianę kontekstu,\n* image:main/image45.png[image,width=131,height=49] – umożliwia przejście do miniaplikacji Wiadomości (funkcjonalność opisana w ramach miniapliakcji Wiadomości),\n* image:main/image46.png[image,width=154,height=58] – lista zleceń (funkcjonalność opisana w ramach miniapliakcji Lista zleceń),\n* image:main/image47.png[image,width=124,height=49]– zapewnia dostęp Użytkownikowi do opcji ustawień systemu,\n* image:main/image48.png[image,width=106,height=45] – nazwa Użytkownika zalogowanego w systemie Asseco EBP,\n* image:main/image49.png[image,width=81,height=38] – przycisk umożliwia bezpieczne wylogowanie Użytkownika z systemu Asseco EBP.\n\nW prawym górnym rogu nad miniaplikacjami system prezentuje dodatkowe opcje:\n\n* image:main/image50.png[image,width=43,height=47]– samouczek prezentujący Użytkownikowi informację na temat parametryzacji i ustawień indywidualnych systemu Asseco EBP,\n* image:main/image51.png[image,width=46,height=51] – opcja umożliwiająca Użytkownikowi dostosowanie pulpitu do swoich potrzeb, pozwala na zmianę widoczności miniaplikacji na pulpicie oraz zmianę kolejności ich prezentacji.\n\nW dolnej części formularza głównego, system prezentuje:\n\n* informacje na temat logowania Użytkownika do systemu Asseco EBP:\n\n** ostatniego poprawnego logowania (w formacie RRRR.MM.DD GG:MM:SS),\n** ostatniego nieudanego logowania (w formacie RRRR.MM.DD GG:MM:SS),\n\nimage::main/image52.png[image,width=406,height=46]\n\n* opcje:\n\n** [PRODUKTY I USŁUGI] – umożliwia przekierowanie Użytkownika do strony z produktami i usługami,\n** [OPŁATY I PROWIZJE] – umożliwia przekierowanie Użytkownika do strony z opłatami i prowizjami,\n** [KURSY WALUT] – umożliwia przekierowanie Użytkownika do strony z kursami walut,\n\nimage::main/image53.png[image,width=314,height=46]\n\nWidżet na pulpicie może być w dwóch rozmiarach:\n\n* standardowym,\n\nimage::main/image54.png[image,width=246,height=262]\n\n* rozszerzonym.\n\nimage::main/image55.png[image,width=247,height=540]\n\n{empty}\n\nW zależności od wariantu rozmiaru po najechaniu myszką na prawy górny róg widżetu widoczne są następujące ikony:\n\n* ikona image:main/image56.png[image,width=32,height=31] – powoduje rozszerzenie widżetu o dodatkowe informacje,\n* ikona image:main/image57.png[image,width=24,height=29] – powoduje powrót do rozmiaru standardowego.\n\nKliknięcie w tytuł widżetu na pulpicie np. Rachunki, Przelewy, Lokaty, powoduje przejście do miniaplikacji i otwarcie jej na pulpicie.\n\nUżytkownik może w dowolnym momencie korzystania z systemu oraz z poziomu dowolnej miniaplikacji wyświetlić pulpit:\n\n* wybierając dostępną w menu bocznym opcję _Pulpit_,\n\nimage::main/image58.png[image,width=250,height=55]\n\n* naciskając przycisk image:main/image59.png[image,width=44,height=52] umieszczonym w prawym, górnym rogu miniaplikacji.\n\nJeżeli ładowanie danych na widżet trwa dłużej niż ustalona maksymalna długość oczekiwania, wówczas widżet prezentowany jest w trybie ładowania danych:\n\nimage::main/image61.png[image,width=274,height=206]\n\nW przypadku, gdy Użytkownik nie posiada dedykowanego produktu, wówczas:\n\n* na widżecie będzie prezentowana stosowna informacja,\n\nimage::main/image62.png[image,width=307,height=117]\n\n* po kliknięciu w miniaplikację nastąpi przekierowanie na formularz szczegółów miniaplikacji, z informacją o braku danych do wyświetlenia.\n\nimage::main/image63.png[image,width=612,height=137]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 717,
+      "line_end": 796
+    }
+  ]
+}

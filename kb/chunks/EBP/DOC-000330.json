@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000330",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Rachunki powiernicze"
+    },
+    {
+      "level": 3,
+      "title": "Widżet Rachunki MRP"
+    }
+  ],
+  "section_title": "Widżet Rachunki MRP",
+  "text": "Widżet *Rachunki MRP* jest prezentowany w rozmiarze: standardowym.\n\n* ikona image:Powiernicze/image3.png[image,width=48,height=62]\n\nNa widżecie standardowym prezentowane są informacje:\n\n* *Rodzaj rachunku* – rodzaj rachunku,\n* *NRB* – numer rachunku,\n* *Składka do opłacenia* – kwota składki do DFG.\n\nNa dole widżetu dostępna jest akcja:\n\n* [POKAŻ WSZYSTKIE] - przejście do listy rachunków.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Powierniczne.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Powierniczne.adoc",
+      "line_start": 36,
+      "line_end": 50
+    }
+  ]
+}

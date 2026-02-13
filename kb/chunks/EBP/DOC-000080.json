@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000080",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Zgody i kanały dystrybucji"
+    }
+  ],
+  "section_title": "Zgody i kanały dystrybucji",
+  "text": "W opcji Ustawienia -> Zgody i kanały dystrybucji użytkownik systemu Asseco EBP ma możliwość edycji *wybranych zgód i sposobów dystrybucji dokumentów* określonych w systemie transakcyjnym def3000/CB.\n\nNOTE: Edycja zgód i kanałów dystrybucji jest dostępna dla bankowości korzystającej z systemu transakcyjnego *def3000/CB*.\n\nIMPORTANT: Dostęp do edycji zgód i kanałów dystrybucji wymaga włączenia usług: *userConsentsEnabled* i *userConsentsChangeEnabled*.\nDodatkowa konfiguracja: *userConsentsChangeRestricted*\n\nIstnieje możliwość włączenia trybu restrykcyjnego, który nie pozwala na odwołanie przez użytkownika raz udzielonej zgody.\nOpcja włączana jest usługą *userConsentsChangeRestricted*.\n\nNOTE: W przypadku kontekstu firmowego *tylko użytkownik z prawem do \"Edycji zgód\"* ma dostęp do opcji \"Zgody i kanały dystrybucji\" firmy.\n\nUprawnienie \"Edycja zgód\" nadawane jest w opcji: Ustawienia→ Uprawnienia użytkowników→ Zakres uprawnień dla użytkownika: Funkcjonalne→ obszar Ustawienia\n\nimage::main/image193.jpg[image,width=604,height=243]\n\nFormularz dzieli się na dwie części:\n\n* Zgody - informacje o zgodach, w tym marketingowych, zdefiniowanych w systemie transakcyjnym i wybranych do prezentacji użytkownikowi,\n* Kanały dystrybucji - informacje o dostępnych i wybranych sposobach dystrybucji dla wybranych typów dokumentów.\n\nWszystkie informacje odpowiadają aktualnemu stanowi klienta w systemie transakcyjnym.\n\nZakładka \"Zgody\":\n\nimage::main/image194.jpg[]\n\nZakładka \"Kanały dystrybucji\":\n\nimage::main/image195.jpg[]\n\nZapis zmian wymaga autoryzacji zgodnie z przypisaną do użytkownika metodą autoryzacji.\n\nimage::main/image196.jpg[]\n\nPodczas trwania zapisu prezentowany jest komunikat:\n\n„Trwa aktualizacja danych\nPozostań na stronie do czasu otrzymania potwierdzenia”\n\nimage::main/image197.jpg[]\n\nPotwierdzenie zapisu:\n\nimage::main/image198.jpg[width=464,height=243]\n\n*Informacje są aktualizowane natychmiast w systemie transakcyjnym def3000/CB.*\n\nIstnieje możliwość *włączenia trybu restrykcyjnego*, który nie pozwala na odwołanie przez użytkownika raz udzielonej zgody.\nOpcja włączana jest parametrem *userConsentsChangeRestricted*.\n\nPrzykład udzielonej zgody ww. sytuacji, zmiana decyzji wymaga kontaktu z bankiem - pole \"Nie wyrażam zgody\" nie podlega edycji:\n\nimage::main/image199.jpg[]\n\nPrzy polu prezentowana jest informacja:\n\nimage::main/image200.jpg[width=364,height=93]\n\n\n*_Zakładka \"Hasło do załączników\"_*\n\nW zakładce \"Hasło do załączników\" Użytkownik może zdefiniować hasło umożliwiające otwarcie\nzałączników wysyłanych przez Bank w wiadomościach e-mail do klienta firmowego,\nw którego imienie uzytkownik jest zalogowany.\n\nNOTE: W przypadku kontekstu firmowego tylko użytkownicy z prawem do _Edycji zgód_\nmają dostęp do opcji _Zgody i kanały dystrybucji_ firmy (Ustawienia), gdzie jedną z zakładek\njest *Hasło do załączników*.\n\nHasła prezentowane są w sposób jawny i ułożone są chronologicznie wg dat ich obowiązywania.\nPrzy każdym haśle prezentowane są daty ważności hasła, dzięki czemu użytkownik może dobrać właściwe\nhasło do rozszyfrowania załącznika na podstawie daty otrzymanej wiadomości e-mail.\nHasła mogą być ustawione przez bank lub samodzielnie przez użytkownika.\n\nimage::main/haslo_zal4.jpg[]\n\nAktualne hasło może być edytowane za pomocą *Zmień hasło* w wierszu opisującym hasło.\nWybór ww. opcji otwiera formularz wprowadzenia nowego hasła.\nPolityka bezpieczeństwa hasła definiowana jest w pliku tenant.yml.\n\nimage::main/haslo_zal1.jpg[]\n\nUstawienie hasła wymaga podpisu posiadanym przez użytkownika środkiem autoryzacji.\n\nimage::main/haslo_zal2.jpg[]\n\nW przypadku, gdy użytkownik nie posiada hasła, wówczas prezentowany jest formularz ustawienia hasła.\n\nimage::main/haslo_zal1.jpg[]\n\n\n\n[[limity-blik]]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 2628,
+      "line_end": 2722
+    }
+  ]
+}

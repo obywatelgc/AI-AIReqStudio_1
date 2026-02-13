@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000390",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu operacji z analityki płatności masowych"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie XML (format CEB)"
+    }
+  ],
+  "section_title": "Plik w formacie XML (format CEB)",
+  "text": "W formacie XML (format CEB)  dozwolone są następujące tagi:\n\n[cols=\"2,5\",options=\"header\",]\n|===========================================================\n|Tagi |Opis\n|<RACH_WIRTUALNE></RACH_WIRTUALNE>  |Otwiera i zamyka format eksportu w XML.\n|<RACH_WIRTUALNY num=\"1\"> </RACH_WIRTUALNY> |Otwiera i zamyka dane dla jednego rachunku.\n|<DATA_KS></DATA_KS> |Data księgowa.\n|<DATA_WALUTY></DATA_WALUTY> |Data waluty.\n|<NR_DOK></NR_DOK>| Nr dokumentu.\n|<RACH_BENEF></RACH_BENEF> |Rachunek odbiorcy.\n|<KWOTA></KWOTA> |Kwota.\n|<ZLECENIODAWCA></ZLECENIODAWCA> |Zleceniodawca.\n|<TYTUL></TYTUL> |Tytuł.\n|===========================================================\n\nKażde powtórzenie tagów  <RACH_WIRTULANY num=”1”> … <RACH_WIRTULANY> jest traktowane jako kolejna operacja z zestawienia.\n\nPolskie znaki kodowane są w ISO 8859-2.\n\n[underline]##Przykładowa zawartość pliku eksportu operacji z analityki płatności masowych w formacie XML (format CEB):##\n\n[source, xml]\n----\n<?xml version=\"1.0\" encoding=\"ISO-8859-2\"?>\n<RACH_WIRTUALNE>\n<RACH_WIRTUALNY num=\"1\">\n<DATA_KS>2018-03-30</DATA_KS>\n<DATA_WALUTY>2018-03-30</DATA_WALUTY>\n<NR_DOK>4570</NR_DOK>\n<RACH_BENEF>69880900053232323000000009</RACH_BENEF>\n<KWOTA>4,53</KWOTA>\n<ZLECENIODAWCA>FIRMA TEST</ZLECENIODAWCA>\n<TYTUL>tytul testowy</TYTUL>\n</RACH_WIRTUALNY>\n<RACH_WIRTUALNY num=\"2\">\n<DATA_KS>2018-03-23</DATA_KS>\n<DATA_WALUTY>2018-03-23</DATA_WALUTY>\n<NR_DOK>186</NR_DOK>\n<RACH_BENEF>69880900053232323000000009</RACH_BENEF>\n<KWOTA>300,00</KWOTA>\n<ZLECENIODAWCA>FIRMA TEST</ZLECENIODAWCA>\n<TYTUL>tytul testowy </TYTUL>\n</RACH_WIRTUALNY>\n</RACH_WIRTUALNE>\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 5025,
+      "line_end": 5072
+    }
+  ]
+}

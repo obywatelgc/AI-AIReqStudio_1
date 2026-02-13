@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000182",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista przelewów - tworzenie paczki przelewów"
+    },
+    {
+      "level": 4,
+      "title": "Tworzenie paczki przelewów z importu przelewów"
+    }
+  ],
+  "section_title": "Tworzenie paczki przelewów z importu przelewów",
+  "text": "Podczas importu przelewów (opcja _Przelewy_) Użytkownik ma możliwość utworzenia paczki przelewów. Dotyczy to wszystkich typów przelewów w imporcie, czyli zwykłych i podatku.\n\nMożliwość utworzenia paczki znajduje się na drugim kroku importu przelewów. Za pomocą przycisku [ZAPISZ I STWÓRZ PACZKĘ] system przenosi do opcji tworzenia paczki.\n\nimage::Lista_zlecen/image24.png[image,width=604,height=199]\n\nNowo utworzona paczka otrzymuje status _Nowa_.\n\nNOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do przeglądania i importu przelewów, przeglądania i dodawania paczek.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 469,
+      "line_end": 479
+    }
+  ]
+}

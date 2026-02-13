@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000072",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Filtrowanie adresów IP"
+    },
+    {
+      "level": 5,
+      "title": "Nowa konfiguracja"
+    }
+  ],
+  "section_title": "Nowa konfiguracja",
+  "text": "Opcja umożliwia wprowadzenie konfiguracji adresów IP: globalnie dla firmy (wybór na formularzu KONFIGURACJA DOSTĘPU Użytkownika Firma) i indywidualnie dla każdego uprawnionego Użytkownika do tej firmy, w zależności od tego kto został wskazany na formularzu KONFIGURACJA DOSTĘPU w polu _Użytkownik_.\n\nW przypadku gdy zostanie wprowadzona globalna konfiguracja a brak konfiguracji indywidualnej dla Użytkownika, wówczas podczas logowania Użytkownika do systemu Asseco EBP będą weryfikowane ustawienia globalne. W sytuacji gdy została wprowadzona zarówno konfiguracja globalna jak i indywidualna, wówczas podczas logowania Użytkownika do systemu Asseco EBP w kontekście firmy będą weryfikowane ustawienia indywidualne zdefiniowane dla tego Użytkownika z pominięciem ustawień globalnych.\n\nAdres IP dozwolony oznacza adres IP, z którego Użytkownik (dla którego taki adres został zdefiniowany), będzie mógł uzyskać dostęp do systemu Asseco EBP. Adres IP zabroniony oznacza adres IP, z którego Użytkownik (dla którego taki adres został zdefiniowany) nie będzie miał dostępu do systemu Asseco EBP przez Użytkownika.\n\nAby przejść do formularza NOWA KONFIGURACJA należy na formularzu KONFIGURACJA DOSTĘPU wybrać Użytkownika (w zależności od wyboru Użytkownika konfiguracja będzie globalna albo indywidualna) w polu _Użytkownik_, następnie nacisnąć przycisk [NOWA KONFIGURACJA].\n\nimage::main/image177.png[image,width=612,height=288]\n\nNa formularzu dostępna są następujące parametry:\n\n* Nazwa własna – nazwa adresu IP nadana przez administratora/Użytkownika podczas parametryzacji,\n* Filtr IP – dostępne wartości:\n\n** Zakres adresów IP,\n** Maska adresów IP,\n\n* Filtr IP od-do – pole prezentowane po wyborze w opcji _Filtr IP_ wartości Zakres adresów IP, należy podać w polach odpowiednie wartości dla adresu IP,\n\nimage::main/image163.png[image,width=385,height=165]\n\n* Maska – pole prezentowane po wyborze w opcji _Filtr IP_ wartości Maska adresu IP, należy zdefiniować adres IP z wykorzystaniem znaków:\n\n** \"*\" - oznaczający dowolny ciąg cyfr w adresie IP,\n** \"$\" - oznaczający jedną dowolną cyfrę w adresie IP.\n\nimage::main/image164.png[image,width=372,height=106]\n\n* Kraj – dostępna lista wartości,\n* Kontynent – dostępna lista wartości,\n* Status – dostępne wartości:\n\n** Włączony – włączona kontrola dla wskazanego zakresu adresów IP albo adresu IP, podczas logowania Użytkownika do systemu Asseco EBP,\n** Wyłączony – włączona kontrola dla wskazanego zakresu adresów IP albo adresu IP, podczas logowania Użytkownika do systemu Asseco EBP,\n\nimage::main/image165.png[image,width=218,height=83]\n\n* Status dostępu – dostępne wartości:\n\n** Udzielono dostępu – oznacza, że Użytkownik logujący się z tego adresu IP albo ze wskazanego zakresu adresów IP, będzie mógł uzyskać dostęp do systemu Asseco EBP,\n** Zabroniono dostępu – oznacza, że Użytkownik logujący się z tego adresu IP albo ze wskazanego zakresu adresów IP, nie będzie mógł uzyskać dostęp do systemu Asseco EBP.\n\nimage::main/image166.png[image,width=309,height=81]\n\nZmiany uprawnień należy zatwierdzić przyciskiem [ZAPISZ].\n\nimage::main/image167.png[image,width=78,height=44]\n\nWprowadzone zmiany, będą wymagały potwierdzenia Użytkownika za pomocą dostępnej metody autoryzacji.\n\nW górnej część formularza ZARZĄDZANIE KONFIGURACJĄ DOSTĘPU, dostępne są przyciski:\n\n* image:main/image160.png[image,width=45,height=53] – umożliwiający powrót do formularza KONFIGURACJA DOSTĘPU,\n* image:main/image161.png[image,width=48,height=61]– umożliwiający przejście do głównego menu.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 2310,
+      "line_end": 2366
+    }
+  ]
+}

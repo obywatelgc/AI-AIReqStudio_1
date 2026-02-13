@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000077",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Konfiguracja powiadomień"
+    },
+    {
+      "level": 5,
+      "title": "Konfiguracja powiadomień dla logowania"
+    }
+  ],
+  "section_title": "Konfiguracja powiadomień dla logowania",
+  "text": "Wybranie zakładki LOGOWANIE umożliwia Użytkownikowi konfigurację powiadomień dotyczących logowania.\n\nimage::main/image10315.png[image,width=611,height=235]\n\nW zakładce LOGOWANIE Użytkownik ma możliwość konfiguracji następujących parametrów:\n\n* Nieudane logowanie do bankowości internetowej – powiadomienia wysyłane w momencie nieudanego logowania Użytkownika do systemu Asseco EBP, dostępne do konfiguracji są następujące parametry:\n\n** SMS – wysyłanie powiadomień za pomocą SMS,\n** PUSH – wysyłanie powiadomień za pomocą PUSH.\n\nUżytkownik ma możliwość jednocześnie zaznaczenia dwóch checkboxów.\n\n* Udane logowanie do bankowości internetowej – powiadomienia wysyłane w momencie udanego logowania Użytkownika do systemu Asseco EBP, dostępne do konfiguracji są następujące parametry:\n\n** SMS – wysyłanie powiadomień za pomocą SMS,\n** PUSH – wysyłanie powiadomień za pomocą PUSH.\n\nUżytkownik ma możliwość jednocześnie zaznaczenia dwóch checkboxów.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 2530,
+      "line_end": 2550
+    }
+  ]
+}

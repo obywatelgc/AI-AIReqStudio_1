@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000035",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Pulpit"
+    },
+    {
+      "level": 4,
+      "title": "Samouczek systemu Asseco EBP"
+    }
+  ],
+  "section_title": "Samouczek systemu Asseco EBP",
+  "text": "Po wyborze ikony image:main/image68.png[image,width=41,height=43] znajdującej się na pulpicie głównym, system zaprezentuje Użytkownikowi w sześciu krokach (na sześciu ekranach), informację na temat parametryzacji oraz ustawień indywidualnych systemu Asseco EBP:\n\n* krok 1\n\nimage::main/image69.png[image,width=368,height=173]\n\n* krok 2\n\nimage::main/image70.png[image,width=366,height=157]\n\n* krok 3\n\nimage::main/image71.png[image,width=510,height=273]\n\n* krok 4\n\nimage::main/image72.png[image,width=383,height=229]\n\n* krok 5\n\nimage::main/image73.png[image,width=381,height=525]\n\n* krok 6\n\nimage::main/image74.png[image,width=395,height=255]\n\nAby przejść pomiędzy kolejnymi krokami, Użytkownik ma do dyspozycji następujące przyciski:\n\n* [ZAKOŃCZ] – naciśniecie powoduje wyjście z samouczka,\n* [COFNIJ] – następuje cofniecie do wcześniejszego kroku,\n* [DALEJ] – następuje przejście do kolejnego kroku.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 817,
+      "line_end": 849
+    }
+  ]
+}

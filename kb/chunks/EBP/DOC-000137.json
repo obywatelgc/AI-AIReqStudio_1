@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000137",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (GryfCard)"
+    },
+    {
+      "level": 3,
+      "title": "Akcje na wybranej karcie"
+    }
+  ],
+  "section_title": "Akcje na wybranej karcie",
+  "text": "Kliknięcie w wiersz wybranej karty powoduje wyświetlenie dodatkowych informacji na temat karty:\n\nimage::Karty/image5k.png[]\n\n* *Kwota dostępnego limitu* - wykorzystany limit na karcie, wartość prezentowana tylko dla karty kredytowej głównej,\n* *Data ważności* - data ważności karty kredytowej w formacie MM/RRRR,\n* *Płatności zbliżeniowe* - czy kartą możliwe są płatności zbliżeniowe,\n* *Ostatnie operacje* - lista 3 ostatnich operacji wykonanych kartą - sekcja dostępna, jeżeli na karcie były wykonane operacje.\n\nDodatkowo prezentowany jest określony zestaw akcji:\n\n* [HISTORIA KARTY] - umożliwia przeglądnie historii operacji na karcie,\n* [ZMIEŃ LIMITY] - umożliwia zmianę limitów na karcie,\n* [LISTA BLOKAD] - prezentowana jest lista blokad na karcie,\n* [ZABLOKUJ] - umożliwia zablokowanie karty,\n* [ZASTRZEŻ] - umożliwia zastrzeżenie karty,\n* [WYŁ ZBLIŻ]/[WŁ ZBLIŻ]- umożliwia włączenie lub wyłączenie płatności zbliżeniowych,\n* [SPŁAĆ] - umożliwia spłatę zadłużenia karty,\n* [SZCZEGÓŁY] - przeglądanie informacji szczegółowych karty.\n\nPonowne kliknięcie w obszar rozwiniętego wiersza karty powoduje zwinięcie dodatkowych informacji i przycisków prezentowanych dla karty.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 685,
+      "line_end": 707
+    }
+  ]
+}

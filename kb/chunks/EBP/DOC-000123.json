@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000123",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (Visiona)"
+    },
+    {
+      "level": 3,
+      "title": "Podgląd szczegółów"
+    },
+    {
+      "level": 4,
+      "title": "KARTA KREDYTOWA"
+    }
+  ],
+  "section_title": "KARTA KREDYTOWA",
+  "text": "Aby przejść do szczegółów wybranej karty kredytowej należy nacisnąć przycisk [SZCZEGÓŁY] na widżecie *Karty,* albo należy kliknąć w obszar wybranego wiersza, a następnie wybrać opcję [SZCZEGÓŁY]. System wyświetla formularz SZCZEGÓŁY KARTY, natomiast lista pól dostępnych na formularzu jest uzależniona od typu karty.\n\nNa formularzu ze szczegółami karty kredytowej głównej/dodatkowej prezentowane są następujące dane:\n\n* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),\n* *Nazwa i typ karty* – nazwa karty nadawana w systemie oraz typ karty: Kredytowa główna, Kredytowa dodatkowa,\n* *Nazwa własna* – nazwa karty nadana przez Użytkownika,\n* *Imię i nazwisko okaziciela* – imię i nazwisko właściciela karty,\n* *Data ważności* – koniec okresu ważności karty (data w formacie MM/RRRR),\n* *Aktywność* – określenie aktywności karty: Aktywna, Nieaktywna,\n* *Status* – dostępne statusy: _Ważna_, _Nieważna_, _Zablokowana_, _Zastrzeżona_,\n* *Numer rachunku kredytowego* – numer rachunku kredytowego, do którego wydano kartę,\n* *Waluta* – symbol waluty,\n* *Imię i nazwisko na karcie* – imię i nazwisko umieszczone na karcie,\n* *Limit kredytowy* – limit kredytowy na karcie, kwota wraz z walutą,\n* *Zadłużenie* – kwota zadłużenia karty wraz z walutą,\n* *Kwota zadłużenia z poprzedniego cyklu* – kwota wraz z walutą zadłużenia z poprzedniego cyklu,\n* *Data następnej spłaty* – data następnej spłaty, data w formacie DD.MM.RRRR,\n* *Dostępne środki* – kwota dostępnych środków na karcie wraz z walutą,\n* *Kwota zablokowanych środków* – kwota zablokowanych środków wraz z walutą,\n* *Data końca okresu rozliczeniowego* – data najbliższego okresu rozliczeniowego, pola dostępne dla właściciela lub współwłaściciela do umowy kredytowej (data w formacie DD.MM.RRRR).\n* *Data wymaganej spłaty* – pole dostępne dla właściciela lub współwłaściciela do umowy kredytowej.\n\nimage::Karty/image17.png[image,width=604,height=327]\n\nDodatkowo na formularzu prezentowane są rozwijane sekcje:\n\n* [INFORMACJE O SPŁACIE POKAŻ]:\n** *Kwota zadłużenia z ostatniego wyciągu* – pole dostępne dla właściciela lub współwłaściciela do umowy kredytowej,\n** *Minimalna kwota do spłaty* – pole dostępne dla właściciela lub współwłaściciela do umowy kredytowej,\n\nimage::Karty/image18.png[image,width=452,height=181]\n\n* [DANE LIMITÓW - POKAŻ]:\n\n** *Dzienny limit wartości operacji gotówkowych* – zdefiniowany limit dzienny dla transakcji gotówkowych,\n** *Dzienny limit wartości operacji internetowych* – zdefiniowany limit dzienny dla transakcji internetowych,\n** *Dzienny limit wartości operacji bezgotówkowych* – zdefiniowany limit dzienny dla transakcji bezgotówkowych__.__\n\nimage::Karty/image19.png[image,width=457,height=211]\n\nPod informacją o limitach (tylko w sytuacji gdy rozwinięta jest sekcja DANE LIMITÓW) dostępna jest akcja:\n\n* [ZMIEŃ LIMIT] – umożliwia zmianę limitów karty (zmiana limitów karty została opisana w punkcie Zmiana limitów karty).\n\nW górnej części formularza SZCZEGÓŁY KARTY dostępne są przyciski:\n\n* image:Karty/image20.png[image,width=43,height=46] – umożliwiający przejście do formularza KARTY z listą kart,\n* image:Karty/image21.png[image,width=49,height=57]– umożliwiający wyjście do pulpitu.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 178,
+      "line_end": 228
+    }
+  ]
+}

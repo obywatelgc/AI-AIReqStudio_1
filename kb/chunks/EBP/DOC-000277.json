@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000277",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przepływy"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie listy przepływów"
+    }
+  ],
+  "section_title": "Przeglądanie listy przepływów",
+  "text": "Po kliknięciu w tytuł widżetu *Przepływy* lub poprzez wybór opcji z bocznego menu _Przepływy_ wyświetlane jest okno prezentujące listę przepływów (bilans) w podziale na miesiące. Bilans przepływów dotyczy wszystkich rachunków bieżących oraz walutowych dostępnych dla Użytkownika (wszystkich, które są prezentowane w miniaplikacji Rachunki). Domyślnie prezentowane są przepływy za ostatnie trzy miesiące:\n\nimage::Przeplywy/image9.png[]\n\nPo wejściu na formularz PRZEPŁYWY domyślnie prezentowane są przepływy za ostatnie trzy miesiące w walucie PLN, dodatkowo system prezentuje przepływy dla każdej waluty osobno.\n\nDla każdego miesiąca osobno prezentowane są następujące informacje:\n\n* *DATA* – miesiąc i rok za jaki prezentowany jest bilans środków,\n* *BILANS* – bilans środków, kwota wraz z walutą stanowiąca różnicę pomiędzy przychodami, a wydatkami (wartość dla wszystkich rachunków Użytkownika dostępnych w miniaplikacji _Rachunki_),\n* *PRZYCHODY* – suma przychodów danego miesiąca, kwota wraz z walutą (wartość dla wszystkich rachunków Użytkownika dostępnych w miniaplikacji _Rachunki_),\n* *WYDATKI* – suma wydatków danego miesiąca, kwota wraz z walutą (wartość dla wszystkich rachunków Użytkownika dostępnych w miniaplikacji _Rachunki_).\n\nSystem umożliwia filtrowanie waluty oraz okresu za jaki będzie prezentowany bilans przepływów. Użycie przycisku [Pokaż filtry] umożliwia ustawienie filtru zaawansowanego.\n\nimage::Przeplywy/image10.png[]\n\nUżytkownik ma możliwość ustawiania filtru dla następujących pól:\n\n* *Wybierz walutę* – umożliwia wskazanie waluty (z dostępnej w polu listy tylko tych walut w których Użytkownik ma rachunki w miniaplikacji _Rachunki_), dla której ma zostać zaprezentowany bilans przepływów,\n* *Wybierz pierwszy miesiąc* – pola do określenia pierwszego miesiąca, dla którego ma zostać wyświetlony bilans,\n* *Wybierz drugi miesiąc* – pola do określenia drugiego miesiąca, dla którego ma zostać wyświetlony bilans,\n* *Wybierz trzeci miesiąc* – pola do określenia trzeciego miesiąca, dla którego ma zostać wyświetlony bilans.\n\nZastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [Filtruj]. Aby zwinąć filtry należy wybrać przycisk [Ukryj filtry].\n\nNa formularzu PRZEPŁYWY, kliknięcie w rekord danego miesiąca umożliwia wyświetlenie dodatkowych informacji:\n\n* *Saldo początkowe* – kwota wraz z walutą salda początkowego dla wybranego miesiąca,\n\nDodatkowo prezentowany jest określony zestaw akcji:\n\n* [NADAWCY] – opcja przekierowuje Użytkownika na formularz NADAWCY z listą przepływów (wszystkich typów) z danego miesiąca, pogrupowanych po nadawcach (w szczególności po rachunku),\n* [ODBIORCY] – opcja przekierowuje Użytkownika na formularz ODBIORCY z listą przepływów (wszystkich typów) z danego miesiąca, pogrupowanych po odbiorcach (w szczególności po rachunku),\n* [SZCZEGÓŁY] – opcja przekierowuje Użytkownika na formularz SZCZEGÓŁY MIESIĄCA, umożliwiającego przeglądanie wszystkich typów przepływów w podziale na przychody i wydatki danego miesiąca.\n\nimage::Przeplywy/image13.png[]\n\nPonowne kliknięcie na liście w rekord danego miesiąca, powoduje zwinięcie informacji dodatkowych prezentowanych dla wybranej pozycji przepływów.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przeplywy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przeplywy.adoc",
+      "line_start": 46,
+      "line_end": 86
+    }
+  ]
+}

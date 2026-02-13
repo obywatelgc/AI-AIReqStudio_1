@@ -1,0 +1,40 @@
+{
+  "chunk_id": "DOC-000061",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Uprawnienia Użytkowników"
+    },
+    {
+      "level": 5,
+      "title": "Uprawnienia funkcjonalne"
+    },
+    {
+      "level": 6,
+      "title": "Uprawnienia dla Doładowań"
+    }
+  ],
+  "section_title": "Uprawnienia dla Doładowań",
+  "text": "Administrator ma możliwość zarządzania następującymi uprawnieniami funkcjonalnymi w zakresie doładowań:\n\nimage::main/image146.png[image,width=612,height=28]\n\n* Przeglądanie – przeglądanie listy doładowań,\n* Dodawanie – dodanie nowego doładowania.\n\nDodatkowe informacje:\n\n* administrator będzie mógł nadawać uprawnienie DODAWANIE tylko wtedy gdy Użytkownik będzie miał nadane uprawnienie _Przeglądanie_, w innym przypadku uprawnienie to będzie wyszarzone.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 1932,
+      "line_end": 1943
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000245",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie listy szablonów przelewów"
+    },
+    {
+      "level": 4,
+      "title": "Dodanie szablonu przelewu"
+    },
+    {
+      "level": 5,
+      "title": "Dodanie szablonu przelewu podatkowego"
+    }
+  ],
+  "section_title": "Dodanie szablonu przelewu podatkowego",
+  "text": "Dodanie nowego szablonu przelewu podatkowego jest możliwe w przypadku gdy na formatce nowego szablonu Użytkownik wybierze przelew _Podatkowy_.\n\nimage::Przelewy/image50.png[image,width=637,height=605]\n\nNastępnie Użytkownik wypełnia poniższe dane:\n\n* *Przelew* - pole zawiera wybraną wcześniej wartość _Podatkowy_. Kliknięcie w pole prezentuje listę typów szablonów przelewów i daje możliwość zmiany typu dodawanego szablonu, pole wymagalne,\n\n* *Nazwa szablonu* - nazwa własna szablonu; pole wymagalne. Podczas zapisu danych szablonu kontrolowana jest unikalność nazwy szablonu. W przypadku wprowadzenia nazwy szablonu, która już istnieje wyświetlany jest komunikat: _Nazwa szablonu aktualnie istnieje_,\n\n* *Podatek* - radiobutton z polami do wyboru:\n\n** *wpłaty na indywidualne mikrorachunki podatkowe (np. PIT/CIT/VAT/PPE)* – po wybraniu tej opcji pola *Miasto* i *Organ podatkowy* są nieedytowalne – pola są uzupełniane automatycznie przez system na podstawie dystrybuowanych danych przez KIR S.A., natomiast w polu *Numer rachunku organu podatkowego* należy wpisać swój indywidualny mikrorachunek podatkowy,\n\n** *inne* - wybranie tej wartości umożliwi wybranie Miasta, Organu podatkowego i symboli formularzy podatkowych innych niż za podatki wpłacane na indywidualne mikrorachunki podatkowe (np. PIT/CIT/VAT/PPE),\n\n* *Miasto* - miasto, w którym znajduje się Urząd Skarbowy, do którego przekazana ma być płatność; możliwość wyboru z listy bądź wprowadzenia manualnie, pole aktywne i wymagalne w przypadku wybrania wartości „Inne”,\n\n* *Organ podatkowy* - lista Urzędów Skarbowych dostępna po wprowadzeniu miasta Urzędu Skarbowego; wartości na liście zawężają się do właściwych dla wybranego miasta nazw organów podatkowych, , pole aktywne i wymagalne w przypadku wybrania wartości „Inne”,\n\n* *Numer rachunku organu podatkowego* - numer rachunku Urzędu Skarbowego:\n\n** uzupełniany automatycznie, gdy wybrano opcję *Podatek* i wartość „Inne”,\n\n** wprowadzony ręcznie, gdy wybrano opcję *Podatek* i wartość „wpłaty na indywidualne mikrorachunki (np. PIT/CIT/VAT/PPE)”. Indywidualny rachunek podatkowy podatnik generuje na stronie Ministerstwa Finansów pod adresem https://www.podatki.gov.pl/generator-mikrorachunku-podatkowego[https://www.podatki.gov.pl/generator-mikrorachunku-podatkowego],\n\n* *Symbol formularza* - lista dostępnych symboli formularzy jest zależna od wybranej wartości przy radiobuttonie *Podatek*. Dla wpłat na indywidualne mikrorachunki podatkowe dostępne będą formularze, dla których zgodnie z ustawą mają być wpłacane podatki na tego typu rachunki np.za podatki CIT, PIT, VAT. Dla pola „Inne” dostępne będą formularze, np. PCC, PTS, WRD, dla których wpłaty należy kierować na mikrorachunki organów podatkowych. W tym przypadku lista dostępnych formularzy jest dodatkowo ograniczona do tych, które są rozliczane w wybranych wyżej polach: Miasto, Organ podatkowy; pole wymagalne,\n\n* *Okres* - typ okresu - pole nieobowiązkowe, widoczność pola zależy od wyboru symbolu formularza podatkowego,\n\n** Typ okresu - wybór wartości z dostępnej listy rozwijanej: Półrocze, Rok, Kwartał, Miesiąc, Dekada miesiąca, Dzień,\n\n** Numer okresu - wybór wartości z dostępnej listy rozwijanej, pole wyświetlane oraz wymagane w przypadku wyboru typu okresu: Półrocze, Kwartał, Miesiąc, Dekada miesiąca, Dzień,\n\n** Numer miesiąca - wybór wartości z dostępnej listy rozwijanej, pole wyświetlane oraz wymagane w przypadku wyboru typu okresu Dekada miesiąca, Dzień,\n\n** Rok - rok okresu, pole wymagane,\n\nimage::Przelewy/image51.png[image,width=443,height=261]\n\nJeśli wypełnimy to pole, system umożliwy Użytkownikowi jego wyczyszczenie za pomocą przycisku [WYCZYŚĆ].\n\nimage::Przelewy/image51a.png[]\n\n* *Typ identyfikatora* - pole wymagalne, wybór wartości z dostępnej listy rozwijanej:\n\n** _Nip,_\n\n** _Regon,_\n\n** _Pesel,_\n\n** _Dowód osobisty,_\n\n** _Paszport,_\n\n** _Inny dokument tożsamości_,\n\n* *Identyfikator* - w zależności od wybranego typu identyfikatora (pole Typ identyfikatora) w polu należy wprowadzić odpowiedni identyfikator, pole wymagalne,\n\n* *Identyfikator zobowiązania* - pole opcjonalne, maksymalna ilość znaków w polu wynosi 40,\n\n* *Kwota* - kwota przelewu, pole opcjonalne,\n\nNa formularzu dostępny jest przycisk\n\n* [DALEJ] – przejście do kroku 2.\n\nPo wprowadzeniu danych szablonu za pomocą przycisku [DALEJ] należy przejść do formularza potwierdzenia danych (krok 2).\n\nNOTE: Użycie ikony image:Przelewy/image31.png[image,width=40,height=36] powoduje powrót do pierwszego kroku i poprawę danych szablonu przelewu.\n\nPo dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, szablon zostaje utworzony (pojawia się na liście szablonów przelewów), a system wyświetla potwierdzenie dodania szablonu wraz z przyciskami:\n\nimage::Przelewy/image49.png[image,width=368,height=226]\n\n* [WRÓĆ DO PULPITU] - powrót do pulpitu,\n\n* [UTWÓRZ NOWY SZABLON] - do utworzenia nowego szablonu.\n\nUżycie szablonu przelewu walutowego na formatce _Nowego przelewu podatkowego_ powoduje wypełnienie formularza przelewu danymi z szablonu.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 1040,
+      "line_end": 1122
+    }
+  ]
+}

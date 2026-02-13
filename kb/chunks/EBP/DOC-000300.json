@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000300",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Lista e-Faktur"
+    },
+    {
+      "level": 4,
+      "title": "Podgląd szczegółów e-Faktury"
+    }
+  ],
+  "section_title": "Podgląd szczegółów e-Faktury",
+  "text": "Aby z listy faktur przejść do szczegółów wybranej faktury należy kliknąć w obszar wybranego wiersza i w [DODATKOWE OPCJE] wybrać przycisk [SZCZEGÓŁY]. Wyświetlane jest wówczas okno prezentujące szczegółowe informacje dla faktury:\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_szczegoly_1.png[]\n\nDostępna opcja [DODATKOWE OPCJE] umożliwia:\n\n* *Zapłać (przelew zwykły)/Zapłać (przelew walutowy)* - zainicjowanie płatności za fakturę,\n* *Oznacz jako opłacona*/*Oznacz jako nieopłacona* - zmianę statusu faktury,\n* *Pobierz PDF* - pobranie danych faktury w formie pliku _PDF_,\n* *Podgląd PDF* - wizualizacja faktury w formie pliku _PDF_,\n* *Pobierz XML* - eksport danych faktury do pliku _XML_.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 173,
+      "line_end": 185
+    }
+  ]
+}

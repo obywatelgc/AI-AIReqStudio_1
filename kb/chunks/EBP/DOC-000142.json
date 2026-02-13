@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000142",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (GryfCard)"
+    },
+    {
+      "level": 3,
+      "title": "Spłata karty"
+    }
+  ],
+  "section_title": "Spłata karty",
+  "text": "Po wybraniu przycisku [SPŁAĆ] Użytkownik zostanie przekierowany do strony z danymi do spłaty:\n\nimage::Karty/image11k.png[]\n\nPo uzupełnieniu danych i wybraniu [SPŁAĆ] nastąpi przejście do kroku z podsumowaniem i autoryzacją transakcji. Po poprawnej autoryzacji zostanie zaprezentowany komunikat.\n\nimage::Karty/image12k.png[]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 787,
+      "line_end": 796
+    }
+  ]
+}

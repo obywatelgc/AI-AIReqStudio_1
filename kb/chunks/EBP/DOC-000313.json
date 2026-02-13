@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000313",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Lista dyspozycji e-Faktur"
+    },
+    {
+      "level": 4,
+      "title": "Filtrowanie listy dyspozycji e-Faktur"
+    }
+  ],
+  "section_title": "Filtrowanie listy dyspozycji e-Faktur",
+  "text": "W celu zawężenia prezentacji listy dyspozycji faktur, Użytkownik ma możliwość zastosowania filtrów: prostego oraz zawansowanego.\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_lista_dyspozycji_filtry.png[]\n\nFiltr prosty umożliwia wyszukanie po numerze faktury. W tym celu należy wpisać w polu do wyszukiwania z ikoną lupki numer faktury oraz nacisnąć przycisk [ENTER].\n\nAby powrócić do pełnej listy dyspozycji faktur należy kliknąć w ikonę X w polu wyszukiwania.\n\nUżycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtru zaawansowanego dla następujących pól:\n\n* *Ostatnie ... dni* - liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana lista dyspozycji faktur, domyślnie 30 dni,\n* *Zakres dat* - zakres dat, dla których ma zostać wyświetlona lista dyspozycji faktur, od miesiąca wstecz do daty bieżącej. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą, którego można określić zakres dat,\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_filtry_2.png[]\n\n* *Rodzaj faktury* - pole zwierające rodzaje faktur:\n\n** _Wszystkie_,\n\n** _Podstawowa_,\n\n** _Zaliczkowa_,\n\n** _Rozliczeniowa_,\n\n** _Korygująca - fakturę postawową_,\n\n** _Korygująca - fakturę zaliczkową_,\n\n** _Korygująca - fakturę rozliczeniową_,\n\n** _Korygująca - korekta zbiorcza_,\n\n* *Status* - pole zwierające statusy dyspozycji faktur:\n\n** _Wszystkie_,\n\n** _Gotowy do wysłania_,\n\n** _Oczekujący na wysyłkę_,\n\n** _Przetwarzany_,\n\n** _Dodany_,\n\n** _Odrzucony_,\n\n* *Kwota*:\n\n** _Netto_,\n\n** _Brutto_,\n\n* *Kwota od*, *Kwota do* - zakres kwot (od - do), dla których ma zostać wyświetlona lista dyspozycji faktur.\n\nZastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 365,
+      "line_end": 422
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000022",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Logowanie do systemu"
+    },
+    {
+      "level": 4,
+      "title": "Logowanie do systemu Asseco EBP przy pomocy hasła maskowanego + kodu SMS"
+    },
+    {
+      "level": 5,
+      "title": "Kolejne logowanie do systemu Asseco EBP przy pomocy hasła maskowanego + kodu SMS (po dodaniu urządzenia do zaufanych)"
+    }
+  ],
+  "section_title": "Kolejne logowanie do systemu Asseco EBP przy pomocy hasła maskowanego + kodu SMS (po dodaniu urządzenia do zaufanych)",
+  "text": "Podczas kolejnego logowania do systemu Asseco EBP, Użytkownik musi wprowadzić:\n\n* identyfikator Użytkownika i nacisnąć przycisk [DALEJ],\n* hasło i potwierdzić przyciskiem [ZALOGUJ],\n\nW przypadku wprowadzenia poprawnych danych, Użytkownik zostanie od razu zalogowany do systemu Asseco EBP, ponieważ system zweryfikauje, czy Użytkownik loguje się za pomocą dodanego urządzenie zaufanego na podstawie nazwy i wersji systemu operacyjnego oraz rodzaju i wersji przeglądarki internetowej.\n\nNOTE: Zmiany dotyczące wersji systemu operacyjnego i/lub przeglądarki internetowej mogą wymagać ponownego dodania nowego urządzenia zaufanego.\n\nNatomiast w przypadku wprowadzenia błędnych danych, system zaprezentuje odpowiedni komunikat:\n\n* w przypadku wprowadzenia błędnego hasła, system zaprezentuje komunikat: _Błąd na etapie uwierzytelniania._\n\nimage::main/image27.png[image,width=285,height=376]\n\nPo zalogowaniu (podaniu danych uwierzytelniających) do aplikacji Asseco EBP weryfikowany jest status Użytkownika w kontekście akceptacji i jeśli dane Użytkownika są zmieniane lub weryfikowane (przez operatora modułu BackOffice) wówczas dalsza praca z systemem nie jest możliwa, a Użytkownik otrzymuje komunikat: _Praca w systemie nie jest obecnie możliwa. Zlecone przez Ciebie zmiany w dostępie są obecnie wprowadzane w Banku. Spróbuj ponownie później bądź skontaktuj się ze swoim Doradcą lub Teleserwisem._\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 411,
+      "line_end": 428
+    }
+  ]
+}

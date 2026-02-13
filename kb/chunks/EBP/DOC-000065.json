@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000065",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Aplikacja mobilna"
+    }
+  ],
+  "section_title": "Aplikacja mobilna",
+  "text": "Opcja _Aplikacja mobilna_ umożliwia zarządzenie urządzeniem mobilnym przypisanym do Użytkownika systemu Asseco EBP, który ma przypisaną autoryzację mobilną w systemie BackOffice. Opcja dostępna jest zarówno w kontekście firmy i indywidualnym.\n\nUmożliwia:\n\n* sparowanie urządzenia autoryzującego z systemem Asseco EBP wraz z zatwierdzeniem regulaminu Asseco BSGo,\n* podgląd urządzenia przypisanego do Użytkownika (sparowanego z systemem Asseco EBP),\n* usunięcie urządzenia autoryzującego.\n\nNa formularzu APLIKACJA MOBILNA prezentowane są następujące dane:\n\n* *Nazwa urządzenia* - nazwa urządzenia podana przez Użytkownika podczas parowania,\n* *Data powiązania* - data powiązania urządzenia z systemem bankowości Asseco EBP\n* Dane szczegółowe dotyczące urządzenia - *Producent*, *Model*, *Platforma*, oraz *Wersja*,\n* [USUŃ] - przycisk umożliwiający usunięcie urządzenia autoryzującego.\n\nimage::main/image270.png[image,width=612,height=28]\n\nDomyślnie prezentowane jest urządzenie w statusie _AKTYWNE URZĄDZENIE_. Urządzenie może posiadać również status Zablokowane (blokada urządzenia wykonywana jest przez operatora aplikacji BackOffice np. w sytuacji utraty urządzenia dostępu). Na formularzu prezentowany jest także komunikat informacyjny dotyczący dodania nowej aplikacji mobilnej.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 2013,
+      "line_end": 2032
+    }
+  ]
+}

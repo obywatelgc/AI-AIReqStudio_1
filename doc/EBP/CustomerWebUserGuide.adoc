@@ -1,0 +1,134 @@
+:experimental:
+:sectnumlevels: 5
+= Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego
+:revnumber: 6.15.0C
+:documentId: DOC.INST_Asseco_{revnumber}
+:doctype: book
+:toc: left
+:toc-title: Spis treści
+:toc-chapter-label: Rozdzial
+:toclevels: 5
+:sectnums:
+:imagesdir:
+:icons: font
+:source-highlighter: coderay
+:chapter-signifier:
+:rootpath: ./
+
+:sectnums:
+
+[cols=",,,",options="header",]
+|===
+|Data |Wersja systemu |Obszar |Opis zmiany
+|10.06.2019 |4.01.000C |Import Eksport Danych |Utworzenie dokumentacji
+|23.07.2019 |4.03.000C |Lista zleceń |Utworzenie dokumentacji
+|27.07.2019 |4.03.000C |Karty |Utworzenie dokumentacji
+|02.08.2019 |4.03.000C |Ogólna |Utworzenie dokumentacji
+|05.08.2019 |4.03.000C |Przelewy |Utworzenie dokumentacji
+|07.08.2019 |4.03.000C |Rachunki |Utworzenie dokumentacji
+|08.08.2019 |4.03.000C |Lokaty |Utworzenie dokumentacji
+|12.08.2019 |4.03.000C |Kredyty |Utworzenie dokumentacji
+|12.08.2019 |4.03.000C |Wiadomości |Utworzenie dokumentacji
+|14.08.2019 |4.03.000C |Doładowania |Utworzenie dokumentacji
+|09.01.2020 |4.03.013C |Autodealing |Utworzenie dokumentacji
+|29.01.2020 |4.07.000C |Autodealing |Aktualizacja dokumentacji
+|30.01.2020 |4.07.000C |Wiadomości |Aktualizacja dokumentacji
+|10.02.2020 |4.07.000C |Rachunki |Aktualizacja dokumentacji
+|10.02.2020 |4.07.000C |Płatności masowe |Utworzenie dokumentacji
+|10.02.2020 |4.07.000C |Doładowania |Aktualizacja dokumentacji
+|19.02.2020 |4.07.000C |Kredyty |Aktualizacja dokumentacji
+|26.02.2020 |4.07.001C |Karty |Aktualizacja dokumentacji
+|26.02.2020 |4.07.001C |Lista zleceń |Aktualizacja dokumentacji
+|26.02.2020 |4.07.001C |Płatności masowe |Aktualizacja dokumentacji
+|09.03.2020 |4.07.001C |Lokaty |Aktualizacja dokumentacji
+|21.04.2020 |4.08.002C |Multimodulo |Utworzenie dokumentacji
+|23.04.2020 |4.08.002C |Tarcza Finansowa PFR |Utworzenie dokumentacji
+|13.05.2020 |4.08.002C |Tarcza Finansowa PFR |Aktualizacja dokumentacji
+|03.06.2020 |4.09.000C |Przelewy |Aktualizacja dokumentacji
+|29.09.2020 |4.11A.001C |Import Eksport Danych |Aktualizacja dokumentacji
+|09.11.2020 |4.11.003C |Ogólna |Aktualizacja dokumentacji
+|25.11.2020 |4.11.005C |Import Eksport Danych |Aktualizacja dokumentacji
+|03.12.2020 |4.11.006C |Ogólna |Aktualizacja dokumentacji
+|03.12.2020 |4.11.006C |Przelewy |Aktualizacja dokumentacji
+|03.12.2020 |4.11.006C |Rachunki |Aktualizacja dokumentacji
+|03.12.2020 |4.11.006C |Lista zleceń |Aktualizacja dokumentacji
+|03.12.2020 |4.11.006C |Import Eksport Danych |Aktualizacja dokumentacji
+|04.12.2020 |4.11.007C |Import Eksport Danych |Aktualizacja dokumentacji
+|21.12.2020 |4.11.009C |Import Eksport Danych |Aktualizacja dokumentacji
+|21.12.2020 |4.11.009C |Ogólna |Aktualizacja dokumentacji
+|18.01.2021 |4.11.011C |Przelewy |Aktualizacja dokumentacji
+|25.01.2021 |4.11.011C |Import Eksport Danych |Aktualizacja dokumentacji
+|01.02.2021 |4.11.012C |ImporUprawnienia dla rachunkówt Eksport Danych |Aktualizacja dokumentacji
+|04.02.2021 |4.13.003C |Import Eksport Danych |Aktualizacja dokumentacji
+|09.02.2021 |4.11.013C |Kredyty |Aktualizacja dokumentacji
+|10.02.2021 |4.13.004C |Import Eksport Danych |Aktualizacja dokumentacji
+|22.02.2021 |4.13.005C |Import Eksport Danych |Aktualizacja dokumentacji
+|24.02.2021 |4.13.006C |Przelewy |Aktualizacja dokumentacji
+|10.03.2021 |4.13.008C |Import Eksport Danych |Aktualizacja dokumentacji
+|10.03.2021 |4.13.008C |Przelewy |Aktualizacja dokumentacji
+|18.03.2021 |4.13.009C |Przelewy |Aktualizacja dokumentacji
+|18.03.2021 |4.13.009C |Ogólna |Aktualizacja dokumentacji
+|26.03.2021 |4.13.010C |Import Eksport Danych |Aktualizacja dokumentacji
+|07.04.2021 |4.13.010C |Ogólna |Aktualizacja dokumentacji
+|15.04.2021 |4.13.011C |Ogólna |Aktualizacja dokumentacji
+|15.04.2021 |4.13.010C |Import Eksport Danych |Aktualizacja dokumentacji
+|27.04.2021 |4.14.000C |Rachunki |Aktualizacja dokumentacji
+|14.05.2021 |4.14.002C |Import Eksport Danych |Aktualizacja dokumentacji
+|29.04.2021 |4.14.002C |Import asynchroniczny |Aktualizacja dokumentacji
+|25.05.2021 |4.14.002C |Tarcza Finansowa PFR |Aktualizacja dokumentacji
+|25.05.2021 |4.14.002C |Import asynchroniczny |Aktualizacja dokumentacji
+|07.06.2021 |4.14.003C |Przelewy |Aktualizacja dokumentacji
+|11.06.2021 |4.15.000C |Ogólna |Aktualizacja dokumentacji
+|09.07.2021 |4.15.001C |Karty |Aktualizacja dokumentacji
+|12.07.2021 |4.15.001C |Edycja Danych osobowych/Danych firmy |Aktualizacja dokumentacji
+|14.07.2021 |4.15.002C |Przelewy |Aktualizacja dokumentacji
+|24.07.2021 |4.15.002C |Nowa lokata, Zgody i kanały dystrybucji|Aktualizacja dokumentacji
+|12.08.2021 |4.16.000C |Ogólne |Aktualizacja dokumentacji
+|12.11.2021 |4.17.000C |Ogólne |Aktualizacja dokumentacji
+|28.03.2022 |5.1.0C | Nowy rachunek |Aktualizacja dokumentacji
+|08.05.2022 |5.1.1C |Kontekst zbiorczy, Biała lista podatników VAT|Aktualizacja dokumentacji
+|23.02.2023 |6.2.0C |Lista lokat (Lista zleceń)|Aktualizacja dokumentacji
+|23.04.2023 |6.3.0C |Lista zleceń |Aktualizacja dokumentacji
+|25.04.2023 |6.3.0C |Struktury plików, Edycja danych osobowych |Aktualizacja dokumentacji
+|05.05.2023 |6.4.0C |Logowanie do systemu |Aktualizacja dokumentacji
+|07.05.2023 |6.3.0C |Ustawienia logowania, Pop-up-y informacyjne w widoku Pulpitu, Obrazek bezpieczeństwa podczas
+logowania do bankowości internetowej |Aktualizacja dokumentacji
+|27.09.2023 |6.5.0C |Import Eksport Danych |Aktualizacja dokumentacji
+|23.10.2023 |6.6.0C | Aktualizacja dokumentacji (kontekst firmowy)| Aktualizacja dokumentacji
+|12.08.2024 |6.7.0C | Aktualizacja dokumentacji Rachunki powiernicze| Aktualizacja dokumentacji
+|29.04.2024 |6.8.0C |Informacje ogólne |Aktualizacja dokumentacji
+|15.11.2024 |6.10.0C | Aktualizacja dokumentacji Karty (Visiona-GAPI), Wniosek o kartę (CardOn)| Aktualizacja dokumentacji
+|05.12.2024 |6.10.1C | Aktualizacja dokumentacji Przepływy| Aktualizacja dokumentacji
+|30.12.2024 |6.10.2aC | Aktualizacja dokumentacji Przelew Sorbnet walidacja| Aktualizacja dokumentacji
+|21.01.2025 |6.10.3C | Aktualizacja dokumentacji e-Faktura (KSeF)| Aktualizacja dokumentacji
+|28.01.2025 |6.10.3C | Aktualizacja dokumentacji Uprawnienia do rachunków| Aktualizacja dokumentacji
+|24.03.2025 |6.11.0C | Aktualizacja dokumentacji Ogólna |Aktualizacja dokumentacji
+|09.07.2025 |6.13.0C | Wniosek o kartę kredytową |Aktualizacja dokumentacji
+|03.10.2025 |6.14.1C | Formaty danych i struktury plików| Aktualizacja dokumentacji
+|23.10.2025 |6.14.3C | Nowy standard w formatach płatności| Aktualizacja dokumentacji
+|04.11.2025 |6.14.3C | Karty| Aktualizacja dokumentacji
+|===
+
+include::../../shared/typografia.adoc[]
+
+include::chapters/Main.adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_Rachunki.adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_Lokaty.adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_Kredyty.adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_Karty.adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_Lista_zlecen.adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_Przelewy.adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_Platnosci_Masowe.adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_Doladowania.adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_Przeplywy.adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_Autodealing.adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_Tarcza_Finansowa_PFR.adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_Wiadomosci.adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_eFaktury(KSEF).adoc[leveloffset=+1]
+include::miniapps/Miniaplikacja_Powierniczne.adoc[leveloffset=+1]
+include::chapters/Import_Eksport_Danych.adoc[leveloffset=+1]
+include::chapters/Multimodulo.adoc[leveloffset=+1]
+include::chapters/Kontekst_Zbiorczy.adoc[leveloffset=+1]
+
+
+include::../../shared/footer.adoc[]

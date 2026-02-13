@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000388",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu statusów przelewów"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie CSV"
+    }
+  ],
+  "section_title": "Plik w formacie CSV",
+  "text": "Format CSV to format pliku tekstowego, który może być używany do wymiany danych arkusza kalkulacyjnego między aplikacjami. Każdy wiersz w tekstowym pliku CSV reprezentuje wiersz arkusza kalkulacyjnego. Każda komórka wiersza arkusza kalkulacyjnego rozdzielona jest średnikiem. Każdy rekord zakończony jest znakiem końca linii <CRLF>.\n\nDo zestawienia brane są przelewy za wskazany okres w statusie AN, OD i ZR (anulowane, odrzucone i zrealizowane).\n\nOpis poszczególnych kolumn dla eksportu statusów opercaji w formacie CSV:\n* Referencje - pole może być puste,\n* Status - status operacji (AN - anulowany, OD - odrzucony, ZR - zrealizowany),\n* Błąd - opis ostatniej błędnej realizacji (pole może być puste),\n* Data wpisu - data wprowadzenia przelewu (w standardzie DD-MM-RRRR, gdzie RRRR oznacza rok, MM oznacza miesiąc, DD oznacza dzień),\n* Numer rachunku - numer rachunku nadawcy; w standardzie NRB, wartość ujęta w apostrofy,\n* ID - identyfikator płatności, 6. Numer rachunku - numer rachunku Użytkownika; w standardzie NRB, wartość ujęta w apostrofy,\n* Waluta - waluta transakcji,\n* Nazwa1 - dane odbiorcy, linia 1,\n* Nazwa2 - dane odbiorcy, linia 2,\n* Nazwa3 - dane odbiorcy, linia 3,\n* Nazwa4 - dane odbiorcy, linia 4,\n* Numer rachunku - numer rachunku odbiorcy; w standardzie NRB, wartość ujęta w apostrofy,\n* Kwota - wartość kwoty operacji,\n* Tytuł1 - opis operacji, linia 1,\n* Tytuł2 - opis operacji, linia 2,\n* Tytuł3 - opis operacji, linia 3,\n* Tytuł4 - opis operacji, linia 4,\n* Data - data realizacji operacji (w standardzie DD-MM-RRRR, gdzie RRRR oznacza rok, MM oznacza miesiąc, DD oznacza dzień).\n\n[underline]##Poniżej przedstawiono przykład pliku eksportu operacji z historii rachunku w formacie CSV:##\n\n[source, txt]\n----\n\n;ZR;;2020-07-08;1822021;'43880900052001000278030001';PLN;Janina Testowa;;;;'48880900052001000278030008';1000;4;;;;2020-07-08;\n;ZR;;2020-07-07;1822003;'45880900052001000277990001';PLN;Testowy Urząd Skarbowy;;Miasto;;'07101000712222174587369300';1;2020R;CIT;;;2020-07-07;\n;ZR;;2020-07-07;1822001;'45880900052001000277990001';PLN;Testowy Urzad Skarbowy;;Miasto;;'07101000712222174587369300';1;2020R;CIT;;;2020-07-07;\n;AN;;2020-07-07;1822002;'45880900052001000277990001';PLN;Kamila Testowa;;;;'71193000051822663062452221';1;testowy;;;;2020-07-07;\n\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 4921,
+      "line_end": 4957
+    }
+  ]
+}

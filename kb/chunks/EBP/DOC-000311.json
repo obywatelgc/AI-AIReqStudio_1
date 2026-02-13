@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000311",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Lista dyspozycji e-Faktur"
+    },
+    {
+      "level": 4,
+      "title": "Akcje na pojedynczej dyspozycji e-Faktury"
+    }
+  ],
+  "section_title": "Akcje na pojedynczej dyspozycji e-Faktury",
+  "text": "Po rozwinięciu wybranej dyspozycji faktury dostępne są opcje:\n\n* [WYSTAW PODOBNĄ FAKTURĘ],\n\n* [DODATKOWE OPCJE]:\n\n** *Wyślij* - umożliwia wysłanie dyspozycji faktury do KSeF,\n** *Usuń* - usunięcie dyspozycji faktury,\n** *Pobierz PDF* - umożliwia pobranie danych faktury w formie pliku _PDF_,\n** *Szczegóły* - prezentacja szczegółów faktury.\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_lista_dyspozycji_akcje.png[]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 339,
+      "line_end": 352
+    }
+  ]
+}

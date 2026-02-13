@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000024",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Logowanie do systemu"
+    },
+    {
+      "level": 4,
+      "title": "Pomoc w logowaniu"
+    },
+    {
+      "level": 5,
+      "title": "Reset hasła"
+    }
+  ],
+  "section_title": "Reset hasła",
+  "text": "Aby wykonać zgłoszenie dyspozycji resetu hasła do logowania należy wpisać login na pierwszej stronie i wybrać przycisk *DALEJ*, a następnie wybrać link *POMOC W LOGOWANIU*:\n\nimage::main/image2voicebot.png[]\n\nNastępnie wybrać opcję *RESET HASŁA*:\n\nimage::main/image3voicebot.png[]\n\nPojawią się informację na temat resetu hasła oraz przycisk *ODBLKOUJ DOSTĘP DO BANKOWOŚCI INTERNETOWEJ*:\n\nimage::main/image4voicebot.png[]\n\nPo wybraniu przycisku *ODBLKOUJ DOSTĘP DO BANKOWOŚCI INTERNETOWEJ* aplikacja przechodzi do formatki, gdzie widoczny jest wpisany login oraz pole do wpisania PESEL-u. Użytkownik wpisuje PESEL i wybiera przycisk *DALEJ*:\n\nimage::main/image5voicebot.png[]\n\nAplikacja przechodzi do formatki potwierdzenia złożenia dyspozycji resetu hasła. Użytkownik wprowadza PIN  oraz kod autoryzujący, który otrzymał SMS-em i zatwierdza przyciskiem *DALEJ*:\n\nimage::main/image6voicebot.png[]\n\nAplikacja potwierdza przyjęcie dyspozycji zgłoszenia resetu hasła do bankowości internetowej:\n\nimage::main/image7voicebot.png[]\n\nW sytuacji, w której Użytkownik na pierwszej stronie logowania do bankowości internetowej nie wpisze loginu i wybierze link *POMOC W LOGOWANIU* ma taką możliwość wpisania login na drugiej stronie formatki *Pomoc w logowaniu*, należy wpisać login oraz wybrać przycisk *WPISZ LOGIN*:\n\nimage::main/image8voicebot.png[]\n\nAplikacja po wpisaniu loginu poprosi Użytkownika o wybranie formy pomocy:\n\nimage::main/image9voicebot.png[]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 436,
+      "line_end": 468
+    }
+  ]
+}

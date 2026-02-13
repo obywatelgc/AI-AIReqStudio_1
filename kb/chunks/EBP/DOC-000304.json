@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000304",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Lista e-Faktur"
+    },
+    {
+      "level": 4,
+      "title": "Historia płatności"
+    }
+  ],
+  "section_title": "Historia płatności",
+  "text": "Z poziomu listy faktur i szczegółów wybranej faktury system daje możliwość podglądu operacji spłaty faktury. Opcja jest dostępna tylko dla faktur zakupowych.\n\nAby przejść do historii płatności należy kliknąć w obszar wybranego wiersza i w [DODATKOWE OPCJE] wybrać przycisk [HISTORIA PŁATNOŚCI]. Wyświetlana jest wówczas formatka prezentująca listę zleconych płatności za fakturę.\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_historia_platnosci.png[]\n\nDla każdej operacji z listy prezentowane są następujące informacje:\n\n* *Data realizacji*,\n* *Tytuł*,\n* *Status*,\n* *Kwota*.\n\nPo kliknięciu w wiersz wybranej płatności wyświetlane są dodatkowe informacje na temat przelewu:\n\n* *Nadawca*,\n* *Odbiorca*,\n* *Typ*,\n* *Rodzaj przelewu*,\n* *Data wprowadzenia*.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 239,
+      "line_end": 260
+    }
+  ]
+}

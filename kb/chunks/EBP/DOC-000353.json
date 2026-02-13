@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000353",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktury plików importu przelewów walutowych"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie MT103"
+    }
+  ],
+  "section_title": "Plik w formacie MT103",
+  "text": "Struktura pliku i nazwa pliku powinny spełniać następujące wymagania:\n\n* Plik może mieć dowolną nazwę\n* Żaden pojedynczy plik nie może zawierać więcej niż 5000 wpisów\n* Plik zawiera nagłówek i informacje o poszczególnych instrukcjach\n* Linie są oddzielone znakami podziału linii <CR> <LF>\n* Żadna linia nie może składać się z spacji lub tylko z <CR> <LF>\n* Żadna linia nie może zaczynać się od znaku \"-\" (kreska), chyba że poprzedza ją spacja.\n* Strona kodowa zgodna z Windows-1252 (zachodnioeuropejski)\n*  Dozwolone zestawy znaków: a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P\nQ R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 / -? : (). , ‘ + {} CR LF Space\n* W tekście wiadomości nie można używać nawiasów klamrowych, ale można ich używać tylko jako\nseparatorów bloków wiadomości\n\nOpis formatu:\n\n* X - znak alfanumeryczny\n* N - numer\n* F - stała długość\n* V - długość zmienna\n\nOpis typu:\nM = obowiązkowe\nO = opcjonalnie\nI* - pole obowiązkowe w przypadku przelewy SWIFT\n\nNOTE: System rozpozna przelew SEPA jeśli waluta przelewu to EUR i opcja kosztów SHA.\n\n*Specyfikacja pól w pliku MT103 dla przelewu walutowego*\n\n[width=\"100%\",cols=\"8%,72%,5%,15%\",options=\"header\",]\n|===\n|NR |OPIS |TYP |FORMAT\n|:01: |Referencje zleceniodawcy |M |X(16)V\n|:02: |Suma-suma kwot poleceń umieszczonych w pliku (niezależnie od waluty). Kwota z częścią dziesiętną (2 cyfry), oddzieloną znakiem \",\" (przecinek). |M |N(17) V\n|:03: |Liczba zleceń płatniczych |M |N(5) V\n|:04: |Kod SWIFT banku zleceniodawcy |I* |X(11) V\n|:05: |Nazwa i adres zleceniodawcy +\nDane mogą być zapisane w kilku wierszach. +\nKażdy wiersz musi być oddzielony znakiem końca wiersza <CR><LF>. |M |4*X(35) V\n|:07: |Nazwa pliku |M |X(12) V\n|:1:F01 |1:F01xxxxxxxxaxxxbbbbtttttt +\nxxxxxxxxxaxxx Kod SWIFT banku zleceniodawcy (numer jednostki w formacie KIR X (8) + stała wartość \"XXXX\") +\nNumer seryjny wiadomości bbbb (generowany automatycznie z zakresu 0001 - 9999) +\ntttttt numer seryjny zamówienia w wiadomości (generowany automatycznie z zakresu 000001 - 999999) |M |\\{1:F01 xxxxxxxxaxxxbbbbtttttt}\n|2:I103 |2:I103xxxxxxxxxaxxxy +\nxxxxxxxxxaxxx kod SWIFT banku kontrahenta +\ntyp płatności - stała wartość N |M |\\{2:I100xxxxxxxxxaxxxY +\n1}\n|4: |Początek szczegółów zamówienia |M |\\{4:\n|:20: |Referencje zleceniodawcy |O |X(16) V\n|:32A: |Data waluty (RRMMDD), +\nKod waluty (ISO), +\nKwota (ułamek dziesiętny (2 cyfry), oddzielony przez \",\" (przecinek)) |M |N(6) F +\nX(3) F +\nN(15) V\n|:50K: |Nazwa i adres zleceniodawcy +\n(wiersze po max. 35 znaków oddzielone znakiem <CR><LF>) |M |4*35(X) V\n|:57A: |Kod SWIFT lub ID banku kontrahenta lub identyfikator banku kontrahenta |M |X(11) V\n|:59: |Numer konta kontrahenta, nazwa i adres +\nZnak ‘/’ (ukośnik) +\nNumer rachunku kontrahenta +\nZnaki spacji będą usuwane +\n<CR><LF> +\nNazwa i adres kontrahenta (maksymalnie 4 wiersze po 35 znaków, poszczególne wiersze są oddzielone <CR> <LF>) |M |X(1) F +\nX(34) V +\n4*X(35) V\n|:70: |Szczegóły płatności (maksymalnie 4 wiersze po 35 znaków, wiersze są oddzielone <CR> <LF>) |M |4*X(35) V\n|:71A: |Rozliczenie kosztów +\n+\nW rozpoznaniu rozliczenia kosztów zostanie użyte następujące mapowanie: +\nBN1 = SHA (koszty podzielone pomiedzy zleceniodawcą, a beneficjentem) +\nBN2 = BEN (koszty pokrywa odbiorca) dot. DefBank +\nOUR = OUR (koszty pokrywa zleceniodawca) |M |X(3) F\n|-} |Koniec szczegółów polecenia |M |-}\n|===\n\n[underline]##Przykładowa zawartość pliku importu przelewów walutowych w formacie MT103:##\n\n[source, txt]\n----\n:01:12345678\n:02:74,30\n:03:2\n:04:POLUPLPR\n:05:KLIENT TESTOWY\nTESTOWA 6\n03-115 WARSZAWA\nPOLSKA\n:07:mt103PRZELEWY.TXT\n{1:F010205561XXXX0002000001}{2:I103BARCGB22XXXN1}{4:\n:20:REFsepa\n:32A:140112EUR1550,60\n:50K:/PL30910100032002000015960001\nKLIENT TESTOWY\nTESTOWA 6\n03-115 WARSZAWA\nPOLSKA\n:57A:BUKBGB22XXX\n:59:/GB24BUKB20801470636843\nJANINA KOWALSKI\nTest\nMIASTO\nNIEMCY\n:70:WPŁATA NA RACHUNEK\nWPŁATA NA RACHUNEK\n:71A:SHA\n-}{1:F010205561XXXX0002000002}{2:I103BARCGB22XXXN1}{4:\n:20:REF0swift\n:32A:140112USD118,00\n:50K:/PL30910100032002000015960001\nKLIENT TESTOWY\nTESTOWA 6\n03-115 WARSZAWA\nPOLSKA\n:57A:BUKBGB22XXX\n:59:/GB24BUKB20801470636843\nT. Morel\nUL.TESTSTRASSE\n0002625 BAUTZEN\nNiemcy\n:70: ROZLICZENIE\nFV15000 EUR DATE 11 01 2014\nDETAILS2\n:71A:OUR\n-}\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 1818,
+      "line_end": 1946
+    }
+  ]
+}

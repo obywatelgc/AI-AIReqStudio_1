@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000334",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Rachunki powiernicze"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie szczegółów rachunku"
+    }
+  ],
+  "section_title": "Przeglądanie szczegółów rachunku",
+  "text": "Aby z listy rachunków przejść do szczegółów wybranego rachunku należy kliknąć w obszar wybranego wiersza i wybrać przycisk [SZCZEGÓŁY]. System wyświetla formularz SZCZEGÓŁY RACHUNKU POWIERNICZEGO.\n\nimage::Powiernicze/image18.png[image,width=604,height=319]\n\nNa formularzu prezentowane są następujące dane:\n\n* *Numer rachunku* – numer rachunku w formacie NRB,\n* *Waluta* – symbol waluty w jakiej prowadzony jest rachunek,\n* *Rodzaj rachunku* – typ rachunku na który założona jest umowa,\n* *Nazwa własna* – nazwa rachunku nadana przez klienta,\n* *Saldo* – saldo umowy,\n* *Dostępne środki* – dostępne środki,\n* *Kwota zablokowanych środków* – kwota środków zablokowanych,\n* *Przyzany limit kredytowy –* limit kredytowy na rachunku,\n* *Oprocentowanie –* wysokość oprocentowania umowy,\n* *Data otwarcia–* data założenia umowy,\n* *Twój status–* właściciel umowy,\n* *Pełnomocnicy-* pełnomocnicy do umowy,\n* *Transakcje przez internet: limit dzienny-* limit dzienny operacji przez Internet,\n* *Pozostały limit dzienny–* pozostałą kwota z limitu dziennego,\n* *Transakcje przez internet: limit jednorazowy–* limit jednorazowy operacji przez Internet,\n\nObok szczegółów rachunku dostępne są:\n\n* Opcje:\n\n** [RACHUNKI EWIDENCYJNE] – umożliwiająca przeglądanie rachunków ewidencyjnych,\n** [OPERACJE NA RACH. MRP] – umożliwiająca przeglądanie operacji wykonanych na rachunku powierniczym,\n** [OSKŁĄDKI DO OPŁACENIA] – umożliwiająca przeglądanie składek do opłacenia i wykonanie przelewu.\n\n\n* Przyciski:\n\n** image:Powiernicze/image19.png[image,width=45,height=53] – umożliwiający powrót do formularza RACHUNKI POWIERNICZE,\n\n** image:Powiernicze/image17.png[image,width=43,height=50] – umożliwiający wyjście do pulpitu.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Powierniczne.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Powierniczne.adoc",
+      "line_start": 130,
+      "line_end": 167
+    }
+  ]
+}

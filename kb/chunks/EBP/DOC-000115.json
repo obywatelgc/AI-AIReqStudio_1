@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000115",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Kredyty"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie historii kredytu"
+    }
+  ],
+  "section_title": "Przeglądanie historii kredytu",
+  "text": "Aby przejść do historii wybranego kredytu, należy kliknąć w obszar wybranego wiersza na liście kredytów i wybrać przycisk [HISTORIA KREDYTU].\n\nimage::Kredyty/image25.png[]\n\nNa formularzu HISTORIA KREDYTU dostępne są następujące informacje:\n\n* *Data transakcji* – data transakcji (data w formacie DD.MM.RRRR),\n* *Tytuł* – tytuł operacji,\n* *Rodzaj transakcji*,\n* *Kwota* – kwota operacji wraz z walutą (suma kapitału i odsetek do zapłaty).\n\nW celu zawężenia prezentacji listy operacji kredytu, Użytkownik ma możliwość zastosowania filtrów:\n\n* Prostego – umożliwia wyszukanie po treści, w tym celu należy wpisać w polu *Wyszukaj* tekst oraz nacisnąć przycisk [ENTER].\n\nimage::Kredyty/image26.png[image,width=358,height=55]\n\nDziałanie wyszukiwania jest analogiczne jak w innych częściach systemu.\n\n* Zaawansowanego – użycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtra zaawansowanego dla następujących pól:\n\n** *Ostatnie* – liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana historia operacji kredytu, domyślnie 30 dni,\n** *Zakres dat* – zakres dat, od-do, dla których ma zostać wyświetlona historia rachunku, od miesiąca wstecz do daty bieżącej, jest to alternatywa dla pola *Ostatnie*. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą, którego można określić zakres dat.\n\nimage::Kredyty/image27.png[image,width=357,height=408]\n\nZastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].\n\nW górnej części formularza HISTORIA KREDYTU dostępne są przyciski:\n\n* image:Kredyty/image17.png[image,width=43,height=46] – umożliwiający przejście do formularza KREDYTY,\n* image:Kredyty/image18.png[image,width=49,height=57]– umożliwiający wyjście do menu głównego.\n\nPod listą historii operacji prezentowane jest podsumowanie danych, widocznych na danej stronie zawierające:\n\n* *Podsumowanie strony*:\n\n** *Wpływy* – łączna dla wszystkich operacji widocznych na stronie, kwota wpłat wraz z walutą,\n** *Obciążenia* – łączna dla wszystkich operacji widocznych na stronie, kwota wypłat wraz z walutą.\n\n* *Podsumowanie*\n\n** *Wpływy* – łączna dla wszystkich operacji widocznych na stronie, kwota wpłat wraz z walutą,\n** *Obciążenia* – łączna dla wszystkich operacji widocznych na stronie, kwota wypłat wraz z walutą.\n\nNad historią kredytu dostępny jest przycisk [POBIERZ] umożliwiający pobranie historii operacji na kredycie do pliku w formacie pdf.\n\nKliknięcie w wybraną operację z listy powoduje wyświetlenie dodatkowych informacji dla operacji.\n\nimage::Kredyty/image28.png[image,width=604,height=124]\n\nSystem prezentuje następujące informacje:\n\n* *Spłata kapitału* – kwota kapitału wraz z walutą,\n* *Spłata odsetek* – kwota odsetek wraz z walutą,\n* *Nadpłata* – kwota nadpłat wraz z walutą,\n* *Pozostałe* – pozostała kwota do spłaty wraz z walutą,\n* *Saldo po* – saldo kredytu po spłacie\n\nPonowne kliknięcie w obszar rozwiniętego wiersza powoduje zwinięcie dodatkowych informacji.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Kredyty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Kredyty.adoc",
+      "line_start": 199,
+      "line_end": 260
+    }
+  ]
+}

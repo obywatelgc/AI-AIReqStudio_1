@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000229",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Przelewy"
+    },
+    {
+      "level": 4,
+      "title": "Zlecenie przelewu płatności VAT"
+    }
+  ],
+  "section_title": "Zlecenie przelewu płatności VAT",
+  "text": "Na formatce przelewu zwykłego opisanego w rozdziale Zlecenie przelewu zwykłego krajowego, istnieje możliwość zlecenia przelewu VAT. Przelew VAT możliwy jest wyłącznie z rachunku bieżącego, który powiązany jest z rachunkiem VAT. W przypadku, gdy wskazany rachunek do obciążenia jest powiązany z rachunkiem VAT na formatce pojawia się checkbox *Przelew VAT*. Zaznaczenie checkboxa udostępnia dodatkowe pola dedykowane dla przelewu VAT:\n\n* *Rachunek VAT* - informacja o rachunku VAT powiązanym z rachunkiem bieżącym + saldo rachunku VAT,\n\n* *Kwota VAT* - wartość kwoty VAT w walucie PLN,\n\n* *Identyfikator podatkowy* - identyfikator podatkowy dostawcy towaru lub usługodawcy, na rzecz którego realizowana jest faktura, pole wymagalne,\n\n* *Numer faktury -* numer identyfikujący opłacaną fakturę, maksymalna ilość znaków w polu wynosi 35, pole wymagane.\n\nimage::Przelewy/image29.png[image,width=539,height=623]\n\nW przypadku, gdy wskazany rachunek do obciążenia nie jest powiązany z rachunkiem VAT wybranie opcji _Przelew VAT_ nie jest możliwe.\n\nW celu zapisania przelewu VAT Użytkownik wybiera jedną z dostępnych opcji na ekranie:\n\n* [DALEJ] - przejście do kroku 2 (walidacje danych itd.),\n\n* [DODAJ DO LISTY ZLECEŃ] - przycisk umożliwia dodanie przelewu do listy zleceń.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 468,
+      "line_end": 488
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "chunk_id": "DOC-000013",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Logowanie do systemu"
+    },
+    {
+      "level": 4,
+      "title": "Logowanie do systemu za pomocą aplikacji mobilnej Asseco BSGo"
+    },
+    {
+      "level": 5,
+      "title": "Pierwsze logowanie wraz z rejestracją urządzenia"
+    },
+    {
+      "level": 6,
+      "title": "Proces parowania urządzenia podczas pierwszego logowania w aplikacji BSGo"
+    }
+  ],
+  "section_title": "Proces parowania urządzenia podczas pierwszego logowania w aplikacji BSGo",
+  "text": "Proces parowania urządzenia podczas pierwszego logowania w aplikacji BSGo odbywa się w następujący sposób:\n\n* Użytkownik otwiera zainstalowaną aplikację Asseco BSGo na telefonie. Przy pierwszym otwarciu aplikacji okno wyświetla formatkę rejestracji urządzenia. W momencie wygenerowania przez system kodu aktywacyjnego, Użytkownik przechodzi do kolejnego kroku za pomocą przycisku [POSIADAM KOD AKTYWACYJNY],\n\nimage::main/image8.png[]\n\n* Użytkownik wpisuje kod wyświetlony przez system Asseco EBP i przechodzi do kolejnego okna za pomocą przycisku [DALEJ] w aplikacji Asseco BSGo,\n\nimage::main/image9.png[]\n\nJeżeli Użytkownik nie posiada kodu PIN i wybierze opcje [NIE POSIADAM KODU], zostanie zaprezentowana informacja:\n\nimage::main/image9a.png[]\n\n* Użytkownik wpisuje kod weryfikacyjny, przesłany za pomocą SMS,\n\nimage::main/image10.png[]\n\nJeśli Użytkownik nie otrzyma wiadomosci sms, należy użyć opcji [SMS NIE DOTARŁ]. Użytkownik zostanie przeniesiony do okna, gdzię będzie mógł rozpocząć proces ponownego parowania urządzenia. W tym celu należy wybrać przycisk [ROZPOCZNIJ PROCES PONOWNIE]. Następnie w aplikacji Asseco EBP należy przejść do strony logowania, wpisać login i hasło. Kolejne kroki są identyczne jak podczas pierwszego parowania urządzenia.\n\n* Następnie użytkownik przechodzi do nadania PINu za pomocą przycisku [NADAJ PIN].\n\nimage::main/image10a.png[]\n\n* Użytkownik podaje PIN, który będzie służył do logowania do aplikacji Asseco BSGo oraz autoryzacji zdarzeń. PIN powinien składać składać się z minimum 5 cyfr.\n\nimage::main/image11.png[]\n\n* Użytkownik ponownie wprowadza PIN,\n\nimage::main/image12.png[]\n\n* Następnie Użytkownik zostanie poproszony o wybór sposobu logowania:\n** wybór opcji za pomocą danych biometrycznych spowoduje autentykację logowania za pomocą odcisku palca,\n** wybór na nie, będzie wymagał od użytkownika podania PINu podczas logowania.\n\nimage::main/image12a.png[]\n\nPo pozytywnym przejściu procesu parowania urządzenia, aplikacja Asseco BSGo wyświetla okno z komunikatem:\n\nimage::main/image13.png[]\n\nUżytkownik zostaje zalogowany do bakowości internetowej w systemie Asseco EBP oraz może zalogować się do aplikacji Asseco BSGo.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 155,
+      "line_end": 199
+    }
+  ]
+}

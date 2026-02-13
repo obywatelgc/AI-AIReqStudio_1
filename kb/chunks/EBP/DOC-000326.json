@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000326",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Wystawienie e-Faktury"
+    },
+    {
+      "level": 4,
+      "title": "Faktura korygująca - korekta zbiorcza"
+    }
+  ],
+  "section_title": "Faktura korygująca - korekta zbiorcza",
+  "text": "Na formularzu nowej faktury korygującej - korekta zbiorcza dostępne są następujące sekcje:\n\n\n* *Dane faktury korygowanej*\n* *Dane identyfikacyjne faktury korygowanej*\n\nimage::e-Faktury(KSeF)/fv_kor_zbiorcza_dane.png[]\n\n* *Nabywca* - dane nabywcy faktury przed i po korekcie (jeżeli uległy zmianie)\n\nimage::e-Faktury(KSeF)/fv_kor_pod_nabywca.png[]\n\n\n* *Sprzedawca* -  dane sprzedawcy faktury przed i po korekcie( jeżeli uległu zmianie) -  domyślnie uzupełnione danymi użytkownika zalogowanego do systemu\n\nimage::e-Faktury(KSeF)/fv_kor_pod_sprzedawca.png[]\n\n* *Szczegóły faktury* - informacje dotyczące numeru faktury, dacie wystawinia itp.\n\nimage::e-Faktury(KSeF)/fv_kor_zbiorcza_szczegoly.png[]\n\n\n* *Rabat* - wartość udzielonego rabatu\n\nimage::e-Faktury(KSeF)/fv_kor_zbiorcza_tavat.png[]\n\nAby wprowadzić nowy lub kolejny rabat na fakturze należy wybrać przycisk [Dodaj nowy rabat] lub odpowiednio [Dodaj kolejny rabat] i uzupełnić dane nowego rabatu.\n\nimage::e-Faktury(KSeF)/fv_kor_zbiorcza_rabat_dodaj.png[]\n\nKażdy dodany rabat na fakturze użytownik może edytować lub usunąć poprzez wybranie przycisku [Usuń], [Edytuj] dostępnych po rozwinięciu szegółów wybranego rabatu.\n\nimage::e-Faktury(KSeF)/fv_kor_zbior_rabat_edycja_usun.png[]\n\n* *Towary i usługi* - użytkownik okrśla czy rabat dotyczy wszystkich towarów i usług na rzecz dango nabywcy w danym okresie. W przypadku gdy rabat nie dotyczy wszystkich towarów i usług, użytkownik musi uzupełnić listę pozycji na fakturze których dotyczy rabat - przycisk [Dodaj nową pozycję].\nDodane towary i usługi użytkownik może edytować i usuwać.\n\nimage::e-Faktury(KSeF)/fv_kor_zbiorcza_towary.png[]\n\n\n* *Adnotacje*\n\nimage::e-Faktury(KSeF)/fv_zal_adnotacje.png[]\n\n* *Płatności* -  informacja o ewentualnych dokonanych płatnościach za fakturę\n\nimage::e-Faktury(KSeF)/fv_zal_platnosci.png[]\n\n* *Dodatkowe informacje*\n\nimage::e-Faktury(KSeF)/fv_zal_dodatkowe_informacje.png[]\n\n* *Warunki transakcji*\n\nimage::e-Faktury(KSeF)/fv_zal_warunki_transakcji.png[]\n\n* *Pozostałe informacje na fakturze*\n\nimage::e-Faktury(KSeF)/fv_zal_pozostałe_inf.png[]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 828,
+      "line_end": 891
+    }
+  ]
+}

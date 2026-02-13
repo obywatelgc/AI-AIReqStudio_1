@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000282",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Autodealing"
+    },
+    {
+      "level": 3,
+      "title": "Autodealing"
+    }
+  ],
+  "section_title": "Autodealing",
+  "text": "System Asseco EBP zapewnia Użytkownikowi dostęp do systemu zewnętrznego Autodealing z dwóch głównych poziomów:\n\n* widżetu *Autodealing* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),\n\nimage::Autodealing/image1.png[image,width=276,height=180]\n\n* menu bocznego po wybraniu opcji _Autodealing_.\n\nimage::Autodealing/image2.png[image,width=155,height=427]\n\nPo kliknięciu w odnośnik [URUCHOM AUTODEALING] na widżecie *Autodealing* lub poprzez wybór opcji z bocznego menu _Autodealing_ zostanie wyświetlona formatka z listą Użytkowników umożliwiająca skorzystanie z dedykowanej oferty stworzonej na Platformie Autodealing. Dodatkowo dostępny jest przycisk [URUCHOM] umożliwiający uruchomienie systemu zewnętrznego Autodealing.\n\nimage::Autodealing/image3.png[image,width=604,height=85]\n\nW przypadku, gdy Użytkownik reprezentuje więcej niż jednego klienta, na formularzu Autodealing prezentowana jest lista klientów do których zalogowany Użytkownik jest uprawniony wraz z przyciskiem [URUCHOM], który jest dostępny odrębnie dla każdego klienta. W takiej sytuacji Użytkownik ma możliwość uruchomienia systemu zewnętrznego Autodealing w kontekście wskazanego klienta.\n\nimage::Autodealing/image4.png[image,width=603,height=115]\n\nUruchomienie systemu zewnętrznego Autodealing, następuje w osobnym oknie przeglądarki bez potrzeby jawnego (dane nie są wprowadzane przez Użytkownika) uwierzytelnienia Użytkownika przez system Autodealing, przy założeniu, że Użytkownik jest zalogowany do systemu Asseco EBP.\n\nDo poprawnego połączenia z systemem Autodealing wymagana jest parametryzacja w systemie BackOffice (zgodnie z dokumentacją Użytkownika BackOffice).\n\nGenerowanie linku do systemu Autodealing odbywa się, gdy Użytkownik spełni następujące warunki:\n\n* ma przypisany identyfikator systemu Autodealing (userId),\n* status weryfikacji Użytkownika w systemie Autodealing jest pozytywny,\n* w parametrach systemu Asseco BackOffice zdefiniowana jest nazwa systemu Autodealing oraz poprawny URL do systemu Autodealing,\n* zostanie poprawnie wygenerowany tokenSSO.\n\nPo autentykacji Użytkownika w systemie Autodealing nie będzie bieżącej kontroli sesji w systemie Asseco EBP, czyli możliwe będzie korzystanie przez klienta z systemu Autodealing, niezależnie od zamknięcia systemu Asseco EBP lub wygaśnięcia sesji systemu Asseco EBP, aż do czasu wygaśnięcia ważności tokenaSSO.\n\nW przypadku, gdy Użytkownik nie posiada dostępu do usługi w Autodealing (w systemie Asseco BackOffice dla Użytkownika nie ustawiono identyfikatora lub status weryfikacji jest nieprawidłowy) po wyborze opcji zostanie zaprezentowany komunikat jak na poniższym ekranie.\n\nimage::Autodealing/image5.png[image,width=540,height=329]\n\nW sytuacji, gdy platforma Autodealing jest czasowo niedostępna, po wyborze opcji [URUCHOM], zostanie zaprezentowany Użytkownikowi następujący komunikat „_Usługa chwilowo niedostępna\"_.\n\nimage::Autodealing/image6.png[image,width=538,height=312]\n\nDostępne opcje:\n\n* [OK] – po naciśnięciu następuje powrót do głównego menu.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Autodealing.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Autodealing.adoc",
+      "line_start": 22,
+      "line_end": 65
+    }
+  ]
+}

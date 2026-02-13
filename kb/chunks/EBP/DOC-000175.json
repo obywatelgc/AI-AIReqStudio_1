@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000175",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista przelewów - opis wybranych akcji"
+    },
+    {
+      "level": 4,
+      "title": "Wycofanie akceptu"
+    }
+  ],
+  "section_title": "Wycofanie akceptu",
+  "text": "Użytkownik ma możliwość wycofania akceptów dla dyspozycji przelewów z poziomu:\n\n* listy przelewów, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*), +\n* *panelu akcji zbiorczych* po uprzednim zaznaczeniu dyspozycji, a następnie użyciu opcji *Wycofaj akcept*.\n\nSystem zaprezentuje okno z pytaniem czy wycofać akcepty.\n\nimage::Lista_zlecen/image18.png[image,width=568,height=247]\n\nPo zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia.\n\nimage::Lista_zlecen/image19.png[image,width=557,height=315]\n\nWycofanie akceptów usuwa wszystkie podpisy oraz ustawia status dyspozycji przelewów na _Nowy._\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 324,
+      "line_end": 339
+    }
+  ]
+}

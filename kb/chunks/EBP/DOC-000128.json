@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000128",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (Visiona)"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie wyciągów z rachunku karty kredytowej"
+    }
+  ],
+  "section_title": "Przeglądanie wyciągów z rachunku karty kredytowej",
+  "text": "Aby przeglądnąć listę wyciągów danej karty należy na formularzu KARTY kliknąć w obszar karty, a następnie wybrać opcję [WYCIĄGI].\n\nLista wyciągów jest stronicowana, Użytkownik ma możliwość przejścia do kolejnych stron za pomocą przycisków nawigacji znajdujących się w dolnej części formularza.\n\nimage::Karty/image42.png[image,width=604,height=280]\n\nW celu zawężenia prezentacji listy wyciągów, system umożliwia zastosowanie filtra zaawansowanego za pomocą przycisku [POKAŻ FILTRY]:\n\nimage::Karty/image43.png[image,width=604,height=154]\n\nUżytkownik ma możliwość ustawienia filtru zaawansowanego dla następujących pól:\n\n* *Ostatnie* – liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana lista wyciągów, domyślnie 30 dni,\n* *Zakres dat* – zakres dat, dla których ma zostać wyświetlona lista wyciągów, od miesiąca wstecz do daty bieżącej. Alternatywa dla pola *Ostatnie*. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą którego można określić zakres dat.\n\nimage::Karty/image33.png[image,width=323,height=335]\n\nZastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].\n\nPo kliknięciu w obszar danego wyciągu system rozwija wiersz i pojawia się przycisk [POBIERZ], za pomocą którego Użytkownik ma możliwość pobrania konkretnego wyciągu karty w formacie PDF.\n\nimage::Karty/image44.png[image,width=604,height=137]\n\nW przypadku braku wyciągów prezentowany jest komunikat: \"Brak wyciągów do wyświetlenia\".\n\nimage::Karty/image45.png[image,width=604,height=120]\n\nW górnej część formularza dostępne są przyciski:\n\n* image:Karty/image36.png[image,width=45,height=53] – umożliwiający powrót do formularza KARTY,\n* image:Karty/image37.png[image,width=48,height=61]– umożliwiający przejście do pulpitu.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 399,
+      "line_end": 431
+    }
+  ]
+}

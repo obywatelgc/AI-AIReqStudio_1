@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000354",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktury plików importu szablonów"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie XML"
+    }
+  ],
+  "section_title": "Plik w formacie XML",
+  "text": "Dla pliku szablonów w formacie XML dozwolone jest stosowanie następujących tagów:\n\n[cols=\"3,5\",options=\"header\",]\n|===========================================================\n|Tagi |Opis\n|<kontrahenci></kontrahenci>|Otwiera i zamyka format importu w XML.\n|<kontrahent></kontrahent> |Otwiera i zamyka dane dla jednego szablonu.\n|<nazwa_kr></nazwa_kr>\t|Nazwa krótka kontrahenta.\n|<nazwa></nazwa>\t|Nazwa pełna kontrahenta.\n|<rachunek></rachunek>|Numer rachunku kontrahenta.\n|===========================================================\n\nKażde powtórzenie tagów <kontrahent> ... </kontrahent> oznacza dane nowego szablonu.\n\nWARNING: Nazwy tagów w opisie struktury powinny być pisane małymi literami. Kolejność poszczególnych tagów w pliku musi być zachowana.\n\n[underline]##Przykładowa zawartość pliku importu szablonów w formacie XML:##\n\n[source, xml]\n----\n<?xml version=\"1.0\" encoding=\"iso-8859-2\"?>\n<kontrahenci>\n<kontrahent>\n<nazwa_kr>TEST</nazwa_kr>\n<nazwa>ZAKLAD TESTOWY</nazwa>\n<rachunek>51101010231234567890123456</rachunek>\n</kontrahent>\n<kontrahent>\n<nazwa_kr>KLIENT</nazwa_kr>\n<nazwa>KLIENT TESTOWY|UL. TESTOWA 11|MIASTO</nazwa>\n<rachunek>48835500091234567890123456</rachunek>\n</kontrahent>\n</kontrahenci>\n----\n\n[underline]##Przykładowa zawartość pliku importu szablonów w formacie XML:##\n\n[source, xml]\n----\n<?xml version=\"1.0\" encoding=\"iso-8859-2\"?>\n<kontrahenci>\n<kontrahent>\n<nazwa_kr>TEST117</nazwa_kr>\n<rachunek>55132000061234567890123456</rachunek>\n<nazwa>Janina Testowa</nazwa>\n<kwota>5.50</kwota>\n<tresc>/VAT/1.00/IDC/Popr ident1234/INV/Faktura12345678901234567890/TXT/tytuł12345678901234567890</tresc>\n</kontrahent>\n</kontrahenci>\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 1949,
+      "line_end": 2000
+    }
+  ]
+}

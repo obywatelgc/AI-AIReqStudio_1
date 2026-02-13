@@ -1,0 +1,24 @@
+{
+  "chunk_id": "DOC-000262",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Płatności Masowe"
+    }
+  ],
+  "section_title": "Płatności Masowe",
+  "text": "Miniaplikacja *PŁATNOŚCI MASOWE* zapewnia dostęp do raportów i historii wpłat na rachunki wirtualne rachunku masowego.\n\nSystem Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Płatności masowe* menu *bocznego* po wybraniu opcji _Płatności masowe._\n\nimage::Platnosci_Masowe/image2.png[image,width=177,height=50]\n\nUżytkownik posiadający dostęp do miniaplikacji *Płatności masowe* ma możliwość:\n\n* wyświetlenia szczegółów rachunku,\n* wyświetlenia analityki dla rachunku masowego.\n\nNOTE: Funkcjonalność płatności masowych dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia: do funkcjonalności i do rachunku. Uprawnienia ustawiane są przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.\n\nW ramach uprawnień do rachunków niezbędne jest uprawnienie do przeglądania rachunku.\n\nimage::Platnosci_Masowe/image3.png[image,width=604,height=240]\n\nW ramach uprawnień funkcjonalnych dostępne są uprawnienia do przeglądania, historii operacji oraz raportów.\n\nimage:Platnosci_Masowe/image5.png[image,width=604,height=287]\n\nW przypadku, gdy żaden z rachunków nie posiada rachunków wirtualnych system wyświetla komunikat:\n\nimage::Platnosci_Masowe/image6.png[image,width=604,height=179]\n\nW przypadku, gdy chociaż jeden rachunek posiada rachunki wirtualne, po wybraniu miniaplikacji *Płatności masowe* wyświetlany jest ekran z listą rachunków masowych, gdzie prezentowane są dane:\n\n* *Rachunek* - nazwa produktu lub nazwa własna rachunku (Użytkownik ma możliwość zmiany nazwy własnej zgodnie z funkcjonalnością miniaplikacji *Rachunki*) oraz numer rachunku,\n* *Saldo księgowe* - wyświetlana jest informacja o saldzie księgowym wraz z walutą,\n\n* *Dostępne środki –* wyświetlana jest informacja o dostępnych środkach na rachunku wraz z walutą.\n* *Podsumowanie strony -* gdzie znajdują się informacje dotyczące:\n\n** pod kolumną *Saldo księgowe –* suma salda księgowego łącznie dla wszystkich rachunków,\n** pod kolumną *Dostępne środki –* suma dostępnych środków łącznie dla wszystkich rachunków.\n\nJeżeli na liście znajdują się rachunki w różnych walutach, wówczas suma sald księgowych i dostępnych środków prezentowana jest oddzielnie dla każdej z walut.\n\nimage::Platnosci_Masowe/image7.png[image,width=604,height=243]\n\nW górnej części ekranu jest dostępna opcja, która umożliwia wpisanie kryteriów wyszukiwania rachunków masowych lub innych danych dostępnych na ekranie (np. kwota, waluta). Po wybraniu ikony image:Platnosci_Masowe/image8.png[image,width=56,height=53] znajdującej się nad listą, system umożliwia wpisanie danych.\n\nimage::Platnosci_Masowe/image9.png[image,width=360,height=58]\n\nSystem podczas wpisywania danych, według których ma następować wyszukiwanie, automatycznie zawęża listę prezentowanych rachunków, do tych, które spełniają wprowadzane kryteria. Aby powrócić do pełnej listy rachunków należy kliknąć w ikonę [X] w polu wyszukiwania.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Platnosci_Masowe.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Platnosci_Masowe.adoc",
+      "line_start": 4,
+      "line_end": 50
+    }
+  ]
+}

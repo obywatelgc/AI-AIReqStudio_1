@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000200",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Przekazanie paczek"
+    },
+    {
+      "level": 4,
+      "title": "Przekazanie pojedynczej paczki do realizacji"
+    }
+  ],
+  "section_title": "Przekazanie pojedynczej paczki do realizacji",
+  "text": "Przekazanie do realizacji paczki może być wykonane z poziomu:\n\n* listy paczek, po kliknięciu w wiersz wybranej paczki (*panel akcji pojedynczych*),\n\n* szczegółów paczki,\n\na następnie użyciu opcji *Przekaż do realizacji*.\n\nSystem weryfikuje limit transakcji – dzienny limit kwotowy jaki Użytkownik może zrealizować. Następnie zaprezentuje okno z pytaniem, czy przekazać dyspozycję do realizacji. Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia.\n\nPrzekazana paczka otrzymuje status _Przekazana do realizacji_.\n\nNOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do przekazywania paczek. Przekazywanie dostępne jest dla statusu _Gotowa do przekazania_.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 839,
+      "line_end": 853
+    }
+  ]
+}

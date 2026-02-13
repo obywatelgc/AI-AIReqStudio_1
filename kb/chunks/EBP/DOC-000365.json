@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000365",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu operacji z historii rachunku"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie MT940 SABA"
+    }
+  ],
+  "section_title": "Plik w formacie MT940 SABA",
+  "text": "i w formacie MT940 SABA:##\n\n[source, txt]\n----\n\n:20:MT940\n:25:/PL22880900052001000267780001\n:28C:00123\n:60F:C180817PLN13875,48\n:61:1808170817C0,66N2018081716NONREF//\n:86:020~002018081716~20rozlicz.odsetek~21~22~23~24~25~3088090005~3103880900054001000267780059~32KOWALSKA ULA~33~38~60PROWIZJA:~62~63SWRK\n:61:1808170817D0,02N2018081784NONREF//\n:86:020~002018081784~20ZS codzinne~21~22~23~24~25~3011300007~3153113000075115048273285530~32x~33~38~60PROWIZJA:~62~63SWRK\n:61:1808170817D11,57N2018081785NONREF//\n:86:020~002018081785~20przelew środków ZS regres~21~22~23~24~25~3011300007~3153113000075115048273285530~32maria kopernika 12/19 12-028 │Łódź~33~38~60PROWIZJA:~62~63SWRK\n:61:1808170817D8,25N2018081786NONREF//\n:86:020~002018081786~20przelew środków~21~22~23~24~25~3011300007~3153113000075115048273285530~32maria kopernika 12/19 12-028 │Łódź~33~38~60PROWIZJA:~62~63SWRK\n:62F:C180817PLN13856,30\n:64:C180817PLN13856,30\n\n\n\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 2699,
+      "line_end": 2847
+    }
+  ]
+}

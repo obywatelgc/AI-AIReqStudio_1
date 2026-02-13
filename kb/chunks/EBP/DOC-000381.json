@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000381",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu wyciągów"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie MT940/MultiCash (format CEB)"
+    }
+  ],
+  "section_title": "Plik w formacie MT940/MultiCash (format CEB)",
+  "text": "Plik eksportu wyciągów w formacie MT940/Multicash (format CEB) ma skład taki jak format MT940/MC, jedyną różnicą jest brak sekcji: FMSCNONREF //NUMER_PORZADKOWY.\n\nEtykieta :61: dla formatu MT940/MultiCash (format CEB):\n\n[cols=\"2,6,3,10\",options=\"header\",]\n|====================\n|*Etykieta* |*Nazwa* |*Format* |*Opis*\n\n.6+<.^|:61: .6+<.^|Szczegóły każdej operacji. <.^|6!n4!n2a15d\n|Format całego pola - łącznie do 27 znaków (nie wliczając znaków nowej linii). Poniżej znajduje się opis w rozbiciu na poszczególne sekcje.\n|6!n |Data waluty w formacie RRMMDD.\n|4!n|Data księgowania w formacie MMDD.\n|2a |Strona księgowania C/RC/D/RD\n|15d |Kwota operacji.\n\n|[underline]##Przykład:## | ‘**:61:**1803310331D1,00’\n\n|====================\n\n[underline]##Przykład pliku eksportu wyciągów w formacie MT940/MulltiCash (format CEB):##\n\n[source, txt]\n----\n:20:180331/27801\n:25:PL44880900052001000278010001\n:28C:1803377\n:60F:C180331PLN45022,71\n:61:1803310331D1,11\n:86:<101\n<20tytul\n<27testowy\n<3087971026\n<315820666365012086\n<3891879710265820666365012086\n:61:1803310331D1,11\n:86:<102\n<20tytul\n<27testowy\n<3087971026\n<315820666365012086\n<3891879710265820666365012086\n:61:1803310331D7,54\n:86:<103\n<20pr.od prz.\n<27FIRMA TEST\n<30\n<31\n:61:1803310331D3,11\n:86:<104\n<20prow.za zlec.st.\n<27FIRMA TEST\n<30\n<31\n:61:1803310331C0,01\n:86:<105\n<20przeksieg.ods.Ma\n<27FIRMA TEST\n<3088090005\n<312001000278010002\n<3817880900052001000278010002\n:62F:C180331PLN45009,85\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 4389,
+      "line_end": 4452
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000357",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktury plików importu szablonów przelewów walutowych"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie XML"
+    }
+  ],
+  "section_title": "Plik w formacie XML",
+  "text": "Dla pliku szablonów w formacie XML dozwolone jest stosowanie następujących tagów:\n\n[cols=\"3,5\",options=\"header\",]\n|===========================================================\n|Tagi |Opis\n|<kontrahenci></kontrahenci>|Otwiera i zamyka format importu w XML.\n|<kontrahent></kontrahent> |Otwiera i zamyka dane dla jednego szablonu.\n|<nazwa_kr></nazwa_kr>\t|Nazwa szablonu - maksymalna ilość znaków w polu wynosi 20. Pole obowiązkowe i unikalne.\n|<nazwa></nazwa> |Nazwa odbiorcy - pole obowiązkowe.\n|<rachunek></rachunek>|Numer rachunku odbiorcy - pole obowiazkowe.\n|<waluta></waluta> |Waluta przelewu w szablonie - pole opcjonalne. Podawany jest kod waluty np. PLN, EUR, USD itd.\n|<swift></swift> |Kod SWIFT odbiorcy zagranicznego - pole opcjonalne. Alernatywnie może zostać użyty tag </kod_swift>, jednakże tag <swift> ma pierwszeństwo w interpretacji.\n|<tresc></tresc> |Tytuł przelewu w szablonie. Pole opcjonalne.\n|<koszty></koszty> | Opcja kosztów, dozwolone wartości: OUR/BEN/SHA. Pole nie jest wymagane. W przypadku braku tagu w pliku importu po zaimportowaniu przelewu wstawiana jest wartosc SHA.\n|===========================================================\n\nKażde powtórzenie tagów <kontrahent> ... </kontrahent> oznacza dane nowy szablon.\nZamiast tagu <nazwa> mogą występować tagi <nazwa1>, <nazwa2>, <nazwa3>, <nazwa4>.\nW przypadku obecności tagu <nazwa1>, tag <nazwa> będzie ignorowany. W przypadku braku tagu <nazwa1> dane będą w całości brane z tagu <nazwa>.\nAnalogicznie zamiast tagu <tresc> mogą występować tagi <tresc1>, <tresc2>, <tresc3> oraz <tresc4>.W przypadku obecności tagu <tresc1>, tag <tresc> będzie ignorowany.\nW przypadku braku tagu <tresc1> dane będą w całości brane z tagu <tresc>.\n\nWARNING: Nazwy tagów w opisie struktury powinny być pisane małymi literami. K W przypadku, gdy parametr IMPORTS_XML_CASE_SENSITIVE jest włączony, system Asseco EBP weryfikuje wielkość liter w tagach. Kolejność poszczególnych tagów w pliku nie musi być zachowana. Dozwolone jest zastosowanie tagów <nr_odb>, <typ> oraz <limit_zlec_j> jednak wartości zdefiniowane w tagach będą ignorowane przez system Asseco EBP.\n\n[underline]##Przykładowa zawartość pliku importu szablonów przelewów walutowych w formacie XML:##\n\n[source, xml]\n----\n<?xml version=\"1.0\" encoding=\"iso-8859-2\"?>\n<kontrahenci>\n<kontrahent>\n<nazwa_kr>Zagraniczny</nazwa_kr>\n<nazwa>ZAKLAD TESTOWY</nazwa>\n<rachunek>51101010231234567890123456</rachunek>\n<kwota>10.40</kwota>\n<waluta>USD</waluta>\n<swift>DRESDEFF350</swift>\n<tresc>oplata testowa</tresc>\n<koszty>SHA</koszty>\n</kontrahent>\n</kontrahenci>\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 2154,
+      "line_end": 2198
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000194",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Akceptacja paczek"
+    },
+    {
+      "level": 4,
+      "title": "Akceptacja pojedynczej paczki"
+    }
+  ],
+  "section_title": "Akceptacja pojedynczej paczki",
+  "text": "Akceptacja pojedynczej paczki może być wykonane z poziomu:\n\n* listy paczek, po kliknięciu w wiersz wybranej paczki (*panel akcji pojedynczych*),\n\n* szczegółów paczki,\n\na następnie użyciu opcji *Akceptuj*.\n\nimage::Lista_zlecen/image38.png[image,width=604,height=78]\n\nWybór opcji *Akceptuj* powoduje wyświetlenie szczegółów paczki wraz z sekcją do podpisu.\n\nUżytkownik ma możliwość od razu zaakceptować paczkę zdefiniowanym urządzeniem autoryzacyjnym, albo zanim to zrobi podejrzeć listę przelewów w paczce – opcja _Lista przelewów_. Powrót z listy przelewów kieruje ponownie na szczegóły paczki z sekcją do podpisu.\n\nProces akceptacji weryfikuje schemat akceptacji oraz limit kwotowy akceptacji.\n\nNOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do akceptowania paczek. Akceptowanie dostępne jest dla paczki o statusie _Nowa_.\n\nNOTE: W przypadku włączonej usługi recipientWhiteList dane kontrahenta dodatkowo podlegają weryfikacji wg <<akc-paczki-biala-lista-podatnikow,białej listy podatników VAT>>\n\n[[akc-paczki-biala-lista-podatnikow]]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 713,
+      "line_end": 734
+    }
+  ]
+}

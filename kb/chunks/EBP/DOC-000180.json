@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000180",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Paczki przelewów"
+    }
+  ],
+  "section_title": "Paczki przelewów",
+  "text": "Paczki przelewów to zbiór pogrupowanych przelewów w jedną całość. Obsługa paczek znajduje się w opcji _Lista zleceń_ w zakładce _Paczki przelewów_.\n\nSystem pozwala utworzyć paczki z poziomu:\n\n* Dyspozycji przelewów z _Listy zleceń_,\n\n* Importu przelewów w opcji _Przelewy_.\n\nFunkcjonalność _Listy paczek_ obejmuje następujące możliwości:\n\n* filtrowania,\n\n* wykonania akcji na wybranej paczce (*panel akcji pojedynczych*),\n\n* wykonania akcji na zaznaczonych paczkach (*panel akcji zbiorczych*).\n\nNOTE: Funkcjonalność paczek dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia do paczek.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 405,
+      "line_end": 423
+    }
+  ]
+}

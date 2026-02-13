@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000351",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktury plików importu przelewów walutowych"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie ISO20022"
+    }
+  ],
+  "section_title": "Plik w formacie ISO20022",
+  "text": "Struktura pliku:\n\nGroup Header (CstmrCdtTrfInitn/GrpHdr)\n\n* nagłówek, blok wymagany\n* występuje tylko raz\n* zawiera unikalny identyfikator pliku\n* zawiera informacje o zleceniodawcy, dacie utworzenia, ilości zleceń w pliku\n\nPayment Information (CstmrCdtTrfInitn/PmtInf)\n\n* blok wymagany\n* może wystąpić jeden lub wiele razy\n* zawiera informacje o grupie płatności, danych zleceniodawcy\n\nTransaction Information (CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf)\n\n* blok wymagany\n* może wystąpić jeden lub wiele razy\n* zawiera informacje o transferze oraz dane beneficjenta\n\nW treści zlecenia dopuszczalne są następujące znaki:\n- małe i wielkie litery,\n- cyfry,\n- znaki specjalne: / - ? : ( ) . , + spacja\n\nDla pozostałych typów zleceń pola nie mogą zawierać znaków: * ; “ ! | #\n\n[cols=\"3,5\",options=\"header\",]\n|===========================================================\n|Element w tabeli |Opis\n|Status|\nM - pole obowiązkowe\n\nO - pole opcjonalne\n\nC - pole warunkowe\n|Format\t|\nn – tylko cyfry (0-9)\n\na – dozwolone tylko litery\n\nx – dowolny znak\n\nc – dozwolone tylko litery i cyfry\n\nd – liczba dziesiętna\n\n! – stała długość\n\n[ ] – wartość opcjonalna\n|ISO Date\t|RRRR-MM-DD\n|ISO DateAndTime|RRRR-MM-DDThh:mm:ss\n|===========================================================\n\nWARNING: Importowane dane przelewów walutowych krajowych i zagranicznych nie będą podlegały walidacji biznesowej - przykładowo czy opcja kosztowa podana w pliku importu jest dostępna dla danej waluty. Przelew zostanie przekazany do realizacji zgodnie z danymi jakie zostały zawarte w pliku importu. W przypadku wprowadzenia błędnych danych przelew zostanie odrzucony przez system, a w przelewach zostanie oznaczony jako odrzucony.\n\nNOTE: Plik importu ISO20022 może zawierać wyłącznie jeden typ przelewów np. zwykłe, zagraniczne, podatku.\n\n*Specyfikacja pól w pliku ISO20022 dla przelewu SEPA*\n\n[width=\"100%\",cols=\"18%,8%,14%,37%,23%\",options=\"header\",]\n|===\n|*Nazwa elementu* |*Status* |*Format* |*Opis* |*Przykład*\n5+|<?xml version=”1.0” encoding=”utf-8”?>\n5+|<Document xmlns=”urn:iso:std:iso:20022:tech:xsd:pain.001.001.03” xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance”>\n|<CstmrCdtTrfInitn> 4+|\na|\n +<GrpHdr> 4+|\na|\n ++<MsgId> |M |35x |Identyfikator pliku płatności (weryfikacja duplikatów). Nie może zawierać spacji |\na|\n ++<CreDtTm> |M | |Data i czas utworzenia; RRRR-MM-DDTHH:MM:SS |2020-07-23T10:08:06\na|\n ++<NbOfTxs> |M |15d |Ilość zleceń w całym pliku |\na|\n ++<InitgPty> .5+<.^|O .5+<.^| .5+<.^|Kod identyfikacyjny zleceniodawcy .5+<.^|\na|\n +++Id\na|\n ++++PrvtId\na|\n +++++Othr\na|\n ++++++Id\na|\n +<PmtInf> 4+|\na|\n ++<PmtInfId> |M |35x |Identyfikator płatności |\na|\n ++<PmtMtd> |M |3!a |Typ operacji. Stała wartość TRF |TRF\na|\n ++<ReqdExctnDt> |M | |Data realizacji RRRR-MM-DD |\na|\n ++<Dbtr> ||||\na|\n +++<Nm> |M |70x |Nazwa instytucji zlecającej |\na|\n ++<DbtrAcct> .4+<.^|M .4+<.^|34x .4+<.^|Rachunek do obciążenia w formacie IBAN .4+<.^|PL30910100032002000015960001\na|\n +++<Id>\na|\n ++++Othr\na|\n +++++Id\na|\n ++<DbtrAgt> .2+<.^|M .2+<.^| .2+<.^| .2+<.^|\na|\n +++<FinInstnId>\na|\n +++<ChrgBr> |M |4!a |Stała wartość \"SLEV\" |SLEV\na|\n ++ChrgsAcct .4+<.^|O .4+<.^|2!a26!n .4+<.^|Rachunek dla opłat w formcie NRB. .4+<.^|\na|\n +++Id\na|\n ++++Othr\na|\n +++++Id\na|\n ++<CdtTrfTxInf> ||||\na|\n +++<PmtId> | | | |\na|\n ++++<EndToEndId> |M |35x |Referencje. |\na|\n +++<PmtTpInf> | | | |\na|\n ++++<SvcLvl> .2+<.^|C .2+<.^|4!a .2+<.^|Typ zlecenia - stała wartość SEPA .2+<.^|SEPA\na|\n +++++<Cd>\na|\n +++<Amt> .2+<.^|M .2+<.^| .2+<.^|Kwota zlecenia. Zamiast ciągu AAA podajemy walutę zlecenia zgodną z ISO 4217. .2+<.^|<InstdAmt Ccy=\"EUR\">5.00\na|\n ++++<InstdAmt Ccy=\"AAA\">\na|\n +++<Cdtr> | | | |\na|\n ++++<Nm> |M |70x |Nazwa beneficjenta. |\na|\n ++++<PstlAdr> | | | |\na|\n +++++<Ctry> |M |2!a |Kraj (wg ISO 3166) |PL\na|\n +++++<StrtNm> |O |45x |Nazwa ulicy |\na|\n +++++<BldgNb> |O |5x |Numer domu |\na|\n +++++<PstCd> |O |8x |Kod pocztowy |\na|\n +++++<TwnNm> |M |34x |Nazwa miejscowości |\na|\n +++++<UnitNb> |O |5x |Numer mieszkania |\na|\n +++<CdtrAcct> .4+<.^|M .4+<.^|26!n .4+<.^|Numer rachunku beneficjenta .4+<.^|49168000075544715806960993\na|\n ++++<Id>\na|\n +++++<Othr>\na|\n ++++++<Id>\na|\n +++<RmtInf> .2+<.^|M .2+<.^|140x .2+<.^|Tytuł zlecenia. .2+<.^|\na|\n ++++<Ustrd>\n|===\n\n[underline]##Przykładowa zawartość pliku importu przelewów walutowych SEPA w formacie ISO20022:##\n[source, xml]\n----\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.12\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n<CstmrCdtTrfInitn>\n  <GrpHdr>\n    <MsgId>145</MsgId>\n    <CreDtTm>2025-09-17T10:07:04</CreDtTm>\n    <NbOfTxs>1</NbOfTxs>\n    <InitgPty>\n      <Id>\n        <PrvtId>\n          <Othr>\n            <Id>Kod identyfikacyjny zleceniodawcy</Id>\n          </Othr>\n        </PrvtId>\n      </Id>\n    </InitgPty>\n  </GrpHdr>\n  <PmtInf>\n    <PmtInfId>2022</PmtInfId>\n    <PmtMtd>TRF</PmtMtd>\n    <ReqdExctnDt>2025-09-17</ReqdExctnDt>\n    <Dbtr>\n      <Nm>Firma Testowa Sp. z o.o. Sp.</Nm>\n    </Dbtr>\n    <DbtrAcct>\n      <Id>\n        <Othr>\n          <Id>PL30910100032002000015960001</Id>\n        </Othr>\n      </Id>\n    </DbtrAcct>\n    <DbtrAgt>\n      <FinInstnId>\n        <BICFI>POLUPLPRXXX</BICFI>\n      </FinInstnId>\n    </DbtrAgt>\n    <ChrgsAcct>\n      <Id>\n        <Othr>\n          <Id>30910100032002000015960001</Id>\n        </Othr>\n      </Id>\n    </ChrgsAcct>\n    <CdtTrfTxInf>\n      <PmtId>\n        <EndToEndId>REK/SEPA1</EndToEndId>\n      </PmtId>\n      <PmtTpInf>\n        <SvcLvl>\n          <Cd>SEPA</Cd>\n        </SvcLvl>\n      </PmtTpInf>\n      <Amt>\n        <InstdAmt Ccy=\"EUR\">222.80</InstdAmt>\n      </Amt>\n      <CdtrAgt>\n        <FinInstnId>\n          <BICFI>DEUTDEFFXXX</BICFI>\n        </FinInstnId>\n      </CdtrAgt>\n      <Cdtr>\n          <Nm>NAZWA ODBIORCY</Nm>\n          <PstlAdr>\n            <StrtNm>ULICA</StrtNm>\n            <BldgNb>321</BldgNb>\n            <PstCd>11-111</PstCd>\n            <TwnNm>MIEJSCOWOSC</TwnNm>\n\t\t\t<UnitNb>123</UnitNb>\n            <Ctry>DE</Ctry>\n          </PstlAdr>\n      </Cdt\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 1342,
+      "line_end": 1816
+    }
+  ]
+}

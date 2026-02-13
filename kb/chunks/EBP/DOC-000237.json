@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000237",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Przelewy"
+    },
+    {
+      "level": 4,
+      "title": "Nowy standard w formatach płatności"
+    }
+  ],
+  "section_title": "Nowy standard w formatach płatności",
+  "text": "Zmiany w sposobie wprowadzania danych adresowych odbiorcy podczas zlecania przelewu są uzależnione od parametryzacji banku.\n\nZmienią się m.in.:\n\n* *formatki przelewów krajowych i zagranicznych: SEPA, SWIFT* będą miały więcej pól do uzupełnienia,\n\n. Przelew zwykły Sorbnet – dane adresowe odbiorcy będą Państwo wpisywać w oddzielne pola (kod pocztowy, miasto, ulica, nr domu\n\nimage::Przelewy/imageiso01a.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=592,height=439]\n\n** *Uzupełnij lub zmień adres* - wypełnione z klawiatury (ulicę, nr domu, nr mieszkania, kod pocztowy, miejscowość); pole opcjonalne, jednak wskazanie miejscowości jest obowiązkowe.\n\n[start=2]\n. Przelew SEPA/SWIFT – dane adresowe odbiorcy będą Państwo wpisywać w oddzielne pola (kod pocztowy, miasto, ulica, nr domu\n\nimage::Przelewy/imageiso02a.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=592,height=439]\n\n** *Uzupełnij lub zmień adres* - wypełnione z klawiatury (ulicę, nr domu, nr mieszkania, kod pocztowy, miejscowość, kraj); pole jest opcjonalne, z wyjątkiem pól „Kraj” i „Miejscowość”, które są wymagane.\n\n[start=3]\n. Odbiorca z szablonu zwykły Sorbnet\n\nJeżeli użytkownik skorzysta z szablonu przelewu, w którym dane odbiorcy są niekompletne, system wyświetli komunikat informujący o brakujących informacjach oraz zaprezentuje formularz umożliwiający ich ponowne wprowadzenie.\n\nimage::Przelewy/imageiso03a.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=592,height=439]\n\noraz użycie opcji Uzupełnij lub zmień adres\n\nimage::Przelewy/imageiso03b.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=592,height=439]\n\n[start=4]\n. Odbiorca z szablonu walutowego\n\nJeżeli użytkownik skorzysta z szablonu przelewu, w którym dane odbiorcy są niekompletne, system wyświetli komunikat informujący o brakujących informacjach oraz zaprezentuje formularz umożliwiający ich ponowne wprowadzenie.\n\nimage::Przelewy/imageiso04a.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=592,height=439]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 801,
+      "line_end": 839
+    }
+  ]
+}

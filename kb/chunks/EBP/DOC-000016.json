@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000016",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Logowanie do systemu"
+    },
+    {
+      "level": 4,
+      "title": "Logowanie do systemu Asseco EBP przy pomocy karty mikroprocesorowej"
+    },
+    {
+      "level": 5,
+      "title": "Pierwsze logowanie do systemu Asseco EBP za pomocą karty mikroprocesorowej wraz z rejestracją urządzenia"
+    }
+  ],
+  "section_title": "Pierwsze logowanie do systemu Asseco EBP za pomocą karty mikroprocesorowej wraz z rejestracją urządzenia",
+  "text": "Proces pierwszego logowania za pomocą karty mikroprocesorowej do Asseco EBP przebiega w następujący sposób:\n\n* Użytkownik na formatce logowania wprowadza identyfikator i przechodzi do drugiego kroku naciskając przycisk [DALEJ].\n\nimage::main/image21.png[image,width=612,height=386]\n\n* Na drugim kroku logowania, zostaje zaprezentowana formatka oczekiwania na podpis z aplikacji e-Podpis. Wybór opcji [ZALOGUJ ZA POMOCĄ E-PODPISU] pozwala na pobranie, a następnie instalację aplikacji e-Podpis.\n\nimage::main/image21a.png[image,width=612,height=386]\n\n* Po zainstalowaniu i uruchomieniu aplikacji e-Podpis, Użytkownik powinien zostać w niej uwierzytelniony. W tym celu, na formatce  e-Podpisu, Użytkownik wpisuje PIN karty mikroprocesorowej, a następnie wybiera przycisk [PODPISZ].\n\nimage::main/image22.png[image,width=528,height=416]\n\n* Jeśli proces uwierzytelnienia w aplikacji e-Podpis zakończył się pomyślnie, Użytkownik loguje się do systemu Asseco EBP, podając  na formatce e-Podpisu kod weryfikacyjny z formatki logowania oraz PIN do karty.\n\nimage::main/image23.png[image,width=530,height=416]\n\n* Po poprawnym wprowadzeniu kodu weryfikacyjnego  oraz PINu, Użytkownik zostaje zalogowany do systemu Asseco EBP.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 304,
+      "line_end": 324
+    }
+  ]
+}

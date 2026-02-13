@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000208",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Podgląd szczegółów przelewu w paczce"
+    }
+  ],
+  "section_title": "Podgląd szczegółów przelewu w paczce",
+  "text": "Podgląd szczegółów przelewu dostępny jest z poziomu *panelu akcji pojedynczych*. Zakres prezentowanych danych zależy od typu przelewu.\n\nZ poziomu szczegółów przelewu Użytkownik ma możliwość podglądu informacji o akcjach jakie miały miejsce na danym zleceniu (np. utworzenie zlecenia). W tym celu należy wybrać przycisk [POKAŻ HISTORIĘ OPERACJI] prezentowany na dole formatki. System rejestruje oraz prezentuje akcje:\n\nimage::Lista_zlecen/image51.png[image,width=206,height=71]\n\n* utworzenia zlecenia,\n\n* akceptacji zlecenia,\n\n* edycji zlecenia,\n\n* przekazania do realizacji,\n\n* skopiowania zlecenia,\n\n* usunięcia zlecenia.\n\nSekcja zawiera informacje o imieniu, nazwisku Użytkownika, który daną akcję wykonał oraz dacie i godzinie, w której akcja nastąpiła.\n\nW sekcji prezentującej akcje dla przelewu informacje prezentowane są narastająco (najnowszy wpis jest umieszczony na górze listy).\n\nimage::Lista_zlecen/image52.png[image,width=541,height=236]\n\nKliknięcie [UKRYJ HISTORIĘ OPERACJI] chowa informacje o wykonanych akcjach.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 1007,
+      "line_end": 1033
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000319",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Wystawienie e-Faktury"
+    }
+  ],
+  "section_title": "Wystawienie e-Faktury",
+  "text": "Do wystawienia nowej faktury służy przycisk [Wprowadź fakturę] dostępny po naciśnięciu przycisku [Wystaw fakturę] w miniaplikacji faktury (KSeF).\n\nimage::e-Faktury(KSeF)/faktury_Wprowadz_fakture.png[]\n\n\nUżytkownik ma możliwość wprowadzenia faktury:\n\n* *Podstawowej* - domyślny ustawiony rodzaj faktury,\n* *Zaliczkowej*,\n* *Rozliczeniowej*,\n* *Korygującej - fakturę podstawową*,\n* *Korygującej - fakturę zaliczkową*,\n* *Korygującej - fakturę rozliczeniową*,\n* *Korygującej - korekta zbiorcza*.\n\n\nimage::e-Faktury(KSeF)/faktura_nowa_rodzaje.png[]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 491,
+      "line_end": 510
+    }
+  ]
+}

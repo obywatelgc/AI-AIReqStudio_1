@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000027",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Logowanie do systemu"
+    },
+    {
+      "level": 4,
+      "title": "Logowanie do systemu na urządzeniu mobilnym"
+    }
+  ],
+  "section_title": "Logowanie do systemu na urządzeniu mobilnym",
+  "text": "//F00543038\n\n[IMPORTANT]\n\nKlient po wejściu na stronę WWW bankowości na urządzeniu mobilnym z systemem Android i iOS, dodatkowo ma możliwość pobrania aplikacji BSGo ze sklepu. W tym celu na stronie logowania prezentowany jest popup i w zależności od systemu operacyjnego prowadzi albo do App Store, albo wyświetla linki do sklepów Google Play oraz Huawei App Gallery. Użytkownik po wybraniu właściwego sklepu z aplikacjami zostaje przekierowany pod adres umożliwiający pobranie aplikacji BSGo.\n\nimage::main/image236.png[]\n\nimage::main/image237.png[]\n\n[NOTE]\nPopup jest prezentowany tylko w przeglądarce internetowej na urządzeniach mobilnych.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 542,
+      "line_end": 560
+    }
+  ]
+}

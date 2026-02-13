@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000350",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktury plików importu przelewów zwykłych oraz podatku"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie ISO20022"
+    }
+  ],
+  "section_title": "Plik w formacie ISO20022",
+  "text": "zwa instytucji zlecającej |\na|\n ++<DbtrAcct> .4+<.^|M .4+<.^|34x .4+<.^|Rachunek do obciążenia w formacie IBAN .4+<.^|PL30910100032002000015960001\na|\n +++<Id>\na|\n ++++Othr\na|\n +++++Id\na|\n ++<DbtrAgt> .2+<.^|M .2+<.^| .2+<.^| .2+<.^|\na|\n +++<FinInstnId>\na|\n ++<CdtTrfTxInf> ||||\na|\n +++<PmtId> | | | |\na|\n ++++<EndToEndId> |M |35x |Referencje. |\na|\n +++<PmtTpInf> | | | |\na|\n ++++<CtgyPurp> .2+<.^|C .2+<.^|4!a .2+<.^|Kategoria zlecenia. Dopuszcza się kod:  ’TAXS’ – dla zleceń na rzecz Urzędów Skarbowych .2+<.^|TAXS\na|\n +++++<Cd>\na|\n +++<Amt> .2+<.^|M .2+<.^| .2+<.^|Kwota zlecenia. Zamiast ciągu AAA podajemy walutę zlecenia zgodną z ISO 4217. .2+<.^|<InstdAmt Ccy=\"PLN\">5.00\na|\n ++++<InstdAmt Ccy=\"AAA\">\na|\n +++<IntrmyAgt1> .5+<.^|M .5+<.^| .5+<.^|Identyfikator banku beneficjenta. .5+<.^|\na|\n ++++<FinInstnId>\na|\n +++++<ClrSysMmbId>\na|\n ++++++<ClrSysId>\na|\n +++++++<Cd>\na|\n +++<Cdtr> | | | |\na|\n ++++<Nm> |M |70x |Nazwa beneficjenta. |\na|\n ++++<PstlAdr> | | | |\na|\n +++++<Ctry> |C |2!a |Kraj (wg ISO 3166) |PL\na|\n +++++<AdrLine> |O |70x |Adres beneficjenta |\na|\n +++<CdtrAcct> .4+<.^|M .4+<.^|26!n .4+<.^|Numer rachunku beneficjenta w formacie NRB .4+<.^|49168000075544715806960993\na|\n ++++<Id>\na|\n +++++<Othr>\na|\n ++++++<Id>\na|\n +++<Tax> ||||\na|\n ++++<Dbtr> ||||\na|\n +++++<RegnId> |M | 1!x34x |\n\nIdentyfikator +\nPierwszy znak określa „Typ identyfikatora”: +\n- N - NIP +\n- P – PESEL +\n- R – Regon +\n- 1 – Dowód osobisty +\n- 2 – Paszport +\n- 3 – Inny dokument tożsamości +\nNastępne to wybrany identyfikator | N1285635927\na|\n ++++<Rcrd> ||||\na|\n +++++<Tp> |O | 35x |\nOkres: +\nPierwsza część pola to dwa znaki przeznaczone na „Rok” w formacie RR. +\nDruga część zawiera jeden znak – „Typ okresu”: +\n- M – oznacza miesiąc, +\n- P – oznacza półrocze, +\n- R – oznacza rok, +\n- K – oznacza kwartał, +\n- D – oznacza dekada, +\n- J - oznacza dzień. +\nTrzecia część zawiera „Numer okresu”. Gdy w „Typ okresu” przyjmuje wartość: +\n- R, pole to nie zawiera numeru okresu, +\n- P, w polu tym wymagane jest wypełnienie dwóch znaków wartościami 01 lub 02, +\n- K, w polu tym wymagane jest wypełnienie dwóch znaków wartościami 01, 02, 03 lub 04, +\n- M, w polu tym wymagane jest wypełnienie dwóch znaków wartościami 01-12, +\n- D, w polu tym wymagane jest wypełnienie pierwszych dwóch znaków wartościami 01, 02 lub 03, kolejnych dwóch wartościami z zakresu 01-12, +\n- J, w polu tym wymagane jest wypełnienie dwóch znaków wartościami z zakresu 01 – 31 oznaczających dzień, oraz kolejnych dwóch znaków wartości z zakresu 01 – 12 oznaczających miesiąc.\" |\na|\n +++++<FrmsCd> |M | 35x |Symbol formularza | VAT-7\na|\n +++<RmtInf> .2+<.^|O .2+<.^|140x .2+<.^|Tytuł zlecenia. Brak zastosowania. Można usunąć cały blok. .2+<.^|\na|\n ++++<Ustrd>\n|===\n\n[underline]##Przykładowa zawartość pliku importu przelewu podatkowego w formacie ISO20022:##\n\n[source, xml]\n----\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchemainstance\">\n  <CstmrCdtTrfInitn>\n    <GrpHdr>\n      <MsgId>145</MsgId>\n      <CreDtTm>2020-07-23T10:08:06</CreDtTm>\n      <NbOfTxs>1</NbOfTxs>\n      <InitgPty>\n        <Id>\n          <PrvtId>\n            <Othr>\n              <Id>Kod identyfikacyjny zleceniodawcy</Id>\n            </Othr>\n          </PrvtId>\n        </Id>\n      </InitgPty>\n    </GrpHdr>\n    <PmtInf>\n      <PmtInfId>3</PmtInfId>\n      <PmtMtd>TRF</PmtMtd>\n      <ReqdExctnDt>2023-03-25</ReqdExctnDt>\n      <Dbtr>\n        <Nm>Firma Testowa Sp. z o.o. Sp. k.</Nm>\n      </Dbtr>\n      <DbtrAcct>\n        <Id>\n          <Othr>\n            <Id>PL30910100032002000015960001</Id>\n          </Othr>\n        </Id>\n      </DbtrAcct>\n      <DbtrAgt>\n        <FinInstnId>\n        </FinInstnId>\n      </DbtrAgt>\n      <CdtTrfTxInf>\n        <PmtId>\n          <EndToEndId>US2</EndToEndId>\n        </PmtId>\n        <PmtTpInf>\n          <CtgyPurp>\n            <Cd>TAXS</Cd>\n          </CtgyPurp>\n        </PmtTpInf>\n        <Amt>\n          <InstdAmt Ccy=\"PLN\">5.00</InstdAmt>\n        </Amt>\n        <IntrmyAgt1>\n          <FinInstnId>\n            <ClrSysMmbId>\n              <ClrSysId>\n                <Cd>16800007</Cd>\n              </ClrSysId>\n              <MmbId>16800007</MmbId>\n            </ClrSysMmbId>\n          </FinInstnId>\n        </IntrmyAgt1>\n        <Cdtr>\n          <Nm>Urzad Skarbowy</Nm>\n          <PstlAdr>\n            <Ctry>PL</Ctry>\n            <AdrLine>Centrum Rozliczeniowe</AdrLine>\n          </PstlAdr>\n        </Cdtr>\n        <CdtrAcct>\n          <Id>\n            <Othr>\n              <Id>07101000712222174587369300</Id>\n            </Othr>\n          </Id>\n        </CdtrAcct>\n        <Tax>\n          <Dbtr>\n            <RegnId>P68121453864</RegnId>\n          </Dbtr>\n          <Rcrd>\n            <Tp>23M02</Tp>\n            <FrmsCd>VAT-7</FrmsCd>\n          </Rcrd>\n        </Tax>\n      </CdtTrfTxInf>\n    </PmtInf>\n  </CstmrCdtTrfInitn>\n</Document>\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 733,
+      "line_end": 1339
+    }
+  ]
+}

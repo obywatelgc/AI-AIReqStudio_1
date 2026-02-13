@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000169",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista przelewów - opis wybranych akcji"
+    },
+    {
+      "level": 4,
+      "title": "Anulowanie pojedynczego przelewu z Listy zleceń"
+    }
+  ],
+  "section_title": "Anulowanie pojedynczego przelewu z Listy zleceń",
+  "text": "Anulowanie przelewu z _Listy zleceń_ może być wykonane z poziomu:\n\n* listy przelewów, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*), wybraniu [DODATKOWE OPCJE], a następnie użyciu opcji *Anuluj*.\n\nWybór opcji *Anuluj* powoduje otwarcie okna, na którym wyświetlone są dane przelewu. Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia.\n\nimage::Lista_zlecen/image15.png[image,width=368,height=248]\n\nOperacja anulowania przelewu nie wymaga autoryzacji.\nAnulowane dyspozycje przelewów są widoczne na liście zleceń ze statusem _Anulowany_.\n\nNOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do usuwania przelewów. Anulowanie dostępne jest dla przelewu o statusie _Nowy_.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 223,
+      "line_end": 236
+    }
+  ]
+}

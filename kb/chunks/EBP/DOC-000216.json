@@ -1,0 +1,24 @@
+{
+  "chunk_id": "DOC-000216",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    }
+  ],
+  "section_title": "Przelewy",
+  "text": "Miniaplikacja *Przelewy* zapewnia możliwość tworzenia nowych przelewów oraz dostęp do listy przelewów oczekujących na realizację (w tym również zleceń stałych) wraz z dostępem do ich szczegółowych danych, do których uprawniony jest Użytkownik.\n\nSystem Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Przelewy* z dwóch głównych poziomów:\n\n* widżetu *Przelewy* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),\n\nimage::Przelewy/image1.png[image,width=301,height=433]\n\n* menu bocznego po wybraniu opcji *Przelewy*.\n\nimage::Przelewy/image2.png[image,width=156,height=56]\n\nW każdym z poziomów miniaplikacji dla Użytkownika dostępne są formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach. Z poziomu formatek Użytkownik może wykonać wskazane akcje.\n\nUżytkownik posiadający dostęp do miniaplikacji *Przelewy* ma możliwość:\n\n* przeglądania przelewów zaplanowanych,\n\n* przeglądania szczegółów przelewu,\n\n* zlecenia przelewu zwykłego,\n\n* zlecenia przelewu na rachunek własny,\n\n* zlecenia przelewu podatku,\n\n* zlecenia przelewu walutowego (SWIFT),\n\n* anulowania przelewu odroczonego,\n\n* modyfikacji przelewu odroczonego,\n\n* przeglądania listy szablonów przelewów,\n\n* przeglądania szczegółów szablonu przelewu,\n\n* dodania szablonu przelewu,\n\n* modyfikacji danych szablonu,\n\n* usunięcia szablonu przelewu.\n\nNOTE: Funkcjonalność przelewów dostępna jest dla Użytkownika kontekstu firmowego, który posiada odpowiednie uprawnienia do przelewów i akcji z nimi związanych. Uprawnienia ustawiane są przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 4,
+      "line_end": 48
+    }
+  ]
+}

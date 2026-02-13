@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000162",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista przelewów - panel akcji pojedynczych dla przelewu"
+    }
+  ],
+  "section_title": "Lista przelewów - panel akcji pojedynczych dla przelewu",
+  "text": "Dla każdego przelewu z listy (po kliknięciu w wiersz) dostępny jest określony zestaw akcji (*panel akcji pojedynczych* - przyciski: [AKCEPTUJ] i [DODATKOWE OPCJE]).\n\nimage::Lista_zlecen/image7.png[image,width=309,height=84]\n\nPoniżej znajduje się zestaw akcji w przypadku gdy Użytkownik posiada odpowiednie uprawnienia nadane przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.\n\nimage::Lista_zlecen/image8.png[image,width=604,height=220]\n\nAkcje na wybranej dyspozycji przelewu:\n\n* *Akceptuj* - autoryzacja dyspozycji przelewu (tylko dla dyspozycji w statusie _Nowy, Do akceptacji_), +\n* *Przekaż do realizacji* - przekazanie dyspozycji przelewu do realizacji (tylko dla dyspozycji w statusie _Gotowy do przekazania_), +\n* *Dodaj do paczki* - dodanie dyspozycji przelewu do istniejącej paczki (tylko dla dyspozycji w statusie _Nowy_), +\n* *Szczegóły* – prezentacja szczegółów przelewu, +\n* *Kopiuj* - skopiowanie dyspozycji przelewu (dla statusów: _Nowy, W akceptacji, Do akceptacji, Gotowa do przekazania, Przekazana do realizacji_), +\n* *Edytuj* - edycja danych dyspozycji przelewu (tylko dla dyspozycji w statusie _Nowy_), +\n* *Anuluj* - anulowanie dyspozycji przelewu (tylko dla dyspozycji w statusie _Nowy_), +\n* *Wycofaj akcept* - wycofanie akceptów dyspozycji przelewu (tylko dla dyspozycji w statusie _Do akceptacji, W akceptacji, Gotowy do przekazania_).\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 100,
+      "line_end": 119
+    }
+  ]
+}

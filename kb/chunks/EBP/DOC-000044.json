@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000044",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Ustawienia importu i eksportu"
+    },
+    {
+      "level": 5,
+      "title": "Import opisu struktury"
+    }
+  ],
+  "section_title": "Import opisu struktury",
+  "text": "W przypadku ustawienia formatu importu/eksportu na wartość Liniowy konieczne jest zaimportowanie pliku z zapisaną strukturą formatu schema.ini.\n\nW tym celu należy:\n\n* kliknąć w przycisk [IMPORT STRUKTURY],\n\nimage::main/image96.png[image,width=593,height=96]\n\n* używając przycisku [WYBIERZ PLIK] należy wskazać lokalizację i nazwę pliku do importu,\n\nimage::main/image97.png[image,width=580,height=98]\n\n* uruchomić import przyciskiem [DALEJ], odnośnik [ZMIEŃ] umożliwia zmianę wcześniej wybranego pliku importu,\n\nimage::main/image98.png[image,width=580,height=122]\n\nPo poprawnym zaimportowaniu struktury zostanie zaprezentowany komunikat _Opis struktury został_ _zaimportowany._\n\nimage::main/image99.png[image,width=443,height=257]\n\nDla poprawnie zaimportowanej struktury liniowej, na formularzu USTAWIENIA IMPORTU I EKSPORTU dostępne są następujące akcje:\n\nimage::main/image100.png[image,width=566,height=130]\n\n* [IMPORT STRUKTURY] – służy do zaczytania (zmiany) pliku opisującego strukturę danych,\n* [POKAŻ STRUKTURĘ] – służy do obejrzenia zaczytanej struktury,\n* [USUŃ STRUKTURĘ] – usuwa zaczytaną strukturę z bazy danych.\n\nPrzycisk [ZATWIERDŹ] na formularzu USTAWIENIA IMPORTU I EKSPORTU zapisuje bieżące ustawienia.\n\nW przypadku wyboru pliku z błędnym formatem system zaprezentuje komunikat o błędzie i nie pozwoli na przejście dalej.\n\nimage::main/image101.png[image,width=253,height=107]\n\nW sytuacji gdy struktura liniowa nie zostanie zaimportowana, w momencie zapisu ustawień (przycisk [ZATWIERDŹ]) prezentowane jest ostrzeżenie: _Puste struktury liniowe_.\n\nimage::main/image102.png[image,width=398,height=252]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 1364,
+      "line_end": 1402
+    }
+  ]
+}

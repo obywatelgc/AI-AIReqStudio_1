@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000145",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Wniosek o kartę debetową (CardOn)"
+    },
+    {
+      "level": 3,
+      "title": "Nowy wniosek o kartę debetową (CardOn)"
+    }
+  ],
+  "section_title": "Nowy wniosek o kartę debetową (CardOn)",
+  "text": "ści domyślne (onfigurację dostawcy karty) i podlegają edycji\nw zakresie wartości minimalnej i maksymalnej.\n\nimage::Karty/K_wniosek6.jpg[]\n\n*_Zgody marketingowe i oświadczenia_*\n\nEkran prezentowany jest jedynie w przypadku składania wniosku o kartę dla siebie.\n\nimage::Karty/K_wniosek12.jpg[]\n\nPrezentowane są zgody marketingowe klienta firmowego, które są związane z procesem\ndla danej karty (konfiguracja u dostawcy karty).\nTreść zgód jest pobrana z systemu transakcyjnego, ale zakres prezentowanych zgód nie\npodlega standardowej konfiguracji dla zgód dostępnych w bankowości internetowej\n(prezentowane są również te zgody, które takiej konfiguracji w bankowości internetowej\nnie posiadają, ale konieczne jest by były dostępne w samym systemie transakcyjnym).\nInformacje, na które użytkownik w imieniu firmy wyraził zgodę już wcześniej nie są prezentowane,\nsą za to prezentowane również te zgody, które wcześniej były odrzucone.\nCzęść zgód może być oznaczona jako wymagana i ich odznaczenie będzie blokowało przejście\ndo kolejnego kroku.\n\nW przypadku, gdy użytkownik udzielił wcześniej wszystkich wymaganych zgód, dla karty\nnie są dostarczone zgody na ekranie zostanie zaprezentowana tylko informacja\n\"Wszystkie wymagane zgody marketingowe zostały wcześniej wyrażone.\"\n\nimage::Karty/K_wniosek14.jpg[]\n\nNOTE: Jeśli wniosek składany jest w imieniu innej osoby zgody marketigowe nie są analizowane,\nzaś krok jest pomijany.\n\n\n*_Podsumowanie i autoryzacja_*\n\nOstatnim krokiem procesu jest prezentacja danych wniosku o kartę debetową.\nDane wniosku zawierają wszystkie informacje w tym udzielone zgody:\n\nimage::Karty/K_wniosek13.jpg[]\n\nW przeciwnym wypadku (gdy zgoda nie została udzielona) lub gdy wniosek\nskładany jest dla osoby trzeciej na podsumowaniu nie ma sekcji zgody marketingowe:\n\nimage::Karty/K_wniosek7.jpg[]\n\nWniosek należy zaakceptować za pomocą opcji [Dalej] a następnie podpisać przypisanym\nśrodkiem akceptacji:\n\nimage::Karty/K_wniosek8.jpg[]\n\nPoprawne akceptacja wniosku zostaje potwierdzona komunikatem:\n\nimage::Karty/K_wniosek9.jpg[image,width=304,height=207]\n\nZłożony wniosek jest dostępny na liście wniosków w aplikacji karty w sekcji aktywne\nwnioski do czasu gdy zostanie zrealizowany lub odrzucony przez dostawcę karty.\nDla wniosku nie ma możliwości podglądu dodatkowych danych ani przeprowadzenia żadnych akcji.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 820,
+      "line_end": 1014
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000316",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Lista dyspozycji e-Faktur"
+    },
+    {
+      "level": 4,
+      "title": "Usunięcie dyspozycji e-Faktury"
+    }
+  ],
+  "section_title": "Usunięcie dyspozycji e-Faktury",
+  "text": "Dla dyspozycji faktury w statusie _Gotowy do wysłania_ użytkownik ma możliwość usunięcia takiej dyspozycji.\n\nAby to zrobić, należy wybrać przycisk [Usuń], który znajduje się w opcjach dodatkowych w krótkich szczegółąch dyspozycji a następnie zaakceptować usunięcie poprzez przycisk [Akceptuj].\n\nimage::e-Faktury(KSeF)/dyspozycja-usun.png[]\n\nPo poprawnym usunięciu system prezentuje odpowiedni komunikat potwierdzający usunięcie dyspozycji z listy.\n\nimage::e-Faktury(KSeF)/dyspozycja-usun-potwierdzenie.png[]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 457,
+      "line_end": 467
+    }
+  ]
+}

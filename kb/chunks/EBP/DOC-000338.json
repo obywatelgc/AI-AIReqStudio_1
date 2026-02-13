@@ -1,0 +1,24 @@
+{
+  "chunk_id": "DOC-000338",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    }
+  ],
+  "section_title": "Formaty danych i struktury plików",
+  "text": "Bieżący rozdział zawiera opis formatów danych, jak i struktury importowanych oraz eksportowanych plików.\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 5,
+      "line_end": 7
+    }
+  ]
+}

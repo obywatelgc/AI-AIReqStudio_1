@@ -1,0 +1,33 @@
+{
+  "chunk_id": "DOC-000337",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Rachunki powiernicze"
+    },
+    {
+      "level": 3,
+      "title": "Składki do opłacenia"
+    }
+  ],
+  "section_title": "Składki do opłacenia",
+  "text": "W celu wykonania operacji opłacenia składki do rachunku powierniczego należy kliknąć w obszar wybranego wiersza rachunku, wybrać przycisk [SKŁADKI DO OPŁACENIA]. Opcja jest także dostępna na formularzu SZCZEGÓŁY RACHUNKU. System wyświetla formularz Składki do opłacenia wraz z danymi opłat do wykonania, umożliwiający wykonanie operacji opłaty do rachunku powierniczego.\n\nimage::Powiernicze/image23.png[image,width=604,height=254]\n\nNa formularzu prezentowane są następujące dane:\n\n* *Rachunek MRP* – numer rachunku w formacie NRB,\n* *Rachunek do obciążenia* – numer rachunku do obciążenia,\n* *Automatyczne pobieranie składek* – tak/nie,\n* *Suma składek* – suma skłądek do opłacenia.\n\nNa formularzu SKŁADKI DO OPŁACENIA dostępne są:\n\n* Przyciski:\n\n** image:Powiernicze/image19.png[image,width=43,height=46] – umożliwiający przejście do formularza RACHUNKI POWIERNICZE,\n** image:Powiernicze/image17.png[image,width=49,height=57]– umożliwiający wyjście do pulpitu.\n\n* Akcja:\n\n** [OPŁAĆ] – umożliwia przejście do kroku przelewu, autoryzacji opłaty do rachunku.\n\nPo wybraniu opcji [OPŁAĆ], Użytkownik przekierowany jest do formularza PRZELEWU. Użytkownik musi wypełnić  wymagne pola\njak podczas wykonywania  przelewu.\n\nimage::Powiernicze/image30.png[image,width=604,height=243]\n:imagesdir: images\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Powierniczne.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Powierniczne.adoc",
+      "line_start": 216,
+      "line_end": 242
+    },
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 1,
+      "line_end": 3
+    }
+  ]
+}

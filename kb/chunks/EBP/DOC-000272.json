@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000272",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Doładowania"
+    },
+    {
+      "level": 3,
+      "title": "Szablony doładowań"
+    },
+    {
+      "level": 4,
+      "title": "Podgląd szczegółów szablonu doładowań"
+    }
+  ],
+  "section_title": "Podgląd szczegółów szablonu doładowań",
+  "text": "Aby z listy szablonów doładowań przejść do szczegółów wybranego szablonu należy kliknąć w obszar wybranego wiersza i wybrać opcję [SZCZEGÓŁY]. Wyświetlane jest wówczas okno prezentujące szczegółowe informacje dla szablonu:\n\nimage::Doladowania/image36.png[image,width=604,height=237]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Doladowania.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Doladowania.adoc",
+      "line_start": 259,
+      "line_end": 263
+    }
+  ]
+}

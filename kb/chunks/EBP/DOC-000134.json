@@ -1,0 +1,24 @@
+{
+  "chunk_id": "DOC-000134",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (GryfCard)"
+    }
+  ],
+  "section_title": "Karty (GryfCard)",
+  "text": "Miniaplikacja Karty zapewnia dostęp do listy kart (debetowych, kredytowych), do których uprawniony jest Użytkownik.\n\nSystem Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji Karty z dwóch głównych poziomów:\n\n* widżetu Karty (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),\n\nimage::Karty/image1k.png[]\n\n* menu bocznego po wybraniu opcji Karty.\n\nimage::Karty/image3.png[]\n\nW każdym z poziomów miniaplikacji dla Użytkownika dostępne są formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach. Z poziomu formatek Użytkownik może wykonać wskazane akcje.\n\nUżytkownik posiadający dostęp do miniaplikacji Karty ma możliwość:\n\n* przeglądania informacji listy swoich kart lub wszystkich kart danego rachunku,\n* przeglądania informacji szczegółowych na temat karty,\n* modyfikacji nazwy własnej karty,\n* przeglądania historii operacji wykonywanych kartą/na rachunku karty,\n* zmiany limitów na karcie,\n* przeglądania blokad na rachunku karty,\n* spłaty zadłużenia karty,\n* zastrzeżenia karty,\n* zablokowania karty,\n* włączenia/wyłączenia zbliżenia.\n\nNOTE: Funkcjonalność kart w kontekście firmowym dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia: do funkcjonalności. Uprawnienia ustawiane są przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników._\n\nW przypadku braku łączności systemu bankowości internetowej _Asseco_EBP_ z systemem kartowym zostanie zaprezentowany komunikat:\n\nimage::Karty/image14k.png[]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 590,
+      "line_end": 624
+    }
+  ]
+}

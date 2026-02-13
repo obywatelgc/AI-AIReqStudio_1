@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000306",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Lista e-Faktur"
+    },
+    {
+      "level": 4,
+      "title": "Zmiana statusu e-Faktury"
+    },
+    {
+      "level": 5,
+      "title": "Zbiorcza zmiana statusu e-Faktury"
+    }
+  ],
+  "section_title": "Zbiorcza zmiana statusu e-Faktury",
+  "text": "Użytkownik ma możliwość zbiorczej zmiany statusu faktury poprzez wybranie faktur  z listy (zaznaczenie checboxów obok danej faktury) i naciśnięcie przycisku [Dodatkowe opcje] dostępnego nad listą faktur.\n\nimage::e-Faktury(KSeF)/faktury_zbiorcza_zmiana_statusu.png[]\n\nPo wybraniu opcji zmiany statusu faktury a następnie  wybraniu [Akceptuj] system wyświetla potwierdzenie zmiany statusu wybranych faktur. Na liście faktur zmianiony status jest widoczny od razu dla wybranych faktur.\n\nimage::e-Faktury(KSeF)/faktury_zbiorcza_zmiana_statusu_akcep.png[]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 266,
+      "line_end": 274
+    }
+  ]
+}

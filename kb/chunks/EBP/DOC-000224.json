@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000224",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Przelewy"
+    },
+    {
+      "level": 4,
+      "title": "Zlecenie przelewu zwykłego krajowego"
+    },
+    {
+      "level": 5,
+      "title": "Dostępne akcje na drugim kroku nowego przelewu"
+    }
+  ],
+  "section_title": "Dostępne akcje na drugim kroku nowego przelewu",
+  "text": "W zależności od ustawionego schematu podpisu na formatkach przelewów w Miniaplikacji Przelewy dostępne są odmienne akcje. Użycie tych akcji wpływa także na statusy, jakie otrzymają przelewy dodawane z poziomu Miniaplikacji Przelewy do _Listy zleceń_.\n\nWystępują poniższe warianty:\n\n*Wielopodpis wyłączony*\n\nW przypadku kontekstu indywidualnego schemat akceptacji może zostać niezdefiniowany. Domyślnie będzie brany pod uwagę właściciel rachunku.\n\nW przypadku pracy w kontekście klienta indywidulanego na formularzu potwierdzenia i autoryzacji danych – krok 2, dostępne są akcje:\n\n* W przypadku wyboru na poprzednim ekranie opcji [DALEJ]:\n\n** przejście do autoryzacji (prezentacja sekcji do autoryzacji), przelew dodawany jest do listy przelewów aktywnych,\n\n* W przypadku wyboru na poprzednim ekranie opcji [DODAJ DO LISTY ZLECEŃ]:\n\n** [ZAPISZ] – przycisk umożliwia zapisanie przelewu w Listy zleceń (o wymogu autoryzacji decyduje parametr systemowy), przelew trafia do Listy zleceń.\n\nW przypadku firmy realizacja przelewów wymaga zdefiniowania schematu akceptacji. W przypadku braku schematu akceptacji realizacja przelewu nie jest możliwa. System prezentuje odpowiedni komunikat: _Brak możliwości dodania przelewu ze względu na brak definiowanego schematu akceptacji_.\n\n*Wielopodpis włączony*\n\nSchemat podpisu został zdefiniowany. Akcje na formularzu nowego przelewu:\n\n* Formularz wprowadzenia danych – krok 1: dostępne są akcje:\n\n** [DALEJ] – przejście do kroku 2, +\n** [DODAJ DO LISTY ZLECEŃ] – przycisk umożliwia zapisanie przelewu na _Listę zleceń_ w statusie _Nowy_.\n\n* Formularz potwierdzenia i autoryzacji danych – krok 2: dostępne są akcje:\n\n** dla schematu wymagającego podpisu jednej osoby:\n\n*** [AKCEPTUJ i WYŚLIJ] – przejście do autoryzacji, przelew po autoryzacji przekazywany jest do realizacji w systemie transakcyjnym. Przelew widoczny jest na liście przelewów w statusie _Aktywne_.\n\n*** [AKCEPTUJ] – przejście do autoryzacji (prezentacja sekcji do autoryzacji), przelew dodawany jest na Listę zleceń w statusie _Gotowy do przekazania_,\n\n*** [DODAJ DO LISTY ZLECEŃ] – przejście do potwierdzenia (o wymogu autoryzacji decyduje parametr systemowy), przelew trafia na Listę zleceń w statusie _Nowy_.\n\n** dla schematu wymagającego podpisu więcej niż jednej osoby:\n\n*** [AKCEPTUJ] – przejście do autoryzacji (prezentacja sekcji do autoryzacji), przelew dodawany jest do listy zleceń w statusie _W akceptacji_,\n\n*** [DODAJ DO LISTY ZLECEŃ] – przejście do potwierdzenia (o wymogu autoryzacji decyduje parametr systemowy), przelew trafia na Listę zleceń w statusie Nowy.\n\nNOTE: Powyższe opcje dotyczą przelewu zwykłego, podatku i walutowego (oraz dla przelewu własnego w zależności od parametryzacji). Dla przelewu własnego będą wyłącznie dwie opcje: [DALEJ] oraz  [DODAJ DO LISTY ZLECEŃ].\n\n[[biala-lista-pzwykly]]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 307,
+      "line_end": 355
+    }
+  ]
+}

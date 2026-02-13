@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000073",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Historia logowań"
+    }
+  ],
+  "section_title": "Historia logowań",
+  "text": "W opcji _Ustawienia → Historia logowań_ Użytkownik ma możliwość przeglądania poprawnych i niepoprawnych logowań do systemu Asseco EBP.\n\nimage::main/image178.png[image,width=612,height=314]\n\nW górnej części ekranu, znajduje się informacja o ostatnim poprawnym i niepoprawnym logowaniu do systemu Asseco EBP.\n\nimage::main/image179.png[image,width=347,height=104]\n\nNa formularzu HISTORIA LOGOWAŃ znajdują się następujące informacje:\n\n* Data zdarzenia – data logowania (data w formacie RRRR.MM.DD GG:MM:SS),\n* Zdarzenie – status logowania, dostępne wartości:\n\n** Poprawne logowanie,\n** Niepoprawne logowanie,\n\n* Adres IP – adres IP z jakiego nastąpiło logowanie lub próba logowania do systemu Asseco EBP.\n\nW celu zawężenia prezentacji listy logowań, system umożliwia zastosowanie filtru zaawansowanego za pomocą przycisku [POKAŻ FILTRY].\n\nimage::main/image180.png[image,width=612,height=62]\n\nUżytkownik ma możliwość ustawiania filtru zaawansowanego dla następujących pól:\n\n* Ostatnie – liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana historia logowań, domyślnie 30 dni,\n* Zakres dat – zakres dat, od-do, dla których ma zostać wyświetlona historia logowań, od miesiąca wstecz do daty bieżącej (alternatywa dla pola Ostatnie). Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą którego można określić zakres dat.\n\nimage::main/image181.png[image,width=288,height=333]\n\n* Typ zdarzenia – typ wyszukiwanego zdarzenie (wybór konkretnego zdarzenia z listy wartości) dostępne wartości:\n\n** Poprawne logowanie,\n** Niepoprawne logowanie.\n\nLista historii logowań jest stronicowana, Użytkownik ma możliwość przejścia do kolejnych stron za pomocą przycisków nawigacji znajdujących się w dolanej części formularza.\n\nimage::main/image182.png[image,width=263,height=65]\n\nZastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].\n\nW górnej części formularza HISTORIA LOGOWAŃ znajdują się przyciski:\n\n* image:main/image85.png[image,width=39,height=44] – umożliwiający powrót do formularza USTAWIENIA,\n* image:main/image86.png[image,width=43,height=55]- umożliwiający przejście do głównego menu.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 2368,
+      "line_end": 2413
+    }
+  ]
+}

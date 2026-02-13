@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000007",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Korzystanie z przeglądarek internetowych pod kątem pracy w systemie Asseco EBP"
+    }
+  ],
+  "section_title": "Korzystanie z przeglądarek internetowych pod kątem pracy w systemie Asseco EBP",
+  "text": "Z uwagi na kompatybilność systemu Asseco EBP z przeglądarkami mobilnymi zapewniona jest zgodność interfejsu Użytkownika systemu z niżej wymienionymi przeglądarekami (rekomendowane są najnowsze wersje):\n\n* Chrome,\n* Firefox,\n* Edge,\n* Safari.\n\nNie jest wymagana dodatkowa konfiguracja przeglądarki i praca odbywa się w trybie domyślnym. W kwestiach bezpieczeństwa i korzystania z bankowości internetowej, sugerowane jest przeglądanie w trybie incognito danej przeglądarki.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 39,
+      "line_end": 48
+    }
+  ]
+}

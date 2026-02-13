@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000415",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Kontekst zbiorczy"
+    },
+    {
+      "level": 3,
+      "title": "Lokaty"
+    }
+  ],
+  "section_title": "Lokaty",
+  "text": "Użytkownik ma możliwość zakładania lokat z rachunków firm należących do kontekstu zbiorczego oraz dysponowania tymi lokatami.\n",
+  "primary_source_file": "chapters/Kontekst_Zbiorczy.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Kontekst_Zbiorczy.adoc",
+      "line_start": 86,
+      "line_end": 88
+    }
+  ]
+}

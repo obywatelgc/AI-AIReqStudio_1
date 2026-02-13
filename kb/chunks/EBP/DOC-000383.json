@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000383",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu wyciągów"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie CSV"
+    }
+  ],
+  "section_title": "Plik w formacie CSV",
+  "text": "Format CSV to format pliku tekstowego, który może być używany do wymiany danych arkusza kalkulacyjnego między aplikacjami. Każdy wiersz w tekstowym pliku CSV reprezentuje wiersz arkusza kalkulacyjnego. Każda komórka wiersza arkusza kalkulacyjnego rozdzielona jest średnikiem. Każdy rekord zakończony jest znakiem końca linii <CRLF>.\n\nOpis poszczególnych kolumn dla eksportu wyciągów w formacie CSV:\n\n* Lp. - liczba porządkowa operacji,\n* Data - data księgowania operacji w standardzie RRRR-MM-DD, gdzie RRRR oznacza rok, MM oznacza miesiąc, DD oznacza dzień,\n* Typ operacji - nazwa klienta lub domyślna nazwa dla odpowiedniego kodu typu operacji,\n* Numer bank - numer banku w zależności od kierunku transakcji (odbiorcy lub nadawcy), w przypadku braku odpowiedniej wartości, wartość wyliczana/brana na podstawie numeru rachunku,\n* Numer rachunku - dla obciążenia - rachunek odbiorcy, dla uznania - rachunek nadawcy; w standardzie NRB, wartość ujęta w apostrofy,\n* Kwota transakcji - wartość kwoty transakcji,\n* Kierunek transakcji - D - Debit obciążenie, C - Credit uznanie,\n* Waluta - waluta transakcji,\n* Nazwa1 - nazwa odbiorcy dla obciążenia, nazwa nadawczy dla uznania, linia 1,\n* Nazwa2 - nazwa odbiorcy dla obciążenia, nazwa nadawczy dla uznania, linia 2,\n* Nazwa3 - nazwa odbiorcy dla obciążenia, nazwa nadawczy dla uznania, linia 3,\n* Nazwa4 - nazwa odbiorcy dla obciążenia, nazwa nadawczy dla uznania, linia 4,\n* Tytuł1 - opis operacji, linia 1,\n* Tytuł2 - opis operacji, linia 2,\n* Tytuł3 - opis operacji, linia 3,\n* Tytuł4 - opis operacji, linia 4.\n\n[underline]##Przykład pliku eksportu wyciągów w formacie CSV:##\n\n[source, txt]\n----\n1;2018-03-22;wlasny;88090005;'60880900052001000278010004';2,00;C;PLN;FIRMA 1 TEST 11-111 TEST;;;;tutul testowy;;\n2;2018-03-22;wlasny;88090005;'87880900052001000278010003';2,00;C;PLN;FIRMA 1 TEST 11-111 TEST;;;;test;;\n3;2018-03-22;Zerwanie lokaty:DEPOZYT STAND.ZMIEN NA STOPA PROCENTOWA;88090005;'71880900054001000278010007';106,00;C;PLN;FIRMA 1;;;;Zerwanie lokaty:DEPOZYT STAND.ZMIEN NA STOPA PROCENTOWA;;\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 4622,
+      "line_end": 4652
+    }
+  ]
+}

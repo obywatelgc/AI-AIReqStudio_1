@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000081",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Limity BLIK"
+    }
+  ],
+  "section_title": "Limity BLIK",
+  "text": "W opcji Ustawienia → Limity BLIK, Użytkownik ma możliwość:\n\n* wyświetlenia i edycji limitów BLIK dla płatności w sklepie,\n* wyświetlenia i edycji limitów BLIK dla płatności w internecie,\n* wyświetlenia i edycji limitów BLIK dla wypłaty z bankomatu,\n* wyświetlenia i edycji limitów BLIK dla przelewu na telefon.\n\nNOTE: Opcja 'Limity BLIK' jest dostępna dla użytkowników posiadających aktywną usługę BLIK.\n\nimage::main/image219.png[image,width=604,height=255]\n\nNa formularzu LIMITY BLIK system prezentuje:\n\n* informacje:\n\n** Typ limitu – nazwa limitu dla danego typu płatności,\n** Dzienny limit kwotowy - kwota wraz z walutą limitu,\n** Dzienny limit ilościowy – ilość dopuszczalnych transakcji w ciągu dnia,\n** Limit kwotowy pojedynczego przelewu - kwota wraz z walutą limitu, tylko dla Przelewów na telefon.\n\n• przycisk:\n\n** [ZAPISZ]– umożliwiający edycję zmienionych limitów\n\nPo naciśnięciu przycisku [ZAPISZ], system przechodzi na formularz w którym Użytkownik musi zatwierdzić zmianę limitów za pomocą dostępnej metody autoryzacji.\n\nimage::main/image220.png[image,width=604,height=255]\n\nPo zatwierdzeniu system prezentuje następujący komunikat:\n\nimage::main/image221.png[image,width=604,height=255]\n\nW momencie edycji limitów system sprawdza poprawność wprowadzanych danych wg zdefiniowanych parametrów dla usługi BLIK.\n\nimage::main/image222.png[image,width=604,height=255]\n\n\nW górnej części formularza LIMITY BLIK znajdują się przyciski:\n\n* image:main/image85.png[image,width=39,height=44] – umożliwiający powrót do formularza USTAWIENIA,\n* image:main/image86.png[image,width=43,height=55]– umożliwiający przejście do głównego menu.\n\n\n[[Ustawienia-logowania]]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 2724,
+      "line_end": 2768
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000397",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu operacji z analityki płatności masowych"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie MT942 (format CEB)"
+    }
+  ],
+  "section_title": "Plik w formacie MT942 (format CEB)",
+  "text": "Plik eksportu pliku z analityki płatności masowych w formacie MT942 składa się z następujących pól:\n\n[source, txt]\n----\n:20:\n:25:\n:13:\n:61:\n:86:<10\n<20\n<27\n<61\n<63\n----\n\nUżyte oznaczenia dla formatu danych w kolejnych polach: +\n*c* - tylko cyfry. +\n*n* - tylko cyfry i spacje. +\n*l* - tylko litery. +\n*z* - tylko litery i cyfry (c i l). +\n*s* - wszystkie znaki dopuszczane przez SWIFT. +\n*k* - liczba oznaczająca kwotę (separatorem dziesiętnym musi być przecinek ‘,’ a część dziesiętna musi zawsze być określona dwiema cyframi, np.: ‘12,25’ lub ‘1234,00’.\n\n[underline]##Przykłady oznaczania formatu pól:## +\n6c - maksymalnie sześć cyfr, +\n5n - maksymalnie pięć cyfr wraz ze spacjami, np.: ’12 34’, lub ‘12345’. +\n4!l - dokładnie 4 litery, +\n\n**Specyfikacja pól w pliku MT942:**\n\n:20: wartość stała: STARTDISP\n:25: nr rachunku wirtualnego PL43880900052001000278030001\n:13: data księgowania 1804020000\n\n[cols=\"2,6,3,10\",options=\"header\",]\n|====================\n|*Etykieta* |*Nazwa* |*Format* |*Opis*\n|:20: |Wartość stała: STARTDISP |9!l| Stały tekst STARTDISP.\n|:25: |Rachunek wirtualny. |Oddzielne pole typu s |Numer rachunku wirtualnego głównego ze stałym tekstem PL oraz numerem NRB.\n|:13: |Data księgowa. |10!c |Data księgowania w formacie RRMMDDHHmm.\n.6+<.^|:61: .6+<.^|Szczegóły każdej operacji. <.^|6!c1!l15k\n|Format całego pola - łącznie do 26 znaków (nie wliczając znaków nowej linii). Poniżej znajduje się opis w rozbiciu na poszczególne sekcje.\n|6!c |Data waluty w formacie RRMMDD.\n|4!n |Data księgowania w formacie MMDD.\n|1!l |Strona – znak ‘C’ dla salda kredytowego lub znak ‘D’ dla salda debetowego.\n|15k |Kwota operacji.\n|[underline]##Przykład:##| **:61:**1803300330C4,53.\n|====================\n\nPole :86: składa się z podpól oznaczonych etykietami - zestaw podpól zamieszczono w poniższej tabeli.\n\nSeparatorem podpól jest znak <.\n\nW przypadku, gdy podpole nie posiada wartości całe podpole (łącznie z etykietą) jest również prezentowane.\n\n[cols=\"3,15\",options=\"header\",]\n|================================================================================================================\n|*Etykieta* |*Opis*\n|<10 |Numer porządkowy\n|<20 |Tytuł\n|<27 |Zleceniodawca\n|<61 |Rachunek dłużnika (rachunek wirtualny)\n|<63 |Numer dokumentu (np. REF4570)\n|================================================================================================================\n\n[underline]##Przykład pliku eksportu operacji z analityki płatności masowych w formacie MT942:##\n\n[source, txt]\n----\n:20:STARTDISP\n:25:PL43880900052001000278030001\n:13:1804020000\n:61:1804020402C3,44\n:86:<101901526\n<20tytul testowy\n<27FIRMA TESTOWA\n<6169880900053232323000000009\n<63REF4570\n:20:STARTDISP\n:25:PL19880900052001000277970002\n:13:1804020000\n:61:1804020402C100,00\n:86:<101901528\n<20tytul testowy\n<27FIRMA TESTOWA\n<6169880900053232323000000009\n<63REF186\n----\n\nNOTE: W przypadku wyboru formatu pliku eksportu na MT942 (format CEB) przycisk ANALITYKA z wszystkich rachunków nie będzie widoczny.\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 5558,
+      "line_end": 5649
+    }
+  ]
+}

@@ -29,19 +29,10 @@ Zagadnienia
 1) Dokumentacja wymagań (SPW) powinna powstać w odniesieniu do dokumetnacji systemu Bankowość Internetowej (desktop, mobile). DOdatkowo powinna uezględniać architektórę systemu (mikroserwisy) oraz możliwości API. Dokumentacja systemu to około 800 stron. Jak można rozbudować ten framework aby LLM wiedział jak działa obecnie system i gdzie trzeba zrealizować zmiany będące wymaganiami klienta?
 
 
-Zbudowałem workspace w Visual Studio Code, którego zadaniem jest generowanie specyfikacji wymagań na podstawie materiałów (wymagań) klienta oraz dokumentacji systemów informatycznych.
-Narzędzie będzie wykorzystywało model LLM (GPT) oraz rozszerzenie Codex. Specyfikacja będzie posiadało określoną strukturę - opisaną w /spec/10-spw.md
+Zbudowałem framework w Visual Studio Code, którego zadaniem jest generowanie specyfikacji wymagań na podstawie materiałów (wymagań) klienta oraz dokumentacji systemów informatycznych (w szczególności Bankowości Elektronicznej detal, mikro, korpo w wersji desktop oraz mobile). Narzędzie wykorzystuje model LLM (GPT) oraz rozszerzenie Codex. Specyfikacja będzie posiadała określoną strukturę - opisaną w /spec/10-spw.md
 
 Obsługa narzędzia będzie realizowana przez wykonywanie odpowiednich promptów w Codex i pracę na plikach projektu.
 
-Chciałbym w pliku project-parameters.md zawrzeć najważniejsze parametry projektu np. 
--nazwę projektu, 
-- nazwę klienta 
-- Styl i Język Generowania dokumentóe
-
-Dodatkowo w pliku (project-prompt.md) będzie głowny prompt który określa sposób pracy LLM.
-
-Jak to obsłużyć, jak z tym pracować w VSC i Codex?
 
 # Struktura katalogów
 /doc - dokumentacja systemu (źródła) w formatach tekstowych (np. .md, .adoc)
@@ -56,6 +47,30 @@ Utrzymanie kontroli nad AI
 
 
 
+# Wymagania klienta 
+1. Wymagania powinny mieć format WM-<num>
+Wymgania powinny mieć odpowiednią strkturę
+Przykład:
+## 4. Wymagania funkcjonalne
+### 4.1 Aktywacja usługi CashDirector
+**WM-01 Aktywacja usługi CashDirector**  
+System BE musi umożliwiać klientowi ...
+**WM-02 Obsługa zgód i regulaminów**  
+System BE musi umożliwiać pobranie, prezentację oraz rejestrację akceptacji zgód ...
+
+### 4.2 Rejestracja i parowanie firmy
+**WM-05 Parowanie firmy i użytkownika**  
+System BE musi umożliwiać parowanie firmy i ...
+**WM-06 Obsługa istniejących danych w CashDirector**  
+System BE musi obsługiwać scenariusz, w którym firma lub użytkownik istnieje już w systemie CashDirector.
+
+Założenia wejścia (kontrakt)
+Sekcje są w nagłówkach:
+## 4. Wymagania funkcjonalne
+### 4.1 ...
+Wymaganie zawsze zaczyna się od linii:
+**WM-XX Tytuł** (np. **WM-01 Aktywacja usługi CashDirector** )
+Treść wymagania to kolejne linie aż do następnego **WM-... albo do kolejnego ### .../## .../końca pliku.
 
 
 

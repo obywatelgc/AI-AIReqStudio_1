@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000413",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Kontekst zbiorczy"
+    },
+    {
+      "level": 3,
+      "title": "Rachunki:"
+    }
+  ],
+  "section_title": "Rachunki:",
+  "text": "W sytuacji, gdy klient pracuje w kotekście zbiorczym na liście rachunków prezentowana jest dodatkowa kolumna FIRMA, zawierająca nazwę Firmy właściciela rachunku.\n\nimage::kontekstZbiorczy/image5.jpg[]\n\nW polu filtrowania dostępny jest filtr FIRMA, który umożliwia filtrowanie dostępnych rachunków w oparciu o firmę (właściciela rachunku):\n\n* Wybierz wszystkie – na liście wyświetlone są wszystkie rachunki firm należace do kontekstu zbiorczego\n\n* rozwinięcie listy za pomocą image:kontekstZbiorczy/image6.png[image,width=40,height=36] umożliwia wybór danej firmy i wyświetlenie jej rachunków.\n\nimage::kontekstZbiorczy/image7.jpg[image,width=251,height=219]\n",
+  "primary_source_file": "chapters/Kontekst_Zbiorczy.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Kontekst_Zbiorczy.adoc",
+      "line_start": 67,
+      "line_end": 79
+    }
+  ]
+}

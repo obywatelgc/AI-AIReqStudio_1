@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000342",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktury plików importu przelewów zwykłych oraz podatku"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie Elixir"
+    }
+  ],
+  "section_title": "Plik w formacie Elixir",
+  "text": "*Plik z przelewami zwykłymi*\n\nPlik z przelewami do importu jest zapisany w formacie tekstowym. Każde zlecenie przelewu zajmuje jedną linię (jeden rekord) zakończoną znakiem <CRLF>.\nKażdy rekord jest złożony z 17 pól. Pola są oddzielone separatorem. Separatorem jest przecinek. Pola występują w ustalonej kolejności, opisanej w części Struktura rekordu. Pola tekstowe są objęte cudzysłowami. Pola tekstowe, dla których nie jest przekazywana wartość, są zapisane jako pusty string “ “. Puste pola końcowe rekordu mogą zostać pominięte.\nZnakiem podziału linii w obrębie pola jest znak „|”.\nWszystkie rachunki nadawców muszą istnieć w bazie danych.\nPolskie znaki są kodowane w ISO 8859-2 lub WINDOWS-1250.\n\n[underline]##Struktura rekordu:##\nRekord danych musi mieć strukturę zgodną ze strukturą pliku przecinkowego Elixir.\n\nTypy danych stosowane przy opisie pól: +\n*N* - pole numeryczne, wartością jest liczba całkowita +\n*D* - data w formacie RRRRMMDD, gdzie RRRR - rok, MM - miesiąc, DD - dzień (np. 20060501). +\n*C* - pole tekstowe. Dozwolone znaki zgodne z wymaganiami systemu Elixir. Rozmiar pola 4*35 oznacza że pole może zawierać maksymalnie 4 linie po 35 znaków , nie wliczając znaków podziału linii. +\n*K* - pole zawierające kwotę. Kwota wyrażona w groszach. Nie może zawierać żadnych separatorów dla części ułamkowej ani separatorów tysięcy. +\n[underline]##Przykład:## 150 zł należy zapisać jako 15000, 10 zł 90 gr jako 1090, zapis 50 oznacza kwotę 50 gr.\n\nDo systemu Asseco EBP wczytywane są pola o statusie _M_. Pola o statusie _O_ są pomijane przy wczytywaniu pliku do Asseco EBP.\n\n[width=\"100%\",cols=\"4,5,4,4,3,5,13\",options=\"header,footer\"]\n|====================\n|*Kolejność pola w rekordzie* |*Pole wg Elixir* |*Format* |*Rozmiar* |*Status pola* |*Pole w Asseco EBP* |*Opis pola w Asseco EBP*\n|1 |Typ komunikatu |N |3 |O |- | Pole pomijane przy wczytywaniu do Asseco EBP\n|2 |Data transakcji |D |8 |M |DATA |Data zlecenia. Pole obowiązkowe, konieczne jest przekazanie ważnej wartości.\n|3 |Kwota |K |15 |M |KWOTA |Kwota zlecenia. Waluta domyślnie przyjmowana jako PLN. Pole obowiązkowe, konieczne jest przekazanie ważnej wartości.\n|4 |Nr jednostki prezentującej |N |8 |O |- |Pole pomijane przy wczytywaniu do Asseco EBP\n|5 |Nr jednostki odbierającej |N |8 |O |- |Pole pomijane przy wczytywaniu do Asseco EBP\n|6 |Rachunek klienta nadawcy |C |34 |M |RACH_OBC |Numer rachunku nadawcy. Pole obowiązkowe, konieczne jest przekazanie ważnej wartości.\n|7 |Rachunek klienta adresata |C |34 |M |RACHUNEK |Numer rachunku beneficjenta. Pole obowiązkowe, konieczne jest przekazanie ważnej wartości.\n|8 |Nazwa klienta nadawcy |C |4*35 |O |- |Pole pomijane przy wczytywaniu do Asseco EBP\n|9 |Nazwa klienta adresata |C |4*35 |M |NAZWA |Nazwa beneficjenta. Pole obowiązkowe, konieczne jest przekazanie ważnej wartości.\n|10 |Numer nadawcy uczestnika pośredniego |N |8 |O |- |Pole pomijane przy wczytywaniu do Asseco EBP\n|11 |Numer oddziału – finalny adresat |N |8 |M |BANK |Bank beneficjenta. Pole nie jest obowiązkowe, można przekazać wartość pustą.\n|12 |Informacje dodatkowe |C |4*35 |M |TRESC |Tytuł płatności przelewu. Pole obowiązkowe, konieczne jest przekazanie ważnej wartości.\n|13 |Numer czeku |C |10 |O |- |Pole pomijane przy wczytywaniu do Asseco EBP\n|14 |Szczegóły reklamacji |C |4*35 |O |- |Pole pomijane przy wczytywaniu do Asseco EBP\n|15 |Dodatkowa identyfikacja spraw |C |34 |O |- |Pole pomijane przy wczytywaniu do Asseco EBP\n|16 |Informacje międzybankowe |C |16 |M |REFERENCJE |Dodatkowy identyfikator przelewu - referencje. Pole nie jest obowiązkowe - można przekazać wartość pustą.\n|17 |Dowolny tekst |C |35 |O |- |Pole pomijane przy wczytywaniu do Asseco EBP\n|====================\n\n\n[underline]##Przykładowa zawartość pliku importu przelewów zwykłych formacie Elixir:##\n\n[source, elixir]\n----\n110,20060526,10,,,\"32156000132005000001720001\",\"51101010231234567890123456\",\"\",\"Spoldzielnia Pracy Testowa|Zaklad Pracy Chronionej\",15600001,10101023,\"Zaplata za fakture| nr 2006-01-01\",\"\",\"\",\"51\",\"ref1-2006\",\"\"\n,20060527,2000,,,\"32156000132005000001720001\",\"48835500091234567890123456\",\"\",\"Zaklad Testowy| Jan Kowalski Test| Warszawa ul. D1\",15600001,10101023,\"Zaplata za usługe\",\"\",\"\",\"51\",\"usluga1/2006\",\"\"\n110,20060527,2000,,,\"32156000132005000001720001\",\"48835500091234567890123456\",\"\",\"Telekomunikacja Polska\",,83550009,\"Zaplata za usluge\",\"\",\"\",\"\",\"Faktura vat 0605/12345\",\"\"\n110,20060527,2000,,,\"32156000132005000001720001\",\"48835500091234567890123456\",\"\",\"Telekomunikacja Polska\",,,\"Usluga instalacyjna\",\"\",\"\",\"\",\"\",\"\"\n,20060527,3000,,,\"32156000132005000001720001\",\"48835500091234567890123456\",\"\",\"Telekomunikacja Polska\",,,\"Usluga instalacyjna\"\n----\n\nNOTE: Format importu Listy płac w formacie Elixir, jest taki sam jak dla przelewów zwykłych. Pozycja dotycząca daty będzie pomijana i importowane przelewy zapiszą się zgodnie z datą bieżącą (COT również nie jest weryfikowany).\n\n\n*Plik z przelewami podatku*\n\nPlik z przelewami podatku jest zapisany w formacie tekstowym. Każde zlecenie przelewu zajmuje jedną linię (jeden rekord) zakończoną znakiem <CRLF>.\nKażdy rekord jest złożony z 17 pól. Pola występują w ustalonej kolejności opisanej w części Struktura rekordu. Pola są oddzielone separatorem. Separatorem jest przecinek.\nPola tekstowe są objęte cudzysłowami. Pola tekstowe, dla których nie jest przekazywana wartość, są zapisane jako pusty string \" \". Puste pola końcowe rekordu mogą zostać pominięte. Znakiem podziału linii w obrębie pola jest znak \"|\". Wszystkie rachunki nadawców muszą istnieć w bazie danych.\nPolskie znaki są kodowane w formacie ISO 8859-2 lub WINDOWS-1250.\n\n[underline]##Struktura rekordu:##\nRekord danych musi mieć strukturę zgodną ze strukturą pliku przecinkowego Elixir.\n\nTypy danych stosowane przy opisie pól: +\n*N* - pole numeryczne, wartością jest liczba całkowita. +\n*D* - data w formacie RRRRMMDD, gdzie RRRR - rok, MM - miesiąc, DD - dzień (np. 20060501). +\n*C* - pole tekstowe. Dozwolone znaki zgodne z wymaganiami systemu Elixir. Rozmiar pola 4*\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 265,
+      "line_end": 410
+    }
+  ]
+}

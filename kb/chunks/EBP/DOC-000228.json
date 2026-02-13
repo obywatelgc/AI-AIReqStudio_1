@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000228",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Przelewy"
+    },
+    {
+      "level": 4,
+      "title": "Zlecenie przelewu zwykłego krajowego"
+    },
+    {
+      "level": 5,
+      "title": "Weryfikacja przelewów zwykłych EXPRESS ELIXIR"
+    }
+  ],
+  "section_title": "Weryfikacja przelewów zwykłych EXPRESS ELIXIR",
+  "text": "W procesie składania przelewów natychmiastowych w systemie wykonywane są następujące walidacje:\n\n{empty}1. czy bank odbiorcy jest uczestnikiem _EXPRESS ELIXIR_,\n\n{empty}2. czy na moment wykonywania walidacji usługa _EXPRESS ELIXIR_ Banku nadawcy i odbiorcy jest dostępna (dostępność statyczna),\n\n{empty}3. czy pojedyncza płatność nie przekracza maksymalnej kwoty dla płatności natychmiastowych określonej w parametrze *KWOTA_PROGOWA_EE_REB*,\n\n{empty}4. czy przelew nie jest przelewem wewnętrznym.\n\nW przypadku braku możliwości wysłania dyspozycji _EXPRESS ELIXIR_ system wyświetli stosowny komunikat:\n\n* _Bank odbiorcy nie jest uczestnikiem Express Elixir,_\n\n* _Bank nadawcy nie jest w danej chwili dostępny w usłudze Express Elixir,_\n\n* _Bank odbiorcy nie jest w danej chwili dostępny w usłudze Express Elixir,_\n\n* _Kwota przelewu przekracza maksymalną dopuszczalną kwotę dla przelewów natychmiastowych._\n\nUżytkownik będzie mógł zmienić typ rozliczenia poprzez zmianę na formularzu dyspozycji na opcję _Elixir_ lub _SORBNET_.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 444,
+      "line_end": 466
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000075",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Konfiguracja powiadomień"
+    },
+    {
+      "level": 5,
+      "title": "Konfiguracja powiadomień dla rachunków"
+    }
+  ],
+  "section_title": "Konfiguracja powiadomień dla rachunków",
+  "text": "Wybranie zakładki RACHUNKI umożliwia Użytkownikowi konfigurację powiadomień dotyczących rachunków.\n\nimage::main/image1038.png[image,width=604,height=232]\n\nW zakładce RACHUNKI Użytkownik ma możliwość konfiguracji następujących parametrów:\n\n* Zmiany salda – powiadomienie wysyłane każdorazowo w momencie zmiany salda na rachunku, dostępne do konfiguracji są następujące parametry:\n\n** SMS – wysyłanie powiadomień za pomocą SMS,\n** PUSH – wysyłanie powiadomień za pomocą PUSH. +\n+\n\nUżytkownik ma możliwość jednocześnie zaznaczenia dwóch checkboxów, po zaznaczeniu przynajmniej jednego checkboxa, system zaprezentuje dodatkowy parametr:\n\n** Kwota zmiany salda, powyżej której wysłane będzie powiadomienie:\n\nimage::main/image1039.png[image,width=477,height=104]\n\nW przypadku, gdy Użytkownik nie wypełni kwoty, system zaprezentuje dodatkową informację: _Powiadomienie będzie wysyłane niezależnie od kwoty_.\n\nimage::main/image10310.png[image,width=488,height=114]\n\n* *Debet na rachunku* - powiadomienie wysyłane każdorazowo w momencie zmiany salda na rachunku, gdy to powoduje powstanie debetu, dostępne do konfiguracji są następujące parametry:\n\n** SMS – wysyłanie powiadomień za pomocą SMS,\n** PUSH – wysyłanie powiadomień za pomocą PUSH.\n\nUżytkownik ma możliwość jednocześnie zaznaczenia dwóch checkboxów.\n\n* *Cykliczna informacja o stanie salda* - powiadomienie wysyłane w wybrane dni niezależnie od tego, czy nastąpiła zmiana salda, dostępne do konfiguracji są następujące parametry:\n\n** SMS – wysyłanie powiadomień za pomocą SMS,\n** PUSH – wysyłanie powiadomień za pomocą PUSH.\n\nUżytkownik ma możliwość jednocześnie zaznaczenia dwóch checkboxów. Po zaznaczeniu przynajmniej jednego checkboxa, system prezentuje dodatkową informację _Powiadomienie wysyłane o godzinie 09:00_, godzina prezentowana w informacji, jest uzależniona od ustawienia parametru _Godzina wysyłki powiadomień_.\n\nimage::main/image10311.png[image,width=387,height=85]\n\n* Dodatkowo system prezentuje listę dni tygodnia, Użytkownik może wskazać konkretne lub wszystkie dni w których będą wysyłane powiadomienia.\n\nimage::main/image10312.png[image,width=604,height=255]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 2469,
+      "line_end": 2511
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000114",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Kredyty"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie harmonogramu spłat kredytu"
+    }
+  ],
+  "section_title": "Przeglądanie harmonogramu spłat kredytu",
+  "text": "Aby przejść do harmonogramu wybranego kredytu, należy kliknąć w obszar wybranego wiersza na liście kredytów i wybrać przycisk [HARMONOGRAM].\n\nimage::Kredyty/image20.png[image,width=603,height=247]\n\nDla harmonogramu spłat kredytu dostępne są następujące informacje:\n\n* *Data płatności* – termin płatności raty (data w formacie DD.MM.RRRR),\n* *Kwota* – kwota raty wraz z walutą (suma kapitału i odsetek do zapłaty).\n\nW celu zawężenia prezentacji listy rat, Użytkownik ma możliwość zastosowania filtru prostego, po wpisaniu danych w polu wyszukiwania znajdującego się nad listą:\n\nimage::Kredyty/image21.png[image,width=356,height=63]\n\nSystem filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej operacji w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści. Aby powrócić do pełnej listy należy kliknąć w ikonę image:Kredyty/image22.png[image,width=41,height=42]w polu wyszukiwania.\n\nW górnej części formularza NAJBLIŻSZE RATY dostępne są przyciski:\n\n* image:Kredyty/image17.png[image,width=43,height=46] – umożliwiający przejście do formularza KREDYTY,\n* image:Kredyty/image18.png[image,width=49,height=57] – umożliwiający wyjście do menu głównego.\n\nKliknięcie w obszar wybranej pozycji harmonogramu spłat, powoduje wyświetlenie dodatkowych informacji dla operacji:\n\n* *Część kapitałowa* – kwota stanowiąca kapitał wybranej raty kredytu wraz z walutą,\n* *Część odsetkowa* – kwota stanowiąca odsetki wybranej raty kredytu wraz z walutą.\n\nimage::Kredyty/image23.png[image,width=604,height=114]\n\nPonowne kliknięcie w obszar rozwiniętego wiersza wybranej pozycji harmonogramu spłaty powoduje jego zwinięcie.\n\nLista z harmonogramem spłat podlega stronicowaniu. Przejście do kolejnych stron następuje poprzez wybór przycisków nawigacyjnych znajdujących się pod listą.\n\nimage::Kredyty/image24.png[image,width=294,height=62]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Kredyty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Kredyty.adoc",
+      "line_start": 164,
+      "line_end": 197
+    }
+  ]
+}

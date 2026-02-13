@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000294",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Aktywacja dostępu do KSeF"
+    },
+    {
+      "level": 4,
+      "title": "Aktywacja dostępu do KSeF - certyfikat kwalifikowany"
+    }
+  ],
+  "section_title": "Aktywacja dostępu do KSeF - certyfikat kwalifikowany",
+  "text": "W celu aktywacji e-faktury certyfikatem kwalifikacyjnym należy pobrać plik, a następnie podpisać go z wykorzystaniem certyfikatu na komputerze użytkownika lub Profilu Zaufanego.\n\nimage::e-Faktury(KSeF)/aktywacja_certyfikat.png[]\n\nPo wczytaniu podpisanego pliku następuje poprawna aktywacja do KSeF.\n\nimage::e-Faktury(KSeF)/aktywacja_certyfikat_1.png[]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 35,
+      "line_end": 43
+    }
+  ]
+}

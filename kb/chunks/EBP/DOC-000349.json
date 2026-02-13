@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000349",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktury plików importu przelewów zwykłych oraz podatku"
+    },
+    {
+      "level": 5,
+      "title": "Plik w formacie ISO20022"
+    }
+  ],
+  "section_title": "Plik w formacie ISO20022",
+  "text": "</PrvtId>\n        </Id>\n      </InitgPty>\n    </GrpHdr>\n    <!--    ELIXIR-->\n    <PmtInf>\n      <PmtInfId>1</PmtInfId>\n      <PmtMtd>TRF</PmtMtd>\n      <ReqdExctnDt>2023-04-23</ReqdExctnDt>\n      <Dbtr>\n        <Nm>Nazwa Zleceniodawcy</Nm>\n      </Dbtr>\n      <DbtrAcct>\n        <Id>\n          <Othr>\n            <Id>PL30910100032002000015960001</Id>\n          </Othr>\n        </Id>\n      </DbtrAcct>\n      <DbtrAgt>\n        <FinInstnId>\n        </FinInstnId>\n      </DbtrAgt>\n      <CdtTrfTxInf>\n        <PmtId>\n          <EndToEndId>REFERENCJE</EndToEndId>\n        </PmtId>\n        <PmtTpInf>\n          <CtgyPurp>\n            <Cd>INTC</Cd>\n          </CtgyPurp>\n        </PmtTpInf>\n        <Amt>\n          <InstdAmt Ccy=\"PLN\">5.00</InstdAmt>\n        </Amt>\n        <IntrmyAgt1>\n          <FinInstnId>\n            <ClrSysMmbId>\n              <ClrSysId>\n                <Cd>16800007</Cd>\n              </ClrSysId>\n              <MmbId>16800007</MmbId>\n            </ClrSysMmbId>\n          </FinInstnId>\n        </IntrmyAgt1>\n        <Cdtr>\n          <Nm>Jan Kowalski</Nm>\n          <PstlAdr>\n            <Ctry>PL</Ctry>\n            <AdrLine>Ul. Testowa 14 35-322 Rzeszow</AdrLine>\n          </PstlAdr>\n        </Cdtr>\n        <CdtrAcct>\n          <Id>\n            <Othr>\n              <Id>49168000075544715806960993</Id>\n            </Othr>\n          </Id>\n        </CdtrAcct>\n        <RmtInf>\n          <Ustrd>Zwykly</Ustrd>\n        </RmtInf>\n      </CdtTrfTxInf>\n    </PmtInf>\n\t<!-- SPLIT-->\n\t    <PmtInf>\n      <PmtInfId>1</PmtInfId>\n      <PmtMtd>TRF</PmtMtd>\n      <ReqdExctnDt>2023-04-23</ReqdExctnDt>\n      <Dbtr>\n        <Nm>Firma Test Sp. z o.o. Sp. k.</Nm>\n      </Dbtr>\n      <DbtrAcct>\n        <Id>\n          <Othr>\n            <Id>PL30910100032002000015960001</Id>\n          </Othr>\n        </Id>\n      </DbtrAcct>\n      <DbtrAgt>\n        <FinInstnId>\n        </FinInstnId>\n      </DbtrAgt>\n      <CdtTrfTxInf>\n        <PmtId>\n          <EndToEndId>REFERENCJE</EndToEndId>\n        </PmtId>\n        <PmtTpInf>\n          <CtgyPurp>\n            <Cd>INTC</Cd>\n          </CtgyPurp>\n        </PmtTpInf>\n        <Amt>\n          <InstdAmt Ccy=\"PLN\">5.00</InstdAmt>\n        </Amt>\n        <IntrmyAgt1>\n          <FinInstnId>\n            <ClrSysMmbId>\n              <ClrSysId>\n                <Cd>16800007</Cd>\n              </ClrSysId>\n              <MmbId>16800007</MmbId>\n            </ClrSysMmbId>\n          </FinInstnId>\n        </IntrmyAgt1>\n        <Cdtr>\n          <Nm>Jan Kowalski</Nm>\n          <PstlAdr>\n            <Ctry>PL</Ctry>\n            <AdrLine>Ul. Testowa 14 35-322 Rzeszow</AdrLine>\n          </PstlAdr>\n        </Cdtr>\n        <CdtrAcct>\n          <Id>\n            <Othr>\n              <Id>49168000075544715806960993</Id>\n            </Othr>\n          </Id>\n        </CdtrAcct>\n        <RmtInf>\n          <Ustrd>/VAT/1.00/IDC/Identyfikator/INV/Faktura/TXT/MPP</Ustrd>\n        </RmtInf>\n      </CdtTrfTxInf>\n    </PmtInf>\n    <!--    SORBNET-->\n    <PmtInf>\n      <PmtInfId>2</PmtInfId>\n      <PmtMtd>TRF</PmtMtd>\n      <ReqdExctnDt>2024-03-24</ReqdExctnDt>\n      <Dbtr>\n        <Nm>Firma Testowa Sp. z o.o. Sp. k.</Nm>\n      </Dbtr>\n      <DbtrAcct>\n        <Id>\n          <Othr>\n            <Id>PL30910100032002000015960001</Id>\n          </Othr>\n        </Id>\n      </DbtrAcct>\n      <DbtrAgt>\n        <FinInstnId>\n        </FinInstnId>\n      </DbtrAgt>\n      <CdtTrfTxInf>\n        <PmtId>\n          <EndToEndId>SORBNET</EndToEndId>\n        </PmtId>\n        <PmtTpInf>\n          <SvcLvl>\n            <Cd>RTGS</Cd>\n          </SvcLvl>\n          <CtgyPurp>\n            <Cd>INTC</Cd>\n          </CtgyPurp>\n        </PmtTpInf>\n        <Amt>\n          <InstdAmt Ccy=\"PLN\">15.00</InstdAmt>\n        </Amt>\n        <IntrmyAgt1>\n          <FinInstnId>\n            <ClrSysMmbId>\n              <ClrSysId>\n                <Cd>16800007</Cd>\n              </ClrSysId>\n              <MmbId>16800007</MmbId>\n            </ClrSysMmbId>\n          </FinInstnId>\n        </IntrmyAgt1>\n        <Cdtr>\n          <Nm>Jan Kowalski</Nm>\n          <PstlAdr>\n            <Ctry>PL</Ctry>\n            <AdrLine>Ul. Testowa 14 35-322 Rzeszow</AdrLine>\n          </PstlAdr>\n        </Cdtr>\n        <CdtrAcct>\n          <Id>\n            <Othr>\n              <Id>49168000075544715806960993</Id>\n            </Othr>\n          </Id>\n        </CdtrAcct>\n        <RmtInf>\n          <Ustrd>Przelew SORBNET</Ustrd>\n        </RmtInf>\n      </CdtTrfTxInf>\n    </PmtInf>\n  </CstmrCdtTrfInitn>\n</Document>\n----\n\n*Specyfikacja pól w pliku ISO20022 dla przelewu podatkowego*\n\n\n[width=\"100%\",cols=\"18%,8%,14%,37%,23%\",options=\"header\",]\n|===\n|*Nazwa elementu* |*Status* |*Format* |*Opis* |*Przykład*\n5+|<?xml version=”1.0” encoding=”utf-8”?>\n5+|<Document xmlns=”urn:iso:std:iso:20022:tech:xsd:pain.001.001.03” xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance”>\n|<CstmrCdtTrfInitn> 4+|\na|\n +<GrpHdr> 4+|\na|\n ++<MsgId> |M |35x |Identyfikator pliku płatności (weryfikacja duplikatów). Nie może zawierać spacji |\na|\n ++<CreDtTm> |M | |Data i czas utworzenia; RRRR-MM-DDTHH:MM:SS |2020-07-23T10:08:06\na|\n ++<NbOfTxs> |M |15d |Ilość zleceń w całym pliku |\na|\n ++<InitgPty> .5+<.^|O .5+<.^| .5+<.^|Kod identyfikacyjny zleceniodawcy .5+<.^|\na|\n +++Id\na|\n ++++PrvtId\na|\n +++++Othr\na|\n ++++++Id\na|\n +<PmtInf> 4+|\na|\n ++<PmtInfId> |M |35x |Identyfikator płatności |\na|\n ++<PmtMtd> |M |3!a |Typ operacji. Stała wartość TRF |TRF\na|\n ++<ReqdExctnDt> |M | |Data realizacji RRRR-MM-DD |\na|\n ++<Dbtr> ||||\na|\n +++<Nm> |M |70x |Nazwa instytucji zlecającej |\na|\n ++<DbtrAcct> .4+<.^|M .4+<.^|34x .4+<.^|Rachunek do obciążenia w formacie IBAN .4+<.^|PL30910100032002000015960001\na|\n +++<Id>\na|\n ++++Othr\na|\n +++++Id\na|\n ++<DbtrAgt> .2+<.^|M .2+<.^| .2+<.^| .2+<.^|\na|\n +++<FinInstnId>\na|\n ++<CdtTrfTxInf> ||||\na|\n +++<PmtId> | | | |\na|\n ++++<EndToEndId> |M |35x |Referencje. |\na|\n +++<PmtTpInf> | | | |\na|\n ++++<CtgyPurp> .2+<.^|C .2+<.^|4!a .2+<.^|Kategoria zlecenia. Dopuszcza się kod:  ’TAXS’ – dla zleceń na rzecz Urzędów Skarbo\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 733,
+      "line_end": 1339
+    }
+  ]
+}

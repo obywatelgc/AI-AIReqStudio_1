@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000246",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Przelewy"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie listy szablonów przelewów"
+    },
+    {
+      "level": 4,
+      "title": "Podgląd szczegółów szablonu przelewu"
+    }
+  ],
+  "section_title": "Podgląd szczegółów szablonu przelewu",
+  "text": "Aby z listy szablonów przelewów przejść do szczegółów wybranego szablonu należy kliknąć w obszar wybranego wiersza i wybrać opcję [SZCZEGÓŁY]. Wyświetlane jest wówczas okno prezentujące szczegółowe informacje dla szablonu:\n\nimage::Przelewy/image52.png[image,width=457,height=362]\n\nLista danych prezentowanych w szczegółach szablonu przelewu jest zależna od typu przelewu.\n\nDodatkowo dla przelewu zaufanego, zostanie wyświetlona informacja:\n\nimage::Przelewy/image52a.png[]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Przelewy.adoc",
+      "line_start": 1124,
+      "line_end": 1134
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000070",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Filtrowanie adresów IP"
+    },
+    {
+      "level": 5,
+      "title": "Włączenie funkcjonalności kontroli adresów IP na poziomie globalnym"
+    }
+  ],
+  "section_title": "Włączenie funkcjonalności kontroli adresów IP na poziomie globalnym",
+  "text": "Włączenie funkcjonalności na poziomie globalnym, dostępne jest tylko dla administratora/Użytkownika FIRMA, w opcji [ZARZĄDZAJ].\n\nNa formularzu ZARZĄDZANIE KONFIGURACJĄ DOSTĘPU dostępny jest parametr _Zarządzaj konfiguracją dostępu_, za pomocą którego administratora/Użytkownika może globalnie włączyć/wyłączyć funkcjonalność:\n\n* AKTYWNY – przesuniecie suwaka w prawo umożliwia włączenie funkcjonalności filtrowania adresów IP dla wszystkich Użytkowników logujących się do systemu Asseco EBP w kontekście tej firmy,\n* NIEAKTYWNA – przesuniecie suwaka w lewo umożliwia globalne wyłączenie funkcjonalności kontroli adresów IP dla wszystkich Użytkowników logujących się do systemu Asseco EBP w kontekście tej firmy.\n\nWyłączona funkcyjność kontroli adresów IP\n\nimage::main/image169.png[image,width=612,height=143]\n\nWłączona funkcjonalność kontroli adresów IP\n\nimage::main/image170.png[image,width=617,height=144]\n\nZmiana konfiguracji będzie wymagała potwierdzenia Użytkownika za pomocą dostępnej metody autoryzacji.\n\nW zależności od ustawienia parametru _Zarządzaj konfiguracją dostępu_ na formularzu KONFIGURACJA DOSTĘPU system zaprezentuje informację o statusie funkcjonalności:\n\n* Konfiguracja dostępu nieaktywna,\n\nimage::main/image171.png[image,width=318,height=123]\n\n* Konfiguracja dostępu aktywna,\n\nimage::main/image172.png[image,width=328,height=129]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 2249,
+      "line_end": 2276
+    }
+  ]
+}

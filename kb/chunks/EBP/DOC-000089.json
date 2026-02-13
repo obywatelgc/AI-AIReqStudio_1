@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000089",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Rachunki"
+    },
+    {
+      "level": 3,
+      "title": "Podgląd szczegółów rachunku"
+    }
+  ],
+  "section_title": "Podgląd szczegółów rachunku",
+  "text": "Aby przejść do szczegółów wybranego rachunku należy kliknąć w obszar wybranego wiersza i wybrać przycisk [SZCZEGÓŁY]. System wyświetla formularz SZCZEGÓŁY RACHUNKU.\n\nimage::Rachunki/image20.png[image,width=604,height=257]\n\nNa formularzu prezentowane są następujące dane:\n\n* *Numer rachunku* – numer rachunku w formacie NRB,\n* *Numer rachunku VAT* - numer powiązanego rachunku VAT,\n* *Waluta* – symbol waluty w jakiej prowadzony jest rachunek,\n* *Rodzaj rachunku*,\n* *Nazwa własna* – nazwa rachunku nadana przez klienta,\n* *Saldo* – aktualna suma środków zgromadzonych na rachunku,\n* *Dostępne środki* – aktualna suma środków pozostałych do wykorzystania na rachunku,\n* *Kwota zablokowanych środków* – suma blokad na rachunku wraz z walutą,\n* *Przyznany limit kredytowy* – kwota przyznanego limitu kredytowego wraz z walutą,\n* *Oprocentowanie* – oprocentowanie zgromadzonych środków,\n* *Data otwarcia* – data otwarcia rachunku (data w formacie DD.MM.RRRR),\n* *Twój status* – stosunek własności zalogowanego klienta względem rachunku,\n* *Właściciel* – dane właściciela rachunku,\n* *Pełnomocnicy* – dane pełnomocnika rachunku,\n* *Transakcje przez internet: Limit dzienny* – limit dzienny dla transakcji przez internet,\n* *Pozostały limit dzienny* – pozostały limit dzienny do wykorzystania,\n* *Transakcje przez internet: limit jednorazowy* – limit jednorazowy dla transakcji przez internet.\n* *Typ wyciągu* - typ wyciągu, np. miesięczny.\n\nW przypadku rachunków VAT nie są prezentowane wartości:\n\n* *Transakcje przez internet: limit dzienny,*\n* *Pozostały limit dzienny,*\n* *Transakcje przez internet: limit jednorazowy.*\n\nW górnej części formularza SZCZEGÓŁY RACHUNKU dostępne są przyciski:\n\n* image:Rachunki/image21.png[image,width=45,height=53] – umożliwiający powrót do formularza RACHUNKI,\n* image:Rachunki/image22.png[image,width=48,height=61]– umożliwiający przejście do głównego menu.\n\nNad szczegółami rachunku dostępne są przyciski (analogiczne jak dla wybranego rachunku na liście rachunków):\n\n* [HISTORIA RACHUNKU] – przycisk umożliwiający przeglądanie historii operacji na rachunku,\n* [DODATKOWE OPCJE] - pogrupowane akcje, w skład których wchodzą:\n** *Przelew* – opcja umożliwiająca wykonanie przelewu zwykłego/własnego/podatkowego/walutowego; po wybraniu opcji wyświetlany jest formularz PRZELEW (analogiczny do formularza nowego przelewu wyświetlanego z poziomu miniaplikacji *Przelewy)*,\n** *Lista opłat* – po naciśnięciu system przekierowuje do formularza ZESTAWIENIA OPŁAT, umożliwiającego przeglądanie pobranych opłat na rachunku,\n** *Blokady* – po naciśnięciu system przekierowuje do formularza BLOKADY RACHUNKU, umożliwiającego przeglądanie blokad założonych na tym rachunku,\n** *Wyciągi* – po naciśnięciu system przekierowuje do formularza WYCIĄGI, umożliwiającego przeglądanie listy dostępnych na tym rachunku wyciągów,\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Rachunki.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Rachunki.adoc",
+      "line_start": 204,
+      "line_end": 249
+    }
+  ]
+}

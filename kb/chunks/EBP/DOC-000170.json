@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000170",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Lista przelewów - opis wybranych akcji"
+    },
+    {
+      "level": 4,
+      "title": "Anulowanie zbiorcze przelewów z Listy zleceń"
+    }
+  ],
+  "section_title": "Anulowanie zbiorcze przelewów z Listy zleceń",
+  "text": "Akcja anulowania zbiorczego przelewów dostępna jest w *panelu akcji zbiorczych*.\nW celu skorzystania z anulowania zbiorczego przelewów należy zaznaczyć przelewy z _Listy zleceń_, a następnie wybrać akcję zbiorczą *Anuluj*. System zaprezentuje podsumowanie zaznaczonych przelewów.\n\nimage::Lista_zlecen/image16.png[image,width=604,height=224]\n\nPo wybraniu opcji [SZCZEGÓŁY] system prezentuje listę dyspozycji:\n\nimage::Lista_zlecen/image105.png[image,width=604,height=224]\n\nPo zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia.\n\nNOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do usuwania przelewów. Anulowanie dostępne jest dla przelewów o statusie _Nowy_.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 238,
+      "line_end": 251
+    }
+  ]
+}

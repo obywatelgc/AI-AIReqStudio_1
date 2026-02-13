@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000095",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Rachunki"
+    },
+    {
+      "level": 3,
+      "title": "Przeglądanie blokad na rachunku"
+    }
+  ],
+  "section_title": "Przeglądanie blokad na rachunku",
+  "text": "Aby przeglądnąć listę blokad danego rachunku należy na formularzu RACHUNKI kliknąć w obszar rachunku i wybrać przycisk [BLOKADY]. Wyświetlany jest wówczas formularz BLOKADY RACHUNKU prezentujący listę blokad dla rachunku.\n\nW ramach dostępnych rachunków Użytkownik ma możliwość również przeglądania bieżących autoryzacji transakcji, które zostały dokonane na wybranym rachunku, a nie zostały jeszcze rozliczone i zaksięgowane.\n\nimage::Rachunki/image40.png[image,width=604,height=250]\n\nNa formularzu BLOKADY RACHUNKU prezentowane są następujące informacje:\n\n* *Data* – data blokady (data w formacie DD.MM.RRRR),\n* *Opis blokady* – opis blokady,\n* *Kwota* – kwota blokady wraz z walutą.\n\nZdjęcie blokady powoduje, że nie jest ona dłużej widoczna dla Użytkownika. W przypadku, gdy nie ma blokad na rachunku wyświetlany jest komunikat: _Brak blokad do wyświetlenia_.\n\nimage::Rachunki/image41.png[image,width=604,height=150]\n\nLista blokad jest stronicowana. Przejście do kolejnych stron następuje poprzez wybór przycisków nawigacyjnych znajdujących się pod listą.\n\nimage::Rachunki/image42.png[image,width=301,height=75]\n\nSystem umożliwia także filtrowanie listy blokad po wpisaniu danych w polu wyszukiwania:\n\nimage::Rachunki/image43.png[image,width=355,height=56]\n\nSystem filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej blokady w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści.\n\nW przypadku, gdy lista blokad jest stronicowana filtrowanie list dotyczy zakresu wyłącznie bieżącej strony listy.\n\nW górnej części formularza BLOKADY RACHUNKU dostępne są przyciski:\n\n* image:Rachunki/image21.png[image,width=45,height=53] – umożliwiający powrót do formularza RACHUNKI,\n\n* image:Rachunki/image22.png[image,width=48,height=61]– umożliwiający przejście do głównego menu.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Rachunki.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Rachunki.adoc",
+      "line_start": 485,
+      "line_end": 519
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000017",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Logowanie do systemu"
+    },
+    {
+      "level": 4,
+      "title": "Logowanie do systemu Asseco EBP przy pomocy karty mikroprocesorowej"
+    },
+    {
+      "level": 5,
+      "title": "Kolejne logowanie do systemu Asseco EBP przy pomocy karty mikroprocesorowej"
+    }
+  ],
+  "section_title": "Kolejne logowanie do systemu Asseco EBP przy pomocy karty mikroprocesorowej",
+  "text": "Jeśli aplikacja e-Podpis jest uruchomiona i Użytkownik jest do niej zalogowany, wówczas proces logowania do system Asseco EBP za pomocą karty mikroprocesorowej przebiega następująco:\n\n* Użytkownik na formatce logowania wprowadza identyfikator i przechodzi do drugiego kroku naciskając przycisk [DALEJ].\n\nimage::main/image21.png[image,width=612,height=241]\n\n* Na drugim kroku logowania, zostaje zaprezentowana formatka oczekiwania na podpis  oraz formatka z aplikacji e-Podpis z danymi do podpisu.\n\nimage::main/image21b.png[image,width=612,height=301]\n\n* Użytkownik podaje na formatce e-Podpisu kod weryfikacyjny z formatki logowania oraz PIN do karty.\n* Po poprawnym wprowadzeniu kodu weryfikacyjnego  oraz PINu, Użytkownik zostaje zalogowany do systemu Asseco EBP.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 326,
+      "line_end": 340
+    }
+  ]
+}

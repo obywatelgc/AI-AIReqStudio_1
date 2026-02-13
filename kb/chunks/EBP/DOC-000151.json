@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000151",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (Visiona - GAPI)"
+    },
+    {
+      "level": 3,
+      "title": "Zablokowanie (czasowe karty)"
+    }
+  ],
+  "section_title": "Zablokowanie (czasowe karty)",
+  "text": "Zablokowanie (czasowe) karty jest możliwe z poziomu listy kart:\n\nimage::Karty/K_lista_kart1.jpg[]\n\nWybranie opcji [Zablokuj] (czasowo) otwiera formularz,\nna którym Klient podpisuje dyspozycję zablokowania (czasowego)\nkarty przypisanym środkiem autoryzacji::\n\nimage::Karty/K_karta_zabl1.jpg[]\n\nPo poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:\n\nimage::Karty/K_karta_zabl2.jpg[image,width=304,height=207]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 1471,
+      "line_end": 1486
+    }
+  ]
+}

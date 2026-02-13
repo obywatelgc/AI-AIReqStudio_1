@@ -1,0 +1,24 @@
+{
+  "chunk_id": "DOC-000329",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Rachunki powiernicze"
+    }
+  ],
+  "section_title": "Rachunki powiernicze",
+  "text": "Miniaplikacja *Rachunki powiernicze* zapewnia dostęp do podglądu mieszkaniowego rachunku powierniczego (MRP) wraz z rachunkami ewidencyjnymi w trybie pasywnym.\n\nSystem Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Rachunki powiernicze* z dwóch głównych poziomów:\n\n* widżetu *Rachunki MRP* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),\n\nimage::Powiernicze/image1.png[image,width=304,height=275]\n\n* menu bocznego po wybraniu opcji _Rachunki powiernicze_.\n\nimage::Powiernicze/image2.png[image,width=226,height=50]\n\nW każdym z poziomów miniaplikacji dla Użytkownika dostępne są formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach. Z poziomu formatek Użytkownik może wykonać wskazane akcje.\n\nUżytkownik posiadający dostęp do miniaplikacji *Rachunki powiernicze* ma możliwość:\n\n* przeglądania skróconych informacji o rachunkach MRP na widżecie miniaplikacji *Rachunki powiernicze*,\n* przeglądania rachunków powierniczych,\n* przeglądania rachunków ewidencyjnych,\n* przeglądania operacji na rachunkach MRP,\n* przeglądania składek do opłacenia,\n* przelewu na rachunek składkowy,\n* szczegóły rachunku,\n* rachunki ewidencyjne operacje,\n* rachunki ewidencyjne składki DFG,\n* rachunki ewidencyjne wyciągi,\n* rachunki ewidencyjne szczegóły.\n\nNOTE: Funkcjonalność rachunki powiernicze dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia: do funkcjonalności i do rachunków. Uprawnienia ustawiane są przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Powierniczne.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Powierniczne.adoc",
+      "line_start": 4,
+      "line_end": 34
+    }
+  ]
+}

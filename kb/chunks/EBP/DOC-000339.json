@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000339",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Formaty danych"
+    }
+  ],
+  "section_title": "Formaty danych",
+  "text": "System Asseco EBP pozwala na import/eksport danych w różnych stałych oraz definiowanych formatach plików. Poniżej przedstawione są dostępne formaty danych przeznaczone dla importu danych, z podziałem na poszczególne opcje systemu.\n\nFormat importu przelewów zwykłych:\n\n* XML,\n* Elixir,\n* Liniowy,\n* Telekonto,\n* Videotel.\n\nFormat importu przelewów podatku:\n\n* XML,\n* Elixir,\n* Liniowy,\n* ISO20022.\n\nFormat importu przelewów walutowych:\n\n* ISO20022,\n* MT103.\n\nFormat importu szablonów:\n\n* XML,\n* Liniowy,\n* Telekonto.\n\nFormat importu szablonów przelewów walutowych:\n\n* XML,\n* Liniowy.\n\nFormat eksportu historii operacji:\n\n* XML,\n* Liniowy,\n* MT940,\n* MT940/MultiCash,\n* CSV.\n\nFormat eksportu historii operacji z wielu rachunków:\n\n* XML,\n* Liniowy,\n* MT940,\n* MT940/MultiCash,\n* CSV.\n\nFormat eksportu wyciągów:\n\n* XML,\n* XML (format CEB),\n* Liniowy,\n* MT940,\n* MT940_1\n* MT940 (bez podziału)\n* MT940/MultiCash,\n* MT940 SABA,\n* MT940/MultiCash (format CEB),\n* MT940_WIRT\n* CSV\n* JPK_WB\n\nFormat eksportu statusów przelewów:\n\n* XML,\n* Liniowy,\n* CSV.\n\nFormat eksportu analityki płatności masowych:\n\n* XML,\n* XML (format CEB)\n* Liniowy,\n* MT940,\n* MT940/MultiCash,\n* MT942/MultiCash,\n* MT942 (format CEB),\n* MT942 zbiorczy (format CEB),\n* CSV.\n\n\nFormaty plików XML, XML (format CEB) Elixir, Videotel, Telekonto, MT940, MT940/MultiCash, MT942/MultiCash, MT942 (format CEB), MT942 zbiorczy (foramt CEB) i JPK_WB mają stałą określoną strukturę. Format pliku Liniowy zależy od zaimportowanej struktury z pliku \"SCHEMA.INI\".\n\nDla danych w formacie XML niedozwolone są następujące znaki: '&', '<'. Jeśli w pliku XML wystąpią takie znaki będzie on traktowany jako niepoprawny. Dla powyższych znaków należy koniecznie zastosowac następujące zamienniki:\n\n[source, xml]\n----\n'&' - &amp;\n'<' - &lt;\n----\n\nW przeciwnym wypadku zostaną uznane za nieprawidłowe podczas importu.\n\nDla danych eksportowanych w formacie MT940, MT940/MC, MT942 (również format CEB i zbiorczy format CEB) niedozwolone są następujące znaki: `!@#$%^&*_=[];<>\\ääööüüß +\nJeśli w treści eksportowanego pliku wystąpią takie znaki, zostaną one usunięte.\n\n\nNOTE: W ustawieniach importu i eksportu dostęna jest opcja: \"Uwzględnij datę księgowania\" (domyślnie jest odznaczona). Użytkownik może zdecydować, czy w eksportowanym pliku MT940, MT940/MC, MT942, XML, XML (format CEB) lub Liniowym będzie eksportowana wartość daty księgowania. Parametr nie ma wpływu na zawartość pliku CSV.\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 9,
+      "line_end": 110
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000302",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Lista e-Faktur"
+    },
+    {
+      "level": 4,
+      "title": "Płatność za e-Faktury"
+    },
+    {
+      "level": 5,
+      "title": "Pojedynczy przelew za e-Fakturę"
+    }
+  ],
+  "section_title": "Pojedynczy przelew za e-Fakturę",
+  "text": "Aby zlecić płatność za fakturę należy z listy faktur kliknąć w obszar wybranego wiersza a następnie wybrać opcję:\n\n* [ZAPŁAĆ (PRZELEW ZWYKŁY)] - dla faktur w walucie PLN,\n* [ZAPŁAĆ (PRZELEW WALUTOWY)] - dla faktur w walucie obcej.\n\nOpcja jest także dostępna z okna _Szczegóły faktury_.\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_platnosc_pojedyncza_1.png[]\n\nPo zainicjowaniu płatności Użytkownik przekierowywany jest na formatkę przelewu zwykłego lub walutowego z uzupełnieniem danych przelewu danymi z faktury.\n\n\n\nPo przejściu do przelewu zablokowana jest możliwość zmiany typu przelewu.\n\nJeżeli Użytkownik ma dostępny rachunek bieżący, który powiązany jest z rachunkiem VAT, domyślnie zostaje wybrany ten rachunek i zaznaczony checkbox *Przelew VAT*.\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_platnosc_pojedyncza_vat.png[]\n\nPo poprawnej realizacji przelewu system oznacza fakturę jako opłaconą.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 191,
+      "line_end": 212
+    }
+  ]
+}

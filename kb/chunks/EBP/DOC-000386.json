@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000386",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Formaty danych i struktury plików"
+    },
+    {
+      "level": 3,
+      "title": "Struktury plików"
+    },
+    {
+      "level": 4,
+      "title": "Struktura plików eksportu statusów przelewów"
+    },
+    {
+      "level": 5,
+      "title": "Format XML"
+    }
+  ],
+  "section_title": "Format XML",
+  "text": "Do zestawienia brane są przelewy za wskazany okres w statusie ZR i OD (zakończony oraz odrzucone).\n\nW formacie XML dozwolone są następujące tagi:\n\n[cols=\"4,5\",options=\"header\",]\n|===========================================================\n|Tagi |Opis\n|<statusy></statusy> |Otwiera i zamyka format eksportu w XML.\n|<przelew num=”numer kolejny przelewu na liscie”></przelew> |Otwiera i zamyka dane dla jednej operacji.\n|<status></status> |Otwiera i zamyka dane dla statusu przelewu.\n|<modulo></modulo> |Modulo klienta.\n|<rach_obc></rach_obc> |Numer rachunku obciążonego.\n|<data_wpisu></data_wpisu> |Data wpisu przelewu.\n|<data></data> |Data zlecenia.\n|<id></id> |Identyfikator przelewu.\n|<bank></bank> |Numer banku odbiorcy.\n|<rachunek></rachunek> |Numer rachunku.\n|<kwota></kwota> |Kwota operacji.\n|<waluta></waluta> |Waluta operacji.\n|<referencje></referencje> |Referencje użytkownika.\n|<nazwa1></nazwa1> |Nazwa odbiorcy (dla strony Wn) lub nadawcy (dla strony Ma) -linia1.\n|<nazwa2></nazwa2> |Nazwa odbiorcy – linia 2.\n|<nazwa3></nazwa3> |Nazwa odbiorcy – linia 3.\n|<nazwa4></nazwa4> |Nazwa odbiorcy – linia 4.\n|<tresc_1></tresc_1> |Opis operacji – linia 1.\n|<tresc_2></tresc_2> |Opis operacji – linia 2.\n|<tresc_3></tresc_3> |Opis operacji – linia 3.\n|<tresc_4></tresc_4> |Opis operacji – linia 4.\n|<nip_odb></nip_odb> |NIP odbiorcy.\n|===========================================================\n\nKażde powtórzenie tagów <przelew num=”numer kolejny przelewu na liscie”> ... </przelew> jest traktowane jako kolejna operacja z zestawienia.\n\nPolskie znaki kodowane są w ISO 8859-2.\n\n[underline]##Poniżej przedstawiono przykład pliku eksportu operacji z historii rachunku w formacie XML:##\n\n[source, xml]\n----\n<?xml version=\"1.0\" encoding=\"iso-8859-2\"?>\n<statusy>\n<przelew num=”1”>\n<status>ZR</status>\n<modulo>10346</modulo>\n<nip_odb>5220003782</nip_odb>\n<rach_obc>81109010149686093527917834</rach_obc>\n<data_wpisu>2019-07-10</data_wpisu>\n<data>2019-07-10</data>\n<id>5257</id>\n<bank>10101078</bank>\n<rachunek>93101010780000262221000000</rachunek>\n<kwota>15.18</kwota>\n<waluta>PLN</waluta>\n<referencje>Ref</referencje>\n<nazwa1>CIT,Pierwszy Urzad Skarbowy Bydgoszcz</nazwa1>\n<tresc1>/TI/IDD5040251</tresc1>\n<tresc2>/OKR/02D0319/SFP/CIT</tresc2>\n<tresc3>/TXT/as</tresc3>\n</przelew>\n</statusy>\n----\n",
+  "primary_source_file": "chapters/Import_Eksport_Danych.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Import_Eksport_Danych.adoc",
+      "line_start": 4758,
+      "line_end": 4820
+    }
+  ]
+}

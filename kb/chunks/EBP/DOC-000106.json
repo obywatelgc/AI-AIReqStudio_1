@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000106",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lokaty"
+    },
+    {
+      "level": 3,
+      "title": "Dopłata do lokaty"
+    }
+  ],
+  "section_title": "Dopłata do lokaty",
+  "text": "W celu wykonania operacji dopłaty do lokaty należy z listy lokat kliknąć w obszar wybranego wiersza lokaty (Aktywnej), wybrać przycisk [DOPŁAĆ]. Opcja jest także dostępna na formularzu SZCZEGÓŁY LOKATY. System wyświetla formularz DOPŁATA DO LOKATY wraz z danymi aktywnej lokaty, umożliwiający wykonanie operacji dopłaty do lokaty.\n\nimage::Lokaty/image29.png[image,width=604,height=254]\n\nNa formularzu DOPŁATA DO LOKATY dostępne są:\n\n* Przyciski:\n\n** image:Lokaty/image22.png[image,width=43,height=46] – umożliwiający przejście do formularza LOKATY,\n** image:Lokaty/image23.png[image,width=49,height=57]– umożliwiający wyjście do pulpitu.\n\n* Akcja:\n\n** [DOPŁAĆ] – umożliwia przejście do kroku drugiego, autoryzacji dopłaty do lokaty.\n\nNa formularzu DOPŁATA DO LOKATY Użytkownik musi wypełnić następujące pola:\n\n* *Z rachunku* – wybrać rachunek prowadzony w walucie depozytu, który zostanie obciążony kwotą dopłaty,\n* *Kwota dopłaty* – podać kwotę dopłaty, kwota dopłaty nie może być mniejsza od kwoty następnej dopłaty.\n\nPo wyborze rachunku i użyciu przycisku [DOPŁAĆ], system przechodzi do drugiego kroku. Na formularzu potwierdzenia danych dopłaty do depozytu system wyświetla formularz z wprowadzonymi danymi w trybie podglądu.\n\nimage::Lokaty/image30.png[image,width=604,height=243]\n\nNa formularzu DOPŁATA DO LOKATY (drugiego kroku) dostępne są:\n\n* Przyciski:\n\n** image:Lokaty/image22.png[image,width=43,height=46] – umożliwiający przejście do formularza pierwszego kroku dopłaty do lokaty,\n** image:Lokaty/image23.png[image,width=49,height=57]– umożliwiający wyjście do pulpitu.\n\n* Akcja:\n\n** [AKCEPTUJ] – umożliwia zatwierdzenia dopłaty do lokaty (opcja prezentowana w zależności od posiadanej metody autoryzacji przez Użytkownika).\n\nPo dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, Użytkownikowi zostaje wyświetlone potwierdzenie dopłaty do lokaty wraz z przyciskiem:\n\n[WRÓĆ DO PULPITU] – umożliwiającym przejście do pulpitu.\n\nimage::Lokaty/image31.png[image,width=597,height=342]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lokaty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lokaty.adoc",
+      "line_start": 375,
+      "line_end": 416
+    }
+  ]
+}

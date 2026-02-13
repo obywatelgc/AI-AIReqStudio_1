@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000133",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Karty (Visiona)"
+    },
+    {
+      "level": 3,
+      "title": "Aktywacja karty"
+    }
+  ],
+  "section_title": "Aktywacja karty",
+  "text": "Aby aktywować kartę należy na formularzu KARTY kliknąć w obszar karty nieaktywnej o statusie _Do akceptacji_, a następnie wybrać opcję [AKTYWUJ].\n\nimage::Karty/image54.png[image,width=604,height=101]\n\nPo wyborze przycisku wyświetlony zostaje formularz AKTYWACJA KARTY z następującymi danymi (w zależności od typu karty):\n\n* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,\n* *Nazwa i typ karty* – nazwa karty nadawana w systemie oraz typ karty,\n* *Numer rachunku kredytowego* – numer rachunku kredytowego, do którego wydano kartę,\n* *Data ważności* – koniec okresu ważności karty (data w formacie MM/RRRR),\n* *Imię i nazwisko okaziciela* – imię i nazwisko właściciela karty,\n* *Imię i nazwisko na karcie* – imię i nazwisko umieszczone na karcie,\n* *Podaj kod autoryzacyjny/Klucz do podpisu –* jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa i prezentacja pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.\n\nimage::Karty/image55.png[image,width=604,height=207]\n\nW górnej części formularza AKTYWACJA KARTY dostępne są przyciski:\n\n* image:Karty/image36.png[image,width=45,height=53] – umożliwiający powrót do formularza KARTY,\n\n* image:Karty/image37.png[image,width=48,height=61]– umożliwiający przejście do pulpitu.\n\nPo poprawnej akceptacji aktywacji karty, za pomocą przycisku [AKTYWUJ] zostanie zaprezentowany komunikat jak na poniższym ekranie wraz z przyciskiem [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.\n\nimage::Karty/image56.png[image,width=599,height=343]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Karty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Karty.adoc",
+      "line_start": 562,
+      "line_end": 588
+    }
+  ]
+}

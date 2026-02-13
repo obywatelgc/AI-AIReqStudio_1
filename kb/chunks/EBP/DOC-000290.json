@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000290",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Wiadomości"
+    },
+    {
+      "level": 3,
+      "title": "Tworzenie wiadomości i komunikacja z Bankiem"
+    }
+  ],
+  "section_title": "Tworzenie wiadomości i komunikacja z Bankiem",
+  "text": "W celu wysłania wiadomości do Banku, należy z poziomu listy wiadomości wybrać opcję [Nowa wiadomość]. Użytkownikowi wyświetlane jest wówczas okno *Nowa wiadomość*, w którym powinien wybrać odpowiedniego odbiorcę z listy:\n\nimage::Wiadomosci/image10.png[image]\n\nPo wskazaniu typu wiadomości (z dostępnej listy należy wybrać odpowiednią grupę odbiorców), zostanie zaprezentowana formatka nowej wiadomości:\n\nimage::Wiadomosci/image10a.png[image]\n\nPola do uzupełnienia:\n\n* *Odbiorca* - wczesniej wybrana grupa odbiorców z listy,\n* *Tytuł* - temat wiadomości (maksymalnie 200 znaków),\n* *Treść* - treść wiadomości jaka ma zostać przekazana do Banku (maksymalnie 4000 znaków).\n* *Załącznik* -  załącznik w formacie JPG, PNG, TIFF, GIF lub PDF (maksymalny rozmiar 10MB).\n\nPo wypełnieniu formularza należy użyć przycisku [Wyślij wiadomość]. System wyświetla wówczas ekran z wprowadzonymi danymi w trybie podglądu:\n\nimage::Wiadomosci/image11.png[image]\n\nOpcja [Popraw] daje Użytkownikowi możliwość korekty wiadomości. [Akceptuj] służy do wysłania wiadomości do Banku. Po jej wyborze prezentowany jest poniższy ekran:\n\nimage::Wiadomosci/image12.png[image]\n\nKomunikaty wysłane przez Użytkownika do Banku, prezentowane są na liście *Wiadomości*.\n\nBank ma możliwość odpowiedzenia na wiadomość wysłaną przez Użytkownika, w takim przypadku na liście wyświetli się nowa widomość dołączona do wątku.\n\nimage::Wiadomosci/image12a.png[image]\n\nUżytkownik po wejściu do wiadomości widzi komunikację z bankiem w formie czatu.\n\nimage::Wiadomosci/image12b.png[image]\n\nUżytkownik z tego poziomu może odpowiedzieć Bankowi za pomocą przycisku [Odpowiedz].\nWyświetla się wówczas formatka nowej wiadomości, a wysłana wiadomość zostaje zapisana w danym wątku.\n\nimage::Wiadomosci/image12c.png[image]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Wiadomosci.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Wiadomosci.adoc",
+      "line_start": 116,
+      "line_end": 154
+    }
+  ]
+}

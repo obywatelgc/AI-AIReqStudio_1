@@ -1,0 +1,40 @@
+{
+  "chunk_id": "DOC-000056",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Uprawnienia Użytkowników"
+    },
+    {
+      "level": 5,
+      "title": "Uprawnienia funkcjonalne"
+    },
+    {
+      "level": 6,
+      "title": "Uprawnienia dla Szablonów"
+    }
+  ],
+  "section_title": "Uprawnienia dla Szablonów",
+  "text": "Administrator ma możliwość zarządzania następującymi uprawnieniami funkcjonalnymi w zakresie szablonów:\n\nimage::main/image141.png[image,width=612,height=38]\n\n* Przeglądanie – przeglądanie listy szablonów bez możliwości dodania/edycji/usunięcia,\n* Dodawanie – dodanie szablonu,\n* Edycja – edycja szablonu,\n* Usuwanie – usunięcie danych szablonu,\n* Import – import szablonów.\n\nDodatkowe informacje:\n\n* administrator będzie mógł nadawać pozostałe uprawnienia tylko wtedy gdy Użytkownik będzie miał nadane uprawnienie _Przeglądnie_, w innym przypadku pozostałe uprawnienia będą wyszarzone.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 1859,
+      "line_end": 1873
+    }
+  ]
+}

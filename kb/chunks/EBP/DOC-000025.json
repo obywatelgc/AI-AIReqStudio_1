@@ -1,0 +1,36 @@
+{
+  "chunk_id": "DOC-000025",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Logowanie do systemu"
+    },
+    {
+      "level": 4,
+      "title": "Pomoc w logowaniu"
+    },
+    {
+      "level": 5,
+      "title": "Zablokowanie bankowości internetowej"
+    }
+  ],
+  "section_title": "Zablokowanie bankowości internetowej",
+  "text": "Aby wykonać zablokowanie bankowości internetowej należy wpisać login i wybrać *DALEJ*:\n\nimage::main/image10voicebot.png[]\n\nLub na pierwszej stronie wybrać *ZABLOKUJ DOSTĘP* i następnie wpisać login:\n\nimage::main/image11voicebot.png[]\n\nAplikacja przekieruję na formatkę z informacją o blokowaniu bankowości internetowej i przyciskiem *BLOKADA DOSTĘPU DO BANKOWOŚCI INTERNETOWEJ*:\n\n\nimage::main/image12voicebot.png[]\n\n\nPo wybraniu przycisku *BLOKADA DOSTĘPU DO BANKOWOŚCI INTERNETOWEJ* aplikacja przenosi Użytkownika na formatkę _Blokada dostępu do bankowości internetowej_, gdzie widoczny jest wprowadzony login oraz pole w które należy wpisać PESEL:\n\nimage::main/image13voicebot.png[]\n\nPo wpisaniu PESELU i wybraniu przycisku *DALEJ* aplikacja wyświetli formatkę z informacjami na temat blokowania bankowości internetowej i polem do wprowadzenia kodu autoryzacyjnego, który zostanie podany w rozmowie telefonicznej:\n\nimage::main/image14voicebot.png[]\n\nPo wpisaniu kodu i przycisku *DALEJ* aplikacja potwierdza zablokowanie bankowości internetowej:\n\nimage::main/image15voicebot.png[]\n\n[[obrazek-bezpieczenstwa-logowanie]]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 470,
+      "line_end": 497
+    }
+  ]
+}

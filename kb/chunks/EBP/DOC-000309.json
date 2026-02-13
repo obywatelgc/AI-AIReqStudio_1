@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000309",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "e_Faktura (KSeF)"
+    },
+    {
+      "level": 3,
+      "title": "Lista e-Faktur"
+    },
+    {
+      "level": 4,
+      "title": "Eksport e-Faktury do pliku _XML_"
+    }
+  ],
+  "section_title": "Eksport e-Faktury do pliku _XML_",
+  "text": "W miniaplikacji *e-Faktura (KSeF)* system daje możliwość pobrania faktury w formacie _XML_. Aby pobrać pojedynczą fakturę należy kliknąć w wiersz wybranej faktury i w [DODATKOWE OPCJE] wybrać akcję [POBIERZ XML]. Opcja jest także dostępna z okna _Szczegóły faktury_.\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_pobierz_xml_1.png[]\n\nAby pobrać archiwum _ZIP_ z plikami _XML_ należy zaznaczyć faktury i w *panelu akcji zbiorczych* wybrać akcję [Pobierz XML].\n\nimage::e-Faktury(KSeF)/e_faktura_ksef_pobierz_xml_2.png[]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_eFaktury(KSEF).adoc",
+      "line_start": 301,
+      "line_end": 311
+    }
+  ]
+}

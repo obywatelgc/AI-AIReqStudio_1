@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000043",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    },
+    {
+      "level": 3,
+      "title": "Zarządzanie ustawieniami"
+    },
+    {
+      "level": 4,
+      "title": "Ustawienia importu i eksportu"
+    }
+  ],
+  "section_title": "Ustawienia importu i eksportu",
+  "text": "W opcji _Ustawienia_ _→_ _Ustawienia importu i eksportu_ Użytkownik ma możliwość wyboru formatu importu/eksportu danych oraz wczytania struktur plików dla formatów liniowych. Formaty importu/eksportu danych w Asseco EBP (w tym schemat dla formatu liniowego) konfigurowane są w kontekście każdego Użytkownika osobno. Jeżeli dwóch lub więcej Użytkowników będzie miało dostęp do kilku różnych rachunków należących do kilku różnych Użytkowników, to format importu będzie określany wg zalogowanego Użytkownika.\n\nimage::main/image94.png[]\n\nNa formularzu Użytkownik ma możliwość ustawienia formatu dla:\n\n* importu przelewów zwykłych,\n* importu przelewów podatku,\n* import przelewów walutowych,\n* importu szablonów,\n* eksportu historii operacji,\n* eksportu analityk płatności masowych,\n* eksportu statusów przelewów,\n* eksportu wyciągów,\n+\n* Uwzględnij datę księgowania - checkbox domyślnie jest odznaczony, Użytkownik może zdecydować, czy w eksportowanym pliku będzie eksportowana wartość daty księgowania. Parametr nie ma wpływu na zawartość pliku CSV.\n\nW górnej części formularza USTAWIENIA IMPORTU I EKSPORTU znajdują się przyciski:\n\n* image:main/image85.png[image,width=39,height=44] – umożliwiający powrót do formularza USTAWIENIA,\n* image:main/image86.png[image,width=43,height=55]– umożliwiający przejście do głównego menu.\n\nDla formatów liniowych aplikacja umożliwia określenie struktury plików poprzez import pliku w formacie standardowego opisu używanego przez administratora Źródeł Danych ODBC w systemach Windows (pliki schema.ini).\n\nWszystkie dostępne w aplikacji formaty to:\n\n* XML,\n* XML (format CEB),\n* Elixir,\n* Liniowy,\n* VideoTel,\n* Telekonto,\n* MT940,\n* MT940/MultiCash,\n* MT940/MultiCash (format CEB),\n* MT940 WIRT (format CEB),\n* MT942 (format CEB),\n* MT942 zbiorczy (format CEB),\n* CSV\n* ISO20022,\n* MT103.\n\nPrzy każdej pozycji importu wyświetlone są dostępne formaty dla danego typu. Domyślnie prezentowany jest format XML.\n\nDla poszczególnych importów oraz eksportów dostępne są następujące formaty:\n\n* import przelewów zwykłych – XML, Elixir, Liniowy, Telekonto, VideoTel, ISO20022,\n* import przelewów podatku – XML, Elixir, Liniowy, ISO20022,\n* import przelewów walutowych - ISO20022, MT103,\n* import szablonów – XML, Liniowy, Telekonto,\n* eksport historii operacji – XML, Liniowy, MT940, MT940/MultiCash, MT940/MultiCash (format CEB), MT940 WIRT (format CEB), CSV,\n* eksportu analityk płatności masowych - XML, XML (format CEB), Liniowy, MT940, MT940/MultiCash, MT942 (format CEB), MT942 zbiorczy (format CEB), CSV.\n* eksportu statusów przelewów – XML, Liniowy, CSV,\n* eksportu eksportu wyciągów – XML, XML (format CEB), Liniowy, MT940, MT940/MultiCash, MT940/MultiCash (format CEB), MT940 WIRT (format CEB), CSV.\n\nPo wybraniu formatu importu/eksportu zmiany należy zapisać za pomocą przycisku [ZATWIERDŹ].\n\nimage::main/image95.png[image,width=109,height=45]\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 1303,
+      "line_end": 1362
+    }
+  ]
+}

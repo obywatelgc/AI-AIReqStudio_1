@@ -1,0 +1,28 @@
+{
+  "chunk_id": "DOC-000105",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lokaty"
+    },
+    {
+      "level": 3,
+      "title": "Zerwanie lokaty"
+    }
+  ],
+  "section_title": "Zerwanie lokaty",
+  "text": "Aby zerwać lokatę należy z listy lokat kliknąć w obszar wybranego wiersza lokaty (Aktywnej), wybrać przycisk [ZERWIJ]. Opcja jest także dostępna na formularzu SZCZEGÓŁY LOKATY. System wyświetla formularz ZERWIJ LOKATĘ wraz z danymi zrywanej lokaty, umożliwiający wykonanie operacji zerwania lokaty.\n\nimage::Lokaty/image26.png[image,width=604,height=320]\n\nNa formularzu ZERWIJ LOKATĘ dostępne są:\n\n* Przyciski:\n\n** image:Lokaty/image22.png[image,width=43,height=46] – umożliwiający przejście do formularza LOKATY,\n** image:Lokaty/image23.png[image,width=49,height=57]– umożliwiający wyjście do pulpitu.\n\n* Akcja:\n\n** [ZERWIJ LOKATĘ] – umożliwia przejście do kroku drugiego, autoryzacji zerwania lokaty.\n\nW polu _Na rachunek_ Użytkownik ma możliwość wyboru rachunku, na który mają być przekazane środki z zamykanej lokaty (kapitał + odsetki). Lista rachunków do wyboru, prezentuje rachunki dostępne dla Użytkownika w kanale WWW.\n\nPo wyborze rachunku i użyciu przycisku [ZERWIJ LOKATĘ], system przechodzi do drugiego kroku. Na formularzu potwierdzenia danych zrywanej lokaty system wyświetla formularz z wprowadzonymi danymi w trybie podglądu.\n\nimage::Lokaty/image27.png[image,width=604,height=327]\n\nNa formularzu ZERWIJ LOKATĘ (drugiego kroku) dostępne są:\n\n* Przyciski:\n\n** image:Lokaty/image22.png[image,width=43,height=46] – umożliwiający przejście do formularza pierwszego kroku zerwania lokaty,\n** image:Lokaty/image23.png[image,width=49,height=57]– umożliwiający wyjście do pulpitu.\n\n* Akcja:\n\n** [AKCEPTUJ] – umożliwia zatwierdzenia zerwania lokaty (opcja prezentowana w zależności od posiadanej metody autoryzacji przez Użytkownika).\n\nPo dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, Użytkownikowi zostaje wyświetlone potwierdzenie zerwania lokaty wraz z przyciskiem:\n\n* [WRÓĆ DO PULPITU] – umożliwiającym przejście do pulpitu.\n\nimage::Lokaty/image28.png[image,width=597,height=346]\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lokaty.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lokaty.adoc",
+      "line_start": 335,
+      "line_end": 373
+    }
+  ]
+}

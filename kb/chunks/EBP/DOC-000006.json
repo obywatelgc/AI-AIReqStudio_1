@@ -1,0 +1,24 @@
+{
+  "chunk_id": "DOC-000006",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Informacje ogólne"
+    }
+  ],
+  "section_title": "Informacje ogólne",
+  "text": "UWAGA! Dokumentacja ma charakter informacyjny o działaniu wybranych funkcjonalności w systemie.\nDokumentacja nie odzwierciedla zakresu funkcjonalnego jaki Dostawca zobowiązuje się dostarczyć do Banku.\nZakres funkcjonalny wynika z zakresu ustalonego na etapie wdrożenia systemu oraz późniejszych modyfikacji,\nlicencji zakupionych przez Bank.\nPrzykładowo w dokumentacji jest mowa o funkcjonalności generowania potwierdzenie operacji na email,\naby funkcjonalność była dostępna dla Banku wymagany jest zakup odpowiedniej licencji na daną funkcjonalność.\n",
+  "primary_source_file": "chapters/Main.adoc",
+  "provenance": [
+    {
+      "source_file": "chapters/Main.adoc",
+      "line_start": 29,
+      "line_end": 37
+    }
+  ]
+}

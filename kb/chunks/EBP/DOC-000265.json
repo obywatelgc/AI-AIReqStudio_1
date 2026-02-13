@@ -1,0 +1,24 @@
+{
+  "chunk_id": "DOC-000265",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Doładowania"
+    }
+  ],
+  "section_title": "Doładowania",
+  "text": "Miniaplikacja *Doładowania* zapewnia Użytkownikowi możliwość wyświetlenia historii wykonanych doładowań wraz z dostępem do ich szczegółowych danych oraz możliwość szybkiego doładowania telefonu.\n\nSystem Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Doładowania* z dwóch głównych poziomów:\n\n* widżetu *Doładowania* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),\n\nimage::Doladowania/image1.png[image,width=252,height=235]\n\n* menu bocznego po wybraniu opcji _Doładowania_.\n\nimage::Doladowania/image2.png[image,width=252,height=68]\n\nW każdym z poziomów miniaplikacji dla Użytkownika dostępne są formularze do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach.\n\nUżytkownik posiadający dostęp do miniaplikacji *Doładowania* ma możliwość:\n\n* przeglądania skróconych informacji o doładowaniach,\n* przeglądania historii doładowań,\n* przeglądania szczegółów doładowania,\n* dodawania szablonów doładowań.\n\nNOTE: Funkcjonalność doładowań dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia: do funkcjonalności i do rachunków. Uprawnienia ustawiane są przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Doladowania.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Doladowania.adoc",
+      "line_start": 4,
+      "line_end": 27
+    }
+  ]
+}

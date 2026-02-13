@@ -1,0 +1,32 @@
+{
+  "chunk_id": "DOC-000186",
+  "root_file": "CustomerWebUserGuide.adoc",
+  "heading_path": [
+    {
+      "level": 1,
+      "title": "Dokumentacja użytkownika systemu Asseco EBP :  Aplikacja WWW Klienta Firmowego"
+    },
+    {
+      "level": 2,
+      "title": "Lista zleceń"
+    },
+    {
+      "level": 3,
+      "title": "Paczki przelewów - podgląd listy paczek"
+    },
+    {
+      "level": 4,
+      "title": "Filtry"
+    }
+  ],
+  "section_title": "Filtry",
+  "text": "W celu zawężenia prezentacji listy dyspozycji, Użytkownik ma możliwość zastosowania filtrów: prostego oraz zawansowanego.\n\nFiltr prosty umożliwia wyszukanie po treści w polach: nazwa paczki, referencje. W tym celu należy wpisać w pole *Wyszukaj* tekst. Wyszukane zostaną paczki utworzone z określonego przedziału czasowego (data od-do), który można zmienić.\n\nUżycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtru zaawansowanego dla następujących pól:\n\n* *Kwota od, do* - zakres kwot (od-do), dla których ma zostać wyświetlona lista paczek,\n\n* *Status* – status paczki,\n\n* *Liczba transakcji na stronie* - liczba paczek na stronie (zakres od 1 do 100). Domyślnie liczba pozycji na stronie to 20.\n\nimage::Lista_zlecen/20paczki.png[image,width=550,height=150]\n\nZastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].\n",
+  "primary_source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+  "provenance": [
+    {
+      "source_file": "miniapps/Miniaplikacja_Lista_zlecen.adoc",
+      "line_start": 531,
+      "line_end": 547
+    }
+  ]
+}
