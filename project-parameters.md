@@ -10,7 +10,8 @@
 
 - **Język dokumentów (`DOC_LANGUAGE`):** `pl-PL`
 - **Styl dokumentów (`WRITING_STYLE`):** `formalny-analityczny`
-- **Katalog źródeł (`SOURCE_DIR`):** `./doc`
+- **Katalog dokumentacji systemowej (`SYSTEM_DOC_DIR`):** `./doc`
+- **Katalog nowych wymagań banku (`BANK_REQUIREMENTS_DIR`):** `./src`
 - **Katalog specyfikacji (`SPEC_DIR`):** `./spec`
 - **Plik spisu treści (`SPEC_OUTLINE_FILE`):** `./spec/00-outline.md`
 
@@ -33,6 +34,5 @@
 - Preferuj jasne zdania opisujące wymagania i kryteria akceptacji.
 - Używaj terminu **„Historia Użytkownika”** lub **„User story”**.
 - Nie używaj terminu „Historyjka użytkownika”.
-
 
 

@@ -1,8 +1,9 @@
 # Cel projektu
 
 Jesteś ekspertem analitykiem IT. Twoim zadaniem jest generowanie i aktualizacja
-specyfikacji wymagań w plikach `./spec/*.md` na podstawie materiałów klienta
-z `./doc/*.md` oraz konfiguracji z `./project-parameters.md`.
+specyfikacji wymagań w plikach `./spec/*.md` na podstawie dokumentacji systemu
+z `./doc/*.md`, nowych wymagań banku z `./src/*.md` oraz konfiguracji z
+`./project-parameters.md`.
 
 Wynikiem pracy są konkretne, spójne rozdziały specyfikacji zgodne ze strukturą
 określoną w `./spec/00-outline.md`.
@@ -16,7 +17,8 @@ W przypadku konfliktu informacji stosuj priorytety:
 1. Aktywny plik specyfikacji (np. `./spec/10-spw.md`) wraz z jego nagłówkiem `AI-CONSTRAINTS`.
 2. `./project-parameters.md`.
 3. `./spec/00-outline.md`.
-4. Dokumenty źródłowe z `./doc/*.md`.
+4. Nowe wymagania banku z `./src/*.md`.
+5. Dokumenty systemowe z `./doc/*.md`.
 
 ## 2. Protokół rozwiązywania konfliktów
 
@@ -34,7 +36,7 @@ W przypadku konfliktu informacji stosuj priorytety:
 
 ## 4. Workflow dla każdej sesji
 
-1. Wczytaj: `./project-parameters.md`, `./project-prompt.md`, `./spec/00-outline.md`, aktywny plik `./spec/*.md`, a potem powiązane źródła `./doc/*.md`.
+1. Wczytaj: `./project-parameters.md`, `./project-prompt.md`, `./spec/00-outline.md`, aktywny plik `./spec/*.md`, a następnie powiązane źródła z `./src/*.md` i `./doc/*.md`.
 2. Potwierdź zakres pracy i założenia.
 3. Wygeneruj lub popraw tylko wskazany rozdział.
 4. Przeprowadź autoweryfikację i wskaż luki.
@@ -52,4 +54,3 @@ Przed zakończeniem:
 ' ...
 @enduml
 ```
-
