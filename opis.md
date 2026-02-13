@@ -6,15 +6,21 @@ Aktualnie repo zawiera głównie szablony, reguły i przykładowe dane wejściow
 
 AI-AIReqStudio_1/
 ├── doc/
-│   ├── banki-api-uslugi-banku.md
 │   ├── glossary.md
-│   ├── kb_sso.md
-│   └── wymagania_funkcjonalne_be_integracja_z_cash_director v1.md
+│   ├── main.adoc
+│   └── opis systemu BE.md
 ├── spec/
 │   ├── 00-outline.md
-│   └── 10-spw.md
+│   ├── 10-spw.md
+│   ├── 10-spw temp v3.md
+│   ├── 10-spw_out.md
+│   └── spw_szablon v2.md
 ├── src/
-│   └── wymagania banku.md
+│   ├── banki-api-uslugi-banku.md
+│   ├── wymagania banku.md
+│   └── wymagania_funkcjonalne_be_integracja_z_cash_director v1.md
+├── tools/
+│   └── render-placeholders.ps1
 ├── opis.md
 ├── project-parameters.md
 └── project-prompt.md
@@ -24,9 +30,9 @@ Zagadnienia
 
 
 Zbudowałem workspace w Visual Studio Code, którego zadaniem jest generowanie specyfikacji wymagań na podstawie materiałów (wymagań) klienta oraz dokumentacji systemów informatycznych.
-Narzędzie będzie wykorzystywało model LLM (GPT) oraz rozszerzenie COdex. Specyfikacja będzie posiadało określoną strukturę - opisaną w /spec/10-spw.md
+Narzędzie będzie wykorzystywało model LLM (GPT) oraz rozszerzenie Codex. Specyfikacja będzie posiadało określoną strukturę - opisaną w /spec/10-spw.md
 
-Obsługa narzędzie będzie realizowna przez wykonywanie odpowiednich promptów w codex i praca na plikach projektu.
+Obsługa narzędzia będzie realizowana przez wykonywanie odpowiednich promptów w Codex i pracę na plikach projektu.
 
 Chciałbym w pliku project-parameters.md zawrzeć najważniejsze parametry projektu np. 
 -nazwę projektu, 
@@ -38,13 +44,10 @@ Dodatkowo w pliku (project-prompt.md) będzie głowny prompt który określa spo
 Jak to obsłużyć, jak z tym pracować w VSC i Codex?
 
 # Struktura katalogów
-/doc - dokumetnacja systemów których dotyczy analiza w formacie MD
-    /cpb - dokumentacja CBP w podzile na obszary /Przelewy, Rachunki itd. w soobnych plikach
-    /ebp
-/scr - wymagania Banku w formacie 
-    /Bank - pliki z Banku np. PDF, DOCX itd (format inny niż MD)
-    /MD - wymagania banku w formacie tesktowym MD
-/spec - dokument specyfikacji wymagań
+/doc - dokumentacja systemu (źródła) w formatach tekstowych (np. .md, .adoc)
+/src - wymagania/oczekiwania klienta (źródła) w formacie .md (docelowo: także PDF/DOCX po konwersji)
+/spec - dokument specyfikacji wymagań (generowany/utrzymywany)
+/tools - skrypty pomocnicze (np. render placeholderów)
 
 Utrzymanie kontroli nad AI
 - Jeśli informacja jest ze źródeł → AI dopisuje znacznik Source: (np. plik/sekcja)
@@ -62,13 +65,14 @@ Utrzymanie kontroli nad AI
 2. Trzymasz stały „silnik” w project-prompt.md (bez danych klienta).
 3. W każdej sesji odpalasz prompt startowy do Codex:
 
-Propmpty:
+Prompty:
 ```markdown
 Pracujemy w tym repo. Najpierw wczytaj:
 - project-parameters.md
 - project-prompt.md
 - spec/00-outline.md
-- pliki źródłowe z doc/
+- pliki źródłowe z src/ (wymagania klienta)
+- pliki źródłowe z doc/ (dokumentacja systemu)
 
 Następnie potwierdź: projekt, klient, język, styl, zakres.
 Nie generuj treści, dopóki nie potwierdzisz konfiguracji.
@@ -76,12 +80,13 @@ Nie generuj treści, dopóki nie potwierdzisz konfiguracji.
 
 4. Potem prompt zadaniowy, np. dla rozdziału:
 ```
-Na podstawie doc/* uzupełnij spec/10-spw.md.
+Na podstawie src/* oraz doc/* uzupełnij spec/10-spw.md.
 Wymagania:
 - ID: RQ-ACT-###
 - każde wymaganie: opis, uzasadnienie, AC (Given/When/Then)
 - sekcje: Obsługa błędów i Zagadnienia otwarte muszą pozostać
 - bez domysłów: brak danych -> OPEN-QUESTION-###
+- nie modyfikuj sekcji z "Generowanie: POMIŃ"
 ```
 
 5. Na końcu prompt walidacyjny:
@@ -100,8 +105,8 @@ Zrób review spójności:
 # Minimalny „standard promptów” do pracy w czacie w VSC
 Żeby praca była powtarzalna, przygotuj sobie 6–8 gotowych komend (snippetów). Przykłady (do używania na zaznaczeniu albo pliku):
 
-* „Zrób wymagania z materiałów od Kkienta”
-„Na podstawie /scr/ zaproponuj wymagania w formacie RQ-###. Dodaj kryteria akceptacji i przypadki negatywne.”
+* „Zrób wymagania z materiałów od Klienta”
+„Na podstawie /src/ zaproponuj wymagania w formacie RQ-###. Dodaj kryteria akceptacji i przypadki negatywne.”
 
 * „Utestowalnij”
 „Przerób wymagania na testowalne. Każde wymaganie ma mieć: warunek, działanie, wynik. Usuń ogólniki.”
@@ -126,18 +131,18 @@ Lista tematów do rozważenia:
 
 # TOOLS
 
-## Renderowanie placeholer'ów
+## Renderowanie placeholderów
 
 Markdown sam z siebie nie „podstawi” {{PROJECT_NAME}} — musisz mieć etap renderowania (zamiany placeholderów na wartości).
-LLM robi to automatycznie ma podstawie założeń z project-prompt.md pkt. 3.6
+LLM robi to automatycznie na podstawie założeń z project-prompt.md pkt. 3.6
 
 Ustaw wartość w project-parameters.md w formacie:
-- **Nazwa projektu (PROJECT_NAME):** Integracja BE z CashDirector``
+- **Nazwa projektu (`PROJECT_NAME`):** `Integracja BE z CashDirector`
 W dowolnym pliku używaj placeholdera:
 {{PROJECT_NAME}}
 Wygeneruj wersje „z podstawionymi wartościami” skryptem:
 do osobnego katalogu (bez nadpisywania źródeł):
-render-placeholders.ps1 -OutDir rendered
+.\tools\render-placeholders.ps1 -OutDir rendered
 albo nadpisując pliki (in-place):
-render-placeholders.ps1 -InPlace
-Skrypt jest w render-placeholders.ps1 i domyślnie renderuje pliki z spec/, src/, doc/ oraz opis.md i project-prompt.md, biorąc wartości z project-parameters.md.
+.\tools\render-placeholders.ps1 -InPlace
+Skrypt jest w tools/render-placeholders.ps1 i domyślnie renderuje pliki z spec/, src/, doc/ oraz opis.md i project-prompt.md, biorąc wartości z project-parameters.md.
