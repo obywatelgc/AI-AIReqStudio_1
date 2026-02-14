@@ -1,6 +1,6 @@
 # AI-AIReqStudio_1
 
-Framework dokumentacyjny do generowania i utrzymywania specyfikacji wymagan na podstawie zrodel w `src/` i `doc/`.
+Framework dokumentacyjny do generowania i utrzymywania specyfikacji wymagan na podstawie zrodel w `src/` i `doc_basic/`.
 
 ## Quick start (PowerShell, Windows)
 

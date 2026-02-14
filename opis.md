@@ -5,7 +5,7 @@ Aktualnie repo zawiera głównie szablony, reguły i przykładowe dane wejściow
 
 
 AI-AIReqStudio_1/
-├── doc/
+├── doc_basic/
 │   ├── glossary.md
 │   ├── main.adoc
 │   └── opis systemu BE.md
@@ -35,7 +35,7 @@ Obsługa narzędzia będzie realizowana przez wykonywanie odpowiednich promptów
 
 
 # Struktura katalogów
-/doc - dokumentacja systemu (źródła) w formatach tekstowych (np. .md, .adoc)
+/doc_basic - dokumentacja systemu (źródła) w formatach tekstowych (np. .md, .adoc)
 /src - wymagania/oczekiwania klienta (źródła) w formacie .md (docelowo: także PDF/DOCX po konwersji)
 /spec - dokument specyfikacji wymagań (generowany/utrzymywany)
 /tools - skrypty pomocnicze (np. render placeholderów)
@@ -86,8 +86,8 @@ Pracujemy w tym repo. Najpierw wczytaj:
 - project-parameters.md
 - project-prompt.md
 - spec/00-outline.md
-- pliki źródłowe z src/ (wymagania klienta)
-- pliki źródłowe z doc/ (dokumentacja systemu)
+- pliki źródłowe z src/ (wymagania klienta, zmiany któryc oczekuje klienta)
+- pliki źródłowe z doc_basic/ (dokumentacja systemu, stan obecny systemu, przed zmianami o które wnioskuje klient)
 
 Następnie potwierdź: projekt, klient, język, styl, zakres.
 Nie generuj treści, dopóki nie potwierdzisz konfiguracji.
@@ -95,7 +95,7 @@ Nie generuj treści, dopóki nie potwierdzisz konfiguracji.
 
 4. Potem prompt zadaniowy, np. dla rozdziału:
 ```
-Na podstawie src/* oraz doc/* uzupełnij spec/10-spw.md.
+Na podstawie src/* oraz doc_basic/* uzupełnij spec/10-spw.md.
 Wymagania:
 - ID: RQ-ACT-###
 - każde wymaganie: opis, uzasadnienie, AC (Given/When/Then)
@@ -160,4 +160,4 @@ do osobnego katalogu (bez nadpisywania źródeł):
 .\tools\render-placeholders.ps1 -OutDir rendered
 albo nadpisując pliki (in-place):
 .\tools\render-placeholders.ps1 -InPlace
-Skrypt jest w tools/render-placeholders.ps1 i domyślnie renderuje pliki z spec/, src/, doc/ oraz opis.md i project-prompt.md, biorąc wartości z project-parameters.md.
+Skrypt jest w tools/render-placeholders.ps1 i domyślnie renderuje pliki z spec/, src/, doc_basic/ oraz opis.md i project-prompt.md, biorąc wartości z project-parameters.md.

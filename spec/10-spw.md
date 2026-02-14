@@ -3,7 +3,7 @@ Zakres: Integracja BE–CashDirector (aktywacja, SSO, płatności, rachunki, dez
 Format: RQ-ACT-###
 Źródła: 
     Wymagania klienta: /src/*, 
-    Dokumentacja systemu: /doc/*
+    Dokumentacja systemu: /doc_basic/*
     Parametry projektu: /project-parameters.md
 -->
 
@@ -38,7 +38,7 @@ Wyjście: lista wymagań/założeń z odnośnikami do źródeł.
 ### 2.1. Słownik pojęć
 <!-- SPW-SECTION
 Cel: Zdefiniuj terminy używane w dokumencie (lub wskaż, że obowiązuje słownik źródłowy).
-Źródła: Dokumentacja systemu: /doc/* (np. /doc/glossary.md)
+Źródła: Dokumentacja systemu: /doc_basic/* (np. /doc_basic/glossary.md)
 Wyjście: lista pojęć i definicji; bez wprowadzania nowych znaczeń.
 -->
 
@@ -54,7 +54,7 @@ Wyjście: lista pojęć i definicji; bez wprowadzania nowych znaczeń.
 ### 2.2. Stan obecny
 <!-- SPW-SECTION
 Cel: Opisz stan obecny w zakresie objętym zmianą (as-is).
-Źródła: Dokumentacja systemu: /doc/*
+Źródła: Dokumentacja systemu: /doc_basic/*
 Wyjście: krótki opis + kluczowe ograniczenia i zależności.
 -->
 
@@ -63,7 +63,7 @@ System BE (Asseco EBP) umożliwia pracę w różnych kontekstach użytkownika (i
 ### 2.3. Model rozwiązania #zakres bazowy
 <!-- SPW-SECTION
 Cel: Opisz docelowy model rozwiązania w zakresie zmian (to-be) na poziomie biznesowym.
-Źródła: /src/*, /doc/*
+Źródła: /src/*, /doc_basic/*
 Wyjście: opis przepływu + kluczowe decyzje biznesowe.
 -->
 
@@ -606,7 +606,7 @@ Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe 
 ### 3.2 Wymagania niefunkcjonalne
 <!-- SPW-SECTION
 Cel: Zdefiniuj wymagania niefunkcjonalne dla zakresu zmian.
-Źródła: /src/*, /doc/*
+Źródła: /src/*, /doc_basic/*
 Wyjście: wymagania testowalne + mierzalne kryteria akceptacji, jeśli możliwe.
 -->
 
@@ -618,7 +618,7 @@ W dostępnych materiałach źródłowych nie zidentyfikowano mierzalnych wymaga�
 ## 5. Wymagane licencje
 <!-- SPW-SECTION
 Cel: Wskaż licencje / zależności licencyjne wymagane przez rozwiązanie.
-Źródła: /src/*, /doc/*
+Źródła: /src/*, /doc_basic/*
 Wyjście: lista licencji i zakres ich użycia.
 Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 -->
@@ -626,7 +626,7 @@ Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 ## 6. Obszary pod wpływem
 <!-- SPW-SECTION
 Cel: Wymień systemy, moduły, procesy i kanały dotknięte zmianą.
-Źródła: /src/*, /doc/*
+Źródła: /src/*, /doc_basic/*
 Wyjście: lista obszarów + krótki opis wpływu.
 Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 -->
@@ -634,7 +634,7 @@ Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 ## 7. Założenia i ograniczenia
 <!-- SPW-SECTION
 Cel: Zapisz założenia, ograniczenia oraz decyzje projektowe wpływające na zakres.
-Źródła: /src/*, /doc/*
+Źródła: /src/*, /doc_basic/*
 Wyjście: lista punktów; brakujące dane oznaczaj OPEN-QUESTION.
 Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 -->
@@ -656,7 +656,7 @@ Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 ## 9. Załączniki
 <!-- SPW-SECTION
 Cel: Dołącz lub wskaż materiały referencyjne (np. diagramy, tabele, słowniki, zrzuty).
-Źródła: /src/*, /doc/*
+Źródła: /src/*, /doc_basic/*
 Wyjście: lista załączników + identyfikatory/odnośniki.
 Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 -->
