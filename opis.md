@@ -87,7 +87,7 @@ Pracujemy w tym repo. Najpierw wczytaj:
 - project-prompt.md
 - spec/00-outline.md
 - pliki źródłowe z src/ (wymagania klienta, zmiany któryc oczekuje klienta)
-- pliki źródłowe z doc_basic/ (dokumentacja systemu, stan obecny systemu, przed zmianami o które wnioskuje klient)
+- wszystkie pliki dokumentacji systemu z doc_basic/ oraz pliki z katalogów podrzędnych(dokumentacja systemu, stan obecny systemu, przed zmianami o które wnioskuje klient)
 
 Następnie potwierdź: projekt, klient, język, styl, zakres.
 Nie generuj treści, dopóki nie potwierdzisz konfiguracji.

@@ -2,8 +2,8 @@
 Zakres: Opis zakresu modyfikacji
 Format: RQ-ACT-###
 Źródła: 
-    Wymagania klienta: /src/*, 
-    Dokumentacja systemu: /doc_basic/*
+    Wymagania klienta: src/*, 
+    Dokumentacja systemu: doc_basic/*
     Parametry projektu: /project-parameters.md
 -->
 
@@ -15,7 +15,7 @@ Format: RQ-ACT-###
 <!-- SPW-SECTION
 Cel: Opisz główny cel biznesowy rozwiązania dla wskazanego zakresu modyfikacji.
 Zakres: Perspektywa biznesowa (nie opis implementacji IT).
-Źródła: Wymagania klienta: /src/*
+Źródła: Wymagania klienta: src/*
 Wyjście: 3–5 zdań.
 Kryteria jakości: jednoznaczność, brak domysłów, spójność terminologii.
 -->
@@ -23,7 +23,7 @@ Kryteria jakości: jednoznaczność, brak domysłów, spójność terminologii.
 ### 1.2 Wymagania klienta
 <!-- SPW-SECTION
 Cel: Przenieś i streść wymagania przekazane przez Klienta.
-Źródła: Wymagania klienta: /src/*
+Źródła: Wymagania klienta: src/*
 Wyjście: lista wymagań/założeń z odnośnikami do źródeł.
 -->
 
@@ -32,28 +32,28 @@ Wyjście: lista wymagań/założeń z odnośnikami do źródeł.
 ### 2.1. Słownik pojęć
 <!-- SPW-SECTION
 Cel: Zdefiniuj terminy używane w dokumencie (lub wskaż, że obowiązuje słownik źródłowy).
-Źródła: Dokumentacja systemu: /doc_basic/* (np. /doc_basic/glossary.md)
+Źródła: Dokumentacja systemu: doc_basic/* (np. doc_basic/glossary.md)
 Wyjście: lista pojęć i definicji; bez wprowadzania nowych znaczeń.
 -->
 
 ### 2.2. Stan obecny
 <!-- SPW-SECTION
 Cel: Opisz stan obecny w zakresie objętym zmianą (as-is).
-Źródła: Dokumentacja systemu: /doc_basic/*
+Źródła: Dokumentacja systemu: doc_basic/*
 Wyjście: krótki opis + kluczowe ograniczenia i zależności.
 -->
 
 ### 2.3. Model rozwiązania #zakres bazowy
 <!-- SPW-SECTION
 Cel: Opisz docelowy model rozwiązania w zakresie zmian (to-be) na poziomie biznesowym.
-Źródła: /src/*, /doc_basic/*
+Źródła: src/*, doc_basic/*
 Wyjście: opis przepływu + kluczowe decyzje biznesowe.
 -->
 
 ## 3. Wymagania szczegółowe
 <!-- SPW-SECTION
 Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe i modyfikowane wymagania/user stories.
-Źródła: Wymagania klienta: /src/*
+Źródła: Wymagania klienta: src/*
 -->
 ### 3.1 Wymagania funkcjonalne
 
@@ -125,7 +125,7 @@ Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe 
 ### 3.2 Wymagania niefunkcjonalne
 <!-- SPW-SECTION
 Cel: Zdefiniuj wymagania niefunkcjonalne dla zakresu zmian.
-Źródła: /src/*, /doc_basic/*
+Źródła: src/*, doc_basic/*
 Wyjście: wymagania testowalne + mierzalne kryteria akceptacji, jeśli możliwe.
 -->
 ---
@@ -135,7 +135,7 @@ Wyjście: wymagania testowalne + mierzalne kryteria akceptacji, jeśli możliwe.
 ## 5. Wymagane licencje
 <!-- SPW-SECTION
 Cel: Wskaż licencje / zależności licencyjne wymagane przez rozwiązanie.
-Źródła: /src/*, /doc_basic/*
+Źródła: src/*, doc_basic/*
 Wyjście: lista licencji i zakres ich użycia.
 Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 -->
@@ -143,7 +143,7 @@ Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 ## 6. Obszary pod wpływem
 <!-- SPW-SECTION
 Cel: Wymień systemy, moduły, procesy i kanały dotknięte zmianą.
-Źródła: /src/*, /doc_basic/*
+Źródła: src/*, doc_basic/*
 Wyjście: lista obszarów + krótki opis wpływu.
 Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 -->
@@ -151,7 +151,7 @@ Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 ## 7. Założenia i ograniczenia
 <!-- SPW-SECTION
 Cel: Zapisz założenia, ograniczenia oraz decyzje projektowe wpływające na zakres.
-Źródła: /src/*, /doc_basic/*
+Źródła: src/*, doc_basic/*
 Wyjście: lista punktów; brakujące dane oznaczaj OPEN-QUESTION.
 Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 -->
@@ -161,7 +161,7 @@ Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 ## 9. Załączniki
 <!-- SPW-SECTION
 Cel: Dołącz lub wskaż materiały referencyjne (np. diagramy, tabele, słowniki, zrzuty).
-Źródła: /src/*, /doc_basic/*
+Źródła: src/*, doc_basic/*
 Wyjście: lista załączników + identyfikatory/odnośniki.
 Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 -->
