@@ -1,0 +1,95 @@
+:imagesdir: images
+
+= Płatności Masowe
+
+Miniaplikacja *PŁATNOŚCI MASOWE* zapewnia dostęp do raportów i historii wpłat na rachunki wirtualne rachunku masowego.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Płatności masowe* menu *bocznego* po wybraniu opcji _Płatności masowe._
+
+Użytkownik posiadający dostęp do miniaplikacji *Płatności masowe* ma możliwość:
+
+* wyświetlenia szczegółów rachunku,
+* wyświetlenia analityki dla rachunku masowego.
+
+NOTE: Funkcjonalność płatności masowych dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia: do funkcjonalności i do rachunku. Uprawnienia ustawiane są przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.
+
+W ramach uprawnień do rachunków niezbędne jest uprawnienie do przeglądania rachunku.
+
+W ramach uprawnień funkcjonalnych dostępne są uprawnienia do przeglądania, historii operacji oraz raportów.
+
+W przypadku, gdy żaden z rachunków nie posiada rachunków wirtualnych system wyświetla komunikat:
+
+W przypadku, gdy chociaż jeden rachunek posiada rachunki wirtualne, po wybraniu miniaplikacji *Płatności masowe* wyświetlany jest ekran z listą rachunków masowych, gdzie prezentowane są dane:
+
+* *Rachunek* - nazwa produktu lub nazwa własna rachunku (Użytkownik ma możliwość zmiany nazwy własnej zgodnie z funkcjonalnością miniaplikacji *Rachunki*) oraz numer rachunku,
+* *Saldo księgowe* - wyświetlana jest informacja o saldzie księgowym wraz z walutą,
+
+* *Dostępne środki –* wyświetlana jest informacja o dostępnych środkach na rachunku wraz z walutą.
+* *Podsumowanie strony -* gdzie znajdują się informacje dotyczące:
+
+** pod kolumną *Saldo księgowe –* suma salda księgowego łącznie dla wszystkich rachunków,
+** pod kolumną *Dostępne środki –* suma dostępnych środków łącznie dla wszystkich rachunków.
+
+Jeżeli na liście znajdują się rachunki w różnych walutach, wówczas suma sald księgowych i dostępnych środków prezentowana jest oddzielnie dla każdej z walut.
+
+W górnej części ekranu jest dostępna opcja, która umożliwia wpisanie kryteriów wyszukiwania rachunków masowych lub innych danych dostępnych na ekranie (np. kwota, waluta).
+
+System podczas wpisywania danych, według których ma następować wyszukiwanie, automatycznie zawęża listę prezentowanych rachunków, do tych, które spełniają wprowadzane kryteria.
+
+== Dostępne opcje na wybranym rachunku.
+
+Kliknięcie w wiersz wybranego rachunku powoduje wyświetlenie dodatkowych informacji na temat rachunku:
+
+* *Blokady* – suma blokad na rachunku wyrażona w walucie rachunku,
+* *Przyznany limit* – kwota przyznanego limitu na rachunku.
+
+Dodatkowo prezentowany są przyciski:
+
+* [ANALITYKA] – wybór przycisku powoduje wyświetlenie ekranu opisanego w dalszej części instrukcji, system wyświetla ekran prezentujący zestawienie operacji na rachunki wirtualne powiązane z wybranym rachunkiem,
+* [SZCZEGÓŁY] – opcja umożliwiająca przeglądanie informacji szczegółowych na temat rachunku.
+
+Po wybraniu przycisku [SZCZEGÓŁY] system wyświetla ekran SZCZEGÓŁY RACHUNKU, na którym prezentowane są następujące dane:
+
+* *Numer rachunku* – numer rachunku w formacie NRB,
+* *Numer rachunku VAT* – numer rachunku VAT powiązanego z danym rachunkiem,
+* *Waluta* – symbol waluty, w jakiej prowadzony jest rachunek,
+
+W górnej część ekranu dostępne są przyciski:
+
+*  – umożliwiające powrotu do poprzedniego ekranu
+
+* – umożliwiający przejście do głównego menu.
+
+== Analityka dla rachunków masowych.
+
+W prawym górnym rogu miniaplikacji dostępny jest przycisk [ANALITYKA].
+
+Na ekranie prezentowane są dane:
+
+* *data księgowania* - data księgowania operacji,
+* *odbiorca/nadawca* – dane nadawcy operacji,
+* *numer rachunku* – numer rachunku uznawany,
+
+Po kliknięciu na danej operacji prezentowany jest dodatkowo opis operacji.
+
+Na ekranie *_Analityka_* domyślnie system prezentuje dane za ostatnie 30 dni, a w przypadku braku transakcji wyświetlany jest komunikat:
+
+Dostępna jest możliwość wpisania kryteriów wyszukiwania.
+
+Aby powrócić do pełnej listy rachunków należy kliknąć w ikonę w polu wyszukiwania.
+
+Na ekranie dostępny jest również przycisk , po wyborze którego prezentowane są dodatkowe kryteria wyszukiwania.
+
+Dostępne kryteria wyszukiwania:
+
+* *Ostatnie* – liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana historia operacji, domyślnie 30 dni,
+
+* *Zakres dat* – możliwość wyboru z kalendarza po wyborze ikony , znajdującej się przy lewej stronie pól lub wpisania daty, od i do jakiej dane mają być wyświetlane,
+
+* *Rachunki własne* – możliwość wyboru wszystkich lub wybranych rachunków, domyślna wartość _Wszystkie rachunki_,
+* *NRB wirtualny* – możliwość wpisania numeru rachunku wirtualnego,
+* *Kwota od* – pole na wpisanie kwoty, od jakiej ma nastąpić wyszukiwanie,
+
+Po wyborze przycisku [FILTRUJ], system zaprezentuje dane zgodne z wprowadzonymi kryteriami wyszukiwania.
+
+Aby zrezygnować z sekcji filtrowania należy wybrać przycisk , który powoduje zwinięcie sekcji.

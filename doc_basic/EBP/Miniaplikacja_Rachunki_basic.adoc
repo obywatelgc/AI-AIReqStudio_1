@@ -1,0 +1,358 @@
+:imagesdir: images
+
+= Rachunki
+
+Miniaplikacja *Rachunki* zapewnia dostęp do rachunków (rozliczeniowych i oszczędnościowych), do których uprawniony jest Użytkownik.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Rachunki* z dwóch głównych poziomów:
+
+* widżetu *Rachunki* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),
+
+* menu *bocznego* po wybraniu opcji _Rachunki_.
+
+W każdym z poziomów miniaplikacji dostępne są dla Użytkownika formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach.
+
+Użytkownik posiadający dostęp do miniaplikacji *Rachunki* ma możliwość:
+
+* przeglądania skróconych informacji o rachunkach na widżecie miniaplikacji *Rachunki*,
+* przeglądania listy rachunków,
+* przeglądania szczegółów rachunku,
+
+NOTE: Funkcjonalność rachunków dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia: do funkcjonalności i do rachunków. Uprawnienia ustawiane są przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.
+
+== Widżet Rachunki
+
+Widżet *Rachunki* może być w dwóch rozmiarach: standardowym i rozszerzonym.
+
+* ikona – powoduje rozszerzenie widżetu o dodatkowe informacje,
+* ikona – powoduje powrót do rozmiaru standardowego.
+
+Widżet standardowy
+
+Na widżecie standardowym jest możliwość:
+
+* wyboru rachunku w celu zaprezentowania skróconych informacji na temat:
+** numeru rachunku – dwie pierwsze i osiem ostatnich cyfr rachunku,
+** kwoty dostępnych środków wraz z walutą,
+** salda księgowego wraz z walutą,
+
+W dolnej części widżetu dostępna jest akcja:
+
+* [HISTORIA TRANSAKCJI] – umożliwiająca przejście do historii transakcji wybranego rachunku.
+
+Widżet rozszerzony
+
+Na widżecie rozszerzonym prócz tych samych informacji co na widoku standardowym dodatkowo prezentowane są:
+
+* Ostatnia transakcja – informacje na temat ostatniej transakcji:
+
+** Kwota – kwota transakcji wraz z walutą,
+** Tytuł – tytuł transakcji,
+** Data – data transakcji
+
+* Przycisk [SZCZEGÓŁY] – przejście do szczegółów transakcji.
+* Wykres salda z możliwością filtrowania po okresie:
+
+** Ostatnie 7 dni,
+
+== Przeglądanie listy rachunków
+
+Po kliknięciu w tytuł widżetu *Rachunki* lub poprzez wybór opcji z bocznego menu _Rachunki_ wyświetlane jest okno prezentujące listę rachunków rozliczeniowych i oszczędnościowych, do których Użytkownik jest uprawniony.
+
+Ekran po zalogowaniu do systemu w kontekście zbiorczym
+
+Ekran po zalogowaniu do systemu w kontekście firmowym
+
+Domyślnie rachunki sortowane są w porządku rosnącym według identyfikatora rachunku, czyli chronologicznie według założenia rachunku.
+
+Użytkownik ma możliwość sortowania poszczególnych kolumn:
+
+* rachunek,
+* saldo księgowe,
+* dostępne środki.
+
+Na liście rachunków, dla każdego rachunku dostępne są następujące informacje:
+
+* *RACHUNEK*:
+** nazwa produktu lub nazwa własna rachunku (Użytkownik ma możliwość zmiany nazwy własnej),
+** numer rachunku – dla urządzeń o małych rozdzielczościach (smartfonów) numer rachunku prezentowany jest w postaci zamaskowanej, dla pozostałych urządzeń wyświetlany jest pełny numer rachunku,
+* *FIRMA* – nazwa firmy, kolumna prezentowana tylko dla kontekstu zbiorczego,
+* *OSTATNI WYCIĄG* - data i nazwa wyciągu,
+* *OBROTY BIEŻĄCE* - obroty bieżące na rachunku,
+
+Nad listą rachunków znajduje się przycisk [HISTORIA ZBIORCZA] umożliwiający przeglądanie historii zbiorczej ze wszystkich rachunków.
+
+W górnej części formularza RACHUNKI dostępne są filtry umożliwiające filtrowanie listy rachunków:
+
+* *Filtr prosty* – filtrowanie listy rachunków następuje po wpisaniu danych w polu wyszukiwania znajdującego się nad listą:
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku.
+
+* *Firma* – filtr dostępny tylko dla kontekstu zbiorczego pozwalający na wybranie z listy firmy której rachunki mają zostać zaprezentowane.
+
+=== Akcje na wybranym rachunku
+
+Kliknięcie w wiersz wybranego rachunku powoduje wyświetlenie dodatkowych informacji na temat rachunku.
+
+Na formularzu rozszerzonym dostępne są dodatkowe informacje:
+
+* *Blokady* – suma blokad na rachunku wyrażona w walucie rachunku,
+* *Przyznany limit* – kwota przyznanego limitu na rachunku,
+* *Ostatnia transakcja* – data, opis oraz kwota wraz z walutą transakcji.
+
+Poniżej prezentowany jest określony zestaw akcji:
+
+* [HISTORIA RACHUNKU] – po naciśnięciu system przekierowuje do formularza HISTORIA RACHUNKU, umożliwiającego przeglądanie historii operacji na tym rachunku,
+* [PRZELEW] – opcja umożliwiająca wykonanie przelewu zwykłego/własnego/podatkowego/walutowego; po wybraniu opcji wyświetlany jest formularz PRZELEW (analogiczny do formularza nowego przelewu wyświetlanego z poziomu miniaplikacji *Przelewy)*,
+* [LISTA OPŁAT] – po naciśnięciu system przekierowuje do formularza ZESTAWIENIA OPŁAT, umożliwiającego przeglądanie pobranych opłat na rachunku,
+
+W przypadku rachunku bieżącego VAT przycisk [PRZELEW] nie jest dostępny.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza rachunku powoduje zwinięcie dodatkowych informacji i przycisków prezentowanych dla rachunku.
+
+=== Modyfikacja nazwy własnej rachunku
+
+W celu ułatwienia identyfikacji rachunku, Użytkownik ma możliwość modyfikacji nazwy produktu z poziomu:
+
+* listy rachunków za pomocą ikonki znajdującej się przy nazwie rachunku
+
+* szczegółów rachunku za pomocą ikonki znajdującej się przy polu *Nazwa własna*.
+
+Obok pola dostępne są przyciski:
+
+* – umożliwia zapisanie zmienionej nazwy własnej rachunku. Nazwę własną rachunku zapisać można także po jej wprowadzeniu i użyciu klawisza [Enter] z klawiatury.
+* – umożliwia rezygnację ze zmiany nazwy własnej rachunku.
+
+W przypadku, gdy Użytkownik usunie wprowadzoną w polu nazwę własną rachunku, system przyporządkowuje mu nazwę systemową.
+
+Nazwa własna przypisana jest do Użytkownika co oznacza, że ten sam produkt u różnych Użytkowników może posiadać różną nazwę.
+
+== Podgląd szczegółów rachunku
+
+Aby przejść do szczegółów wybranego rachunku należy kliknąć w obszar wybranego wiersza i wybrać przycisk [SZCZEGÓŁY].
+
+Na formularzu prezentowane są następujące dane:
+
+* *Numer rachunku* – numer rachunku w formacie NRB,
+* *Numer rachunku VAT* - numer powiązanego rachunku VAT,
+* *Waluta* – symbol waluty w jakiej prowadzony jest rachunek,
+
+W przypadku rachunków VAT nie są prezentowane wartości:
+
+* *Transakcje przez internet: limit dzienny,*
+* *Pozostały limit dzienny,*
+* *Transakcje przez internet: limit jednorazowy.*
+
+W górnej części formularza SZCZEGÓŁY RACHUNKU dostępne są przyciski:
+
+*  – umożliwiający powrót do formularza RACHUNKI,
+* – umożliwiający przejście do głównego menu.
+
+Nad szczegółami rachunku dostępne są przyciski (analogiczne jak dla wybranego rachunku na liście rachunków):
+
+* [HISTORIA RACHUNKU] – przycisk umożliwiający przeglądanie historii operacji na rachunku,
+* [DODATKOWE OPCJE] - pogrupowane akcje, w skład których wchodzą:
+** *Przelew* – opcja umożliwiająca wykonanie przelewu zwykłego/własnego/podatkowego/walutowego; po wybraniu opcji wyświetlany jest formularz PRZELEW (analogiczny do formularza nowego przelewu wyświetlanego z poziomu miniaplikacji *Przelewy)*,
+** *Lista opłat* – po naciśnięciu system przekierowuje do formularza ZESTAWIENIA OPŁAT, umożliwiającego przeglądanie pobranych opłat na rachunku,
+** *Blokady* – po naciśnięciu system przekierowuje do formularza BLOKADY RACHUNKU, umożliwiającego przeglądanie blokad założonych na tym rachunku,
+** *Wyciągi* – po naciśnięciu system przekierowuje do formularza WYCIĄGI, umożliwiającego przeglądanie listy dostępnych na tym rachunku wyciągów,
+
+== Przeglądanie historii operacji na rachunku
+
+Aby przejść do historii rachunku należy nacisnąć przycisk [HISTORIA TRANSAKCJI] na widżecie Rachunki, albo należy kliknąć w obszar wybranego wiersza na liście rachunków i wybrać przycisk [HISTORIA RACHUNKU].
+
+Na formularzu HISTORIA RACHUNKU prezentowana jest lista operacji zaksięgowanych na rachunku:
+
+* *Data księgowania* – data księgowania operacji (data w formacie DD.MM.RRRR),
+* *Odbiorca/Nadawca* – dane odbiorcy (prezentowane w przypadku przelewu wychodzącego)/nadawcy(prezentowane w przypadku przelewu przychodzącego),
+* *Numer rachunku* – numer rachunku, którego dotyczy zestawienie,
+
+Użytkownik ma możliwość sortowania poszczególnych kolumn.
+
+NOTE: Zdefiniowanie sortowania zostaje odzwierciedlone na wydruku PDF historii operacji.
+
+Pod listą zaksięgowanych operacji dostępne jest:
+
+* *Podsumowanie wyszukiwania* zawierające:
+
+** Wpływy – sumaryczną wartość uznań wraz z walutą,
+** Obciążenia – sumaryczną wartość obciążeń wraz z walutą.
+
+Lista operacji jest stronicowana.
+
+Dodatkowo Użytkownik może wybrać ile wierszy będzie się wyświetlać na jednej stronie.
+
+Gdy lista operacji nie jest pusta w prawym górnym rogu formularza HISTORIA RACHUNKU pojawia się opcja [POBIERZ].
+
+W opcji dostępne są następujące akcje:
+
+* *Eksportuj* - wyeksportowanie listy operacji w formacie określonym w opcji _Ustawienia → Ustawienia importu i eksportu → Format eksportu historii operacji_.
+
+* *Pobierz pdf* - pobranie listy operacji w formacie _PDF_ .
+
+NOTE: Szczegółowy opis struktur pliku eksportu znajduje się w odrębnej dokumentacji importu/eksportu danych w Asseco EBP.
+
+W celu zawężenia prezentacji listy operacji, Użytkownik ma możliwość zastosowania filtrów:
+
+* *Prostego* – filtrowanie listy rachunków następuje po wpisaniu danych w polu wyszukiwania znajdującego się nad listą:
+
+=== Akcje na wybranej operacji na rachunku
+
+Kliknięcie w wiersz wybranej operacji na formularzu HISTORIA RACHUNKU, powoduje wyświetlenie dodatkowych informacji na temat operacji:
+
+* *Typ operacji* – nazwa typu wykonanej operacji,
+* *Saldo po operacji* – saldo rachunku po wykonaniu operacji.
+
+Dodatkowo prezentowany jest określony zestaw akcji:
+
+* [PONÓW] – umożliwia ponowne wykonanie przelewu wychodzącego, przycisk jest dostępny wyłącznie w odniesieniu do przelewów jednorazowych: przelew zwykły, podatku, własny,
+* [SZCZEGÓŁY] – umożliwia przeglądanie informacji szczegółowych na temat wybranej transakcji,
+* [POBIERZ PDF] – umożliwia wygenerowanie wydruku potwierdzenia pojedynczej operacji historycznej w formacie _PDF_.
+
+Rachunki typu VAT w historii operacji nie posiadają przycisku [PONÓW].
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza wybranej operacji powoduje jego zwinięcie.
+
+W górnej część formularza HISTORIA RACHUNKU dostępne są przyciski:
+
+*  – umożliwiający powrót do formularza RACHUNKI,
+
+* – umożliwiający przejście do głównego menu.
+
+=== Podgląd szczegółów transakcji
+
+Aby przejść do szczegółów wybranej operacji zaksięgowanej na rachunku, należy kliknąć w obszar wybranego wiersza na _Historia rachunku_ i wybrać przycisk [_SZCZEGÓŁY]._
+
+Na formularzu SZCZEGÓŁY TRANSAKCJI prezentowane są następujące informacje dotyczące wybranej transakcji:
+
+* *Data transakcji* – data w formacie DD.MM.RRRR,
+* *Data księgowa* – data księgowania operacji (data w formacie DD.MM.RRRR),
+* *Kwota* – kwota operacji wraz z walutą,
+
+Lista pól prezentowanych na formularzu jest zależna od typu transakcji.
+
+Nad szczegółami transakcji dostępny jest przycisk:
+
+* [POBIERZ PDF] - umożliwiający pobranie potwierdzenia pojedynczej transakcji w formacie _PDF_,
+
+W górnej część formularza SZCZEGÓŁY TRANSAKCJI dostępne są przyciski:
+
+*  – umożliwiający powrót do formularza HISTORIA RACHUNKU,
+* – umożliwiający przejście do głównego menu.
+
+=== Przeglądanie historii operacji z wielu rachunków
+
+System Asseco EBP umożliwia Użytkownikowi przeglądanie historii transakcji z wielu dostępnych rachunków jednocześnie.
+
+Aby przeglądnąć historię zbiorczą należy na formularzu RACHUNKI nacisnąć przycisk [HISTORIA ZBIORCZA].
+
+Nad szczegółami transakcji dostępne są filtry:
+
+* *Prosty* – filtrowanie transakcji następuje po wpisaniu danych w polu wyszukiwania znajdującego się nad listą:
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku.
+
+* *Zaawansowany* – użycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtru zaawansowanego
+
+Użytkownik ma możliwość ustawiania filtru zaawansowanego dla następujących pól:
+
+* *Ostatnie* – liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana historia operacji, domyślnie 30 dni,
+* *Zakres dat* – zakres dat, od-do, dla których ma zostać wyświetlona historia rachunku, od miesiąca wstecz do daty bieżącej. Alternatywa dla pola *Ostatnie*. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą, którego można określić zakres dat.
+
+* *Rachunki własne* – pole prezentujące listę rachunków, w którym Użytkownik można wybrać (przez zaznaczenie checkbox) kilka rachunków jednocześnie dla których system ma zaprezentować transakcje,
+
+* *Rodzaj transakcji* – pole zawierające rodzaje transakcji:
+** _Wszystkie transakcje_,
+** _Obciążenia_,
+** _Uznania_,
+
+== Wyciągi z rachunków
+
+W ramach dostępnych rachunków Użytkownik ma możliwość przeglądania wyciągów dla wybranego rachunku.
+
+Aby przeglądnąć listę wyciągów danego rachunku należy na formularzu RACHUNKI kliknąć w obszar rachunku i wybrać przycisk [WYCIĄGI].
+
+W celu zawężenia prezentacji listy wyciągów, system umożliwia zastosowania filtra zaawansowanego za pomocą przycisku [POKAŻ FILTRY]:
+
+Użytkownik ma możliwość ustawienia filtru zaawansowanego dla następujących pól:
+
+* *Ostatnie* – liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana lista wyciągów, domyślnie 30 dni,
+* *Zakres dat* – zakres dat, od-do, dla których ma zostać wyświetlona lista wyciągów, od miesiąca wstecz do daty bieżącej. Alternatywa dla pola *Ostatnie*. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą którego można określić zakres dat.
+
+Dla każdego wyciągu po kliknięciu w obszar wybranego okresu dostępne są przyciski:
+
+* [LISTA OPERACJI] – po naciśnięciu system przekierowuje na formularz HISTORIA RACHUNKU, prezentujący listy operacji danego wyciągu,
+* [EKSPORTUJ] – umożliwia wyeksportowanie listy operacji w formacie określonym w opcji _Ustawienia → Ustawienia importu i eksportu → Format eksportu historii operacji,_
+* [POBIERZ PDF] – umożliwiający pobranie listy operacji do pliku w formacie _PDF_. Pobrany plik zawiera listę wszystkich operacji wchodzących w skład wyciągu (nie ma możliwości wygenerowania raportu częściowego).
+
+Zastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].
+
+W górnej część formularza WYCIĄGI dostępne są przyciski:
+
+*  – umożliwiający powrót do formularza RACHUNKI,
+
+* – umożliwiający przejście do głównego menu.
+
+== Przeglądanie blokad na rachunku
+
+Aby przeglądnąć listę blokad danego rachunku należy na formularzu RACHUNKI kliknąć w obszar rachunku i wybrać przycisk [BLOKADY].
+
+W ramach dostępnych rachunków Użytkownik ma możliwość również przeglądania bieżących autoryzacji transakcji, które zostały dokonane na wybranym rachunku, a nie zostały jeszcze rozliczone i zaksięgowane.
+
+Na formularzu BLOKADY RACHUNKU prezentowane są następujące informacje:
+
+* *Data* – data blokady (data w formacie DD.MM.RRRR),
+* *Opis blokady* – opis blokady,
+* *Kwota* – kwota blokady wraz z walutą.
+
+Zdjęcie blokady powoduje, że nie jest ona dłużej widoczna dla Użytkownika.
+
+Lista blokad jest stronicowana.
+
+System umożliwia także filtrowanie listy blokad po wpisaniu danych w polu wyszukiwania:
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku.
+
+W przypadku, gdy lista blokad jest stronicowana filtrowanie list dotyczy zakresu wyłącznie bieżącej strony listy.
+
+W górnej części formularza BLOKADY RACHUNKU dostępne są przyciski:
+
+*  – umożliwiający powrót do formularza RACHUNKI,
+
+* – umożliwiający przejście do głównego menu.
+
+== Nowy rachunek
+
+NOTE: Możliwość otwarcia nowego rachunku w bankowości internetowej jest dostępna po włączenu przełącznika accountOpening
+
+Aby możliwe było otwarcie rachunku przez klienta w bankowości elektronicznej wymagana jest:
+
+* prawidłowa konfiguracja udostępnienia produktu do edycji w systemie BackOffice,
+* zgodność klasyfikacji klienta z klasyfikacją udostępnionego produktu,
+* dla klienta firmowego - nadanie użytkownikowi uprawnienia funkcjonalnego "Otwarcie rachunku".
+
+Po spełnieniu powyższych wymagań dostępna jest opcja Rachunki -> Nowy Rachunek
+
+Na formularzu nowego rachunku prezentowane są:
+
+* rodzaj rachunku (gdy możliwe jest otwarcie z poziomu bankowości internetowej więcej niż jednego produktu typu Rachunek),
+* grafika dodana w konfiguracji produktu,
+* opis dodany w formie HTML w konfiguracji produktu dla danej wersji językowej,
+
+Przykład: gdy więcej niż jeden produkt jest dostępny do otwarcia z poziomu bankowości internetowej:
+
+Przykład – gdy jeden produkt jest dostępny do otwarcia z poziomu bankowości internetowej:
+
+Wyjątki do interpretacji konfiguracji:
+
+* w przypadku braku konfiguracji grafiki prezentowana jest grafika domyślna,
+* w sytuacji, gdy dla danej wersji językowej EBP nie przypisano opisu produktu lub nazwy pakietu wykorzystywane są dane dla języka PL,
+* w sytuacji, gdy dla pakietu nie dodano żadnej nazwy, wówczas wykorzystywana jest nazwa z systemu transakcyjnego (widoczna również na formularzu konfiguracyjnym).
+
+W przypadku, gdy dla danego produktu w systemie transakcyjnym oznaczono wymóg przypisania rachunku VAT,
+wówczas podczas otwierania produktu w walucie PLN zostanie zaprezentowana sekcja wyboru rachunku VAT.
+
+Otwarcie nowego rachunku wymaga podpisu przypisaną metodą autoryzacji:
+
+Zapis zostanie potwierdzony komunikatem:
+

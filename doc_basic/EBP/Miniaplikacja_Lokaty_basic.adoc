@@ -1,0 +1,288 @@
+:imagesdir: images
+
+= Lokaty
+
+Miniaplikacja *Lokaty* zapewnia dostęp do lokat, do których uprawniony jest Użytkownik.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Lokaty* z dwóch głównych poziomów:
+
+* widżetu *Lokaty* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),
+
+* menu bocznego po wybraniu opcji _Lokaty_.
+
+W każdym z poziomów miniaplikacji dla Użytkownika dostępne są formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach.
+
+Użytkownik posiadający dostęp do miniaplikacji *Lokaty* ma możliwość:
+
+* przeglądania skróconych informacji o lokatach na widżecie miniaplikacji *Lokaty*,
+* modyfikacji nazwy własnej lokaty,
+* przeglądania listy lokat,
+
+NOTE: Funkcjonalność lokat dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia: do funkcjonalności i do rachunków. Uprawnienia ustawiane są przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.
+
+W systemie BackOffice w opcji _System/Słowniki/Podgląd produktu/Regulaminy i linki/Dodanie_, operator ma możliwość dodania regulaminów oraz linków dla konkretnego produktu.
+
+W przypadku włączenia przez administratora w systemie CUI Admin (definicja dla konkretnego BS), w opcji _Administracja/Przełączniki_ następujących parametrów:
+
+* depositTerminationWWW,
+* depositTermination,
+
+w systemie Asseco EBP zostanie udostępniona funkcjonalność zerwania lokat.
+
+NOTE: W zależności od parametryzacji istnieje możliwość dodania autoryzacji lokaty do listy zleceń za pomocą przycisku [DODAJ DO LISTY ZLECEŃ]. Opis obsługi lokat na liście zleceń znajduje się w rozdziale _Lista lokat_.
+
+== Widżet Lokaty
+
+Widżet *Lokaty* może być w dwóch rozmiarach: standardowym i rozszerzonym.
+
+* ikona - powoduje rozszerzenie widżetu o dodatkowe informacje,
+* ikona - powoduje powrót do rozmiaru standardowego.
+
+Na widżecie standardowym prezentowane są informacje:
+
+* *Suma sald* – suma sald wszystkich lokat wraz z walutą,
+* *Ilość* – liczba lokat,
+* *Data zakończenia najbliższej* – data zakończenia najbliższej lokaty.
+
+Na dole widżetu dostępna jest akcja:
+
+* [POKAŻ WSZYSTKIE] - przejście do listy lokat.
+
+Na widżecie rozszerzonym prezentowane są informacje:
+
+* *Suma sald* – suma sald wszystkich lokat wraz z walutą,
+* *Ilość* – liczba lokat,
+* *Data zakończenia najbliższej* – data zakończenia najbliższej lokaty,
+** Nazwa lokaty – nazwa lokaty,
+** Kwota – kwota lokaty wraz z walutą,
+** Oprocentowanie – oprocentowanie lokaty,
+** Odnawialna – możliwe wartości: Tak/Nie (w zależności czy lokata wskazana jako odnawialna),
+** Do zakończenia – ile dni do zakończenia.
+
+== Przeglądanie listy lokat
+
+Po kliknięciu w tytuł widżetu *Lokaty* lub poprzez wybór opcji z bocznego menu _Lokaty_ wyświetlane jest okno prezentujące listę lokat, do których dany Użytkownik jest uprawniony.
+
+Domyślnie na liście lokat wyświetlane są lokaty aktywne oraz lokaty w trakcie podwyższenia.
+
+Lokaty sortowane są w pierwszej kolejności wg okresu (od najkrótszych okresów trwania), w drugiej kolejności wg wysokości oprocentowania (najpierw najwyższe oprocentowanie).
+
+System umożliwia filtrowanie listy lokat po wybraniu odpowiedniej wartości w polu _Lista lokat:_
+
+* Aktywnych,
+* W trakcie zakładania,
+* Odrzuconych,
+
+Na liście lokat dla każdej lokaty dostępne są następujące informacje:
+
+* *Typ lokaty* – typ lokaty wraz z nazwą i numerem rachunku lokaty,
+* *Data zakończenia* – data operacji naliczenia odsetek, od zgromadzonych na rachunku lokaty środków pieniężnych,
+* *Kwota* – suma środków pieniężnych na rachunku lokaty.
+
+Nad listą lokat dostępne są następujące opcje:
+
+* [NOWA] – naciśniecie powoduje przekierowanie Użytkownika na formularz NOWA LOKATA, umożliwiający założenie nowej lokaty,
+* [EKSPORTUJ] - widoczność opcji eksportu jest uzależniona od parametryzacji w Banku, eksport listy do pliku CSV
+* [TABELA OPROCENTOWANIA LOKAT] – naciśniecie powoduje przekierowanie Użytkownika na formularz TABELA OPROCENTOWANIA LOKAT, umożliwiający przeglądanie aktualnej oferty dostępnych lokat.
+
+Pod listą lokat dostępne jest:
+
+* *Podsumowanie strony* – zawierające łączną (dla wszystkich lokat) kwotę oszczędności; jeżeli na liście znajdują się lokaty w różnych walutach, wówczas łączne saldo prezentowane jest oddzielnie dla każdej z walut,
+
+* *Przyciski nawigacji* – przy pomocy których Użytkownik ma możliwość poruszania się pomiędzy poszczególnymi stronami z listą lokat.
+
+== Akcje na wybranej lokacie
+
+Kliknięcie w wiersz wybranej lokaty powoduje wyświetlenie dodatkowych informacji na temat lokaty.
+
+System prezentuje:
+
+* *Oprocentowanie* – aktualne oprocentowanie lokaty,
+* *Okres lokaty* – długość trwania lokaty,
+* *Data kapitalizacji* – data kapitalizacji (data w formacie DD.MM.RRRR).
+
+Dodatkowo prezentowany jest określony zestaw akcji:
+
+* [SZCZEGÓŁY] – opcja umożliwiająca przeglądanie informacji szczegółowych na temat lokaty,
+* [DOPŁAĆ] – opcja umożliwiająca dopłatę do lokaty (o ile produkt na to pozwala),
+* [ZERWIJ] – opcja umożliwiająca zerwanie lokaty,
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza lokaty powoduje zwinięcie dodatkowych informacji i przycisków prezentowanych dla lokaty.
+
+== Modyfikacja nazwy własnej lokaty
+
+W celu ułatwienia identyfikacji lokat, Użytkownik ma możliwość modyfikacji nazwy produktu z poziomu:
+
+* listy lokat za pomocą ikonki  znajdującej się przy nazwie lokaty
+
+* szczegółów lokaty za pomocą ikonki  znajdującej się przy polu _Nazwa własna_.
+
+W celu ułatwienia identyfikacji lokaty, Użytkownik z poziomu szczegółów lokaty ma możliwość ustawienia nazwy własnej dla lokaty za pomocą ikony znajdującej się obok pola _Twoja nazwa_.
+
+W przypadku, gdy Użytkownik usunie wprowadzoną w polu nazwę własną lokaty, system przyporządkowuje mu nazwę systemową.
+
+Nazwa własna przypisana jest do Użytkownika, co oznacza, że ten sam produkt u różnych Użytkowników może posiadać różną nazwę.
+
+Obok pola dostępne są przyciski:
+
+*  – umożliwia zapisanie nazwy własnej lokaty. Nazwę własną lokaty można zapisać również po jej wprowadzeniu i użyciu klawisza [Enter] z klawiatury.
+*  – umożliwia rezygnację z ustawienia nazwy własnej lokaty.
+
+W przypadku, gdy Użytkownik usunie wprowadzoną w polu nazwę własną lokaty, system przyporządkowuje mu nazwę systemową z pola _Typ lokaty_.
+
+Nazwa własna przypisana jest do Użytkownika co oznacza, że ten sam produkt u różnych Użytkowników może posiadać różną nazwę.
+
+== Przeglądanie szczegółów lokaty
+
+Aby z listy lokat przejść do szczegółów wybranej lokaty należy kliknąć w obszar wybranego wiersza i wybrać przycisk [SZCZEGÓŁY].
+
+Na formularzu prezentowane są następujące dane:
+
+* *Numer rachunku* – numer rachunku w formacie NRB,
+* *Numer umowy* – numer umowy,
+* *Waluta* – symbol waluty w jakiej prowadzony jest rachunek,
+
+Nad szczegółami lokaty dostępne są:
+
+* Opcje:
+
+** [ZERWIJ] – umożliwiająca zerwanie lokaty,
+** [DOPŁAĆ] – umożliwiająca podwyższenie kapitału lokaty - opcja dostępna dla lokat typu dopłatowego.
+
+* Przyciski:
+
+**  – umożliwiający powrót do formularza LOKATY,
+
+**  – umożliwiający wyjście do pulpitu.
+
+== Założenie lokaty
+
+Wybranie przycisku [NOWA LOKAT ] dostępnego na widżecie *Lokaty* lub przycisku [NOWA] znajdującego się nad listą lokat, umożliwia Użytkownikowi założenie nowej lokaty.
+
+Użytkownik musi wprowadzić następujące dane:
+
+* *Z rachunku* – w polu podstawiany jest rachunek do obciążenia ustawiony przez Użytkownika jako domyślny (w opcji _Ustawienia → Rachunek domyślny_), który można zmienić,
+* *Rodzaj lokaty* – lista dostępnych dla Użytkownika lokat do założenia, pole wymagalne. Po kliknięciu w listę rodzajów lokat pojawiają się dodatkowe informacje dla poszczególnych lokat:
+** *Kwota min.* – kwota minimalna na jaką można założyć daną lokatę,
+** *Oprocentowanie* – wysokość oprocentowania danej lokaty,
+** *Okres* – okres na jaki można założyć daną lokatę,
+** *Typ oprocentowania* – rodzaj oprocentowania.
+
+Po wybraniu rodzaju lokaty pojawiają się dodatkowe pola:
+
+* *Okres* – pole dostępne w przypadku gdy rodzaj wybranej lokaty umożliwia określenie okresu lokaty,
+* *Oprocentowanie* – wysokość oprocentowania wynikająca z wybranego rodzaju lokaty,
+* *Typ oprocentowania* – typ oprocentowania wynikający z wybranego rodzaju lokaty,
+
+** Przedłuż z odsetkami,
+** Przedłuż bez odsetek,
+** Prześlij na rachunek.
+
+Na formularzu NOWA LOKATA dostępne są:
+
+* Przyciski:
+
+**  – umożliwiający przejście do formularza LOKATY,
+
+== Zerwanie lokaty
+
+Aby zerwać lokatę należy z listy lokat kliknąć w obszar wybranego wiersza lokaty (Aktywnej), wybrać przycisk [ZERWIJ].
+
+Na formularzu ZERWIJ LOKATĘ dostępne są:
+
+* Przyciski:
+
+**  – umożliwiający przejście do formularza LOKATY,
+** – umożliwiający wyjście do pulpitu.
+
+* Akcja:
+
+** [ZERWIJ LOKATĘ] – umożliwia przejście do kroku drugiego, autoryzacji zerwania lokaty.
+
+W polu _Na rachunek_ Użytkownik ma możliwość wyboru rachunku, na który mają być przekazane środki z zamykanej lokaty (kapitał + odsetki).
+
+Po wyborze rachunku i użyciu przycisku [ZERWIJ LOKATĘ], system przechodzi do drugiego kroku.
+
+Na formularzu ZERWIJ LOKATĘ (drugiego kroku) dostępne są:
+
+* Przyciski:
+
+**  – umożliwiający przejście do formularza pierwszego kroku zerwania lokaty,
+** – umożliwiający wyjście do pulpitu.
+
+* Akcja:
+
+** [AKCEPTUJ] – umożliwia zatwierdzenia zerwania lokaty (opcja prezentowana w zależności od posiadanej metody autoryzacji przez Użytkownika).
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, Użytkownikowi zostaje wyświetlone potwierdzenie zerwania lokaty wraz z przyciskiem:
+
+* [WRÓĆ DO PULPITU] – umożliwiającym przejście do pulpitu.
+
+== Dopłata do lokaty
+
+W celu wykonania operacji dopłaty do lokaty należy z listy lokat kliknąć w obszar wybranego wiersza lokaty (Aktywnej), wybrać przycisk [DOPŁAĆ].
+
+Na formularzu DOPŁATA DO LOKATY dostępne są:
+
+* Przyciski:
+
+**  – umożliwiający przejście do formularza LOKATY,
+** – umożliwiający wyjście do pulpitu.
+
+* Akcja:
+
+** [DOPŁAĆ] – umożliwia przejście do kroku drugiego, autoryzacji dopłaty do lokaty.
+
+Na formularzu DOPŁATA DO LOKATY Użytkownik musi wypełnić następujące pola:
+
+* *Z rachunku* – wybrać rachunek prowadzony w walucie depozytu, który zostanie obciążony kwotą dopłaty,
+* *Kwota dopłaty* – podać kwotę dopłaty, kwota dopłaty nie może być mniejsza od kwoty następnej dopłaty.
+
+Po wyborze rachunku i użyciu przycisku [DOPŁAĆ], system przechodzi do drugiego kroku.
+
+Na formularzu DOPŁATA DO LOKATY (drugiego kroku) dostępne są:
+
+* Przyciski:
+
+**  – umożliwiający przejście do formularza pierwszego kroku dopłaty do lokaty,
+** – umożliwiający wyjście do pulpitu.
+
+* Akcja:
+
+** [AKCEPTUJ] – umożliwia zatwierdzenia dopłaty do lokaty (opcja prezentowana w zależności od posiadanej metody autoryzacji przez Użytkownika).
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, Użytkownikowi zostaje wyświetlone potwierdzenie dopłaty do lokaty wraz z przyciskiem:
+
+== Tabela oprocentowania lokat
+
+Wybranie przycisku [TABELA OPROCENTOWANIA LOKAT] dostępnego z poziomu listy lokat umożliwia przeglądanie dostępnej oferty lokat:
+
+Na formularzu LOKATY prezentowana jest lista wszystkich aktywnych, nieoznaczonych jako usunięte oferowanych typów lokat.
+
+System umożliwia filtrowanie ofert:
+
+* za pomocą filtru prostego znajdującego się nad listą, a następnie po wpisaniu danych w polu wyszukiwania:
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku.
+
+* po wybraniu odpowiedniej wartości w polu _Lista lokat_:
+
+** Wszystkie (wartość domyślna),
+** Oprocentowanie stałe - lokaty o stałym oprocentowaniu,
+** Oprocentowanie zmienne - lokaty o zmiennym oprocentowaniu.
+
+Na formularzu TABELA OPROCENTOWANIA LOKAT dostępne są przyciski:
+
+* – umożliwia przejście do formularza LOKATY,
+* – umożliwia wyjście do pulpitu.
+
+Dla każdej oferty lokaty dostępne są następujące informacje:
+
+* *Typ oprocentowania* – rodzaj oprocentowania, możliwe wartości: _Stałe oprocentowanie/Zmienne oprocentowanie_,
+* *Czas trwania* – okres trwania lokaty,
+* *Opis lokaty* – nazwa lokaty,
+
+Kliknięcie w wiersz wybranej oferty powoduje pojawienie się dodatkowego przycisku [NOWA].
+
+Wybór przycisku [NOWA] powoduje przejście do formularza NOWA LOKATA, umożliwiającego założenie nowej lokaty, wraz z wyborem rodzaju lokaty odpowiednim dla wybranej oferty
+

@@ -1,0 +1,101 @@
+:imagesdir: images
+
+= Wiadomości
+
+System Asseco EBP zapewnia Użytkownikowi możliwość odczytu komunikatów przesyłanych przez Bank, przeglądu powiadomień systemowych, a także komunikowania się z Bankiem poprzez generowanie własnych komunikatów.
+
+W przypadku, gdy Użytkownik posiada nowe (od ostatniego zalogowania) wiadomości, wówczas ikona zawiera dodatkowo ich liczbę:
+
+NOTE: Funkcjonalność wiadomości dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia. Uprawnienia nadawane są przez Administratora Użytkowników.
+
+== Przeglądanie listy wiadomości
+
+Po wybraniu opcji *Wiadomości* z nagłówka systemu, wyświetlana jest lista komunikatów Banku oraz powiadomień systemowych.
+
+Na liście znajdują się następujące informacje:
+
+* *Data* - data wiadomości - w formacie DD.MM.RRRR, dla poszczególnych kategorii treści prezentowana jest następująca data:
+
+** Wiadomości - data wysłania wiadomości przez Bank (lub Użytkownika do Banku).
+
+** Komunikaty - data wysłania komunikatu przez Bank,
+
+** Powiadomienia - data wygenerowania powiadomienia przez system,
+
+* *Typ* - kategoria treści:
+
+** Wiadomość - wiadomość wysłana z Banku do Użytkownika,
+
+** Komunikat Banku - komunikaty wysyłane do wszystkich Klientów, komunikaty wysyłane do konkretnego Klienta,
+
+** Powiadomienie - powiadomienia systemowe,
+
+* *Tytuł* - temat wiadomości.
+
+Lista wiadomości jest stronicowana.
+
+== Akcje na liście wiadomości
+
+Na liście wiadomości istnieje możliwość zaznaczenia wybranych lub wszystkich wierszy oraz w odniesieniu do nich, wykonanie akcji usunięcia lub oznaczenia wiadomości jako przeczytanych, odpowiednio za pomocą opcji [USUŃ ZAZNACZONE], [OZNACZ JAKO PRZECZYTANE].
+
+Zaznaczenie pojedynczego wiersza polega na kliknięciu w checkbox z lewej strony daty wybranej wiadomości.
+
+Zaznaczenie wszystkich wierszy na stronie umożliwia checkbox dostępny nad listą wiadomości, obok nagłówka DATA.
+
+Zaznaczenie wiadomości/komunikatów i użycie opcji [USUŃ ZAZNACZONE] dostępnej nad listą wiadomości powoduje ich grupowe usunięcie.
+
+== Przeglądanie szczegółów wiadomości
+
+Aby przejść do szczegółów wiadomości/komunikatu należy z poziomu listy wiadomości wybrać wiadomość/komunikat, którego szczegóły mają być przeglądane.
+
+* *Tytuł*,
+
+* *Typ* - typ wiadomości,
+
+* *Nadawca* - nadawca wiadomości,
+
+* *Treść* - treść wiadomości,
+
+* *Data i godzina* - termin wysłania wiadomości.
+
+W zależności od rodzaju wiadomości (opcje konfigorwalne przez Bank) Użytkownik może mieć dostępne dodatkowe opcje:
+
+* Usuń wiadomość - umożliwia usunięcie wiadomosci,
+
+* Akceptuj - umożliwa akceptację wiadomości (po akceptacji wyświetli się data akceptacji),
+
+* Zapoznałem/am się - umożliwia potwierdzenie zapoznania się z wiadomością (po zapoznaniu system wyświetli datę).
+
+== Tworzenie wiadomości i komunikacja z Bankiem
+
+W celu wysłania wiadomości do Banku, należy z poziomu listy wiadomości wybrać opcję [Nowa wiadomość].
+
+Po wskazaniu typu wiadomości (z dostępnej listy należy wybrać odpowiednią grupę odbiorców), zostanie zaprezentowana formatka nowej wiadomości:
+
+Pola do uzupełnienia:
+
+* *Odbiorca* - wczesniej wybrana grupa odbiorców z listy,
+* *Tytuł* - temat wiadomości (maksymalnie 200 znaków),
+
+Po wypełnieniu formularza należy użyć przycisku [Wyślij wiadomość].
+
+Opcja [Popraw] daje Użytkownikowi możliwość korekty wiadomości.
+
+Komunikaty wysłane przez Użytkownika do Banku, prezentowane są na liście *Wiadomości*.
+
+Bank ma możliwość odpowiedzenia na wiadomość wysłaną przez Użytkownika, w takim przypadku na liście wyświetli się nowa widomość dołączona do wątku.
+
+Użytkownik po wejściu do wiadomości widzi komunikację z bankiem w formie czatu.
+
+Użytkownik z tego poziomu może odpowiedzieć Bankowi za pomocą przycisku [Odpowiedz].
+
+== Usuwanie wiadomości
+
+System Asseco EBP umożliwia usuwanie pojedynczej wiadomości/komunikatu z listy wiadomości bądź zbiorcze usuwanie wiadomości.
+
+Usunięcie pojedynczej wiadomości możliwe jest również z poziomu formatki ze szczegółami wiadomości.
+
+Usuwanie grupowe polega na zaznaczeniu wiadomości/komunikatów i użycie opcji [Usuń zaznaczone] dostępnej nad listą wiadomości.
+
+Bank ma możliwość zablokowania usuwania niektórych wiadomości, wówczas na szczegółach wiadomości nie będzie dostępnego przycisku do usunięcia.
+
