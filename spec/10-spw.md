@@ -3,7 +3,7 @@ Zakres: Opis zakresu modyfikacji
 Format: RQ-ACT-###
 Źródła:
     Wymagania klienta: /src/*,
-    Dokumentacja systemu: /doc_basic/*
+    Dokumentacja systemu: /doc/*
     Parametry projektu: /project-parameters.md
 -->
 
@@ -42,7 +42,7 @@ Wyjście: lista wymagań/założeń z odnośnikami do źródeł.
 ### 2.1. Słownik pojęć
 <!-- SPW-SECTION
 Cel: Zdefiniuj terminy używane w dokumencie (lub wskaż, że obowiązuje słownik źródłowy).
-Źródła: Dokumentacja systemu: doc_basic/* (np. /doc_basic/glossary.md)
+Źródła: Dokumentacja systemu: doc/* (np. /doc/glossary.md)
 Wyjście: lista pojęć i definicji; bez wprowadzania nowych znaczeń.
 -->
 - **BE** – system bankowości elektronicznej.
@@ -54,11 +54,11 @@ Wyjście: lista pojęć i definicji; bez wprowadzania nowych znaczeń.
 ### 2.2. Stan obecny
 <!-- SPW-SECTION
 Cel: Opisz stan obecny w zakresie objętym zmianą (as-is).
-Źródła: Dokumentacja systemu: doc_basic/*
+Źródła: Dokumentacja systemu: doc/*
 Wyjście: krótki opis + kluczowe ograniczenia i zależności.
 -->
-System BE obsługuje kontekst indywidualny, mikro (MŚP) oraz instytucjonalny (firmowy/korporacyjny), a dla klientów firmowych umożliwia zarządzanie uprawnieniami funkcjonalnymi (`doc_basic/opis systemu BE.md`).
-Dokumentacja stanu obecnego wskazuje szeroki zakres istniejących funkcji bankowości (m.in. rachunki, przelewy, lista zleceń, wiadomości, karty, lokaty, kredyty oraz konfiguracja BO), co potwierdza istnienie bazowych procesów płatności i autoryzacji po stronie BE (`doc_basic/EBP/*.adoc`, `doc_basic/BO/BackofficeUserGuide-pl_basic.adoc`).
+System BE obsługuje kontekst indywidualny, mikro (MŚP) oraz instytucjonalny (firmowy/korporacyjny), a dla klientów firmowych umożliwia zarządzanie uprawnieniami funkcjonalnymi (`doc/opis systemu BE.md`).
+Dokumentacja stanu obecnego wskazuje szeroki zakres istniejących funkcji bankowości (m.in. rachunki, przelewy, lista zleceń, wiadomości, karty, lokaty, kredyty oraz konfiguracja BO), co potwierdza istnienie bazowych procesów płatności i autoryzacji po stronie BE (`doc/EBP/*.adoc`, `doc/BO/BackofficeUserGuide-pl_basic.adoc`).
 W materiałach źródłowych brak opisu już działającej integracji BE z CashDirector, dlatego zakres tej specyfikacji traktuje tę integrację jako zmianę do wdrożenia.
 
 W sekcji Rachunki dostęp użytkownika jest ograniczony do rachunków, do których użytkownik ma nadane uprawnienia.
@@ -68,7 +68,7 @@ Dodatkowo funkcja otwarcia nowego rachunku wymaga spełnienia warunków konfigur
 ### 2.3. Model rozwiązania #zakres bazowy
 <!-- SPW-SECTION
 Cel: Opisz docelowy model rozwiązania w zakresie zmian (to-be) na poziomie biznesowym.
-Źródła: /src/*, /doc_basic/*
+Źródła: /src/*, /doc/*
 Wyjście: opis przepływu + kluczowe decyzje biznesowe.
 -->
 Model docelowy zakłada, że klient firmowy aktywuje usługę `eKsięgowość` w BE, akceptuje wymagane zgody, a BE rejestruje/paruje firmę i użytkownika z CashDirector.
@@ -94,7 +94,7 @@ Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe 
 - When wybiera opcję `eKsięgowość`
 - Then BE uruchamia przepływ aktywacji usługi CashDirector
 
-```mermaid
+````mermaid`
 sequenceDiagram
     actor U as Użytkownik
     participant BE as System BE
@@ -286,7 +286,7 @@ sequenceDiagram
 ### 3.2 Wymagania niefunkcjonalne
 <!-- SPW-SECTION
 Cel: Zdefiniuj wymagania niefunkcjonalne dla zakresu zmian.
-Źródła: /src/*, /doc_basic/*
+Źródła: /src/*, /doc/*
 Wyjście: wymagania testowalne + mierzalne kryteria akceptacji, jeśli możliwe.
 -->
 ---
@@ -312,7 +312,7 @@ Wyjście: wymagania testowalne + mierzalne kryteria akceptacji, jeśli możliwe.
 ## 5. Wymagane licencje
 <!-- SPW-SECTION
 Cel: Wskaż licencje / zależności licencyjne wymagane przez rozwiązanie.
-Źródła: /src/*, /doc_basic/*
+Źródła: /src/*, /doc/*
 Wyjście: lista licencji i zakres ich użycia.
 Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 -->
@@ -320,7 +320,7 @@ Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 ## 6. Obszary pod wpływem
 <!-- SPW-SECTION
 Cel: Wymień systemy, moduły, procesy i kanały dotknięte zmianą.
-Źródła: /src/*, /doc_basic/*
+Źródła: /src/*, /doc/*
 Wyjście: lista obszarów + krótki opis wpływu.
 Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 -->
@@ -328,7 +328,7 @@ Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 ## 7. Założenia i ograniczenia
 <!-- SPW-SECTION
 Cel: Zapisz założenia, ograniczenia oraz decyzje projektowe wpływające na zakres.
-Źródła: /src/*, /doc_basic/*
+Źródła: /src/*, /doc/*
 Wyjście: lista punktów; brakujące dane oznaczaj OPEN-QUESTION.
 Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 -->
@@ -340,7 +340,7 @@ Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 ## 9. Załączniki
 <!-- SPW-SECTION
 Cel: Dołącz lub wskaż materiały referencyjne (np. diagramy, tabele, słowniki, zrzuty).
-Źródła: /src/*, /doc_basic/*
+Źródła: /src/*, /doc/*
 Wyjście: lista załączników + identyfikatory/odnośniki.
 Generowanie: POMIŃ (ten rozdział uzupełniany ręcznie)
 -->

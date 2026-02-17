@@ -5,25 +5,40 @@ Aktualnie repo zawiera głównie szablony, reguły i przykładowe dane wejściow
 
 
 AI-AIReqStudio_1/
-├── doc_basic/
+├── doc/
 │   ├── glossary.md
-│   ├── main.adoc
-│   └── opis systemu BE.md
+│   ├── opis systemu BE.md
+│   ├── BO/
+│   │   └── BackofficeUserGuide-pl_basic.adoc
+│   └── EBP/
+│       ├── Main.adoc
+│       └── Miniaplikacja_*.adoc
+├── kb/
+│   ├── chunks/
+│   │   └── EBP/
+│   │       └── DOC-*.json
+│   └── _manifest.json
 ├── spec/
 │   ├── 00-outline.md
 │   ├── 10-spw.md
 │   ├── 10-spw temp v3.md
+│   ├── 10-spw temp v4.md
 │   ├── 10-spw_out.md
 │   └── spw_szablon v2.md
 ├── src/
 │   ├── banki-api-uslugi-banku.md
-│   ├── wymagania banku.md
-│   └── wymagania_funkcjonalne_be_integracja_z_cash_director v1.md
+│   └── wymagania.md
 ├── tools/
-│   └── render-placeholders.ps1
+│   ├── ingest_adoc.py
+│   ├── parse_requirements.py
+│   ├── render-placeholders.ps1
+│   └── search_kb.py
 ├── opis.md
 ├── project-parameters.md
-└── project-prompt.md
+├── project-prompt.md
+├── README.md
+├── requirements.txt
+└── zagadnienia otwarte.md
 
 Zagadnienia 
 1) Dokumentacja wymagań (SPW) powinna powstać w odniesieniu do dokumetnacji systemu Bankowość Internetowej (desktop, mobile). DOdatkowo powinna uezględniać architektórę systemu (mikroserwisy) oraz możliwości API. Dokumentacja systemu to około 800 stron. Jak można rozbudować ten framework aby LLM wiedział jak działa obecnie system i gdzie trzeba zrealizować zmiany będące wymaganiami klienta?

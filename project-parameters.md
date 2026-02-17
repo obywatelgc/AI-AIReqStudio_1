@@ -10,7 +10,7 @@
 
 - **Język dokumentów (`DOC_LANGUAGE`):** `pl-PL`
 - **Styl dokumentów (`WRITING_STYLE`):** `formalny-analityczny`
-- **Katalog dokumentacji systemowej (`SYSTEM_DOC_DIR`):** `./doc_basic`
+- **Katalog dokumentacji systemowej (`SYSTEM_DOC_DIR`):** `./doc`
 - **Katalog nowych wymagań banku (`BANK_REQUIREMENTS_DIR`):** `./src`
 - **Katalog specyfikacji (`SPEC_DIR`):** `./spec`
 - **Plik spisu treści (`SPEC_OUTLINE_FILE`):** `./spec/00-outline.md`
