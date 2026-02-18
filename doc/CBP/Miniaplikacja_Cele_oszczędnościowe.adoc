@@ -1,0 +1,301 @@
+:imagesdir: images
+
+= Cele oszczędnościowe
+
+Funkcjonalność „Cele oszczędnościowe” dostępna jest w bankowości elektronicznej Asseco EBP dla klientów indywidualnych (w obszarze roboczym osobistym).
+
+NOTE: Dostępność *Celów oszczędnościowych* chroniona jest dedykowaną licencją.
+
+Miniaplikacja *Cele oszczędnościowe* zapewnia możliwość tworzenia nowych celów oraz późniejsze zarządzanie nimi. Obsługiwane są wyłącznie w walucie PLN i mogą być zasilane środkami wyłącznie z rachunków i transakcji +
+w PLN.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Cele oszczędnościowe* z dwóch głównych poziomów:
+
+* widżetu *Cele oszczędnościowe* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),
+
+image::Cele_oszczednosciowe/image1.png[image,width=296,height=210]
+
+* menu bocznego po wybraniu opcji *Cele oszczędnościowe*.
+
+image::Cele_oszczednosciowe/1newA.png[image,width=297,height=67]
+
+W każdym z poziomów miniaplikacji dla Użytkownika dostępne są formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach. Z poziomu formatek Użytkownik może wykonać wskazane akcje.
+
+Użytkownik posiadający dostęp do miniaplikacji *Cele oszczędnościowe* ma możliwość:
+
+* utworzenia nowego celu,
+* przeglądania dodanych celów,
+* przeglądania szczegółów celu,
+* edytowania celu,
+* przeglądania historii celu,
+* wpłaty na cel,
+* wypłaty z celu,
+* zakończenia celu.
+
+== Widżet Cele oszczędnościowe
+
+Jeżeli Użytkownik nie korzystał dotychczas z *Celów oszczędnościowych*, wówczas system zaprezentuje mu na widżecie informacje o możliwości rozpoczęcia oszczędzania wraz z przyciskiem [Utwórz cel].
+
+image::Cele_oszczednosciowe/2newA.png[image,width=297,height=191]
+
+Jeżeli Użytkownik korzysta z *Celów oszczędnościowych*, wówczas z poziomu widżetu ma możliwość:
+
+* przejścia do miniaplikacji *Cele oszczędnościowe*,
+* podglądu ostatnich czterech celów wraz z nazwą celu, datą zakończenia i wskaźnikiem realizacji,
+* przejścia do listy pozostałych celów, jeżeli Użytkownik ma więcej niż cztery cele za pomocą przycisku [Pokaż wszystkie cele],
+* Utworzenia nowego celu za pomocą przycisku [Utwórz cel].
+
+image::Cele_oszczednosciowe/image4.png[image,width=296,height=358]
+
+== Miniaplikacja Cele oszczędnościowe
+
+Po kliknięciu w tytuł widżetu lub poprzez wybór opcji z bocznego menu *Cele oszczędnościowe* wyświetlane jest okno:
+
+. dla Użytkownika, który do tej pory nie zdefiniował własnych celów oszczędnościowych:
+
+image::Cele_oszczednosciowe/3newA.png[image,width=604,height=284]
+
+Z tego poziomu Użytkownik może zapoznać się z informacjami dotyczącymi funkcjonalności oraz może utworzyć pierwszy cel.
+
+[start=2]
+. dla Użytkownika, który korzysta z celów oszczędnościowych prezentowany jest ekran z listą:
+
+image::Cele_oszczednosciowe/4newA.png[image,width=604,height=251]
+
+W tym przypadku system wyświetli listę posortowaną chronologicznie prezentującą:
+
+* nazwę celu,
+* procent zrealizowania celu,
+* kwotę zgromadzonych środków w walucie PLN,
+* datę zakończenia.
+
+Z tego poziomu Użytkownik może również utworzyć nowy cel za pomocą przycisku [Utwórz cel].
+
+Po kliknięciu w wiersz wybranego celu wyświetlane są dodatkowe informacje na temat szczegółów celu:
+
+* Twój cel - nazwa oraz kwota celu,
+* Szczegóły – kwota zgromadzonych środków, data zakończenia celu oraz konto z którego pobierane są oszczędności,
+* Sposoby oszczędzania – informacje zależne od sposobu jaki wybrał Użytkownik:
+**	rodzaj – oszczędzam kwotę zależną od wartości wydatków:
+*** stały procent od wartości transakcji,
+*** zaokrąglenie do pełnej kwoty,
+**	rodzaj – oszczędzam stałą kwotę miesięcznie.
+
+image::Cele_oszczednosciowe/5newA.png[image,width=604,height=364]
+
+Po rozwinięciu wiersza dostępne są przyciski:
+
+* [Edytuj cel] – edycja danych celu,
+* [Pokaż historię transakcji] – system umożliwia podgląd historii transakcji,
+* [Wpłać na cel] – system umożliwia samodzielną wpłatę na cel,
+* [Wypłać z celu] – system umożliwia samodzielną wypłatę z celu,
+* [Zakończ cel wcześniej] – system umożliwia wcześniejsze zakończenie celu.
+
+Jeśli rachunek wskazany do zasilania i wypłaty celu będzie niedostępny (np. zamknięty), wówczas system zaprezentuje dodatkową informację o konieczności edycji celu.
+
+image::Cele_oszczednosciowe/6newA.png[image,width=296,height=210]
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza powoduje zwinięcie szczegółowych informacji.
+
+Lista celów jest ładowana dynamicznie. Kolejne cele wczytają się w trakcie przewijania strony.
+
+=== Utworzenie celu oszczędnościowego
+
+Utworzenie nowego celu jest możliwe po wybraniu przycisku [Utwórz cel] z poziomu widżetu lub w miniaplikacji *Cele oszczędnościowe*. System wyświetli wówczas formatkę:
+
+image::Cele_oszczednosciowe/7newA.png[image,width=604,height=359]
+
+Następnie Użytkownik wypełnia (opcjonalnie) dane:
+
+* *Twój cel:*
+** *Nazwa* – nazwa celu,
+** *Zdjęcie* – Użytkownik może wybrać z katalogu jedno ze zdjęć poprzez przycisk [Zmień],
+
+image::Cele_oszczednosciowe/8newA.png[image,width=288,height=324]
+
+* *Szczegóły:*
+** *Kwota* – kwota celu w walucie PLN,
+** *Data zakończenia* – data zakończenia (domyślnie rok w przód), Użytkownik może wybrać datę wprowadzając ją z klawiatury, lub może skorzystać z ikony kalendarza image:Cele_oszczednosciowe/image10.png[image,width=14,height=15], bądź ustawić bezterminową datę realizacji zaznaczając checkbox *Bezterminowo* (checkbox domyślnie odznaczony),
+** *Rachunek, z którego chcesz oszczędzać* – pole z listą rachunków do obciążenia, lista rachunków ograniczona jest tylko do rachunków do których Użytkownik ma dostęp; w polu podstawiany jest domyślny rachunek do obciążenia (jeśli Użytkownik wybrał rachunek domyślny),
+* *Sposoby oszczędzania* – Użytkownik za pomocą checkboxów ma możliwość wyboru dwóch sposobów oszczędzania jednocześnie lub tylko jednego z nich:
+** *Oszczędzam stałą kwotę miesięcznie* – wybór tego pola spowoduje odkładanie co miesiąc stałej kwoty w formie zlecenia stałego ze wskazanego konta do obciążeń, pola do wypełnienia:
++
+image::Cele_oszczednosciowe/9newA.png[image,width=292,height=134]
++
+*** Wpłata miesięczna – kwota składki w PLN,
+*** Dzień pobrania wpłaty – Użytkownik ma możliwość wybrania jednej pozycji z listy rozwijalnej:
++
+image::Cele_oszczednosciowe/10newA.png[image,width=254,height=120]
++
+** *Oszczędzam kwotę zależną od wartości wydatków* – wybór tego pola spowoduje odkładanie stałego procentu lub zaokrąglonej końcówki od każdego przelewu wychodzącego:
+*** stały procent od wartości transakcji,
++
+image::Cele_oszczednosciowe/11newA.png[image,width=288,height=105]
++
+Wartość procentowa ograniczona jest od 1% do 10%.
++
+*** lub zaokrąglenie do pełnej kwoty.
+
+image::Cele_oszczednosciowe/12newA.png[image,width=288,height=105]
+
+Użytkownik z listy rozwijalnej może wybrać do jakiej kwoty system będzie zaokrąglał.
+
+image::Cele_oszczednosciowe/13newA.png[image,width=254,height=120]
+
+Użytkownik przechodzi do drugiego kroku utworzenia celu, za pomocą przycisku:
+
+* [Akceptuj] - przejście do autoryzacji celu.
+
+Na formularzu potwierdzenia danych celu oszczędnościowego Użytkownik autoryzuje utworzenie celu za pomocą własnego środka autoryzacji.
+
+image::Cele_oszczednosciowe/14newA.png[image,width=604,height=385]
+
+NOTE: Użycie ikony image:Cele_oszczednosciowe/image15.png[image,width=21,height=23] powoduje powrót do pierwszego kroku i poprawę danych celu.
+
+Po akceptacji utworzenia celu, Użytkownikowi wyświetlane jest potwierdzenie o utworzeniu celu wraz z przyciskami:
+
+image::Cele_oszczednosciowe/15newA.png[image,width=604,height=372]
+
+* [Dodaj kolejny cel] – otwiera formatkę utworzenia nowego celu,
+* [Wróć do listy celów] – umożliwia powrót do listy celów,
+* [Wróć do pulpitu] – umożliwia powrót do pulpitu.
+
+NOTE: Wybór rachunku do oszczędzania ograniczony jest do listy dostępnych rachunków w relacji "Właściciel" i "Współwłaściciel".
+
+
+=== Edycja celu oszczędnościowego
+
+Aby dokonać edycji celu oszczędnościowego należy kliknąć w obszar danego wiersza na liście celów i wybrać [Edytuj cel]. Wyświetlane jest wówczas okno prezentujące dane wybranego celu z możliwością modyfikacji danych.
+
+image::Cele_oszczednosciowe/16newA.png[image,width=604,height=513]
+
+Po wprowadzeniu zmian należy przejść do formularza autoryzacji za pomocą przycisku [Akceptuj].
+
+Użytkownik autoryzuje edycję zgodnie z posiadaną metodą autoryzacji.
+
+image::Cele_oszczednosciowe/17newA.png[image,width=604,height=372]
+
+NOTE: Użycie ikony image:Cele_oszczednosciowe/image15.png[image,width=21,height=23] powoduje powrót do pierwszego kroku i poprawę danych edytowanego celu.
+
+Po dokonaniu akceptacji zmian, nowe dane zostają zapisane, a system wyświetla potwierdzenie wraz z przyciskami:
+
+image::Cele_oszczednosciowe/18newA.png[image,width=604,height=321]
+
+* [Wróć do listy celów] – umożliwia powrót do listy celów,
+* [Wróć do pulpitu] – umożliwia powrót do pulpitu.
+
+=== Przeglądanie historii transakcji
+
+Aby przejść do historii transakcji dla celu oszczędnościowego należy kliknąć w obszar danego wiersza na liście celów i wybrać [Pokaż historię transakcji]. Wyświetlana jest wówczas historia transakcji z wyfiltrowanymi danymi dotyczącymi dedykowanego dla wybranego celu rachunku oszczędnościowego.
+
+image::Cele_oszczednosciowe/19newA.png[image,width=604,height=281]
+
+Po rozwinięciu wiersza zostaną zaprezentowane szczegóły transakcji.
+
+image::Cele_oszczednosciowe/20newA.png[image,width=604,height=331]
+
+NOTE: Szczegółowy opis dotyczący historii transakcji znajduje się w rozdziale __Historia transakcji. +
+__Działanie systemu w tym zakresie jest analogiczne z wyjątkiem: +
+• transakcji dotyczących celu nie można ponawiać, +
+• rachunek celu oszczędnościowego jest dostępny tylko z poziomu miniaplikacji *Cele oszczędnościowe* i nie można z tego poziomu wyfiltrować historii z innych rachunków, nie jest również widoczny w miniaplikacji *Historia transakcji.*
+
+=== Wpłata na cel oszczędnościowy
+
+Aby dokonać wpłaty na cel oszczędnościowy należy kliknąć w obszar danego wiersza na liście celów i wybrać [Wpłać na cel]. Wyświetlane jest wówczas okno prezentujące formatkę wpłaty na wybrany cel.
+
+image::Cele_oszczednosciowe/21newA.png[image,width=604,height=320]
+
+Następnie Użytkownik wypełnia poniższe dane:
+
+* *Z rachunku* - rachunek obciążany; w polu należy wybrać spośród dostępnych rachunków własnych Użytkownika - rachunek do obciążenia, w polu automatycznie podstawiany jest domyślny rachunek, który można zmienić, pole wymagalne,
+* *Na rachunek* - rachunek uznawany, czyli rachunek oszczędnościowy na który mają zostać przelane środki, pole domyślnie wypełnione; nieedytowalne,
+* *Szczegóły –* w tym miejscu Użytkownik wypełnia pozostałe dane:
+** *Kwota* - kwota wpłaty wyrażona w PLN, pole wymagalne,
+** *Tytuł* - tytuł przelewu, pole automatycznie wypełnione „Wpłata środków na cel oszczędnościowy”, edytowalne, pole może zawierać maksymalnie 140 znaków; pole opcjonalne. Dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: `!@#$%^&*()_+=\\\\{}[]:;'<>?,./\aAoOuUs
+** *Data realizacji* - data realizacji przelewu; domyślnie wstawiana jest data bieżąca, pole nieedytowalne.
+
+Po wprowadzeniu danych należy przejść do formularza autoryzacji za pomocą przycisku [Akceptuj].
+
+Użytkownik autoryzuje wpłatę zgodnie z posiadaną metodą autoryzacji.
+
+image::Cele_oszczednosciowe/22newA.png[image,width=604,height=268]
+
+NOTE: Użycie ikony image:Cele_oszczednosciowe/image15.png[image,width=21,height=23] powoduje powrót do pierwszego kroku i poprawę danych dotyczących wpłaty.
+
+Po dokonaniu akceptacji system wyświetla potwierdzenie wpłaty wraz z przyciskami:
+
+image::Cele_oszczednosciowe/23newA.png[image,width=604,height=301]
+
+* [Wróć do listy celów] – umożliwia powrót do listy celów,
+* [Wróć do pulpitu] – umożliwia powrót do pulpitu.
+
+W przypadku, gdy cel został dopiero utworzony, wpłata może być niemożliwa. System zaprezentuje wówczas informację:
+
+image::Cele_oszczednosciowe/24newA.png[image,width=296,height=358]
+
+=== Wypłata z celu oszczędnościowego
+
+Aby dokonać wypłaty (częściowej) z celu oszczędnościowego należy kliknąć w obszar danego wiersza na liście celów i wybrać [Wypłać z celu]. Wyświetlane jest wówczas okno prezentujące formatkę wypłaty z wybranego celu.
+
+image::Cele_oszczednosciowe/25newA.png[image,width=604,height=335]
+
+Następnie Użytkownik wypełnia poniższe dane:
+
+* *Z rachunku* – rachunek obciążony, czyli rachunek oszczędnościowy z którego mają zostać wypłacone środki, pole domyślnie wypełnione; nieedytowalne,
+* *Na rachunek* - rachunek uznawany, w polu należy wybrać spośród dostępnych rachunków własnych Użytkownika - rachunek do uznania, w polu automatycznie podstawiany jest domyślny rachunek, który można zmienić; pole wymagalne;
+* *Szczegóły –* w tym miejscu Użytkownik wypełnia pozostałe dane:
+** *Kwota* - kwota wypłaty wyrażona w walucie PLN. Pole wymagalne.
+** *Tytuł* - tytuł przelewu, pole automatycznie wypełnione „Wypłata środków z celu oszczędnościowego”, edytowalne, pole może zawierać maksymalnie 140 znaków; pole opcjonalne. Dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: `!@#$%^&*()_+=\\\\{}[]:;'<>?,./\aAoOuUs
+** *Data realizacji* - data realizacji przelewu; domyślnie wstawiana jest data bieżąca, pole nieedytowalne.
+
+Po wprowadzeniu danych należy przejść do formularza autoryzacji za pomocą przycisku [Akceptuj].
+
+Użytkownik autoryzuje wypłatę zgodnie z posiadaną metodą autoryzacji.
+
+image::Cele_oszczednosciowe/26newA.png[image,width=604,height=268]
+
+NOTE: Użycie ikony image:Cele_oszczednosciowe/image15.png[image,width=21,height=23] powoduje powrót do pierwszego kroku i poprawę danych dotyczących wypłaty.
+
+Po dokonaniu akceptacji system wyświetla potwierdzenie wypłaty wraz z przyciskami:
+
+image::Cele_oszczednosciowe/27newA.png[image,width=604,height=281]
+
+* [Wróć do listy celów] – umożliwia powrót do listy celów,
+* [Wróć do pulpitu] – umożliwia powrót do pulpitu.
+
+W przypadku, gdy cel został dopiero utworzony, wypłata może być niemożliwa. System zaprezentuje wówczas informację:
+
+image::Cele_oszczednosciowe/24newA.png[image,width=296,height=358]
+
+=== Zakończenie celu oszczędnościowego
+
+Aby dokonać wcześniejszego zakończenia celu oszczędnościowego należy kliknąć w obszar danego wiersza na liście celów i wybrać [Zakończ cel wcześniej]. Wyświetlane jest wówczas okno prezentujące formatkę zakończenia wybranego celu.
+
+image::Cele_oszczednosciowe/28newA.png[image,width=380,height=405]
+
+Aby przejść do formularza autoryzacji należy kliknąć w przycisk [Akceptuj].
+
+Użytkownik autoryzuje zakończenie celu zgodnie z posiadaną metodą autoryzacji.
+
+image::Cele_oszczednosciowe/29newA.png[image,width=604,height=299]
+
+NOTE: Użycie ikony image:Cele_oszczednosciowe/image15.png[image,width=21,height=23] powoduje powrót do pierwszego kroku.
+
+Po dokonaniu akceptacji system wyświetla potwierdzenie zakończenia celu wraz z przyciskami:
+
+image::Cele_oszczednosciowe/32newA.png[image,width=604,height=299]
+
+*	[Wróć do listy celów] – umożliwia powrót do listy celów,
+*	[Wróć do pulpitu] – umożliwia powrót do pulpitu.
+
+W przypadku, gdy cel został utworzony w dniu dzisiejszym, zakończenie może być niemożliwe. System zaprezentuje wówczas informację:
+
+image::Cele_oszczednosciowe/30newA.png[image,width=296,height=358]
+
+Jeśli w momencie zamknięcia celu istnieją w realizacji dyspozycje, system wyświetli komunikat:
+
+image::Cele_oszczednosciowe/31newA.png[image,width=296,height=358]
+
+NOTE: Zakończenie celu powoduje usunięcie rachunku oszczędnościowego oraz anulowanie zlecenia stałego utworzonego w związku z wybraniem automatycznego sposobu oszczędzania.
+
+NOTE: Środki zgromadzone na celu zostaną przelane na rachunek powiązany, który był wskazany jako rachunek do obciążeń lub wybrany rachunek Użytkownika w walucie PLN.

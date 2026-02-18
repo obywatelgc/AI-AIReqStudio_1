@@ -1,0 +1,258 @@
+:imagesdir: images
+
+= Terminarz
+
+Miniaplikacja Terminarz umożliwia przeglądanie terminarza wydarzeń.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji _Terminarz_ z dwóch głównych poziomów:
+
+* widżetu *Terminarz* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),
+
+image::Terminarz/image1.png[]
+
+* menu bocznego po wybraniu opcji _Terminarz_.
+
+image::Terminarz/image2.png[image,width=213,height=67]
+
+W każdym z poziomów miniaplikacji dla Użytkownika dostępne są formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach.
+
+Użytkownik posiadający dostęp do miniaplikacji _Terminarz_ ma możliwość:
+
+* przeglądania skróconego terminarza wydarzeń na widżecie miniaplikacji _Terminarz,_
+* przeglądania terminarza wydarzeń,
+* przeglądania listy wydarzeń z wybranego dnia,
+* przeglądania szczegółów wydarzenia,
+* obsługę wydarzeń własnych (rejestracja, edycja, usuwanie).
+
+
+== Widżet Terminarz
+
+System umożliwia Użytkownikowi przeglądanie skróconych informacji na temat pojedynczego wydarzenia w terminarzu na widżecie miniaplikacji _Terminarz_ wyświetlanym na pulpicie.
+
+Widżet wyświetla informacje chronologicznie, maksymalnie pięć wydarzeń.
+
+image::Terminarz/image1.png[]
+
+Informacje wyświetlane dla wydarzeń:
+
+* data,
+* nazwa wydarzenia.
+
+Użytkownik za pomocą [>] może przejść do szczegółów danego wydarzenia.
+
+image::Terminarz/image1a.png[]
+
+Jeżeli Użytkownik ma większą ilość wydarzeń, to wyświetlany jest przycisk [Zobacz pozostałe zaplanowane wydarzenia], który przenosi do listy wydarzeń w terminarzu.
+
+== Przeglądanie terminarza wydarzeń
+
+Po wybraniu miniaplikacji _Terminarz_ Użytkownik ma możliwość przeglądania terminarza wydarzeń w ujęciu miesięcznym.
+
+image::Terminarz/image4.png[]
+
+Terminarz obejmuje następujące kategorie wydarzeń:
+
+{empty}1. *Wydarzenia własne* (prywatne, widoczne tylko dla Użytkownika, który je zarejestrował),
+
+{empty}2. *Wydarzenia związane z datami realizacji dyspozycji płatności* (przelewy dowolnego rodzaju) oczekujących na realizację (aktywne), w tym płatności cyklicznych (tylko data najbliższej realizacji).
+
+{empty}3. *Wydarzenia związane z terminami wynikającymi z umów*:
+
+* zapadalność (koniec okresu) lokaty,
+* termin wymaganej spłaty najbliższej raty kredytu,
+* koniec okresu kredytu.
+
+Terminarz pełni rolę planera, stąd nie są prezentowane wydarzenia przeszłe z kategorii dat realizacji dyspozycji. Prezentowane są natomiast wszystkie wydarzenia własne (zarówno przyszłe, jak i przeszłe). Prezentacja wydarzeń z kategorii dat realizacji dyspozycji w dniu bieżącym zależy od stanu wykonania tych dyspozycji.  W związku z tym dyspozycje zakończone, czyli zrealizowane/odrzucone/anulowane nie są prezentowane. Natomiast dyspozycje oczekujące na realizację, czyli aktywne są prezentowane.
+Jeżeli w danym dniu dostępne jest wydarzenie, wówczas na kalendarzu widoczne jest kółeczko umieszczone pod datą.
+
+image::Terminarz/image5.png[]
+
+Po kliknięciu na wybrany dzień, wydarzenie prezentowanie jest na liście wydarzeń obok kalendarza, a wybrany dzień zostanie w kalendarzu odpowiednio zaznaczony.
+
+image::Terminarz/image6.png[]
+
+System zaprezentuje listę wszystkich wydarzeń (wydarzenia własne i dyspozycje) z danego dnia, prezentując wydarzenia jedno pod drugim. Lista wydarzeń z wybranego dnia jest sortowana według chronologii wpisu/zarejestrowania wydarzenia (najnowsze na górze). Istnieje możliwość edycji wydarzeń własnych. Lista prezentowanych wydarzeń nie podlega stronicowaniu i ograniczona jest do prezentacji 100 rekordów. Użytkownik ma możliwość przejścia do poprzedniego/kolejnego miesiąca w widoku terminarza za pomocą przycisków nawigacyjnych.
+
+image::Terminarz/image7.png[]
+
+W terminarzu dostępny jest rok bieżący i kolejny po bieżącym.
+
+Wybranie komórki kalendarza, w zależności od jej zawartości, przenosi nawigację do różnych widoków szczegółowych:
+
+* wybranie pustej komórki terminarza otwiera widok listy z informacją _„Brak wydarzeń w wybranym dniu”_
+
+image::Terminarz/image8.png[]
+
+* kliknięcie w komórkę terminarza, która zawiera wydarzenie, otwiera widok listy wydarzeń w danym dniu
+
+image::Terminarz/image9.png[]
+
+* wybranie wydarzenia z listy otwiera dodatkowe dane dla tego wydarzenia:
+
+** opis wydarzenia,
+** przycisk [Szczegóły].
+
+image::Terminarz/image10.png[]
+
+Za pomocą przycisku [Pokaż filtry] dostępnego w terminarzu możliwe jest filtrowanie widoku wydarzeń i wyszukiwanie wydarzeń według zadanych kryteriów:
+
+image::Terminarz/image11.png[]
+
+* *Nazwa lub opis wydarzenia* - umożliwia wyszukiwanie po fragmencie nazwy lub opisu wydarzenia. Wielkość liter nie ma znaczenia. System nie wyświetli żadnego wydarzenia w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści.
+* *Rodzaje wydarzeń:*
+
+** Dyspozycje,
+** Umowy,
+** Wydarzenia własne.
+
+Po określeniu kryteriów filtrowania należy wybrać przycisk [Filtruj]. Lista wydarzeń zostanie wówczas ograniczona do tych, które zawierają się w podanych przez Użytkownika warunkach filtrowania.
+
+Aby zwinąć filtry należy wybrać przycisk [Ukryj filtry].
+
+Poprzez przycisk [Nowe wydarzenie] Użytkownik ma możliwość dodania nowego wydarzenia własnego.
+
+=== Przeglądanie listy wydarzeń z dnia
+
+Użytkownik systemu Asseco EBP ma możliwość przeglądania listy wydarzeń z wybranego w terminarzu dnia. Lista wydarzeń dla wybranego w terminarzu dnia jest dostępna pod warunkiem, że dla danego dnia zaplanowane są wydarzenia. Dla każdego wydarzenia na liście wydarzeń z dnia jest prezentowana jego nazwa:
+
+image::Terminarz/image9.png[]
+
+Z poziomu listy wydarzeń Użytkownik ma możliwość przeglądania szczegółów wybranego wydarzenia poprzez wybór wydarzenia z listy.
+
+== Przeglądanie szczegółów wydarzenia
+
+Aby przejść do szczegółów wydarzenia należy z poziomu listy wydarzeń z wybranego dnia wybrać wydarzenie, którego szczegóły mają być przeglądane a następnie wskazać opcję SZCZEGÓŁY.
+
+image::Terminarz/image10.png[]
+
+Wyświetlane jest wówczas okno prezentujące szczegóły wybranego wydarzenia.
+
+Dla poszczególnych kategorii wydarzeń prezentowane są informacje opisane poniżej.
+
+=== Wydarzenia własne
+
+Dla *wydarzenia własnego* prezentowane są następujące informacje:
+
+* Nazwa wydarzenia,
+* Data wydarzenia,
+* Opis wydarzenia.
+
+image::Terminarz/image15.png[]
+
+Z poziomu szczegółów wydarzenia własnego oprócz przeglądania danych szczegółowych tego wydarzenia Użytkownik ma także możliwość wykonania następujących akcji:
+
+* [Edytuj] - edycji danych wydarzenia własnego,
+* [Usuń] - usunięcia wydarzenia własnego z terminarza.
+
+=== Wydarzenia związane z datami realizacji dyspozycji płatności
+
+Dla *wydarzenia związanego z datami realizacji dyspozycji płatności* prezentowane są następujące informacje:
+
+* Nazwa: pierwsza linia z tytułu płatności,
+* Data wydarzenia,
+* Opis: pierwsza linia z odbiorcy płatności i kwota płatności (w walucie realizacji).
+
+image::Terminarz/image16.png[]
+
+=== Wydarzenia związane z terminami wynikającymi z umów w rozróżnieniu na rodzaj wydarzenia
+
+==== Termin wymaganej spłaty najbliższej raty kredytu
+
+Dla *wydarzenia związanego z terminami spłaty najbliższej raty kredytu* prezentowane są następujące informacje:
+
+* Nazwa wydarzenia,
+* Data wydarzenia,
+* Opis: kwota płatności (w walucie realizacji).
+
+image::Terminarz/image16a.png[]
+
+Z poziomu szczegółów wydarzenia Użytkownik ma także możliwość przejść do szczegółów kredytu za pomocą przycisku [PRZEJDŹ DO SZCZEGÓŁÓW KREDYTU].
+
+
+==== Koniec okresu kredytu
+
+Dla *wydarzenia związanego z terminem końca okresu kredytu* prezentowane są następujące informacje:
+
+* Nazwa wydarzenia,
+* Data wydarzenia,
+* Opis: nazwa słownikowa produktu, umowa z NRB w postaci zamaskowanej (np. 36...0002).
+
+image::Terminarz/image16b.png[]
+
+Z poziomu szczegółów wydarzenia Użytkownik ma także możliwość przejść do szczegółów kredytu za pomocą przycisku [PRZEJDŹ DO SZCZEGÓŁÓW KREDYTU].
+
+==== Zapadalność (koniec okresu) lokaty
+
+Dla *wydarzenia związanego z terminami spłaty najbliższej raty kredytu* prezentowane są następujące informacje:
+
+* Nazwa wydarzenia,
+* Data wydarzenia,
+* Opis: nazwa słownikowa produktu, umowa z NRB w postaci zamaskowanej (np. 97...0014).
+
+image::Terminarz/image16c.png[]
+
+Z poziomu szczegółów wydarzenia Użytkownik ma także możliwość przejść do szczegółów danej lokaty za pomocą przycisku  [PRZEJDŹ DO SZCZEGÓŁÓW LOKATY].
+
+== Zarejestrowanie wydarzenia własnego
+
+Wybranie przycisku [Nowe wydarzenie] dostępnego w miniaplikacji _Terminarz_ umożliwia dodanie nowego wydarzenia własnego. Po wybraniu opcji wyświetlany jest formularz _Nowe wydarzenie_ z następującymi danymi do uzupełnienia:
+
+* *Nazwa* - nazwa wydarzenia, maksymalna ilość znaków dla nazwy wydarzenia wynosi 255, dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: ~`!@#%^$<&*()_+-=\{}[]:;'?,./\>äÄöÖüÜß,
+* *Data wydarzenia* - data wydarzenia (bieżąca lub przyszła), w polu domyślnie wstawiona jest data bieżąca, Użytkownik ma możliwość zmiany daty po wybraniu ikony kalendarza,
+* *Opis* - opis wydarzenia, maksymalna ilość znaków opisu wydarzenia wynosi 2000, dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: ~`!@#%^$<&*()_+-=\{}[]:;'?,./\>äÄöÖüÜß.
+
+image::Terminarz/image20.png[]
+
+Po wprowadzeniu danych wydarzenia należy wybrać przycisk [Dalej], system wyświetla wówczas formularz dodania nowego wydarzenia w trybie podglądu:
+
+image::Terminarz/image21.png[]
+
+W celu zatwierdzenia wprowadzonych danych należy wybrać przycisk [Dodaj]. Operacja definiowania nowego wydarzenia nie wymaga autoryzacji.
+
+Po zapisaniu zmian, Użytkownikowi wyświetlane jest potwierdzenie dodania wydarzenia wraz z przyciskami:
+
+* [Utwórz nowe wydarzenie] - umożliwiające dodanie nowego wydarzenia,
+* [Powrót] - umożliwiające powrotu do pulpitu.
+
+image::Terminarz/image24.png[]
+
+Nowo dodane wydarzenie prezentuje się w terminarzu. Jest ono widoczne na widżecie miniaplikacji oraz w kalendarzu po przejściu do miniaplikacji _Terminarza._ Dzień, który jest datą zdefiniowanego wydarzenia oznaczony jest kółeczkiem pod datą wydarzenia.
+
+== Edycja danych wydarzenia własnego
+
+W celu zmodyfikowania danych wydarzenia należy przejść do okna _Szczegóły wydarzenia_. Edycja wydarzenia możliwa jest po wybraniu przycisku [Edytuj]:
+
+image::Terminarz/image25.png[]
+
+Wyświetlany jest wówczas formularz modyfikacji danych wydarzenia. Edycji podlegają wszystkie dane wydarzenia. Po dokonaniu zmian na formularzu edycji należy wybrać przycisk [Dalej].
+
+image::Terminarz/image26.png[]
+
+Zostanie zaprezentowana formatka potwierdzająca edycję danych wydarzenia, na której należy wybrać przycisk [Zapisz]. Operacja edycji nowego wydarzenia nie wymaga autoryzacji.
+
+image::Terminarz/image27.png[]
+
+Po zapisaniu zmian, Użytkownikowi wyświetlane jest potwierdzenie dodania wydarzenia wraz z przyciskami:
+
+* [Utwórz nowe wydarzenie] - umożliwiające dodanienowego wydarzenia,
+* [Powrót] - umożliwiające powrotu do pulpitu.
+
+image::Terminarz/image28.png[]
+
+== Usunięcie wydarzenia własnego z terminarza
+
+W celu usunięcia wydarzenia należy przejść do okna _Szczegóły wydarzenia_. Usunięcie wydarzenia jest możliwe po wybraniu przycisku [USUŃ]:
+
+image::Terminarz/image29.png[]
+
+Wyświetlany jest wówczas formularz do potwierdzenia usunięcia wydarzenia własnego z terminarza.
+
+image::Terminarz/image30.png[]
+
+Po potwierdzeniu usunięcia wydarzenia (użyciu przycisku [Usuń]), wybrane zdarzenie zostaje usunięte z terminarza wydarzeń. Wyświetlane jest wówczas potwierdzenie usunięcia wydarzenia wraz z przyciskiem:
+
+* [Powrót] - umożliwiające powrotu do pulpitu.
+
+Operacja usunięcia wydarzenia nie wymaga autoryzacji.
+
+image::Terminarz/image31.png[]

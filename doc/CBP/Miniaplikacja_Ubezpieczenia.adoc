@@ -1,0 +1,83 @@
+:imagesdir: images
+
+= Ubezpieczenia
+
+Miniaplikacja *Ubezpieczenia* umożliwia Użytkownikowi Asseco EBP przegląd dostępnej oferty ubezpieczeń oraz złożenie wniosku o nabycie wybranego pakietu ubezpieczeniowego.
+
+Dostęp do oferty ubezpieczeń jest możliwy po wyborze opcji z listy *Moje miniaplikacje*:
+
+image::Ubezpieczenia/image1.png[image]
+
+lub na ekranie pulpitu Asseco EBP:
+
+image::Ubezpieczenia/image1a.png[image]
+
+Do poprawnej obsługi miniaplikacji *Ubezpieczenia* Użytkownik powinien posiadać dostęp do miniaplikacji *Wnioski*.
+
+== Oferta ubezpieczeniowa
+
+image::Ubezpieczenia/image3.png[image]
+
+Na ekranie głównym miniaplikacji, Użytkownik ma możliwość wyboru jednego z dostępnych rodzajów ubezpieczenia, celem zapoznania się z jego szczegółami i warunkami.
+
+Dostępne są następujące opcje:
+
+* Ubezpieczenie na życie,
+* Ubezpieczenie medyczne,
+* Ubezpieczenie Pomoc domowa,
+* Ubezpieczenie Następstw Nieszczęśliwych Wypadków.
+
+== Przegląd warunków ubezpieczenia
+
+Po wyborze interesującego rodzaju ubezpieczenia (kliknięcie w jego nazwę), pojawia się ekran z opisem jego warunków, dostępnych pakietów oraz informacją nt. dostarczyciela usługi:
+
+image::Ubezpieczenia/image4.png[image]
+
+Możliwe jest także złożenie wniosku o zakup ubezpieczenia poprzez wybór opcji „Złóż wniosek” z panelu graficznego u góry ekranu, bądź analogicznej opcji u jego spodu:
+
+image::Ubezpieczenia/image7.png[image]
+
+image::Ubezpieczenia/image8.png[image]
+
+== Złożenie wniosku o zakup ubezpieczenia
+
+Po wyborze opcji [ZŁÓŻ WNIOSEK] (wraz z oznaczeniem checkbox’u oświadczenia) Użytkownik przeniesiony zostanie do miniaplikacji *Wnioski*, gdzie prezentowany jest mu stosowny wniosek wraz z danymi niezbędnymi do jego złożenia.
+
+Obsługa wniosku odbywa się poprzez uzupełnianie pól formularzy prezentowanych na kolejnych ekranach wniosku i wybór przycisku [DALEJ]. Użytkownik może również anulować wniosek poprzez wybór przycisku image:Ubezpieczenia/image10a.png[image].
+
+image::Ubezpieczenia/image10.png[image]
+
+Ewentualną korektę zadeklarowanych wcześniej danych można wykonać poprzez wybór przycisku [WSTECZ].
+
+image::Ubezpieczenia/image11.png[image]
+
+Po wskazaniu wariantu ubezpieczenia, wypełnieniu kolejnych pól formularzy danymi osobowymi oraz wyborze rachunku do obciążenia kwotą polisy, Użytkownikowi prezentowany jest ekran, na którym otrzymuje możliwość wydruku lub pobrania dokumentów ze szczegółami polisy przygotowanymi przez dostarczyciela usługi.
+
+image::Ubezpieczenia/image12.png[image]
+
+Akceptacja warunków ubezpieczenia oraz określenie poszczególnych zgód klienta na pytania dotyczące usług powiązanych z zawieraną polisą, spowoduje przeniesienie go na ekran finalny formularza wniosku ubezpieczeniowego.
+
+Na wspomnianym ekranie, Użytkownik będzie mógł zadecydować o skierowaniu wniosku o nabycie polisy do procesowania w Banku. Odbędzie się to poprzez wybór przycisku [ZŁÓŻ WNIOSEK].
+
+image::Ubezpieczenia/image13.png[image]
+
+Ewentualnemu anulowaniu wniosku przez Użytkownika Asseco EBP, towarzyszyć będzie pojawienie się ekranu z prośbą o potwierdzenie tej decyzji.
+
+image::Ubezpieczenia/image14.png[image]
+
+Wybór przycisku [ZAKOŃCZ] spowoduje powrót do listy wniosków.
+
+
+== Podgląd wniosku ubezpieczeniowego na liście Wniosków.
+
+Użytkownik Asseco EBP, ma możliwość podglądu złożonego wniosku ubezpieczeniowego oraz stanu jego realizacji w systemie. W miniaplikacji *Wnioski*, na liście wniosków, może on odnaleźć interesującą go pozycję i przejrzeć jej detale poprzez wybór opcji [SZCZEGÓŁY].
+
+image::Ubezpieczenia/image16.png[image]
+
+image::Ubezpieczenia/image17.png[image]
+
+== Kontynuacja wniosku ubezpieczeniowego.
+
+W przypadku, gdy Użytkownik Asseco EBP zdecyduje się przerwać wypełnianie formularzy wniosku o nabycie polisy ubezpieczeniowej, może zawsze powrócić do tej czynności w dowolnym dla siebie terminie. W tym celu, na ekranie głównym w miniaplikacji *Ubezpieczenia*, pojawi się sekcja „Otwarte wnioski”. Prezentowane będą tam wnioski nieprzekazane do procesowania w Banku. Wybór pozycji z listy, poprzez opcję [Dokończ wniosek], spowoduje przeniesienie Użytkownika na ekran formularzy wniosku, dając mu możliwość ukończenia ich wypełnienia i ostatecznego skierowania takiego wniosku do realizacji w Banku.
+
+image::Ubezpieczenia/image19.png[image]

@@ -1,0 +1,316 @@
+:imagesdir: images
+
+= Koszyk zleceń
+
+Miniaplikacja *Koszyk zleceń* umożliwia Użytkownikowi korzystającemu z kontekstu indywidualnego w obszarze osobistym i mikro oraz korzystającemu z kontekstu firmowego w obszarze mikro przeglądanie listy transakcji do autoryzacji. Do poprawnej obsługi miniaplikacji *Koszyk zleceń* wymagany jest dostęp Użytkownika do miniaplikacji *Przelewy*.
+
+Dyspozycje, które trafiają do koszyka zleceń składane są z poziomu formatki dedykowanej płatności po wyborze odnośnika [Dodaj do koszyka zleceń] a następnie przycisku [Dodaj do koszyka zleceń] na formatce potwierdzenia danych przelewu.
+
+image::Koszyk/image2.png[image]
+
+System umożliwia zapisanie dyspozycji do koszyka zleceń w celu późniejszej autoryzacji:
+
+* przelewów zwykłych (również z datą przyszłą),
+
+* przelewów podatku (również z datą przyszłą),
+
+* przelewów zagranicznych,
+
+* przelewów własnych,
+
+* dyspozycji zlecenia stałego (przelew zwykły z opcją powtarzania),
+
+* spłaty kredytu.
+
+NOTE: W przypadku Użytkownika korzystającego z kontekstu firmowego obszar mikro - funkcjonalność jest uzależniona od posiadanych uprawnień.
+Użytkownik ma dostępne akcje zgodnie z nadanymi uprawnieniami.
+Uprawnienia ustawiane są przez Administratora w opcji _Ustawienia → Uprawnienia Użytkowników._
+
+== Koszyk – lista zleceń
+
+W nagłówku systemu dostępny jest przycisk [Koszyk zleceń] wraz z linkiem prezentowana jest liczba dyspozycji w koszyku. Po wejściu do koszyka prezentowana jest lista transakcji z domyślnego przedziału czasowego – od miesiąca wstecz.
+
+image::Koszyk/image4.png[image]
+
+Na liście płatności w koszyku, dla każdej płatności widoczne są następujące informacje:
+
+* *Data realizacji* – planowana data realizacji przelewu, kolumna sortowana,
+
+* *Status* - status przelewu w koszyku (pozycja widoczna jedynie dla Użytkowników posiadających przypisaną funkcjonalność Wielopodpisu),
+
+* *Płatność z* - numer rachunku nadawcy w formie zamaskowanej,
+
+* *Odbiorca* - nazwa odbiorcy płatności wraz z numerem jego rachunku,
+
+* *Referencje/opis* - referencje dostępne dla użytkownika kontekstu firmowego mikro / tytuł przelewu,
+
+* *Kwota* - kwota płatności wraz z symbolem waluty.
+
+image::Koszyk/image5.png[image]
+
+Lista transakcji w koszyku jest ładowana dynamicznie. Kolejne pozycje wczytają się w trakcie przewijania strony.
+
+W przypadku braku dyspozycji w koszyku prezentowany jest komunikat: "_Brak elementów do wyświetlenia_".
+
+=== Filtrowanie listy zleceń
+
+System umożliwia wstępne filtrowanie listy płatności w koszyku po wprowadzeniu odpowiednich danych w dostępne pola wyszukiwania.
+
+image::Koszyk/image8.png[image]
+
+* *Szukaj* - system automatycznie filtruje listę po wpisaniu pierwszej litery/cyfry/znaku. System przeszukuje listę weryfikując zapisy w polach *Odbiorca* i *Referencje/opis*. Wielkość liter nie ma znaczenia. System nie wyświetli żadnego zlecenia w sytuacji, gdy nie znajdzie na liście żadnych pozycji pasujących do warunku wyszukiwania.
+
+* Okres *Od*, Okres *Do* - w polach należy wprowadzić zakres dat (od - do), dla których ma zostać wyświetlona lista zleceń w koszyku. Użytkownik wprowadza datę ręcznie lub korzysta z podpowiedzi ikony kalendarza. Kliknięcie w nią otwiera okno służące do wskazania daty, od której ma zostać zaprezentowana lista zleceń. W analogiczny sposób Użytkownik definiuje datę ograniczającą zakres wyszukiwania.
+
+Po wybraniu opcji [Pokaż filtry] znajdującej się nad listą zleceń w koszyku, możliwe jest bardziej szczegółowe filtrowanie zleceń.
+
+Dostępne są następujące filtry:
+
+* *Z rachunku* - pole z listą rozwijalną rachunków dostępnych dla Użytkownika,
+
+* *Rachunek odbiorcy* - pole do wpisania numeru rachunku odbiorcy,
+
+* *Rodzaj przelewu* - wybór wartości: _Wszystkie, Zwykły, Własny, Walutowy, Podatkowy_,
+
+* *Typ dyspozycji* - wybór wartości: _Wszystkie, Edycja cyklicznego, Anulowania_,
+
+* *Kwota od*, *Kwota* *do* - w polach należy wprowadzić zakres kwot (od - do), dla których ma zostać wyświetlona lista.
+
+* *Status* - status zleceń w koszyku. Wybór następujących wartości z listy rozwijalnej: _Nowy, W akceptacji, Do akceptacji, Gotowy do przekazania, Zaznacz wszystkie_ - wartość domyślna.
+
+image::Koszyk/image10.png[image]
+
+Po określeniu warunków filtrowania listy należy wybrać przycisk [FILTRUJ]. Lista zleceń w koszyku zostanie wówczas ograniczona do tych, które zawierają się w podanych przez Użytkownika warunkach filtrowania. Aby zwinąć filtry należy wybrać przycisk [UKRYJ FILTRY].
+
+Znajdująca się w nagłówku miniaplikacji ikona image:Koszyk/image11.png[image] umożliwia otwarcie pulpitu, a tym samym zamknięcie miniaplikacji.
+
+=== Akcje zbiorcze w Koszyku zleceń
+
+Dla listy zleceń w koszyku dostępne są następujące akcje:
+
+image::Koszyk/image11Anew.png[image]
+
+* możliwość wybrania:
+
+** wszystkich transakcji do autoryzacji w celu wykonania operacji zbiorczej np. usunięcia zaznaczonych transakcji (dotyczy wszystkich pozycji zgodnych z filtrem),
+** możliwość odznaczenia wszystkich transakcji jeśli były zaznaczone,
+** możliwość zaznaczenia wybranych transakcji.
+
+NOTE: System w przypadku zaznaczenia operacji zaprezentuje liczbę wybranych pozycji i liczbę wszystkich pozycji na liście zleceń zgodnej z wynikami filtrowania.
+
+NOTE: Istnieje parametr systemowy, który decyduje o tym ile jednorazowo można zaznaczyć
+przelewów do akceptacji. W przypadku przekroczenia tej liczby system prezentuje
+odpowiedni komunikat.
+
+Zaznaczenie pozycji na liście wykorzystuje się do zbiorczego wykonania akcji na tej grupie dyspozycji
+przelewów:
+
+* [AKCEPTUJ] - podpisanie i przekazanie do realizacji zaznaczonych na liście przelewów. Przycisk jest nieaktywny do momentu zaznaczenia dyspozycji na liście zleceń w koszyku. W procesie grupowej realizacji zleceń następuje kontrola limitów dostępnych środków na rachunku,
+
+* *Dodatkowe opcje* - *Usuń* - usunięcie wszystkich zaznaczonych przelewów. Opcja jest nieaktywna do momentu zaznaczenia dyspozycji na liście zleceń w koszyku.
+
+W celu potwierdzenia zbiorczego usunięcia przelewów z koszyka należy wybrać przycisk [AKCEPTUJ].
+
+image::Koszyk/image13.png[image]
+
+Szczegóły transakcji do usunięcia znajdują się pod przyciskiem [Szczegóły], jeśli Użytkownik go wybierze, zaprezentuje mu się lista usuwanych transakcji
+
+image::Koszyk/image13Anew.png[image]
+
+Po akceptacji usunięcia pojawi się informacja o usunięciu dyspozycji.
+
+image::Koszyk/image14.png[image]
+
+* *Dodatkowe opcje* – *Kopiuj przelewy* - skopiowanie wszystkich zaznaczonych przelewów na liście zleceń w koszyku. Opcja jest nieaktywna do momentu zaznaczenia dyspozycji na liście. W celu potwierdzenia lub anulowania operacji należy wybrać opcję: SKOPIUJ bądź ANULUJ.
+
+image::Koszyk/image15.png[image]
+
+W przypadku poprawnego skopiowania przelewu z koszyka Użytkownik zostanie powiadomiony o tym stosownym komunikatem.
+
+image::Koszyk/image16.png[image]
+
+* *Dodatkowe opcje* - *Przekaż do realizacji* - przekazanie dyspozycji przelewów do realizacji (tylko dla dyspozycji w statusie
+Gotowy do przekazania). Opcja jest nieaktywna do momentu zaznaczenia dyspozycji na liście.
+
+image::Koszyk/image16Anew.png[image]
+
+W przypadku poprawnego przekazania przelewu do realizacji Użytkownik zostanie powiadomiony o tym stosownym komunikatem.
+
+image::Koszyk/image16Bnew.png[image]
+
+* *Dodatkowe opcje* - *Wycofaj akcept* - wycofanie akceptów dyspozycji przelewów (tylko dla dyspozycji w statusie Do
+akceptacji, W akceptacji, Gotowy do przekazania). Opcja jest nieaktywna do momentu zaznaczenia dyspozycji na liście.
+W celu potwierdzenia lub anulowania operacji należy wybrać opcję: WYCOFAJ bądź ANULUJ.
+
+image::Koszyk/image16Cnew.png[image]
+
+W przypadku poprawnego wycofania akceptu Użytkownik zostanie powiadomiony o tym stosownym komunikatem.
+
+image::Koszyk/image16Dnew.png[image]
+
+== Przeglądanie szczegółów i akcje dla pojedynczego przelewu
+
+Rozwinięcie wiersza wybranej płatności w koszyku umożliwia wyświetlenie dodatkowych informacji na temat wybranej płatności. Lista danych prezentowanych w szczegółach przelewu jest zależna od typu przelewu.
+
+image::Koszyk/image17.png[image]
+
+W szczegółach znajdują się zestaw akcji, może się on różnić ze względu na status przelewu oraz uprawnienia Użytkownika.
+
+* Akceptuj - autoryzacja dyspozycji przelewu (tylko dla dyspozycji w statusie Nowy, Do akceptacji),
+* Przekaż do realizacji - przekazanie dyspozycji przelewu do realizacji (tylko dla dyspozycji w statusie Gotowy
+do przekazania),
+* Szczegóły – prezentacja szczegółów przelewu,
+* Kopiuj - skopiowanie dyspozycji przelewu (dla statusów: Nowy, W akceptacji, Do akceptacji, Gotowa do
+przekazania),
+* Edytuj - edycja danych dyspozycji przelewu (tylko dla dyspozycji w statusie Nowy),
+* Usuń - usunięcie dyspozycji przelewu (tylko dla dyspozycji w statusie Nowy),
+* Wycofaj akcept - wycofanie akceptów dyspozycji przelewu (tylko dla dyspozycji w statusie Do akceptacji, W
+akceptacji, Gotowy do przekazania).
+
+Wybranie opcji [Szczegóły] przenosi Użytkownika do szczegółowych danych płatności. Dane płatności będą różnić się ze względu na rodzaj przelewu.
+
+image::Koszyk/image17Anew.png[image]
+
+Z poziomu szczegółów przelewu Użytkownik ma możliwość podglądu informacji o akcjach jakie miały miejsce na
+danym zleceniu. W tym celu należy wybrać przycisk [Pokaż historię operacji]
+prezentowany na dole formatki. System rejestruje oraz prezentuje akcje:
+• utworzenia zlecenia,
+• akceptacji zlecenia,
+• edycji zlecenia.
+
+Sekcja zawiera informacje o imieniu, nazwisku Użytkownika, który daną akcję wykonał oraz dacie i godzinie, w
+której akcja nastąpiła.
+
+image::Koszyk/image17Bnew.png[image]
+
+Kliknięcie [Ukryj historię operacji] chowa informacje o wykonanych akcjach.
+
+== Przeglądanie szczegółów i akcje dla spłaty raty kredytu
+
+Rozwinięcie wiersza spłaty raty w koszyku umożliwia wyświetlenie dodatkowych informacji.
+
+image::Koszyk/image17Cnew.png[image]
+
+W szczegółach znajdują się zestaw akcji, może się on różnić ze względu na status przelewu oraz uprawnienia Użytkownika.
+
+* Akceptuj - autoryzacja dyspozycji przelewu (tylko dla dyspozycji w statusie Nowy, Do akceptacji),
+* Przekaż do realizacji - przekazanie dyspozycji przelewu do realizacji (tylko dla dyspozycji w statusie Gotowy
+do przekazania),
+* Szczegóły – prezentacja szczegółów przelewu,
+* Usuń - usunięcie dyspozycji przelewu (tylko dla dyspozycji w statusie Nowy),
+* Wycofaj akcept - wycofanie akceptów dyspozycji przelewu (tylko dla dyspozycji w statusie Do akceptacji, W
+akceptacji, Gotowy do przekazania).
+
+Wybranie opcji [Szczegóły] przenosi Użytkownika do szczegółowych danych płatności.
+
+image::Koszyk/image17Dnew.png[image]
+
+Z poziomu szczegółów spłaty raty Użytkownik ma możliwość podglądu informacji o akcjach jakie miały miejsce na
+danym zleceniu. W tym celu należy wybrać przycisk [Pokaż historię operacji]
+prezentowany na dole formatki. System rejestruje oraz prezentuje akcje:
+
+* utworzenia zlecenia,
+* akceptacji zlecenia.
+
+Sekcja zawiera informacje o imieniu, nazwisku Użytkownika, który daną akcję wykonał oraz dacie i godzinie, w
+której akcja nastąpiła.
+
+Kliknięcie [Ukryj historię operacji] chowa informacje o wykonanych akcjach.
+
+== Akceptacja zleceń w koszyku
+
+Użytkownik ma możliwość osobnej, jak i zbiorczej akceptacji przelewów w koszyku jednym kodem autoryzacyjnym zgodnie z posiadaną metodą autoryzacji. W przypadku korzystania z funkcjonalności Wielopodpisu, wykonanie zbiorczej akceptacji możliwe jest dla dyspozycji o statusie: _Nowy, Do akceptacji_ dla pozostałych statusów pole jest zablokowane.
+
+Jeżeli wszystkie zaznaczone przelewy spełniają wymogi autoryzacji wówczas zostanie zaprezentowana formatka podsumowująca zbiorczą akceptację zaznaczonych przelewów, na której należy wprowadzić poprawne dane autoryzacyjne.
+
+image::Koszyk/image18.png[image]
+
+Po prawidłowej autoryzacji Użytkownikowi wyświetlony zostanie komunikat potwierdzenia wraz z przyciskami:
+
+* [Wróc do listy] - umożliwiającym powrót do listy zleceń w koszyku.
+
+* [Wróć do pulpitu] - umożliwiającym powrót do pulpitu,
+
+image::Koszyk/image19.png[image]
+
+W przypadku, gdy w przekazywanych dyspozycjach do realizacji znajdują się zlecenia, dla których data realizacji zostanie zmieniona ze względu na COT lub dzień wolny, system zaprezentuje komunikat nad listą przelewów informujący o zmianie daty w przelewach.
+
+image::Koszyk/image20.png[image]
+
+NOTE: Cut-Off Time (czas odcięcia) oznacza godzinę w ciągu dnia, po której realizacja płatności odbywa się w kolejnym dniu roboczym. Informacja o planowanej dacie realizacji dostępna jest w szczegółach przelewu.
+
+W momencie autoryzacji dyspozycji weryfikowany jest limit dzienny i limit jednorazowy ustawiony dla rachunku i dla kanału Internet. System podczas autoryzacji zweryfikuje:
+
+* czy suma przelewów autoryzowanych mieści się w limicie dziennym i jednorazowym dla kanału Internet oraz rachunku,
+
+* czy na rachunku obciążanym jest wystarczając ilość środków na pokrycie dyspozycji (wykluczając dyspozycję z datą przyszłą).
+
+Jeśli dyspozycje nie spełniają powyższych warunków to system wyświetli komunikat i nie pozwoli przekazać zaznaczonych przelewów do realizacji.
+
+Autoryzacja zleceń wykonywana jest dla zaznaczonych przelewów. Na etapie autoryzacji przelewów w koszyku nie ma możliwości zamiany typu przelewu (systemu rozliczeniowego). +
+W przypadku wystąpienia błędów walidacji. System wyświetli komunikat wynikający z przyczyny braku możliwości realizacji przelewów wraz ze wskazaniem na dyspozycję, dla której stwierdzono błąd. Taką dyspozycję Użytkownik musi odznaczyć z listy dyspozycji do autoryzacji.
+
+
+== Wielopodpis
+
+System Asseco EBP umożliwia weryfikację wymaganych podpisów podczas akceptacji dyspozycji przelewu przez Użytkownika w zależności od zdefiniowanych schematów akceptacji.
+
+Użytkownik ma możliwość akceptacji jednoosobowej przelewów bądź akceptacji wieloosobowej (zgodnie z obowiązującym schematem akceptacji).
+
+Konfiguracja schematów akceptacji realizowana jest po stronie modułu BackOffice.
+
+Wielopodpis dotyczy autoryzacji:
+
+* przelewu zwykłego,
+
+* przelewu własnego,
+
+* przelewu zagranicznego,
+
+* przelewu podatkowego,
+
+* spłaty raty kredytu.
+
+Wskazanie w pojedynczym schemacie akceptacji jednej osoby z grupy akceptacji daje możliwość akceptacji jednoosobowej.
+
+Przykładowy schemat akceptacji zdefiniowany na poziomie klienta detalicznego w systemie moduł BackOffice: *PSA 1*: User 1 lub *PSA 2*: Osoba z grupy: Pełnomocnik i Osoba z grupy: Pełnomocnik (dwie osoby z grupy Pełnomocnik).
+
+Użytkownicy przypisani do danego klienta detalicznego:
+
+[cols=",",options="header",]
+|===========================================================
+|Nazwa Użytkownika |Grupa akceptacji (kolumna wzoru podpisu)
+|User1 |Właściciel
+|User2 |Pełnomocnik
+|User3 |Pełnomocnik
+|===========================================================
+
+Konfiguracja schematów akceptacji:
+
+[cols=",",options="header",]
+|===========================================================
+|Wymagane podpisy |Limit akceptacji
+|1. Właściciel |bez ograniczenia kwotowego
+|2a. Pełnomocnik 2b. Pełnomocnik |bez ograniczenia kwotowego
+|===========================================================
+
+W tym przypadku Właściciel ma możliwość akceptacji przelewów jednoosobowo. W przypadku Użytkowników z grupy Pełnomocnik schemat akceptacji będzie umożliwiał akceptację wieloosobową - wymagane są podpisy dwóch Użytkowników z grupy "Pełnomocnik".
+
+Akceptacja wieloosobowa polega na skompletowaniu akceptacji zgodnie ze zdefiniowanym schematem akceptacji. Zgodnie z podaną powyżej konfiguracją akceptacja wieloosobowa wymaga akceptacji dwóch osób ze wskazanej grupy "Pełnomocnik".
+
+Przelew w zależności od akceptacji jakie zostały na nim zrealizowane może posiadać różne statusy (_Nowy, W akceptacji, Do akceptacji, Gotowy do przekazania)_.
+
+Po akceptacji przelewu oraz spełnieniu wymaganego schematu akceptacji przelew przekazywany jest automatycznie do realizacji.
+
+W przypadku, gdy dla danego modulo nie jest zdefiniowany schemat akceptacji to zlecenie może wykonać każdy Użytkownik, który posiada prawa podpisu dla danego zlecenia. Brak zdefiniowania schematu jest możliwy tylko w przypadku kontekstu indywidualnego w obszarze osobistym lub mikro.
+W związku z tym wprowadzany przez danego klienta może być jednoosobowo podpisany przez Użytkownika tegoż klienta będącego pełnomocnikiem do rachunku, również w przypadku braku aktywnego schematu wielopodpisu dla danego klienta.
+
+W przypadku, gdy Użytkownik posiadający wieloosobowy schemat akceptacji spróbuje zrealizować przelew (z pominięciem koszyka), na ekranie potwierdzenia przelewu zostanie poinformowany o braku możliwości wykonania takiej akcji.
+
+_Komunikat w przypadku, gdy Użytkownik jest poza schematem wielopodpisu._
+
+image::Koszyk/image21.png[image]
+
+_Komunikat w przypadku, gdy użytkownik jest w schamacie wieloosobowym._
+
+image::Koszyk/image22.png[image]

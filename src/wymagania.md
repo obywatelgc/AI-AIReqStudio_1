@@ -36,9 +36,6 @@ System BE utrzymuje status aktywacji usługi CashDirector w ujęciu firmy (konte
 **DEC-ACT-002 Dostępność w kontekstach**  
 Funkcjonalność aktywacji usługi CashDirector jest dostępna w kontekście firmowym (mikro oraz korporacyjnym).
 
-**DEC-ACT-003 Uprawnienie funkcjonalne**  
-Dostęp do uruchomienia procesu aktywacji usługi CashDirector jest kontrolowany uprawnieniem funkcjonalnym „eKsięgowość – aktywacja”.
-
 **DEC-ACT-004 Audyt/Rejestr zdarzeń**  
 System BE rejestruje uruchomienie procesu aktywacji usługi CashDirector w Rejestrze zdarzeń jako typ zdarzenia „Aktywacja usługi CashDirector”.
 

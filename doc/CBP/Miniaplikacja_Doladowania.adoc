@@ -1,0 +1,242 @@
+:imagesdir: images
+
+= Doładowania
+
+Miniaplikacja *Doładowania* zapewnia Użytkownikowi możliwość wyświetlenia historii wykonanych doładowań wraz z dostępem do ich szczegółowych danych oraz możliwość szybkiego doładowania telefonu.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Doładowania* z dwóch głównych poziomów:
+
+* widżetu *Doładowania* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),
+
+image::Doladowania/image1.png[Obraz zawierający tekst, zrzut ekranu, wyświetlacz, Czcionka Opis wygenerowany automatycznie,width=246,height=248]
+
+* menu bocznego po wybraniu opcji _Doładowania_.
+
+image::Doladowania/image2.png[Obraz zawierający tekst, zrzut ekranu, Czcionka, design Opis wygenerowany automatycznie,width=119,height=52]
+
+W każdym z poziomów miniaplikacji dla Użytkownika dostępne są formularze do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach.
+
+Użytkownik posiadający dostęp do miniaplikacji *Doładowania* ma możliwość:
+
+* przeglądania skróconych informacji o doładowaniach,
+* przeglądania historii doładowań,
+* przeglądania szczegółów doładowania,
+* dodawania szablonów doładowań.
+
+
+NOTE: Funkcjonalność doładowań dostępna jest dla Użytkownika korzystającego z kontekstu firmowego w obszarze mikro, posiadającego odpowiednie uprawnienia: do funkcjonalności i do rachunków. Uprawnienia ustawiane są przez Administratora w opcji _Ustawienia → Uprawnienia Użytkowników_.
+
+
+== Widżet Doładowania
+
+Na widżecie *Doładowania* jest możliwość:
+
+image::Doladowania/image1.png[Obraz zawierający tekst, zrzut ekranu, wyświetlacz, Czcionka Opis wygenerowany automatycznie,width=246,height=248]
+
+* przejścia do formularza _Nowe doładowanie_ - przycisk [DOŁADUJ TELEFON],
+* przejścia do formularza _Nowe doładowanie_ z wypełnionym numerem telefonu (z ostatnich doładowań na liście) za pomocą przycisku image:Doladowania/image3.png[image,width=16,height=16].
+
+== Przeglądanie historii doładowań
+
+Po kliknięciu w tytuł widżetu *Doładowania* lub poprzez wybór opcji z bocznego menu _Doładowania_ wyświetlane jest okno prezentujące historię doładowań:
+
+image::Doladowania/image4.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, numer Opis wygenerowany automatycznie,width=604,height=249]
+
+Użytkownik po wybraniu odpowiedniej wartości w polu *Lista doładowań,* ma możliwość przeglądania doładowań:
+
+* zrealizowanych,
+* odrzuconych,
+* w realizacji.
+
+image::Doladowania/image5.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie Opis wygenerowany automatycznie,width=272,height=119]
+
+Na historii doładowań dla każdego doładowania dostępne są następujące informacje:
+
+* *Data wykonania* – data wykonania doładowania (data w formacie DD.MM.RRRR),
+* *Operator* – nazwa Operatora
+* *Numer telefonu* – numer telefonu, na który złożono doładowanie,
+* *Kwota* – kwota doładowania wraz z walutą,
+
+oraz przycisk *[SZCZEGÓŁY]* – który przenosi do szczegółów doładowania.
+
+W górnej części formularza dostępne są następujące przyciski:
+
+* [Nowe doładowanie] – umożliwiający zlecenie nowego doładowania telefonu,
+* [Szablony] – przenosi do szablonów doładowań, gdzie możliwe jest zarządzanie szablonami,
+
+System umożliwia także filtrowanie doładowań za pomocą pola _Szukaj_ znajdującego się nad listą:
+
+image::Doladowania/image6.png[Obraz zawierający zrzut ekranu, tekst, Prostokąt, Czcionka Opis wygenerowany automatycznie,width=190,height=46]
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnego doładowania w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści.
+
+Aby powrócić do pełnej listy doładowań należy kliknąć w ikonę [X] w polu wyszukiwania.
+
+== Przeglądanie szczegółów doładowania
+
+Aby z listy doładowań przejść do szczegółów wybranego doładowania należy kliknąć w przycisk [Szczegóły], zostanie wówczas wyświetlone okno _Szczegóły doładowania_:
+
+image::Doladowania/image7.png[Obraz zawierający tekst, zrzut ekranu, numer, Czcionka Opis wygenerowany automatycznie,width=604,height=374]
+
+Na formularzu _Szczegóły doładowania_ prezentowane są następujące dane:
+
+* *Numer telefonu* – numer telefonu, na który złożono doładowanie,
+* *Operator* – nazwa Operatora,
+* *Odbiorca* – dane odbiorcy,
+* *Rachunek odbiorcy* – numer rachunku odbiorcy, nazwa banku odbiorcy,
+* *Rachunek nadawcy* – rachunek z którego wykonano doładowanie,
+* *Nadawca* – dane i adres nadawcy doładowania,
+* *Kwota* – kwota doładowania wraz z walutą,
+* *Data wykonania* – data wykonania doładowania (data w formacie DD.MM.RRRR).
+
+== Nowe doładowanie
+
+Aby wykonać doładowanie telefonu należy z poziomu widżetu miniaplikacji *Doładowania* znajdującego się na pulpicie wybrać przycisk [Doładuj telefon] lub z poziomu listy doładowań wybrać przycisk [Nowe doładowanie]. Wyświetlany jest wówczas Użytkownikowi formularz _Nowe doładowanie_.
+
+image::Doladowania/image8.png[Obraz zawierający tekst, elektronika, zrzut ekranu, oprogramowanie Opis wygenerowany automatycznie,width=604,height=545]
+
+Na formularzu _Nowe doładowanie_ należy uzupełnić następujące informacje:
+
+* *Z rachunku* – z dostępnej w polu listy rachunków należy wskazać rachunek do obciążenia. W przypadku gdy w opcji Ustawienia → Rachunek domyślny, ustawiony jest rachunek domyślny, system w polu tym podstawi ten rachunek, jednak Użytkownik ma możliwość zmiany rachunku przez wybranie z listy dostępnych,
+* *Szablon* – pole z rozwijalną listą szablonów [Wybierz szablon], o ile zostały dodane,
+* *Operator* – pola wyboru wszystkich aktywnych operatorów sieci komórkowej (zdefiniowanych w aplikacji BackOffice),
+* *Numer telefonu* – pole do wprowadzania numeru doładowywanego telefonu, po wyborze operatora z listy (uzupełniane prefixem numeru telefonu zdefiniowanym w aplikacji BackOffice), pole numeru telefonu powinny być wypełnione następująco:
+** numer telefonu musi być ciągiem 9 cyfr (w innym przypadku zostanie zaprezentowany komunikat błędu),
+** ciąg cyfr nie może rozpoczynać się od cyfry "0" i "4" (w innym przypadku zostanie zaprezentowany komunikat błędu).
+
+image::Doladowania/image9.png[Obraz zawierający tekst, zrzut ekranu, linia, Czcionka Opis wygenerowany automatycznie,width=366,height=88]
+
+* *Kwota doładowania* – pole wyświetlane po wyborze z listy operatora, w zależności od konfiguracji parametrów dla wybranego operatora (w module BackOffice opcja _Usługi_ _→ Doładowania telefonów → Dostawca Autopay_), dostępna jest: +
+
+** lista wyboru z której Użytkownik musi wybrać tylko jedną wartość: image:Doladowania/image10.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie Opis wygenerowany automatycznie,width=349,height=128]
+
+** zakres kwot – Użytkownik wypełnia kwotę wartością mieszczącą się w podanym zakresie, w przeciwnym wypadku system wyświetli odpowiedni komunikat walidacyjny.
+
+
+image::Doladowania/image11.png[Obraz zawierający tekst, zrzut ekranu, linia, Czcionka Opis wygenerowany automatycznie,width=219,height=86]
+
+* *Regulamin* - pole typu checkbox, potwierdzające zapoznanie się z regulaminem usługi natychmiastowego doładowania. Zaznaczenie pola jest obligatoryjne do realizacji doładowania telefonu. W przypadku, gdy pole to nie zostanie zaznaczone a Użytkownik naciśnie przycisk [Doładuj], system wyświetli komunikat _Akceptacja oświadczenia jest wymagana_. W oświadczeniu znajduje się również odnośnik o nazwie _Regulamin_ (prezentujący regulamin doładowań) stanowi link do strony WWW zawierającej regulamin doładowań telefonów komórkowych. Link definiowany jest w aplikacji BackOffice.
+
+image::Doladowania/image12.png[Obraz zawierający tekst, zrzut ekranu, Czcionka, numer Opis wygenerowany automatycznie,width=419,height=325]
+
+* *Zapisz jako szablon* - pole typu checkbox, przycisk dostępny, gdy doładowanie nie jest wykonywane z wcześniej zapisanego szablonu. Zaznaczenie checkoboxa powoduje wyświetlenie się dodatkowych opcji: image:Doladowania/image13.png[Obraz zawierający tekst, zrzut ekranu, wyświetlacz, oprogramowanie Opis wygenerowany automatycznie,width=397,height=160]
+** *Zaufany* - pole typu checkbox, jego zaznaczenie powoduje, że szablon zapisze się jako _zaufany_ i na liście szablonów wyświetli się obok niego ikona image:Doladowania/image14.png[image,width=15,height=16] , realizacja doładowania za pomocą tego typu szablonu nie wymaga autoryzacji,
+** *Nazwa szablonu* - nazwa własna szablonu.
+
+Po określeniu parametrów zlecenia doładowania i użyciu przycisku [Doładuj], system przechodzi do drugiego kroku. Na formularzu potwierdzenia danych doładowania system wyświetla dane w trybie podglądu.
+
+image::Doladowania/image15.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, wyświetlacz Opis wygenerowany automatycznie,width=604,height=408]
+
+Pole _Nazwa szablonu_ jest widoczna na formatce, jeśli na wcześniejszym kroku zaznaczyliśmy checkbox _Zapisz jako szablon_.
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, zostaje wyświetlone potwierdzenie przekazania dyspozycji doładowania do realizacji wraz z przyciskami:
+
+* [Utwórz nowe doładowanie] - umożliwia założenie nowego doładowania.
+* [Wróć do listy] - umożliwia powrót do listy doładowań,
+* [WRÓĆ DO PULPITU] - umożliwia powrót do pulpitu.
+
+image::Doladowania/image16.png[Obraz zawierający tekst, zrzut ekranu, design Opis wygenerowany automatycznie,width=604,height=371]
+
+== Szablony doładowań
+
+Z poziomu miniaplikacji *Doładowania* Użytkownik ma dostęp do obsługi szablonów przycisk [Szablony].
+
+Note: Dostępnością szablonów można sterować z poziomu modułu Back Office za pomocą usługi _prepaidTemplate w Administracja → Przełączniki._ Szczegółowy opis znajduje się w odrębnej dokumentacji Back_Office.
+
+image::Doladowania/image17.png[Obraz zawierający tekst, zrzut ekranu, linia, oprogramowanie Opis wygenerowany automatycznie,width=604,height=109]
+
+Na liście szablonów doładowań dostępne są następujące informacje:
+
+image::Doladowania/image18.png[Obraz zawierający tekst, oprogramowanie, Ikona komputerowa, System operacyjny Opis wygenerowany automatycznie,width=604,height=201]
+
+* *Nazwa* - nazwa własna szablonu, dodatkowo jeśli szablon jest zaufany zaprezentowana zostanie ikona image:Doladowania/image19.png[image,width=16,height=17] ,
+* *Operator* – operator sieci komórkowej,
+* *Numer telefonu* – nr telefonu, którego dotyczy doładowanie,
+* *[Opcje]* – przycisk służy do wyświetlenia dodatkowych opcji:
+
+image::Doladowania/image20.png[Obraz zawierający tekst, zrzut ekranu Opis wygenerowany automatycznie,width=137,height=147]
+
+* [Wykonaj] - umożliwia wykonanie doładowania z szablonu;
+* [Edytuj] - modyfikacja szablonu,
+* [Usuń] - usunięcie szablonu,
+* [Szczegóły] - przeglądanie szczegółów szablonu.
+
+Lista szablonów doładowań jest ładowana dynamicznie.
+
+System umożliwia także filtrowanie listy szablonów po wpisaniu danych w polu wyszukiwania:
+
+image::Doladowania/image21.png[Obraz zawierający zrzut ekranu, Prostokąt, Czcionka, tekst Opis wygenerowany automatycznie,width=196,height=50]
+
+System filtruje listę już po wpisaniu pierwszej litery / cyfry / znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnego szablonu w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści.
+
+Aby powrócić do pełnej listy szablonów doładowań należy kliknąć w ikonę [X] w polu wyszukiwania.
+
+=== Dodanie szablonu doładowania
+
+Z poziomu *Szablonów doładowań* za pomocą przycisku [Nowy szablon doładowania] Użytkownik ma możliwość dodania szablonów doładowań:
+
+image::Doladowania/image22.png[Obraz zawierający tekst, oprogramowanie, Czcionka, Strona internetowa Opis wygenerowany automatycznie,width=604,height=108]
+
+Po wybraniu przycisku, system prezentuje formatkę z danymi do wypełnienia:
+
+image::Doladowania/image23.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, wyświetlacz Opis wygenerowany automatycznie,width=604,height=298]
+
+Następnie Użytkownik wypełnia poniższe dane:
+
+* *Nazwa szablonu* - nazwa własna szablonu; pole wymagalne,
+* *Zaufany* - pole checkbox, w przypadku jego zaznaczenia szablon zostanie dodany jako zaufany, na liście szablonów zostanie wyświetlona ikona image:Doladowania/image19.png[image,width=16,height=17]_._ Realizacja doładowania za pomocą tego typu szablonu, nie wymaga autoryzacji,
+* *Operator* - opcja wyboru wszystkich aktywnych operatorów sieci komórkowej (zdefiniowanych w aplikacji BackOffice),
+* *Numer telefonu* – pole do wprowadzania numeru doładowywanego telefonu, pola numeru telefonu powinny być wypełnione następująco:
+** numer telefonu musi być ciągiem 9 cyfr (w innym przypadku zostanie zaprezentowany komunikat błędu),
+** ciąg cyfr nie może rozpoczynać się od cyfry "0" i "4" (w innym przypadku zostanie zaprezentowany komunikat błędu).
+
+image::Doladowania/image24.png[Obraz zawierający tekst, zrzut ekranu, Czcionka, linia Opis wygenerowany automatycznie,width=385,height=91]
+
+* [Dalej] – przejście do kroku 2.
+
+Po wprowadzeniu danych szablonu za pomocą przycisku [DALEJ] należy przejść do formularza potwierdzenia danych (krok 2).
+
+
+NOTE: Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, szablon zostaje utworzony (pojawia się na liście szablonów doładowań), a system wyświetla potwierdzenie dodania szablonu wraz z przyciskami:
+
+image::Doladowania/image25.png[Obraz zawierający tekst, zrzut ekranu, System operacyjny, design Opis wygenerowany automatycznie,width=604,height=330]
+
+* [Utwórz nowy szablon] - do utworzenia nowego szablonu.
+* [Wróć do listy] - umożliwia powrót do listy szablonów,
+* [Wróć do pulpitu] - umożliwia powrót do pulpitu.
+
+Użycie szablonu doładowania na formatce _Nowego doładowania_ powoduje wypełnienie formularza doładowania danymi z szablonu.
+
+=== Podgląd szczegółów szablonu doładowań
+
+Aby z listy szablonów doładowań przejść do szczegółów wybranego szablonu należy kliknąć w przycisk [Opcje] i wybrać [Szczegóły]. Wyświetlane jest wówczas okno prezentujące szczegółowe informacje dla szablonu:
+
+image::Doladowania/image26.png[Obraz zawierający tekst, zrzut ekranu Opis wygenerowany automatycznie,width=604,height=201]
+
+=== Edycja szablonu doładowań
+
+Aby dokonać edycji danych wybranego szablonu należy kliknąć w przycisk [Opcje] i wybrać [Edytuj]. Wyświetlane jest wówczas okno prezentujące dane wybranego szablonu z możliwością modyfikacji danych.
+
+image::Doladowania/image27.png[Obraz zawierający zrzut ekranu, tekst, wyświetlacz, oprogramowanie Opis wygenerowany automatycznie,width=604,height=307]
+
+Po wprowadzeniu zmian na szablonie za pomocą przycisku [Dalej] należy przejść do formularza potwierdzenia danych (krok 2).
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, zmiany na szablonie zostają zapisane, a system wyświetla potwierdzenie wraz z przyciskami:
+
+* [Utwórz nowy szablon] - do utworzenia nowego szablonu.
+* [Wróć do listy] - umożliwia powrót do listy szablonów,
+* [Wróć do pulpitu] - umożliwia powrót do pulpitu.
+
+=== Usunięcie szablonu doładowań
+
+W celu usunięcia wybranego szablonu doładowań należy kliknąć. Wyświetlane jest wówczas okno prezentujące dane usuwanego szablonu. w przycisk [Opcje] i wybrać [Usuń].
+
+image::Doladowania/image28.png[Obraz zawierający tekst, oprogramowanie, zrzut ekranu Opis wygenerowany automatycznie,width=604,height=234]
+
+Po dokonaniu akceptacji aktualnie posiadaną metodą autoryzacji, szablon zostaje usunięty, a system wyświetla potwierdzenie usunięcia szablonu wraz z przyciskami:
+
+* [Wróć do listy] - umożliwia powrót do listy szablonów,
+
+* [Wróć do pulpitu] - umożliwia powrót do pulpitu.
+
+image::Doladowania/image29.png[Obraz zawierający tekst, zrzut ekranu, design Opis wygenerowany automatycznie,width=604,height=320]

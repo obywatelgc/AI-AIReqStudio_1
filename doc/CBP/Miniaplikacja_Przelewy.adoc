@@ -1,0 +1,2003 @@
+:imagesdir: images
+
+= Przelewy
+
+Miniaplikacja *Przelewy* zapewnia możliwość tworzenia nowych przelewów oraz dostęp do listy odbiorców, przelewów oczekujących na realizację (w tym również zleceń stałych) oraz przelewów odrzuconych wraz z dostępem do ich szczegółowych danych.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Przelewy* z dwóch głównych poziomów:
+
+* widżetu *Przelewy* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),
+
+image::Przelewy/image1.png[image,width=216,height=132]
+
+* menu bocznego po wybraniu opcji *Przelewy*.
+
+image::Przelewy/image2.png[image,width=102,height=50]
+
+W każdym z poziomów miniaplikacji dla Użytkownika dostępne są formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach. Z poziomu formatek Użytkownik może wykonać wskazane akcje.
+
+Użytkownik posiadający dostęp do miniaplikacji *Przelewy* ma możliwość:
+
+* przeglądania przelewów zaplanowanych,
+* przeglądania szczegółów przelewu,
+* zlecenia przelewu zwykłego,
+* zlecenia przelewu na rachunek własny,
+* zlecenia przelewu podatku,
+* zlecenia przelewu walutowego,
+* anulowania przelewu odroczonego,
+* modyfikacji przelewu odroczonego,
+* przeglądania listy odbiorców,
+* przeglądania szczegółów odbiorcy,
+* dodania nowego odbiorcy,
+* modyfikacji danych odbiorcy,
+* usunięcia odbiorcy.
+
+NOTE: Funkcjonalność przelewów dostępna jest dla Użytkownika kontekstu firmowego (obszar mikro), który
+posiada odpowiednie uprawnienia do przelewów i akcji z nimi związanych. Uprawnienia
+ustawiane są przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia
+Użytkowników._
+
+== Widżet Przelewy
+
+Z poziomu widżetu *Przelewy* jest możliwość:
+
+* złożenia przelewu za pomocą przycisku [Wykonaj przelew],
+* złożenia przelewu [Szukaj w historii i odbiorcach],
+* przejścia do szczegółów odrzuconego przelewu.
+
+image::Przelewy/image3.png[image,width=293,height=252]
+
+== Przeglądanie zakładek w miniaplikacji Przelewy
+
+Po kliknięciu w tytuł widżetu lub poprzez wybór opcji z bocznego menu *Przelewy* wyświetlane jest okno prezentujące zakładki:
+
+* Odbiorcy,
+* Oczekujące,
+* Odrzucone,
+* Zlecenia stałe,
+* Importy przelewów (opcja dostępna dla kontekstu indywidualnego i firmowego w obszarze mikro). Opcje importu zostały opisane w rozdziałach _Import przelewów_ i _Asynchroniczny Import przelewów_.
+
+=== Odbiorcy
+
+Odbiorcy posortowani są alfabetycznie, dla każdego z nich prezentowana jest nazwa oraz dane (odbiorca przelewu i tytuł, jeśli zostanie dodany). +
+
+image::Przelewy/image4.png[image,width=627,height=305]
+
+NOTE: Ikona image:Przelewy/image5.png[image,width=16,height=23] oznacza, że dany odbiorca jest odbiorcą zaufanym i nie wymaga autoryzacji. Opcja dostępna tylko dla kontekstu indywidualnego (obszar roboczy osobisty i mikro).
+
+Po kliknięciu w wiersz wybranego przelewu wyświetlane są dodatkowe informacje na temat Odbiorcy (widoczność poszczególnych pól jest uzależniona od wprowadzonych danych i typów odbiorcy): +
+
+*Z rachunku* – nazwa i numer rachunku, z którego będzie wykonana płatność (pole opcjonalne),
+
+*Do* - dane odbiorcy i numer rachunku, na który zostanie wykonana płatność,
+
+*Szczegóły* – pozostałe dane przelewu w zależności od podanych danych szczegółowych i rodzaju przelewu (pola opcjonalne).
+
+image::Przelewy/image6.png[image,width=627,height=167]
+
+Po rozwinięciu wiersza dostępne są przyciski:
+
+* [Wykonaj przelew] – umożliwia przejście do formatki przelewu z wypełnionymi danymi odbiorcy,
+* [Edytuj dane odbiorcy] - edycja danych odbiorcy,
+* [Pokaż wykonane przelewy] – system umożliwia podgląd wykonanych przelewów do wybranego odbiorcy,
+* [Usuń odbiorcę] – umożliwia usunięcie odbiorcy.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza powoduje zwinięcie szczegółowych informacji.
+
+Lista odbiorców jest ładowana dynamicznie. Kolejni odbiorcy wczytają się w trakcie przewijania strony.
+
+System umożliwia także filtrowanie odbiorców za pomocą dedykowanego pola wyszukiwania, znajdującego się nad listą. Po wpisaniu w polu danych system rozpoczyna wyszukiwanie:
+
+image::Przelewy/image7.png[image,width=249,height=47]
+
+System filtruje listę już po wpisaniu pierwszej litery / cyfry / znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnego odbiorcy w sytuacji, gdy nie znajdzie w systemie treści wprowadzonej w polu wyszukiwania.
+
+Aby powrócić do pełnej listy odbiorców należy kliknąć w ikonę [X] w polu wyszukiwania.
+
+image::Przelewy/image8.png[image,width=269,height=60]
+
+Dodatkowo z poziomu listy odbiorców Użytkownik może dodać nowego odbiorcę za pomocą przycisku [Dodaj odbiorcę]. Dodawanie odbiorców zostało opisane w rozdziale _Dodanie odbiorcy_. +
+
+image::Przelewy/image9.png[image,width=140,height=65]
+
+===  Oczekujące
+
+Przelewy oczekujące prezentują wszystkie przelewy jednorazowe oczekujące na realizację, w tym przelewy zwykłe (Standardowy/Natychmiastowy/Sorbnet), podatkowe, własne, walutowe oraz zlecenia stałe (najbliższą datę realizacji). Dodatkowo prezentowane są również przelewy składane z wykorzystaniem systemu Paybynet oferowanego przez Krajową Izbę Rozliczeniową S.A. +
+
+Na zakładce [Oczekujące] system zaprezentuje również liczbę aktywnych przelewów oczekujących na zaksięgowanie. +
+
+image::Przelewy/image10.png[image,width=627,height=273]
+
+Dla każdego przelewu oczekującego prezentowane są następujące informacje:
+
+* *Szczegóły:*
+
+** *Data realizacji* - data realizacji przelewu,
+
+** *Odbiorca przelewu* - dane odbiorcy przelewu,
+
+** *Tytuł przelewu*,
+
+* *Rodzaj transakcji,*
+
+* *Kwota* - kwota przelewu wraz z symbolem waluty.
+
+Po kliknięciu w wiersz wybranego przelewu wyświetlane są dodatkowe informacje na temat przelewu:
+
+*Z rachunku* – dane nadawcy i numer rachunku, z którego będzie wykonana płatność,
+
+*Do* – dane odbiorcy i numer rachunku, na który zostanie wykonana płatność,
+
+*Szczegóły* – pozostałe dane przelewu w zależności od podanych danych szczegółowych i rodzaju przelewu.
+
+NOTE: W przypadku przelewu oczekującego, system pod kwotę prezentuje dodatkową informację o blokadzie środków (pole widoczne jest dla Użytkowników korzystających z bankowości korzystającej z systemu transakcyjnego def3000/CB).
+
+NOTE: Dla użytkownika kontekstu firmowego w obszarze mikro dodatkowo może być widoczne pole *Referencje* - służące do definiowania własnego opisu dla danego przelewu przez Użytkownika, pole
+widoczne w aplikacji internetowej, nie jest przenoszone do systemu transakcyjnego.
+
+image::Przelewy/image11.png[image,width=604,height=226]
+
+Po rozwinięciu wiersza przelewu dostępne są przyciski:
+
+* [Edytuj przelew] - edycja płatności zaplanowanej,
+* [Dodaj do listy odbiorców] - umożliwia dodanie adresata przelewu do listy odbiorców,
+* [Pobierz potwierdzenie dyspozycji] – potwierdzenie przekazania przelewu do realizacji (opcja dostępna w zależności od parametryzacji),
+* [Anuluj przelew] - anulowanie płatności zaplanowanej.
+
+image::Przelewy/image11new.png[image,width=604,height=226]
+
+Po rozwinięciu wiersza najbliższego przelewu ze zlecenia stałego dostępne są przyciski:
+
+* [Edytuj zlecenie stałe] - edycja zlecenia stałego
+* [Dodaj do listy odbiorców] - dodanie adresata przelewu do listy odbiorców
+* [Anuluj zlecenie stałe] - anulowanie zlecenia stałego.
+
+NOTE: Edycja przelewu jest uzależniona od paremetryzacji banku.
+
+WARNING: Edycja lub anulowanie zlecenia stałego dotyczy całego zlecenia, a nie tylko najbliższego przelewu w cyklu.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza przelewu powoduje zwinięcie szczegółowych informacji.
+
+Lista przelewów jest ładowana dynamicznie. Kolejne przelewy wczytają się w trakcie przewijania strony.
+
+System umożliwia filtrowanie przelewów za pomocą opcji "Wybierz rachunki". Z listy rozwijalnej użytkownik może wybrać rachunek/rachunki nadawcy, lub wszystkie rachunki.
+
+image::Przelewy/image11Anew.png[image,width=249,height=47]
+
+System umożliwia także filtrowanie przelewów za pomocą dedykowanego pola wyszukiwania, znajdującego się nad listą. Po wpisaniu w polu danych system rozpoczyna wyszukiwanie:
+
+image::Przelewy/image7new.png[image,width=249,height=47]
+
+System filtruje listę już po wpisaniu pierwszej litery / cyfry / znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej płatności w sytuacji, gdy nie znajdzie w systemie treści wprowadzonej w polu wyszukiwania.
+
+Aby powrócić do pełnej listy przelewów należy kliknąć w ikonę [X] w polu wyszukiwania.
+
+image::Przelewy/image8new.png[image,width=269,height=60]
+
+=== Odrzucone
+
+Przelewy odrzucone – system prezentuje listę przelewów odrzuconych przez system transakcyjny, np. gdy na rachunku nadawcy jest niewystarczająca ilość dostępnych środków. System zaprezentuje liczbę nowych odrzuconych przelewów na zakładce [Odrzucone] oraz na widżecie _Przelewy._
+
+image::Przelewy/image12.png[image,width=458,height=68]
+
+Po przejściu do zakładki system wyświetli listę wszystkich przelewów odrzuconych.
+
+image::Przelewy/image13.png[image,width=627,height=290]
+
+NOTE: Nowe przelewy odrzucone na liście są wyróżnione ciemniejszą czcionką. Pozostałe przelewy odrzucone są wyszarzone.
+
+Dla każdego przelewu odrzuconego prezentowane są następujące informacje:
+
+* *Szczegóły:*
+
+** *Data realizacji* - data realizacji przelewu,
+
+** *Odbiorca przelewu* - dane odbiorcy przelewu,
+
+** *Tytuł przelewu*,
+
+* *Rodzaj transakcji,*
+* *Kwota* - kwota przelewu wraz z symbolem waluty,
+
+Po kliknięciu w wiersz wybranego przelewu wyświetlane są dodatkowe informacje na temat przelewu:
+
+* *Z rachunku* – dane nadawcy i numer rachunku, z którego będzie wykonana płatność,
+
+* *Do* - dane odbiorcy i numer rachunku, na który zostanie wykonana płatność,
+* *Szczegóły* – powód odrzucenia oraz pozostałe dane przelewu w zależności od podanych danych szczegółowych i rodzaju przelewu.
+
+NOTE: Dla użytkownika kontekstu firmowego w obszarze mikro dodatkowo może być widoczne pole *Referencje* - służące do definiowania własnego opisu dla danego przelewu przez Użytkownika, pole
+widoczne w aplikacji internetowej, nie jest przenoszone do systemu transakcyjnego.
+
+image::Przelewy/image14.png[image,width=627,height=281]
+
+Po rozwinięciu wiersza przelewu dostępne są przyciski:
+
+* [Ponów przelew] – umożliwia ponowienie odrzuconej płatności,
+* [Dodaj do listy odbiorców] - umożliwia dodanie adresata przelewu do listy odbiorców.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza przelewu powoduje zwinięcie szczegółowych informacji.
+
+Lista przelewów jest ładowana dynamicznie. Kolejne przelewy wczytają się w trakcie przewijania strony.
+
+System umożliwia także filtrowanie przelewów za pomocą dedykowanego pola do wyszukiwania za pomocą wyboru dat (domyślnie ustawione jest wyszukiwanie przelewów z ostatnich 90 dni). +
+
+image::Przelewy/image15.png[image,width=231,height=66]
+
+Po rozwinięciu listy Użytkownik ma do wyboru:
+
+* Bieżący miesiąc,
+* Poprzedni miesiąc,
+* Ostatnie 90 dni,
+* Bieżący rok,
+* Poprzedni rok,
+* Wybierz zakres dat.
+
+System umożliwia filtrowanie przelewów za pomocą opcji "Wybierz rachunki". Z listy rozwijalnej użytkownik może wybrać rachunek/rachunki nadawcy lub wszystkie rachunki.
+
+image::Przelewy/image15Anew.png[image,width=231,height=66]
+
+Dodatkowo Użytkownik może filtrować odrzucone przelewy za pomocą pola „Wyszukaj”. Po wpisaniu w polu danych system rozpoczyna wyszukiwanie:
+
+image::Przelewy/image16.png[image,width=332,height=62]
+
+System filtruje listę już po wpisaniu pierwszej litery / cyfry / znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej płatności w sytuacji, gdy nie znajdzie w systemie treści wprowadzonej w polu wyszukiwania.
+
+Aby powrócić do pełnej listy przelewów należy kliknąć w ikonę [X] w polu wyszukiwania.
+
+image::Przelewy/image8Anew.png[image,width=269,height=60]
+
+=== Zlecenia stałe
+
+Zlecenia stałe prezentują wszystkie przelewy cykliczne (przelewy zwykłe (Standardowy) oraz własne). System prezentuje listę aktywnych i zakończonych zleceń stałych.
+
+image::Przelewy/image17.png[image,width=627,height=228]
+
+Lista zleceń stałych dzieli się na:
+
+{empty}1) Aktywne zlecenia i zawiera dane dotyczące:
+
+* *Danych odbiorcy -* nazwa odbiorcy i tytuł przelewu,
+* *Cykliczność –* w jakim cyklu odbywa się realizacja przelewu,
+* *Data zakończenia* – data zakończenia zlecenia stałego,
+* *Kwota*.
+
+Po kliknięciu w wiersz wybranego zlecenia stałego wyświetlane są dodatkowe informacje na temat przelewu:
+
+*Z rachunku* – dane nadawcy i numer rachunku, z którego będzie wykonana płatność,
+
+*Do* - dane odbiorcy i numer rachunku, na który zostanie wykonana płatność,
+
+*Szczegóły* – pozostałe dane przelewu w zależności od podanych danych szczegółowych i rodzaju przelewu.
+
+NOTE: Dla użytkownika kontekstu firmowego w obszarze mikro dodatkowo może być widoczne pole *Referencje* - służące do definiowania własnego opisu dla danego przelewu przez Użytkownika, pole
+widoczne w aplikacji internetowej, nie jest przenoszone do systemu transakcyjnego.
+
+image::Przelewy/image19.png[image,width=627,height=180]
+
+Po rozwinięciu wiersza przelewu dostępne są przyciski:
+
+* [Edytuj zlecenie stałe] - edycja zlecenia stałego,
+* [Wykonaj dodatkowy przelew] - umożliwia dodanie dodatkowego przelewu jednorazowego do odbiorcy zlecenia stałego,
+* [Pokaż historię zlecenia] – historia zrealizowanych przelewów w ramach zlecenia stałego,
+* [Anuluj zlecenie stałe] - anulowanie zlecenia stałego.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza przelewu powoduje zwinięcie szczegółowych informacji.
+
+Jeśli na liście jest ponad 10 pozycji wówczas system zaprezentuje przycisk [Pokaż więcej zleceń].
+
+image::Przelewy/image20.png[image,width=162,height=70]
+
+{empty}2) Zakończone zlecenia zawiera dane dotyczące:
+
+* *Danych odbiorcy -* nazwa odbiorcy i tytuł przelewu,
+* *Podsumowanie –* liczba wykonanych transakcji,
+* *Data zakończenia* – data zakończenia zlecenia stałego,
+* *Kwota*.
+
+Po kliknięciu w wiersz wybranego zlecenia stałego wyświetlane są dodatkowe informacje na temat przelewu:
+
+*Z rachunku* – dane nadawcy i numer rachunku, z którego została wykonana płatność,
+
+*Do* - dane odbiorcy i numer rachunku, na który została wykonana płatność,
+
+*Szczegóły* – pozostałe dane przelewu w zależności od podanych danych szczegółowych i rodzaju przelewu.
+
+image::Przelewy/image21.png[image,width=627,height=205]
+
+Po rozwinięciu wiersza przelewu dostępne są przyciski:
+
+* [Pokaż historię zlecenia] – historia zrealizowanych przelewów w ramach zlecenia stałego.
+* [Wykonaj dodatkowy przelew] - umożliwia dodanie dodatkowego przelewu jednorazowego do odbiorcy zlecenia stałego,
+* Ponowne kliknięcie w obszar rozwiniętego wiersza przelewu powoduje zwinięcie szczegółowych informacji.
+
+Lista przelewów jest ładowana dynamicznie. Kolejne przelewy wczytają się w trakcie przewijania strony.
+
+Dodatkowo z poziomu listy zleceń stałych Użytkownik może utworzyć nowe zlecenie stałe za pomocą przycisku [Utwórz kolejne zlecenie].
+
+image::Przelewy/image22.png[image,width=207,height=80]
+
+=== Polecenia zapłaty
+
+NOTE: Polecenia zapłaty dostępne są dla bankowości korzystającej z systemu transakcyjnego def3000/CB. Funkcjonalność sterowana przełącznikiem _directDebit_.
+
+Lista poleceń prezentuje zgody udzielone przez Użytkownika lub powstałe automatycznie w wyniku realizacji obciążenia z tytułu polecenia zapłaty. System prezentuje listę aktywnych i zakończonych poleceń zapłaty.
+
+image::Przelewy/image1pz.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, System operacyjny Opis wygenerowany automatycznie,width=604,height=320]
+
+Lista poleceń zapłaty dzieli się na: +
+
+. Aktywne
+
+. Zakończone
+
+Lista zawiera dane dotyczące:
+
+* Nazwy polecenia – o ile użytkownik ją nadał,
+* Danych odbiorcy – nazwa odbiorcy przelewu,
+* Kwota i data realizacji (lub, gdy takiej nie ma, wówczas ostatniej próby realizacji).
+
+W przypadku braku realizacji przelewu na podstawie polecenia zapłaty system zaprezentuje informację _Brak realizacji_.
+
+Po kliknięciu w wiersz wybranego polecenia wyświetlane są dodatkowe informacje:
+
+image::Przelewy/image2pz.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, komputer Opis wygenerowany automatycznie,width=604,height=264]
+
+*Z rachunku* – nazwa i numer rachunku, z którego będzie wykonywane polecenie,
+
+*Do* – dane odbiorcy na który zostanie wykonane polecenie wraz z identyfikatorem odbiorcy (NIP),
+
+*Szczegóły* – pozostałe dane dotyczące identyfikatora płatności (IDP) oraz dat ważności polecenia (data ważności polecenia jest wyświetlana jeśli została wskazana w systemie transakcyjnym).
+
+Użytkownik ma dostępne przyciski:
+
+* [Pokaż historię zlecenia] – umożliwia przeglądanie historii płatności w ramach danego polecenia zapłaty,
+
+* [Zmień nazwę polecenia] – umożliwia nadanie lub zmianę nazwy polecenia.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza przelewu powoduje zwinięcie szczegółowych informacji.
+
+==== Zmiana nazwy polecenia
+
+Dla każdego z poleceń możliwe jest nadanie lub zmiana jego nazwy własnej, której zakres jest ograniczony do konta danego użytkownika w bankowości internetowej.
+
+image::Przelewy/image3pz.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Czcionka Opis wygenerowany automatycznie,width=284,height=246]
+
+Zmiana nazwy zostaje potwierdzona komunikatem:
+
+image::Przelewy/image4pz.png[Obraz zawierający zrzut ekranu, tekst, logo, Czcionka Opis wygenerowany automatycznie,width=284,height=205]
+
+==== Historia polecenia zapłaty
+
+W systemie prezentowane są informacje o przebiegu realizacji poleceń zapłaty. System wyświetla historię transakcji wybranego polecenia zapłaty. Lista podlega wyszukiwaniu po dacie i ciągu znaków.
+
+image::Przelewy/image5pz.png[Obraz zawierający tekst, Czcionka, oprogramowanie, zrzut ekranu Opis wygenerowany automatycznie,width=604,height=242]
+
+Transakcje posortowane są wg daty malejąco.
+
+Na liście historii polecenia zapłaty mogą znajdować się trzy typy operacji:
+
+* wykonane obciążenia z tytułu polecenia zaksięgowane na rachunku klienta wraz z informację o pozostającym czasie na wycofanie operacji w systemie transakcyjnym,
+* nieudane próby obciążenia rachunku z tytułu polecenia wraz z informacją o przyczynie odrzucenia transakcji,
+* zwroty na rachunek klienta powstałe w wyniku anulowania operacji obciążenia w związku z wnioskiem klienta o jej wycofanie.
+
+Dla operacji polecenia zapłaty dostępny jest podgląd szczegółowych danych:
+
+image::Przelewy/image6pz.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, komputer Opis wygenerowany automatycznie,width=604,height=293]
+
+W zależności od stanu i dostępnych danych operacji możliwe są następujące akcje:
+
+* [Powtórz jako przelew] – umożliwia wykonanie przelewu do odbiorcy polecenia zapłaty,
+* [Pobierz potwierdzenie] - pobranie potwierdzenia zrealizowanej operacji,
+* [Dodaj do listy odbiorców] - dodanie danych odbiorcy do listy odbiorców.
+
+Nieudane próby obciążenia rachunku z tytułu polecenia zapłaty prezentowane są na liście odrzuconych przelewów w aplikacji *Przelewy*. Operacje takie posiadają informację o tym, że powstały w wyniku realizacji polecenia zapłaty i dostępne jest dla nich przejście do szczegółów tego polecenia.
+
+Zrealizowane operacje obciążenia z tytułu polecenia zapłaty prezentowane są w historii obciążanego rachunku klienta. Operacje takie posiadają informację o tym, że powstały w wyniku realizacji polecenia zapłaty i dostępne jest dla nich przejście do szczegółów tego polecenia.
+
+image::Przelewy/image7pz.png[Obraz zawierający tekst, Czcionka, Grafika, logo Opis wygenerowany automatycznie,width=140,height=44]
+
+Operacje uznania powstałe w wyniku wycofania operacji uznania z tytułu polecenia zapłaty prezentowane są w historii uznawanego rachunku klienta, ale nie są dodatkowo wyróżniane.
+
+== Przelewy
+
+Użytkownik systemu Asseco EBP ma możliwość zlecenia następujących rodzajów płatności:
+
+* przelew zwykły krajowy,
+* przelew zwykły VAT (jeśli Użytkownik posiada rachunek firmowy VAT) - opcja dostępna dla kontekstu indywidualnego i firmowego w obszarze mikro,
+* przelew na rachunek własny,
+* przelew VAT na rachunek własny (jeśli Użytkownik posiada rachunki firmowe VAT) - - opcja dostępna dla kontekstu indywidualnego i firmowego w obszarze mikro,
+* przelew podatku,
+* przelew walutowy.
+
+Tworzenie wymienionych płatności jest możliwe z poziomu:
+
+* widżetu miniaplikacji *Przelewy* znajdującego się na pulpicie, wybierając przycisk [Wykonaj przelew],
+
+image::Przelewy/image23.png[image,width=319,height=194]
+
+* lub po wybraniu opcji _Przelewy_ z bocznego menu a następnie przycisku [Wykonaj przelew].
+
+image::Przelewy/image24.png[image,width=627,height=138]
+
+Wybór typu przelewu dostępny jest po przejściu na formatkę nowego przelewu.
+
+=== Zlecenie przelewu zwykłego krajowego
+
+Złożenie zlecenia zwykłego (krajowego) jest możliwe w przypadku, gdy na formatce nowego przelewu Użytkownik wybierze zakładkę *Zwykły.*
+
+image::Przelewy/image25a.png[image,width=627,height=497]
+
+Następnie Użytkownik wypełnia poniższe dane:
+
+* *Z rachunku* - pole z listą rachunków do obciążenia, lista rachunków ograniczona jest tylko do rachunków do których Użytkownik ma dostęp; w polu podstawiany jest domyślny rachunek do obciążenia; pole wymagalne,
+* *Do* – w tym miejscu Użytkownik wypełnia dane odbiorcy przelewu,
+
+** *Odbiorca* - nazwa odbiorcy przelewu, wypełnione z klawiatury lub automatycznie uzupełnione w przypadku użycia [Wybierz odbiorcę]; pole wymagane, +
+
+image:Przelewy/image26.png[image,width=251,height=309]
+
+** *Dodaj adres odbiorcy* - wypełnione z klawiatury (ulicę, nr domu, nr mieszkania, kod pocztowy, miejscowość ) lub automatycznie uzupełnione w przypadku użycia [Wybierz odbiorcę]; pole opcjonalne,
+
+* *Numer rachunku* - numer rachunku odbiorcy; pole wymagane, wypełnione z klawiatury, wklejone lub automatycznie uzupełnione w przypadku użycia [Wybierz odbiorcę]. Po wklejeniu numeru rachunku w polu prezentowany jest komunikat informujący o konieczności wprowadzenia dwóch ostatnich cyfr.
+
+image::Przelewy/image27.png[image,width=317,height=103]
+
+Po wypełnieniu numeru rachunku pod polem prezentowana jest nazwa banku odbiorcy przelewu.
+
+* *Szczegóły* - w tym miejscu Użytkownik wypełnia pozostałe dane,
+
+** *Kwota* - kwota przelewu wyrażona w walucie rachunku wybranego do obciążenia; pole wymagalne. Kwota przelewu nie może przekroczyć progu dla przelewu Standardowego (Elixir) tj. 1 mln PLN, w przypadku przekroczenia progu kwotowego obok pola prezentowany jest komunikat:
+image:Przelewy/image28.png[image,width=166,height=56]
+** *Tytuł* - tytuł przelewu, pole automatycznie wypełnione „Przelew środków”, edytowalne, pole może zawierać maksymalnie 140 znaków; pole wymagalne. Dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: `!@#$%^&*()_+=\\\{}[]:;'<>?,./\äÄöÖüÜß
+
+** *Sposób realizacji* - możliwość wyboru następujących wartości:
+
+*** Standardowy (ELIXIR) i wewnętrzny - znacznik określający, że zlecenie płatnicze zostanie skierowane do systemu ELIXIR lub w przypadku, gdy rachunek odbiorcy jest prowadzony w banku płatnika, zlecenie zostanie zrealizowane w ramach rozliczeń wewnętrznych w banku. System ELIXIR służy do obsługi niskokwotowych zleceń w PLN. Szczegółowy opis weryfikacji przelewów ELIXIR został przedstawiony w rozdziale *Weryfikacja przelewów zwykłych Elixir*,
+*** Natychmiastowy (Express Elixir) - znacznik dyspozycji przelewu natychmiastowego. Przelew jest możliwy w zależności od tego, czy dane przelewu (numer rachunku nadawcy/odbiorcy, kwota przelewu) spełniają warunki opisane w rozdziale *Weryfikacja przelewów zwykłych Express Elixir*,
+*** SORBNET - znacznik określający, że zlecenie płatnicze zostanie skierowane do systemu SORBNET. Zlecenie płatnicze skierowane do systemu SORBNET jest realizowane za pośrednictwem Narodowego Banku Polskiego, poprzez jednoczesne obciążenie rachunku banku dłużnika i uznanie rachunku banku beneficjenta. Za pośrednictwem tego systemu realizowane są wysokokwotowe zlecenia płatnicze. Szczegółowy opis weryfikacji przelewów SORBNET został przedstawiony w rozdziale *Weryfikacja przelewów zwykłych SORBNET*,
+
+** *Data realizacji* - data realizacji przelewu; domyślnie wstawiana jest data bieżąca. W przypadku wyboru daty przyszłej Użytkownik ma możliwość zmiany daty wprowadzając ją z klawiatury lub może skorzystać z ikony kalendarza image:Przelewy/image29.png[image,width=19,height=20]. +
+image:Przelewy/image30.png[image,width=201,height=76]
+** *Referencje* - pole służące do definiowania własnego opisu dla danego przelewu przez Użytkownika, pole widoczne w aplikacji internetowej i nie jest przenoszone do systemu transakcyjnego, pole niewymagalne (dostępne w kontekście firmowym obszar mikro),
+** *Utwórz zlecenie stałe* - checkbox umożliwiający zdefiniowanie płatności cyklicznej; po jego zaznaczeniu pojawiają się dodatkowe pola:
+
+*** *Powtarzaj zlecenie co* - pole do określenia częstotliwości realizacji przelewu: +
+
+**** co: _dzień/miesiąc_ - opcje dostępne dla bankowości korzystającej z systemu transakcyjnego DefBank, +
+Domyślnie: _1 miesiąc_,
+
+**** co: _dzień/miesiąc/kwartał/rok_ - opcje dostępne dla bankowości korzystającej z systemu transakcyjnego def3000/CB, +
+Domyślnie: _1 miesiąc_,
+
+*** *Data zakończenia zlecenia* - w polu można określić datę zakończenia płatności po wybraniu ikony kalendarza image:Przelewy/image29.png[image,width=19,height=20] , bądź ustawić bezterminową realizację płatności zaznaczając checkbox *Bezterminowo* (checkbox domyślnie zaznaczony).
+
+image::Przelewy/image31.png[image,width=627,height=109]
+
+Użytkownik przechodzi do drugiego kroku przelewu, za pomocą przycisków:
+
+* [Akceptuj] – przejście do autoryzacji przelewu (sprawdzenie schematu itd.),
+
+* [Dodaj do koszyka zleceń] – przycisk umożliwia zapisanie przelewu w _Koszyku zleceń_ w statusie _Nowy_.
+
+image::Przelewy/image32.png[image,width=285,height=144]
+
+Na formularzu potwierdzenia danych przelewu (krok 2) system wyświetla formularz z wprowadzonymi danymi w trybie podglądu wraz z zestawem akcji opisanych w rozdziale _Dostępne akcje na drugim kroku nowego przelewu._
+
+NOTE: Użycie ikony image:Przelewy/image33.png[image,width=55,height=40] powoduje powrót do pierwszego kroku i poprawę danych przelewu.
+
+Dodatkowo na dole formatki wyświetlane są dane wymagane w ramach dyrektywy PSD - dostępne po rozwinięciu listy *Pokaż pełną informację o kosztach*, gdzie wyświetlone zostaną wszystkie koszty transakcji.
+
+image::Przelewy/image34.png[image,width=178,height=76]
+
+Po zatwierdzeniu lub akceptacji danych aktualnie posiadaną metodą autoryzacji, (jedna z akcji opisanych w *Dostępne akcje na drugim kroku nowego przelewu*), Użytkownikowi wyświetlane jest potwierdzenie przekazania dyspozycji do realizacji wraz z przyciskami: +
+
+image::Przelewy/image35.png[image,width=627,height=324]
+
+* [Dodaj do listy odbiorców] – otwiera formatkę z danymi i umożliwia zapisanie danych odbiorcy przelewu,
+* [Wykonaj kolejny przelew] – otwiera formatkę dla utworzenia nowej płatności,
+* [Wróć do listy przelewów] - umożliwia powrót do listy przelewów,
+* [Wróć do pulpitu] - umożliwia powrót do pulpitu.
+
+image::Przelewy/image35Anew.png[image,width=627,height=324]
+
+W przypadku przekazania do realizacji zlecenia stałego Użytkownikowi zostanie również zaprezentowane okno z potwierdzeniem wraz z przyciskami:
+
+* [Dodaj do listy odbiorców] -otwiera formatkę z danymi i umożliwia zapisanie danych odbiorcy przelewu,
+* [Utwórz zlecenie stałe] - otwiera formatkę dla utworzenia nowego zlecenia stałego,
+* [Wróć do listy zleceń stałych] - umożliwia przejście do listy zleceń stałych,
+* [Wróć do pulpitu] - umożliwia powrót do pulpitu.
+
+
+==== Dostępne akcje na drugim kroku nowego przelewu
+
+W zależności od ustawionego schematu podpisu na formatkach przelewów w _Miniaplikacji Przelewy_ dostępne są odmienne akcje. Użycie tych akcji wpływa także na statusy, jakie otrzymają przelewy dodawane z poziomu Miniaplikacji Przelewy do _Koszyka zleceń_.
+
+Występują poniższe warianty:
+
+*Wielopodpis wyłączony*
+
+W przypadku kontekstu indywidualnego schemat akceptacji może zostać niezdefiniowany. Domyślnie będzie brany pod uwagę właściciel rachunku.
+
+W przypadku pracy w kontekście klienta indywidulanego na formularzu dodania przelewu dostępne są akcje:
+
+* [Akceptuj] - przejście do 2 kroku dodania przelewu powoduje wyświetlenie formatki do autoryzacji, przelew dodawany jest do listy przelewów aktywnych,
+* [Dodaj do koszyka zleceń] – przejście do 2 kroku dodania przelewu powoduje wyświetlenie formatki umożliwiającej zapisanie przelewu w Koszyku zleceń (o wymogu autoryzacji decyduje parametr systemowy), przelew trafia do Koszyka zleceń.
+
+*Wielopodpis włączony*
+
+Schemat podpisu został zdefiniowany. W przypadku pracy w kontekście klienta indywidulanego na formularzu dodania przelewu dostępne są akcje:
+
+* [Akceptuj] - przejście do 2 kroku dodania przelewu powoduje wyświetlenie dodatkowych opcji w zależności od złożoności schematu akceptacji, +
+
+** dla schematu wymagającego podpisu jednej osoby:
+
+*** [Akceptuj i wyślij] – przejście do autoryzacji, przelew po autoryzacji przekazywany jest do realizacji w systemie transakcyjnym. Przelew widoczny jest na liście przelewów oczekujących.
+
+*** [Akceptuj i dodaj do koszyka zleceń] – przejście do autoryzacji, przelew dodawany jest do Koszyka zleceń w statusie _Gotowy do przekazania_, +
+image:Przelewy/image36.png[image,width=500,height=516]
+** dla schematu wymagającego podpisu więcej niż jednej osoby:
+
+*** [Dodaj do koszyka zleceń] – przejście do potwierdzenia (o wymogu autoryzacji decyduje parametr systemowy), przelew trafia do Koszyka zleceń w statusie _Nowy_.
+
+*** [Akceptuj i dodaj do koszyka zleceń] – przejście do autoryzacji, przelew dodawany jest do Koszyka zleceń w statusie _W akceptacji_. +
+
+image::Przelewy/image37.png[image,width=512,height=528]
+
+* [Dodaj do koszyka zleceń] - przejście do 2 kroku dodania przelewu powoduje wyświetlenie formatki umożliwiającej zapisanie przelewu w Koszyku zleceń (o wymogu autoryzacji decyduje parametr systemowy), przelew trafia do Koszyka zleceń w statusie _Nowy,_ opcja dostępna zarówno dla schematu wymagającego podpisu jednej lub więcej niż jednej osoby.
+
+image::Przelewy/image38.png[image,width=511,height=513]
+
+==== Weryfikacja przelewów zwykłych Standardowych (ELIXIR)
+
+Podczas składania dyspozycji przelewu zwykłego poprzez opcję [Wykonaj przelew] _Zwykły_ wykonywane są następujące walidacje:
+
+{empty}1. czy numer rachunku bankowego jest poprawny,
+
+{empty}2. czy bank odbiorcy jest uczestnikiem rozliczeń _Standardowych (Elixir)_,
+
+{empty}a. jeśli bank odbiorcy nie jest uczestnikiem rozliczeń _Standardowych (Elixir)_ system wyświetli komunikat: _Brak Banku w ewidencji banków,_
+
+{empty}3. czy kwota przelewu zwykłego zdefiniowanego jako przelew _Standardowy (Elixir)_ przekracza kwotę progową _Sorbnet_ zdefiniowaną dla banku, w którym prowadzony jest rachunek nadawcy przelewu:
+
+{empty}a. jeśli kwota przelewu nie przekracza kwoty progowej _Sorbnet_ - przelew zostanie zapisany jako _Standardowy (Elixir)_,
+
+{empty}b. jeśli kwota przelewu jest równa lub przekracza kwotę progową _Sorbnet_ - przelew zostanie zweryfikowany pod kątem tego, czy bank odbiorcy jest uczestnikiem _Sorbnet_ i podczas składania przelewu zwykłego:
+
+* jeśli przelew jest przelewem wewnętrznym – system wyświetli komunikat _Przelew wewnętrzny nie może być zrealizowany jako Sorbnet. W celu realizacji zmień typ transakcji na Standardowy._,
+* jeśli bank odbiorcy jest uczestnikiem _SORBNET_ i Użytkownik przekroczy kwotę progową - system zaprezentuje komunikat: _Kwota transakcji przekracza maksymalną kwotę dla przelewu Standardowego. Zmień sposób realizacji przelewu na Sorbnet_,
+* jeśli bank odbiorcy nie jest uczestnikiem _SORBNET_ - system wyświetli komunikat _Bank odbiorcy nie obsługuje transakcji typu Sorbnet. W celu realizacji zmień typ transakcji na Standardowy._,
+
+{empty}4. czy został przekroczony czas COT (odczytany ze słownika czasów odcięcia _WEW, ELIXIR(DOWOLNY), ELIXIR(PODATKU), ELIXIR(ZUS), SORBNET,_ znajdującego się w module BackOffice),
+
+{empty}a. jeśli został przekroczony czas COT system wyświetli komunikat o zmianie daty ze względu na COT, zdefiniowany w Słowniku COT dla danego typu przelewu. Komunikat będzie dostępny na formularzu autoryzacji dyspozycji. Użytkownik będzie mógł zautoryzować dyspozycję, jeśli zgadza się na przesunięcie daty realizacji lub zrezygnować z akcji składania dyspozycji.
+
+==== Weryfikacja przelewów zwykłych Sorbnet
+
+W procesie składania przelewów _Sorbnet_ w systemie wykonywane są następujące walidacje:
+
+{empty}1. czy przelew jest przelewem wewnętrznym:
+
+{empty}a. jeśli _TAK_ – Użytkownik zostanie poinformowany komunikatem o braku możliwości realizacji przelewu jako _Sorbnet_ oraz będzie mógł zmienić typ przelewu na _Standardowy_ (_Elixir)_ lub zrezygnować z jego realizacji,
+
+{empty}b. jeśli NIE - przelew zostanie zapisany jako _Sorbnet_,
+
+{empty}2. czy bank odbiorcy jest uczestnikiem _Sorbnet_:
+
+{empty}a. jeśli bank odbiorcy jest uczestnikiem _Sorbnet_ - przelew zostanie zapisany jako _Sorbnet_,
+
+{empty}b. jeśli bank odbiorcy nie jest uczestnikiem _Sorbnet_ Użytkownik zostanie poinformowany komunikatem o braku możliwości realizacji przelewu jako _Sorbnet_ oraz będzie mógł zmienić typ przelewu na _Standardowy_ (_Elixir)_ lub _Natychmiastowy (Express Elixir)_ lub zrezygnować z jego realizacji,
+
+{empty}3. czy został przekroczony czas COT (odczytany ze słownika czasów odcięcia _Sorbnet_ znajdującego się w module BackOffice):
+
+{empty}a. jeśli został przekroczony czas COT system wyświetli komunikat z informacją o zmianie daty ze względu na COT, zdefiniowany w Słowniku COT dla danego Banku oraz danego typu przelewu. Komunikat będzie dostępny na formularzu autoryzacji dyspozycji. Użytkownik będzie mógł zautoryzować dyspozycję jeśli zgadza się na przesunięcie daty realizacji lub zrezygnować z akcji składania dyspozycji.
+
+{empty}4. czy przelew zawiera dozwolone znaki dla danych odbiorcy oraz tytułu przelewu Sorbnet,
+
+{empty}a. jeśli przelew zawiera niedozwolone znaki dla danych odbiorcy oraz tytułu przelewu prezentowany jest komunikat: _Dozwolone znaki to cyfry i litery łacińskie oraz znaki specjalne: /-?:().,'+_
+
+{empty}5. czy przelew zawiera dozwolone znaki dla danych nadawcy przelewu Sorbnet,
+
+{empty}a. jeśli przelew zawiera niedozwolone znaki w danych nadawcy, polskie znaki zmieniane są na odpowiedniki łacińskie a niedozwolone znaki zamieniane są na kropkę
+
+{empty}6. czy przelew zawiera uzupełnione pole „Miejscowość” w adresie odbiorcy,
+
+{empty}a. jeśli przelew nie zawiera uzupełnionego pola „Miejscowość” w adresie odbiorcy, system zgłosi komunikat o jego wymagalności
+
+==== Weryfikacja przelewów Natychmiastowych Express Elixir
+
+W procesie składania przelewów natychmiastowych w systemie wykonywane są następujące walidacje:
+
+{empty}1. czy bank odbiorcy jest uczestnikiem przelewów _Natychmiastowych Express Elixir_,
+
+{empty}2. czy na moment wykonywania walidacji usługa przelewów _Natychmiastowych Express Elixir_ Banku nadawcy i odbiorcy jest dostępna (dostępność statyczna),
+
+{empty}3. czy pojedyncza płatność nie przekracza maksymalnej kwoty dla płatności _Natychmiastowych_ określonej w parametrze *KWOTA_PROGOWA_EE_REB*,
+
+{empty}4. czy przelew nie jest przelewem wewnętrznym.
+
+W przypadku braku możliwości wysłania dyspozycji przelewem _Natychmiastowym EXPRESS ELIXIR_ system wyświetli stosowny komunikat:
+
+* _Bank odbiorcy nie jest uczestnikiem przelewów Natychmiastowych,_
+* _Bank nadawcy nie jest w danej chwili dostępny w usłudze przelewów Natychmiastowych,_
+* _Bank odbiorcy nie jest w danej chwili dostępny w usłudze przelewów Natychmiastowych,_
+* _Kwota przelewu przekracza maksymalną dopuszczalną kwotę dla przelewów natychmiastowych._
+
+Użytkownik będzie mógł zmienić typ rozliczenia poprzez zmianę na formularzu dyspozycji na opcję _Standardowy_ lub _SORBNET_.
+
+=== Zlecenie przelewu płatności VAT
+
+Na formatce przelewu zwykłego istnieje możliwość zlecenia przelewu VAT. Zlecenie tego przelewu jest możliwe dla konteksty indywidualnego i firmowego w obszarze mikro. Przelew VAT możliwy jest wyłącznie z rachunku bieżącego, który powiązany jest z rachunkiem VAT. W przypadku, gdy wskazany rachunek do obciążenia jest powiązany z rachunkiem VAT na formatce pojawia się checkbox *Oznacz jako płatność podzielona (split payment)*. Zaznaczenie checkboxa udostępnia dodatkowe pola dedykowane dla przelewu VAT:
+
+* *KWOTA BRUTTO* -wartość kwoty BRUTTO w walucie PLN,
+* *KWOTA VAT* - wartość kwoty VAT w walucie PLN (z dodatkową informacją "Jeśli przelewasz na własny rachunek VAT kwota brutto musi się równać kwocie VAT"),
+* *PRZELEW Z RACHUNKU VAT -* informacja o rachunku VAT powiązanym z rachunkiem bieżącym,
+* *Numer faktury -* numer identyfikujący opłacaną fakturę (z dodatkową informacją: "Jeśli przelewasz na własny rachunek VAT wpisz PRZEKAZANIE WŁASNE"). Maksymalna ilość znaków w polu wynosi 35, pole wymagane.
+* *Identyfikator podatnika* - identyfikator podatkowy dostawcy towaru lub usługodawcy, na rzecz którego realizowana jest faktura, pole wymagalne.
+
+image::Przelewy/image39a.png[image,width=627,height=652]
+
+W przypadku, gdy wskazany rachunek do obciążenia nie jest powiązany z rachunkiem VAT wybranie opcji *Podziel płatność (split payment)* nie jest możliwe.
+
+W celu zapisania przelewu VAT Użytkownik wybiera jedną z dostępnych opcji na ekranie:
+
+* [Akceptuj] - przejście do kroku 2 (walidacje danych itd.),
+* [Dodaj do koszyka zleceń] - przycisk umożliwia dodanie przelewu do Koszyka zleceń.
+
+=== Zlecenie przelewu na rachunek własny
+
+Złożenie zlecenia płatności pomiędzy własnymi rachunkami bieżącymi jest możliwe w przypadku, gdy na formatce nowego przelewu Użytkownik wybierze zakładkę _Własny_.
+
+image::Przelewy/image40.png[image,width=627,height=401]
+
+Następnie Użytkownik wypełnia poniższe dane:
+
+* *Z rachunku* - rachunek obciążany; w polu należy wybrać spośród dostępnych rachunków własnych Użytkownika - rachunek do obciążenia, w polu automatycznie podstawiany jest domyślny rachunek do obciążenia, który można zmienić; pole wymagalne;
+* *Na rachunek* - rachunek uznawany; w polu należy wskazać, spośród dostępnych rachunków na liście, rachunek, na który mają zostać przelane środki,
+* *Szczegóły –* w tym miejscu Użytkownik wypełnia pozostałe dane:
+
+** *Kwota* - kwota przelewu wyrażona w walucie rachunku wybranego do obciążenia. Pole wymagalne. W przypadku, gdy waluty rachunku obciążanego i uznawanego są różne, system wyświetli komunikat z informacją o przewalutowaniu na drugim kroku przelewu (_Autoryzując przelew, wyrażasz zgodę na realizację przelewu po aktualnym kursie Banku_).
+
+** *Tytuł* - tytuł przelewu, pole automatycznie wypełnione „Przelew środków”, edytowalne, pole może zawierać maksymalnie 140 znaków; pole wymagalne. Dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: `!@#$%^&*()_+=\\\{}[]:;'<>?,./\äÄöÖüÜß.
+
+** *Data realizacji* - data realizacji przelewu; domyślnie wstawiana jest data bieżąca. +
+W przypadku wyboru daty przyszłej Użytkownik ma możliwość zmiany daty wprowadzając ją z klawiatury lub może skorzystać z ikony kalendarza image:Przelewy/image29.png[image,width=19,height=20].
+
+** *Referencje* - pole służące do definiowania własnego opisu dla danego przelewu przez Użytkownika, pole
+widoczne w aplikacji internetowej i nie jest przenoszone do systemu transakcyjnego, pole niewymagalne
+(dostępne w kontekście firmowym obszar mikro),
+
+** *Utwórz zlecenie stałe* - checkbox umożliwiający zdefiniowanie płatności cyklicznej; po jego zaznaczeniu pojawiają się dodatkowe pola:
+
+*** *Powtarzaj zlecenie co* - pole do określenia częstotliwości realizacji przelewu: +
+
+**** co: _dzień/miesiąc_ - opcje dostępne dla bankowości korzystającej z systemu transakcyjnego DefBank, +
+Domyślnie: _1 miesiąc_,
+
+**** co: _dzień/miesiąc/kwartał/rok_ - opcje dostępne dla bankowości korzystającej z systemu transakcyjnego def3000/CB, +
+Domyślnie: _1 miesiąc_,
+
+*** *Data zakończenia zlecenia* - w polu można określić datę zakończenia płatności po wybraniu ikony kalendarza image:Przelewy/image29.png[image,width=19,height=20] , bądź ustawić bezterminową realizację płatności zaznaczając checkbox *Bezterminowo* (checkbox domyślnie zaznaczony).
+
+image::Przelewy/image31.png[image,width=627,height=109]
+
+NOTE: W zależności od parametryzacji opcja *Zlecenie stałe* może być nieodstępna dla przelewu własnego wykonywanego z rachunku w walucie obcej lub na rachunek w walucie obcej. W takim przypadku checkbox *Zlecenie stałe* nie jest dostępny.
+
+Użytkownik przechodzi do drugiego kroku przelewu, za pomocą przycisków:
+
+* [Akceptuj] – przejście do autoryzacji przelewu (sprawdzenie schematu itd.),
+
+* [Dodaj do koszyka zleceń] – przycisk umożliwia zapisanie przelewu w _Koszyku zleceń_ w statusie _Nowy_.
+
+image::Przelewy/image32.png[image,width=285,height=144]
+
+Na formularzu potwierdzenia danych przelewu (krok 2) system wyświetla formularz z wprowadzonymi danymi w trybie podglądu wraz z zestawem akcji opisanych w rozdziale _Dostępne akcje na drugim kroku nowego przelewu._
+
+NOTE: Użycie ikony image:Przelewy/image41.png[image,width=29,height=24] powoduje powrót do pierwszego kroku i możliwość poprawy danych przelewu.
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, Użytkownikowi wyświetlane jest potwierdzenie przekazania dyspozycji do realizacji:
+
+image::Przelewy/image42.png[image,width=627,height=300]
+
+
+NOTE: *Przelew własny* - przelew pomiędzy rachunkami obsługiwanymi w Asseco EBP, do których Użytkownik ma nadany dostęp jako właściciel lub pełnomocnik.
+
+=== Zlecenie przelewu płatności VAT na rachunek własny
+
+Na formatce przelewu własnego opisanego w rozdziale *Zlecenie przelewu na rachunek własny*, istnieje możliwość zlecenia przelewu VAT między własnymi rachunkami. Przelew własny VAT możliwy jest wyłącznie z rachunku bieżącego na rachunek bieżący, do których przypisany jest rachunek VAT. W przypadku, gdy oba rachunki bieżące powiązane są z rachunkami VAT na formatce pojawia się checkbox *Wykonaj przelew między rachunkami VAT*. Zaznaczenie checboxa udostępnia dodatkowe pola dedykowane dla przelewu VAT:
+
+image::Przelewy/image43.png[image,width=627,height=526]
+
+* *Kwota VAT* - wartość kwoty VAT w walucie PLN,
+* *Przelew z rachunku VAT* - informacja o rachunku VAT powiązanym z rachunkiem bieżącym,
+* *Na rachunek VAT* - informacja o rachunku VAT, na który wykonywany jest przelew,
+* *Identyfikator podatnika* - identyfikator podatkowy dostawcy towaru lub usługodawcy, na rzecz którego realizowana jest faktura, pole wymagalne.
+
+=== Zlecenie przelewu podatkowego
+
+Złożenie zlecenia przelewu podatkowego jest możliwe w przypadku, gdy na formatce nowego przelewu Użytkownik wybierze zakładkę _Podatkowy_.
+
+image::Przelewy/image44.png[image,width=627,height=474]
+
+Następnie Użytkownik wypełnia poniższe dane:
+
+* *Z rachunku* - pole z listą rachunków do obciążenia, lista rachunków ograniczona jest tylko do rachunków prowadzonych w walucie PLN i takich, do którym Użytkownik ma dostęp; w polu podstawiany jest domyślny rachunek do obciążenia; pole wymagalne,
+* *Do* -  w tym miejscu Użytkownik wypełnia dane odbiorcy przelewu,
+
+** *Rodzaj formularza*- lista dostępnych symboli formularzy. Użytkownik może ręcznie wybrać formularz oraz wypełnić pozostałe dane lub wybrać odbiorcę z listy odbiorców za pomocą przycisku [*Wybierz odbiorcę*].
+
+** *Identyfikator podatnika* - pole wymagalne, wybór wartości z dostępnej listy rozwijanej:
+
+*** _Nip,_
+*** _Regon,_
+*** _Pesel,_
+*** _Dowód osobisty,_
+*** _Paszport,_
+*** _Inny dokument tożsamości,_
+
+** *Numer …* - w zależności od wybranego typu identyfikatora, w polu należy wprowadzić odpowiedni numer (jeśli Użytkownik posiada wymagane dane w bankowości, wówczas system automatycznie wypełni pole odpowiednim identyfikatorem); pole wymagalne,
+
+* *Szczegóły* – w tym miejscu Użytkownik wypełnia pozostałe dane:
+
+** *Kwota* - kwota przelewu, w walucie PLN,
+
+** *Identyfikator zobowiązania (opcjonalny)* - pole opcjonalne, maksymalna ilość znaków w polu wynosi 40,
+
+** *Data realizacji* - data realizacji przelewu; domyślnie wstawiana jest data bieżąca. +
+W przypadku wyboru daty przyszłej Użytkownik ma możliwość zmiany daty wprowadzając ją z klawiatury lub może skorzystać z ikony kalendarza image:Przelewy/image29.png[image,width=19,height=20].
+
+** *Referencje* - pole służące do definiowania własnego opisu dla danego przelewu przez Użytkownika, pole
+widoczne w aplikacji internetowej i nie jest przenoszone do systemu transakcyjnego, pole niewymagalne
+(dostępne w kontekście firmowym obszar mikro),
+
+Wybór rodzaju formularza wpływa na wyświetlenie dodatkowych opcji koniecznych do wypełnienia.
+
+{empty}1.  W przypadku wyboru formularza (np. CIT, PIT, VAT) przelew będzie wykonywany na indywidualny mikrorachunek podatkowy. +
+
+image::Przelewy/image45.png[image,width=548,height=145]
+
+System poinformuje Użytkownika, skąd można pobrać taki rachunek. Dodatkowo raz wprowadzony rachunek do systemu zostanie zapamiętany. Każdy kolejny przelew na mikrorachunek będzie skutkował automatycznym wypełnieniem pola *Numer Indywidualnego Rachunku Podatkowego*, pole jest edytowalne.
+
+NOTE: Indywidualny rachunek podatkowy podatnik generuje na stronie Ministerstwa Finansów pod adresem https://www.podatki.gov.pl/generator-mikrorachunku-podatkowego[_https://www.podatki.gov.pl/generator-mikrorachunku-podatkowego_]
+
+{empty}2.  Natomiast w przypadku wyboru formularza (np. PCC, BGK, MANDATY) przelew będzie wykonywany na rachunek organów podatkowych. W tym przypadku system zaprezentuje dodatkowe pola:
+
+* *Miasto* – Użytkownik wybiera miasto, w którym znajduje się Urząd Skarbowy, do którego przekazana ma być płatność z listy rozwijalnej (pole może zostać wypełnione automatycznie, gdy do danego rodzaju formularza jest przypisany tylko jeden Urząd Skarbowy); pole wymagalne,
+* *Organ podatkowy* - lista Urzędów Skarbowych dostępna po wprowadzeniu miasta Urzędu Skarbowego; wartości na liście zawężają się do właściwych dla wybranego miasta nazw organów podatkowych; pole wymagalne,
+* *Numer rachunku organu podatkowego* – w tym przypadku uzupełniany automatycznie.
+
+image::Przelewy/image46.png[image,width=340,height=212]
+
+{empty}3.  Niektóre rodzaje formularza wymagają uzupełnienia dodatkowych danych, system wyświetli je automatycznie:
+
+* *Okres* *rozliczeniowy* - pole wymagane, jeżeli zostanie wyświetlone przez system, zawiera listę rozwijalną z możliwością wyboru jednej z wartości: _Półrocze, Rok, Kwartał, Miesiąc, Dekada miesiąca, Dzień._
+image:Przelewy/image47.png[image,width=120,height=61]
+
+** Półrocze – należy wypełnić pole _Półrocze_ i _Rok_, +
+image:Przelewy/image48.png[image,width=222,height=61]
+** Rok – należy wypełnić pole _Rok_, +
+image:Przelewy/image49.png[image,width=184,height=63]
+** Kwartał – należy wypełnić pole _Kwartał_ i _Rok_, +
+image:Przelewy/image50.png[image,width=220,height=59]
+** Miesiąc - należy wypełnić pole _Miesiąc_ i _Rok_, +
+image:Przelewy/image51.png[image,width=220,height=61]
+** Dekada miesiąca - należy wypełnić pole _Dekada_, _Miesiąc_ i _Rok_, +
+image:Przelewy/image52.png[image,width=315,height=63]
+** Dzień – należy wypełnić pole _Dzień_, _miesiąc_ i _Rok_. +
+image:Przelewy/image53.png[image,width=317,height=61]
+
+NOTE: Wypełniając pola _Półrocze, Kwartał, Miesiąc, Dekada miesiąca, Dzień_ Użytkownik wprowadza odpowiednią liczbę, np. 3 dekada miesiąca. System automatycznie poprawi wartość na 03.
+
+NOTE: Nie jest możliwe utworzenie zlecenia stałego dla przelewu podatkowego.
+
+Użytkownik przechodzi do drugiego kroku przelewu, za pomocą przycisków:
+
+* [Akceptuj] – przejście do autoryzacji przelewu (sprawdzenie schematu itd.),
+
+* [Dodaj do koszyka zleceń] – przycisk umożliwia zapisanie przelewu w _Koszyku zleceń_ w statusie _Nowy_.
+
+image::Przelewy/image32.png[image,width=285,height=144]
+
+Na formularzu potwierdzenia danych przelewu (krok 2) system wyświetla formularz z wprowadzonymi danymi w trybie podglądu wraz z zestawem akcji opisanych w rozdziale _Dostępne akcje na drugim kroku nowego przelewu._
+
+NOTE: Użycie ikony image:Przelewy/image41.png[image,width=29,height=24] powoduje powrót do pierwszego kroku i możliwość poprawy danych przelewu.
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, Użytkownikowi wyświetlane jest potwierdzenie przekazania dyspozycji do realizacji:
+
+image::Przelewy/image54.png[image,width=627,height=359]
+
+=== Zlecenie przelewu podatkowego płatności VAT
+
+W przypadku gdy wskazany rachunek do obciążenia jest powiązany z rachunkiem VAT oraz jeżeli Użytkownik wybierze wpłatę na indywidualne mikrorachunki podatkowe (np. PIT/CIT/VAT), wówczas walidowane są dostępne środki z rachunku bieżącego i powiązanego z nim rachunku VAT oraz na formatce przelewu wyświetlony zostanie komunikat:
+
+image::Przelewy/image55.png[image,width=627,height=554]
+
+NOTE: Jeżeli na rachunku VAT są dostępne środki, to kwota przelewu zostanie pobrana z rachunku VAT.
+
+NOTE: Możliwość wykonania przelewu VAT z danego formularza, jest sterowana przez Symbole formularzy US w module Back_Office.
+
+=== Zlecenie przelewu walutowego (SWIFT)
+
+Złożenie zlecenia przelewu walutowego _SWIFT_ jest możliwe w przypadku, gdy na formatce nowego przelewu Użytkownik wybierze zakładkę _Walutowy._
+
+image::Przelewy/image56a.png[image,width=627,height=633]
+
+NOTE: Możliwość wyboru zrealizowania przelewu _SWIFT/SEPA_ na formatce przelewu jest dostępna dla bankowości korzystającej z systemu transakcyjnego def3000/CB oraz uzależniona jest od parametryzacji.
+
+Użytkownik wypełnia poniższe dane:
+
+* *Z rachunku* - pole z listą rachunków do obciążenia, w polu podstawiany jest domyślny rachunek do obciążenia, który można zmienić; pole wymagalne,
+* *Do –* w tym miejscu Użytkownik wypełnia dane odbiorcy przelewu,
+
+** *Odbiorca* - nazwa odbiorcy przelewu, wypełnione z klawiatury lub automatycznie uzupełnione w przypadku użycia [Wybierz odbiorcę]; pole wymagane,
+
+** *Miejscowość odbiorcy* - nazwa miejscowości odbiorcy, wypełnione z klawiatury lub automatycznie uzupełnione w przypadku użycia [Wybierz odbiorcę]; pole wymagane,
+
+** *Adres odbiorcy* - adres odbiorcy, wypełnione z klawiatury z podziałem na (ulica, nr domu, nr mieszkania, kod pocztowy) lub automatycznie uzupełnione w przypadku użycia [Wybierz odbiorcę]; pole opcjonalne,
+
+** *Sposób realizacji* – wybór pomiędzy _SWIFT_ i _SEPA_, w tym przypadku Użytkownik wybiera _SWIFT_ (opcja wyboru dostępna dla Użytkowników korzystających z systemu transakcyjnego def3000/CB),
+
+** *Numer rachunku* - numer rachunku odbiorcy przelewu walutowego, pole zostanie wypełnione automatycznie po wskazaniu odbiorcy z listy,
+
+** *Kraj banku odbiorcy* - wybór wartości ze słownika krajów dostępnego w module BackOffice. W przypadku wyboru kraju za pomocą klawiatury naciśnięcie klawisza przenosi zaznaczenie do pozycji odpowiadającej wybranej literze (np. F przy wyszukiwania Francji),
+
+** *Kod BIC/SWIFT* - Kod SWIFT banku (BIC Code), 8 lub 11 znaków. Jeżeli kod kraju występujący na pozycji 5,6 kodu BIC oznacza kraj stosujący IBAN to obowiązuje zgodność z kodem kraju zawartym w numerze rachunku beneficjenta, pole dostępne oraz wymagane w przypadku wyboru typu przelewu Walutowy _SWIFT_,
+
+* *Kwota przelewu –* w tym miejscu Użytkownik wypełnia dane dotyczące kwoty i waluty przelewu,
+
+** *Kwota* - kwota przelewu wraz z walutą; domyślnie wstawiana jest waluta EUR; W przypadku, gdy waluta przelewu jest inna niż waluta rachunku obciążanego system na drugim kroku przelewu zaprezentuje informację „Autoryzując przelew, wyrażasz zgodę na realizację przelewu po aktualnym kursie Banku.”
+
+** _Waluta_ - w polu dostępna jest lista walut, z której można wybrać walutę przelewu, w tym PLN,
+
+* *Szczegóły* – w tym miejscu Użytkownik wypełnia pozostałe dane,
+
+** *Tytuł przelewu* - pole automatycznie wypełnione „Money transfer”, edytowalne, tytuł płatności, pole może zawierać maksymalnie 140 znaków, dozwolone znaki w polu to cyfry i litery oraz znaki specjalne:  /-?:().,'+
+
+** *Kto pokrywa koszty* - opcja kosztów za wykonanie przelewu:
+
+*** _Współdzielone - Podział kosztów (sha)_ - wartość domyślna; opcja dla przelewu _Swift_, system prezentuje informację „Prowizję pobierzemy z *Nazwa rachunku”,*
+*** _Pokrywam ja - Koszty pokrywa zleceniodawca (our)_ - opcja dla przelewu _Swift_, system prezentuje informację „Prowizję pobierzemy z *Nazwa rachunku*”,
+
+** *Data realizacji* - data realizacji przelewu; domyślnie wstawiana jest data bieżąca. +
+W przypadku wyboru daty przyszłej Użytkownik ma możliwość zmiany daty wprowadzając ją z klawiatury lub może skorzystać z ikony kalendarza image:Przelewy/image29.png[image,width=19,height=20],
+
+** *Referencje* - pole służące do definiowania własnego opisu dla danego przelewu przez Użytkownika, pole
+widoczne w aplikacji internetowej i nie jest przenoszone do systemu transakcyjnego, pole niewymagalne
+(dostępne w kontekście firmowym obszar mikro).
+
+Użytkownik przechodzi do drugiego kroku przelewu, za pomocą przycisków:
+
+* [Akceptuj] – przejście do autoryzacji przelewu (sprawdzenie schematu itd.),
+
+* [Dodaj do koszyka zleceń] – przycisk umożliwia zapisanie przelewu w _Koszyku zleceń_ w statusie _Nowy_.
+
+image::Przelewy/image32.png[image,width=285,height=144]
+
+Na formularzu potwierdzenia danych przelewu (krok 2) system wyświetla formularz z wprowadzonymi danymi w trybie podglądu wraz z zestawem akcji opisanych w rozdziale _Dostępne akcje na drugim kroku nowego przelewu._
+
+NOTE: Użycie ikony image:Przelewy/image33.png[image,width=55,height=40] powoduje powrót do pierwszego kroku i poprawę danych przelewu.
+
+Dodatkowo na dole formatki wyświetlane są dane wymagane w ramach dyrektywy PSD - dostępne po rozwinięciu listy *Pokaż pełną informację o kosztach*, gdzie wyświetlone zostaną wszystkie koszty transakcji.
+
+image::Przelewy/image34.png[image,width=178,height=76]
+
+Po zatwierdzeniu lub akceptacji danych aktualnie posiadaną metodą autoryzacji, (jedna z akcji opisanych w *Dostępne akcje na drugim kroku nowego przelewu*), Użytkownikowi wyświetlane jest potwierdzenie przekazania dyspozycji do realizacji wraz z przyciskami:
+
+image::Przelewy/image57.png[image,width=627,height=364]
+
+* [Dodaj do listy odbiorców] – otwiera formatkę z danymi i umożliwia zapisanie danych odbiorcy przelewu,
+* [Wykonaj kolejny przelew] – otwiera formatkę dla utworzenia nowej płatności,
+* [Wróć do listy przelewów] - umożliwia powrót do listy przelewów,
+* [Wróć do pulpitu] - umożliwia powrót do pulpitu.
+
+=== Zlecenie przelewu walutowego (SEPA)
+
+Złożenie zlecenia przelewu walutowego _SEPA_ jest możliwe w przypadku gdy na formatce nowego przelewu Użytkownik wybierze zakładkę _Walutowy_ oraz zaznaczy checkbox SEPA.
+
+NOTE: Możliwość wyboru zrealizowania przelewu _SWIFT/SEPA_ jest dostępna dla bankowości korzystającej z systemu transakcyjnego def3000/CB oraz uzależniona jest od parametryzacji.
+
+Przelew _SEPA_:
+
+image::Przelewy/image58a.png[image,width=627,height=563]
+
+Użytkownik wypełnia poniższe dane:
+
+* *Z rachunku* - pole z listą rachunków do obciążenia, w polu podstawiany jest domyślny rachunek do obciążenia, który można zmienić; pole wymagalne,
+* *Do* - w tym miejscu Użytkownik wypełnia dane odbiorcy przelewu,
+
+** *Odbiorca* - nazwa odbiorcy przelewu, wypełnione z klawiatury lub automatycznie uzupełnione w przypadku użycia [Wybierz odbiorcę]; pole wymagane,
+
+** *Miejscowość odbiorcy* - nazwa miejscowości odbiorcy, wypełnione z klawiatury lub automatycznie uzupełnione w przypadku użycia [Wybierz odbiorcę]; pole wymagane,
+
+** *Adres odbiorcy* - adres odbiorcy, wypełnione z klawiatury z podziałem na (ulica, nr domu, nr mieszkania, kod pocztowy) lub automatycznie uzupełnione w przypadku użycia [Wybierz odbiorcę]; pole opcjonalne,
+
+** *Sposób realizacji* – wybór pomiędzy _SWIFT_ i _SEPA_, w tym przypadku Użytkownik wybiera _SEPA_,
+
+** *Numer rachunku* - numer rachunku odbiorcy przelewu walutowego, pole zostanie wypełnione automatycznie po wskazaniu odbiorcy w przypadku użycia [Wybierz odbiorcę].
+
+* *Kwota przelewu* - kwota przelewu wraz z walutą; w polu prezentowana jest wartość EUR (bez możliwości edycji). W przypadku gdy waluta przelewu jest inna niż waluta rachunku system na drugim kroku przelewu zaprezentuje komunikat: +
+
+image::Przelewy/image59.png[image,width=314,height=69]
+
+* *Szczegóły* – w tym miejscu Użytkownik wypełnia pozostałe dane,
+
+** *Tytuł przelewu* - pole automatycznie wypełnione „Money transfer”, edytowalne, tytuł płatności, pole może zawierać maksymalnie 140 znaków, dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: /-?:().,'+
+
+** *Kto pokrywa koszty* - opcja kosztów za wykonanie przelewu:
+
+*** _Współdzielone - Podział kosztów (sha)_ - wartość domyślna; pole nieedytowalne.
+
+** *Data realizacji* - data utworzenia przelewu; domyślnie wstawiana jest data bieżąca. +
+W przypadku wyboru daty przyszłej Użytkownik ma możliwość zmiany daty wprowadzając ją z klawiatury lub może skorzystać z ikony kalendarza image:Przelewy/image29.png[image,width=19,height=20].
+
+** *Referencje* - pole służące do definiowania własnego opisu dla danego przelewu przez Użytkownika, pole
+widoczne w aplikacji internetowej i nie jest przenoszone do systemu transakcyjnego, pole niewymagalne
+(dostępne w kontekście firmowym obszar mikro),
+
+
+Użytkownik przechodzi do drugiego kroku przelewu, za pomocą przycisków:
+
+* [Akceptuj] – przejście do autoryzacji przelewu (sprawdzenie schematu itd.),
+
+* [Dodaj do koszyka zleceń] – przycisk umożliwia zapisanie przelewu w _Koszyku zleceń_ w statusie _Nowy_.
+
+image::Przelewy/image32.png[image,width=285,height=144]
+
+Na formularzu potwierdzenia danych przelewu (krok 2) system wyświetla formularz z wprowadzonymi danymi w trybie podglądu wraz z zestawem akcji opisanych w rozdziale _Dostępne akcje na drugim kroku nowego przelewu._
+
+NOTE: Użycie ikony image:Przelewy/image33.png[image,width=55,height=40] powoduje powrót do pierwszego kroku i poprawę danych przelewu.
+
+Dodatkowo na dole formatki wyświetlane są dane wymagane w ramach dyrektywy PSD - dostępne po rozwinięciu listy *Pokaż pełną informację o kosztach*, gdzie wyświetlone zostaną wszystkie koszty transakcji.
+
+image::Przelewy/image34.png[image,width=178,height=76]
+
+Po zatwierdzeniu lub akceptacji danych aktualnie posiadaną metodą autoryzacji, (jedna z akcji opisanych w *Dostępne akcje na drugim kroku nowego przelewu*), Użytkownikowi wyświetlane jest potwierdzenie przekazania dyspozycji do realizacji wraz z przyciskami:
+
+image::Przelewy/image60.png[image,width=627,height=367]
+
+* [Dodaj do listy odbiorców] – otwiera formatkę z danymi i umożliwia zapisanie danych odbiorcy przelewu,
+* [Wykonaj kolejny przelew] – otwiera formatkę dla utworzenia nowej płatności,
+* [Wróć do listy przelewów] - umożliwia powrót do listy przelewów,
+* [Wróć do pulpitu] - umożliwia powrót do pulpitu.
+
+=== Nowy sposób zlecenia przelewu walutowego
+
+Dotępność nowego sposobu zlecenia przelewu walutowego jest uzależniona od parametryzacji banku.
+
+Złożenie zlecenia przelewu walutowego jest możliwe w przypadku, gdy na formatce nowego przelewu Użytkownik wybierze zakładkę _Walutowy._
+
+image::Przelewy/image1pwa.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, wyświetlacz Opis wygenerowany automatycznie,width=604,height=550]
+
+Użytkownik wypełnia poniższe dane:
+
+* *Z rachunku* - pole z listą rachunków do obciążenia, w polu podstawiany jest domyślny rachunek do obciążenia, który można zmienić; pole wymagalne,
+* *Do* – w tym miejscu Użytkownik wypełnia dane odbiorcy przelewu,
+** *Odbiorca* - nazwa odbiorcy przelewu, wypełnione z klawiatury lub automatycznie uzupełnione w przypadku użycia [Wybierz odbiorcę]; pole wymagane,
+** *Miejscowość odbiorcy* - nazwa miejscowości odbiorcy, wypełnione z klawiatury lub automatycznie uzupełnione w przypadku użycia [Wybierz odbiorcę]; pole wymagane,
+** *Adres odbiorcy* - adres odbiorcy, wypełnione z klawiatury z podziałem na (ulica, nr domu, nr mieszkania, kod pocztowy) lub automatycznie uzupełnione w przypadku użycia [Wybierz odbiorcę]; pole opcjonalne,
+** *Numer rachunku* - numer rachunku odbiorcy przelewu walutowego, pole zostanie wypełnione automatycznie po wskazaniu odbiorcy z listy,
+* *Szczegóły* – w tym miejscu Użytkownik wypełnia pozostałe dane,
+** *Kwota* - kwota przelewu wraz z walutą; domyślnie wstawiana jest waluta EUR;
+** _Waluta_ - w polu dostępna jest lista walut, z której można wybrać walutę przelewu, w tym PLN,
+
+W przypadku, gdy waluta przelewu jest inna niż waluta rachunku obciążanego system zaprezentuje informację dotycząca równowartości kwoty przelewu oraz aktualnego kursu sprzedaży. Informacja dostępna dla bankowości korzystającej z systemu transakcyjnego DefBank.
+
+image::Przelewy/image2pw.png[Obraz zawierający tekst, zrzut ekranu, Czcionka, linia Opis wygenerowany automatycznie,width=264,height=116]
+
+Dodatkowo istnieje możliwość negocjowania kursu, funkcjonalność dostępna dla bankowości korzystającej z systemu transakcyjnego DefBank (opcja parametryzowana i wyświetlana w zależności od waluty i kwoty granicznej).
+
+image::Przelewy/image3pw.png[Obraz zawierający tekst, zrzut ekranu, Czcionka, wyświetlacz Opis wygenerowany automatycznie,width=360,height=162]
+
+Po zaznaczeniu checkboxa, na drugim kroku przelewu wyświetli się informacja, że bank skontaktuje się z Użytkownikiem w celu ustalenia kursu.
+
+image::Przelewy/image4pw.png[Obraz zawierający tekst, zrzut ekranu, Czcionka Opis wygenerowany automatycznie,width=368,height=108]
+
+* *Tytuł przelewu* - pole automatycznie wypełnione „Money transfer”, edytowalne, tytuł płatności, pole może zawierać maksymalnie 140 znaków, dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: /-?:().,'+
+
+Po wpisaniu numeru rachunku oraz waluty przelewu system automatycznie rozpozna sposób realizacji przelewu walutowego.
+
+Możliwe sposoby realizacji i dodatkowe pola prezentowane na formatce:
+
+. Przelew SEPA/SWIFT – system proponuje dwa sposoby realizacji do wyboru, Użytkownik wybiera SEPA
+
+image::Przelewy/image5pwa.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, System operacyjny Opis wygenerowany automatycznie,width=604,height=697]
+
+Użytkownik wypełnia pola:
+
+* *Rodzaj przelewu* – jeśli dane przelewu spełniają wymogi zarówno przelewu SEPA i SWIFT – system zaprezentuje obie opcje do wyboru,
+* *Sposób realizacji* - możliwość wyboru jednego ze sposobów (opcje do wyboru mogą różnić się ze względu na parametryzację w danym banku). Opis sposobów realizacji został przedstawiony w rozdziale _Zlecenie przelewu zwykłego krajowego,_
+* *Data realizacji* - data realizacji przelewu; domyślnie wstawiana jest data bieżąca. W przypadku wyboru daty przyszłej Użytkownik ma możliwość zmiany daty wprowadzając ją z klawiatury lub może skorzystać z ikony kalendarza image:Przelewy/image6pw.png[image,width=19,height=20],
+* *Kto pokrywa koszty za przelew walutowy* - opcja kosztów za wykonanie przelewu:
+** _Współdzielone - Podział kosztów (SHA)_ - wartość domyślna; pole nieedytowalne.
+
+NOTE: Wybór opcji kosztów może różnić się w zależności od systemu transakcyjnego i jego parametryzacji.
+
+* *Łączny koszt przelewu* – system wyświetla koszt przelewu, informacja dostępna dla bankowości korzystającej z systemu transakcyjnego DefBank.
+
+* *Rachunek do pokrycia kosztów przelewu* - pole z listą rachunków do obciążenia; pole wymagalne, pole dostępne dla bankowości korzystającej z systemu transakcyjnego def3000/CB.
+
+* *Referencje* - pole służące do definiowania własnego opisu dla danego przelewu przez Użytkownika, pole widoczne w aplikacji internetowej i nie jest przenoszone do systemu transakcyjnego, pole niewymagalne (dostępne w kontekście firmowym obszar mikro).
+
+
+NOTE: Użytkownik przechodząc dalej za pomocą przycisku [Akceptuj] oświadcza, że Bank przekazał mu regulamin zawierania transakcji wymiany walutowej.
+
+[start=2]
+. Przelew SEPA/SWIFT – system proponuje dwa sposoby realizacji do wyboru, Użytkownik wybiera SWIFT
+
+image::Przelewy/image7pwa.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, System operacyjny Opis wygenerowany automatycznie,width=604,height=645]
+
+Użytkownik wypełnia pola:
+
+* *Rodzaj przelewu* jeśli dane przelewu spełniają wymogi zarówno przelewu SEPA i SWIFT – system zaprezentuje obie opcje do wyboru,
+* *Sposób realizacji* - możliwość wyboru jednego ze sposobów (opcje do wyboru mogą różnić się ze względu na parametryzację w danym banku). Opis sposobów realizacji został przedstawiony w rozdziale _Zlecenie przelewu zwykłego krajowego._
+* *Data realizacji* - data realizacji przelewu; domyślnie wstawiana jest data bieżąca. W przypadku wyboru daty przyszłej Użytkownik ma możliwość zmiany daty wprowadzając ją z klawiatury lub może skorzystać z ikony kalendarza image:Przelewy/image6pw.png[image,width=19,height=20],
+* *Kto pokrywa koszty za przelew walutowy* - opcja kosztów za wykonanie przelewu, Użytkownik może wybrać z listy wybieralnej jedną z dostępnych pozycji: +
+image:Przelewy/image8pw.png[Obraz zawierający tekst, Czcionka, zrzut ekranu Opis wygenerowany automatycznie,width=208,height=104]
+** _Współdzielone - Podział kosztów (SHA)_ - wartość domyślna,
+** _Koszty pokrywa odbiorca (BEN),_
+** _Pokrywam ja - Koszty pokrywa zleceniodawca (OUR)._
+
+NOTE: Wybór opcji kosztów może różnić się w zależności od systemu transakcyjnego i jego parametryzacji.
+
+* *Rachunek do pokrycia kosztów przelewu* - pole z listą rachunków do obciążenia; pole wymagalne, pole dostępne dla bankowości korzystającej z systemu transakcyjnego def3000/CB.
+
+* *Referencje* - pole służące do definiowania własnego opisu dla danego przelewu przez Użytkownika, pole widoczne w aplikacji internetowej i nie jest przenoszone do systemu transakcyjnego, pole niewymagalne (dostępne w kontekście firmowym obszar mikro).
+
+NOTE: Użytkownik przechodząc dalej za pomocą przycisku [Akceptuj] oświadcza, że Bank przekazał mu regulamin zawierania transakcji wymiany walutowej.
+
+[start=3]
+. Przelew SWIFT - system proponuje jeden sposób realizacji
+
+System w dwóch przypadkach zaprezentuje sposób realizacji SWIFT (bez możliwości zmiany):
+
+[loweralpha]
+. NRB odbiorcy jest spoza terenu jednolitego obszaru płatności w euro (SEPA),
+. Użytkownik wybierze walutę przelewu inną niż EUR.
+
+image::Przelewy/image9pwa.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=592,height=439]
+
+Użytkownikowi mogą wyświetlić się dodatkowe pola do wypełnienia:
+
+* *Kod BIC/SWIFT* - kod SWIFT banku (BIC Code), 8 lub 11 znaków. Jeżeli kod kraju występujący na pozycji 5,6 kodu BIC oznacza kraj stosujący IBAN to obowiązuje zgodność z kodem kraju zawartym w numerze rachunku beneficjenta.
+
+NOTE: System wylicza kod BIC/SWIFT i nie prezentuje tego pola Użytkownikowi, jednak istnieje możliwość, że system wyświetli pole do wprowadzenie kodu przez Użytkownika.
+
+image::Przelewy/image10pw.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, wyświetlacz Opis wygenerowany automatycznie,width=604,height=473]
+
+Po wpisaniu kodu Użytkownik przejdzie do wypełnienia formatki przelewu dla SWIFT.
+
+image::Przelewy/image11pw.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, wyświetlacz Opis wygenerowany automatycznie,width=604,height=695]
+
+NOTE: Użytkownik przechodząc dalej za pomocą przycisku [Akceptuj] oświadcza, że Bank przekazał mu regulamin zawierania transakcji wymiany walutowej.
+
+Użytkownik przechodzi do drugiego kroku przelewu, za pomocą przycisków:
+
+* [Akceptuj] – przejście do autoryzacji przelewu (sprawdzenie schematu itd.),
+* [Dodaj do koszyka zleceń] – przycisk umożliwia zapisanie przelewu w _Koszyku zleceń_ w statusie _Nowy_.
+
+image::Przelewy/image12pwa.png[image,width=288,height=146]
+
+Na formularzu potwierdzenia danych przelewu (krok 2) system wyświetla formularz z wprowadzonymi danymi w trybie podglądu wraz z zestawem akcji opisanych w rozdziale _Dostępne akcje na drugim kroku nowego przelewu._
+
+Wyświetlane dane będą się różnić ze względu na system transakcyjny z którego korzysta bankowość oraz wybranych opcji przelewu. Przykładowe dane poniżej:
+
+[loweralpha]
+. defBank
+
+image::Przelewy/image13pw.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, wyświetlacz Opis wygenerowany automatycznie,width=604,height=381]
+
+
+[loweralpha, start=2]
+. def3000/CB
+
+image::Przelewy/image14pw.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Strona internetowa Opis wygenerowany automatycznie,width=604,height=402]
+
+Po zatwierdzeniu lub akceptacji danych aktualnie posiadaną metodą autoryzacji (jedna z akcji opisanych w *Dostępne akcje na drugim kroku nowego przelewu*), Użytkownikowi wyświetlane jest potwierdzenie przekazania dyspozycji do realizacji wraz z przyciskami:
+
+image::Przelewy/image15pw.png[image,width=604,height=388]
+
+• [Dodaj do listy odbiorców] – otwiera formatkę z danymi i umożliwia zapisanie danych odbiorcy przelewu,
+
+• [Wykonaj kolejny przelew] – otwiera formatkę dla utworzenia nowej płatności,
+
+• [Wróć do listy przelewów] - umożliwia powrót do listy przelewów,
+
+• [Wróć do pulpitu] - umożliwia powrót do pulpitu.
+
+=== Nowy standard w formatach płatności
+
+Zmiany w sposobie wprowadzania danych adresowych odbiorcy podczas zlecania przelewu są uzależnione od parametryzacji banku.
+
+Zmienią się m.in.:
+
+* *formatki przelewów krajowych i zagranicznych: SEPA, SWIFT* będą miały więcej pól do uzupełnienia,
+
+. Przelew zwykły Sorbnet – dane adresowe odbiorcy będą Państwo wpisywać w oddzielne pola (kod pocztowy, miasto, ulica, nr domu
+
+image::Przelewy/imageiso01.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=592,height=439]
+
+** *Dodaj adres odbiorcy* - wypełnione z klawiatury (ulicę, nr domu, nr mieszkania, kod pocztowy, miejscowość); pole opcjonalne, jednak wskazanie miejscowości jest obowiązkowe.
+
+[start=2]
+. Przelew SEPA/SWIFT – dane adresowe odbiorcy będą Państwo wpisywać w oddzielne pola (kod pocztowy, miasto, ulica, nr domu
+
+image::Przelewy/imageiso02.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=592,height=439]
+
+** *Miejscowość odbiorcy* - nazwa miejscowości odbiorcy, wypełnione z klawiatury; pole wymagane,
+
+** *Dodaj adres odbiorcy* - wypełnione z klawiatury (ulicę, nr domu, nr mieszkania, kod pocztowy); pole opcjonalne.
+
+[start=3]
+. Odbiorca z szablonu zwykły Sorbnet
+
+Jeżeli użytkownik skorzysta z szablonu przelewu, w którym dane odbiorcy są niekompletne, system wyświetli komunikat informujący o brakujących informacjach oraz zaprezentuje formularz umożliwiający ich ponowne wprowadzenie.
+
+image::Przelewy/imageiso03.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=592,height=439]
+
+[start=4]
+. Odbiorca z szablonu walutowego
+
+Jeżeli użytkownik skorzysta z szablonu przelewu, w którym dane odbiorcy są niekompletne, system wyświetli komunikat informujący o brakujących informacjach oraz zaprezentuje formularz umożliwiający ich ponowne wprowadzenie.
+
+image::Przelewy/imageiso04.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=592,height=439]
+
+== Anulowanie przelewu odroczonego
+
+W celu anulowania wybranego przelewu odroczonego należy na liście przelewów _Oczekujących_ wybrać przelew odroczony, a następnie użyć przycisk [Anuluj przelew].
+
+image::Przelewy/image61.png[image,width=627,height=225]
+
+Zostanie zaprezentowana formatka anulowania przelewu odroczonego. W celu ostatecznego anulowania przelewu odroczonego należy zaakceptować anulowanie płatności aktualnie posiadaną metodą autoryzacji.
+
+== Anulowanie zlecenia stałego
+
+W celu anulowania wybranego zlecenia stałego należy na liście przelewów w przelewach _Oczekujących_ lub _Zleceniach stałych_ wybrać przelew, a następnie użyć przycisk [Anuluj zlecenie stałe].
+
+image::Przelewy/image62.png[image,width=627,height=177]
+
+Zostanie zaprezentowana formatka anulowania zlecenia stałego. W celu ostatecznego anulowania zlecenia należy zaakceptować anulowanie płatności aktualnie posiadaną metodą autoryzacji.
+
+== Edycja przelewu odroczonego
+
+W celu edytowania wybranego przelewu odroczonego należy na liście przelewów _Oczekujących_ wybrać przelew odroczony, a następnie użyć przycisk [Edytuj przelew].
+
+image::Przelewy/image63.png[image,width=627,height=225]
+
+Zostanie zaprezentowana formatka edycji przelewu odroczonego. W celu akceptacji zmodyfikowanego przelewu odroczonego należy zaakceptować edycję płatności aktualnie posiadaną metodą autoryzacji.
+
+== Edycja zlecenia stałego
+
+NOTE: Edycja zlecenia stałego jest uzależniona od parametryzacji banku.
+
+W celu edytowania wybranego zlecenia stałego należy na liście przelewów w przelewach _Oczekujących_ lub _Zleceniach stałych_ wybrać przelew, a następnie użyć przycisk [Edytuj zlecenie stałe].
+
+image::Przelewy/image64.png[image,width=627,height=177]
+
+Zostanie zaprezentowana formatka edycji zlecenia stałego. W celu akceptacji zmodyfikowanego zlecenia należy zaakceptować edycję płatności aktualnie posiadaną metodą autoryzacji.
+
+== Potwierdzenie dyspozycji
+
+W celu pobrania potwierdzenia złożenia dyspozycji wybranego przelewu należy na liście przelewów _Oczekujących_ wybrać przelew, a następnie przycisk [Pobierz potwierdzenie dyspozycji].
+
+image::Przelewy/image65.png[image,width=627,height=225]
+
+NOTE: Pobranie potwierdzenia złożenia dyspozycji, nie jest możliwe dla przelewów cyklicznych oraz jest uzależnione od parametryzacji.
+
+== Dodawanie odbiorcy
+
+=== Dodanie odbiorcy przelewu zwykłego
+
+Dodanie nowego odbiorcy przelewu zwykłego jest możliwe w przypadku, gdy na formatce nowego odbiorcy Użytkownik wybierze przelew _Zwykły_.
+
+image::Przelewy/image66.png[image,width=627,height=295]
+
+Następnie Użytkownik wypełnia dane odbiorcy:
+
+* *Twoja nazwa odbiorcy -* nazwa własna odbiorcy; pole wymagalne. Podczas zapisu danych odbiorcy kontrolowana jest unikalność nazwy. W przypadku wprowadzenia nazwy, która już istnieje wyświetlany jest komunikat: _Nazwa własna odbiorcy aktualnie istnieje_,
+* *Rodzaj przelewu -* tutaj Użytkownik wybiera rodzaj przelewu z listy rozwijalnej,
+* *Odbiorca –* Użytkownik wypełnia imię i nazwisko odbiorcy, pole wymagalne,
+* *Dodaj adres odbiorcy –* pole opcjonalne, umożliwia dodanie adresu odbiorcy w oddzielne pola (kod pocztowy, miasto, ulica, nr domu).
+
+image::Przelewy/image67a.png[image,width=370,height=92]
+
+* *Numer rachunku* - numer rachunku odbiorcy; pole wymagane.
+
+* *Dodaj dane do przelewu* - checkbox umożliwia dodanie dodatkowych danych odbiorcy,
+image:Przelewy/image69.png[image,width=627,height=145]
+** *Z rachunku* – numer rachunku nadawcy, z którego będzie wykonywany przelew do zdefiniowanego odbiorcy. +
+Jeśli Użytkownik zapisze dane *Z rachunku* system podczas zakładania nowego przelewu poinformuje o zmianie rachunku nadawcy. +
+image:Przelewy/image70.png[image,width=378,height=60]
+
+** *Kwota* - kwota przelewu (pole niedostępne, jeśli wybierzemy przelew VAT),
+** *Tytuł przelewu* - tytuł przelewu, pole może zawierać maksymalnie 140 znaków, pole opcjonalne, dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: `!@#$%^&*()_+-=\\\{}[]:;'<>?,./\äÄöÖüÜß
+
+* *Oznacz jako płatność podzielona (split payment)* - checkbox dostępny w przypadku posiadania przez Użytkownika rachunku VAT, umożliwia zdefiniowanie odbiorcy przelewu dla przelewów VAT (opcja dostępna dla kontekstu indywidualnego i fimowego w obszarach mikro). Zaznaczenie checkboxa prezentuje na formatce dodatkowe pola: +
+image:Przelewy/image68.png[image,width=276,height=267]
+** *Kwota Brutto* – kwota brutto w PLN
+** *Kwota VAT* - kwota podatku VAT w PLN (z dodatkową informacją: "Jeśli przelewasz na własny rachunek VAT kwota brutto musi się równać kwocie VAT"),
+** *Numer faktury* - numer faktury, za którą dokonywana jest płatność (z dodatkową informacją: "Jeśli przelewasz na własny rachunek VAT wpisz PRZEKAZANIE WŁASNE"),
+** *Identyfikator podatnika* - identyfikator podatkowy dostawcy towaru lub usługodawcy na rzecz którego realizowana jest faktura,
+
+* *Oznacz jako odbiorca zaufany* – checkbox umożliwia dodanie odbiorcy zaufanego, przelew do tak zdefiniowanego odbiorcy nie będzie wymagał autoryzacji, a pola dotyczące danych odbiorcy będą nieedytowalne podczas wprowadzania przelewu.
+
+image::Przelewy/image71.png[image,width=387,height=84]
+
+Na formularzu dostępny jest przycisk:
+
+* [Akceptuj] – umożliwia przejście do kroku 2.
+
+Po wprowadzeniu danych odbiorcy za pomocą przycisku [Akceptuj] należy przejść do formularza potwierdzenia danych (krok 2).
+
+NOTE: Użycie ikony image:Przelewy/image72.png[image,width=33,height=28] powoduje powrót do pierwszego kroku i poprawę danych odbiorcy przelewu.
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, odbiorca zostaje utworzony (pojawia się na liście Odbiorców), a system wyświetla potwierdzenie dodania odbiorcy wraz z przyciskami:
+
+image::Przelewy/image73.png[image,width=627,height=290]
+
+* [Dodaj nowego odbiorcę] – umożliwia przejście do formatki utworzenia nowego odbiorcy.
+* [Wróć do listy odbiorców] – umożliwia przejście do listy Odbiorców,
+* [Wróć do pulpitu] - umożliwia powrót do pulpitu.
+
+=== Dodanie odbiorcy przelewu walutowego SWIFT
+
+Dodanie nowego odbiorcy przelewu walutowego jest możliwe w przypadku gdy na formatce Użytkownik wybierze przelew _Walutowy_.
+
+NOTE: Możliwość wyboru dodania odbiorcy _SWIFT/SEPA_ na formatce jest dostępna dla bankowości korzystającej z systemu transakcyjnego def3000/CB oraz uzależniona jest od parametryzacji.
+
+image::Przelewy/image74.png[image,width=627,height=404]
+
+Następnie Użytkownik wypełnia dane odbiorcy:
+
+* *Twoja nazwa odbiorcy -* nazwa własna odbiorcy; pole wymagalne. Podczas zapisu danych odbiorcy kontrolowana jest unikalność nazwy. W przypadku wprowadzenia nazwy, która już istnieje wyświetlany jest komunikat: _Nazwa własna odbiorcy aktualnie istnieje_,
+* *Rodzaj przelewu -* tutaj Użytkownik wybiera rodzaj przelewu z listy rozwijalnej,
+* *Odbiorca –* Użytkownik wypełnia imię i nazwisko odbiorcy, pole wymagalne,
+* *Miejscowość odbiorcy* - Użytkownik wypełnia miejscowość odbiorcy , pole wymagane
+* *Adres odbiorcy –* adres odbiorcy przelewu w oddzielne pola (kod pocztowy, ulica, nr domu), pole obligatoryjne, +
+
+image::Przelewy/image67b.png[image,width=370,height=92]
+
+* *Sposób realizacji –* w tym przypadku Użytkownik wybiera SWIFT (opcja wyboru dostępna dla bankowości korzystającej z systemu transakcyjnego def3000/CB oraz uzależniona jest od parametryzacji),
+
+* *Numer rachunku* - numer rachunku odbiorcy; pole wymagane,
+* *Kraj banku odbiorcy* - wybór wartości ze słownika krajów dostępnego w module BackOffice. W przypadku wyboru kraju za pomocą klawiatury naciśnięcie klawisza przenosi zaznaczenie do pozycji odpowiadającej wybranej literze (np. F przy wyszukiwania Francji),
+* *Kod BIC/SWIFT* - kod SWIFT banku (BIC Code), 8 lub 11 znaków. Jeżeli kod kraju występujący na pozycji 5,6 kodu BIC oznacza kraj stosujący IBAN to obowiązuje zgodność z kodem kraju zawartym w numerze rachunku beneficjenta,
+* Dodaj dane przelewu (opcjonalnie) - checkbox umożliwia dodanie dodatkowych danych odbiorcy,
+image:Przelewy/image75.png[image,width=387,height=267]
+** *Z rachunku* – numer rachunku nadawcy, z którego będzie wykonywany przelew do zdefiniowanego odbiorcy. +
+Jeśli Użytkownik zapisze dane *Z rachunku* system podczas zakładania nowego przelewu poinformuje o zmianie rachunku nadawcy. +
+image:Przelewy/image70.png[image,width=378,height=60]
+
+** *Kwota* - kwota przelewu wraz z walutą; domyślnie wstawiana jest waluta EUR, z możliwością zmiany (lista rozwijalna),
+** *Tytuł przelewu* - tytuł przelewu, pole może zawierać maksymalnie 140 znaków, pole opcjonalne, dozwolone znaki w polu to cyfry i litery oraz znaki specjalne:  /-?:().,'+
+** *Kto pokrywa koszty* - opcja kosztów za wykonanie przelewu:
+
+*** _Współdzielone - Podział kosztów (sha)_ - wartość domyślna; opcja dla przelewu _Swift_,
+
+*** _Pokrywam ja - Koszty pokrywa zleceniodawca (our)_ - opcja dla przelewu _Swift_,
+
+* *Oznacz jako odbiorca zaufany* – checkbox umożliwia dodanie odbiorcy zaufanego, przelew do tak zdefiniowanego odbiorcy nie będzie wymagał autoryzacji, a pola dotyczące danych odbiorcy będą nieedytowalne podczas wprowadzania przelewu.
+
+image::Przelewy/image71.png[image,width=387,height=84]
+
+Na formularzu dostępny jest przycisk:
+
+* [Akceptuj] – umożliwia przejście do kroku 2.
+
+Po wprowadzeniu danych odbiorcy za pomocą przycisku [Akceptuj] należy przejść do formularza potwierdzenia danych (krok 2).
+
+NOTE: Użycie ikony image:Przelewy/image72.png[image,width=33,height=28] powoduje powrót do pierwszego kroku i poprawę danych odbiorcy przelewu.
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, odbiorca zostaje utworzony (pojawia się na liście Odbiorców), a system wyświetla potwierdzenie dodania odbiorcy wraz z przyciskami:
+
+image::Przelewy/image76.png[image,width=627,height=291]
+
+* [Dodaj nowego odbiorcę] – umożliwia przejście do formatki utworzenia nowego odbiorcy.
+* [Wróć do listy odbiorców] – umożliwia przejście do listy Odbiorców,
+* [Wróć do pulpitu] - umożliwia powrót do pulpitu.
+
+=== Dodanie odbiorcy przelewu walutowego SEPA
+
+Dodanie nowego odbiorcy przelewu walutowego jest możliwe w przypadku gdy na formatce Użytkownik wybierze przelew _Walutowy_.
+
+NOTE: Możliwość wyboru dodania odbiorcy _SEPA_ na formatce jest dostępna dla bankowości korzystającej z systemu transakcyjnego def3000/CB oraz uzależniona jest od parametryzacji.
+
+image::Przelewy/image77.png[image,width=627,height=333]
+
+Następnie Użytkownik wypełnia dane odbiorcy:
+
+* *Twoja nazwa odbiorcy* - nazwa własna odbiorcy; pole wymagalne. Podczas zapisu danych odbiorcy kontrolowana jest unikalność nazwy. W przypadku wprowadzenia nazwy, która już istnieje wyświetlany jest komunikat: _Nazwa własna odbiorcy aktualnie istnieje_,
+* *Rodzaj przelewu* - tutaj Użytkownik wybiera rodzaj przelewu z listy rozwijalnej,
+* *Odbiorca* - Użytkownik wypełnia imię i nazwisko odbiorcy, pole wymagalne,
+* *Miejscowość odbiorcy* - Użytkownik wypełnia miejscowość odbiorcy , pole wymagane
+* *Adres odbiorcy* - adres odbiorcy przelewu w oddzielne pola (kod pocztowy, ulica, nr domu), pole obligatoryjne, +
+
+image::Przelewy/image67b.png[image,width=370,height=92]
+
+* *Sposób realizacji –* w tym przypadku Użytkownik wybiera SEPA.
+* *Numer rachunku* - numer rachunku odbiorcy; pole wymagane,
+* Dodaj dane przelewu (opcjonalnie) - checkbox umożliwia dodanie dodatkowych danych odbiorcy,
+image:Przelewy/image78.png[image,width=389,height=272]
+
+** *Z rachunku* – numer rachunku nadawcy, z którego będzie wykonywany przelew do zdefiniowanego odbiorcy. +
+Jeśli Użytkownik zapisze dane *Z rachunku* system podczas zakładania nowego przelewu poinformuje o zmianie rachunku nadawcy. +
+image:Przelewy/image70.png[image,width=378,height=60]
+
+** *Kwota* - kwota przelewu wraz z walutą w EUR;
+
+** *Tytuł przelewu* - tytuł przelewu, pole może zawierać maksymalnie 140 znaków, pole opcjonalne, dozwolone znaki w polu to cyfry i litery oraz znaki specjalne:  /-?:().,'+
+
+** *Kto pokrywa koszty* - opcja kosztów za wykonanie przelewu:
+
+*** _Współdzielone - Podział kosztów (sha)_ - wartość domyślna; opcja dla przelewu _SEPA_,
+
+*Oznacz jako odbiorca zaufany* – checkbox umożliwia dodanie odbiorcy zaufanego, przelew do tak zdefiniowanego odbiorcy nie będzie wymagał autoryzacji, a pola dotyczące danych odbiorcy będą nieedytowalne podczas wprowadzania przelewu.
+
+image::Przelewy/image71.png[image,width=387,height=84]
+
+Na formularzu dostępny jest przycisk:
+
+* [Akceptuj] – umożliwia przejście do kroku 2.
+
+Po wprowadzeniu danych odbiorcy za pomocą przycisku [Akceptuj] należy przejść do formularza potwierdzenia danych (krok 2).
+
+NOTE: Użycie ikony image:Przelewy/image72.png[image,width=33,height=28] powoduje powrót do pierwszego kroku i poprawę danych odbiorcy przelewu.
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, odbiorca zostaje utworzony (pojawia się na liście Odbiorców), a system wyświetla potwierdzenie dodania odbiorcy wraz z przyciskami:
+
+image::Przelewy/image79.png[image,width=627,height=288]
+
+* [Dodaj nowego odbiorcę] – umożliwia przejście do formatki utworzenia nowego odbiorcy.
+* [Wróć do listy odbiorców] – umożliwia przejście do listy Odbiorców,
+* [Wróć do pulpitu] - umożliwia powrót do pulpitu.
+
+=== Nowy sposób dodania odbiorcy przelewu walutowego
+
+Dotępność nowego sposobu dodania odbiorcy przelewu walutowego jest uzależniona od parametryzacji banku.
+
+Dodanie nowego odbiorcy przelewu walutowego jest możliwe w przypadku, gdy na formatce Użytkownik wybierze przelew _Walutowy_.
+
+image::Przelewy/image16pwa.png[image,width=604,height=378]
+
+Następnie Użytkownik wypełnia dane odbiorcy:
+
+* *Twoja nazwa odbiorcy* - nazwa własna odbiorcy; pole wymagalne. Podczas zapisu danych odbiorcy kontrolowana jest unikalność nazwy. W przypadku wprowadzenia nazwy, która już istnieje wyświetlany jest komunikat: _Nazwa własna odbiorcy aktualnie istnieje_,
+* *Rodzaj przelewu* - tutaj Użytkownik wybiera rodzaj przelewu z listy rozwijalnej,
+* *Odbiorca* - Użytkownik wypełnia imię i nazwisko odbiorcy, pole wymagalne,
+* *Miejscowość odbiorcy* - Użytkownik wypełnia miejscowość odbiorcy , pole wymagane
+* *Adres odbiorcy* - adres odbiorcy przelewu w oddzielne pola (kod pocztowy, ulica, nr domu), pole obligatoryjne, +
+* *Numer rachunku* - numer rachunku odbiorcy; pole wymagane,
+* *Kod BIC/SWIFT* - kod SWIFT banku (BIC Code), 8 lub 11 znaków. Jeżeli kod kraju występujący na pozycji 5,6 kodu BIC oznacza kraj stosujący IBAN to obowiązuje zgodność z kodem kraju zawartym w numerze rachunku beneficjenta, pole opcjonalne,
+* Dodaj dane przelewu (opcjonalnie) - checkbox umożliwia dodanie dodatkowych danych odbiorcy,
+
+image::Przelewy/image17pw.png[Obraz zawierający tekst, zrzut ekranu, wyświetlacz, oprogramowanie Opis wygenerowany automatycznie,width=359,height=204]
+
+* *Z rachunku* – numer rachunku nadawcy, z którego będzie wykonywany przelew do zdefiniowanego odbiorcy. +
+
+Jeśli Użytkownik zapisze dane *Z rachunku* system podczas zakładania nowego przelewu poinformuje o zmianie rachunku nadawcy. +
+
+image::Przelewy/image18pw.png[image,width=381,height=60]
+
+* *Kwota* - kwota przelewu wraz z walutą; domyślnie wstawiana jest waluta EUR, z możliwością zmiany (lista rozwijalna),
+* *Tytuł przelewu* - tytuł przelewu, pole może zawierać maksymalnie 140 znaków, pole opcjonalne, dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: /-?:().,'+
+
+* *Oznacz jako odbiorca zaufany* – checkbox umożliwia dodanie odbiorcy zaufanego, przelew do tak zdefiniowanego odbiorcy nie będzie wymagał autoryzacji, a pola dotyczące danych odbiorcy będą nieedytowalne podczas wprowadzania przelewu.
+
+image::Przelewy/image19pw.png[image,width=329,height=80]
+
+Na formularzu dostępny jest przycisk:
+
+* [Akceptuj] – umożliwia przejście do kroku 2.
+
+Po wprowadzeniu danych odbiorcy za pomocą przycisku [Akceptuj] należy przejść do formularza potwierdzenia danych (krok 2).
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, odbiorca zostaje utworzony (pojawia się na liście Odbiorców), a system wyświetla potwierdzenie dodania odbiorcy wraz z przyciskami:
+
+image::Przelewy/image20pw.png[image,width=604,height=276]
+
+* [Dodaj nowego odbiorcę] – umożliwia przejście do formatki utworzenia nowego odbiorcy.
+* [Wróć do listy odbiorców] – umożliwia przejście do listy Odbiorców,
+* [Wróć do pulpitu] - umożliwia powrót do pulpitu.
+
+
+=== Dodanie odbiorcy przelewu podatkowego
+
+Dodanie nowego odbiorcy przelewu podatkowego jest możliwe w przypadku gdy na formatce nowego odbiorcy Użytkownik wybierze przelew _Podatkowy_.
+
+image::Przelewy/image80.png[image,width=627,height=301]
+
+Następnie Użytkownik wypełnia dane odbiorcy:
+
+* *Twoja nazwa odbiorcy -* nazwa własna odbiorcy; pole wymagalne. Podczas zapisu danych odbiorcy kontrolowana jest unikalność nazwy. W przypadku wprowadzenia nazwy, która już istnieje wyświetlany jest komunikat: _Nazwa własna odbiorcy aktualnie istnieje_,
+* *Rodzaj przelewu -* tutaj Użytkownik wybiera rodzaj przelewu z listy rozwijalnej,
+* *Odbiorca –* Użytkownik wypełnia imię i nazwisko odbiorcy, pole wymagalne,
+* *Rodzaj formularza* – lista rozwijalna, od wyboru formularza, uzależniona jest prezentacja pozostałych pól; pole wymagalne,
+
+Wybór rodzaju formularza wpływa na wyświetlenie dodatkowych opcji koniecznych do wypełnienia.
+
+{empty}1.  W przypadku wyboru formularza (np. CIT, PIT, VAT) przelew będzie wykonywany na indywidualny mikrorachunek podatkowy. +
+
+image::Przelewy/image81.png[image,width=627,height=353]
+
+System poinformuje Użytkownika, skąd można pobrać taki rachunek. Dodatkowo raz wprowadzony rachunek do systemu zostanie zapamiętany. Każde kolejne dodanie odbiorcy przelewu podatkowego na mikrorachunek będzie skutkować automatycznym wypełnieniem pola *Numer Indywidualnego Rachunku Podatkowego*, pole jest edytowalne.
+
+NOTE: Indywidualny rachunek podatkowy podatnik generuje na stronie Ministerstwa Finansów pod adresem https://www.podatki.gov.pl/generator-mikrorachunku-podatkowego[_https://www.podatki.gov.pl/generator-mikrorachunku-podatkowego_]
+
+{empty}2.  Natomiast w przypadku wyboru formularza (np. PCC, BGK, MANDATY) przelew będzie wykonywany na rachunek organów podatkowych. W tym przypadku system zaprezentuje dodatkowe pola:
+
+image::Przelewy/image82.png[image,width=627,height=407]
+
+* *Miasto* – Użytkownik wybiera miasto, w którym znajduje się Urząd Skarbowy, do którego przekazana ma być płatność z listy rozwijalnej (pole może zostać wypełnione automatycznie, gdy do danego rodzaju formularza jest przypisany tylko jeden Urząd Skarbowy); pole wymagalne,
+
+* *Organ podatkowy* - lista Urzędów Skarbowych dostępna po wprowadzeniu miasta Urzędu Skarbowego; wartości na liście zawężają się do właściwych dla wybranego miasta nazw organów podatkowych; pole wymagalne,
+
+* *Numer rachunku organu podatkowego* – w tym przypadku uzupełniany automatycznie.
+
+* *Identyfikator podatnika* - pole wymagalne, wybór wartości z dostępnej listy rozwijanej:
+
+** _Nip,_
+** _Regon,_
+** _Pesel,_
+** _Dowód osobisty,_
+** _Paszport,_
+** _Inny dokument tożsamości,_
+
+* *Identyfikator* - w zależności od wybranego typu identyfikatora, w polu należy wprowadzić odpowiedni numer (jeśli Użytkownik posiada wymagane dane w bankowości, wówczas system automatycznie wypełni pole odpowiednim identyfikatorem); pole wymagalne,
+* *Dodaj dane do przelewu (opcjonalnie)* - checkbox umożliwia dodanie dodatkowych danych odbiorcy,
+image:Przelewy/image83.png[image,width=396,height=272]
+
+** *Z rachunku* – numer rachunku nadawcy, z którego będzie wykonywany przelew do zdefiniowanego odbiorcy. +
+Jeśli Użytkownik zapisze dane *Z rachunku* system podczas zakładania nowego przelewu poinformuje o zmianie rachunku nadawcy. +
+image:Przelewy/image70.png[image,width=378,height=60]
+** *Kwota* - kwota przelewu w walucie PLN,
+** *Okres* *rozliczeniowy* – dostępne w przypadku wyboru odpowiedniego formularza (np. VAT), jeżeli zostanie wyświetlone przez system, zawiera listę rozwijalną z możliwością wyboru jednej z wartości: _Półrocze, Rok, Kwartał, Miesiąc, Dekada miesiąca, Dzień._
+** *Identyfikator zobowiązania (opcjonalny)* - pole opcjonalne, maksymalna ilość znaków w polu wynosi 40,
+
+* *Oznacz jako odbiorca zaufany* – checkbox umożliwia dodanie odbiorcy zaufanego, przelew do tak zdefiniowanego odbiorcy nie będzie wymagał autoryzacji, a pola dotyczące danych odbiorcy będą nieedytowalne podczas wprowadzania przelewu.
+
+image::Przelewy/image71.png[image,width=387,height=84]
+
+Na formularzu dostępny jest przycisk:
+
+* [Akceptuj] – umożliwia przejście do kroku 2.
+
+Po wprowadzeniu danych odbiorcy za pomocą przycisku [Akceptuj] należy przejść do formularza potwierdzenia danych (krok 2).
+
+NOTE: Użycie ikony image:Przelewy/image72.png[image,width=33,height=28] powoduje powrót do pierwszego kroku i poprawę danych odbiorcy przelewu.
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, odbiorca zostaje utworzony (pojawia się na liście Odbiorców), a system wyświetla potwierdzenie dodania odbiorcy wraz z przyciskami:
+
+image::Przelewy/image84.png[image,width=627,height=289]
+
+* [Dodaj nowego odbiorcę] – umożliwia przejście do formatki utworzenia nowego odbiorcy.
+* [Wróć do listy odbiorców] – umożliwia przejście do listy Odbiorców,
+* [Wróć do pulpitu] - umożliwia powrót do pulpitu.
+
+=== Edycja odbiorcy przelewu
+
+Aby dokonać edycji danych odbiorcy należy kliknąć w obszar danego wiersza i wybrać opcję [Edytuj dane odbiorcy]. Wyświetlane jest wówczas okno prezentujące dane wybranego odbiorcy z możliwością modyfikacji danych.
+
+image::Przelewy/image85a.png[image,width=627,height=294]
+
+Lista danych prezentowanych na formatce edycji odbiorcy jest zależna od typu przelewu i rachunku nadawcy lub odbiorcy.
+
+Po wprowadzeniu zmian na szablonie za pomocą przycisku [Akceptuj] należy przejść do formularza potwierdzenia danych (krok 2).
+
+NOTE: Użycie ikony image:Przelewy/image86.png[image,width=31,height=28]powoduje powrót do pierwszego kroku i poprawę danych odbiorcy przelewu.
+
+W przypadku wprowadzenia nazwy odbiorcy, która została już użyta (istnieje szablon o takiej samej nazwie) wyświetlany jest komunikat _Nazwa własna odbiorcy aktualnie istnieje_.
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, zmiany na szablonie zostają zapisane, a system wyświetla potwierdzenie wraz z przyciskami:
+
+* [Wróć do listy odbiorców] - powrót do listy odbiorców,
+* [Wróć do pulpitu] – powrót do pulpitu.
+
+Jeżeli użytkownik skorzysta z szablonu przelewu, w którym dane odbiorcy są niekompletne, system wyświetli komunikat informujący o brakujących informacjach oraz zaprezentuje formularz umożliwiający ich ponowne wprowadzenie.
+
+image::Przelewy/image85b.png[image,width=627,height=294]
+
+=== Usunięcie odbiorcy przelewu
+
+W celu usunięcia odbiorcy należy kliknąć w obszar wybranego wiersza i wybrać opcję [Usuń odbiorcę]. Wyświetlane jest wówczas okno prezentujące dane usuwanego odbiorcy.
+
+image::Przelewy/image87.png[image,width=627,height=216]
+
+NOTE: Użycie ikony image:Przelewy/image88.png[image,width=31,height=24] powoduje rezygnację z usunięcia odbiorcy i powrót do listy odbiorców.
+
+Po dokonaniu akceptacji aktualnie posiadaną metodą autoryzacji, odbiorca zostaje usunięty, a system wyświetla potwierdzenie usunięcia odbiorcy wraz z przyciskami:
+
+* [Dodaj nowego odbiorcę] – przejście do formatki dodania nowego odbiorcy,
+
+* [Wróć do listy odbiorców] – powrót do listy odbiorców,
+
+* [Wróć do pulpitu] – powrót do pulpitu.
+
+image::Przelewy/image89.png[image,width=627,height=291]
+
+=== Wykonaj przelew do odbiorcy
+
+Aby dokonać przelewu do wybranego odbiorcy należy kliknąć w obszar danego wiersza i wybrać opcję [Wykonaj przelew do odbiorcy]. Wyświetlane jest wówczas okno nowego przelewu prezentujące dane odbiorcy z możliwością modyfikacji danych. Modyfikacja danych jest ograniczona w przypadku wyboru odbiorcy zaufanego.
+
+image::Przelewy/image90a.png[image,width=627,height=476]
+
+Pozostałe kroki są takie same jak w przypadku wykonania nowego przelewu.
+
+=== Pokaż wykonane przelewy
+
+Aby zobaczyć wykonane przelewy do wybranego odbiorcy należy kliknąć w obszar danego wiersza i wybrać opcję [Pokaż wykonane przelewy]. System przenosi wówczas Użytkownika do okna z historią transakcji prezentującą przelewy do wybranego odbiorcy. System filtruje dane za ostatnie 90 dni, według rachunku odbiorcy.
+
+image::Przelewy/image91.png[image,width=627,height=367]
+
+=== Import odbiorców
+
+Z poziomu miniaplikacji *Przelewy* Użytkownik ma dostęp do importu odbiorców przycisk [Importuj odbiorców].
+
+NOTE: Opcja dostępna dla Użytkowników kontekstu indywidulanego i firmowego w obszarze mikro.
+
+image::Przelewy/image92.png[image,width=604,height=69]
+
+System umożliwia importowanie danych odbiorców z plików tekstowych w wybranym formacie. Obsługiwane są następujące formaty:
+
+* XML o określonej, stałej strukturze,
+
+* konfigurowalny format liniowy (tekstowy),
+
+* Telekonto.
+
+Konfiguracja formatów importu dla odbiorców wykonywana jest w opcji _Ustawienia → Ustawienia importu i eksportu._
+
+NOTE: Szczegółowy opis struktur plików importu odbiorców znajduje się w odrębnej dokumentacji importu/eksportu danych w Asseco EBP.
+
+Po wybraniu opcji importu pojawia się okienko _Import odbiorców_ z możliwością wybrania pliku z danymi:
+
+* [Wybierz lub upuść plik do zaimportowania w formacie XML].
+
+image::Przelewy/image93.png[image,width=604,height=217]
+
+NOTE: Użycie ikony image:Przelewy/image72.png[image,width=40,height=36] powoduje wycofanie się z wczytywania pliku.
+
+image::Przelewy/image94.png[image,width=604,height=278]
+
+Po wyborze pliku na formularzu dostępne są przyciski:
+
+* [Zmień plik] - umożliwia zmianę wcześniej wybranego pliku importu,
+
+* [Importuj] - uruchamia proces importu.
+
+Podczas procesu plik jest sprawdzany pod względem zgodności z ustaloną strukturą. Kolejne okno _Import odbiorców_ informuje o trwaniu importu i konieczności pozostania na stronie:
+
+image::Przelewy/image95.png[image,width=604,height=278]
+
+Następnie prezentowane jest okno potwierdzające import odbiorców, Użytkownik za pomocą przycisku [Kontunuuj] moze kontynuować import.
+
+image::Przelewy/image96.png[image,width=604,height=278]
+
+W kolejnym oknie system zaprezentuje następujące dane:
+
+* liczbę zaimportowanych poprawnie odbiorców,
+* liczbę odbiorców zawierających błędy, którzy nie zostali zaimportowani,
+* liczbę odbiorców zdublowanych, w tym przypadku Użytkownik ma dwie możliwości do wyboru:
+** Nadpisz istniejących odbiorców,
+** Dodaj jako nowych odbiorców (nazwy zostaną zmienione) - wartość domyślnie zaznaczona, system zachowa dotychczasowego odbiorcę oraz doda nowego ze zmienioną nazwą np. Odbiorca1, Odbiorca2 itd.
+
+image::Przelewy/image97.png[image,width=604,height=278]
+
+W przypadku wystąpienia błędów w pliku z danymi odbiorców system prezentuje dodatkową informację z liczbą i opisem błędów.
+
+Użytkownik ma dostępne opcje do wyboru:
+
+* Dodaj do listy odbiorców,
+* Anuluj import.
+
+Po zatwierdzeniu danych importowanych odbiorców, akceptacji aktualnie posiadaną metodą autoryzacji, Użytkownikowi wyświetlane jest potwierdzenie importu odbiorców wraz z przyciskami:
+
+* Pokaż listę odbiorców - umożliwia powrót do listy przelewów,
+* Wróć do pulpitu - umożliwia powrót do pulpitu.
+
+image::Przelewy/image98.png[image,width=604,height=278]
+
+== Import przelewów
+
+Z poziomu miniaplikacji *Przelewy* Użytkownik ma dostęp do importu przelewów zwykłych oraz przelewów podatku z plików w wybranym formacie - zakładka  [Importy przelewów].
+
+image::Przelewy/image99.png[image,width=604,height=148]
+
+NOTE: Opcja dostępna dla Użytkowników kontekstu indywidulanego i firmowego w obszarze mikro.
+
+Obsługiwane są następujące formaty:
+
+* XML o określonej, stałej strukturze dla importu szablonów przelewu zwykłego i podatku,
+
+* Elixir dla importu szablonów przelewu zwykłego i podatku,
+
+* konfigurowalny format liniowy (tekstowy), dla importu szablonów przelewu zwykłego i podatku,
+
+* Telekonto dla importu szablonów przelewu zwykłego,
+
+* Videotel o określonej, stałej strukturze dla importu szablonów przelewu zwykłego.
+
+Każdy z formatów może być wybrany osobno dla każdego rodzaju przelewu (przelew zwykły oraz przelew podatkowy). Konfiguracja formatów importu dla przelewów wykonywana jest w opcji _Ustawienia → Ustawienia importu i eksportu_. Zaimportowane przelewy trafiają na koszyka zleceń jako przelewy "Elixir".
+
+Maksymalna ilość przelewów w importowanym pliku definiowana jest poprzez parametr systemowy *MAX_LICZBA_PRZELEWOW_DO_IMPORTU.* Domyślna wartość parametru wynosi 100. W przypadku, gdy liczba przelewów w importowanym pliku przekroczy sparametryzowaną wartość Użytkownikowi zostanie zaprezentowany komunikat: _Za duża liczba przelewów do zaimportowania._
+
+image::Przelewy/image100.png[image,width=604,height=148]
+
+NOTE: Szczegółowy opis struktur plików importu przelewów znajduje się w odrębnej dokumentacji importu/eksportu danych w systemie Asseco EBP.
+
+=== Import przelewów zwykłych
+
+Import przelewów zwykłych dostępny jest po wyborze rodzaju importu _Import przelewów zwykłych_.
+
+Na oknie importu znajduje się przycisk z możliwością wybrania pliku z danymi:
+
+* [Wybierz lub upuść plik do zaimportowania w formacie XML]
+
+image::Przelewy/image101.png[image,width=604,height=219]
+
+Dla Użytkowników bankowości korzystającej z systemu transkcyjnego def3000/CB, podczas importu przelewów istnieje możliwość zablokowania środków dla przelewów odroczonych:
+
+Aby wczytać plik można go przeciągnąć nad wydzielony obszar metoda _drag and drop_
+lub kliknąć w obszar, zostanie wówczas wyświetlone okno wyboru pliku z lokalizacji
+w systemie zgodnego z danym systemem operacyjnym.
+
+image::Przelewy/image103.png[]
+
+Po wyborze pliku na formularzu dostępne są przyciski:
+
+* [Zmień plik] - umożliwia zmianę wcześniej wybranego pliku importu,
+* [Importuj] - uruchamia proces importu.
+
+Podczas procesu plik jest sprawdzany pod względem zgodności z ustaloną strukturą. Kolejne okno _Import przelewów_ informuje o trwaniu importu i konieczności pozostania na stronie:
+
+image::Przelewy/image102.png[image,width=604,height=278]
+
+Następnie prezentowane jest okno potwierdzające import przelewów, Użytkownik za pomocą przycisku [Kontunuuj] może kontynuować import.
+
+image::Przelewy/image104.png[image,width=604,height=272]
+
+W kolejnym oknie system zaprezentuje następujące dane:
+
+* liczbę zaimportowanych poprawnie przelewów,
+* liczbę przelewów zawierających błędy, które nie zostały zaimportowane,
+
+image::Przelewy/image105.png[image,width=604,height=278]
+
+W przypadku wystąpienia błędów w pliku z danymi przelewów system prezentuje dodatkową informację z liczbą i opisem błędów.
+
+NOTE: W przypadku, gdy wśród poprawnie zaimportowanych dyspozycji znajdą się przelewy z rachunku walutowego (innego niż PLN) kierowane na rachunki innego banku system uniemożliwi zaimportowanie przelewów – takie przelewy zostaną zakwalifikowane przez system jako błędne.
+
+Użytkownik ma dostępne opcje do wyboru:
+
+* Dodaj do koszyka zleceń,
+* Anuluj import.
+
+Po zatwierdzeniu danych importowanych przelewów, Użytkownikowi wyświetlane jest potwierdzenie importu przelewów wraz z przyciskami:
+
+* Pokaż koszyk zleceń - umożliwia powrót do listy przelewów w koszyku zleceń,
+* Wróć do pulpitu - umożliwia powrót do pulpitu.
+
+image::Przelewy/image106.png[image,width=604,height=278]
+
+=== Import przelewów podatkowych
+
+Import przelewów zwykłych dostępny jest po wyborze rodzaju importu  _Import przelewów podatkowych_.
+
+Na oknie importu znajduje się przycisk z możliwością wybrania pliku z danymi:
+
+* [Wybierz lub upuść plik do zaimportowania w formacie XML]
+
+image::Przelewy/image107.png[image,width=604,height=219]
+
+Dla Użytkowników bankowości korzystającej z systemu transkcyjnego def3000/CB, podczas importu przelewów istnieje możliwość zablokowania środków dla przelewów odroczonych:
+
+la Użytkowników bankowości korzystającej z systemu transkcyjnego def3000/CB, podczas importu przelewów istnieje możliwość zablokowania środków dla przelewów odroczonych:
+
+image::Przelewy/image108.png[]
+
+Po wyborze pliku na formularzu dostępne są przyciski:
+
+* [Zmień plik] - umożliwia zmianę wcześniej wybranego pliku importu,
+* [Importuj] - uruchamia proces importu.
+
+Podczas procesu plik jest sprawdzany pod względem zgodności z ustaloną strukturą. Kolejne okno _Import przelewów_ informuje o trwaniu importu i konieczności pozostania na stronie:
+
+image::Przelewy/image109.png[image,width=604,height=278]
+
+Następnie prezentowane jest okno potwierdzające import przelewów, Użytkownik za pomocą przycisku [Kontunuuj] może kontynuować import.
+
+image::Przelewy/image110.png[image,width=604,height=272]
+
+W kolejnym oknie system zaprezentuje następujące dane:
+
+* liczbę zaimportowanych poprawnie przelewów,
+* liczbę przelewów zawierających błędy, które nie zostały zaimportowane,
+
+image::Przelewy/image111.png[image,width=604,height=278]
+
+W przypadku wystąpienia błędów w pliku z danymi przelewów system prezentuje dodatkową informację z liczbą i opisem błędów.
+
+NOTE: Dalsza obsługa procesu importu jak w przypadku przelewów zwykłych.
+
+
+
+
+
+== Asynchroniczny import przelewów
+
+IMPORTANT: Dostępność asynchronicznego importu przelewów uzależniony jest od przełącznika *Asynchroniczny import przelewów* ( usługa _importTransferAsyncEnabled_), który *domyślnie jest wyłączony*.
+Przełącznik dostępny jest w systemie BackOffice dla Administratora CUI. Opcja dostępna dla Użytkowników kontekstu indywidulanego i firmowego w obszarze mikro.
+
+NOTE: Jeśli *włączony jest import asynchroniczny*, wówczas w systemie nie są dostępne dotychczasowe opcje importów przelewów.
+
+TIP: Wszelkie konfiguracje dotyczące uprawnień do akcji, typów przelewów oraz formatów są identyczne i wspólne z importami zwykłymi.
+Walidacja przelewów oraz proces przetwarzania i realizacji przelewów podlega tym samym regulacjom jak w przypadku importów zwykłych.
+
+W przypadku włączenia obsługi importów asynchronicznych opcja *Import przelewów* dostępna jest z poziomu miniaplikacji Przelewy w zakładce [Importy przelewów]:
+
+image::Przelewy/image112.png[]
+
+Jeżeli w systemie znajdują się trwające lub oczekujące importy, wówczas na pulpicie w *kaflu aplikacji Przelewy* widoczna jest informacja o importach.
+Kliknięcie tego obszaru powoduje wyświetlenie listy importów.
+
+image::Przelewy/image113.png[image,width=204,height=139]
+
+
+*Lista importów asynchronicznych*
+
+Wybranie opcji *Import przelewów* otwiera listę importów.
+
+Główny widok listy importów podzielony jest na obszary. W górnym, opatrzonym etykietą _Importy do zatwierdzenia_ znajdują się importy w trakcie przetwarzania
+oraz importy oczekujące na akcję Użytkownika (gotowe do akceptacji lub odrzucone).
+Lista w tej sekcji posortowana jest zgodnie z datą wczytania począwszy od najnowszych, przy czym importy w trakcie przetwarzania prezentowane są w pierwszej kolejności.
+
+image::Przelewy/image114.png[]
+
+Statusy importów w trakcie przetwarzania prezentowane na liście są cyklicznie odświeżane.
+
+Poniżej prezentowana jest sekcja _Ostatnie importy_ prezentująca zakończone przez Użytkownika importy (anulowane lub zatwierdzone).
+
+image::Przelewy/image115.png[]
+
+Każda z sekcji zawiera zawiera dziesięć najnowszych pozycji.
+W przypadku, gdy dana sekcja listy liczy  więcej niż dziesięć pozycji, wówczas dostępny jest
+przycisk [Pokaż więcej importów], który pozwala na wyświetlenie pełnej, listy importów zgodnej z sekcją:
+
+image::Przelewy/image116.png[]
+
+*Etapy importu asynchronicznego*
+
+Wybranie opcji *[Importuj przelewy]* umieszczonej nad listą importów otwiera formularz importu,
+w którym należy wskazać:
+
+* *typ przelewu* - _import przelewów zwykłych_ lub _import przelewów podatku_,
+* *plik importu* w odpowiednim formacie - zgodnie z informacją o obowiązującym formacie pliku.
+
+image::Przelewy/image117.png[]
+
+Dla Użytkowników bankowości korzystającej z systemu transkcyjnego def3000/CB, podczas importu przelewów istnieje możliwość zablokowania środków dla przelewów odroczonych:
+
+Aby wczytać plik można go przeciągnąć nad wydzielony obszar metoda _drag and drop_
+lub kliknąć w obszar, zostanie wówczas wyświetlone okno wyboru pliku z lokalizacji
+w systemie zgodnego z danym systemem operacyjnym.
+
+image::Przelewy/image118.png[]
+
+IMPORTANT: Wymagania dla pliku:
+
+* Maksymalna liczba przelewów w pliku to *25000* (niezależnie od konfiguracji parametr systemowy ASYNC_IMPORTS_MAX_RECORDS - maksymalna liczba rekordów w pliku dla importów asynchronicznych. Domyślna i zalecana wartość to 20000)
+* Maksymalny rozmiar wczytywanego pliku importu wynosi *10MB*
+* Maksymalna liczba trwających importów wynosi *trzy*. Po jej osiągnięciu próba wczytania kolejnego pliku spowoduje wyświetlenie informacji o ograniczeniu.
+
+
+image::Przelewy/image119.png[image,width=404,height=239]
+
+
+Wybór [Importuj przelewy] skutkuje wczytaniem pliku i *rozpoczęciem asynchronicznego procesu importu*.
+
+_Na tym etapie Użytkownik może opuścić aplikację lub wylogować się z systemu:_
+
+image::Przelewy/image120.png[]
+
+IMPORTANT: Po wczytaniu pliku Użytkownik może opuścić aplikację lub wylogować się z systemu,
+*aktualny stan importu pliku* można sprawdzić na *liście importów* lub na *widżecie Przelewy*
+
+*Import pliku odbywa się w dwóch krokach.*
+
+*W pierwszym etapie importu* na liście prezentowana jest informacja *Importowanie przelewów...* informuje o trwającym procesie analizy pliku.
+
+image::Przelewy/image121.png[]
+
+*Po wstępnej analizie danych pliku* opis importu może ulec zmianie na:
+
+* image:Przelewy/image123.png[image,width=40,height=36] *Import odrzucony* - w przypadku, gdy struktura pliku była nieprawidłowa, przekroczono maksymalną liczbę przelewów lub wystąpił inny poważny błąd.
+
+W przypadku odrzucenia importu przez system, Użytkownik, po zapoznaniu się z przyczyną odrzucenia, powinien anulować import.
+
+* image:Przelewy/image122.png[image,width=40,height=36] *Importowanie X/Y przelewów...* - w przypadku, gdy struktura pliku jest prawidłowa informacja o imporcie zostaje rozszerzona o liczbę rekordów w pliku (Y) zaś wartość X informuje o przetworzonych do tej pory przelewach
+
+image::Przelewy/image124.png[]
+
+Użytkownik ma możliwość anulowania importu.
+
+*Po zakończeniu importu całego pliku* informacja o pliku ulega doprecyzowaniu.
+
+* image:Przelewy/image125.png[image,width=40,height=36] *Zaimportowano X/Y przelewów*, gdzie X=Y - zaimportowano wszystkie przelewy z pliku i nie stwierdzono błędów,
+* image:Przelewy/image123.png[image,width=40,height=36] *Zaimportowano X/Y przelewów*, gdzie X<Y - zweryfikowano wszystkie przelewy z pliku, ale stwierdzono błędy walidacji,
+* image:Przelewy/image123.png[image,width=40,height=36] *Import odrzucony* - stwierdzono błąd struktury. Import powinien zostać anulowany przez uzytkownika.
+
+image::Przelewy/image126.png[]
+
+W pierwszych dwóch przypadkach Użytkownik ma do wyboru:
+
+* potwierdzić import i dodać poprawne przelewy do koszyka przelewów/listy zleceń (błędne przelewy zostaną odrzucone)
+* lub anulować import
+
+Przed podjęciem decyzji możliwa jest weryfikacja wyniku importu po wybraniu [Kontynuuj].
+
+Wynik importu prezentowany jest w postaci list przelewów poprawnych oraz błędnych,
+na których prezentowane są podstawowe dane przelewu oraz ewentualna informacja o przyczynie odrzucenia.
+
+image::Przelewy/image127.png[]
+
+image::Przelewy/image128.png[]
+
+Listy przelewów wyświetla dwadzieścia wierszy na stronie, jeśli przelewów jest więcej należy użyć przycisku [Pokaż więcej przelewów].
+
+*Anulowanie importu*
+
+Użytkownik ma możliwość anulowania importu za pomocą przycisku [Anuluj import]:
+
+* z poziomu listy przelewów, po rozwinieciu szczegółów importu,
+
+image::Przelewy/image130.png[]
+
+* po wybraniu przyciku [Kontunnuj].
+
+image::Przelewy/image131.png[]
+
+Po anulowaniu importu zaprezentowane zostaje potwierdzenie zmiany statusu importu na anulowany:
+
+image::Przelewy/image129.png[image,width=404,height=139]
+
+Plik importu zostaje przeniesiony do sekcji _Ostatnie importy_.
+
+NOTE: Na każdym etapie przetwarzania pliku Użytkownik ma możliwość anulowania procesu.
+System nie gwarantuje natychmiastowego zatrzymania przetwarzania, ale na koniec import zostanie anulowany,
+zaś liczba przetworzonych przelewów może nie odpowiadać stanowi faktycznemu w pliku.
+
+
+*Finalizacja importu*
+
+Aby sfinalizować import, po zakończeniu procesu analizy pliku, Użytkownik może dodać przelewy do koszyka przelewów [DODAJ DO KOSZYKA].
+
+image::Przelewy/image132.png[]
+
+Proces zapisu może potrwać kilkadziesiąt sekund i wymaga pozostania Użytkownika na formularzu.
+W zależności od konfiguracji systemu może wymagać autoryzacji.
+
+NOTE: Wszelkie konfiguracje dotyczące uprawnień do akcji, typów przelewów oraz formatów są identyczne i wspólne z importami zwykłymi.
+Walidacja przelewów oraz proces przetwarzania i realizacji przelewów podlega tym samym regulacjom jak w przypadku importów zwykłych.
+
+*Tryb synchroniczny*
+
+W celu przyspieszenia i uproszczenia obsługi importu małych plików wprowadzono możliwość ich przetworzenia synchronicznie.
+Oznacza to, że wszystkie kroki opisane powyżej są wykonywane bezpośredniu po wczytaniu pliku wymuszając na Użytkowniku konieczność pozostania na formularzu.
+Po zakończeniu procesu zostanie zaprezentowany wynik importu.
+
+*Konfiguracja*
+
+Funkcjonalność można dostosować wykorzystując parametry na bazie danych.
+Są to parametry czysto techniczne i nie są dostępne do edycji w systemie BackOffice.
+
+* ASYNC_IMPORTS_MAX_RECORDS - maksymalna liczba rekordów w pliku dla importów asynchronicznych. Domyślna i zalecana wartość to 20000
+* ASYNC_IMPORTS_ALLOW_SYNCHRO - możliwość przetwarzania synchronicznego dla małych plików. Tak: Y, Nie: N. Domyślna wartość Y
+* ASYNC_IMPORTS_MAX_SIZE_SYNCHRO - maksymalny rozmiar pliku który będzie przetwarzany synchronicznie (przy włączonym ASYNC_IMPORTS_ALLOW_SYNCHRO). Wartość wyrażona w KB. Domyślna wartość to 10.
+
+== Przelewy transgraniczne (system transakcyjny DefBank)
+
+Użytkownik systemu Asseco EBP, ma możliwość zlecenia następujących rodzajów płatności transgranicznych:
+
+* Przelew zwykły na rachunek wewnętrzny,
+* Przelew własny transgraniczny,
+* Przelew walutowy transgraniczny.
+
+Tworzenie wymienionych płatności jest identyczne, jak tworzenie danego typu przelewu. Przelewy transgraniczne automatycznie zostaną rozpoznane przez system Asseco EBP w przypadku, gdy:
+
+* przelew zwykły na rachunek wewnętrzny zostanie wykonany z rachunku w walucie innej niż rachunek odbiorcy,
+* przelew na rachunek własny zostanie wykonany z rachunku w walucie innej niż rachunek odbiorcy,
+* przelew walutowy, jeśli waluta NRB nadawcy i waluta przelewu są różne.
+
+Dla przelewu transgranicznego na drugim kroku, system wyświetli w szczegółach uzupełniające dane:
+
+* Szacunkowy kurs przewalutowania,
+
+oraz poniżej:
+
+* Komunikat: _Autoryzując przelew, wyrażasz zgodę na realizację przelewu po aktualnym kursie Banku._
+* Link *REGULAMIN KOSZTÓW PRZEWALUTOWANIA* – po naciśnięciu którego, Użytkownik zostaje przekierowany na stronę z informacją o regulaminie kosztów przewalutowania,
+
+
+image::Przelewy/image2tnew.png[image,width=604,height=320]
+
+Wyżej wymienione informacje są widoczne dla Użytkownika, w następujących opcjach:
+
+* Koszyk zleceń, podczas wykonywania akcji:
+
+** edycji przelewu,
+** kopiowania przelewu.
+
+W przypadku, gdy w systemie Asseco BackOffice w opcji _System -> Parametry -> Dane Banku_, nie zostały wprowadzone wartości dla parametrów:
+
+* Płatności transgraniczne - komunikat PL,
+* Płatności transgraniczne - komunikat EN,
+* Płatności transgraniczne (link - PL),
+* Płatności transgraniczne (link - EN),
+* Płatności transgraniczne dla firm (link - PL),
+* Płatności transgraniczne dla firm (link - EN)
+
+
+wówczas na formularzu przelewu system Asseco EBP:
+
+* nie będzie prezentował linku do regulaminu,
+
+image::Przelewy/image3tnew.png[image,width=604,height=289]
+
+=== Przelew zwykły wewnętrzny transgraniczny
+
+W przypadku realizacji przelewu zwykłego wewnętrznego z rachunku w walucie innej niż rachunek odbiorcy, w szczegółach na drugim kroku przelewu system zaprezentuje następujące informacje:
+
+* Szacunkowy kurs przewalutowania, w następujący sposób, np.:
+
+** przelew z EUR na CHF: _1 EUR = x CHF_ po kursie kupna
+
+** przelew z EUR na PLN: _1 EUR = x PLN_ po kursie kupna
+
+** przelew z PLN na EUR: _1 EUR = x PLN_ po kursie sprzedaży
+
+oraz poniżej:
+
+* Komunikat: _Autoryzując przelew, wyrażasz zgodę na realizację przelewu po aktualnym kursie Banku._
+* Link *REGULAMIN KOSZTÓW PRZEWALUTOWANIA* – po naciśnięciu którego, Użytkownik zostaje przekierowany na stronę z informacją o regulaminie kosztów przewalutowania,
+
+W przypadku realizacji przelewu zwykłego pomiędzy rachunkami wewnętrznymi o tej samej walucie, system nie będzie prezentował w/w informacji.
+
+=== Przelew własny transgraniczny
+
+W przypadku realizacji przelewu własnego pomiędzy rachunkami w różnych walutach, w szczegółach na drugim kroku przelewu system zaprezentuje następujące informacje:
+
+* Szacunkowy kurs przewalutowania, w następujący sposób, np.:
+
+** przelew z EUR na CHF: _1 EUR = x CHF_ po kursie kupna
+
+** przelew z EUR na PLN: _1 EUR = x PLN_ po kursie kupna
+
+** przelew z PLN na EUR: _1 EUR = x PLN_ po kursie sprzedaży
+
+oraz poniżej:
+
+* Komunikat: _Autoryzując przelew, wyrażasz zgodę na realizację przelewu po aktualnym kursie Banku._
+* Link *REGULAMIN KOSZTÓW PRZEWALUTOWANIA* – po naciśnięciu którego, Użytkownik zostaje przekierowany na stronę z informacją o regulaminie kosztów przewalutowania,
+
+W przypadku realizacji przelewu własnego pomiędzy rachunkami o tej samej walucie, system nie będzie prezentował w/w informacji.
+
+=== Przelew walutowy transgraniczny
+
+W przypadku realizacji przelewu walutowego w walucie innej niż waluta rachunku, w szczegółach na drugim kroku przelewu system zaprezentuje następujące informacje:
+
+* Szacunkowy kurs przewalutowania w następujący sposób, np.:
+
+** przelew z EUR w CHF: _1 EUR = x CHF_ po kursie kupna
+
+** przelew z PLN w EUR: _1 EUR = x PLN_ po kursie sprzedaży
+
+oraz poniżej:
+
+* Szacunkową kwotę w walucie rachunku
+* Komunikat: _Autoryzując przelew, wyrażasz zgodę na realizację przelewu po aktualnym kursie Banku._
+* Link *REGULAMIN KOSZTÓW PRZEWALUTOWANIA* – po naciśnięciu którego, Użytkownik zostaje przekierowany na stronę z informacją o regulaminie kosztów przewalutowania,
+
+image::Przelewy/image4tnew.png[image,width=604,height=289]
+
+W przypadku realizacji przelewu walutowego z rachunku o tej samej walucie, co waluta przelewu, system nie będzie prezentował w/w informacji.
+
+
+

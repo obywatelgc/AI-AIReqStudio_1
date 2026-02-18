@@ -1,0 +1,166 @@
+:imagesdir: images
+
+= Historia transakcji
+
+Miniaplikacja *Historia transakcji* zapewnia dostęp do historii transakcji z rachunków do których uprawniony jest Użytkownik.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Historia transakcji* z dwóch głównych poziomów:
+
+* widżetu *Historia transakcji* (wyświetlanego na pulpicie)
+
+image::Historia_Transakcji/image1.png[image,width=204,height=241]
+
+* menu *bocznego* po wybraniu opcji _Historia transakcji_.
+
+image::Historia_Transakcji/image2.png[image,width=116,height=40]
+
+W każdym z poziomów miniaplikacji dostępne są dla Użytkownika formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach.
+
+Użytkownik posiadający dostęp do miniaplikacji *Historia transakcji* ma możliwość:
+
+* przeglądania transakcji wykonanych na rachunkach,
+* przeglądania szczegółów transakcji,
+* pobrania listy transakcji,
+* pobrania potwierdzenia.
+
+== Widżet Historia transakcji
+
+Widżet *Historia transakcji* jest nieedytowalny. Nie można zmienić jego położenia, ani usunąć z pulpitu.
+
+image::Historia_Transakcji/image1.png[image,width=208,height=246]
+
+Na widżecie jest możliwość:
+
+* podglądu maksymalnie 5 ostatnich transakcji:
+
+** data,
+
+** dane odbiorcy,
+
+** tytuł,
+
+** kwota wraz z walutą,
+
+
+* W dolnej części widżetu dostępna jest akcja:
+
+** [Pokaż wszystkie transakcje] – opcja jest dostępna jeśli Użytkownik ma więcej niż 5 transakcji, umożliwia przejście do listy wszystkich transakcji w historii.
+
+== Przeglądanie historii transakcji
+
+System Asseco EBP umożliwia Użytkownikowi przeglądanie historii transakcji z dostępnych rachunków.
+
+image::Historia_Transakcji/image4.png[image,width=627,height=459]
+
+Na formularzu prezentowana jest lista operacji zaksięgowanych na rachunkach:
+
+* *Szczegóły:*
+
+** *Data księgowania* – data księgowania operacji (data w formacie DD.MM.RRRR),
+
+** *Odbiorca/Nadawca* – dane odbiorcy (prezentowane w przypadku przelewu wychodzącego)/nadawcy(prezentowane w przypadku przelewu przychodzącego),
+
+** *Tytuł –* tytuł transakcji,
+
+* *Rodzaj transakcji*,
+* *Kwota* – kwota operacji wraz z walutą (wpływy prezentowane w kolorze czarnym, obciążenia prezentowane w kolorze czerwonym ze znakiem ujemnym).
+
+W nagłówku historii prezentowane są podsumowania w podziale na _Wpływy_ i _Wydatki_ w rozróżnieniu na waluty rachunków (w nawiasach znajduje się liczba określająca ilość transakcji).
+
+NOTE: Podsumowania są wyliczane na podstawie wybranych filtrów dla wszystkich wyszukanych pozycji.
+
+Lista transakcji jest ładowana dynamicznie. Kolejne przelewy wczytają się w trakcie przewijania strony.
+
+Po kliknięciu w wiersz wybranego przelewu wyświetlane są dodatkowe informacje na temat przelewu:
+
+image::Historia_Transakcji/image5.png[image,width=627,height=275]
+
+*Z rachunku* – dane nadawcy i numer rachunku, z którego została wykonana płatność, jeśli jest to płatność wychodząca lub *Od* jeśli jest to płatność przychodząca,
+
+*Do –* dane odbiorcy i numer rachunku, na który została wykonana płatność, jeśli jest to płatność wychodząca lub *Na rachunek* jeśli jest to płatność przychodząca.
+
+*Szczegóły* – pozostałe dane przelewu w zależności od podanych danych szczegółowych i rodzaju przelewu.
+
+Dostępne są również przyciski:
+
+* [Ponów przelew] – umożliwia użytkownikowi ponowienie przelewu, jeśli jest to płatność wychodząca,
+
+* [Pobierz potwierdzenie] – potwierdzenie zrealizowania przelewu (dla płatności wychodzącej i przychodzącej),
+
+* [Dodaj do listy odbiorców] – umożliwia zapisanie adresata przelewu do listy odbiorców, jeśli jest to płatność wychodząca.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza przelewu powoduje zwinięcie szczegółowych informacji.
+
+NOTE: W przypadku wpływów użytkownik może tylko pobrać potwierdzenie.
+
+== Filtry w historii transakcji
+
+System umożliwia filtrowanie transakcji za pomocą pola do wyboru dat (domyślnie ustawione jest wyszukiwanie przelewów z ostatnich 90 dni). +
+ +
+
+image::Historia_Transakcji/image6.png[image,width=231,height=66]
+
+Po rozwinięciu listy Użytkownik ma do wyboru:
+
+* Bieżący miesiąc,
+* Poprzedni miesiąc,
+* Ostatnie 90 dni,
+* Bieżący rok,
+* Poprzedni rok,
+* Wybierz zakres dat.
+
+Dodatkowo Użytkownik może filtrować transakcje w za pomocą pola „Wszystkie rachunki”.
+
+Pole prezentuje listę rachunków z których Użytkownik może wybrać (przez zaznaczenie checkbox) jeden lub kilka rachunków jednocześnie.
+
+image::Historia_Transakcji/image7.png[image,width=317,height=156]
+
+Po wyborze rachunków, system zaprezentuje transakcje wykonane z wybranych pozycji.
+
+System umożliwia także filtrowanie historii za pomocą dedykowanego pola wyszukiwania. Po wpisaniu w polu danych system rozpoczyna wyszukiwanie:
+
+image::Historia_Transakcji/image8.png[image,width=332,height=62]
+
+System filtruje listę już po wpisaniu pierwszej litery / cyfry / znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej płatności w sytuacji, gdy nie znajdzie w systemie treści wprowadzonej w polu wyszukiwania.
+
+Aby powrócić do pełnej listy przelewów należy kliknąć w ikonę [X] w polu wyszukiwania.
+
+Użycie przycisku [Więcej] spowoduje wyświetlenie dodatkowych opcji do filtrowania: +
+
+image::Historia_Transakcji/image9.png[image,width=627,height=103]
+
+Użytkownik ma możliwość ustawiania dodatkowych filtrów dla następujących pól:
+
+* *Pokaż* – pole zawierające rodzaje transakcji:
+
+** _Wpływy_,
+
+** _Wydatki_.
+
+NOTE: Checkboxy domyślnie zaznaczone.
+
+* *Pokaż transakcje* – pole zawierające rodzaje transakcji:
+
+** _VAT_ - checkbox będzie dostępny tylko dla tych rachunków, które są powiązane z rachunkami VAT. Po zaznaczeniu checkbox’a aplikacja zwróci listę operacji oznaczonych jako przelew VAT. Checkbox dostępny dla Użytkowników kontekstu indywidualnego i firmowego w obszarze mikro.
+
+* *Kwota od*, *Kwota do* – zakres kwot (od-do), dla których ma zostać wyświetlona lista operacji.
+
+* *Waluta* - lista rozwijalna z walutami rachunków do jakich ma dostęp Użytkownik. Domyślnie zaznaczona wartość _Dowolna_.
+
+== Pobieranie potwierdzeń w Historii transakcji
+
+W historii transakcji Użytkownik ma możliwość pobrania potwierdzeń.
+
+image::Historia_Transakcji/image9Anew.png[image,width=627,height=103]
+
+Pod filtrami dostępne są następujące akcje:
+
+* *Pobierz historię w PDF* - pobranie listy operacji w formacie _PDF_ .
+* *Pobierz historię w wybranym formacie* - umożliwia wyeksportowanie listy transakcji w formacie określonym w opcji _Ustawienia → Ustawienia importu i eksportu → Format eksportu historii operacji_.
+* *Pobierz potwierdzenia transakcji* - wybór tej opcji umożliwia pobranie określonej liczby potwierdzeń. Użytkownik za pomocą checkboxa zaznacza wybrane transakcje. System od razu sumuje wybór użytkownika oraz pokazuje liczbę wybranych transakcji oraz maksymalną liczbę transakcji do pobrania. Po wskazaniu transakcji Użytkownik wybiera przycisk [Pobierz potwierdzenia] w celu pobrania pliku w formacie pdf. Jeśli użytkownik chce zrezygnować z pobrania zaznaczonych transakcji powinien użyć przycisku [Anuluj].
+
+image::Historia_Transakcji/image10.png[image,width=627,height=511]
+
+NOTE: Szczegółowy opis struktur pliku eksportu dla pobrania potwierdzenia w wybranym formacie znajduje się w rozdziale dotyczącym importu/eksportu danych w Asseco EBP.
+
+NOTE: Dla Użytkownika możliwość pobrania zbiorczych potwierdzeń w Historii transakcji nie jest dostępna w aplikacji mobilnej.

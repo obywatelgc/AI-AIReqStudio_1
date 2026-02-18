@@ -1,0 +1,628 @@
+:imagesdir: images
+
+= Panel rodzica
+
+Miniaplikacja *Panel Rodzica* zapewnia rodzicowi możliwość wglądu do produktów i historii transakcji dziecka, pozwala to sprawować kontrolę and korzystaniem przez dziecko z usług bankowych zgodnie z posiadaną władzą rodzicielską/opiekuńczą. Miniaplikacja jest dostępna dla klienta indywidualnego w obszarze roboczym osobistym i mikro.
+
+NOTE: Rodzicem jest klient pełnoletni będący przedstawicielem ustawowym klienta niepełnoletniego (dla banków korzystających z systemu transakcyjnego def3000/CB ), a także będący pełnomocnikiem lub użytkownikiem klienta niepełnoletniego (dla banków korzystających z systemu transakcyjnego DefBank – opcja parametryzowana).
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Panel rodzica* z dwóch głównych poziomów:
+
+* widżetu *Panel rodzica* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z Pulpitu)
+
+image::Panel_rodzica/image1.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Strona internetowa Opis wygenerowany automatycznie,width=230,height=349]
+
+* menu bocznego po wybraniu opcji *Panel rodzica*
+
+image::Panel_rodzica/image2.png[Obraz zawierający tekst, Czcionka, logo, zrzut ekranu Opis wygenerowany automatycznie,width=112,height=44]
+
+Użytkownik posiadający dostęp do miniaplikacji Panel rodzica ma możliwość:
+
+* przeglądania wpływów i wydatków dziecka,
+* wykonywania próśb o przelew,
+* wykonywania przelewów do dziecka,
+* utworzenia kieszonkowego,
+* przeglądania ostatnich transakcji dziecka,
+* przeglądania blokad dziecka,
+* przeglądania rachunków dziecka,
+* przeglądania skarbonek dziecka,
+* przeglądania lokat dziecka.
+
+== Widżet Panel rodzica
+
+Z poziomu widżetu *Panel rodzica* jest możliwość:
+
+* przejścia do Panelu Rodzica,
+* podglądu listy dzieci wraz z dostępnymi środkami oraz liczbą wysłanych próśb o przelew,
+* podglądu wpływów i wydatków dzieci,
+* podglądu ostatnich transakcji.
+
+Widżet może się różnic ze względu na dostęp do wyświetlanych danych:
+
+1) Opcja _empty state_ – dla Użytkownika, który nie posiada dzieci lub dzieci nie korzystają z bankowości elektronicznej  (widoczność widżetu i miniaplikacji w tym przypadku jest parametryzowana). +
+
+image::Panel_rodzica/image3.png[Obraz zawierający tekst, zrzut ekranu, Czcionka Opis wygenerowany automatycznie,width=227,height=166]
+
+{empty}2) Opcja dla rodzica, który nie ma udostępnionych umów dziecka:
+
+image::Panel_rodzica/image4.png[Obraz zawierający tekst, zrzut ekranu, Czcionka, logo Opis wygenerowany automatycznie,width=230,height=90]
+
+{empty}3) Opcja dla rodzica posiadającego pełne uprawnienia do podglądu danych dziecka:
+
+image::Panel_rodzica/image5.png[Obraz zawierający tekst, elektronika, zrzut ekranu, oprogramowanie Opis wygenerowany automatycznie,width=231,height=352]
+
+Użytkownik po najechaniu na dane na wykresie otrzyma informacje dotyczącą kwot wpływów i wydatków w podziela na dzieci.
+
+image::Panel_rodzica/image7.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Strona internetowa Opis wygenerowany automatycznie,width=284,height=458]
+
+Użytkownik posiadający więcej niż dwoje dzieci, będzie miał możliwość przejścia do listy dzieci za pomocą przycisku [Pokaż wszystkie dzieci].
+
+W przypadku historii transakcji Użytkownik ma możliwość podglądu całej historii za pomocą przycisku [Pokaż wszystkie transakcje], zostanie wówczas przekierwany do Historii transakcji z wyfiltrowanymi rachunkami dzieci.
+
+image::Panel_rodzica/image8.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, numer Opis wygenerowany automatycznie,width=627,height=278]
+
+== Miniaplikacja Panel rodzica
+
+Miniaplikacja Panelu rodzica udostępnia Użytkownikowi w jednym miejscu informacje na temat produktów i usług dziecka.
+
+Jeśli Użytkownik posiada więcej niż jedno dziecko, wówczas prezentowana jest lista dzieci z możliwością wyboru jednego z nich. Lista dzieci ułożona jest chronologicznie według kolejności dodania do bankowości elektronicznej.
+
+image::Panel_rodzica/image9a.png[Obraz zawierający tekst, oprogramowanie, Ikona komputerowa, Strona internetowa Opis wygenerowany automatycznie,width=627,height=352]
+
+Po wybraniu dziecka prezentowane są Użytkownikowi informacje w podziale na zakładki:
+
+* Podsumowanie,
+
+* Prośby o przelew,
+
+* Ostatnie transakcje,
+
+* Blokady.
+
+=== Podsumowanie
+
+W Podsumowaniu system wyświetla Użytkownikowi informacje dotyczące wpływów i wydatków, danych dziecka, nowych próśb o przelew, rachunków, skarbonek, lokat i kart oraz usługi BLIK.
+
+image::Panel_rodzica/image10a.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=612,height=732]
+
+
+NOTE: W aplikacji EBP użytkownik (rodzic) ma jedynie podgląd do informacji o usłudze BLIK dziecka (aktywna/nieaktywna). Natomiast w aplikacji mobilnej użytkownik (rodzic) ma możliwość zarządzania limitami transakcji BLIK dziecka oraz możliwość wyłączenia usługi BLIK.
+
+==== Wpływy i wydatki
+
+Wpływy i wydatków to wykres zawierający łączną kwotę wpływów i wydatków dziecka w ujęciu miesięcznym opracowaną za okres ostatniego roku (począwszy od miesiąca bieżącego), kwota wpływów i wydatków dotyczy operacji w walucie PLN.
+
+Użytkownik po najechaniu na dane z wykresu otrzyma kwotowe informacje dotyczące wpływów i wydatków w danym miesiącu.
+
+image::Panel_rodzica/image11.png[Obraz zawierający tekst, oprogramowanie, Czcionka, zrzut ekranu Opis wygenerowany automatycznie,width=256,height=208]
+
+Pod wykresem znajdują się dodatkowe informacje:
+
+image::Panel_rodzica/image11a.png[Obraz zawierający tekst, oprogramowanie, Czcionka, zrzut ekranu Opis wygenerowany automatycznie,width=256,height=208]
+
+* Dane dotyczące właściciela rachunku (imię i nazwisko dziecka),
+
+* Dostępne środki – suma dostępnych środków na rachunkach dziecka (z wyłączeniem Skarbonek), w walucie PLN.
+
+* Blokady – suma blokad na rachunkach dziecka, w walucie PLN,
+
+* Kieszonkowe – kwota kieszonkowego, jeśli Użytkownik założy więcej niż jedno kieszonkowe, w tym miejscu wyświetli się liczba zleceń, pole dotyczy zleceń w kwocie PLN.
+
+image::Panel_rodzica/image12.png[Obraz zawierający tekst, zrzut ekranu, Czcionka, design Opis wygenerowany automatycznie,width=101,height=62]
+
+==== Informacja o nowych prośbach o przelew
+
+_Czeka na Ciebie prośba o przelew_ – Użytkownik posiadający wysłane nowe prośby o przelew ma możliwość przejścia do listy próśb z tego poziomu za pomocą przycisku [Pokaż].
+
+image::Panel_rodzica/image13.png[image,width=476,height=56]
+
+Jeśli Użytkownik ma na liście więcej niż jedną prośbę wówczas system zaprezentuje komunikat: _Czekają na Ciebie prośby o przelew_.
+
+image::Panel_rodzica/image14.png[Obraz zawierający tekst, zrzut ekranu, Czcionka, logo Opis wygenerowany automatycznie,width=483,height=63]
+
+==== Wykonaj przelew do dziecka
+
+Użytkownik z tego poziomu ma możliwość wykonania bezpośredniego przelewu do dziecka za pomocą przycisku [Wykonaj przelew].
+
+image::Panel_rodzica/image15.png[Obraz zawierający tekst, Czcionka, logo, zrzut ekranu Opis wygenerowany automatycznie,width=100,height=43]
+
+Użytkownik po wybraniu przycisku zostanie przekierowany do formatki nowego przelewu własnego.
+
+image::Panel_rodzica/image16.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, numer Opis wygenerowany automatycznie,width=627,height=541]
+
+Następnie Użytkownik wypełnia poniższe dane:
+
+* *Z rachunku* – rachunek obciążany, w polu należy wybrać spośród dostępnych rachunków Użytkownika (wyłączone z listy zostały rachunki dzieci), w polu automatycznie podstawiony jest rachunek domyślny, który można zmienić,
+* *Na rachunek* – rachunek uznawany, w polu należy wskazać rachunek spośród rachunków dziecka (na liście są tylko dostępne rachunki dziecka), jeśli dziecko ma tylko jeden rachunek to pole zostanie automatycznie wypełnione,
+
+Po wybraniu rachunku dziecka zostanie zaprezentowana Użytkownikowi informacja dotycząca kwoty zwykłego zarządu.
+
+image::Panel_rodzica/image17.png[Obraz zawierający tekst, oprogramowanie, Strona internetowa, Czcionka Opis wygenerowany automatycznie,width=591,height=151]
+
+* *Szczegóły* – w tym miejscu Użytkownik wypełnia pozostałe dane:
+
+
+** *Kwota* – kwota przelewu wyrażona w walucie rachunku wybranego do obciążenia,
+
+** *Tytuł* - tytuł przelewu, pole automatycznie wypełnione „Przelew środków”, edytowalne, pole może zawierać maksymalnie 140 znaków; pole wymagalne. Dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: `!@#$%^&*()_+=\\\\{}[]:;'<>?,./\äÄöÖüÜß.
+
+** *Data realizacji* - data realizacji przelewu; domyślnie wstawiana jest data bieżąca. W przypadku wyboru daty przyszłej Użytkownik ma możliwość zmiany daty wprowadzając ją z klawiatury lub może skorzystać z ikony kalendarza.
+
+
+Użytkownik przechodzi do drugiego kroku przelewu, za pomocą przycisków:
+
+* [Akceptuj] – przejście do autoryzacji przelewu (sprawdzenie schematu itd.),
+
+* [Dodaj do koszyka zleceń] – przycisk umożliwia zapisanie przelewu w Koszyku zleceń w statusie Nowy.
+
+Na formularzu potwierdzenia danych przelewu (krok 2) system wyświetla formularz z wprowadzonymi danymi w trybie podglądu wraz z zestawem akcji opisanych w rozdziale Dostępne akcje na drugim kroku nowego przelewu.
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji (opcja parametryzowana), Użytkownikowi wyświetlane jest potwierdzenie przekazania dyspozycji do realizacji:
+
+image::Panel_rodzica/image18.png[Obraz zawierający tekst, zrzut ekranu, ptak, System operacyjny Opis wygenerowany automatycznie,width=627,height=331]
+
+==== Utwórz kieszonkowe
+
+Użytkownik po wybraniu przycisku zostanie przekierowany do formatki nowego przelewu własnego.
+
+image::Panel_rodzica/image19.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, wyświetlacz Opis wygenerowany automatycznie,width=627,height=444]
+
+Następnie Użytkownik wypełnia poniższe dane:
+
+* *Z rachunku* – rachunek obciążany, w polu należy wybrać spośród dostępnych rachunków Użytkownika (wyłączone z listy zostały rachunki dzieci), w polu automatycznie podstawiony jest rachunek domyślny, który można zmienić,
+* *Na rachunek* – rachunek uznawany, w polu należy wskazać rachunek spośród rachunków dziecka (na liście dostępne są tylko rachunki dziecka), jeśli dziecko ma tylko jeden rachunek to pole zostanie automatycznie wypełnione, +
+
+Po wybraniu rachunku dziecka zostanie zaprezentowana Użytkownikowi informacja dotycząca kwoty zwykłego zarządu.
+
+image::Panel_rodzica/image17.png[Obraz zawierający tekst, oprogramowanie, Strona internetowa, Czcionka Opis wygenerowany automatycznie,width=591,height=151]
+
+* *Szczegóły* – w tym miejscu Użytkownik wypełnia pozostałe dane:
+
+** *Kwota* – kwota przelewu wyrażona w walucie rachunku wybranego do obciążenia,
+
+** *Tytuł* - tytuł przelewu, pole automatycznie wypełnione „Kieszonkowe”, edytowalne, pole może zawierać maksymalnie 140 znaków; pole wymagalne. Dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: `!@#$%^&*()_+=\\\\{}[]:;'<>?,./\äÄöÖüÜß.
+
+** *Data realizacji* - data realizacji zlecenia stałęgo; domyślnie wstawiana jest data bieżąca +1 dzień. W przypadku wyboru innej daty przyszłej Użytkownik ma możliwość zmiany daty wprowadzając ją z klawiatury lub może skorzystać z ikony kalendarza.
+
+* *Reguły zlecenia* - w tym miejscu Użytkownik wypełnia dane dotyczące cykliczności zlecenie: +
+
+** *Powtarzaj zlecenie co* – pole określa częstotliwość realizacji przelewu +
+
+*** co: _dzień/miesiąc_ - opcje dostępne dla bankowości korzystającej z systemu transakcyjnego DefBank,
+Domyślnie: 1 miesiąc, +
+
+*** co: _dzień/miesiąc/kwartał/rok_ - opcje dostępne dla bankowości korzystającej z systemu transakcyjnego def3000/CB,
+Domyślnie: 1 miesiąc, +
+
+** *Data zakończenia zlecenia* - w polu można określić datę zakończenia płatności po wybraniu ikony kalendarza , bądź ustawić bezterminową realizację płatności zaznaczając checkbox *Bezterminowo* (checkbox domyślnie zaznaczony).
+
+Użytkownik przechodzi do drugiego kroku przelewu, za pomocą przycisków:
+
+• [Akceptuj] – przejście do autoryzacji przelewu (sprawdzenie schematu itd.),
+
+• [Dodaj do koszyka zleceń] – przycisk umożliwia zapisanie przelewu w Koszyku zleceń w statusie Nowy.
+
+Na formularzu potwierdzenia danych przelewu (krok 2) system wyświetla formularz z wprowadzonymi danymi w trybie podglądu wraz z zestawem akcji opisanych w rozdziale Dostępne akcje na drugim kroku nowego przelewu.
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji (opcja parametryzowana), Użytkownikowi wyświetlane jest potwierdzenie utworzenia zlecenia stałego:
+
+image::Panel_rodzica/image20.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Strona internetowa Opis wygenerowany automatycznie,width=627,height=442]
+
+==== Rachunki
+
+Użytkownik w sekcji _Rachunki_ widzi listę dostępnych rachunków dziecka. Rachunki są sortowane w porządku rosnącym według założenia rachunku.
+
+image::Panel_rodzica/image21.png[Obraz zawierający tekst, oprogramowanie, zrzut ekranu Opis wygenerowany automatycznie,width=487,height=151]
+
+Na liście rachunków, dla każdego rachunku prezentowane są następujące informacje:
+
+* Rachunek:
+
+** nazwa produktu lub nazwa własna rachunku,
+** numer rachunku – prezentowany jest w postaci zamaskowanej,
+
+* Dostępne środki – kwota dostępnych środków wraz z walutą.
+
+Akcje na wybranym rachunku:
+
+* Przycisk [Pokaż] – wybór tego przycisku powoduje przeniesienie Użytkownika do miniaplikacji *Rachunki* z możliwością podglądu informacji szczegółowych na rachunku (informacje te będą się różnic w zależności od obszaru roboczego z jakiego korzysta Użytkownik).
+
+image::Panel_rodzica/image22.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Strona internetowa Opis wygenerowany automatycznie,width=627,height=396]
+
+NOTE: Szczegółowy opis znajduje się w rozdziale dotyczącym _Rachunków (Akcje na wybranym rachunku)_.
+
+==== Skarbonki
+
+Użytkownik w sekcji _Skarbonki_ widzi listę dostępnych skarbonek dziecka. Skarbonki są posortowane w porządku rosnącym według założenia.
+
+image::Panel_rodzica/image23.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=501,height=244]
+
+Na liście skarbonek, dla każdej z nich prezentowane są następujące informacje:
+
+* Ikona graficzna z nazwą skarbonki i datą zakończenia,
+
+* Zgromadzone środki wraz z kwotą celu skarbonki
+
+Akcje na wybranej skarbonce:
+
+* Przycisk [Dopłać] – wybór tego przycisku powoduje przeniesienie Użytkownika do formatki dopłaty do skarbonki.
+
+image::Panel_rodzica/image24.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Strona internetowa Opis wygenerowany automatycznie,width=627,height=483]
+
+Następnie Użytkownik wypełnia poniższe dane:
+
+* *Z rachunku* - rachunek obciążany; w polu należy wybrać spośród dostępnych rachunków własnych Użytkownika - rachunek do obciążenia, w polu automatycznie podstawiany jest domyślny rachunek, który można zmienić, pole wymagalne,
+
+* *Na rachunek* - rachunek uznawany, czyli rachunek oszczędnościowy na który mają zostać przelane środki wraz z informacją o kwocie zwykłego zarządu, pole domyślnie wypełnione; nieedytowalne,
+
+* Szczegóły – w tym miejscu Użytkownik wypełnia pozostałe dane:
+
+** Kwota - kwota wpłaty wyrażona w PLN, pole wymagalne,
+
+** Tytuł - tytuł przelewu, pole automatycznie wypełnione „Wpłata środków na cel oszczędnosciowy”, edytowalne, pole może zawierać maksymalnie 140 znakow; pole opcjonalne. Dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: `!@#$%^&*()_+=\\\\\{}[]:;'<>?,./\aAoOuUs
+
+** Data realizacji - data realizacji przelewu; domyślnie wstawiana jest data bieżąca, pole nieedytowalne.
+
+Po wprowadzeniu danych należy przejść do formularza autoryzacji za pomocą przycisku [Akceptuj].
+
+Użytkownik autoryzuje wpłatę zgodnie z posiadaną metodą autoryzacji.
+
+Po dokonaniu akceptacji system wyświetla potwierdzenie wpłaty wraz z przyciskami:
+
+image::Panel_rodzica/image25.png[Obraz zawierający tekst, zrzut ekranu, design Opis wygenerowany automatycznie,width=627,height=350]
+
+• [Wróć do listy celów] – umożliwia powrót do listy celów,
+
+• [Wróć do pulpitu] – umożliwia powrót do pulpitu.
+
+==== Lokaty
+
+Użytkownik w sekcji _Lokaty_ widzi listę dostępnych lokat dziecka. Lokaty są sortowane w porządku rosnącym według założenia.
+
+image::Panel_rodzica/image26.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Czcionka Opis wygenerowany automatycznie,width=496,height=110]
+
+Na liście lokat, dla każdej z nich prezentowane są następujące informacje:
+
+* Nazwa lokaty, lub nazwa własna z terminem zakończenia,
+
+* Kwota lokaty.
+
+Akcje na wybranej lokacie:
+
+* Przycisk [Pokaż] – wybór tego przycisku powoduje przeniesienie Użytkownika do szczegółów lokaty w miniaplikacji *Lokaty*.
+
+image::Panel_rodzica/image27.png[Obraz zawierający tekst, zrzut ekranu, numer, oprogramowanie Opis wygenerowany automatycznie,width=627,height=619]
+
+Użytkownik ma możliwość z tego poziomu:
+
+* Zerwać lokatę – za pomocą przycisku [Zerwij] – na formatce zerwania, Użytkownik w polu *Na rachunek* może wybrać tylko jeden z rachunków dziecka, system zaprezentuje także informację o kwocie zwykłego zarządu,
+
+image::Panel_rodzica/image28.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, numer Opis wygenerowany automatycznie,width=627,height=496]
+
+* Pobrać potwierdzenie otwarcia lokaty za pomocą przycisku [Potwierdzenie otwarcia].
+
+NOTE: Użytkownik widzi tylko lokaty w statusie _Aktywne._
+
+==== Kieszonkowe
+
+Użytkownik w sekcji _Kieszonkowe_ widzi listę dostępnych kieszonkowych dla dziecka. Kieszonkowe są posortowane w porządku rosnącym według założenia.
+
+image::Panel_rodzica/image29.png[Obraz zawierający tekst, elektronika, zrzut ekranu, wyświetlacz Opis wygenerowany automatycznie,width=498,height=197]
+
+Na liście Kieszonkowe, dla każdej z pozycji prezentowane są następujące informacje:
+
+* Nazwa kieszonkowego wraz z datą najbliższego przelewu,
+
+* Kwotą kieszonkowego.
+
+Akcje na wybranym kieszonkowym:
+
+* Przycisk [Pokaż] – wybór tego przycisku powoduje przeniesienie Użytkownika do szczegółów kieszonkowego.
+
+image::Panel_rodzica/image30.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Strona internetowa Opis wygenerowany automatycznie,width=627,height=409]
+
+System prezentuje następujące informacje:
+
+* *Z rachunku* - rachunek obciążany;
+* *Na rachunek* - rachunek uznawany, czyli rachunek dziecka,
+
+* Szczegóły:
+
+** Kwota - kwota kieszonkowego,
+
+** Tytuł - tytuł kieszonkowego,
+
+** Cykliczność – w jakim cyklu wykonuje się zlecenie przelewu,
+
+** Najbliższy przelew – data najbliższego przelewu,
+
+** Data zakończenia – data zakończenia kieszonkowego.
+
+Akcje na wybranym kieszonkowym:
+
+* [Edytuj zlecenie stałe] – umożliwia edycję kieszonkowego,
+* [Wykonaj dodatkowy przelew] – umożliwia dodanie dodatkowego przelewu jednorazowego do dziecka,
+* [Pokaż historię zlecenia] – wyświetla historia zrealizowanych przelewów w ramach kieszonkowego,
+* [Anuluj zlecenie stałe] – anulowanie kieszonkowego.
+
+NOTE: Użytkownik może zarządzać kieszonkowym także z poziomu miniaplikacji *Przelewy* w zakładce _Zlecenia Stałe._ Akcje dostępne na kieszonkowym zostały szczegółowo opisane w rozdziale _Przelewy._
+
+==== Karty
+
+Użytkownik w sekcji _Karty_ widzi listę dostępnych kart dla dziecka.
+
+image::Panel_rodzica/image31.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Czcionka Opis wygenerowany automatycznie,width=530,height=107]
+
+Na liście Kart, dla każdej z pozycji prezentowane są następujące informacje:
+
+* Nazwa karty lub nazwa własna wraz z numerem karty w formie zamaskowanej,
+
+* Status karty.
+
+Akcje na wybranej karcie:
+
+* Przycisk [Pokaż] – wybór tego przycisku powoduje przeniesienie Użytkownika do szczegółów Karty.
+
+image::Panel_rodzica/image32.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, System operacyjny Opis wygenerowany automatycznie,width=616,height=636]
+
+NOTE: Opcje dostępne na szczegółach karty zostały szczegółowo opisane w rozdziale dotyczącym _Kart debetowych._
+
+=== Prośby o przelew
+
+System w zakładce _Prośby o przelew_ wyświetla użytkownikowi listę próśb o przelew wysłanych przez dziecko.
+
+image::Panel_rodzica/image33.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=627,height=383]
+
+Na liście prezentowane są następujące informacje:
+
+* Data – data wysłania prośby przez dziecko,
+* Imię dziecka i tytuł prośby,
+* Kwota o jaką prosi dziecko.
+
+Jeśli na liście znajdują się nowe prośby będą one oznaczone znacznikiem [Nowe].
+
+Lista próśb jest ładowana dynamicznie, kolejne pozycje wczytają się w trakcie przewijania strony.
+
+Użytkownik może filtrować listę próśb za pomocą pola do wyboru dat (domyślnie ustawione jest wyszukiwanie próśb z ostatnich 90 dni).
+
+image::Panel_rodzica/image34.png[Obraz zawierający tekst, zrzut ekranu, Czcionka, linia Opis wygenerowany automatycznie,width=199,height=58]
+
+Po rozwinięciu listy Użytkownik ma do wyboru:
+
+* Bieżący miesiąc,
+
+* Poprzedni miesiąc,
+
+* Ostatnie 90 dni,
+
+* Bieżący rok,
+
+* Poprzedni rok,
+
+* Wybierz zakres dat.
+
+Dodatkowo Użytkownik może filtrować transakcje w za pomocą pola „Szukaj”. Po wpisaniu w polu danych system rozpoczyna wyszukiwanie.
+
+image::Panel_rodzica/image35.png[Obraz zawierający zrzut ekranu, linia, Prostokąt, tekst Opis wygenerowany automatycznie,width=303,height=58]
+
+Użycie przycisku [Więcej] spowoduje wyświetlenie dodatkowych opcji do filtrowania:
+
+image::Panel_rodzica/image36.png[Obraz zawierający tekst, Prostokąt, zrzut ekranu, design Opis wygenerowany automatycznie,width=627,height=81]
+
+* Kwota od, Kwota do – zakres kwot (od-do), dla których ma zostać wyświetlona lista operacji.
+
+Dostępne przyciski na liście próśb o przelew:
+
+* [Wykonaj przelew] – prowadzi do formatki wykonania przelewu do dziecka.
+
+image::Panel_rodzica/image37.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Strona internetowa Opis wygenerowany automatycznie,width=627,height=591]
+
+Następnie Użytkownik wypełnia dane:
+
+* *Z rachunku* - rachunek obciążany; w polu należy wybrać spośród dostępnych rachunków własnych Użytkownika - rachunek do obciążenia, w polu automatycznie podstawiany jest domyślny rachunek do obciążenia, który można zmienić; pole wymagalne;
+
+* *Na rachunek* - rachunek uznawany; pole automatycznie wypełnione rachunkiem wskazanym przez dziecko, Użytkownik ma możliwość zmiany tego rachunku, dodatkowo Użytkownikowi prezentowana jest informacja o kwocie zwykłego zarządu,
+
+* *Szczegóły*:
+
+** *Kwota* - kwota przelewu, pole automatycznie wypełnione wartością wskazana przez dziecko, Użytkownik ma możliwość zmiany tej kwoty,
+
+** *Tytuł* - tytuł przelewu, pole automatycznie wypełnione przez dziecko, edytowalne, pole może zawierać maksymalnie 140 znaków; pole wymagalne. Dozwolone znaki w polu to cyfry i litery oraz znaki specjalne: `!@#$%^&*()_+=\\\\{}[]:;'<>?,./\äÄöÖüÜß.
+
+** *Data realizacji* - data realizacji przelewu; domyślnie wstawiana jest data bieżąca.
+
+W przypadku wyboru daty przyszłej Użytkownik ma możliwość zmiany daty wprowadzając ją z klawiatury lub może skorzystać z ikony kalendarza .
+
+* *Utwórz zlecenie stałe* - checkbox umożliwiający zdefiniowanie płatności cyklicznej;
+
+NOTE: Utworzenie zlecenia stałego zostało opisane w rozdziale _Przelewy_.
+
+Użytkownik przechodzi do drugiego kroku przelewu, za pomocą przycisków:
+
+* [Akceptuj] – przejście do autoryzacji przelewu (sprawdzenie schematu itd.),
+
+* [Dodaj do koszyka zleceń] – przycisk umożliwia zapisanie przelewu w Koszyku zleceń w statusie Nowy.
+
+image::Panel_rodzica/image38.png[Obraz zawierający tekst, zrzut ekranu, Czcionka Opis wygenerowany automatycznie,width=260,height=131]
+
+Na formularzu potwierdzenia danych przelewu (krok 2) system wyświetla formularz z wprowadzonymi danymi w trybie podglądu wraz z zestawem akcji opisanych w rozdziale _Dostępne akcje na drugim kroku nowego przelewu_.
+
+Po dokonaniu akceptacji danych aktualnie posiadaną metodą autoryzacji, Użytkownikowi wyświetlane jest potwierdzenie przekazania dyspozycji do realizacji:
+
+image::Panel_rodzica/image39.png[Obraz zawierający tekst, zrzut ekranu, design Opis wygenerowany automatycznie,width=627,height=415]
+
+NOTE: Jeśli Użytkownik korzysta z panelu w opcji dla rodzica, który nie ma udostępnionych umów dziecka wykonanie prośby o przelew będzie możliwe w oparciu o formatkę przelewu zwykłego.
+
+Użytkownik może także *Usunąć prośbę o przelew*. W tym celu należy rozwinąć wiersz z wybraną prośbą i użyć przycisku [Usuń prośbę o przelew].
+
+image::Panel_rodzica/image40.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Strona internetowa Opis wygenerowany automatycznie,width=627,height=160]
+
+Po wybraniu przycisku, system wyświetli okno do potwierdzenia, czy Użytkownik na pewno chce usunąć daną prośbę.
+
+image::Panel_rodzica/image41.png[Obraz zawierający tekst, zrzut ekranu, design Opis wygenerowany automatycznie,width=355,height=296]
+
+Użytkownik ma dwa przyciski do wyboru:
+
+* [Tak, usuń] – usuwa prośbę z listy,
+
+* [Anuluj] - anuluje usunięcie prośby.
+
+=== Ostatnie transakcje
+
+image::Panel_rodzica/image42.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, numer Opis wygenerowany automatycznie,width=627,height=418]
+
+Ostanie transakcje prezentują wszystkie przelewy zrealizowane z rachunków dziecka.
+
+Dla każdego przelewu prezentowane są następujące informacje:
+
+* Szczegóły:
+
+** Data realizacji - data realizacji przelewu,
+
+** Odbiorca przelewu - dane odbiorcy przelewu,
+
+** Tytuł przelewu,
+
+** Rodzaj transakcji,
+
+** Kwota - kwota przelewu wraz z symbolem waluty.
+
+Po kliknięciu w wiersz wybranego przelewu wyświetlane są dodatkowe informacje na temat przelewu:
+
+image::Panel_rodzica/image43.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Strona internetowa Opis wygenerowany automatycznie,width=627,height=343]
+
+*Z rachunku* – dane nadawcy i numer rachunku, z którego została wykonana płatność, jeśli jest to płatność wychodząca lub *Od* jeśli jest to płatność przychodząca.
+
+*Do* – dane odbiorcy i numer rachunku, na który została wykonana płatność, jeśli jest to płatność wychodząca lub *Na rachunek* jeśli jest to płatność przychodząca.
+
+*Szczegóły* – pozostałe dane przelewu w zależności od podanych danych szczegółowych i rodzaju przelewu.
+
+Dostępne są również przyciski:
+
+• [Ponów przelew] – umożliwia użytkownikowi ponowienie przelewu,
+
+• [Pobierz potwierdzenie] – potwierdzenie zrealizowania przelewu,
+
+• [Dodaj do listy odbiorców] – umożliwia zapisanie adresata przelewu do listy odbiorców.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza przelewu powoduje zwinięcie szczegółowych informacji.
+
+Jeśli na liście ostatnich transakcji będzie więcej niż 20 pozycji, wówczas system zaprezentuje przycisk [Pokaż wszystkie transakcje], który przeniesie użytkownika do historii transakcji wyfiltrowanymi danymi z rachunków dzieci.
+
+=== Blokady
+
+Wybranie opcji [Blokady] umożliwia przeglądanie listy blokad dla rachunków dziecka.
+
+image::Panel_rodzica/image44.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Strona internetowa Opis wygenerowany automatycznie,width=627,height=167]
+
+Na formularzu Blokady prezentowane są następujące informacje:
+
+• *Szczegóły* – data blokady oraz opis blokady,
+
+• *Rodzaj transakcji*,
+
+• *Kwota blokady* – kwota blokady wraz z walutą.
+
+Lista blokad jest ładowana dynamicznie. Kolejne blokady wczytają się w trakcie przewijania strony.
+
+== Miniaplikacja Panel rodzica w opcji dla rodzica, który nie ma udostępnionych umów dziecka
+
+Użytkownik, który nie posiada udostępnionych rachunków dziecka ma dostęp do ograniczonego Panelu rodzica.
+
+image::Panel_rodzica/image45.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, System operacyjny Opis wygenerowany automatycznie,width=627,height=326]
+
+W zakładce Podsumowanie widzi komunikat o braku dostępności uprawnień do przeglądania zawartości tej zakładki.
+
+W zakładce Prośby o przelew znajduje się lista próśb. Użytkownik może rozwinąć wiersz danej prośby.
+
+image::Panel_rodzica/image46.png[Obraz zawierający tekst, elektronika, zrzut ekranu, oprogramowanie Opis wygenerowany automatycznie,width=627,height=410]
+
+Aby wykonać prośbę o przelew Użytkownik wybiera przycisk [Wykonaj przelew]. System przekieruje Użytkownika do formatki przelewu zwykłego.
+
+image::Panel_rodzica/image47.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, wyświetlacz Opis wygenerowany automatycznie,width=627,height=511]
+
+Formatka zostanie wypełniona danymi wprowadzonymi przez dziecko na prośbie o przelew:
+
+* Odbiorca – dane dziecka,
+* Numer rachunku – rachunek dziecka,
+* Kwota – kwota prośby wskazana przez dziecko,
+* Tytuł przelewu – tytuł prośby wskazany przez dziecko.
+
+NOTE: Pozostałe działanie dotyczące wykonania prośby o przelew oparte jest o wykonanie przelewu zwykłego, szczegółowy opis znajduje się w rozdziale _Przelewy_.
+
+== Miniaplikacja Panel rodzica w opcji _empty state_
+
+System wyświetla Panel rodzica w opcji _empty state_ dla Użytkownika, który nie posiada dzieci lub jego dzieci nie korzystają z usług bankowości elektronicznej.
+
+image::Panel_rodzica/image48.png[Obraz zawierający tekst, zrzut ekranu, design Opis wygenerowany automatycznie,width=627,height=249]
+
+NOTE: Widoczność widżetu i miniaplikacji jest w tym przypadku uzależniona od konfiguracji banku.
+
+NOTE: Możliwość utworzenia rachunku dziecka wymaga poprawnego skonfigurowania definicji sprawy (case).
+
+== Wpływ Panelu rodzica na korzystanie z dotychczasowych minipalikacji
+
+=== Pulpit
+
+==== Informacja o pełnoletniości
+
+Dla Użytkownika posiadającego Panel rodzica pojawi się na pulpicie informacja dotycząca zbliżania się terminu ukończenia przez dziecko pełnoletniości.
+
+image::Panel_rodzica/image49.png[image,width=627,height=65]
+
+NOTE: Termin wyświetlania informacji jest parametryzowany.
+
+==== Widżety na Pulpicie
+
+Dla Użytkownika korzystającego z Panelu rodzica zostały wyłączone dane dotyczące dzieci na widżetach:
+
+1) Rachunki – rodzic widzi wszystkie rachunki z wyłączeniem rachunków dzieci.
+
+{empty}2) Historia transakcji – rodzić widzi wszystkie transakcje z wyłączeniem transakcji z rachunków dzieci.
+
+{empty}3) Karty – rodzic widzi wszystkie karty z wyłączeniem kart dzieci.
+
+{empty}4) Lokaty – rodzic widzi wszystkie lokaty z wyłączeniem lokat dzieci.
+
+Podgląd informacji dotyczących dzieci ma miejsce w dedykowanym Panelu rodzica.
+
+=== Rachunki
+
+Użytkownik posiadający dzieci, na liście rachunków będzie miał dodatkową grupę rachunków: _Rachunki dzieci_.
+
+image::Panel_rodzica/image50.png[Obraz zawierający zrzut ekranu, tekst, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=627,height=313]
+
+=== Karty
+
+Użytkownik posiadający dzieci, na liście kart będzie miał dodatkową grupę: _Karty dzieci_.
+
+
+image::Panel_rodzica/image51.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Ikona komputerowa Opis wygenerowany automatycznie,width=494,height=353]
+
+=== Lokaty
+
+Użytkownik na liście lokat ma widzi aktywne lokaty dziecka. Przy próbie zerwania lokaty ograniczony został wybór rachunków do przelania środków z lokaty do rachunków dziecka.
+
+image::Panel_rodzica/image52.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, numer Opis wygenerowany automatycznie,width=570,height=457]
+
+== Oświadczenie o kwocie zwykłego zarządu
+
+System wyświetla oświadczenie dotyczące ograniczenia kwoty wypłat z rachunku klienta niepełnoletniego.
+
+image::Panel_rodzica/image53.png[Obraz zawierający tekst, zrzut ekranu, Czcionka, linia Opis wygenerowany automatycznie,width=357,height=75]
+
+Użytkownik zlecający płatność z rachunku klienta niepełnoletniego zobowiązany jest do każdorazowego oświadczenia woli odnośnie dysponowania środkami pieniężnymi w zakresie nieprzekraczającym czynności zwykłego zarządu.
+
+Oświadczenie obowiązuje dla każdego typu płatności z rachunku dziecka: przelewu zwykłego, przelewu własnego, podatkowego, walutowego, w tym zlecenia stałego oraz otwarcia lokaty, spłaty kredytu, spłaty karty kredytowej, utworzenie i wpłaty na cel oszczędnościowy lub skarbonkę, a także płatności typu Paybynet.
+
+WARNING: Jeśli na rachunku dziecka ustawiony jest w systemie głównym limit zwykłego zarządu to płatność z rachunku klienta niepełnoletniego na kwotę przekraczającą miesięczny limit wypłat w granicach zwykłego zarządu, nie może być zrealizowana. Niezależnie od tego, kto jest zleceniodawcą płatności, czy dziecko (Użytkownik niepełnoletni), czy rodzic (przedstawiciel ustawowy lub pełnomocnik/użytkownik). Dotyczy każdego typu płatności z rachunku dziecka.
+
+== Informacja o kwocie zwykłego zarządu
+
+System informuje Użytkownika będącego rodzicem o obowiązywania limitu zwykłego zarządu na rachunku uznawanym.
+
+image::Panel_rodzica/image54.png[Obraz zawierający tekst, Czcionka, linia, zrzut ekranu Opis wygenerowany automatycznie,width=371,height=78]
+
+Użytkownik zlecający płatność na rachunek klienta niepełnoletniego każdorazowo informowany jest o fakcie obowiązywania na rachunku dziecka limitu wypłat w granicach zwykłego zarządu.
+
+image::Panel_rodzica/image55.png[Obraz zawierający tekst, zrzut ekranu, oprogramowanie, Strona internetowa Opis wygenerowany automatycznie,width=511,height=368]

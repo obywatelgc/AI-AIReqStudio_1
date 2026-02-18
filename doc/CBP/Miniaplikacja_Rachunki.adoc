@@ -1,0 +1,453 @@
+:imagesdir: images
+
+= Rachunki
+
+Miniaplikacja *Rachunki* zapewnia dostęp do rachunków (rozliczeniowych i oszczędnościowych) do których uprawniony jest Użytkownik.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Rachunki* z dwóch głównych poziomów:
+
+* widżetu *Rachunki* (wyświetlanego na pulpicie)
+
+image::Rachunki/image1.png[image,width=208,height=247]
+
+* menu *bocznego* po wybraniu opcji _Rachunki_.
+
+image::Rachunki/image2.png[image,width=92,height=48]
+
+W każdym z poziomów miniaplikacji dostępne są dla Użytkownika formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach.
+
+Użytkownik posiadający dostęp do miniaplikacji *Rachunki* ma możliwość:
+
+* przeglądania skróconych informacji o rachunkach na widżecie miniaplikacji *Rachunki*,
+* przeglądania listy rachunków,
+* przeglądania ostatnich transakcji na rachunku,
+* przeglądania przelewów oczekujących,
+* przeglądania przelewów odrzuconych (opcja dostępna dla kontekstu indywidualnego i firmowego w obszarze mikro),
+* przeglądania szczegółów rachunku,
+* przeglądania i pobierania wyciągów,
+* przeglądania blokad na rachunku,
+* przeglądania i pobierania listy opłat.
+
+NOTE: Funkcjonalność rachunków dostępna jest dla Użytkownika, który posiada odpowiednie
+uprawnienia: do funkcjonalności i do rachunków. Uprawnienia ustawiane są przez
+Administratora Użytkownikow w opcji _Ustawienia → Uprawnienia Użytkownikow._
+
+== Widżet Rachunki
+
+Widżet *Rachunki* jest nieedytowalny w opcji _Dostosuj pulpit_. Nie można zmienić jego położenia, ani usunąć z pulpitu.
+
+image::Rachunki/image1.png[image,width=208,height=247]
+
+Na widżecie jest możliwość:
+
+* podglądu maksymalnie 5 rachunków wraz z informacjami:
+
+** nazwa rachunku,
+** numer rachunku w postaci maskowanej
+** dostępne środki,
+
+
+* w dolnej części widżetu dostępna jest akcja:
+
+** [Pokaż wszystkie rachunki] – opcja jest dostępna jeśli Użytkownik ma więcej rachunków niż wyświetla się na widżecie, umożliwia przejście do listy wszystkich rachunków.
+
+* edycja listy rachunków:
+
+Użytkownik ma możliwość edycji listy rachunków, która prezentuje się na widżecie.
+
+Domyślnie lista posortowana jest chronologicznie według założenia rachunku. Jeśli użytkownik wybierze rachunek domyślny, wówczas zostanie on zaprezentowany jako pierwszy.
+
+Aby przejść do edycji należy na kaflu Rachunki wybrać image:Rachunki/image1Anew.png[image,width=19,height=20] i przejść do edycji listy rachunków.
+
+image::Rachunki/image1Bnew.png[image,width=208,height=247]
+
+Po przejściu do edycji Użytkownik zostanie przeniesiony do zakładki [Rachunki na pulpicie] w oknie [Dostosuj pulpit]. W oknie tym widoczna jest lista wszystkich rachunków.
+
+image::Rachunki/image1Cnew.png[image,width=208,height=247]
+
+Zmiana kolejności rachunków następuje po kliknięciu w ikonę image:Rachunki/image1Dnew.png[image,width=19,height=20] przy wybranej pozycji (kursor myszki zmienia się
+na krzyżyk), przytrzymaniu lewego przycisku myszki,a następnie przeciągnięcie pozycji na dowolne miejsce listy.
+
+Pokazanie/ukrycie rachunku sprowadza się do kliknięcia w przycisk znajdujący się przy danym rachunku:
+
+* [POKAŻ]/[UKRYJ].
+
+W dolnej części formularza dostępne są następujące akcje:
+
+* [Przywroć domyślny widok listy] – przywraca domyślny widok listy rachunków,
+* [Zapisz] – pozwala na zapisanie wprowadzonych zmian,
+* [Anuluj] – pozwala na anulowanie wprowadzonych zmian.
+
+Jeśli użytkownik dokona zmian i ich nie zapisze, to system zapyta, czy na pewno chce anulować zmiany.
+Użytkownik może wrócić do edycji i zapisać zmiany lub je anulować.
+
+image::Rachunki/image1Enew.png[image,width=357,height=620]
+
+
+== Przeglądanie listy rachunków
+
+Po kliknięciu w tytuł widżetu *Rachunki* lub poprzez wybór opcji z bocznego menu _Rachunki_ wyświetlane jest okno prezentujące listę rachunków rozliczeniowych i oszczędnościowych, do których Użytkownik jest uprawniony.
+
+image::Rachunki/image3.png[image,width=627,height=631]
+
+W poszczególnych grupach rachunki domyślnie są sortowane są w porządku rosnącym według identyfikatora rachunku, czyli chronologicznie według założenia rachunku.
+
+NOTE: Jeśli użytkownik wybierze rachunek domyślny, wówczas na liście przy wybranym rachunku zaprezentuje się ikona image:Rachunki/image3Anew.png[image,width=19,height=20].
+
+Na liście rachunków, dla każdego rachunku dostępne są następujące informacje:
+
+* *RACHUNEK*:
+** nazwa produktu lub nazwa własna rachunku (Użytkownik ma możliwość zmiany nazwy własnej),
+** numer rachunku – dla urządzeń o małych rozdzielczościach (smartfonów) numer rachunku prezentowany jest w postaci zamaskowanej, dla pozostałych urządzeń wyświetlany jest pełny numer rachunku,
+* *SALDO KSIĘGOWE* – saldo rachunku wraz z walutą,
+* *BLOKADY* - suma blokad na rachunku wyrażona w walucie rachunku,
+* *DOSTĘPNE ŚRODKI* – kwota dostępnych na rachunku środków wraz z walutą.
+
+Pod każdą grupą rachunków dostępne jest *Podsumowanie* zawierające sumę dostępnych środków. Jeśli w grupie rachunków walutowych będzie więcej walut, sumy będą widoczne dla każdej waluty osobno.
+
+image::Rachunki/image4.png[image,width=200,height=70]
+
+=== Akcje na wybranym rachunku
+
+Kliknięcie w wiersz wybranego rachunku powoduje przeniesienie użytkownika do szczegółowych danych o rachunku.
+
+image::Rachunki/image5.png[image,width=627,height=103]
+
+W nagłówku formatki dostępne są akcje:
+
+* *Kopiuj* – umożliwia skopiowanie numeru rachunku do schowka,
+* *Wykonaj przelew* – umożliwia przejście do formatki nowego przelewu z danego rachunku (przycisk nie jest dostęny na rachunku VAT).
+
+Dodatkowo system prezentuje informację:
+
+* Nazwa produktu lub nazwa własna rachunku (Użytkownik ma możliwość zmiany nazwy własnej),
+* Numer rachunku
+* Saldo księgowe - saldo rachunku wraz z walutą,
+* Blokady - suma blokad na rachunku wyrażona w walucie rachunku,
+* Dostępne środki - kwota dostępnych na rachunku środków wraz z walutą.
+
+Na formatce rachunki użytkownik w zależności od kontekstu ma dostępne zakładki.
+
+Dla Użytkownika kontekstu indywidualnego w obszarze osobistym dostępne są:
+
+* Ostatnie transakcje,
+* Przelewy oczekujące,
+* Szczegóły rachunku,
+* Więcej - lista rozwijalna:
+** Blokady,
+** Wyciągi,
+** Zestawienie opłat.
+
+image::Rachunki/image5Anew.png[image,width=627,height=103]
+
+Natomiast dla Użytkownika kontekstu indywidualnego lub firmowego w obszarze mikro dostępne są:
+
+* Ostatnie transakcje,
+* Przelewy oczekujące,
+* Przelewy odrzucone,
+* Szczegóły rachunku,
+* Blokady,
+* Wyciągi,
+* Zestawienie opłat.
+
+image::Rachunki/image5Bnew.png[image,width=627,height=103]
+
+NOTE: Przelewy odrzucone dla kontekstu indywidualnego w obszarze osobistym znajdują się w miniaplikacji _Przelewy_.
+
+==== Ostatnie transakcje
+
+image::Rachunki/image6.png[image,width=627,height=506]
+
+Ostanie transakcje prezentują wszystkie przelewy zrealizowane z danego rachunku.
+
+Dla każdego przelewu prezentowane są następujące informacje:
+
+* *Szczegóły:*
+
+** *Data realizacji* - data realizacji przelewu,
+
+** *Odbiorca przelewu* - dane odbiorcy przelewu,
+
+** *Tytuł przelewu*,
+
+* *Rodzaj transakcji,*
+
+* *Kwota* - kwota przelewu wraz z symbolem waluty.
+
+Po kliknięciu w wiersz wybranego przelewu wyświetlane są dodatkowe informacje na temat przelewu:
+
+image::Rachunki/image7.png[image,width=627,height=275]
+
+*Z rachunku* – dane nadawcy i numer rachunku, z którego została wykonana płatność, jeśli jest to płatność wychodząca lub *Od* jeśli jest to płatność przychodząca.
+
+*Do –* dane odbiorcy i numer rachunku, na który została wykonana płatność, jeśli jest to płatność wychodząca lub *Na rachunek* jeśli jest to płatność przychodząca.
+
+*Szczegóły* – pozostałe dane przelewu w zależności od podanych danych szczegółowych i rodzaju przelewu.
+
+Dostępne są również przyciski:
+
+* [Ponów przelew] – umożliwia użytkownikowi ponowienie przelewu,
+
+* [Pobierz potwierdzenie] – potwierdzenie zrealizowania przelewu,
+
+* [Dodaj do listy odbiorców] – umożliwia zapisanie adresata przelewu do listy odbiorców.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza przelewu powoduje zwinięcie szczegółowych informacji.
+
+Jeśli na liście ostatnich transakcji będzie więcej niż 20 pozycji, wówczas system zaprezentuje przycisk [Pokaż wszystkie transakcje], który przeniesie użytkownika do historii transakcji wyfiltrowanymi danymi z wybranego rachunku.
+
+==== Przelewy oczekujące
+
+image::Rachunki/image8.png[image,width=627,height=178]
+
+Przelewy oczekujące prezentują wszystkie przelewy oczekujące na realizację.
+
+Na zakładce [Oczekujące] system prezentuje liczbę aktywnych przelewów oczekujących na zaksięgowanie.
+
+Dla każdego przelewu oczekującego prezentowane są następujące informacje:
+
+* *Szczegóły:*
+
+** *Data realizacji* - data realizacji przelewu,
+
+** *Odbiorca przelewu* - dane odbiorcy przelewu,
+
+** *Tytuł przelewu*,
+
+** *Rodzaj transakcji,*
+
+** *Kwota* - kwota przelewu wraz z symbolem waluty.
+
+Po kliknięciu w wiersz wybranego przelewu wyświetlane są dodatkowe informacje na temat przelewu:
+
+* *Z rachunku* – dane nadawcy i numer rachunku, z którego będzie wykonana płatność,
+
+* *Do* – dane odbiorcy i numer rachunku, na który zostanie wykonana płatność,
+
+* *Szczegóły* – pozostałe dane przelewu w zależności od podanych danych szczegółowych i rodzaju przelewu.
+
+image::Rachunki/image9.png[image,width=604,height=218]
+
+Po rozwinięciu wiersza przelewu dostępne są przyciski:
+
+* [Edytuj przelew] - edycja płatności zaplanowanej,
+
+* [Dodaj do listy odbiorców] - dodanie adresata przelewu do listy odbiorców,
+
+* [Pobierz potwierdzdenie dyspozycji] – potwierdzenie przekazania przelewu do realizacji (opcja dostępna w zależności od parametryzacji),
+
+* [Anuluj przelew] - anulowanie płatności zaplanowanej.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza przelewu powoduje zwinięcie szczegółowych informacji.
+
+Jeśli na liście oczekujących przelewów będzie więcej niż 20 pozycji, wówczas system zaprezentuje przycisk [Pokaż wszystkie
+transakcje], który przeniesie użytkownika do historii transakcji wyfiltrowanymi danymi z wybranego rachunku.
+
+==== Przelewy odrzucone
+
+Przelewy odrzucone prezentują listę przelewów odrzuconych przez system transakcyjny. System zaprezentuje liczbę nowych
+odrzuconych przelewów na zakładce [Odrzucone]. Zakładka dostępna z poziomu Rachunków dla Użytkowników konteksty indywidualnego i firmowego w obszarze mikro.
+
+image::Rachunki/image9Anew.png[image,width=627,height=178]
+
+NOTE: Nowe przelewy odrzucone na liście są wyrożnione ciemniejszą czcionką. Pozostałe
+przelewy odrzucone są wyszarzone.
+
+Dla każdego przelewu odrzuconego prezentowane są następujące informacje:
+
+* *Szczegoły*:
+** *Data realizacji* - data realizacji przelewu,
+** *Odbiorca przelewu* - dane odbiorcy przelewu,
+** *Tytuł przelewu*,
+* *Rodzaj transakcji*,
+* *Kwota* - kwota przelewu wraz z symbolem waluty,
+
+Po kliknięciu w wiersz wybranego przelewu wyświetlane są dodatkowe informacje na temat przelewu:
+
+* *Z rachunku* – dane nadawcy i numer rachunku, z ktorego będzie wykonana płatność,
+* *Do* - dane odbiorcy i numer rachunku, na ktory zostanie wykonana płatność,
+* *Szczegoły* – powod odrzucenia oraz pozostałe dane przelewu w zależności od podanych danych szczegołowych i rodzaju przelewu.
+
+image::Rachunki/image9Bnew.png[image,width=604,height=218]
+
+Po rozwinięciu wiersza przelewu dostępne są przyciski:
+
+* [Ponów przelew] – umożliwia ponowienie odrzuconej płatności,
+* [Dodaj do listy odbiorcow] - umożliwia dodanie adresata przelewu do listy odbiorcow.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza przelewu powoduje zwinięcie szczegołowych informacji.
+
+Jeśli na liście ostatnich transakcji będzie więcej niż 20 pozycji, wówczas system zaprezentuje przycisk [Pokaż wszystkie
+transakcje], który przeniesie użytkownika do historii transakcji wyfiltrowanymi danymi z wybranego rachunku.
+
+==== Szczegóły
+
+image::Rachunki/image10.png[image,width=627,height=542]
+
+Na formularzu prezentowane są następujące dane podzielone na sekcje:
+
+* *Szczegóły:*
+
+** *Numer rachunku* – numer rachunku w formacie NRB, z możliwością skopiowania rachunku za pomocą przycisku [Kopiuj],
+
+** *Numer rachunku w formacie IBAN* - numer rachunku w formacie IBAN, z możliwością skopiowania za pomocą przycisku [Kopiuj],
+
+** *Waluta* – symbol waluty w jakiej prowadzony jest rachunek,
+
+** *Oprocentowanie* – oprocentowanie zgromadzonych środków,
+
+** *Suma zaległych opłat*,
+
+** *Data otwarcia* – data otwarcia rachunku (data w formacie DD.MM.RRRR),
+
+** *Przyznany limit kredytowy* - kwota przyznanego limitu kredytowego wraz z walutą,
+
+** *Sposób dystrybucji wyciągów*,
+
+** *Nazwa rachunku* - oryginalna nazwa produktu,
+
+** *Limity transakcyjne* - przycisk [Pokaż] umożliwia przejście do limitów w Ustawieniach.
+
+* *Powiązany rachunek VAT*
+
+** w tej sekcji zaprezentowany zostanie powiązany rachunek VAT, NRB w formie zamaskowanej wraz z nazwą rachunku i przyciskiem umożliwiającym przejście do szczegółów rachunku VAT (opcja dostępna dla Użytkowników kontekstu indywidualnego i firmowego w obszarze mikro),
+
+image::Rachunki/image10New.png[image,width=431,height=44]
+
+* *Osoby upoważnione:*
+
+** *Właściciel* – dane właściciela rachunku,
+
+** *Pełnomocnicy* – dane pełnomocnika rachunku, pole widoczne tylko dla właściciela rachunku,
+
+* *Pozostałe*:
+
+** *Nazwa rachunku* – nazwa rachunku lub nazwa nadana przez Użytkownika, za pomocą przycisku [Zmień] Użytkownik może zdefiniować własną nazwę rachunku, +
+
+image::Rachunki/image11.png[image,width=431,height=44]
+
+** *Rachunek domyślny* – użytkownik z tego poziomu może zmienić rachunek na domyślny za pomocą przycisku [Ustaw jako domyślny]. Po wyborze przycisku system zaprezentuje odpowiednią informacje.
+
+image::Rachunki/image12.png[image,width=427,height=38]
+
+==== Wyciągi
+
+Wybranie opcji [Wyciągi] umożliwia przeglądanie listy wyciągów dostępnych dla danego rachunku.
+
+image::Rachunki/image14.png[image,width=627,height=392]
+
+Na formularzu _Wyciągi_ prezentowane są następujące informacje:
+
+* *Okres wyciągu* - w podziale na lata,
+* *Numer wyciągu,*
+
+Dla każdego wyciągu dostępne są przyciski:
+
+* [Pobierz w PDF] – umożliwia pobranie wyciągu w formacie _PDF_.
+* [Pobierz w wybranym formacie] – umożliwia wyeksportowanie wyciągu w formacie określonym w opcji _Ustawienia → Ustawienia eksportu → Format eksportu wyciągów,_
+
+System umożliwia także filtrowanie wyciągów za pomocą dedykowanego pola do wyszukiwania za pomocą
+wyboru dat (domyślnie ustawione jest wyszukiwanie wyciągów do daty bieżącej).
+
+Po rozwinięciu listy Użytkownik ma do wyboru:
+
+image::Rachunki/image14Anew.png[image,width=249,height=47]
+
+* Bieżący miesiąc,
+* Poprzedni miesiąc,
+* Ostatnie 90 dni,
+* Bieżący rok,
+* Poprzedni rok,
+* Wybierz zakres dat.
+
+Lista wyciągów jest ładowana dynamicznie. Kolejne wyciągi wczytają się w trakcie przewijania strony.
+
+NOTE: Dodatkowo system umożliwia przeglądanie wyciągów archiwalnych za pomocą opcji [Pokaż archiwum]. Opcja dostępna dla Użytkowników systemu transakcyjnego def3000/CB.
+
+==== Blokady
+
+Wybranie opcji [Blokady] umożliwia przeglądanie listy blokad dla danego rachunku. +
+
+image::Rachunki/image15.png[image,width=627,height=317]
+
+Na formularzu _Blokady_ prezentowane są następujące informacje:
+
+* *Szczegóły* – data blokady oraz opis blokady,
+* *Rodzaj transakcji,*
+* *Kwota blokady* – kwota blokady wraz z walutą.
+
+Lista blokad jest ładowana dynamicznie. Kolejne blokady wczytają się w trakcie przewijania strony.
+
+Zdjęcie blokady powoduje, że nie jest ona dłużej widoczna dla Użytkownika. W przypadku, gdy nie ma blokad na rachunku wyświetlany jest komunikat: _Brak blokad środków._
+
+image::Rachunki/image16.png[image,width=291,height=162]
+
+==== Zestawienie opłat
+
+Wybranie opcji [Zestawienie opłat] umożliwia przeglądanie opłat pobranych dla danego rachunku.
+
+image::Rachunki/image17.png[image,width=627,height=315]
+
+Na formularzu _Zestawienie opłat_ prezentowane są następujące informacje:
+
+* *Okres zestawienia* - w podziale na lata.
+
+Dla każdego zestawienia dostępny jest przycisk:
+
+* [Pobierz PDF] – umożliwia pobranie zestawienia w formacie _PDF_.
+
+System umożliwia także filtrowanie zestawień za pomocą dedykowanego pola do wyszukiwania za pomocą
+wyboru dat (domyślnie ustawione jest wyszukiwanie zestawień opłat do daty bieżącej).
+
+Po rozwinięciu listy Użytkownik ma do wyboru:
+
+image::Rachunki/image14Anew.png[image,width=249,height=47]
+
+* Bieżący miesiąc,
+* Poprzedni miesiąc,
+* Ostatnie 90 dni,
+* Bieżący rok,
+* Poprzedni rok,
+* Wybierz zakres dat.
+
+Zestawienie opłat jest ładowane dynamicznie. Kolejne pozycje wczytają się w trakcie przewijania strony.
+
+NOTE: Dodatkowo system umożliwia przeglądanie zestawień archiwalnych za pomocą opcji [Pokaż archiwum]. Opcja dostępna dla Użytkowników systemu def3000/CB.
+
+=== Akcje i szczegóły na rachunku VAT
+
+W przypadku rachunków VAT użytkownik nie ma możliwości wykonania przelewu (brak przycisku [Nowy przelew]) oraz prezentowane są wartości: +
+
+image::Rachunki/image18.png[image,width=604,height=328]
+
+* *Szczegóły:*
+
+** *Numer rachunku* – numer rachunku w formacie NRB, z możliwością skopiowania rachunku za pomocą przycisku [Kopiuj],
+
+** *Numer rachunku w formacie IBAN* - numer rachunku w formacie IBAN, z możliwością skopiowania za pomocą przycisku [Kopiuj],
+
+** *Kod BIC (SWIFT)* - kod dostępny jest w szczegółach rachunku dla bankowości korzystającej z systemy transakcyjnego DefBank,
+
+** *Waluta* – symbol waluty w jakiej prowadzony jest rachunek,
+
+** *Oprocentowanie* – oprocentowanie zgromadzonych środków,
+
+** *Data otwarcia* – data otwarcia rachunku (data w formacie DD.MM.RRRR),
+
+** *Sposob dystrybucji wyciągów* - opcja dostępna jest w szczegółach rachunku dla bankowości korzystającej z systemy transakcyjnego DefBank,
+
+** *Nazwa rachunku* - oryginalna nazwa produktu.
+
+* *Rachunki powiązane:*
+
+** w tej sekscji zaprezentowane zostaną rachunki powiązane z rachunkiem VAT, NRB w formie zamaskowanej wraz z nazwą rachunku i przyciskiem umożliwiającym przejście do szczegółów rachunku (opcja dostępna dla Użytkowników kontekstu indywidualnego i firmowego w obszarze mikro),
+
+* *Osoby upoważnione:*
+
+** *Właściciel* – dane właściciela rachunku,
+
+** *Pełnomocnicy* – dane pełnomocnika rachunku, pole widoczne tylko dla właściciela rachunku,
+
+* *Pozostałe*:
+
+** *Nazwa rachunku* – nazwa rachunku lub nazwa nadana przez Użytkownika, za pomocą przycisku [Zmień].

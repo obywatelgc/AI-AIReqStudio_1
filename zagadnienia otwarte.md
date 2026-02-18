@@ -8,4 +8,7 @@ Struktura katalogów
     /MD - wymagania banku w formacie tesktowym MD
 /spec - dokument specyfikacji wymagań
 
-2. 
+2. **DEC-ACT-003 Uprawnienie funkcjonalne**  
+Dostęp do uruchomienia procesu aktywacji usługi CashDirector jest kontrolowany uprawnieniem funkcjonalnym „eKsięgowość – aktywacja”.
+
+3. 

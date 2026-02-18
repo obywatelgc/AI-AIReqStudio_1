@@ -1,0 +1,72 @@
+:imagesdir: images
+= e-Dokumenty
+
+NOTE: Aplikacja e-Dokumenty dostępna jest dla bankowości korzystającej z systemu
+transakcyjnego def3000/CB.
+
+W aplikacji e-Dokumenty znajdują się dokumenty udostępnione użytkownikowi systemu Asseco EBP za pomocą
+serwisu Nośnik Trwały (durable Medium) lub Basement.
+
+W aplikacji e-Dokumenty udostępniane są m.in. pliki dystrybuowane w ramach kampanii informacyjnej
+e-Dokumenty (tworzonej i wysyłanej przez operatora systemu Asseco ABP Advisory Console ->
+Obszar roboczy "Konfiguracja i Zarządzanie" -> Kampanie informacyjne -> kanał dystrybucji e-Dokumenty).
+Pliki zostają umieszczone na przestrzeni dyskowej oferowanej
+przez serwis (NT durable medium lub Basement) i są udostępniane użytkownikowi systemu
+Asseco EBP w aplikacji e-Dokumenty.
+
+Dokumenty na liście e-Dokumentów posortowane są wg daty - od najnowszych do najstarszych.
+Dokumenty są w formacie PDF. Na liście prezentowana jest nazwa pliku.
+W przypadku Nosnika Trwałego (durable Medium) wraz z nazwą pliku prezentowany jest opis.
+
+Na liście prezentowany jest numer dokumentu wraz z typem dokumentu.
+Typ dokumentu przypisany do dystrybucji za pośrednictwem Nośnika Trwałego i Basement.
+Dla Nośnika Trwałego (durable medium) zbiór typów jest konfigurowalny (opis konfiguracji znajduje się
+w instrukcji instalacji).
+
+Użytkownik Asseco EBP może zapoznać się z przesłanym dokumentem za pomocą opcji [Pobierz].
+
+Przykład listy e-Dokumentów - Basement:
+
+image::eDokumenty/edoc2.jpg[]
+
+Przykład listy e-Dokumentów - Nośnik Trwały (durableMedium):
+
+image::eDokumenty/edoc5.jpg[]
+
+Wymóg wyrażenia zgody na dystrybucję dokumentów typu *wzorce umowne* za pośrednictwem Nośnika
+Trwałego / Basement.
+Dostęp do aplikacji e-Dokumenty może zostać ograniczony, jeżeli w bankowości została włączona
+obsługa zgód i wymóg wyrażenia zgody na dystrybucję wzorców umownych za pośrednictwa
+archiwum e-Dokumenty.
+
+NOTE: Przełącznik *durableMediumConsentRequired* określa czy dostęp do archiwum e-Dokumentów
+wymaga zgody na odpowiedni kanał dystrybucji dokumentów.
+
+Obsługa zgód sterowana jest przełącznikami *userConsentsEnabled* i *userConsentsChangeEnabled*. Opis
+znajduje się w podrozdziale *<<zgody,Zgody i kanały dystrybucji>>*
+
+W przypadku, gdy klient nie udzielił zgody na dystrybucję *wzorców umownych* za pośrednictwa
+archiwum e-Dokumenty to po wejściu do aplikacji e-Dokumenty zostanie zaprezentowana informacja
+o konieczności wyrażenia odpowiedniej zgody jako warunku dostępu do dokumentów:
+
+image::eDokumenty/edoc3.jpg[image,width=396,height=210]
+
+Klient może udzielić zgody w opcji: Ustawienia -> Zgody i kanały dystrybucji -> zakładka
+„Kanały dystrybucji”. Opis znajduje się w podrozdziale <<zgody,Zgody i kanały dystrybucji>>:
+
+image::eDokumenty/edoc4.jpg[]
+
+IMPORTANT: W przypadku włączenie tylko usługi durableMediumConsentRequired przy jednoczesnym
+pozostawieniu wyłączonych userConsentsEnabled oraz userConsentsChangeEnabled
+użytkownik nie będzie miał możliwości zmiany ustawień w systemie Asseco EBP, a próba
+przejścia do tej opcji może zakończyć się informacją o jej niedostępności.
+
+W przypadku pierwszego udzielenia zgody na dystrybucję wzorców umownych kanałem
+e-Dokument użytkownikowi może zostać automatycznie wysłana kampania powitalna na
+Nośnik Trwały, o ile została skonfigurowana w systemie Asseco ABP Advisory Console.
+
+Kampania powitalna to pakiet dokumentów przygotowany przez operatora systemu Asseco ABP Advisory
+Console (Obszar roboczy "Konfiguracja i Zarządzanie" -> Kampanie informacyjne ->
+Pakiety -> "Kampania powitalna na Nośniku Trwałym").
+Przygotowane dokumenty zostają wysłane i zaprezentowane na liście e-Dokumentów
+w systemie Asseco EBP.

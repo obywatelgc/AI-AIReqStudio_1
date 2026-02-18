@@ -1,0 +1,2574 @@
+:imagesdir: images
+
+= Karty (Visiona)
+
+Miniaplikacja *Karty* zapewnia dostęp do listy kart (debetowych, kredytowych), do których Użytkownik jest uprawniony.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Karty* z dwóch głównych poziomów:
+
+* widżetu *Karty* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),
+
+
+* menu bocznego po wybraniu opcji _Karty_.
+
+
+
+W każdym z poziomów miniaplikacji dla Użytkownika dostępne są formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach.
+
+Użytkownik posiadający dostęp do miniaplikacji *Karty* ma możliwość:
+
+* przeglądania listy swoich kart lub wszystkich kart danego rachunku,
+* przeglądania informacji szczegółowych na temat karty,
+* modyfikacji nazwy własnej karty,
+* przeglądania historii operacji wykonywanych kartą/na rachunku karty,
+* zmiany limitów na karcie,
+* przeglądania wyciągów z rachunku karty,
+* zastrzeżenia karty,
+* zablokowanie karty,
+* odblokowanie karty,
+* włączenie/wyłączenie płatności zbliżeniowych
+* spłaty karty kredytowej,
+* przeglądania blokad na rachunku karty.
+
+
+NOTE: Funkcjonalność kart dostępna jest dla Użytkownika kontekstu firmowego w obszarze Mikro, który posiada odpowiednie uprawnienia do funkcjonalności. Uprawnienia nadawane są przez Administratora w opcji _Ustawienia → Uprawnienia Użytkowników_.
+
+NOTE: Opcje dostępne na kartach dla Użytkownika, mogą różnić się w zależności od parametryzacji dla Banku.
+
+== Widżet karty
+
+Widżet *Karty* prezentuje dane z podziałem na Kredytowe i Debetowe, może być zaprezentowane do dwóch kart każdego rodzaju. W przypadku większej ilości kart (więcej niż 4) Użytkownika, prezentowany jest przycisk _Pokaż wszystkie karty_.
+
+Na widżecie możliwe jest:
+
+* zaprezentowanie skróconych informacji o karcie, czyli:
+** *Nazwa i numer* – nazwa karty (nadana przez system), numer karty częściowo zamaskowany (widoczne 4 ostatnie cyfry numeru karty), pod nazwą karty,
+** *Dostępne środki* – kwota dostępnych środków wraz z walutą,
+** *Status* – dla kart zablokowana, do aktywacji,
+** *Ważna do* – data ważności karty (gdy kończy się jej ważność do 30 dni przed jej wygaśnięciem),
+** *Rodzaj karty* – _Kredytowa , Debetowa_.
+* uruchomienie następujących akcji:
+** [AKTYWUJ] – akcja dostępna dla kart w statusie _Do aktywacji_, umożliwia wykonanie akcji aktywacji karty,
+** [ODBLOKUJ] – akcja dostępna dla kart w statusie _Zablokowana_, umożliwia wykonanie akcji odblokowania karty.
+
+== Przeglądanie listy kart
+
+Po kliknięciu w tytuł widżetu *Karty* lub poprzez wybór opcji z bocznego menu _Karty_ wyświetlane jest okno prezentujące listę kart, do których Użytkownik jest uprawniony:
+
+
+Na liście kart, dla każdej karty dostępne są następujące informacje:
+
+* *Nazwa i numer* – nazwa karty (nadana przez system), numer karty częściowo zamaskowany (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Rodzaj* – rodzaj karty Kredytowa, Debetowa,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Status* – status karty, dostępne statusy: _Aktywna, Zablokowana, Zastrzeżona, Do aktywacji, Wyprodukowana._ Wartość prezentowana w polu STATUS zależy od wartości jaka przyjdzie z systemu kartowego,
+* *Dostępne środki* – kwota dostępnych środków wraz z walutą,
+* Określony zakres akcji:
+** [AKTYWUJ] – akcja dostępna dla kart w statusie _Do aktywacji_, umożliwia wykonanie akcji aktywacji karty,
+** [ODBLOKUJ] – akcja dostępna dla kart w statusie _Zablokowana_, umożliwia wykonanie akcji odblokowania karty.
+
+== Podgląd szczegółów
+
+=== KARTA KREDYTOWA
+
+Aby przejść do szczegółów wybranej karty kredytowej należy kliknąć w obszar wybranej *karty*. System wyświetla formularz SZCZEGÓŁY KARTY, lista pól dostępnych na formularzu oraz przycisków, jest uzależniona od typu karty.
+
+W górnej sekcji szczegółów karty kredytowej głównej/dodatkowej prezentowane są następujące dane:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie oraz typ karty: Kredytowa,
+* *Ikona płatności zbliżeniowych* (jej prezentacja oznacza włączone płatności),
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Dostępne środki* – kwota dostępnych środków na karcie wraz z walutą,
+* *Blokady* – kwota zablokowanych środków na karcie wraz z walutą,
+* *Nazwa na karcie* – nazwa karty nadana przez Użytkownika,
+* *Status karty* – dostępne statusy: _Aktywna_, , _Zablokowana_, _Zastrzeżona_, _Do aktywacji_, _Wyprodukowana_.
+
+
+Na formularzu ze szczegółami karty kredytowej głównej/dodatkowej prezentowane są następujące zakładki:
+
+* *Podsumowanie* – umożliwia przeglądanie informacji szczegółowych na temat karty,
+* *Transakcje* – umożliwia przeglądnie historii operacji na karcie,
+* *Wyciągi* – umożliwia przeglądanie listy wyciągów tylko dla karty głównej,
+* *Blokady* – umożliwia przeglądanie blokad dla karty.
+
+Określony zestaw akcji:
+
+* *Spłać kartę* – umożliwia spłatę karty.
+
+Dla *Karty Kredytowej głównej* system prezentuje:
+
+* Informacje:
+
+** minimalna kwota pozostała do spłaty oraz data spłaty,
+
+** całkowita kwota pozostała do spłaty z ostatniego wyciągu,
+
+** Aktywuj – umożliwia aktywowanie karty (dla status Do aktywacji).
+
+
+W sekcji informacje o kracie karty kredytowej głównej/dodatkowej prezentowane są następujące dane:
+
+
+* *Nazwa i rodzaj karty* – nazwa karty nadawana w systemie lub przez Użytkownika: Kredytowa,
+* *Typ karty* – typ karty: Kredytowa główna, Kredytowa dodatkowa,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Numer rachunku powiązanego z kartą* – numer rachunku kredytowego, do którego wydano kartę z możliwością kopiowania,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie,
+* *Limit kredytowy* – limit kredytowy na karcie, kwota wraz z walutą,
+* *Blokady* – kwota zablokowanych środków wraz z walutą,
+* *Status karty* – dostępne statusy: _Aktywna_, _Zablokowana_, _Zastrzeżona_. +
++
+Określony zestaw akcji: +
++
+** *Zablokuj (czasowo)* – umożliwia zablokowanie karty,
+
+** *Odblokuj* – umożliwia odblokowanie karty tylko dla status _Zablokowana_,
+
+** *Zastrzeż (na stałe)* – umożliwia zastrzeżenie karty,
+
+* *Data ważności* – koniec okresu ważności karty (data w formacie DD.M.RRRR),
+* *Waluta* – symbol waluty,
+* *Karta wznawiana* – Tak/Nie,
+* *Płatności zbliżeniowe* – włączone/wyłączone. +
++
+Określony zestaw akcji: +
++
+** *Włącz* – umożliwia włączenie płatności zbliżeniowych dla karty,
+
+** *Wyłącz* – umożliwia wyłączenie płatności zbliżeniowych na karcie,
+
+* *Nazwa własna* – umożliwia nadanie nazwy własnej dla karty,
+* *Limity transakcyjne* – umożliwia przejście do limitów karty.
+
+W sekcji szczegóły o kracie karty kredytowej głównej prezentowane są następujące dane:
+
+
+* *Dostępne środki* – kwota dostępnych środków wraz z walutą,
+* *Wykorzystany limit* – kwota zadłużenia karty wraz z walutą,
+* *Termin spłaty* – data następnej spłaty, data w formacie DD.MM.RRRR,
+* *Data końca bieżącego cyklu rozliczeniowego*– data najbliższego okresu rozliczeniowego, pola dostępne dla właściciela lub współwłaściciela do umowy kredytowej (data w formacie DD.MM.RRRR),
+* *Aktualne zadłużenie* – kwota zadłużenia karty wraz z walutą,
+* *Kwota zadłużenia z poprzedniego cyklu* – kwota wraz z walutą zadłużenia z poprzedniego cyklu,
+* *Całkowita kwota do spłaty z ostatniego wyciągu* – kwota do spłaty z ostatniego wyciągu,
+* *Kwota pozostała do spłaty z ostatniego wyciągu* – pozostała kwota do spłaty z ostatniego wyciągu,
+* *Minimalna kwota do spłaty z ostatniego wyciągu środki* – minimalna kwota do spłaty z ostatniego wyciągu,
+* *Kwota pozostała do spłaty z ostatniego wyciągu środki* – pozostała minimalna kwota do spłaty z ostatniego wyciągu.
+
+=== KARTA DEBETOWA
+
+Aby przejść do szczegółów wybranej karty debetowej należy kliknąć w obszar wybranej *karty*. System wyświetla formularz SZCZEGÓŁY KARTY, , lista pól dostępnych na formularzu oraz przycisków, jest uzależniona od typu karty.
+
+W górnej sekcji szczegółów karty debetowej głównej/dodatkowej prezentowane są następujące dane:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie oraz typ karty: Debetowa,
+* *Ikona płatności zbliżeniowych* (jej prezentacja oznacza włączone płatności),
+* *Dostępne środki* – kwota dostępnych środków na karcie wraz z walutą,
+* *Blokady* – kwota zablokowanych środków na karcie wraz z walutą,
+* *Nazwa na karcie* – nazwa karty nadana przez Użytkownika,
+* *Status karty* – dostępne statusy: _Aktywna_, , _Zablokowana_, _Zastrzeżona_, _Do aktywacji,_ _Wyprodukowana_.
+
+
+Na formularzu ze szczegółami karty debetowej głównej/dodatkowej prezentowane są następujące zakładki:
+
+* *Podsumowanie* – umożliwia przeglądanie informacji szczegółowych na temat karty,
+* *Transakcje* – umożliwia przeglądnie historii operacji na karcie,
+* *Blokady* – umożliwia przeglądanie blokad dla karty.
+
+Określony zestaw akcji:
+
+* Informacje:
+
+** Aktywuj – umożliwia aktywowanie karty (dla status Do aktywacji).
+
+
+W sekcji informacje o kracie karty debetowej głównej/dodatkowej prezentowane są następujące dane:
+
+
+* *Nazwa i rodzaj karty* – nazwa karty nadawana w systemie lub przez Użytkownika: Karta Debetowa,
+* *Typ karty* – typ karty: Debetowa główna, Debetowa dodatkowa,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Numer rachunku powiązanego z kartą* – numer rachunku kredytowego, do którego wydano kartę z możliwością przejścia do szczegółów rachunku,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie,
+* *Blokady* – kwota zablokowanych środków wraz z walutą,
+* *Status karty* – dostępne statusy: _Aktywna_, _Zablokowana_, _Zastrzeżona_, +
++
+Określony zestaw akcji: +
++
+** *Zablokuj (czasowo)* – umożliwia zablokowanie karty,
+
+** *Odblokuj* – umożliwia odblokowanie karty tylko dla status _Zablokowana_,
+
+** *Zastrzeż (na stałe)* – umożliwia zastrzeżenie karty,
+
+* *Data ważności* – koniec okresu ważności karty (data w formacie DD.M.RRRR),
+* *Waluta* – symbol waluty,
+* *Karta wznawiana* – Tak/Nie,
+* *Płatności zbliżeniowe* – włączone/wyłączone, +
++
+Określony zestaw akcji: +
++
+** *Włącz* – umożliwia włączenie płatności zbliżeniowych dla karty,
+
+** *Wyłącz* – umożliwia wyłączenie płatności zbliżeniowych na karcie,
+
+* *Nazwa własna* – umożliwia nadanie nazwy własnej dla karty,
+* *Limity transakcyjne* – umożliwia przejście do limitów karty.
+
+W sekcji szczegóły o kracie karty debetowej głównej/dodatkowej prezentowane są następujące dane:
+
+
+* *Dostępne środki* – kwota dostępnych środków wraz z walutą.
+
+== Modyfikacja nazwy własnej karty
+
+W celu ułatwienia identyfikacji karty, Użytkownik ma możliwość modyfikacji nazwy produktu z poziomu:
+
+* szczegółów karty za pomocą przycisku [Zmień] znajdującej się przy polu *Nazwa własna*.
+
+
+Obok pola dostępne są przyciski:
+
+* Akceptuj – umożliwia zapisanie zmienionej nazwy własnej karty. Nazwę własną karty zapisać można także po jej wprowadzeniu i użyciu klawisza [Enter] z klawiatury,
+* Anuluj – umożliwia rezygnację ze zmiany nazwy własnej karty.
+
+W przypadku, gdy Użytkownik usunie wprowadzoną w polu nazwę własną karty, system przyporządkowuje mu nazwę systemową.
+
+== Przeglądanie historii operacji wykonanych kartą
+
+Aby przejść do historii operacji wykonanych kartą płatniczą należy wybrać szczegóły wybranej karty, a następnie wybrać [TRANSAKCJE]. Wyświetlany jest wówczas formularz TRANSAKCJI KARTY prezentujący listę operacji wykonanych przy użyciu karty płatniczej.
+
+
+Posiadacz głównej karty kredytowej ma możliwość wyświetlenia wszystkich operacji wykonanych kartą płatniczą oraz operacji wykonanych na rachunku związanym z tą kartą poprzez użycie opcji w filtrze
+* *Transakcje rachunku powiązanego z kartą*. Posiadacz dodatkowej karty kredytowej ma możliwość wyświetlenia wszystkich operacji na rachunku wykonanych tylko tą kartą.
+
+W celu zawężenia prezentacji listy operacji wykonanych kartą, system umożliwia zastosowanie filtrów:
+
+* *Prostego* – filtrowanie listy kart następuje po wpisaniu danych w polu Szukaj znajdującego się na formatce:
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej operacji w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści. Aby powrócić do pełnej listy kart należy kliknąć w przycisk [X] w polu wyszukiwania.
+
+* *Zaawansowanego* – użycie przycisku [Więcej] umożliwia ustawienie filtru zaawansowanego:
+
+
+Użytkownik ma możliwość ustawiania filtru zaawansowanego dla następujących pól:
+
+* *Ostatnie 90 dni*– liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana historia operacji wykonanych kartą płatniczą, domyślnie 90 dni,
+* *Bieżący miesiąc –* zakres za bieżący miesiąc,
+* *Poprzedni miesiąc -* zakres za poprzedni miesiąc,
+* *Bieżący rok* – zakres za bieżący rok,
+* *Poprzedni rok* - zakres za poprzedni rok,
+* *Wybierz zakres dat* - zakres dat, dla których ma zostać wyświetlona historia operacji wykonanych kartą płatniczą, od miesiąca wstecz do daty bieżącej. Alternatywa dla pola *Ostatnie*. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą którego można określić zakres dat.
+
+
+* *Kwota od*, *Kwota do* – zakres kwot (od - do), dla których ma zostać wyświetlona historia operacji wykonanych kartą płatniczą,
+* *Rodzaj operacji* – Użytkownik mam możliwość filtrowania operacji po rodzaju, poprzez wybór wartości z dostępnej listy:
+** Wszystkie (wartość domyślna),
+** Obciążenia,
+** Uznania.
+
+== Podgląd limitów karty
+
+Aby podglądać limity karty należy na formularzu PODSUMOWANIA karty, wybrać przycisk [Pokaż] Przejdź do Ustawień. Wyświetlany jest wówczas formularz LIMITY DLA KARTY, prezentujący limity wybranej karty.
+
+
+Na formularzu LIMITY DLA KARTY system prezentuje następujące informacje:
+
+W sekcji Limity dla karty prezentowane są dane:
+
+* *Nazwa i rodzaj karty* – nazwa karty nadawana w systemie lub przez Użytkownika,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Rodzaj karty* – typ karty: Kredytowa, Debetowa,
+* *Status karty* – dostępne statusy: _Aktywna_, _Zablokowana_, _Zastrzeżona_,
+* *Posiadacz karty* – imię i nazwisko właściciela karty.
+
+W sekcji Limity karty prezentowane są dane:
+
+* *Dzienny limit wartości operacji gotówkowych*, wraz z następującymi parametrami:
+** Kwota dziennego limitu operacji gotówkowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+* *Dzienny limit wartości operacji bezgotówkowych*, wraz z następującymi parametrami:
+** Kwota dziennego limitu operacji bezgotówkowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+* *Dzienny limit wartości operacji internetowych*, wraz z następującymi parametrami:
+** Kwota dziennego limitu operacji internetowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu.
+
+Na formularzu dostępny jest określony zestaw akcji:
+
+* Edytuj – pozwala na edycję i ustalenie limitów dla karty,
+
+* Wróć do szczegółów karty – powrót do podsumowania karty.
+
+== Zmiana limitów karty
+
+Aby zmienić limity karty należy na formularzu LIMITY DLA KARTY, wybrać przycisk [EDYTUJ] umożliwiający zmianę limitów wybranej karty.
+
+Na formularzu ZMIEŃ LIMITY DLA KARTY system prezentuje następujące informacje:
+
+W sekcji Limity dla karty prezentowane są dane:
+
+* *Nazwa i rodzaj karty* – nazwa karty nadawana w systemie lub przez Użytkownika,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Rodzaj karty* – typ karty: Kredytowa, Debetowa,
+* *Status karty* – dostępne statusy: _Aktywna_, _Zablokowana_, _Zastrzeżona_,
+* *Posiadacz karty* – imię i nazwisko właściciela karty.
+
+W sekcji Limity karty prezentowane są dane:
+
+* *Dzienny limit wartości operacji gotówkowych*, wraz z następującymi parametrami:
+** Kwota dziennego limitu operacji gotówkowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+** Limit Min – minimalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,
+** Limit Maks – maksymalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,
+* *Dzienny limit wartości operacji bezgotówkowych*, wraz z następującymi parametrami:
+** Kwota dziennego limitu operacji bezgotówkowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+** Limit Min – minimalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,
+** Limit Maks – maksymalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,
+* *Dzienny limit wartości operacji internetowych*, wraz z następującymi parametrami:
+** Kwota dziennego limitu operacji internetowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+** Limit Min – minimalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,
+** Limit Maks – maksymalna kwota limitu którą Użytkownik może ustawić, pole informacyjne.
+
+System kontroluje minimalną i maksymalną kwotę limitu wprowadzoną przez Użytkownika, w przypadku gdy wprowadzona kwota jest mniejsza od minimalnej, albo większa od maksymalnej system prezentuje odpowiedni komunikat i nie pozwala na przejście do drugiego kroku potwierdzenia operacji.
+
+Po wprowadzeniu zmiany wysokości limitu Użytkownik musi zatwierdzić wprowadzone zmiany naciskając przycisk [AKCEPTUJ]. Zmiana limitu karty wymaga autoryzacji dyspozycji klienta za pomocą dostępnej metody autoryzacji.
+
+Po poprawnej akceptacji zmiany limitów karty zostanie zaprezentowany komunikat jak na poniższym ekranie wraz z przyciskami [WRÓĆ DO LIMITÓW] umożliwiający powrót do limitów kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+== Przeglądanie wyciągów z rachunku karty kredytowej
+
+Aby przeglądnąć listę wyciągów danej karty należy na formularzu KARTY wybrać opcję [WYCIĄGI].
+
+Lista wyciągów jest automatycznie dodawana (20 pierwszych), Użytkownik ma możliwość przewijania za pomocą myszki lub paska .
+
+
+W celu zawężenia prezentacji listy wyciągów, system umożliwia zastosowanie filtra daty OD … DO:
+
+Użytkownik ma możliwość ustawienia filtru zaawansowanego dla następujących pól:
+
+* *Zakres dat* – zakres dat, dla których ma zostać wyświetlona lista wyciągów, od miesiąca wstecz do daty bieżącej. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą którego można określić zakres dat.
+
+
+Zastosowanie filtru aktywuje się automatycznie po opuszczeniu pola z datą.
+
+W celu pobrania danego wyciągu system prezentuje przycisk [POBIERZ PDF], za pomocą którego Użytkownik ma możliwość pobrania konkretnego wyciągu karty w formacie PDF.
+
+W przypadku braku wyciągów prezentowany jest komunikat: "Brak wyciągów do wyświetlenia".
+
+
+== Przeglądanie blokad karty
+
+Aby przeglądnąć listę blokad danej karty należy wybrać opcję [BLOKADY].
+
+Lista blokad jest automatycznie dodawana (20 pierwszych), Użytkownik ma możliwość przewijania za pomocą myszki lub paska bocznego.
+
+
+Na liście blokad prezentowana jest ich liczba, dla każdej blokady dostępne są następujące informacje:
+
+* *Data* – data blokady,
+* *Opis blokady* – dane blokady,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Kwota* – kwota blokady,
+* *Suma zablokowanych środków* – suma blokad na karcie.
+
+== Zastrzeżenie karty
+
+Aby zastrzec kartę należy na formularzu PODSUMOWANIA karty kliknąć w opcję [ZASTRZEŻ].
+
+=== KARTA KREDYTOWA
+
+System prezentuje następujący formularz.
+
+
+Na formularzu ZASTRZEŻENIE KARTY, dla karty kredytowej system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Kredytowa,
+* *Numer rachunku kredytowego* – numer rachunku kredytowego, do którego wydano kartę,
+* *Status karty* - _Aktywna_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
++
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację zastrzeżenia karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po poprawnej akceptacji zastrzeżenia karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+Dla odrzucenia akceptacji zastrzeżenia karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+=== KARTA DEBETOWA
+
+System prezentuje następujący formularz:
+
+
+Na formularzu ZASTRZEŻENIE KARTY, dla karty kredytowej system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Debetowa,
+* *Numer rachunku debetowego* – numer rachunku debetowego, do którego wydano kartę,
+* *Status karty* - _Aktywna_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
++
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację zastrzeżenia karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po poprawnej akceptacji zastrzeżenia karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+Dla odrzucenia akceptacji zastrzeżenia karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+== Zablokowanie karty
+
+Aby zablokować kartę należy na formularzu PODSUMOWANIA karty kliknąć w opcję [ZABLOKUJ].
+
+=== KARTA KREDYTOWA
+
+System prezentuje następujący formularz:
+
+
+Na formularzu ZABLOKUJ KARTĘ, dla karty kredytowej system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Kredytowa,
+* *Numer rachunku kredytowego* – numer rachunku kredytowego, do którego wydano kartę,
+* *Status karty* - _Aktywna_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
++
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację zablokowania karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po poprawnej akceptacji ZABLOKOWANIA karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+Dla odrzucenia akceptacji zablokowania karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+=== KARTA DEBETOWA
+
+System prezentuje następujący formularz.
+
+
+Na formularzu ZABLOKUJ KARTY, dla karty kredytowej system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Debetowa,
+* *Numer rachunku debetowego* – numer rachunku debetowego, do którego wydano kartę,
+* *Status karty* - _Aktywna_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
++
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację zablokowania karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po poprawnej akceptacji zablokowania karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+Dla odrzucenia akceptacji zablokowania karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+== Odblokowanie karty
+
+Aby odblokować kartę należy kliknąć w opcję [ODBLOKUJ] na widżecie KARTY albo na formularzu PODSUMOWANIA karty kliknąć w opcję [ODBLOKUJ].
+
+
+Na formularzu ODBLOKUJ KARTY, dla karty kredytowej system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Debetowa, Kredytowa,
+* *Numer rachunku kredytowego/debetowego* – numer rachunku kredytowego/debetowego, do którego wydano kartę,
+* *Status karty* - _Zablokowana_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
++
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację odblokowania karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+
+Po poprawnej akceptacji odblokowania karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+== Płatności zbliżeniowe karty włączenie
+
+Aby włączyć płatności zbliżeniowe karty należy kliknąć w opcję [ZMIEŃ] na formularzu PODSUMOWANIA dla karty w polu Płatności zbliżeniowe, która ma status płatności wyłączony.
+
+
+Na formularzu WŁĄCZ PŁATNOŚCI ZBLIŻENIOWE, dla karty system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Debetowa, Kredytowa,
+* *Numer rachunku kredytowego/debetowego* – numer rachunku kredytowego/debetowego, do którego wydano kartę,
+* *Status karty* - _Aktywna_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
+ +
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację odblokowania karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po poprawnej akceptacji włączenia płatności zbliżeniowych karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+== Płatności zbliżeniowe karty wyłączenie
+
+Aby wyłączyć płatności zbliżeniowe karty należy kliknąć w opcję [ZMIEŃ] na formularzu PODSUMOWANIA dla karty w polu Płatności zbliżeniowe, która ma status płatności włączony.
+
+
+Na formularzu WYŁĄCZ PŁATNOŚCI ZBLIŻENIOWE, dla karty system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Debetowa, Kredytowa,
+* *Numer rachunku kredytowego/debetowego* – numer rachunku kredytowego/debetowego, do którego wydano kartę,
+* *Status karty* - _Aktywna_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
+ +
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację odblokowania karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po poprawnej akceptacji wyłączenia płatności zbliżeniowych karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+== Spłata karty kredytowej
+
+Aby spłacić zadłużenie na karcie kredytowej należy kliknąć w opcję [SPŁAĆ KARTĘ] na formularzu wybranej. Funkcjonalność spłaty karty jest dostępna tylko dla karty kredytowej głównej.
+
+Po wyborze przycisku wyświetlony zostaje formularz SPŁATA KARTY z następującymi danymi:
+
+
+
+W sekcji z rachunku prezentowane są dane:
+
+* *Z rachunku* – pole zawierające listę rachunków Użytkownika, należy wskazać rachunek, z którego ma być wykonana spłata zadłużenia na karcie, realizacja spłaty karty możliwa jest z rachunków w walucie PLN lub w walucie rachunku karty. W polu podpowiadany jest rachunek ustawiony przez Użytkownika jako domyślny (w opcji _Ustawienia → Rachunek domyślny_), który można zmienić, pole wymagalne.
+
+W sekcji Szczegóły prezentowane są dane:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj spłaty* – wariant spłaty zadłużenia, dostępne wartości:
+** Minimalna kwota pozostała do spłaty z ostatniego wyciągu,
+** Całkowita kwota pozostała do spłaty z ostatniego wyciągu,
+** Aktualne zadłużenie,
+** Dowolna kwota,
+* *Kwota* – kwota spłaty zadłużenia w walucie rachunku karty (kwota nie może być większa od kwoty całkowitego zadłużenia na karcie). Pole kwota:
+** należy uzupełnić ręcznie w przypadku wybrania typu spłaty:
+*** Dowolna kwota,
+** pole wypełniane automatycznie (bez możliwości zmiany) w przypadku wskazania typu spłaty:
+*** Minimalna kwota,
+*** Całkowita kwota,
+*** Aktualne zadłużenie,
+* *Tytułem* – pole zawiera opis operacji i zaszyfrowany numer karty, pole zablokowane do edycji, informacja jaką system zaprezentuje w tym polu, jest uzależniony od wybranego przez Użytkownika typu spłaty:
+** Minimalna kwota – *Spłata minimalej kwoty z ostatniego wyciągu dla karty nr 5020 ... 0002*,
+** Całkowita kwota - *Spłata całkowitej kwoty z ostatniego wyciągu dla karty nr 5020 ... 0002*,
+** Aktualne zadłużenie - *Spłata aktualnego zadłużenia dla karty nr 5020 ... 0002*,
+** Dowolna kwota - *Spłata dowolnej kwoty z tytułu zadłużenia dla karty nr 5020 ... 0002*,
+* *Data realizacji* – data spłaty zadłużenia (data w formacie DD.MM.RRRR), domyślnie wstawiana jest data bieżąca, pole zablokowane do edycji.
+
+Po określeniu parametrów spłaty karty kredytowej należy nacisnąć przycisk [AKCEPTUJ], system wyświetla wówczas formularz z wprowadzonymi danymi w trybie podglądu.
+
+
+Na formularzu prezentowane są następujące informacje:
+
+* *Z rachunku* – numer rachunku z którego będzie wykonywana spłata,
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Kwota* – kwota spłaty,
+* *Rodzaj spłaty* – wybrany wariant spłaty,
+* *Tytułem* – pole automatyczne uzupełnianie przez system,
+* *Data realizacji* – data realizacji spłaty, +
+ +
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację spłaty karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa i prezentacja pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po zaakceptowaniu operacji spłaty karty kredytowej za pomocą dostępnej metody autoryzacji, zostanie zaprezentowany komunikat jak na poniższym ekranie wraz z przyciskiem [WRÓĆ DO LISTY KART] umożliwiający powrót do listy kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+== Aktywacja karty
+
+Aby aktywować kartę należy kliknąć w opcję [AKTYWUJ] na widżecie KARTY dla karty nieaktywnej o statusie _Do akceptacji_, albo na formularzu KARTY kliknąć wybrać opcję [AKTYWUJ].
+
+
+Po wyborze przycisku wyświetlony zostaje formularz AKTYWACJA KARTY z następującymi danymi (w zależności od typu karty):
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty*  –typ karty: Kredytowa, Debetowa,
+* *Numer rachunku kredytowego/debetowego* – numer rachunku kredytowego/debetowego, do którego wydano kartę,
+* *Status karty* – _Do aktywacji_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
+ +
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację aktywacji karty,
+
+** Anuluj – pozwala na anulowanie aktywacji karty,
+
+*Podaj kod autoryzacyjny/Klucz do podpisu –* jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa i prezentacja pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+
+Po poprawnej akceptacji aktywacji karty, za pomocą przycisku [AKTYWUJ] zostanie zaprezentowany komunikat jak na poniższym ekranie wraz z przyciskiem [PRZEJDZ DO EDYCJI LIMITÓW TRANSAKCYJNYCH] umożliwia definiowanie limitów karty, [WRÓC DO LISTY KART] umożliwia powrót do listy kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+Po nieudanej akceptacji aktywacji karty, za pomocą przycisku [AKTYWUJ] zostanie zaprezentowany komunikat jak na poniższym ekranie wraz z przyciskiem [WRÓC DO LISTY KART] umożliwiającym powrót do listy kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+= Karty (GryfCard)
+
+Miniaplikacja Karty zapewnia dostęp do listy kart (debetowych, kredytowych), do których uprawniony jest Użytkownik.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji Karty z dwóch głównych poziomów:
+
+* widżetu Karty (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),
+
+
+* menu bocznego po wybraniu opcji Karty.
+
+
+W każdym z poziomów miniaplikacji dla Użytkownika dostępne są formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach. Z poziomu formatek Użytkownik może wykonać wskazane akcje.
+
+Użytkownik posiadający dostęp do miniaplikacji Karty ma możliwość:
+
+* przeglądania informacji listy swoich kart lub wszystkich kart danego rachunku,
+* przeglądania informacji szczegółowych na temat karty,
+* modyfikacji nazwy własnej karty,
+* przeglądania historii operacji wykonywanych kartą/na rachunku karty,
+* zmiany limitów na karcie,
+* przeglądania blokad na rachunku karty,
+* spłaty zadłużenia karty,
+* zastrzeżenia karty,
+* zablokowania karty,
+* włączenia/wyłączenia zbliżenia.
+
+NOTE: Funkcjonalność kart dostępna jest dla Użytkownika kontekstu firmowego w obszarze Mikro, który posiada odpowiednie uprawnienia do funkcjonalności. Uprawnienia nadawane są przez Administratora w opcji _Ustawienia → Uprawnienia Użytkowników_.
+
+NOTE: Opcje dostępne na kartach dla Użytkownika, mogą różnić się w zależności od parametryzacji dla Banku.
+
+
+W przypadku braku łączności systemu bankowości internetowej _Asseco_EBP_ z systemem kartowym zostanie zaprezentowany komunikat:
+
+
+Komunikat jest prezentowany również w szczegółach wybranej karty:
+
+
+== Widżet karty
+
+Widżet *Karty* prezentuje dane z podziałem na Kredytowe i Debetowe, może być zaprezentowane do dwóch kart każdego rodzaju. W przypadku większej ilości kart(więcej niż 4) Użytkownika, prezentowany jest przycisk _Pokaż wszystkie karty_.
+
+Na widżecie możliwe jest:
+
+* zaprezentowanie skróconych informacji o karcie, czyli:
+** *Nazwa i numer* – nazwa karty (nadana przez system), numer karty częściowo zamaskowany (widoczne 4 ostatnie cyfry numeru karty), pod nazwą karty,
+** *Dostępne środki* – kwota dostępnych środków wraz z walutą,
+** *Status* – dla kart zablokowana, do aktywacji,
+** *Ważna do* – data ważności karty (gdy kończy się jej ważność do 30 dni przed jej wygaśnięciem),
+** *Rodzaj karty* – _Kredytowa , Debetowa_,
+* uruchomienie następujących akcji:
+** [AKTYWUJ] – akcja dostępna dla kart w statusie do aktywacji, umożliwia wykonanie akcji aktywacji karty,
+** [ODBLOKUJ] – akcja dostępna dla kart w statusie zablokowana, umożliwia wykonanie akcji odblokowania karty.
+
+== Przeglądanie listy kart
+
+Po kliknięciu w tytuł widżetu *Karty* lub poprzez wybór opcji z bocznego menu Karty wyświetlane jest okno prezentujące listę kart, do których uprawniony jest Użytkownik:
+
+
+Na liście kart, dla każdej karty dostępne są następujące informacje:
+
+* *Nazwa i numer* – nazwa karty (nadana przez system), numer karty częściowo zamaskowany (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Rodzaj* – rodzaj karty Kredytowa, Debetowa,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Status* – status karty, dostępne statusy: _Aktywna, Zablokowana, Zastrzeżona, Do aktywacji, Wyprodukowana._ Wartość prezentowana w polu STATUS zależy od wartości jaka przyjdzie z systemu kartowego,
+
+** daty zastrzeżenia: jeśli data zastrzeżenia jest przed datą aktualną - prezentowany jest status _Zastrzeżona,_
+
+** daty zablokowania: jeśli data zablokowania jest przed datą aktualną - prezentowany jest status _Zablokowana,_
+
+* *Dostępne środki* – kwota dostępnych środków na karcie wraz z walutą.
+
+== Podgląd szczegółów
+
+=== KARTA KREDYTOWA
+
+Aby przejść do szczegółów wybranej karty kredytowej należy kliknąć w obszar wybranej *karty*. System wyświetla formularz SZCZEGÓŁY KARTY, lista pól dostępnych na formularzu oraz przycisków, jest uzależniona od typu karty.
+
+W górnej sekcji szczegółów karty kredytowej głównej/dodatkowej prezentowane są następujące dane:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie oraz typ karty: Kredytowa,
+* *Ikona płatności zbliżeniowych* (jej prezentacja oznacza włączone płatności),
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Dostępne środki* – kwota dostępnych środków na karcie wraz z walutą,
+* *Nazwa na karcie* – nazwa karty nadana przez Użytkownika,
+* *Status karty* – dostępne statusy: _Aktywna, , Zablokowana, Zastrzeżona, Do aktywacji, Nieważna_.
+
+
+Na formularzu ze szczegółami karty kredytowej głównej/dodatkowej prezentowane są następujące zakładki:
+
+* *Podsumowanie* – umożliwia przeglądanie informacji szczegółowych na temat karty,
+* *Transakcje* – umożliwia przeglądnie historii operacji na karcie.
+
+Określony zestaw akcji:
+
+* *Spłać kartę* – umożliwia spłatę karty.
+
+Określony zestaw akcji:
+
+* Informacje:
+
+** Aktywuj – umożliwia aktywowanie karty (dla status _Do aktywacji_).
+
+
+
+W sekcji informacje o kracie karty kredytowej głównej/dodatkowej prezentowane są następujące dane:
+
+
+* *Nazwa i rodzaj karty* – nazwa karty nadawana w systemie lub przez Użytkownika: Kredytowa,
+* *Typ karty* – typ karty: Kredytowa główna, Kredytowa dodatkowa,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Numer rachunku powiązanego z kartą* – numer rachunku kredytowego, do którego wydano kartę z możliwością kopiowania,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie,
+* *Limit kredytowy* – limit kredytowy na karcie, kwota wraz z walutą,
+* *Status* *karty*– dostępne statusy: _Aktywna_, _Zablokowana_, _Zastrzeżona_, +
++
+Określony zestaw akcji: +
++
+** *Zablokuj (czasowo)* – umożliwia zablokowanie karty,
+** *Odblokuj* – umożliwia odblokowanie karty tylko dla status Zablokowana,
+** *Zastrzeż (na stałe)* – umożliwia zastrzeżenie karty,
+
+* *Data ważności* – koniec okresu ważności karty (data w formacie DD.M.RRRR),
+* *Waluta* – symbol waluty,
+* *Karta wznawiana* – Tak/Nie,
+* *Płatności zbliżeniowe* – włączone/wyłączone, +
++
+Określony zestaw akcji: +
++
+** *Włącz* – umożliwia włączenie płatności zbliżeniowych dla karty,
+
+** *Wyłącz* – umożliwia wyłączenie płatności zbliżeniowych na karcie,
+
+* *Nazwa własna* – umożliwia nadanie nazwy własnej dla karty,
+* *Limity transakcyjne* – umożliwia przejście do limitów karty.
+
+W sekcji szczegóły o kracie karty kredytowej głównej prezentowane są następujące dane:
+
+
+* *Dostępne środki* – kwota dostępnych środków wraz z walutą.
+
+=== KARTA DEBETOWA
+
+Aby przejść do szczegółów wybranej karty debetowej należy kliknąć w obszar wybranej *karty*. System wyświetla formularz SZCZEGÓŁY KARTY, , lista pól dostępnych na formularzu oraz przycisków, jest uzależniona od typu karty.
+
+W górnej sekcji szczegółów karty debetowej głównej/dodatkowej prezentowane są następujące dane:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie oraz typ karty: Debetowa,
+* *Ikona płatności zbliżeniowych* (jej prezentacja oznacza włączone płatności),
+* *Dostępne środki* – kwota dostępnych środków na karcie wraz z walutą,
+* *Blokady* – kwota zablokowanych środków na karcie wraz z walutą,
+* *Nazwa na karcie* – nazwa karty nadana przez Użytkownika,
+* *Status karty* – dostępne statusy: _Aktywna, , Zablokowana, Zastrzeżona, Do aktywacji, Nieważna._
+
+
+Na formularzu ze szczegółami karty debetowej głównej/dodatkowej prezentowane są następujące zakładki:
+
+* *Podsumowanie* – umożliwia przeglądanie informacji szczegółowych na temat karty,
+* *Transakcje* – umożliwia przeglądnie historii operacji na karcie,
+* *Blokady* – umożliwia przeglądanie blokad dla karty.
+
+Określony zestaw akcji:
+
+* Informacje:
+
+** Aktywuj – umożliwia aktywowanie karty (dla status _Do aktywacji_).
+
+
+W sekcji informacje o kracie karty debetowej głównej/dodatkowej prezentowane są następujące dane:
+
+
+* *Nazwa i rodzaj karty* – nazwa karty nadawana w systemie lub przez Użytkownika: Karta Debetowa,
+* *Typ karty* – typ karty: Debetowa główna, Debetowa dodatkowa,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Numer rachunku powiązanego z kartą* – numer rachunku kredytowego, do którego wydano kartę z możliwością przejścia do szczegółów rachunku,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie,
+* *Blokady* – kwota zablokowanych środków wraz z walutą,
+* *Status* *karty*– dostępne statusy: _Aktywna_, _Zablokowana_, _Zastrzeżona_. +
++
+Określony zestaw akcji: +
++
+** *Zablokuj (czasowo)* – umożliwia zablokowanie karty,
+
+** *Odblokuj* – umożliwia odblokowanie karty tylko dla status Zablokowana,
+
+** *Zastrzeż (na stałe)* – umożliwia zastrzeżenie karty,
+
+* *Data ważności* – koniec okresu ważności karty (data w formacie DD.M.RRRR),
+* *Waluta* – symbol waluty,
+* *Karta wznawiana* – Tak/Nie,
+* *Płatności zbliżeniowe* – włączone/wyłączone. +
++
+Określony zestaw akcji: +
++
+** *Włącz* – umożliwia włączenie płatności zbliżeniowych dla karty,
+
+** *Wyłącz* – umożliwia wyłączenie płatności zbliżeniowych na karcie,
+
+* *Nazwa własna* – umożliwia nadanie nazwy własnej dla karty,
+* *Limity transakcyjne* – umożliwia przejście do limitów karty,
+* *Rachunki walutowe* – umożliwia przejście do zarządzania rachunkami bankowymi prowadzonymi w różnych walutach.
+
+W sekcji szczegóły o kracie karty debetowej głównej/dodatkowej prezentowane są następujące dane:
+
+
+* *Dostępne środki* – kwota dostępnych środków wraz z walutą.
+
+== Modyfikacja nazwy własnej karty
+
+W celu ułatwienia identyfikacji karty, Użytkownik ma możliwość modyfikacji nazwy produktu z poziomu:
+
+* szczegółów karty za pomocą przycisku [Zmień] znajdującej się przy polu *Nazwa własna*.
+
+
+Obok pola dostępne są przyciski:
+
+* Akceptuj – umożliwia zapisanie zmienionej nazwy własnej karty. Nazwę własną karty zapisać można także po jej wprowadzeniu i użyciu klawisza [Enter] z klawiatury,
+* Anuluj – umożliwia rezygnację ze zmiany nazwy własnej karty.
+
+W przypadku, gdy Użytkownik usunie wprowadzoną w polu nazwę własną karty, system przyporządkowuje mu nazwę systemową.
+
+== Przeglądanie historii operacji wykonanych kartą
+
+Aby przejść do historii operacji wykonanych kartą płatniczą należy wybrać szczegóły wybranej karty, a następnie wybrać [TRANSAKCJE]. Wyświetlany jest wówczas formularz TRANSAKCJI KARTY prezentujący listę operacji wykonanych przy użyciu karty płatniczej.
+
+
+Posiadacz głównej karty kredytowej ma możliwość wyświetlenia wszystkich operacji wykonanych kartą płatniczą oraz operacji wykonanych na rachunku związanym z tą kartą. Posiadacz dodatkowej karty kredytowej ma możliwość wyświetlenia wszystkich operacji na rachunku wykonanych tylko tą kartą.
+
+W celu zawężenia prezentacji listy operacji wykonanych kartą, system umożliwia zastosowanie filtrów:
+
+* *Prostego* – filtrowanie listy kart następuje po wpisaniu danych w polu Szukaj znajdującego się na formatce:
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej operacji w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści. Aby powrócić do pełnej listy kart należy kliknąć w ikonę [X] w polu wyszukiwania.
+
+* *Zaawansowanego* – użycie przycisku [Więcej] umożliwia ustawienie filtru zaawansowanego.
+
+
+Użytkownik ma możliwość ustawiania filtru zaawansowanego dla następujących pól:
+
+* *Ostatnie* *90 dni*– liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana historia operacji wykonanych kartą płatniczą, domyślnie 90 dni,
+* *Bieżący miesiąc –* zakres za bieżący miesiąc,
+* *Poprzedni miesiąc -* zakres za poprzedni miesiąc,
+* *Bieżący rok* – zakres za bieżący rok,
+* *Poprzedni rok* - zakres za poprzedni rok,
+* *Wybierz zakres dat* - zakres dat, dla których ma zostać wyświetlona historia operacji wykonanych kartą płatniczą, od miesiąca wstecz do daty bieżącej. Alternatywa dla pola *Ostatnie*. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą którego można określić zakres dat.
+
+
+* *Kwota od*, *Kwota do* – zakres kwot (od - do), dla których ma zostać wyświetlona historia operacji wykonanych kartą płatniczą,
+* *Rodzaj operacji –* Użytkownik mam możliwość filtrowania operacji po rodzaju, poprzez wybór wartości z dostępnej listy:
+** Wszystkie (wartość domyślna),
+** Obciążenia,
+** Uznania,
+* *Transakcje kartą* - prezetacja tylko operacji wykonanych kartą lub karty i rachunku.
+
+
+== Podgląd limitów karty
+
+Aby podglądać limity karty należy na formularzu PODSUMOWANIA karty, wybrać przycisk [Pokaż] Przejdź do Ustawień. Wyświetlany jest wówczas formularz LIMITY DLA KARTY, prezentujący limity wybranej karty.
+
+
+Na formularzu LIMITY DLA KARTY system prezentuje następujące informacje:
+
+W sekcji Limity dla karty prezentowane są dane:
+
+* *Nazwa i rodzaj karty* – nazwa karty nadawana w systemie lub przez Użytkownika,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Rodzaj karty* – typ karty: Kredytowa, Debetowa,
+* *Status* *karty*– dostępne statusy: _Aktywna_, _Zablokowana_, _Zastrzeżona_,
+* *Posiadacz karty* – imię i nazwisko właściciela karty.
+
+W sekcji Limity karty prezentowane są dane:
+
+* *Dzienny limit wartości wypłat w bankomatach*, wraz z następującymi parametrami:
+** Kwota dziennego limitu wypłaty w bankomatach wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+* *Dzienny limit wartości MOTO(zamówień e-mail/telefonicznych)*, wraz z następującymi parametrami:
+** Kwota dziennego limitu operacji gotówkowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+* *Dzienny limit wartości operacji bezgotówkowych*, wraz z następującymi parametrami:
+** Kwota dziennego limitu operacji bezgotówkowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+* *Dzienny limit wartości operacji internetowych*, wraz z następującymi parametrami:
+** Kwota dziennego limitu operacji internetowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+* *Dzienny limit wszystkich operacji (ATM/POS)* , wraz z następującymi parametrami:
+** Kwota dziennego limitu wszystkich operacji (ATM/POS) wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu.
+
+Na formularzu dostępny jest określony zestaw akcji:
+
+* Edytuj – pozwala na edycję i ustalenie limitów dla karty,
+
+* Wróć do szczegółów karty – powrót do podsumowania karty.
+
+== Zmiana limitów karty
+
+Aby zmienić limity karty należy na formularzu LIMITY DLA KARTY, wybrać przycisk [[EDYTUJ] umożliwiający zmianę limitów wybranej karty.
+
+Na formularzu ZMIEŃ LIMITY DLA KARTY system prezentuje następujące informacje:
+
+W sekcji Limity dla karty prezentowane są dane:
+
+* *Nazwa i rodzaj karty* – nazwa karty nadawana w systemie lub przez Użytkownika,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Rodzaj karty* – typ karty: Kredytowa, Debetowa,
+* *Status* *karty* – dostępne statusy: _Aktywna_, _Zablokowana_, _Zastrzeżona_,
+* *Posiadacz karty* – imię i nazwisko właściciela karty.
+
+W sekcji Limity karty prezentowane są dane:
+
+* *Dzienny limit wartości wypłat w bankomatach*
+** Kwota dziennego limitu wypłaty w bankomatach wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+** Limit Maks – maksymalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,
+* *Dzienny limit wartości MOTO(zamówień e-mail/telefonicznych)*, wraz z następującymi parametrami:
+** Kwota dziennego limitu operacji MOTO wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+** Limit Maks – maksymalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,
+* *Dzienny limit wartości operacji bezgotówkowych*, wraz z następującymi parametrami:
+** Kwota dziennego limitu operacji bezgotówkowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+** Limit Maks – maksymalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,
+* *Dzienny limit wartości operacji internetowych*, wraz z następującymi parametrami:
+** Kwota dziennego limitu operacji internetowych wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+** Limit Maks – maksymalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,
+* *Dzienny limit wszystkich operacji (ATM/POS)*, wraz z następującymi parametrami:
+** Kwota dziennego limitu operacji (ATM/POS) wraz z walutą – system podpowiada obecna kwotę i walutę limitu, pole umożliwia zmianę kwoty limitu,
+** Limit Min – minimalna kwota limitu którą Użytkownik może ustawić, pole informacyjne,
+** Limit Maks – maksymalna kwota limitu którą Użytkownik może ustawić, pole informacyjne.
+
+System kontroluje minimalną i maksymalną kwotę limitu wprowadzoną przez Użytkownika, w przypadku gdy wprowadzona kwota jest mniejsza od minimalnej, albo większa od maksymalnej system prezentuje odpowiedni komunikat i nie pozwala na przejście do drugiego kroku potwierdzenia operacji.
+
+
+Po wprowadzeniu zmiany wysokości limitu Użytkownik musi zatwierdzić wprowadzone zmiany naciskając przycisk [AKCEPTUJ]. Zmiana limitu karty wymaga autoryzacji dyspozycji klienta za pomocą dostępnej metody autoryzacji.
+
+Po poprawnej akceptacji zmiany limitów karty zostanie zaprezentowany komunikat jak na poniższym ekranie wraz z przyciskami [WRÓĆ DO LIMITÓW] umożliwiający powrót do limitów kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+== Przeglądanie blokad karty
+
+Aby przeglądnąć listę blokad danej karty należy wybrać opcję [BLOKADY].
+
+Lista blokad jest automatycznie dodawana (20 pierwszych), Użytkownik ma możliwość przewijania za pomocą myszki lub paska bocznego.
+
+
+Na liście blokad prezentowana jest ich liczba, dla każdej blokady dostępne są następujące informacje:
+
+* *Data* – data blokady,
+* *Opis blokady* – dane blokady,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty),
+* *Kwota* – kwota blokady,
+* *Suma zablokowanych środków* - suma blokad.
+
+== Zastrzeżenie karty
+
+Aby zastrzec kartę należy na formularzu PODSUMOWANIA karty kliknąć w opcję [ZASTRZEŻ].
+
+=== KARTA KREDYTOWA
+
+System prezentuje następujący formularz.
+
+
+Na formularzu ZASTRZEŻENIE KARTY, dla karty kredytowej system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Kredytowa,
+* *Numer rachunku powiązanego z kartą* – numer rachunku kredytowego, do którego wydano kartę,
+* *Status karty* - _Aktywna_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
++
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację zastrzeżenia karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po poprawnej akceptacji zastrzeżenia karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+Dla odrzucenia akceptacji zastrzeżenia karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+=== KARTA DEBETOWA
+
+System prezentuje następujący formularz.
+
+
+Na formularzu ZASTRZEŻENIE KARTY, dla karty kredytowej system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Debetowa,
+* *Numer rachunku debetowego* – numer rachunku debetowego, do którego wydano kartę,
+* *Status karty* - _Aktywna_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
++
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację zastrzeżenia karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po poprawnej akceptacji zastrzeżenia karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+Dla odrzucenia akceptacji zastrzeżenia karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+== Zablokowanie karty
+
+Aby zablokować kartę należy na formularzu PODSUMOWANIA karty kliknąć w opcję [ZABLOKUJ].
+
+=== KARTA KREDYTOWA
+
+System prezentuje następujący formularz.
+
+
+Na formularzu ZABLOKUJ KARTĘ, dla karty kredytowej system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Kredytowa,
+* *Numer rachunku kredytowego* – numer rachunku kredytowego, do którego wydano kartę,
+* *Status karty* - _Aktywna_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
++
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację zablokowania karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po poprawnej akceptacji ZABLOKOWANIA karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+Dla odrzucenia akceptacji zablokowania karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+=== KARTA DEBETOWA
+
+System prezentuje następujący formularz.
+
+
+Na formularzu ZABLOKUJ KARTY, dla karty kredytowej system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Debetowa,
+* *Numer rachunku debetowego* – numer rachunku debetowego, do którego wydano kartę,
+* *Status karty* - _Aktywna_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
++
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację zablokowania karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po poprawnej akceptacji zablokowania karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+Dla odrzucenia akceptacji zablokowania karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+== Odblokowanie karty
+
+Aby odblokować kartę należy kliknąć w opcję [ODBLOKUJ] na widżecie KARTY albo na formularzu PODSUMOWANIA karty kliknąć w opcję [ODBLOKUJ].
+
+
+Na formularzu ODBLOKUJ KARTY, dla karty kredytowej system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Debetowa, Kredytowa,
+* *Numer rachunku kredytowego/debetowego* – numer rachunku kredytowego/debetowego, do którego wydano kartę,
+* *Status karty* - _Zablokowana_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
++
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację odblokowania karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po poprawnej akceptacji odblokowania karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+== Płatności zbliżeniowe karty włączenie
+
+Aby włączyć płatności zbliżeniowe karty należy kliknąć w opcję [ZMIEŃ] na formularzu PODSUMOWANIA dla karty w polu Płatności zbliżeniowe, która ma status płatności wyłączony.
+
+
+Na formularzu WŁĄCZ PŁATNOŚCI ZBLIŻENIOWE, dla karty system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Debetowa, Kredytowa,
+* *Numer rachunku kredytowego/debetowego* – numer rachunku kredytowego/debetowego, do którego wydano kartę,
+* *Status karty* - _Aktywna_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
++
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację odblokowania karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po poprawnej akceptacji włączenia płatności zbliżeniowych karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+== Płatności zbliżeniowe karty wyłączenie
+
+Aby wyłączyć płatności zbliżeniowe karty należy kliknąć w opcję [ZMIEŃ] na formularzu PODSUMOWANIA dla karty w polu Płatności zbliżeniowe, która ma status płatności włączony.
+
+
+Na formularzu WYŁĄCZ PŁATNOŚCI ZBLIŻENIOWE, dla karty system prezentuje następujące informacje:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj karty* – typ karty: Debetowa, Kredytowa,
+* *Numer rachunku kredytowego/debetowego* – numer rachunku kredytowego/debetowego, do którego wydano kartę,
+* *Status karty* - _Aktywna_,
+* *Data ważności* – data ważności karty,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie, +
++
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację odblokowania karty,
+
+** Anuluj – powrót do podsumowania karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po poprawnej akceptacji wyłączenia płatności zbliżeniowych karty zostanie zaprezentowany komunikat wraz z przyciskiem [WRÓĆ DO LISTY KARTY] umożliwiającym powrót do kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+== Spłata karty kredytowej
+
+Aby spłacić zadłużenie na karcie kredytowej należy kliknąć w opcję [SPŁAĆ KARTĘ] na formularzu wybranej. Funkcjonalność spłaty karty jest dostępna tylko dla karty kredytowej głównej.
+
+Po wyborze przycisku wyświetlony zostaje formularz SPŁATA KARTY z następującymi danymi:
+
+
+W sekcji z rachunku prezentowane są dane:
+
+* *Z rachunku* – pole zawierające listę rachunków Użytkownika, należy wskazać rachunek, z którego ma być wykonana spłata zadłużenia na karcie, realizacja spłaty karty możliwa jest z rachunków w walucie PLN lub w walucie rachunku karty. W polu podpowiadany jest rachunek ustawiony przez Użytkownika jako domyślny (w opcji _Ustawienia → Rachunek domyślny_), który można zmienić, pole wymagalne,
+
+W sekcji Szczegóły prezentowane są dane:
+
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Rodzaj spłaty* – wariant spłaty zadłużenia, dostępne wartości:
+** Dowolna kwota,
+* *Kwota* – kwota spłaty zadłużenia w walucie rachunku karty (kwota nie może być większa od kwoty całkowitego zadłużenia na karcie). Pole kwota:
+** należy uzupełnić ręcznie w przypadku wybrania typu spłaty:
+*** Dowolna kwota,
+* *Tytułem* – pole zawiera opis operacji i zaszyfrowany numer karty, pole zablokowane do edycji, informacja jaką system zaprezentuje w tym polu, jest uzależniony od wybranego przez Użytkownika typu spłaty:
+** Dowolna kwota - *Spłata dowolnej kwoty z tytułu zadłużenia dla karty nr 5020 ... 0002*,
+* *Data realizacji* – data spłaty zadłużenia (data w formacie DD.MM.RRRR), domyślnie wstawiana jest data bieżąca, pole zablokowane do edycji.
+
+W górnej część formularza SPŁATA KARTY dostępne są przyciski:
+
+Po określeniu parametrów spłaty karty kredytowej należy nacisnąć przycisk [AKCEPTUJ], system wyświetla wówczas formularz z wprowadzonymi danymi w trybie podglądu.
+
+
+Na formularzu prezentowane są następujące informacje:
+
+* *Z rachunku* – numer rachunku z którego będzie wykonywana spłata,
+* *Nazwa i typ karty* – nazwa karty nadawana w systemie,
+* *Numer karty* – częściowo zamaskowany numer karty (widoczne 4 pierwsze i 4 ostatnie cyfry numeru karty), pole zablokowane do edycji,
+* *Kwota* – kwota spłaty,
+* *Rodzaj spłaty* – wybrany wariant spłaty,
+* *Tytułem* – pole automatyczne uzupełnianie przez system,
+* *Data realizacji* – data realizacji spłaty, +
++
+Na formularzu dostępny jest określony zestaw akcji: +
++
+** Akceptuj – pozwala na akceptację spłaty karty,
+
+* *Podaj kod autoryzacyjny/Klucz do podpisu* – jedno aktywne pole na formatce, służące do autoryzacji przelewu. Nazwa i prezentacja pola zależna jest od aktualnie wykorzystywanej przez Użytkownika metody autoryzacji.
+
+Po zaakceptowaniu operacji spłaty karty kredytowej za pomocą dostępnej metody autoryzacji, zostanie zaprezentowany komunikat jak na poniższym ekranie wraz z przyciskiem [WRÓĆ DO LISTY KART] umożliwiający powrót do listy kart, [WRÓĆ DO PULPITU] umożliwiającym powrót do pulpitu.
+
+
+== Rachunki walutowe karty ustawienie
+
+Ustawienie rachunku walutowego dla karty jest możliwe z poziomu szczegółów karty po wybraniu opcji Rachunki walutowe -> Ustaw:
+
+
+Wybranie opcji [Ustaw] otwiera formatkę Rachunki walutowe karty:
+
+
+Po zaznaczeniu rachunku walutowego z listy, Klient podpisuje dyspozycję ustawiania rachunku walutowego dla karty
+przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+== Rachunki walutowe karty zmiana
+
+Zmiana rachunku walutowego dla karty jest możliwe z poziomu szczegółów karty po wybraniu opcji Rachunki walutowe -> Zmiana:
+
+
+Wybranie opcji [Zmiana] otwiera formatkę:
+
+
+Po zmienie rachunku walutowego z listy, Klient podpisuje dyspozycję zmiany rachunku walutowego dla karty
+przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+W przypadku odrzucenia dyspozycji zmiany rachunku walutowego system wyświetla komunikat informujący o odrzuceniu:
+
+
+= Wniosek o kartę debetową (Gryfcard)
+
+== Nowy wniosek o kartę debetową
+
+W aplikacji "Karty" po wybraniu "Zamów kartę" zostaje otwarte okno wyboru karty:
+
+
+Po wskazaniu opcji "Zamów kartę" następuje przejście do formularza wniosku o kartę debetową.
+
+*_Rachunek do karty_*
+
+W pierwszym kroku klient wskazuje rachunek, do którego chciałby zamówić kartę debetową.
+Lista rachunków jest zawężona do rachunków, dla których w ramach danego typu karty dostępne
+dla klienta są produkty kartowe.
+
+*_Wybór karty_*
+
+Prezentowane są wszystkie produkty (danego typu karty) dostępne dla wybranego rachunku.
+
+NOTE: Grafikę oraz opis produktu należy skonfigurować w systemie BackOffice w opcji
+(System -> Słowniki -> Słownik typów kart).
+
+*_Adres wysyłki karty_*
+
+W przypadku składania wniosku użytkownik może zdecydować na jaki adres będzie wysłana zamówiona karta. Jęsli zostanie wybrana opcja:
+
+*_na adres zamieszkania_* prezentowane są jego dane osobowe,
+
+*_inny_* - użytkownik proszony jest o uzupełnienie danych ich zgodności ze
+stanem faktycznym.
+
+*_Oświadczenia_*
+
+Prezentowane są wszystkie oświadczenia dla (danego typu karty).
+
+NOTE: Oświadczenia należy skonfigurować w systemie BackOffice w opcji
+(System -> Słowniki -> Słownik typów kart).
+
+
+*_Podsumowanie i autoryzacja_*
+
+Ostatnim krokiem procesu jest prezentacja danych wniosku, a po ich akceptacji
+następuje proces autoryzacji przypisanym środkiem akceptacji .
+
+
+i wysłania wniosku do realizacji:
+
+
+= Wniosek o kartę (CardOn)
+
+
+== Lista wniosków o kartę (CardOn)
+
+Na liście *Wniosków* (aplikacja Karty -> Wnioski) prezentowane są wnioski wprowadzone przez
+klienta w swoim imieniu lub dla osób trzecich.
+
+
+Wniosek po poprawnym złożeniu przyjmuje status "Nowy", a po przyjęciu przez system zewnętrzny
+(CardOn) zmienia status na "Wysłany do analizy".
+
+Wniosek po pozytywnym rozpatrzeniu zmienia status na "Zatwierdzony przez Bank".
+
+Wniosek o kartę w statusie "Przekazany do produkcji" jest ostatecznym statusem wniosku.
+Prezentowany jest w sekcji "Zakończone wnioski".
+Oznacza, że wniosek został zaakceptowany i została wystawiona dyspozycja produkcji karty.
+
+
+Wniosek w statusie "Odrzucony" - status ostateczny, wniosek został odrzucony
+Klient może złożyć nowy wniosek o kartę.
+
+*_Anulowanie wniosku_*
+
+Klient może anulować złożony wniosek (w odpowiednich statusach), po wybraniu opcji [Szczegóły]
+z poziomu listy wniosków:
+
+
+Po wybraniu [Anuluj wniosek]:
+
+
+wymagany jest podpis przypisanym środkiem autoryzacji:
+
+
+Wniosek po anulowaniu zostaje odrzucony (status ostateczny):
+
+
+
+== Nowy wniosek o kartę debetową
+
+W aplikacji *Karty* po wybraniu _Zamów kartę_ zostaje otwarte okno wyboru karty:
+
+
+Po wskazaniu opcji _Karta debetowa_ następuje przejście do formularza wniosku o kartę debetową.
+
+*_Wybór rachunku_*
+
+W pierwszym kroku klient wskazuje rachunek, do którego chciałby zamówić kartę debetową.
+Lista rachunków jest zawężona do rachunków, dla których w ramach danego typu karty dostępne
+dla klienta są produkty kartowe.
+
+*_Potwierdzenie danych osobowych_*
+
+W kontekście indywidualnym wniosek o _Kartę debetową_ może zostać złożony w imieniu własnym
+lub w imieniu osoby uprawnionej do rachunku.
+
+W przypadku składania wniosku dla siebie użytkownikowi prezentowane są jego zamaskowane
+dane osobowe, a sam użytkownik proszony jest o potwierdzenie ich zgodności ze
+stanem faktycznym. Klient może przejść do formularza danych osobowych w aplikacji ustawienia
+i tam odkryć dane i dokonać ich pełnej weryfikacji bądź edycji.
+
+NOTE: Aby w aplikacji Ustawienia możliwy był podgląd i edycja danych osobowych konieczne
+jest włączenie usługi: _userPersonalDataChangeEnabled_ oraz _userPersonalDataAccessAuthorize_
+
+Przed kontynuowaniem składania wniosku system dokonuje weryfikacji wymaganych danych.
+Jeśli dane nie są kompletne proces nie może być kontynuowany, a szczegółowa informacja
+jest widoczna na stronie.
+
+
+W przypadku, gdy wniosek jest składany w imieniu innego klienta, wówczas nie są prezentowane
+dane osobowe, ani nie ma możliwości ich edycji. Dokonywana jest jedynie weryfikacja
+kompletności i na tej podstawie następuje decyzja o kontynuowaniu lub przerwaniu wniosku.
+
+
+*_Wybór karty_*
+
+Prezentowane są wszystkie produkty (danego typu karty) dostępne dla wybranego rachunku.
+
+NOTE: Grafikę oraz opis produktu należy skonfigurować w systemie BackOffice w opcji
+(System -> Słowniki -> Słownik typów kart).
+
+
+Po wybraniu produktu następuje jego dodatkowa weryfikacja w zakresie poprawności
+konfiguracji oraz kontrola ilościowa dla właściciela karty (dopuszczalne jest posiadanie
+tylko jednej aktywnej karty danego produktu dla rachunku) oraz nie może posiadać
+aktywnego wniosku dla tej samej pary produktu i rachunku.
+
+W przypadku przekroczenia limitu ilościowego (tj. próba złożenia nowego wniosku
+o kartę debetową dla pary rachunku i produktu, dla którego wniosek jest już
+procedowany lub klient posiada już kartę) - po wybraniu rachunku i typu karty prezentowany jest
+komunikat:
+
+
+*_Wizerunek na karcie_* wybierany jest spośród dostępnych dla danego produktu i jest
+dostarczany przez dostawcę systemu kartowego.
+
+
+
+W przypadku, gdy zamawiana karta jest kartą wielowalutową możliwe jest podpięcie
+do niej dodatkowych rachunków walutowych, z których w pierwszej kolejności pobierane
+będą środki w przypadku płatności daną walutą.
+
+Ograniczenia:
+
+* prezentowane są rachunki walutowe, do których osoba wnioskująca ma uprawnienia,
+a w przypadku zamawiania karty dla innej osoby również ona musi posiadać uprawnienia
+do tego rachunku. Rachunki może przypisać sam właściciel w późniejszym terminie,
+już do wydanej karty, co pozwoli również na wskazanie rachunków, do których wnioskodawca
+nie posiadał uprawnień.
+* możliwe jest wskazanie tylko jednego rachunku w walucie,
+* lista dostępnych walut jest dyktowana przez produkt.
+
+
+*_Dostarczenie, aktywacja i limity karty debetowej_*
+
+
+Konfiguracji podlegają dwa elementy aktywacji karty:
+
+* wysyłka - sposób dostarczenia fizycznej karty do użytkownika,
+* aktywacja - metoda aktywacji karty.
+
+W przypadku wysyłki karty możliwe są opcje (wybór może być zawężony przez
+konfigurację dostawcy karty):
+
+* Przesyłka pocztowa - wysyłka na adres korespondencyjny właściciela karty,
+* Przesyłka kurierska - wysyłka na adres korespondencyjny właściciela karty.
+
+Przez adres korespondencyjny rozumiany jest adres wskazany jako taki w kartotece klienta
+lub w przypadku jego braku adres główny z kartoteki.
+
+Aktywację karty można wykonać dwojako (wybór może być zawężony przez konfigurację dostawcy karty):
+
+* Wysyłka kodu przesyłką pocztową - wysyłka inicjalnego kodu PIN na adres korespondencyjny
+właściciela karty. Aktywacji można wówczas dokonać podczas pierwszej płatności
+lub w bankomacie.
+* Aplikacja mobilna lub bankowość internetowa - aktywację należy wykonać za pośrednictwem
+bankowości internetowej po otrzymaniu karty.
+
+
+Każda z kart debetowych jest określona limitami (wybór może być zawężony przez konfigurację
+dostawcy karty):
+
+* Limit dzienny transakcji bezgotówkowych,
+* Limit dzienny transakcji internetowych,
+* Limit dzienny wypłat gotówki.
+
+W przypadku użytkownika indywidualnego podane są domyślne limity dostarczone przez
+wystawcę karty i nie podlegają one edycji na etapie składania wniosku.
+Limity można zmienić już dla wydanej karty w bankowości internetowej.
+
+
+*_Zgody marketingowe i oświadczenia_*
+
+Ekran prezentowany jest jedynie w przypadku składania wniosku o kartę dla siebie.
+
+
+Prezentowane są zgody marketingowe i oświadczenia, które są związane z procesem dla danej
+karty (konfiguracja u dostawcy karty).
+Treść zgód jest pobrana z systemu transakcyjnego, ale zakres prezentowanych zgód nie
+podlega standardowej konfiguracji dla zgód dostępnych w bankowości internetowej
+(prezentowane są również te zgody, które takiej konfiguracji w bankowości internetowej
+nie posiadają, ale konieczne jest by były dostępne w samym systemie transakcyjnym).
+Informacje na które użytkownik wyraził zgodę już wcześniej nie są prezentowane,
+są za to prezentowane również te zgody, które wcześniej były przez niego odrzucone.
+Część zgód może być oznaczona jako wymagana i ich odznaczenie będzie blokowało przejście
+do kolejnego kroku.
+
+W przypadku, gdy użytkownik udzielił wcześniej wszystkich wymaganych zgód, dla karty
+nie są dostarczone zgody na ekranie zostanie zaprezentowana tylko informacja
+"Wszystkie wymagane zgody marketingowe zostały wcześniej wyrażone."
+
+NOTE: Jeśli wniosek składany jest w imieniu innej osoby zgody marketigowe nie są analizowane,
+zaś krok jest pomijany.
+
+
+*_Podsumowanie i autoryzacja_*
+
+Ostatnim krokiem procesu jest prezentacja danych wniosku, a po ich akceptacji
+następuje proces autoryzacji przypisanym środkiem akceptacji .
+
+
+i wysłania wniosku do realizacji:
+
+
+Złożony wniosek jest dostępny na liście wniosków w aplikacji karty w sekcji aktywne
+wnioski do czasu gdy zostanie zrealizowany lub odrzucony przez dostawcę karty.
+Dla wniosku nie ma możliwości podglądu dodatkowych danych ani przeprowadzenia żadnych akcji.
+
+== Nowy wniosek o kartę wirtualną
+
+W aplikacji "Karty" po wybraniu "Zamów kartę" zostaje otwarte okno wyboru karty:
+
+
+Po wskazaniu opcji "Karta wirtualna" następuje przejście do formularza wniosku o kartę wirtualną.
+
+*_Wybór rachunku_*
+
+W pierwszym kroku klient wskazuje rachunek, do którego chciałby zamówić kartę wirtualną.
+Lista rachunków jest zawężona do rachunków, dla których w ramach danego typu karty dostępne
+dla klienta są produkty kartowe.
+
+*_Potwierdzenie danych osobowych_*
+
+W kontekście indywidualnym wniosek o "Kartę wirtualną" może zostać złożony w imieniu własnym
+lub w imieniu osoby uprawnionej do rachunku.
+
+W przypadku składania wniosku dla siebie użytkownikowi prezentowane są jego zamaskowane
+dane osobowe, a sam użytkownik proszony jest o potwierdzenie ich zgodności ze
+stanem faktycznym. Klient może przejść do formularza danych osobowych w aplikacji ustawienia
+i tam odkryć dane i dokonać ich pełnej weryfikacji bądź edycji.
+
+NOTE: Aby w aplikacji Ustawienia możliwy był podgląd i edycja danych osobowych konieczne
+jest włączenie usługi: _userPersonalDataChangeEnabled_ oraz _userPersonalDataAccessAuthorize_
+
+Przed kontynuowaniem składania wniosku system dokonuje weryfikacji wymaganych danych.
+Jeśli dane nie są kompletne proces nie może być kontynuowany, a szczegółowa informacja
+jest widoczna na stronie.
+
+
+W przypadku, gdy wniosek jest składany w imieniu innego klienta, wówczas nie są prezentowane
+dane osobowe, ani nie ma możliwości ich edycji. Dokonywana jest jedynie weryfikacja
+kompletności i na tej podstawie następuje decyzja o kontynuowaniu lub przerwaniu wniosku.
+
+
+*_Wybór karty_*
+
+Prezentowane są wszystkie produkty (danego typu karty) dostępne dla wybranego rachunku.
+
+NOTE: Grafikę oraz opis produktu należy skonfigurować w systemie BackOffice w opcji
+(System -> Słowniki -> Słownik typów kart).
+
+
+Po wybraniu produktu następuje jego dodatkowa weryfikacja w zakresie poprawności
+konfiguracji oraz kontrola ilościowa dla właściciela karty (dopuszczalne jest posiadanie
+tylko jednej aktywnej karty danego produktu dla rachunku) oraz nie może posiadać
+aktywnego wniosku dla tej samej pary produktu i rachunku.
+
+W przypadku przekroczenia limitu ilościowego (tj. próba złożenia nowego wniosku
+o kartę wirtualną dla pary rachunku i produkty, dla którego wniosek jest juz
+procedowany lub klient posiada już kartę) - po wybraniu rachunku i typu karty prezentowany jest
+komunikat:
+
+
+*_Wizerunek na karcie_* wybierany jest spośród dostępnych dla danego produktu i jest
+dostarczany przez dostawcę systemu kartowego.
+
+
+
+
+*_Limity karty wirtualnej_*
+
+
+Ekran prezentuje limity karty wirtualnej:
+
+* Limit dzienny transakcji bezgotówkowych,
+* Limit dzienny transakcji internetowych,
+* Limit dzienny wypłat gotówki.
+
+W przypadku użytkownika indywidualnego podane są domyślne limity dostarczone przez
+wystawcę karty i nie podlegają one edycji na etapie składania wniosku.
+Limity można zmienić już dla wydanej karty w bankowości internetowej.
+
+Każda z kart wirtualnych ma określone limity (wybór może być zawężony przez konfigurację
+dostawcy karty).
+
+*_Dokumenty Banku_*
+
+Na formularzu prezentowane są dokumenty Banku,
+użytkownik może pobrać pliki i zapoznać się z ich treścią.
+
+
+*_Zgody marketingowe i oświadczenia_*
+
+Ekran prezentowany jest jedynie w przypadku składania wniosku o kartę dla siebie.
+
+
+Prezentowane są zgody marketingowe i oświadczenia, które są związane z procesem dla danej
+karty (konfiguracja u dostawcy karty).
+Treść zgód jest pobrana z systemu transakcyjnego, ale zakres prezentowanych zgód nie
+podlega standardowej konfiguracji dla zgód dostępnych w bankowości internetowej
+(prezentowane są również te zgody, które takiej konfiguracji w bankowości internetowej
+nie posiadają, ale konieczne jest by były dostępne w samym systemie transakcyjnym).
+Informacje na które użytkownik wyraził zgodę już wcześniej nie są prezentowane,
+są za to prezentowane również te zgody, które wcześniej były przez niego odrzucone.
+Część zgód może być oznaczona jako wymagana i ich odznaczenie będzie blokowało przejście
+do kolejnego kroku.
+
+W przypadku, gdy użytkownik udzielił wcześniej wszystkich wymaganych zgód, dla karty
+nie są dostarczone zgody na ekranie zostanie zaprezentowana tylko informacja
+"Wszystkie wymagane zgody marketingowe zostały wcześniej wyrażone."
+
+NOTE: Jeśli wniosek składany jest w imieniu innej osoby zgody marketigowe nie są analizowane,
+zaś krok jest pomijany.
+
+
+*_Podsumowanie i autoryzacja_*
+
+Ostatnim krokiem procesu jest prezentacja danych wniosku, a po ich akceptacji
+następuje proces autoryzacji przypisanym środkiem akceptacji .
+
+
+
+i wysłania wniosku do realizacji:
+
+
+Złożony wniosek jest dostępny na liście wniosków w aplikacji karty w sekcji aktywne
+wnioski do czasu gdy zostanie zrealizowany lub odrzucony przez dostawcę karty.
+Dla wniosku nie ma możliwości podglądu dodatkowych danych ani przeprowadzenia żadnych akcji.
+
+== Nowy wniosek o Kartę Kredytową
+
+W aplikacji "Karty" po wybraniu "Zamów kartę" zostaje otwarte okno wyboru karty:
+
+
+Po wskazaniu opcji "Karta kredytowa" następuje przejście do formularza wniosku
+o kartę kredytową.
+
+Na początku wniosku umieszczono informację o ograniczeniach:
+"Wniosek dotyczy wydania pierwszej karty kredytowej. Wniosek o kartę dodatkową, do już wcześniej wydanej karty kredytowej, należy składać w oddziale."
+
+
+W przypadku klienta w *kontekście indywidualnym* oraz *indywidualnym mikro* karta zamawiana
+jest tylko i wyłącznie dla osoby składającej wniosek.
+
+NOTE: W przypadku *kontekstu indywidualnego mikro*, w pierwszym kroku możemy wybrać rachunek spłaty karty,
+który determinuje kontekst, w którym zamawiana jest karta: indywidualny lub firmowy:
+
+
+*_Wnioskowana kwota limitu_*
+
+Następnie użytkownik otrzymuje informację o widełkach dla kwoty limitu kredytowego,
+które są sumą logiczną limitów dla wszystkich kart kredytowych dostępnych dla klienta
+tego typu (indywidualny lub firmowy). Domyślna kwota limitu jest ustawiona w połowie
+przedziału.
+Użytkownik może wybrać kwotę suwakiem (skok o 1/100 z zakresu) lub wpisać wartość w polu.
+
+
+
+*_Potwierdzenie danych osobowych_*
+
+NOTE: W przypadku klienta w *kontekście indywidualnym* oraz *indywidualnym mikro* karta
+zamawiana jest tylko i wyłącznie dla osoby składającej wniosek.
+
+Wymagane jest potwierdzenie danych osobowych lub osobowych i firmowych.
+
+Dane są sprawdzane pod kątem kompletności - dodatkowo wymagane są: numer telefonu oraz email
+dla firmy, gdy mamy do czynienia z kartą firmową oraz analogiczne dane
+dla osoby składającej wniosek, gdy mamy do czynienia z kartą dla klienta indywidualnego.
+
+
+Użytkownikowi prezentowane są jego zamaskowane dane osobowe, a sam użytkownik proszony jest o
+potwierdzenie ich zgodności ze stanem faktycznym. Klient może przejść do formularza danych osobowych
+w aplikacji ustawienia i tam odkryć dane i dokonać ich pełnej weryfikacji bądź edycji.
+
+NOTE: Aby w aplikacji Ustawienia możliwy był podgląd i edycja danych osobowych konieczne
+jest włączenie usługi: _userPersonalDataChangeEnabled_ oraz _userPersonalDataAccessAuthorize_
+
+Przed kontynuowaniem składania wniosku system dokonuje weryfikacji wymaganych danych.
+Jeśli dane nie są kompletne proces nie może być kontynuowany, a szczegółowa informacja
+jest widoczna na stronie.
+
+
+Potwierdzone dane osobowe w kontekście indywidualnym:
+
+
+W przypadku kontekstu indywidualnego mikro i wniosku o kartę kredytową firmową,
+dane firmy prezentowane są bez maskowania, dane osobowe z maskowaniem:
+
+
+
+*_Wybór karty_*
+
+Prezentowane są wszystkie karty kredytowe dostępne dla danego typu klienta, których zakres
+limitu kredytowego obejmuje kwotę wskazaną przez klienta.
+
+NOTE: Grafikę oraz opis produktu należy skonfigurować w systemie BackOffice w opcji
+(System -> Słowniki -> Słownik typów kart).
+
+
+W przypadku, gdy klient posiada już kartę danego typu lub wniosek o nią jest w trakcie
+przetwarzania, wówczas po wyborze zostanie wyświetlony odpowiedni komunikat i proces nie
+będzie mógł być kontynuowany.
+
+
+*_Wizerunek na karcie_*
+
+Wizerunek karty wybierany jest spośród dostępnych dla
+danego produktu i jest dostarczany przez dostawcę systemu kartowego.
+Gdy dostępny jest tylko jeden to wybiera się on automatycznie).
+
+
+
+*_Dostarczenie karty, PIN i wyciągów, spłata karty i limity transakcyjne_*
+
+Konfiguracji podlegają:
+
+* *_sposób dostarczenia karty_* - sposób dostarczenia fizycznej karty do użytkownika
+(wybór może być zawężony przez konfigurację dostawcy karty),
+
+** Przesyłka pocztowa - wysyłka na adres korespondencyjny właściciela karty,
+** Przesyłka kurierska - wysyłka na adres korespondencyjny właściciela karty.
+
+* *_sposób dostarczenia PIN_* - (wybór może być zawężony przez konfigurację dostawcy karty):
+
+** Wysyłka kodu przesyłką pocztową - wysyłka inicjalnego kodu PIN na adres korespondencyjny
+właściciela karty. Aktywacji można wówczas dokonać podczas pierwszej płatności
+lub w bankomacie.
+
+** Aplikacja mobilna lub bankowość internetowa.
+
+* *_sposób dostarczenia wyciągów_* (wysyłka e-mail lub pocztą).
+
+W przypadku *kontekstu indywidualnego*:
+
+* Użytkownik określa sposób spłaty karty (automatyczna/minimalna) oraz
+wybiera rachunek do spłaty karty,
+* Użytkownik zapoznaje się z limitami karty - limity nie podlegają modyfikacji:
+
+
+W przypadku *kontekstu indywidualnego mikro i karty dla siebie*:
+
+* Użytkownik określa sposób spłaty karty (automatyczna/minimalna), w polu
+prezentowany jest rachunek do spłaty karty wybrany przez użytkownika na początku
+procesu i nie podlega edycji,
+* Użytkownik zapoznaje się z limitami karty - limity nie podlegają modyfikacji.
+
+W przypadku *kontekstu indywidualnego mikro i karty firmowej*:
+
+* Użytkownik określa sposób spłaty karty (automatyczna/minimalna),
+w polu prezentowany jest rachunek do spłaty karty wybrany przez użytkownika na
+początku procesu i nie podlega edycji,
+
+
+
+* Użytkownik ustawia limity karty:
+
+** Limit dzienny wypłat gotówki,
+** Limit dzienny transakcji bezgotówkowych,
+** Limit dzienny transakcji internetowych.
+
+Limit dzienny transakcji internetowych nie może być większy niż
+limit dzienny transakcji bezgotówkowych
+
+
+*_Dane wnioskującego_*
+
+Zarówno dla klienta indywidualnego jak i firmowego prezentowany jest ekran, na którym jest proszony o podanie
+dodatkowych informacji, które posłużą pracownikowi banku za podstawę
+do określenia zdolności kredytowej.
+
+*_Formularz danych dla klienta indywidualnego_*:
+
+
+Poszczególne sekcje formularza danych dla klienta indywidualnego:
+
+Sekcja _Dodatkowe informacje o wnioskodawcy_ - przykład:
+
+
+Sekcja _Źródła dochodów_:
+
+
+Lista wyboru _źródeł dochodu_:
+
+
+Przykładowa sekcja głównego źródła dochodu dla Umowy o pracę - wymagane podanie danych:
+
+
+Użytkownik może wskazać więcej źródeł dochodu poprzez wybór opcji
+[Dodaj kolejne źródło dochodów], zostaje otwarta kolejna pozycja w sekcji:
+
+
+
+Sekcja _Zobowiązania_:
+
+
+Po wybraniu [Dodaj zobowiązanie] zostaje otwarta formatka:
+
+
+Lista wyboru zobowiązań:
+
+
+Możliwe jest dodanie kolejnej pozycji za pomocą [Dodaj zobowiązanie]:
+
+
+Sekcja _Posiadany majątek_:
+
+W sekcji posiadanego majątku należy wypełnić status mieszkaniowy i własności samochodu.
+
+
+Lista wyboru dla statusu mieszkaniowego:
+
+
+Lista wyboru dla status własności samochodu:
+
+
+Możliwość dodania składnika majątku za pomoca opcji [Dodaj składnik majątku]:
+
+
+Lista wyboru rodzaju posiadanego majątku:
+
+
+Przykładowa sekcja posiadanego majątku:
+
+
+
+*_Formularz danych dla klienta firmowego (kontekst indywidualny mikro)_*
+
+Poszczególne sekcje formularza danych dla klienta firmowego (kontekst indywidualny mikro):
+
+Sekcja _Informacje dodatkowe_:
+
+Wymagane jest wskazanie Formy prowadzonej księgowości oraz podanie danych osoby upoważnionej do kontaktów z Bankiem:
+
+
+Sekcja _Obciążenia_:
+
+
+Lista wyboru dla oświadczenia _Oświadczam, że proponowany przedmiot zabezpieczenia kredytu_:
+
+
+Wymagane jest uzupełnienie listy osób trzecich w przypadku wyboru
+_Jest obciążony prawami osób trzecich_:
+
+
+Sekcja _Zabezpieczenia_
+
+Uzytkownik podaje szacunkową, sumaryczną wartość proponowanego zabezpieczenia
+oraz wymienia poszczególne składowe.
+
+
+Użytkownik dodaje zabezpieczenie za pomocą [Dodaj zabezpieczenie], z listy wyboru wskazuje
+nastepnie _Rodzaj zabezpieczenia_
+
+
+Sekcja _Prognozy finansowe_
+
+Użytkownik skłąda oświadczenie o wysokości przychodów ze sprzedaży
+za ostatni zakończony, wskazuje rok obrotowy i kwotę przychodów.
+
+
+W polu _Według moich prognoz finansowych na cztery kolejne lata obrotowe następujące
+po roku bazowym_ wybiera:
+
+
+*_Dane z Banku_*
+
+W kolejnym kroku prezentowane są załączniki dostarczone przez bank
+dla danego typu karty (np. regulaminy oraz tabele opłat).
+
+Użytkownik może pobrać dokumenty na stację roboczą.
+
+
+*_Załączniki do wniosku o karte kredytową_*
+
+Użytkownik zobowiązany jest do dołączenia do wniosku o kartę kredytową
+wymaganych dokumentów.
+
+Na formularzu wyświetlane są kategorie dokumentów, które to wnioskujący o
+kartę powinien załączyć do wniosku. Konfigurację prezentowanych informacji
+należy wykonać w systemie BackOffice.
+
+Przykładowe załączniki dla wniosku o kartę kredytową firmową:
+
+
+W przypadku klienta indywidualnego prezentowane opisy są zależne
+od wskazanych przez użytkownika źródeł dochodów.
+
+Przykładowe załączniki dla wniosku o karte kredytową dla klienta indywidualnego:
+
+
+Po wybraniu opcji [Załącz plik] zostaje otwarte okno:
+
+
+Po wskazaniu pliku i uzupełnieniu nazwy (opcjonalne):
+
+
+Użytkownik dodaje plik za pomocą opcji [Wgraj].
+Plik zostaje zaprezentowany na formularzu załączników:
+
+
+Możliwe jest dodanie więcej niż jednego pliku do danej kategorii dokumentu:
+
+
+
+*_Zgody marketingowe i produktowe oraz oświadczenia_*
+
+Użytkownik musi zapoznać się z treścią zgód marketingowych i produktowych oraz oświadczeniami
+a następnie wyrazić zgodę na wymagane (zgody i oświadczenia).
+Treści zgód marketingowych pochodzą z systemu transakcyjnego, zaś konfiguracja wymagalności
+i składu zestawu jest wykonywana po stronie systemu CardOn.
+
+Zgody produktowe definiowane są w systemie CardOn. Zapis zgód produktowych jest również
+realizowany po stronie CardOn, co oznacza, że zgodę należy udzielić za każdym razem
+i nie jest dostępna jej historia.
+
+Przykładowe zgody marketingowe i oświadczenia:
+
+
+
+*_Autoryzacja wniosku_*
+
+Na koniec prezentowane jest podsumowanie wniosku,
+
+
+Przykład podsumowania wniosku o karte kredytową firmową:
+
+
+a po autoryzacji wysyłany jest do analizy.
+
+Przykład podsumowania wniosku o karte kredytową dla klienta indywidualnego:
+
+
+
+
+*_Kontynuacja wniosku_*
+
+Dla karty kredytowej możlliwe jest zapisanie wersji roboczej wniosku.
+Przycisk [Dokończ później] dostępny jest w dowolnym momencie wprowadzania wniosku po wybraniu
+typu karty.
+Zapisanie wersji roboczej nie wymaga autoryzacji, podobnie jak jej anulowanie.
+Wniosek dostępny jest na liście wniosków i może być kontynuowany z wykorzystaniem
+opcji [Kontynuuj wniosek].
+
+
+
+Przed udostępnieniem danych wniosku do dalszej pracy przeprowadzana jest kontrola,
+czy dane typu wniosku nie uległy zmianie i jeśli tak się stało prezentowana jest
+informacja, że wniosek nie może być kontynuowny i należy rozpocząć nowy wniosek.
+
+
+Podczas kontynuacji wniosku nie można zmienić wartości wskazanych przed zapisem:
+
+* wnioskowanej kwoty,
+* typu karty,
+* rachunku spłaty (w przypadku indywidualnego mikro i kontekstu firmowego mikro).
+
+Kontynuacja wniosku zawsze zaczyna się od ekranu pierwszego i zawsze wymaga:
+
+* potwierdzenia aktualności danych osobowych lub firmowych,
+* oznaczenia decyzji dla zgód marketingowych, produktowych i oświadczeń.
+
+Po autoryzacji wniosku nie podlega on dalszej edycji.
+
+*_Anulowanie wniosku_*
+
+Wniosek o karte kredytową może zostać anulowany przez użytkownika z poziomu
+szczegółów wniosku (Lista wniosków -> Szczegóły):
+
+
+Opcja [Anuluj wniosek] jest dostępna dla dedykowanych statusów:
+
+
+Anulowanie wymaga podpisu przypisanym środkiem autoryzacji:
+
+
+Prezentowane jest potwierdzenie anulowania:
+
+
+Wniosek na liście prezentowany jest w sekcji wniosków zakończonych.
+
+
+*_Uzupełnienie wniosku_*
+
+W przypadku, gdy operator banku zwróci wniosek do uzupełnienia, trafia on na listę wniosków
+w statusie _Do uzupełnienia_.
+Użytkownik po wyborze opcji [Uzupełnij] z poziomu listy wniosków:
+
+
+zapoznaje się z informacją dot. uzupełnienia dokumentów:
+
+Przykładowe okno uzupełnienia wniosku:
+
+
+Użytkownik dodaje wymagany dokument/ dokumenty wraz z opisem pliku:
+
+
+Przykładowy ekran dodania załącznika:
+
+
+Po wybraniu [Akceptuj]:
+
+
+wymagany jest podpis przypisanym środkiem autoryzacji
+
+
+Wniosek zostaje przekazany do dalszej analizy:
+
+
+i zyskuje status _Uzupełniony_:
+
+
+Wnioski anulowane nie są prezentowane na liście wniosków.
+
+
+*_Oferta_*
+
+W przypadku, gdy operator banku prześle decyzję dla wniosku przyjmuje on jeden ze statusów:
+
+* Odrzucony - gdy wniosek został odrzucony,
+* Oferta do akceptacji - gdy przedstawiona została oferta.
+
+Dla pozytywnego rozpatrzenia wniosku użytkownik ma możliwość zapoznania się z ofertą
+oraz z załączonymi do niej dokumentami oraz może ją zaakceptować
+
+
+(status _Oferta zaakceptowana_) lub odrzucić (wniosek anulowany).
+Obie akcje wymagają autoryzacji:
+
+
+
+Oferta ma swoją ważność i po jej upływie użytkownikowi prezentowana jest informacja,
+o tym, że oferta wygasła i ma możliwość anulowania aktualnego wniosku i rozpoczęcia nowego.
+Wniosek z ofertą przeterminowaną może automatycznie zyskać status odrzuconego,
+jeśli tak zdecyduje CardOn.
+
+*_Umowa_*
+
+W przypadku, gdy operator banku prześle umowę dla wniosku, wówczas otrzyma on status
+_Umowa do podpisu_:
+
+
+i użytkownik będzie miał możliwość zapoznać się z dokumentem
+umowy oraz dokumentami oferty.
+
+Użytkownik może ofertę podpisać w bankowości
+internetowej (jeśli dopuszcza to konfiguracja), podpisać umowę w oddziale lub odrzucić.
+Operacje wykonane w bankowości internetowej wymagają autoryzacji.
+
+
+Po podpisaniu umowy w bankowości wniosek zyskuje status _Umowa oczekuje na realizację_:
+
+
+
+zaś po podpisaniu przez bank _Umowa podpisana_.
+
+
+Jeśli umowa została podpisana w bankowści internetowej oraz otrzymała status
+_Umowa podpisana_, wówczas dokument umowy wraz z dokumentami towarzyszącymi
+jest wysyłany na adres email firmy (dla karty firmowej) lub wnioskującego
+(dla karty detalicznej). Załączniki zabezpieczone są zgodnie z konfiguracją systemu.
+W zależności od konfiguracji hasło użytkownika dostępne jest w bankowości internetowej
+lub wysyłane na numer telefonu.
+
+*_Weryfikacja zastrzeżenia numeru PESEL_*
+
+Sprawdzenie następuje podczas podpisania umowy o kartę kredytową, tuż przed jej autoryzacją.
+Oznacza, to, że jeśli użytkownik zdecyduje się na ostateczne podpisanie umowy w oddziale
+to na pracowniku banku spada obowiązek weryfikacji.
+Status zastrzeżenia numeru PESEL jest weryfikowany tylko dla wniosków o karty indywidualne
+i dotyczy wyłącznie osoby składającej wniosek.
+
+W przypadku otrzymania informacji o zastrzeżeniu wyświetlony zostanie komunikat:
+"Twój PESEL jest zastrzeżony. Aby podpisać umowę, Twój PESEL nie powinien być zastrzeżony.
+Możesz cofnąć zastrzeżenie numeru PESEL, aby kontynuować finalizację umowy."
+
+W szczególnym przypadku, gdy nie udało się zweryfikować stanu numeru PESEL, zostanie
+wyświetlony komunikat:
+"Nie mogliśmy sprawdzić czy Twój PESEL jest zastrzeżony. Przepraszamy, z przyczyn
+technicznych nie udało nam się zweryfikować zastrzeżenia Twojego numeru PESEL.
+Aby podpisać umowę, Twój PESEL nie powinien być zastrzeżony. Spróbuj ponownie
+w późniejszym terminie lub skontaktuj się z Bankiem.
+
+W obu przypadkach operację podpisania umowy można powtórzyć po zdjęciu zastrzeżenia
+numeru PESEL.
+
+
+= Karty (Visiona - GAPI)
+
+== Aktywacja karty
+
+Po otrzymaniu karty Klient może aktywować kartę poprzez wybranie opcji [Aktywuj]:
+
+* z poziomu listy Kart w wierszu karty o statusie _Wyprodukowana_:
+
+
+* lub na formularzu szczegółów karty:
+
+
+Po wyborze opcji [AKTYWUJ] wyświetlony zostaje formularz z następującymi danymi
+(w zależności od typu karty):
+
+Formularz aktywacji karty debetowej:
+
+
+* *Karta* – nazwa karty i numer karty – częściowo zamaskowany numer karty (widoczne 4 pierwsze
+i 4 ostatnie cyfry numeru karty),
+* *Rodzaj karty*  – typ karty: Kredytowa, Debetowa,
+* *Numer rachunku powiązanego z kartą* - dla karty debetowej to numer rachunku,
+do którego wydano kartę,
+* *Status karty* – _Wyprodukowana_,
+* *Posiadacz karty* – imię i nazwisko właściciela karty,
+* *Nazwa na karcie* – imię i nazwisko umieszczone na karcie.
+
+Po wybraniu opcji [Aktywuj] należy podać datę ważności (w formacie MM/RR) karty odczytaną z
+fizycznej karty i wybrać [Akceptuj]:
+
+
+Podpisać przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostanie zaprezentowane potwierdzenie:
+
+
+Z poziomu formularza możliwe jest:
+
+* przejście do definiowanie limitów karty,
+* powrót do listy kart,
+* powrót do pulpitu.
+
+
+== Zmiana limitów karty
+
+Każda karta ma określone limity (wybór może być zawężony przez konfigurację
+dostawcy karty):
+
+* Limit dzienny transakcji bezgotówkowych,
+* Limit dzienny transakcji internetowych,
+* Limit dzienny wypłat gotówki.
+
+Klient może zmienić limity aktywnej karty wybierając z poziomu szczegółów
+karty opcję [Pokaż] w sekcji "Limity transakcyjne":
+
+
+a nastepnie [Edytuj]:
+
+
+zostanie otwarty formularz umożliwiający zmianę limitów karty:
+
+
+Wartość limitów minimalną i maksymalną określa dostawca karty.
+
+NOTE: Limit dzienny transakcji internetowych nie może być większy niż limit dzienny
+transakcji bezgotówkowych.
+
+Zapis zmian wymaga podpisu przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji prezentowane jest potwierdzenie zapisu zmian limitów:
+
+
+== Zmiana limitów tymczasowych karty
+
+Każda karta ma określone limity tymczasowe (wybór może być zawężony przez konfigurację
+dostawcy karty):
+
+* Limit dzienny transakcji bezgotówkowych,
+* Limit dzienny transakcji internetowych,
+* Limit dzienny wypłat gotówki.
+
+Klient może zmienić limity tymczasowe aktywnej karty wybierając z poziomu szczegółów
+karty opcję [Pokaż] w sekcji "Limity transakcyjne":
+
+
+a nastepnie [Edytuj]:
+
+
+zostanie otwarty formularz umożliwiający zmianę limitów tymczasowych
+
+
+Wartość limitów minimalną i maksymalną określa dostawca karty.
+
+NOTE: Limit dzienny transakcji internetowych nie może być większy niż limit dzienny
+transakcji bezgotówkowych.
+
+Zapis zmian wymaga podpisu przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji prezentowane jest potwierdzenie zapisu zmian limitów:
+
+
+Zmieniony limit obowiązuje:
+
+* do końca dnia, w którym został ustawiony, lub
+
+* do momentu zmiany limitów zwykłych (stałych) przez użytkownika – co automatycznie anuluje limit tymczasowy.
+
+Po upływie okresu ważności limitu tymczasowego (czyli z końcem dnia lub przy ręcznej zmianie limitów zwykłych), system automatycznie przywraca domyślne wartości limitów stałych przypisanych do danej karty.
+
+
+== Nadanie/zmiana PIN
+
+Ustawienie/zmiana PIN-u do karty jest możliwa z poziomu szczegółów karty:
+
+
+Po wybraniu [Zmień] w sekcji PIN zostaje otwarty formularz,
+gdzie w dedykowanych polach można ustawić/zmienić PIN.
+
+
+Zapis zmian wymaga podpisu przypisanym środkiem autoryzacji:
+
+
+Poprawny zapis zostaje potwierdzony odpowiednim komunikatem.
+
+== Zmiana nazwy karty
+
+W celu ułatwienia identyfikacji karty, Użytkownik ma możliwość modyfikacji nazwy
+produktu z poziomu szczegółów karty za pomocą opcji [Zmień] znajdującej się przy polu Nazwa własna:
+
+
+Nową nazwę należy zapisać za pomocą [Akceptuj]:
+
+
+Opcja [Anuluj] umożliwia rezygnację ze zmiany nazwy własnej karty.
+Można przywrócić pierwotną nazwę karty poprzez usunięcie nazwy a następnie akceptację
+zmiany.
+
+== Zablokowanie (czasowe karty)
+
+Zablokowanie (czasowe) karty jest możliwe z poziomu szczegółów karty:
+
+
+Wybranie opcji [Zablokuj (czasowo)] otwiera formularz:
+
+
+Po wybraniu [Akceptuj] Klient podpisuje dyspozycję zablokowania (czasowego)
+karty przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+
+== Odblokowanie karty (czasowo zablokowanej)
+
+Odblokowanie karty (czasowo zablokowanej) jest możliwe z poziomu:
+
+* kafla Karty na pulpicie:
+
+
+* listy kart:
+
+
+* lub z poziomu szczegółów karty:
+
+
+Wybranie opcji [Odblokuj] otwiera formularz:
+
+
+Po wybraniu [Akceptuj] Klient podpisuje dyspozycję odblokowania
+karty przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+== Zastrzeżenie karty (na stałe)
+
+Zastrzeżenie karty (na stałe) jest możliwe z poziomu szczegółów karty:
+
+
+Wybranie opcji [Zastrzeż (na stałe)] otwiera formularz, w którym należy wskazać
+przyczynę zastrzegania karty:
+
+* Karta została zgubiona
+* Karta zostałą skradziona
+
+
+* Inny powód z polem tekstowym, gdzie należy opisać przyczynę zastrzegania:
+
+
+Po wskazaniu ww. powodów prezentowany jest komunikat informacyjny:
+
+"Czy na pewno chcesz zastrzec kartę? Proces jest nieodwracalny i ponowne
+korzystanie z karty wiąże się z zamówieniem nowej. Pamiętaj, że masz
+możliwość czasowego zablokowania karty."
+
+* *Karta uległa zniszczeniu*
+
+
+Po wskazaniu powodu "Karta uległa zniszczeniu" prezentowany jest komunikat informacyjny:
+
+"Ta karta będzie działać do czasu, gdy otrzymasz nową kartę i ją aktywujesz.
+Transakcje nową kartą będziesz potwierdzać tym samym PIN-em co teraz.
+Możesz go zmienić w dowolnej chwili w Bankowości Elektronicznej."
+
+Na liście kart w przypadku zniszczenia karty prezentowane są dwa rekordy karty.
+Karta dotychczasowa jest aktywna i nadal można z niej korzystać.
+
+
+Proces zastrzeżenia karty wymaga akceptacji i podpisu przypisanym środkiem
+autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+== Aktywacja wznawianej karty
+
+Po zastrzeżeniu karty z powodu "Karta uległa zniszczeniu" do klienta zostanie wysłana
+nowa karta. Do czasu otrzymania nowej karty i jej aktywacji klient może używać karty,
+której zniszczenie zgłosił.
+
+Na liście kart (w przypadku zniszczenia karty) prezentowane są dwa rekordy karta zastrzeżona w statusie _Aktywna_
+i karta nowa wznawiana w statusie _Wyprodukowana (wznawiana)_.
+
+
+Po otrzymaniu karty klient może ją aktywować:
+
+
+Proces aktywacji wznawianej karty przebiega tak samo jak proces aktywacji nowej karty.
+Nalezy podać datę ważności karty wznawianej w formacie MM/RR i wybrać [Akceptuj]:
+
+
+Podpisać dyspozycję aktywacji przypisanym środkiem autoryzacji:
+
+
+Poprawna akceptacja zostanie potwierdzona odpowiednim komunikatem.
+
+Transakcje nową kartą (wznowioną) można potwierdzać tym samym PIN-em co kartą zniszczoną.
+
+== Płatności zbliżeniowe wyłączenie
+
+Wyłączenie płatności zbliżeniowych karty jest możliwe z poziomu szczegółów karty:
+
+
+Wybranie opcji [Zmień] otwiera formularz:
+
+
+Po wybraniu [Akceptuj] Klient podpisuje dyspozycję Wyłączenia płatności zbliżeniowych dla karty
+przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+== Płatności zbliżeniowe włączenie
+
+Włączenie płatności zbliżeniowych karty jest możliwe z poziomu szczegółów karty:
+
+
+Wybranie opcji [Zmień] otwiera formularz:
+
+
+Po wybraniu [Akceptuj] Klient podpisuje dyspozycję Włączenia płatności zbliżeniowych dla karty
+przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+== Płatności paskiem magnetycznym wyłączenie
+
+Wyłączenie płatności paskiem magnetycznym karty jest możliwe z poziomu szczegółów karty:
+
+
+Wybranie opcji [Zmień] otwiera formularz:
+
+
+Po wybraniu [Akceptuj] Klient podpisuje dyspozycję Wyłączenia płatności paskiem magnetycznym dla karty
+przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+== Płatności paskiem magnetycznym włączenie
+
+Włączenie płatności paskiem magnetycznym karty jest możliwe z poziomu szczegółów karty:
+
+
+Wybranie opcji [Zmień] otwiera formularz:
+
+
+Po wybraniu [Akceptuj] Klient podpisuje dyspozycję Włączenia płatności paskiem magnetycznym dla karty
+przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+== Płatności 3D Secure dla transakcji niskokwotowych wyłączenie
+
+Wyłączenie płatności 3D Secure dla transakcji niskokwotowych karty jest możliwe z poziomu szczegółów karty:
+
+
+Wybranie opcji [Zmień] otwiera formularz:
+
+
+Po wybraniu [Akceptuj] Klient podpisuje dyspozycję Wyłączenia płatności 3D Secure dla transakcji niskokwotowych dla karty
+przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+== Płatności 3D Secure dla transakcji niskokwotowych włączenie
+
+Włączenie płatności 3D Secure dla transakcji niskokwotowych karty jest możliwe z poziomu szczegółów karty:
+
+
+Wybranie opcji [Zmień] otwiera formularz:
+
+
+Po wybraniu [Akceptuj] Klient podpisuje dyspozycję Włączenia płatności 3D Secure dla transakcji niskokwotowych dla karty
+przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+== Ustawiania 3D Secure
+
+Po wybraniu opcji Ustawienia 3D Secure [Pokaż]
+
+
+z szczegółów kart, wyświetlane jest okno prezentujące formatkę 3D Secure gdzie zostaną zaprezentowane:
+
+
+Wybranie opcji [Zaufani usługodawcy] otwiera formularz:
+
+
+Na liście usługodawców, dostępne są następujące informacje:
+
+Określony zakres akcji:
+
+** [Dodaj zaufanego usługodawcę] – umożliwia wykonanie akcji dodania zaufanego usługodawcy,
+
+
+Wybranie opcji [Ustawienia] otwiera formularz:
+
+Po wybraniu zakładki [Ustawienia] prezentowana jest formatka , gdzie Klient będzie mógł dodać dodatkowy PIN
+zabezpieczenia stosowany w transakcjach online kartami płatniczymi, który ma na celu zwiększenie bezpieczeństwa zakupów internetowych:
+
+
+Wybranie opcji [Zmień] otwiera formularz:
+
+
+Po wybraniu [Akceptuj] Klient podpisuje dyspozycję zmiany PIN 3D Secure dla karty
+przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+NOTE: Funkcjonalność kart dostępna jest dla Użytkownika kontekstu firmowego w obszarze Mikro, który posiada odpowiednie uprawnienia do funkcjonalności. Uprawnienia nadawane są przez Administratora w opcji _Ustawienia → Uprawnienia Użytkowników_.
+
+NOTE: Opcje dostępne na kartach dla Użytkownika, mogą różnić się w zależności od parametryzacji dla Banku.
+
+== Rachunki walutowe karty ustawienie
+
+Ustawienie rachunku walutowego dla karty jest możliwe z poziomu szczegółów karty po wybraniu opcji Rachunki walutowe -> Ustaw:
+
+
+Wybranie opcji [Ustaw] otwiera formatkę Rachunki walutowe karty:
+
+
+Po zaznaczeniu rachunku walutowego z listy, Klient podpisuje dyspozycję ustawiania rachunku walutowego dla karty
+przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+== Rachunki walutowe karty zmiana
+
+Zmiana rachunku walutowego dla karty jest możliwe z poziomu szczegółów karty po wybraniu opcji Rachunki walutowe -> Zmiana:
+
+
+Wybranie opcji [Zmiana] otwiera formatkę:
+
+
+Po zmienie rachunku walutowego z listy, Klient podpisuje dyspozycję zmiany rachunku walutowego dla karty
+przypisanym środkiem autoryzacji:
+
+
+Po poprawnej akceptacji zostaje zaprezentowany komunikat potwierdzający:
+
+
+== Karta Kredytowa - Wyciągi
+
+Funkcja „Wyciągi” umożliwia użytkownikowi pobieranie szczegółowych zestawień transakcji dokonanych kartą kredytową za dany okres rozliczeniowy. Każdy wyciąg zawiera m.in. informacje o:
+
+* saldzie początkowym i końcowym,
+
+* transakcjach zaksięgowanych,
+
+* kwocie minimalnej do spłaty,
+
+* terminie spłaty,
+
+* oprocentowaniu oraz opłatach,
+
+* dostępnych środkach i limitach kredytowych.
+
+
+Wybranie opcji [Wyciagi] otwiera formatkę:
+
+
+Wyciąg możesz:
+
+* pobrać w formacie PDF
+
+== Przeglądanie historii operacji wykonanych kartą
+
+Aby przejść do historii operacji wykonanych kartą płatniczą należy wybrać szczegóły wybranej karty, a następnie wybrać [TRANSAKCJE]. Wyświetlany jest wówczas formularz TRANSAKCJI KARTY prezentujący listę operacji wykonanych przy użyciu karty płatniczej.
+
+
+Posiadacz głównej karty kredytowej ma możliwość wyświetlenia wszystkich operacji wykonanych kartą płatniczą oraz operacji wykonanych na rachunku związanym z tą kartą poprzez użycie opcji w filtrze
+* *Transakcje rachunku powiązanego z kartą*. Posiadacz dodatkowej karty kredytowej ma możliwość wyświetlenia wszystkich operacji na rachunku wykonanych tylko tą kartą.
+
+W celu zawężenia prezentacji listy operacji wykonanych kartą, system umożliwia zastosowanie filtrów:
+
+* *Prostego* – filtrowanie listy kart następuje po wpisaniu danych w polu Szukaj znajdującego się na formatce:
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej operacji w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści. Aby powrócić do pełnej listy kart należy kliknąć w przycisk [X] w polu wyszukiwania.
+
+* *Zaawansowanego* – użycie przycisku [Więcej] umożliwia ustawienie filtru zaawansowanego:
+
+
+Użytkownik ma możliwość ustawiania filtru zaawansowanego dla następujących pól:
+
+* *Ostatnie 90 dni*– liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana historia operacji wykonanych kartą płatniczą, domyślnie 90 dni,
+* *Bieżący miesiąc –* zakres za bieżący miesiąc,
+* *Poprzedni miesiąc -* zakres za poprzedni miesiąc,
+* *Bieżący rok* – zakres za bieżący rok,
+* *Poprzedni rok* - zakres za poprzedni rok,
+* *Wybierz zakres dat* - zakres dat, dla których ma zostać wyświetlona historia operacji wykonanych kartą płatniczą, od miesiąca wstecz do daty bieżącej. Alternatywa dla pola *Ostatnie*. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą którego można określić zakres dat.
+
+
+* *Kwota od*, *Kwota do* – zakres kwot (od - do), dla których ma zostać wyświetlona historia operacji wykonanych kartą płatniczą,
+* *Rodzaj operacji* – Użytkownik mam możliwość filtrowania operacji po rodzaju, poprzez wybór wartości z dostępnej listy:
+** Wszystkie (wartość domyślna),
+** Obciążenia,
+** Uznania.
+* *Transakcje rachunku powiązanego z kartą* - zakres operacji, dla których ma zostać wyświetlona historia operacji wykonanych kartą płatniczą oraz powiązanych z rachunkiem karty.
+
+Prezentowane jest podsumowanie operacji z uwzględnieniem podziału na wpływy i wydatki oraz liczby operacji.
+
+
