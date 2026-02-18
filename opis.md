@@ -92,6 +92,12 @@ Treść wymagania to kolejne linie aż do następnego **WM-... albo do kolejnego
 
 # Praca z narzędziem
 
+## Praktyka dla pracy z git dla frameworka:
+Trzymaj main jako czysty template.
+Dla każdego klienta/projektu twórz osobny branch wg wzorca wyżej.
+W tym branchu uzupełniaj tylko project-parameters.md i pliki specyficzne dla klienta.
+
+## Konfiguracja framework
 1. Uzupełniasz tylko parametry w project-parameters.md (nazwa projektu, klient, język, styl, ścieżki).
 2. Trzymasz stały „silnik” w project-prompt.md (bez danych klienta).
 3. W każdej sesji odpalasz prompt startowy do Codex:
