@@ -65,6 +65,7 @@ Utrzymanie kontroli nad AI
 # Wymagania klienta 
 1. Wymagania powinny mieć format WM-<num>
 Wymgania powinny mieć odpowiednią strkturę
+
 Przykład:
 ## 4. Wymagania funkcjonalne
 ### 4.1 Aktywacja usługi CashDirector
@@ -166,13 +167,4 @@ Lista tematów do rozważenia:
 Markdown sam z siebie nie „podstawi” {{PROJECT_NAME}} — musisz mieć etap renderowania (zamiany placeholderów na wartości).
 LLM robi to automatycznie na podstawie założeń z project-prompt.md pkt. 3.6
 
-Ustaw wartość w project-parameters.md w formacie:
-- **Nazwa projektu (`PROJECT_NAME`):** `Integracja BE z CashDirector`
-W dowolnym pliku używaj placeholdera:
-{{PROJECT_NAME}}
-Wygeneruj wersje „z podstawionymi wartościami” skryptem:
-do osobnego katalogu (bez nadpisywania źródeł):
-.\tools\render-placeholders.ps1 -OutDir rendered
-albo nadpisując pliki (in-place):
-.\tools\render-placeholders.ps1 -InPlace
-Skrypt jest w tools/render-placeholders.ps1 i domyślnie renderuje pliki z spec/, src/, doc/ oraz opis.md i project-prompt.md, biorąc wartości z project-parameters.md.
+

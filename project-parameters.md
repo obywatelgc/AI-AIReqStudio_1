@@ -2,9 +2,9 @@
 
 ## 1. Zmienne projektowe
 
-- **Nazwa projektu (`PROJECT_NAME`):** `Integracja BE z CashDirector`
-- **ID projektu (`PROJECT_ID`):** `BE_CD`
-- **Nazwa klienta (`CUSTOMER_NAME`):** `BPS`
+- **Nazwa projektu (`PROJECT_NAME`):** `[UZUPELNIJ_NAZWE_PROJEKTU]`
+- **ID projektu (`PROJECT_ID`):** `[UZUPELNIJ_ID_PROJEKTU]`
+- **Nazwa klienta (`CUSTOMER_NAME`):** `[UZUPELNIJ_NAZWE_KLIENTA]`
 
 ## 2. Konfiguracja operacyjna
 

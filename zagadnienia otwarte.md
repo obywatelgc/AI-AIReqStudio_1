@@ -9,6 +9,6 @@ Struktura katalogów
 /spec - dokument specyfikacji wymagań
 
 2. **DEC-ACT-003 Uprawnienie funkcjonalne**  
-Dostęp do uruchomienia procesu aktywacji usługi CashDirector jest kontrolowany uprawnieniem funkcjonalnym „eKsięgowość – aktywacja”.
+Dostęp do uruchomienia procesu aktywacji usługi zewnętrznej jest kontrolowany dedykowanym uprawnieniem funkcjonalnym.
 
 3. 
