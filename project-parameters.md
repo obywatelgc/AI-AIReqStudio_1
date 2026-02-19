@@ -2,9 +2,9 @@
 
 ## 1. Zmienne projektowe
 
-- **Nazwa projektu (`PROJECT_NAME`):** `[UZUPELNIJ_NAZWE_PROJEKTU]`
-- **ID projektu (`PROJECT_ID`):** `[UZUPELNIJ_ID_PROJEKTU]`
-- **Nazwa klienta (`CUSTOMER_NAME`):** `[UZUPELNIJ_NAZWE_KLIENTA]`
+- **Nazwa projektu (`PROJECT_NAME`):** `Elixir XML`
+- **ID projektu (`PROJECT_ID`):** `ELIXIR_XML`
+- **Nazwa klienta (`CUSTOMER_NAME`):** `BPS`
 
 ## 2. Konfiguracja operacyjna
 

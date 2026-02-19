@@ -27,9 +27,9 @@ Mimo jasnego podziału odpowiedzialności i podziału kontekstów Banki często 
 - Uprawnienia są nadawane per obszar funkcjonalny i wpływają na widoczność/opcje w BE.
 
 ## 5. Integracje i granice odpowiedzialności
-- BE pełni rolę systemu nadrzędnego dla procesów bankowych i autoryzacji.
 - Integracje z systemami zewnętrznymi muszą respektować kontekst klienta (detal/mikro/korpo) oraz model uprawnień.
 - W przypadku konfliktu między skrótem AS-IS a dokumentacją szczegółową, należy odwołać się do sekcji źródeł i zgłosić konflikt.
+- Asseco CB - system transakcyjny, master data. Opis systemu Asseco CB oraz zakres współpracy z BE został zawarty w /doc/CB/**
 
 ## 6. Ograniczenia
 - Nie dopuszcza się dopowiadania zachowań systemu bez potwierdzenia w źródłach.
@@ -39,3 +39,4 @@ Mimo jasnego podziału odpowiedzialności i podziału kontekstów Banki często 
 - `doc/EBP/**`
 - `doc/CBP/**`
 - `doc/BO/BackofficeUserGuide-pl_basic.adoc`
+- 'doc/CB/**'

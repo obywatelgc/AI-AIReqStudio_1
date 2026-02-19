@@ -104,26 +104,31 @@ W tym branchu uzupełniaj tylko project-parameters.md i pliki specyficzne dla kl
 
 Prompty:
 ```markdown
+
 Pracujemy w tym repo. Najpierw wczytaj:
 - project-parameters.md
 - project-prompt.md
 - spec/00-outline.md
-- pliki źródłowe z src/ (wymagania klienta, zmiany któryc oczekuje klienta)
+- pliki źródłowe z src/ (wymagania klienta, zmiany których oczekuje klient)
 - wszystkie pliki dokumentacji systemu z doc/ oraz pliki z katalogów podrzędnych(dokumentacja systemu, stan obecny systemu, przed zmianami o które wnioskuje klient)
 
 Następnie potwierdź: projekt, klient, język, styl, zakres.
 Nie generuj treści, dopóki nie potwierdzisz konfiguracji.
+
+
 ```
 
 4. Potem prompt zadaniowy, np. dla rozdziału:
 ```
 Na podstawie src/* oraz doc/* uzupełnij spec/10-spw.md.
+Skup się wyłącznie na analizie wymagań dla systemu BE (CBP + EBP) oraz jego inegracji z CB.
 Wymagania:
 - ID: RQ-ACT-###
 - każde wymaganie: opis, uzasadnienie, AC (Given/When/Then)
 - sekcje: Obsługa błędów i Zagadnienia otwarte muszą pozostać
 - bez domysłów: brak danych -> OPEN-QUESTION-###
 - nie modyfikuj sekcji z "Generowanie: POMIŃ"
+
 ```
 
 5. Na końcu prompt walidacyjny:
@@ -137,28 +142,6 @@ Zrób review spójności:
 
 
 ##################################### POPRZEDNI OPIS
-
-
-# Minimalny „standard promptów” do pracy w czacie w VSC
-Żeby praca była powtarzalna, przygotuj sobie 6–8 gotowych komend (snippetów). Przykłady (do używania na zaznaczeniu albo pliku):
-
-* „Zrób wymagania z materiałów od Klienta”
-„Na podstawie /src/ zaproponuj wymagania w formacie RQ-###. Dodaj kryteria akceptacji i przypadki negatywne.”
-
-* „Utestowalnij”
-„Przerób wymagania na testowalne. Każde wymaganie ma mieć: warunek, działanie, wynik. Usuń ogólniki.”
-
-* „Wykryj luki”
-„Wskaż brakujące wymagania: bezpieczeństwo, audyt, błędy, retry, idempotency, zgodność danych.”
-
-* „Zrób macierz śledzenia”
-„Zrób tabelę: ID wymagania → źródło → test/AC → zależności.”
-
-* „Wersja na review”
-„Przeredaguj pod czytelnika biznesowego, bez utraty jednoznaczności.”
-
-* „Lista pytań otwartych”
-„Wypisz decyzje wymagane od biznesu/architekta + konsekwencje wyborów.”
 
 
 
