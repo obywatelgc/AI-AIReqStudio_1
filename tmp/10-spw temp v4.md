@@ -1,6 +1,6 @@
 <!-- AI-CONSTRAINTS
 Zakres: Opis zakresu modyfikacji
-Format: RQ-ACT-###
+Format: RQ-###
 Źródła: 
     Wymagania klienta: src/*, 
     Dokumentacja systemu: doc/*
@@ -57,10 +57,16 @@ Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe 
 -->
 ### 3.1 Wymagania funkcjonalne
 
-#### RQ-ACT-001: [NAZWA WYMAGANIA]
+#### RQ-001: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
-**Uzasadnienie:** [UZASADNIENIE WYMAGANIA]
+**Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
+
+**Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
+
+**Źródła:**
+- Wymaganie klienta: `[src/<plik>.md#sekcja]`
+- Stan obecny (as-is): `[doc/<plik>.md|.adoc#sekcja]`
 
 **AC:**
 - Given …
@@ -69,10 +75,16 @@ Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe 
 
 ---
 
-#### RQ-ACT-002: [NAZWA WYMAGANIA]
+#### RQ-002: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
-**Uzasadnienie:** [UZASADNIENIE WYMAGANIA]
+**Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
+
+**Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
+
+**Źródła:**
+- Wymaganie klienta: `[src/<plik>.md#sekcja]`
+- Stan obecny (as-is): `[doc/<plik>.md|.adoc#sekcja]`
 
 **AC:**
 - Given …
@@ -81,10 +93,16 @@ Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe 
 
 ---
 
-#### RQ-ACT-003: [NAZWA WYMAGANIA]
+#### RQ-003: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
-**Uzasadnienie:** [UZASADNIENIE WYMAGANIA]
+**Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
+
+**Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
+
+**Źródła:**
+- Wymaganie klienta: `[src/<plik>.md#sekcja]`
+- Stan obecny (as-is): `[doc/<plik>.md|.adoc#sekcja]`
 
 **AC:**
 - Given …
@@ -93,10 +111,16 @@ Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe 
 
 ---
 
-#### RQ-ACT-004: [NAZWA WYMAGANIA]
+#### RQ-004: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
-**Uzasadnienie:** [UZASADNIENIE WYMAGANIA]
+**Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
+
+**Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
+
+**Źródła:**
+- Wymaganie klienta: `[src/<plik>.md#sekcja]`
+- Stan obecny (as-is): `[doc/<plik>.md|.adoc#sekcja]`
 
 **AC:**
 - Given …
@@ -105,10 +129,16 @@ Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe 
 
 ---
 
-#### RQ-ACT-005: [NAZWA WYMAGANIA]
+#### RQ-005: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
-**Uzasadnienie:** [UZASADNIENIE WYMAGANIA]
+**Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
+
+**Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
+
+**Źródła:**
+- Wymaganie klienta: `[src/<plik>.md#sekcja]`
+- Stan obecny (as-is): `[doc/<plik>.md|.adoc#sekcja]`
 
 **AC:**
 - Given …

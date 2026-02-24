@@ -73,12 +73,16 @@ Zmiana polegała będzie na dodaniu na poziomoie listy rachunków (miniaplikacja
 -->
 ### 3.1 Wymagania funkcjonalne
 
-#### RQ-ACT-001: [NAZWA WYMAGANIA]
+#### RQ-001: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
 **Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
 
 **Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
+
+**Źródła:**
+- Wymaganie klienta: `[src/<plik>.md#sekcja]`
+- Stan obecny (as-is): `[doc/<plik>.md|.adoc#sekcja]`
 
 **AC:**
 - Given …
@@ -87,12 +91,16 @@ Zmiana polegała będzie na dodaniu na poziomoie listy rachunków (miniaplikacja
 
 ---
 
-#### RQ-ACT-002: [NAZWA WYMAGANIA]
+#### RQ-002: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
 **Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
 
 **Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
+
+**Źródła:**
+- Wymaganie klienta: `[src/<plik>.md#sekcja]`
+- Stan obecny (as-is): `[doc/<plik>.md|.adoc#sekcja]`
 
 **AC:**
 - Given …
@@ -101,12 +109,16 @@ Zmiana polegała będzie na dodaniu na poziomoie listy rachunków (miniaplikacja
 
 ---
 
-#### RQ-ACT-003: [NAZWA WYMAGANIA]
+#### RQ-003: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
 **Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
 
 **Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
+
+**Źródła:**
+- Wymaganie klienta: `[src/<plik>.md#sekcja]`
+- Stan obecny (as-is): `[doc/<plik>.md|.adoc#sekcja]`
 
 **AC:**
 - Given …
@@ -115,12 +127,16 @@ Zmiana polegała będzie na dodaniu na poziomoie listy rachunków (miniaplikacja
 
 ---
 
-#### RQ-ACT-004: [NAZWA WYMAGANIA]
+#### RQ-004: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
 **Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
 
 **Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
+
+**Źródła:**
+- Wymaganie klienta: `[src/<plik>.md#sekcja]`
+- Stan obecny (as-is): `[doc/<plik>.md|.adoc#sekcja]`
 
 **AC:**
 - Given …
@@ -129,12 +145,16 @@ Zmiana polegała będzie na dodaniu na poziomoie listy rachunków (miniaplikacja
 
 ---
 
-#### RQ-ACT-005: [NAZWA WYMAGANIA]
+#### RQ-005: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
 **Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
 
 **Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
+
+**Źródła:**
+- Wymaganie klienta: `[src/<plik>.md#sekcja]`
+- Stan obecny (as-is): `[doc/<plik>.md|.adoc#sekcja]`
 
 **AC:**
 - Given …

@@ -24,33 +24,42 @@ python -m pip install -U pip
 pip install -r requirements.txt
 ```
 
-4. Uruchom parser wymagan:
+4. Uzupelnij dane wejsciowe i parametry projektu:
 
 ```powershell
-python .\tools\parse_requirements.py
+# wymagania klienta
+notepad .\src\wymagania.md
+
+# parametry projektu
+notepad .\project-parameters.md
 ```
 
-## Przydatne komendy
-
-Uruchomienie parsera z niestandardowymi sciezkami:
+5. Pracuj na aktywnym szablonie:
 
 ```powershell
-python .\tools\parse_requirements.py `
-  --input "src/wymagania.md" `
-  --output "spec/_trace/requirements_index.json" `
-  --work-items-dir "spec/_trace/work_items" `
-  --report "spec/_trace/requirements_parse_report.md"
+notepad .\spec\10-spw.md
 ```
 
-Uruchomienie z bledem procesu, gdy parser wykryje bledy:
+## Dostepne narzedzia
+
+Repo zawiera narzedzie:
+
+- `tools/render-placeholders.ps1`
+
+Przykladowe uruchomienia:
 
 ```powershell
-python .\tools\parse_requirements.py --fail-on-error
+powershell -ExecutionPolicy Bypass -File .\tools\render-placeholders.ps1
 ```
 
-## Wyjscie parsera
+```powershell
+powershell -ExecutionPolicy Bypass -File .\tools\render-placeholders.ps1 -InPlace
+```
 
-- `spec/_trace/requirements_index.json`
-- `spec/_trace/work_items/*.md`
-- `spec/_trace/requirements_parse_report.md`
+```powershell
+powershell -ExecutionPolicy Bypass -File .\tools\render-placeholders.ps1 `
+  -ParametersPath ".\project-parameters.md" `
+  -InputPaths @("spec","src","doc")
+```
+
 

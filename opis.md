@@ -7,32 +7,24 @@ Aktualnie repo zawiera głównie szablony, reguły i przykładowe dane wejściow
 AI-AIReqStudio_1/
 ├── doc/
 │   ├── glossary.md
-│   ├── opis systemu BE.md
 │   ├── BO/
 │   │   └── BackofficeUserGuide-pl_basic.adoc
+│   ├── CBP/
+│   │   ├── Main.adoc
+│   │   └── Miniaplikacja_*.adoc
 │   └── EBP/
 │       ├── Main.adoc
 │       └── Miniaplikacja_*.adoc
-├── kb/
-│   ├── chunks/
-│   │   └── EBP/
-│   │       └── DOC-*.json
-│   └── _manifest.json
+│   └── system-state/
+│       └── kluczowe-wytyczne-stan-obecny-systemu.md
 ├── spec/
 │   ├── 00-outline.md
 │   ├── 10-spw.md
-│   ├── 10-spw temp v3.md
-│   ├── 10-spw temp v4.md
-│   ├── 10-spw_out.md
-│   └── spw_szablon v2.md
+│   └── 10-spw temp v4.md
 ├── src/
-│   ├── banki-api-uslugi-banku.md
 │   └── wymagania.md
 ├── tools/
-│   ├── ingest_adoc.py
-│   ├── parse_requirements.py
-│   ├── render-placeholders.ps1
-│   └── search_kb.py
+│   └── render-placeholders.ps1
 ├── opis.md
 ├── project-parameters.md
 ├── project-prompt.md
@@ -113,7 +105,7 @@ Nie generuj treści, dopóki nie potwierdzisz konfiguracji.
 ```
 Na podstawie src/* oraz doc/* uzupełnij spec/10-spw.md.
 Wymagania:
-- ID: RQ-ACT-###
+- ID: RQ-###
 - każde wymaganie: opis, uzasadnienie, AC (Given/When/Then)
 - sekcje: Obsługa błędów i Zagadnienia otwarte muszą pozostać
 - bez domysłów: brak danych -> OPEN-QUESTION-###

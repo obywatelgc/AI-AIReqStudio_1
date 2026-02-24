@@ -14,7 +14,7 @@ To jest jedyne źródło prawdy dla zasad pracy agenta.
 
 1. Główny obszar pracy: 
    - Wynik analizy, specyfikacja wymagań. Katalog: `./spec`,
-   - Wymagania klienta, opis zmian jakie należy zrealizować w ssytemie. Katalog: `./src`,
+   - Wymagania klienta, opis zmian jakie należy zrealizować w systemie. Katalog: `./src`,
    - Dokumentacja systemów, stan obecny. Katalog: `./doc`,
    - Parametry projektu: `./project-parameters.md`,
    - Prompt systemowy: `./AGENTS.md`.
@@ -28,7 +28,7 @@ To jest jedyne źródło prawdy dla zasad pracy agenta.
 
 W przypadku konfliktu informacji stosuj priorytety:
 
-1. Aktywny plik specyfikacji (np. `./spec/10-spw.md`) wraz z jego nagłówkiem `AI-CONSTRAINTS` oraz opisem poszczególnych sekcji `SPW-SECTION` doładnie opisującym co powinno znaleźć się w danej sekcji.
+1. Aktywny plik specyfikacji (np. `./spec/10-spw.md`) wraz z jego nagłówkiem `AI-CONSTRAINTS` oraz opisem poszczególnych sekcji `SPW-SECTION` dokładnie opisującym co powinno znaleźć się w danej sekcji.
 2. `./project-parameters.md`.
 3. `./spec/00-outline.md`.
 4. Nowe wymagania banku z `./src/*.md`.
@@ -68,21 +68,21 @@ W przypadku konfliktu informacji stosuj priorytety:
 
 
 
-## 6. Workflow dla każdej sesji
+## 5. Workflow dla każdej sesji
 
 1. Wczytaj: `./project-parameters.md`, `./AGENTS.md`, `./spec/00-outline.md`, aktywny plik `./spec/*.md`, a następnie powiązane źródła z `./src/*.md`, potem `./doc/system-state/*`, a na końcu pełne `./doc/*`.
 2. Potwierdź zakres pracy i założenia.
 3. Wygeneruj lub popraw tylko wskazany rozdział.
 4. Przeprowadź autoweryfikację i wskaż luki.
 
-## 7. Zasady modyfikacji plików
+## 6. Zasady modyfikacji plików
 
 1. Modyfikuj tylko pliki wymagane przez zadanie użytkownika.
 2. Nie zmieniaj struktury rozdziałów z `./spec/00-outline.md` bez jawnej decyzji użytkownika.
 3. Nie zmieniaj identyfikatorów istniejących wymagań bez wyraźnej potrzeby.
 4. Wprowadzając nowe wymagania, utrzymuj ciągłość i unikalność numeracji.
 
-## 8. Walidacja Markdown i jakość wyjścia
+## 7. Walidacja Markdown i jakość wyjścia
 
 Przed zakończeniem:
 
