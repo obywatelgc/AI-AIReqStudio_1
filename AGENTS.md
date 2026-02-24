@@ -82,7 +82,13 @@ W przypadku konfliktu informacji stosuj priorytety:
 3. Nie zmieniaj identyfikatorów istniejących wymagań bez wyraźnej potrzeby.
 4. Wprowadzając nowe wymagania, utrzymuj ciągłość i unikalność numeracji.
 
-## 7. Walidacja Markdown i jakość wyjścia
+## 7. Zasady odczytywania dokumentacji systemu (`./doc`)
+
+1. W pierwszej kolejności analizuj opis tekstowy funkcjonalności w plikach `*.md`, `*.adoc`, `*.txt`.
+2. Jeśli opis tekstowy jest niepełny, wykorzystaj treści zapisane w plikach graficznych oznaczone jako odwołania `image::` w plikach `.adoc` (nagłówki, akapity, podpisy).
+3. Nie wnioskuj o zachowaniu systemu wyłącznie na podstawie nazw plików grafik; brakujące dane oznaczaj jako `OPEN-QUESTION-###`.
+
+## 8. Walidacja Markdown i jakość wyjścia
 
 Przed zakończeniem:
 
