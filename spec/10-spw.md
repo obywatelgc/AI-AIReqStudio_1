@@ -1,6 +1,6 @@
 <!-- AI-CONSTRAINTS
 Zakres: Opis zakresu modyfikacji
-Format: RQ-ACT-###
+Format: RQ-###
 Źródła: 
     Wymagania klienta: src/*, 
     Dokumentacja systemu: doc/*
@@ -14,6 +14,10 @@ Format: RQ-ACT-###
 ### 1.1 Cel biznesowy projektu
 <!-- SPW-SECTION
 Cel: Opisz główny cel biznesowy rozwiązania dla wskazanego zakresu modyfikacji.
+    Przykład: 
+    Celem biznesowym projektu jest umożliwienie klientom bankowości elektronicznej (web i mobile) samodzielnego pobrania ostatniego wyciągu z rachunku w formacie elektronicznym (np. PDF, csv) w celu zwiększenia poziomu samoobsługi, redukcji kosztów operacyjnych oraz poprawy doświadczenia użytkownika.
+    Nie stosuj zaspiów w stylu: 
+    Celem bizesowym jest dodanie opcji "Pobierz ostatni wyciąg".
 Zakres: Perspektywa biznesowa (nie opis implementacji IT).
 Źródła: Wymagania klienta: src/*
 Wyjście: 3–5 zdań.
@@ -53,6 +57,18 @@ Wyjście: opis przepływu + kluczowe decyzje biznesowe.
 ## 3. Wymagania szczegółowe
 <!-- SPW-SECTION
 Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe i modyfikowane wymagania/user stories.
+Przykład:
+Opis: 
+[Krótki opis wymagania]
+Dodanie opcji pobrania ostatniego wyciągu.
+
+Stan obecny:
+[Opis stanu obecnego as-is na podstawie /doc/**]
+Obecnie w sytemie Asseco EBP użytkonik ma możliwość przejścia z poziomu rachunku do opcji podglądu listy wyciągów danego rachunku. System po wejściu w opcję, prezentuje listę wyciągów z możliwością pobrania w formacie pdf, csv.
+
+Opis modyfikacji:
+[Opis modyfikacji to-be na postawie wymagań Klieta /src/wymagania.md]
+Zmiana polegała będzie na dodaniu na poziomoie listy rachunków (miniaplikacja Rachunki) nowej opcji "Ostatni wyciąg". Opcja pozwoli użytkownikowi na pobiranie ostatniego (najnowszego) wyciągu bez potrzeby wchodzenia w listę wyciągów.
 Źródła: Wymagania klienta: src/*
 -->
 ### 3.1 Wymagania funkcjonalne
@@ -60,7 +76,9 @@ Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe 
 #### RQ-ACT-001: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
-**Uzasadnienie:** [UZASADNIENIE WYMAGANIA]
+**Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
+
+**Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
 
 **AC:**
 - Given …
@@ -72,7 +90,9 @@ Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe 
 #### RQ-ACT-002: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
-**Uzasadnienie:** [UZASADNIENIE WYMAGANIA]
+**Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
+
+**Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
 
 **AC:**
 - Given …
@@ -84,7 +104,9 @@ Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe 
 #### RQ-ACT-003: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
-**Uzasadnienie:** [UZASADNIENIE WYMAGANIA]
+**Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
+
+**Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
 
 **AC:**
 - Given …
@@ -96,7 +118,9 @@ Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe 
 #### RQ-ACT-004: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
-**Uzasadnienie:** [UZASADNIENIE WYMAGANIA]
+**Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
+
+**Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
 
 **AC:**
 - Given …
@@ -108,7 +132,9 @@ Cel: W niniejszym rozdziale jest dokonane mapowanie modelu rozwiązania na nowe 
 #### RQ-ACT-005: [NAZWA WYMAGANIA]
 **Opis:** [OPIS WYMAGANIA]
 
-**Uzasadnienie:** [UZASADNIENIE WYMAGANIA]
+**Stan obecny:** [OPIS STANU OBECNEGO SYSTEMU]
+
+**Opis modyfikacji:** [OPIS ZMIANY STANU OBECNEGO W SYSTEMIE NA PODSTAWIE WYMGAŃ KLINTA]
 
 **AC:**
 - Given …
