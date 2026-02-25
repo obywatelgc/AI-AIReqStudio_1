@@ -1,0 +1,296 @@
+:imagesdir: images
+
+[[logowanie]]
+== *Logowanie*
+
+W celu zalogowania się do aplikacji hybrydowej należy w pierwszym kroku dokonać _aktywacji aplikacji_. Jest to jednorazowa czynność, po wykonaniu której użytkownik będzie mógł się logować za pomocą wybranej metody.
+
+Proces logowania użytkownika do hybrydowej aplikacji mobilnej składa się z następujących kroków:
+
+1) Użytkownik uruchamia aplikację na urządzeniu mobilnym. Wyświetlany jest ekran powitalny.
+
+2) Użytkownik loguje się za pomocą kodu PIN lub metodą biometryczną (odcisk palca, rysy twarzy). Metoda biometryczna będzie dostępna, jeżeli wcześniej użytkownik ją włączył w aplikacji mobilnej.
+
+3) Aplikacja hybrydowa prezentuje pulpit w kontekście zalogowanego użytkownika.
+
+
+Dodatkowo aplikacja wykrywa i blokuje możliwość zalogowania się do aplikacji z powodów bezpieczeństwa. Użytkownikowi wyświetlane są odpowiednie komunikaty.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::cui_logowanie_root.jpg[120,220,align="center"]
+| image::cui_logowanie_emulator.jpg[120,220,align="center"]
+| image::cui_logowanie_debugger.jpg[120,220,align="center"]
+|===
+
+
+[[logowanie_ekran_powitalny]]
+=== Logowanie - ekran powitalny
+
+W pierwszym kroku logowania użytkownikowi wyświetlany jest ekran powitalny zawierający:
+
+////
+* sekcję aktywowanego użytkownika:
+** nazwa jednostki Banku,
+** częściowo zamaskowany login użytkownika,
+** image:cui_dodaj_saldo_new_green.jpg[50,120,align="center"] - opcja umożliwia przejście do strony zarządzania skrótami pozwalającej zdefiniować rodzaj (kwota, procent) wyświetlanego salda dla wybranego rachunku (opcja: _"Ustawienia -> Zarządzaj skrótami -> Dostępne środki"_),
+** image:cui_wygeneruj_kod_blik_new_green.jpg[50,140,align="center"] - opcja umożliwia przejście do strony z kodem BLIK,
+** image:cui_wyslij_przelew_green.jpg[50,140,align="center"] - opcja umożliwia przejście do formatki realizacji nowego przelewu (_"Przelewy -> Przelew zwykły"_),
+////
+
+* sekcję aktywowanego użytkownika:
+** nazwa jednostki Banku,
+** częściowo zamaskowany login użytkownika,
+** *[Wyświetl środki]* - opcja umożliwia przejście do strony zarządzania skrótami pozwalającej zdefiniować rodzaj (kwota, procent) wyświetlanego salda dla wybranego rachunku (opcja: _"Ustawienia -> Zarządzaj skrótami -> Dostępne środki"_),
+** *[Kod BLIK]* - opcja umożliwia przejście do strony z kodem BLIK,
+** *[Logowanie kodem QR]* - opcja umożliwia przejście do formatki logowania za pomocą kodu QR wygenerowanego w bankowości internetowej,
+** *[Wyślij przelew]* - opcja umożliwia przejście do formatki realizacji nowego przelewu (_"Przelewy -> Przelew zwykły"_),
+
+* akcje:
+** image:icons/cui_dodaj_new_green.jpg[30,30,align="center"] - opcja umożliwia przejście do pierwszego kroku aktywacji aplikacji przy dodaniu kolejnego użytkownika,
+** *[Zaloguj się]* - opcja umożliwia przejście do strony logowania do aplikacji i następnie wyświetlenie użytkownikowi _Pulpitu_.
+
+image::cui_witaj.jpg[120,220,align="center"]
+
+Po wybraniu opcji image:icons/cui_dodaj_new_green.jpg[30,30,align="center"] użytkownik ma możliwość aktywowania dowolnej liczby użytkowników na jednym urządzeniu w ramach różnych jednostek bankowych.
+W takim przypadku, jeżeli aktywowano więcej niż jednego użytkownika na danym urządzeniu, wówczas konieczne jest wybranie użytkownika w kontekście którego nastąpi logowanie. Aby zmienić kontekst, klikamy na login użytkownika. Pojawi się okno *_Zmień użytkownika_*, w którym należy wybrać z listy odpowiedni login.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_bank_user_new_1_green.jpg[120,220,align="center"]
+| image::cui_bank_user_new_2_green.jpg[120,220,align="center"]
+|===
+
+Jeśli użytkownik dokonał konfiguracji ekranu powitalnego (w opcji: _"Ustawienia_ -> <<zarzadzanie_skrotami,*_Zarządzaj skrótami_*>>"), to aplikacja prezentuje informacje o dostępnych środkach na wybranych rachunkach, w postaci kwotowej lub procentowej. Po zdefiniowaniu prezentacji więcej niż jednego rachunku, system pozwala na przesuwanie w lewo i w prawo sekcji z prezentacją salda.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_witaj_skrot_1_new_green.jpg[120,220,align="center"]
+| image::cui_witaj_skrot_2_new_green.jpg[120,220,align="center"]
+|===
+
+
+
+
+[[logowanie_regulamin_gsgo]]
+=== Logowanie - regulamin aplikacji mobilnej
+
+W przypadku gdy Administrator w module BackOffice opublikował nową wersję regulaminu Banku dla aplikacji mobilnej, to użytkownik podczas procesu logowania w aplikacji mobilnej musi potwierdzić zapoznanie się z nowym regulaminem.
+
+Na ekranie powitalnym w sekcji dostępnych środków prezentuje się informacja: "_Dostępne środki nie mogą być wyświetlone do czasu akceptacji nowego regulaminu Banku_".
+
+image::cui_logowanie_regulaminBSGo_1_new_green.jpg[120,220,align="center"]
+
+//W tym celu użytkownikowi prezentowany jest główny ekran aplikacji zawierający zamiast sekcji 'skrótów':
+
+Przy próbie przejścia do procesu logowania, użytkownikowi zostaje zaprezentowany ekran zawierający:
+
+* krótką informację o zmianie regulaminu,
+* link [Pobierz regulamin] umożliwiający pobranie i zapoznanie się z treścią regulaminu (w formacie .pdf),
+* opcję "_Zapoznałem się z regulaminem_",
+* przycisk [Akceptuję regulamin] pozwalający na zaakceptowanie regulaminu,
+* opcję [Wróć do ekranu logowania] kierującą na ekran powitalny.
+
+Wyrażenie zgody jest obligatoryjne. W celu wyrażenia zgody użytkownik zaznacza opcję "_Zapoznałem się z regulaminem_" i klika na przycisk [Akceptuję regulamin].
+
+//, która aktywuje przycisk [AKCEPTUJĘ REGULAMIN].
+//Po wybraniu opcji [AKCEPTUJĘ REGULAMIN] użytkownik przechodzi do procesu logowania.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::cui_logowanie_regulaminBSGo_2_new_green.jpg[120,220,align="center"]
+| image::cui_logowanie_regulaminBSGo_3_new_green.jpg[120,220,align="center"]
+| image::cui_logowanie_regulaminBSGo_4_new_green.jpg[120,220,align="center"]
+|===
+
+Po wybraniu opcji [Akceptuję regulamin] system kieruje użytkownika na ekran powitalny.
+
+Jeżeli w module BackOffice Administrator dodatkowo zlecił wysyłkę powiadomień o nowym regulaminie, wówczas użytkownik otrzymuje na swoje urządzenie mobilne powiadomienie PUSH o treści: "_Został opublikowany nowy regulamin aplikacji mobilnej_".
+
+////
+Po kliknięciu w powiadomienie PUSH użytkownikowi automatycznie prezentowana jest strona z informacją o konieczności akceptacji nowego regulamin wraz z przyciskiem [Wróć do regulaminu].
+
+image::cui_logowanie_regulaminBSGo_PUSH_info.jpg[120,220,align="center"]
+
+Wybór opcji [Wróć do regulaminu] pozwala na przejście do ekranu głównego aplikacji, akceptację regulaminu i w kolejnym kroku zalogowanie się użytkownika.
+
+
+image::cui_logowanie_regulaminBSGo.jpg[120,220,align="center"]
+////
+
+Użytkownik po zalogowaniu się do aplikacji mobilnej ma możliwość pobrania treści regulaminu w opcji "_Ustawienia -> Informacje o aplikacji_" poprzez kliknięcie w link [Regulamin korzystania z aplikacji mobilnej].
+
+image::cui_logowanie_regulaminBSGo_ustawienia_info_new_green.jpg[120,220,align="center"]
+
+
+
+
+[[logowanie_metoda_autentykacji]]
+=== Logowanie - metody autentykacji
+
+Dostęp do hybrydowej aplikacji mobilnej zabezpieczony jest metodą wybraną przez użytkownika:
+
+*	kod PIN,
+*	metoda biometryczna:
+     ** odcisk palca (Touch ID),
+     ** rysy twarzy (Face ID) - tylko dla urządzeń z systemem iOS.
+
+Wybór na ekranie powitalnym opcji [Zaloguj się] czy [Wyświetl środki] pozwala na przejście do kolejnego kroku logowania, w którym należy wprowadzić kod PIN nadany przez użytkownika w procesie aktywacji lub użyć metody biometrycznej (odcisk palca, rysy twarzy), jeżeli wcześniej użytkownik ją włączył w aplikacji mobilnej.
+
+
+
+
+[[logowanie_przy_uzyciu_kodu_pin]]
+==== Logowanie przy użyciu kodu PIN
+
+W kroku logowania użytkownikowi wyświetlany jest formularz *_Wprowadź PIN_* pozwalający na wprowadzenie PIN-u, który należy zatwierdzić przyciskiem [Zaloguj się].
+
+image::cui_logowanie_pin_new_green.jpg[120,220,align="center"]
+
+W lewej części górnego menu formularza *_Wprowadź PIN_* dostępny jest przycisk image:icons/cui_wstecz_green_newUI.jpg[25,25,align="center"] umożliwiający powrót do wcześniejszego formularza ekranu powitalnego.
+
+Na ekranie wyświetlany jest link [Nie pamiętam kodu PIN], po wybraniu którego prezentuje się ekran informacyjny oraz przycisk [Rozpocznij proces parowania] do ponownego rozpoczęcia procesu parowania urządzenia.
+
+image::cui_komunikat_pin_new_green.jpg[120,220,align="center"]
+
+WARNING: Po kliknięciu na przycisk [Rozpocznij proces parowania] użytkownikowi zostanie zaprezentowany komunikat informacyjny o zablokowaniu aplikacji. W takim przypadku konieczne będzie ponowne powiązanie urządzenia mobilnego z systemem bankowości internetowej.
+
+W lewej części górnego menu formularza *_Nie pamiętam kodu PIN_* dostępny jest przycisk image:icons/cui_wstecz_green_newUI.jpg[25,25,align="center"] umożliwiający zamknięcie komunikatu i wyświetlenie wcześniejszego formularza.
+
+Na formularzu *_Wprowadź PIN_* użytkownik wpisuje PIN. Aplikacja weryfikuje poprawność wprowadzonych danych i przy wprowadzeniu niepoprawnego PIN-u wyświetla się odpowiedni komunikat.
+
+image::cui_logawanie_pin_blad_uwierzytelniania_new_green.jpg[120,220,align="center"]
+
+Aplikacja zabezpieczona jest przed wielokrotnym wprowadzeniem błędnego kodu PIN. Po wprowadzeniu trzykrotnie błędnego PIN-u, użytkownikowi zostanie zaprezentowany komunikat informacyjny o zablokowaniu aplikacji. W takim przypadku konieczne będzie ponowne powiązanie urządzenia mobilnego z systemem bankowości internetowej.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_zablokowana_aplikacja_new_green.jpg[120,220,align="center"]
+| image::cui_zablokowana_aplikacja_powrot_do_pulpitu_new_green.jpg[120,220,align="center"]
+|===
+
+Przycisk [Rozpocznij proces parowania ponownie] prezentuje się w przypadku, gdy w aplikacji mobilnej nie ma sparowanego innego użytkownika. Przycisk ten kieruje na ekran powitalny "_Witaj w BSGo!_". +
+Natomist, gdy w aplikacji mobilnej jest jeszcze sparowany co najmniej jeden użytkownik, wówczas prezentowany jest przycisk [Powrót do pulpitu], który kieruje na ekran powitalny logowania.
+
+
+
+
+[[logowanie_przy_uzyciu_metody_biometrycznej]]
+==== Logowanie przy użyciu metody biometrycznej
+
+W procesie logowania do aplikacji zostały użyte natywne sprzętowe funkcje urządzeń mobilnych, co oznacza, że logowanie z użyciem *_odcisku palca_* czy *_rysów twarzy_* dostępne jest tylko na urządzeniach posiadających takie funkcjonalności po wcześniejszym ich skonfigurowaniu.
+
+Logowanie za pomocą danych biometrycznych można włączyć podczas pierwszego logowania zaraz po sparowaniu aplikacji mobilnej (rozdział: <<old_aktywacja_aplikacji_ekran_wlaczenia_biometrii,*_Ekran włączenia biometrii przy pierwszym logowaniu_*>>) lub w każdej chwili z poziomu ustawień aplikacji mobilnej (opcja: "_Ustawienia_ -> <<dane_biometryczne,_Dane biometryczne_>>").
+
+&nbsp;
+
+*1) Logowanie za pomocą odcisku palca (Touch ID).*
+
+Jeżeli użytkownik włączył w aplikacji mobilnej logowanie za pomocą *_odcisku palca_*, wówczas po wybraniu opcji [Zaloguj się] na ekranie wyświetla się formatka z możliwością autentykacji odciskiem palca.
+
+image::cui_logowanie_odcisk_palca_1_green.jpg[120,220,align="center"]
+
+Użytkownik może zrezygnować z logowania biometrycznego wybierając opcję [Anuluj]. Wówczas wyświetlana jest klawiatura numeryczna umożliwiająca wpisanie kodu PIN, na której dodatkowo dostępna jest ikona image:icons/cui_biometria_new_green.jpg[25,25,align="center"] pozwalająca na ponowne wywołanie logowania za pomocą *_odcisku palca_*.
+
+image::cui_logowanie_odcisk_palca_2_green.jpg[120,220,align="center"]
+
+System kontroluje prawidłowość danych biometrycznych. W przypadku nieprawidłowej weryfikacji odcisku palca użytkownik zostaje poinformowany stosownym komunikatem.
+
+image::cui_logowanie_odcisk_palca_3_green.jpg[120,220,align="center"]
+
+Po prawidłowej weryfikacji odcisku palca użytkownik zostaje zalogowany do aplikacji.
+
+&nbsp;
+
+*2) Logowanie za pomocą rysów twarzy (Face ID).*
+
+Jeżeli użytkownik włączył w aplikacji mobilnej logowanie za pomocą *_rysów twarzy_*, wówczas w procesie logowania system bezpośrednio rozpoznaje twarz i loguje użytkownika.
+
+image::cui_logowanie_FaceId_1_green.jpg[120,220,align="center"]
+
+W przypadku nieprawidłowej weryfikacji rysów twarzy użytkownik zostaje poinformowany stosownym komunikatem.
+
+image::cui_logowanie_FaceId_2_error_green.jpg[120,220,align="center"]
+
+Użytkownik może zrezygnować z logowania biometrycznego wybierając opcję [Anuluj]. Wówczas wyświetlana jest klawiatura numeryczna umożliwiająca wpisanie kodu PIN, na której dodatkowo dostępna jest ikona image:icons/cui_biometria_faceid_new_green.jpg[25,25,align="center"] pozwalająca na ponowne wywołanie logowania za pomocą *_rysów twarzy_*.
+
+image::cui_logowanie_FaceId_3_green.jpg[120,220,align="center"]
+
+
+
+
+[[prezentacja_pulpitu_po_zalogowaniu]]
+=== Prezentacja pulpitu po zalogowaniu
+
+Po zalogowaniu użytkownik uzyskuje dostęp do funkcjonalności:
+
+* bankowości internetowej *Asseco EBP*,
+* wbudowanego modułu *Asseco MAA* służącego do autoryzacji dyspozycji oraz logowania,
+* zarządzania *aplikacją hybrydową*.
+
+
+[WARNING]
+====
+Aplikacja hybrydowa posiada następujące różnice pomiędzy wersją bankowości internetowej  *Asseco EBP* a aplikacją mobilną:
+
+* usunięty został eksport historii operacji do XML;
+* zmieniony został ekran autoryzacji - gdy użytkownik ma ustawioną mobilną metodę autoryzacji, wówczas wymagane jest potwierdzenie PIN-em;
+* zablokowane zostały wszystkie importy.
+====
+
+Użytkownikowi wyświetlany jest *_Pulpit_* zawierający funkcjonalności systemu Asseco EBP.
+
+image::cui_pulpit.jpg[120,220,align="center"]
+
+Na dole ekranu wyświetlane jest *_menu dolne_*, pozwalające na szybki dostęp do opcji:
+
+* *Pulpit*,
+* *Rachunki*,
+* *BLIK*,
+* *Przelewy*,
+* *Więcej*.
+
+image::cui_menu_dolne_new_green.jpg[120,220,align="center"]
+
+Za pomocą opcji *Więcej* użytkownikowi wyświetlane jest okienko z listą dodatkowych opcji pozwalających na korzystanie z funkcjonalności systemu Asseco EBP.
+
+image::cui_menu_wiecej_green.jpg[120,220,align="center"]
+
+NOTE: Wybierając z menu opcję *Rachunki* czy *Przelewy* użytkownikowi udostępniana jest funkcjonalność, która odpowiada posiadanemu dostępowi do miniaplikacji w systemie Asseco EBP, po wyborze odpowiedniego kontekstu.
+
+System prezentuje *_licznik_* przy ikonie image:icons/cui_menu_ludzik_licznik_green_newUI.jpg[28,28,align="center"] którego wartość jest sumą nowych wiadomości, powiadomień, zleceń w koszyku oraz ilości aktywnych wysłanych próśb i aktywnych otrzymanych próśb.
+
+Po kliknięciu na ikonkę image:icons/cui_menu_ludzik_green_newUI.jpg[25,25,align="center"] znajdującą się w prawym górnym rogu ekranu, użytkownik uzyskuje dostęp do opcji:
+
+* *Koszyk zleceń*,
+* *Wiadomości*,
+* *<<ustawienia,_Ustawienia_>>*,
+* *<<rejestr_autoryzacji,_Rejestr autoryzacji_>>*,
+* *<<powiadomienia,_Powiadomienia_>>*,
+* *<<P2PR_lista_prosb_o_przelew,_Lista próśb o przelew_>>* - opcja dostępna, gdy Bank ma włączoną funkcjonalność próśb o przelew BLIK,
+* *Dostosuj pulpit*,
+* *<<ocena_aplikacji_mobilnej,_Oceń aplikację_>>*,
+* *<<wylogowanie,_Wyloguj_>>*.
+
+image::cui_menu_ludzik_new_green.jpg[120,220,align="center"]
+
+NOTE: Wybierając menu *Koszyk zleceń* lub *Wiadomości* użytkownikowi udostępniana jest funkcjonalność, która odpowiada posiadanemu dostępowi do miniaplikacji w systemie Asseco EBP, po wyborze odpowiedniego kontekstu.
+
+Dodatkowo na górze ekranu wyświetlana jest nazwa kontekstu (imię i nazwisko użytkownika lub nazwa firmy), w którym został zalogowany użytkownik. Poniżej nazwy znajduje się lista kontekstów użytkownika, zarówno osobistego, jak i firmowych. Użytkownik ma możliwość zmiany kontekstu na dowolny poprzez wybranie pozycji z listy. Aplikacja automatycznie wyświetli pulpit z danymi wybranego kontekstu.
+
+image::cui_wiecej_konteksty_new_green.jpg[120,220,align="center"]
+
+W momencie wyboru z listy innego kontekstu system sprawdza, czy kontekst jest dostępny. W przypadku gdy dany kontekst jest zablokowany, użytkownikowi wyświetlany jest odpowiedni komunikat zawierający także listę kontekstów pozwalającą na powrót do innego aktywnego kontekstu.
+
+// Wskazówka: Aby wywołać ten ekran, należy w BackOffice dla wybranego kontekstu ustawić "Filtry logowania" i ustawić dostęp np. tylko dla wybranego IP.
+
+image::cui_konteksty_zablokowany_new_green.jpg[120,220,align="center"]
+
+System informuje również użytkownika o braku oraz o przywróceniu połączenia z Internetem.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_pulpit_brak_internetu.jpg[120,220,align="center"]
+| image::cui_pulpit_jest_internet.jpg[120,220,align="center"]
+|===
+

@@ -1015,6 +1015,7 @@ image::main/image80.png[]
 * Urządzenia zaufane – umożliwia podgląd listy dodanych urządzeń zaufanych oraz usunięcie urządzenia zaufanego,
 * Historia logowań – historia poprawnych/niepoprawnych logowań Użytkownika do systemu Asseco EBP.
 * Zgody i kanały dystrybucji - umożliwia edycję wybranych zgód i sposobów dystrybucji dokumentów określonych w systemie transakcyjnym def3000/CB.
+* Zarządzanie certyfikatami - umożliwia zarządzanie certyfikatami KSeF.
 * Limity BLIK - umożliwia wyświetlenie oraz edycję wybranych typów limitów usługi BLIK.
 * <<Ustawienia-logowania, Ustawienia logowania>> - umożliwia ustawienie obrazka bezpieczeństwa.
 
@@ -2717,6 +2718,39 @@ W przypadku, gdy użytkownik nie posiada hasła, wówczas prezentowany jest form
 
 image::main/haslo_zal1.jpg[]
 
+[[zarzadzanie-certyfikatami]]
+=== Zarządzanie certyfikatami
+
+W opcji _Ustawienia → Zarządzanie certyfikatami → Certyfikaty KSeF_ Użytkownik ma możliwość zarządzania certyfikatami KSeF. W ramach tej funkcjonalności Użytkownik może przeglądać listę zapisanych certyfikatów, dodać nowy certyfikat oraz usunąć istniejący certyfikat.
+
+image::main/certyfikaty_ksef_1.png[]
+
+System prezentuje listę certyfikatów KSeF Użytkownika, która zawiera następujące kolumny:
+
+* Nazwa – nazwa pliku certyfikatu wgranego do systemu,
+* Ważny od – data i godzina rozpoczęcia ważności certyfikatu,
+* Ważny do – data i godzina zakończenia ważności certyfikatu,
+* Status – aktualny status certyfikatu w systemie, możliwe statusy:
+
+** Aktywny - certyfikat jest ważny i może być wykorzystywany do komunikacji z KSeF,
+** Nieaktywny - okres ważności certyfikatu jeszcze się nie rozpoczął (aktualna data i czas są wcześniejsze niż data „Ważny od”) lub gdy okres ważności certyfikatu upłynął (data „Ważny do” została przekroczona), w związku z czym certyfikat nie może być wykorzystywany do komunikacji z KSeF.
+** Wygaszony - certyfikat został unieważniony przez Użytkownika przed upływem terminu jego ważności i nie może być dalej wykorzystywany w systemie.
+
+==== Dodanie nowego certyfikatu
+
+W prawym górnym rogu ekranu znajduje się przycisk „Nowy certyfikat”, który umożliwia dodanie certyfikatu KSeF.
+
+Po wybraniu tej opcji system przekierowuje Użytkownika do formularza umożliwiającego wczytanie certyfikatu oraz powiązanego z nim klucza prywatnego. Szczegółowy proces dodawania certyfikatu opisany jest w sekcji dotyczącej aktywacji funkcjonalności KSeF za pomocą certyfikatu KSeF.
+
+image::main/certyfikaty_ksef_2.png[]
+
+==== Usunięcie certyfikatu
+
+Przy każdym certyfikacie dostępna jest opcja „Usuń”.
+
+Wybranie tej opcji powoduje usunięcie wskazanego certyfikatu z systemu. Usunięcie certyfikatu skutkuje brakiem możliwości jego dalszego wykorzystania w ramach komunikacji z KSeF.
+
+image::main/certyfikaty_ksef_3.png[]
 
 
 [[limity-blik]]

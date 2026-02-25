@@ -1,0 +1,25 @@
+:imagesdir: images
+
+[[dezaktywacja_uslugi_BLIK]]
+=== Dezaktywacja usługi BLIK
+
+Użytkownik w każdym momencie posiada możliwość rezygnacji z usługi BLIK.
+
+Wyłączenie usługi BLIK może nastąpić:
+
+* poprzez działanie użytkownika polegające na wyłączeniu usługi w ustawieniach aplikacji mobilnej,
+* poprzez pracownika Banku, dla następujących zdarzeń:
+** kontakt użytkownika z pracownikiem (infolinia, placówka banku) skutkujący dyspozycją wyłączenia usługi BLIK,
+** rezygnacja użytkownika z usług Banku,
+** zamknięcie umowy rachunku bieżącego powiązanego z usługą BLIK lub utracenie uprawnień do dysponowania tą umową w bankowości internetowej i mobilnej.
+
+W celu wyłączenia usługi przez użytkownika należy zalogować się do aplikacji mobilnej, następnie kliknąć na ikonkę image:icons/cui_menu_ludzik_green_newUI.jpg[25,25,align="center"] znajdującą się w prawym górnym rogu ekranu i przejść do opcji *"_Ustawienia -> Ustawienia BLIK_"*.
+
+image::BLIK_ustawienia_wylacz_BLIKA.jpg[120,220,align="center"]
+
+Dezaktywacja usługi odbywa się poprzez przesunięcie suwaka przy opcji *[Wyłącz BLIKA]* z pozycji image:icons/BLIK_suwak_wlaczony.jpg[35,35,align="center"] na pozycję image:icons/BLIK_suwak_wylaczony.jpg[35,35,align="center"]. Zmiana ustawienia zostaje potwierdzona właściwym komunikatem.
+
+image::BLIK_ustawienia_wylacz_BLIKA--potwierdzenie.jpg[120,220,align="center"]
+
+WARNING: Ponowne włączenie usługi BLIK skutkuje ponownym ustawieniem wartości domyślnej dla rachunku do obciążeń oraz wartości domyślnych wyrażenia zgód na obsługę wybranych operacji. Natomiast wartości w opcji "Limity BLIK" oraz "Zablokuj prośby o przelew" zostają ustawione na identyczne jakie użytkownik miał skonfigurowane poprzednio.
+

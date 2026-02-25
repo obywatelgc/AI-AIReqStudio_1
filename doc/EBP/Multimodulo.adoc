@@ -1,0 +1,64 @@
+
+
+= Multimodulo
+
+Funkcjonalność *Multimodulo* zapewnia możliwość dodania w kontekście firmowym do firmy głównej (modulo nadrzędne), firm podrzędnych (modulo podrzędne). Więcej na temat dodania Multimodulo w module Back Office w dokumentacji Użytkownika Back_Office. Dostępność funkcjonalności jest uzależniona od parametru multiModuloEnabled w TOGGLING_PARAMETER odpowiedzialnego za obsługę jednostek podrzędnych (multimodulo).
+
+Funkcjonalność Multimodulo zapewnia Użytkownikowi możliwość obsługi rachunków innych klientów (modulo podrzędne). Na liście rachunków, kredytów i lokat oprócz produktów klienta prezentowane są również rachunki przypisanych klientowi obsługiwanych modul podrzędnych. Możliwości Użytkownika uzależnione są od uprawnień nadanych w ustawieniach systemu (więcej w Dokumentacji Ogólnej Użytkownika)
+
+== Rachunki:
+
+W sytuacji, gdy klient obsługuje również inne modula na liście rachunków prezentowana jest dodatkowa kolumna FIRMA, zawierająca nazwę Firmy właściciela rachunku.
+
+image::multimodulo/image1.png[image,width=604,height=325]
+
+W polu filtrowania dostępny jest filtr FIRMA, który umożliwia filtrowanie dostępnych rachunków w oparciu o firmę (właściciela rachunku):
+
+* Wybierz wszystkie – na liście wyświetlone są wszystkie rachunki (zarówno własne, jak i firm z modulo podrzędnym)
+
+* rozwinięcie listy za pomocą image:multimodulo/image2.png[image,width=40,height=36] umożliwia wybór danej firmy i wyświetlenie jej rachunków.
+
+image::multimodulo/image3.png[image,width=331,height=249]
+
+== Przelewy
+
+Użytkownik (modulo nadrzędne) ma również możliwość składania przelewów z rachunków firm podrzędnych (modul podrzędnych).
+
+=== Akcpetacja przelewów w oparciu o przykładowe schematy akceptacji
+
+Akceptacja przelewu w kontekście multimodulo, gdy w systemie założone są dwie firmy:
+
+* Firma nadrzędna
+* Firma podrzędna
+
+Firma nadrzędna może realizować przelew z rachunku firmy podrzędnej, po nadaniu uprawnień do rachunku.
+
+. Tworzenie przelewu *_z rachunku firmy podrzędnej_* dla schematu akceptacji:
+
+.. *Firma nadrzędna* – Użytkownik *firmy nadrzędnej* +
++
+Użytkownik *firmy nadrzędnej* tworząć przelew *_z rachunku firmy podrzędnej_* w kontekście firmy nadrzędnej, może przeglądać i akceptować przelewy. Natomiast Użytkownik *firmy podrzędnej* w kontekście firmy podrzędnej nie może przeglądać przelewów na liście zleceń. Obowiązuje aktualny schemat akceptacji firmy nadrzędnej.
+
+.. *Firma podrzędna* – Użytkownik *firmy podrzędnej* +
++
+Użytkownik firmy podrzędnej tworzący przelew w kontekście firmy podrzędnej, może przeglądać i akceptować przelewy. Natomiast Użytkownik firmy nadrzędnej w kontekście firmy nadrzędnej nie może przeglądać przelewów na liście zleceń. Obowiązuje aktualny schemat akceptacji firmy podrzędnej. +
++
+Użytkownik firmy podrzędnej może przeglądać przelewy na liście przelewów.
+
+. Tworzenie przelewu *_z rachunku firmy podrzędnej_* dla schematu akceptacji (gdy kontekst firmy nadrzędnej jest aktywny dla Użytkownika firmy podrzędnej):
+
+.. *Firma nadrzędna* – Użytkownik *firmy nadrzędnej i podrzędnej* +
++
+Użytkownik firmy nadrzędnej lub Użytkownik formy podrzędnej tworzący przelew w kontekście firmy nadrzędnej, Użytkownik firmy nadrzędnej może przeglądać i akceptować przelewy, Użytkownik firmy podrzędnej w kontekście firmy nadrzędnej może również przeglądać i akceptować. Obowiązuje aktualny schemat akceptacji firmy nadrzędnej.
+
+.. *Firma podrzędna* – Użytkownik *firmy podrzędnej* +
++
+Użytkownik firmy podrzędnej w kontekście firmy podrzędnej nie widzi przelewu na liście zleceń, widzi go na liście przelewów.
+
+== Lokaty
+
+Użytkownik (modulo nadrzędne) ma również możliwość zakładania lokat z rachunków firm podrzędnych (modul podrzędnych) oraz dysponowania tymi lokatami.
+
+== Kredyty
+
+Użytkownik (modulo nadrzędne) ma również możliwość podglądu kredytów z rachunków firm podrzędnych (modul podrzędnych) oraz dysponowania tymi kredytami.

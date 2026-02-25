@@ -1,0 +1,44 @@
+== *Informacje o dokumencie*
+
+Niniejszy dokument jest dokumentacją użytkownika hybrydowej aplikacji mobilnej w wersji {revnumber2}.
+
+Metryka dokumentu:
+{nbsp} +
+{nbsp} +
+Autor:                      Dział Systemów Omnikanałowych/ Pion Banków Komercyjnych +
+Wersja systemu:             {revnumber2} +
+Wersja dokumentu:           1.00 +
+Data wydania dokumentu:     2020-04-20 +
+Przeznaczenie dokumentu:    poufny, zewnętrzny +
+Identyfikator dokumentu:    {documentId}
+{nbsp} +
+{nbsp} +
+
+Historia zmian:
+
+[cols=",,",options="header",]
+|===
+|*Data* |*Wersja systemu* |*Opis zmiany*
+|2020-04-20 |4.08.002C|Utworzenie dokumentacji
+|2020-08-11 |4.08.002C|Aktualizacja dokumentacji
+|2020-09-15 |4.11.000C|Aktualizacja dokumentacji
+|2021-01-07 |4.11.009C|Aktualizacja dokumentacji, dodanie rozdziału: Uruchomienie rozszerzonych funkcji BSGo (dawny mToken Asseco MAA)
+|2021-02-26 |4.13.000C|Aktualizacja dokumentacji
+|2021-04-16 |4.13.000C|Poprawa dokumentacji o zgłoszone uwagi
+|2021-05-21 |4.14.002C|Aktualizacja dokumentacji
+|2021-07-01 |4.15.000C|Aktualizacja dokumentacji
+|2021-08-11 |4.16.000C|Aktualizacja dokumentacji
+|2022-02-14 |4.17.0|Aktualizacja dokumentacji
+|2022-11-10 |6.1.0|Aktualizacja dokumentacji, usunięcie z ustawień BLIK zgody na książkę adresową
+|2022-12-10 |6.1.0|Aktualizacja dokumentacji, dodanie podrozdziału: Ocena aplikacji mobilnej
+|2023-02-17 |6.2.0|Aktualizacja dokumentacji, dodanie rozdziału: Skanowanie kodu QR
+|2023-08-21 |6.5.0|Aktualizacja dokumentacji
+|2024-04-29 |6.8.0|Aktualizacja dokumentacji
+|2025-04-07 |6.11.0|Aktualizacja dokumentacji; dodanie rozdziału: Aktywacja aplikacji bez udziału bankowości elektronicznej; aktualizacja rozdziału: Aktywacja aplikacji
+|2025-07-21 |6.13.0|Aktualizacja dokumentacji; dodanie rozdziału: Karty Visiona GAPI
+|2025-08-19 |6.13.0|Aktualizacja oraz zmiana nazwy rozdziału z "Aktywacja aplikacji" na "Aktywacja aplikacji z udziałem bankowości internetowej"; aktualizacja rozdziału: "Aktywacja aplikacji bez udziału bankowości elektronicznej".
+|2025-09-15 |6.13.0|Aktualizacja dokumentacji, dodanie rozdziału: "Prośba o przelew BLIK" oraz "Blokowanie odbierania próśb o przelew".
+|2025-10-08 |6.14.0|Aktualizacja dokumentacji
+|2025-10-24 |6.14.0|Aktualizacja dokumentacji
+|2026-01-09 |6.14.1|Aktualizacja treści dokumentacji, wymiana screenów.
+|===

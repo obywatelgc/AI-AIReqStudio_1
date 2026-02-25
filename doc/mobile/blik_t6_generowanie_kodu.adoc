@@ -1,0 +1,66 @@
+:imagesdir: images
+
+[[generowanie_kodu_blik]]
+=== Generowanie kodu BLIK
+
+Użytkownik po prawidłowej aktywacji usługi BLIK może wygenerować jednorazowy *kod BLIK* na dwa sposoby:
+
+*  przed zalogowaniem wybierając na ekranie startowym opcję *[Kod BLIK]*,
+*  po zalogowaniu wybierając w dolnym menu opcję *[BLIK]*.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_ekran_logowania--zaznaczona_opcja_kod_BLIK.jpg[120,220,align="center"]
+| image::BLIK_wlacz_blika--dolne_menu.jpg[120,220,align="center"]
+|===
+
+Wygenerowany kod służy użytkownikowi do realizacji następujących rodzajów transakcji:
+
+* płatności w sklepie za pomocą terminala POS,
+* płatności w Internecie (w sklepach internetowych),
+* wypłata gotówki z bankomatu,
+* wypłata gotówki w sklepie za pomocą terminala POS,
+* zwrot płatności w sklepie za pomocą terminala POS.
+
+Po przejściu do opcji generowania kodu BLIK, na ekranie prezentowane są następujące dane:
+
+* przycisk image:icons/cui_cofnij_green.jpg[25,25] umożliwiający powrót do wcześniejszego ekranu,
+* logo BLIK,
+* nazwa rachunku powiązanego z usługą BLIK,
+* sześciocyfrowy kod BLIK,
+* zegar odliczania pozostałego czasu aktywności wygenerowanego kodu,
+* opcja [Skopiuj kod] pozwalająca na skopiowanie kodu do schowka aplikacji (opcja dostępna, gdy Bank ma włączoną taką funkcjonalność),
+* opcja [Przelew na telefon] umożliwiająca przejście do formatki nowego "_Przelewu na telefon BLIK_" (opcja dostępna, gdy Bank ma włączoną funkcjonalność przelewów na telefon BLIK),
+* opcja [Prośba o przelew] umożliwiająca przejście do formatki nowej "_Prośby o przelew BLIK_" (opcja dostępna, gdy Bank ma włączoną funkcjonalność próśb o przelew BLIK).
+
+image::BLIK_generowanie_kodu_z_ekranu_logowania.jpg[120,220,align="center"]
+
+WARNING: Jeżeli użytkownik wybierze przycisk powrotu image:icons/cui_cofnij_green.jpg[25,25] i ponownie wywoła ekran z  "*kodem BLIK*" przed upłynięciem czasu ważności wcześniej wygenerowanego kodu, wówczas otrzyma on w dalszym ciągu ten sam kod. Nowy kod jest generowany tylko i wyłącznie po upłynięciu czasu ważności danego kodu.
+Jeśli użytkownik ustawi aplikację "w tle" i powróci przed upływem czasu ważności kodu, również wyświetlany będzie wcześniej wygenerowany kod.
+
+Po upłynięciu 3/4 czasu aktywności wygenerowanego kodu, na ekranie pojawia się opcja *[Odświeź kod]* pozwalająca na wygenerowanie nowego kodu.
+
+image::BLIK_odswiez_kod.jpg[120,220,align="center"]
+
+Kod BLIK jest ważny przez określony czas wynoszący 120 sekund. W momencie upłynięcia czasu ważności kodu prezentowany jest na ekranie odpowiedni komunikat wraz z opcją *[Wygeneruj nowy Kod]* pozwalającą na ponowne wygenerowanie kodu.
+
+image::BLIK_kod_uplyniecie_czasu.jpg[120,220,align="center"]
+
+Użytkownik ma również możliwość włączenia/wyłączenia prezentacji informacji o saldzie rachunku na ekranie z "kodem BLIK".
+Opcja sterująca prezentacją dostępnych środków została opisana w rozdziale <<BLIK_zgoda_na_prezentacje_dostepnych_srodkow,*_Zgoda na prezentację dostępnych środków_*>>. +
+Saldo rachunku prezentowane jest obok nazwy rachunku tylko na ekranie z "kodem BLIK" wygenerowanym po zalogowaniu się do aplikacji mobilnej. W przypadku, gdy użytkownik wygenerował kod BLIK ze strony logowania (bez logowania się do aplikacji mobilnej), wówczas na ekranie jest prezentowana tylko nazwa rachunku.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_kod_prezentacja_salda.jpg[120,220,align="center"]
+| image::BLIK_generowanie_kodu_z_ekranu_logowania.jpg[120,220,align="center"]
+|===
+
+W przypadku, gdy Bank tymczasowo wyłączy dostępność usługi BLIK lub gdy wystąpi problem natury technicznej, wówczas przy próbie przejścia na ekran z "kodem BLIK" pojawia się odpowiedni komunikat.
+
+image::BLIK_jest_niedostępny.jpg[120,220,align="center"]
+
+WARNING: Jeżeli bezpośrednio po sparowaniu urządzenia użytkownik na stronie powitalnej aplikacji mobilnej wybierze opcję *[Kod BLIK]*, wówczas zostanie zaprezentowany komunikat, że należy się zalogować, aby korzystać z BLIKA. Po zalogowaniu się do aplikacji mobilnej i wylogowaniu, poniższy ekran już nie będzie się prezentować.
+
+image::BLIK_jest_niedostepny_przy_wejsciu_po_sparowaniu.jpg[120,220,align="center"]
+

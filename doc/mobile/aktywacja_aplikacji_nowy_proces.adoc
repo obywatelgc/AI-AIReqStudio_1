@@ -1,0 +1,457 @@
+:imagesdir: images
+
+[[vb_aktywacja_aplikacji_nowy_proces]]
+== *Aktywacja aplikacji bez udziału bankowości internetowej*
+
+W ramach aplikacji mobilnej została udostępniona możliwość parowania z wykorzystaniem systemu VoiceBot. Parowanie to umożliwia aktywację aplikacji bez udziału bankowości internetowej Asseco EBP. +
+Sterowanie dostępnością nowego procesu parowania odbywa się za pomocą odpowiedniej konfiguracji aplikacji, która została opisana w instrukcji instalacji systemu Asseco EBP.
+
+[NOTE]
+====
+System umożliwia ustawienie jednego z trzech trybów konfiguracji:
+
+* aktywacja aplikacji dla wybranego Banku odbywa się starą metodą przy użyciu kodu aktywacyjnego wygenerowanego w bankowości internetowej (funkcjonalność nowego parowania bez udziału bankowości internetowej nie będzie dostępna);
+* funkcjonalność nowego parowania bez udziału bankowości internetowej będzie dostępna dla wszystkich użytkowników w wybranym Banku (stare parowanie nie będzie dostępne);
+* funkcjonalność nowego parowania bez udziału bankowości internetowej będzie dostępna w wybranym Banku tylko dla grupy użytkowników należących do grupy _Friends & Family_, a dla pozostałych użytkowników aktywacja aplikacji odbywa się starą metodą przy użyciu kodu aktywacyjnego wygenerowanego w bankowości internetowej.
+====
+
+Gdy użytkownik ma ustawione priorytetowe urządzenie do logowania na _mobilny podpis_, wówczas podczas logowania do bankowości internetowej Asseco EBP nie prezentuje się ekran do wprowadzenia nazwy urządzenia oraz ekran z wygenerowanym kodem aktywacyjnym. W zamian za to prezentuje się ekran z informacją, aby pobrać aplikację mobilną ze sprawdzonych źródeł: App Store, Google Play, AppGallery. Dodatkowo prezentowane są kody QR, które po zeskanowaniu na urządzeniu mobilnym przenoszą użytkownika do odpowiedniego sklepu w celu pobrania aplikacji mobilnej.
+
+image::cui_nowa_aktywacja_ebp_ekran_logowania.jpg[900,900,align="center"]
+
+Analogiczny ekran jest prezentowany, gdy użytkownik zaloguje się do bankowości internetowej Asseco EBP i przejdzie do opcji _"Ustawienia -> Aplikacja mobilna"_.
+
+image::cui_nowa_aktywacja_ebp_ustawienia_aplikacja_mobilna.jpg[900,900,align="center"]
+
+[NOTE]
+====
+Kody QR zawierają zakodowany adres do sklepów, z których można pobrać aplikację mobilną. Adresy  definiuje się w opcji _"BackOffice_ -> _System_ -> _Parametry"_ poprzez ustawienie następujących parametrów:
+
+* Adres przekierowania do sklepu AppGallery,
+* Adres przekierowania do sklepu App Store,
+* Adres przekierowania do sklepu Google Play.
+
+Gdy dany bank ma włączoną prezentację nowej szaty graficznej Asseco EBP, wówczas zarządzanie konfiguracją adresów odbywa się w ABP Advisor Console, w obszarze roboczym "_Konfiguracja i Zarządzanie_". Parametry konfiguracyjne znajdują się w opcji "_Zarządzanie treścią -> Widoki -> Strona logowania -> Aplikacja mobilna_".
+====
+
+Użytkownik może skorzystać z opcji pomocy dostępnej na ekranie logowania do Asseco EBP. +
+Po przejściu na ekran pomocy i wyborze opcji _"Aktywacja aplikacji mobilnej"_ zostanie zaprezentowany poniższy ekran.
+
+image::cui_nowa_aktywacja_ebp_ekran_logowania--aktywacja_aplikacji_mobilnej.jpg[900,900,align="center"]
+
+Natomiast w przypadku wyboru opcji _"Pierwsze logowanie"_ zostanie zaprezentowany poniższy ekran.
+
+image::cui_nowa_aktywacja_ebp_ekran_logowania--pierwsze_logowanie.jpg[900,900,align="center"]
+
+
+Po zainstalowaniu na danym urządzeniu aplikacji hybrydowej, w pierwszej kolejności aplikacja wymaga aktywacji.
+
+
+Proces *aktywacji aplikacji* dla użytkownika, któremu zresetowano hasło logowania do bankowości internetowej, składa się z następujących kroków:
+
+1) <<vb_aktywacja_aplikacji_rozpoczecie_procesu, Rozpoczęcie procesu aktywacji>>.
+
+2) <<vb_aktywacja_aplikacji_wybor_banku, Wybór banku użytkownika>>.
+
+3) <<vb_aktywacja_aplikacji_wpisanie_loginu, Wpisanie loginu użytkownika>>.
+
+4) <<vb_aktywacja_aplikacji_wpisanie_hasla_tymczasowego, Wpisanie hasła tymczasowego>>.
+
+5) <<vb_aktywacja_aplikacji_ustawienie_nowego_hasla, Ustawienie i potwierdzenie nowego hasła do bankowości internetowej>>.
+
+6) <<vb_aktywacja_aplikacji_wyslanie_sms, Wysłanie SMS-a potwierdzającego numer telefonu użytkownika>>.
+
+7) <<vb_aktywacja_aplikacji_wpisanie_kodu_aktywacyjnego, Odsłuchanie i wpisanie kodu aktywacyjnego>>.
+
+8) <<vb_aktywacja_aplikacji_ustawienie_pin, Ustawienie i potwierdzenie kodu PIN do aplikacji mobilnej>>.
+
+9) <<vb_aktywacja_aplikacji_ekran_konczacy_proces, Ekran kończący proces aktywacji aplikacji>>.
+
+10) <<vb_aktywacja_aplikacji_ekran_wlaczenia_biometrii,Ekran włączenia biometrii przy pierwszym logowaniu>>.
+
+
+Proces *aktywacji aplikacji* dla użytkownika, który zdefiniował swoje własne hasło logowania do bankowości internetowej (i nie jest ono w trakcie resetu), składa się z następujących kroków:
+
+1) <<vb_aktywacja_aplikacji_rozpoczecie_procesu, Rozpoczęcie procesu aktywacji>>.
+
+2) <<vb_aktywacja_aplikacji_wybor_banku, Wybór banku użytkownika>>.
+
+3) <<vb_aktywacja_aplikacji_wpisanie_loginu, Wpisanie loginu użytkownika>>.
+
+4) <<vb_aktywacja_aplikacji_wpisanie_hasla, Wpisanie hasła do bankowości internetowej>>.
+
+5) <<vb_aktywacja_aplikacji_wyslanie_sms, Wysłanie SMS-a potwierdzającego numer telefonu użytkownika>>.
+
+6) <<vb_aktywacja_aplikacji_wpisanie_kodu_aktywacyjnego, Odsłuchanie i wpisanie kodu aktywacyjnego>>.
+
+7) <<vb_aktywacja_aplikacji_ustawienie_pin, Ustawienie i potwierdzenie kodu PIN do aplikacji mobilnej>>.
+
+8) <<vb_aktywacja_aplikacji_ekran_konczacy_proces, Ekran kończący proces aktywacji aplikacji>>.
+
+9) <<vb_aktywacja_aplikacji_ekran_wlaczenia_biometrii,Ekran włączenia biometrii przy pierwszym logowaniu>>.
+
+
+Na przejście procesu parowania użytkownik ma 30 minut. Czas ważności sesji jest liczony od momentu, kiedy zostanie wprowadzony login użytkownika i zostanie naciśnięty przycisk [Dalej]. W przypadku przekroczenia czasu parowania system przerywa proces i wymagane jest ponowne rozpoczęcie aktywacji aplikacji.
+
+NOTE: W przypadku, gdy użytkownik ma ustawioną metodę logowania za pomocą karty mikroprocesorowej, wówczas aktywacja aplikacji odbywa się starą metodą przy użyciu kodu aktywacyjnego wygenerowanego w bankowości internetowej.
+
+W sytuacji, gdy użytkownik posiada sparowaną aplikację mobilną, a ktoś rozpocznie proces aktywacji i wprowadzi login oraz hasło tego użytkownika, wtedy:
+
+* na urządzenie, na którym aktualnie jest sparowana aplikacja mobilna przychodzi powiadomienie PUSH z informacją: _"Rozpoczęto połączenie aplikacji mobilnej z Twoim bankiem, poprzednia aplikacja zostanie odłączona. Jeśli nie Ty jesteś inicjatorem, skontaktuj się z bankiem."_;
+* na telefon użytkownika przychodzi wiadomość SMS z informacją: _"Rozpoczęto proces aktywacji nowej aplikacji mobilnej (wszystkie wcześniejsze zostaną zdezaktywowane). Jeśli to nie Ty, jak najszybciej skontaktuj się z Bankiem."_.
+
+Natomiast gdy poprawnie zakończono proces aktywacji, wówczas:
+
+* na urządzenie, na którym aktualnie jest sparowana aplikacja mobilna przychodzi powiadomienie PUSH z informacją: _"Nowa aplikacja mobilna została połączona z Twoim bankiem. Jeśli nie Ty jesteś inicjatorem, to jak najszybciej skontaktuj się z bankiem."_ oraz powiadomienie PUSH: _"Urządzenie zablokowane"_. Użytkownikowi zostaje zdezaktywowana aplikacja.
+* na telefon użytkownika przychodzi wiadomość SMS z informacją: _"Nowa aplikacja mobilna została aktywowana. Jeśli wykonano to bez Twojej wiedzy, jak najszybciej skontaktuj się z Bankiem."_
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_powiadomienia_push.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_powiadomienia_sms.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_powiadomienia_dezaktywacja.jpg[120,220,align="center"]
+|===
+
+NOTE: Wiadomość SMS o rozpoczęciu oraz o poprawnym zakończeniu procesu aktywacji przychodzi również w sytuacji, gdy użytkownik nie ma sparowanej aplikacji na żadnym urządzeniu.
+
+Może się zdarzyć sytuacja, że konfiguracja w banku nie pozwala na sparowanie aplikacji mobilnej użytkownikowi, który ma ustawioną metodę logowania oraz metodę autoryzacji inną niż _mobilny podpis_. Wówczas w procesie nowego parowania, po podaniu loginu i hasła pojawia się ekran z informacją, iż aktywacja aplikacji nie jest możliwa.
+
+image::cui_nowa_aktywacja_niemozliwa.jpg[120,220,align="center"]
+
+
+
+
+[[vb_aktywacja_aplikacji_rozpoczecie_procesu]]
+=== Rozpoczęcie procesu aktywacji
+
+Aby rozpocząć proces aktywacji aplikacji mobilnej, należy na ekranie powitalnym wybrać opcję [Aktywuj aplikację].
+
+image::cui_nowa_aktywacja_ekran_powitalny.jpg[120,220,align="center"]
+
+W przypadku, gdy w aplikacji mobilnej jest już sparowany użytkownik i chcemy sparować kolejnego, wówczas na ekranie logowania należy kliknąć na opcję image:icons/cui_dodaj_new_green.jpg[25,25] znajdującą się w prawym górnym rogu ekranu.
+
+image::cui_nowa_aktywacja_ekran_logowania.jpg[120,220,align="center"]
+
+
+
+
+[[vb_aktywacja_aplikacji_wybor_banku]]
+=== Wybór banku użytkownika
+
+W kroku *_Wybierz swój bank_* należy wskazać bank, który zostanie połączony z aplikacją. Po kliknięciu na opcję [Wybierz] pojawia się lista banków, która posiada możliwość wyszukiwania. Użytkownik wybiera bank z listy, a następnie klika na opcję [Dalej].
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_wybor_banku_1.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_wybor_banku_2.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_wybor_banku_3.jpg[120,220,align="center"]
+|===
+
+Gdy nie zostanie wybrany bank i kliknie się na przycisk [Dalej], wówczas zostanie zaprezentowany stosowny komunikat walidacyjny.
+
+image::cui_nowa_aktywacja_wybor_banku_4.jpg[120,220,align="center"]
+
+WARNING: Krok *_Wybierz swój bank_* nie pojawia się w aplikacji mobilnej, która jest dedykowana dla konkretnego banku.
+
+
+
+
+[[vb_aktywacja_aplikacji_wpisanie_loginu]]
+=== Wpisanie loginu użytkownika
+
+W kroku *_Wpisz swój login_* użytkownik wprowadza login, którego używa do logowania w bankowości internetowej i klika na opcję [Dalej]. Brak wypełnienia pola skutkuje wyświetleniem przez aplikację komunikatu walidacyjnego.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_wpisz_login_1.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_wpisz_login_2.jpg[120,220,align="center"]
+|===
+
+
+
+
+[[vb_aktywacja_aplikacji_wpisanie_hasla_tymczasowego]]
+=== Wpisanie hasła tymczasowego
+
+Pracownik banku może wygenerować użytkownikowi nowe hasło, które zostanie wysłane za pomocą wiadomości SMS na numer telefonu użytkownika lub do użytkownika zadzwoni automat głosowy VoiceBot, który podyktuje tymczasowe hasło do logowania.
+
+Gdy użytkownikowi wygenerowano hasło za pomocą SMS, wówczas na ekranie *_Wpisz tymczasowe hasło_* należy wpisać tymczasowe hasło, które zostało wysłane do użytkownika w wiadomości SMS. Po wprowadzeniu hasła należy kliknąć na opcję [Dalej].
+
+image::cui_nowa_aktywacja_tymczasowe_haslo_sms.jpg[120,220,align="center"]
+
+Natomiast gdy użytkownikowi wygenerowano hasło za pomocą usługi głosowej VoiceBot, wtedy w momencie przejścia do ekranu *_Wpisz tymczasowe hasło_* do użytkownika zadzwoni automat głosowy, który podyktuje tymczasowe hasło do logowania. Po wprowadzeniu hasła należy kliknąć na opcję [Dalej].
+
+image::cui_nowa_aktywacja_tymczasowe_haslo_voicebot.jpg[120,220,align="center"]
+
+Może się zdarzyć sytuacja, że użytkownik będąc na ekranie *_Wpisz tymczasowe hasło_* zrezygnuje z procesu parowania, po czym ponownie rozpocznie proces parowania. W takiej sytuacji pojawi się poniższy ekran *_Wpisz tymczasowe hasło_*, na którym należy wprowadzić otrzymane wcześniej tymczasowe hasło i kliknąć na opcję [Dalej].
+
+image::cui_nowa_aktywacja_tymczasowe_haslo_ponowne_wejscie.jpg[120,220,align="center"]
+
+Ze względów bezpieczeństwa podczas wprowadzania hasła system domyślnie nie prezentuje wpisanych znaków - dane są widoczne w postaci zamaskowanej.
+
+Brak wypełnienia pola lub podanie nieprawidłowego hasła tymczasowego skutkuje wyświetleniem przez aplikację komunikatu walidacyjnego.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_tymczasowe_haslo_sms_walidacja.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_tymczasowe_haslo_voicebot_walidacja.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_tymczasowe_haslo_ponowne_wejscie_walidacja.jpg[120,220,align="center"]
+|===
+
+WARNING: Krok *_Wpisz tymczasowe hasło_* zostanie zaprezentowany tylko użytkownikowi, któremu zresetowano hasło logowania do bankowości internetowej.
+
+
+
+
+[[vb_aktywacja_aplikacji_ustawienie_nowego_hasla]]
+=== Ustawienie i potwierdzenie nowego hasła do bankowości internetowej
+
+Po wprowadzeniu prawidłowego hasła tymczasowego system przechodzi do ekranu *_Ustaw hasło do bankowości internetowej_*. Użytkownik wprowadza hasło, które będzie służyło do logowania do bankowości internetowej. System weryfikuje poprawność hasła, czy spełnia reguły bezpieczeństwa, które są prezentowane na ekranie. W przypadku, gdy dany warunek zostanie spełniony, wówczas przy konkretnej pozycji jest on odpowiednio oznaczony.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_nowe_haslo_1.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_nowe_haslo_2.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_nowe_haslo_3.jpg[120,220,align="center"]
+|===
+
+Ze względów bezpieczeństwa podczas wprowadzania hasła system domyślnie nie prezentuje wpisanych znaków - dane są widoczne w postaci zamaskowanej. W polu wprowadzania danych dostępna jest ikonka image:icons/cui_oko_green.jpg[25,25], po kliknięciu na którą system prezentuje jawną wartość hasła. Ponowne kliknięcie na tę ikonkę powoduje zamaskowanie danych.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_nowe_haslo_zamaskowane.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_nowe_haslo_jawne.jpg[120,220,align="center"]
+|===
+
+Po wprowadzeniu hasła spełniającego politykę bezpieczeństwa należy kliknąć na opcję [Dalej]. System przechodzi do kolejnego ekranu *_Potwierdź hasło do bankowości internetowej_*, w którym należy ponownie wprowadzić hasło do bankowości internetowej. Ze względów bezpieczeństwa podczas wprowadzania hasła system domyślnie nie prezentuje wpisanych znaków - dane są widoczne w postaci zamaskowanej. W polu wprowadzania danych dostępna jest ikonka image:icons/cui_oko_green.jpg[25,25], po kliknięciu na którą system prezentuje jawną wartość hasła. Ponowne kliknięcie na tę ikonkę powoduje zamaskowanie danych.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_nowe_haslo_potwierdzenie_1.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_nowe_haslo_potwierdzenie_2.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_nowe_haslo_potwierdzenie_3.jpg[120,220,align="center"]
+|===
+
+NOTE: W górnej części ekranu dostępny jest przycisk image:icons/cui_wstecz_green_newUI.jpg[25,25,align="center"] umożliwiający powrót do poprzedniego kroku *_Ustaw hasło do bankowości internetowej_*.
+
+Podczas wprowadzania danych system na bieżąco kontroluje poprawność hasła. Podanie innego hasła niż w poprzednim kroku skutkuje wyświetleniem komunikatu walidacyjnego i brakiem możliwości przejścia do kolejnego kroku.
+
+image::cui_nowa_aktywacja_nowe_haslo_potwierdzenie_4.jpg[120,220,align="center"]
+
+Po wprowadzeniu poprawnego hasła należy kliknąć na opcję [Dalej].
+
+WARNING: Kroki *_Ustaw hasło do bankowości internetowej_* oraz *_Potwierdź hasło do bankowości internetowej_* zostaną zaprezentowane tylko użytkownikowi, któremu zresetowano hasło logowania do bankowości internetowej.
+
+
+
+
+[[vb_aktywacja_aplikacji_wpisanie_hasla]]
+=== Wpisanie hasła do bankowości internetowej
+
+W kroku *_Wpisz hasło do bankowości internetowej_* użytkownik wprowadza hasło, które używa do logowania w bankowości internetowej i klika na opcję [Dalej]. +
+Ze względów bezpieczeństwa podczas wprowadzania hasła system domyślnie nie prezentuje wpisanych znaków - dane są widoczne w postaci zamaskowanej.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_aktualne_haslo_1.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_aktualne_haslo_2.jpg[120,220,align="center"]
+|===
+
+Podanie nieprawidłowego hasła skutkuje wyświetleniem komunikatu walidacyjnego i brakiem możliwości przejścia do kolejnego kroku.
+
+image::cui_nowa_aktywacja_aktualne_haslo_3.jpg[120,220,align="center"]
+
+WARNING: Krok *_Wpisz hasło do bankowości internetowej_* zostanie zaprezentowany tylko użytkownikowi, który zdefiniował swoje własne hasło logowania do bankowości internetowej i nie jest ono w trakcie resetu.
+
+
+
+
+[[vb_aktywacja_aplikacji_wyslanie_sms]]
+=== Wysłanie SMS-a potwierdzającego numer telefonu użytkownika
+
+W kroku *_Wyślij nam SMS_* użytkownik wykonuje akcję potwierdzenia swojego numeru telefonu poprzez wysyłkę wiadomości SMS do Banku.
+
+image::cui_nowa_aktywacja_wyslanie_sms_1.jpg[120,220,align="center"]
+
+W większości przypadków użytkownik wykonuje proces aktywacji aplikacji na tym samym urządzeniu, na którym posiada kartę SIM z numerem telefonu zarejestrowanym w Banku. Wówczas, aby przejść do procesu wysyłki SMS, należy kliknąć na przycisk [Wyślij SMS].
+
+System udostępnia również możliwość aktywacji aplikacji na innym urządzeniu niż ten, na którym użytkownik posiada kartę SIM z numerem telefonu zarejestrowanym w Banku. Dla takiego przypadku należy kliknąć na opcję [Nie możesz wysłać wiadomości z tego urządzenia?].
+
+
+==== Wysłanie SMS-a z urządzenia, na którym wykonywany jest proces aktywacji
+
+// Funkcjonalność F00629667 z Asseco EBP 6.13.0C
+
+//Funkcjonalność kodowania treści SMS do base64: F00630576 z Guardian 2.42.0C, F00643397 z def3000/SMS 22.5.2C
+
+Po kliknięciu na przycisk [Wyślij SMS] system otwiera na urządzeniu mobilnym domyślną aplikację do wysyłania wiadomości, w której automatycznie uzupełnia się numeru telefonu do Banku wraz z treścią wiadomości. Treść SMS-a zawiera zakodowaną informację, która po wysłaniu zostanie zweryfikowana po stronie Banku. W związku z tym użytkownik nie powinien wykonywać modyfikacji treści wiadomości.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_wyslanie_sms_2.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_wyslanie_sms_3.jpg[120,220,align="center"]
+|===
+
+Po wysłaniu SMS-a użytkownik powraca do aplikacji mobilnej, aby kontynuować proces aktywacji. Na ekranie prezentuje się informacja, aby chwilę poczekać, gdyż trwa weryfikacja numeru telefonu.
+
+image::cui_nowa_aktywacja_wyslanie_sms_4_trwa_weryfikacja.jpg[120,220,align="center"]
+
+Gdy wszystko przebiegnie pomyślnie i wysłany SMS zostanie pozytywnie zweryfikowany, wówczas pojawia się ekran z komunikatem, że numer telefonu został potwierdzony. Użytkownik klika na opcję [Dalej], aby przejść do kolejnego kroku.
+
+image::cui_nowa_aktywacja_wyslanie_sms_5_pozytywna_weryfikacja.jpg[120,220,align="center"]
+
+WARNING: Użytkownik nie powinien modyfikować treści wiadomości SMS. +
+Użytkownik musi wysłać wiadomość z numeru telefonu, który zarejestrował w Banku.
+
+W przypadku, gdy użytkownik zmodyfikuje treść wiadomości SMS, wtedy zostanie zaprezentowany ekran z informacją, że numer telefonu nie został potwierdzony. Komunikat ten pojawia się również w momencie, gdy użytkownik wyśle prawidłową wiadomość SMS, ale z innego numeru telefonu niż ten, który został podany i zarejestrowany w Banku. Następuje przerwanie procesu parowania i wymagane jest ponowne rozpoczęcie aktywacji aplikacji.
+
+image::cui_nowa_aktywacja_wyslanie_sms_6_negatywna_weryfikacja.jpg[120,220,align="center"]
+
+
+==== Wysłanie SMS-a z innego urządzenia
+
+Po kliknięciu na opcję [Nie możesz wysłać wiadomości z tego urządzenia?] pojawia się ekran z kodem QR, który zawiera numer telefonu do Banku wraz z treścią wiadomości.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_wyslanie_sms_1.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_wyslanie_sms_7.jpg[120,220,align="center"]
+|===
+
+Użytkownik skanuje kod QR za pomocą urządzenia, na którym posiada kartę SIM z numerem telefonu zarejestrowanym w Banku i klika na opcję przejścia do tworzenia wiadomości. System otwiera aplikację do wysyłania wiadomości, w której automatycznie uzupełnia się numeru telefonu do Banku wraz z treścią wiadomości. Treść SMS-a zawiera zakodowaną informację, która po wysłaniu zostanie zweryfikowana po stronie Banku. W związku z tym użytkownik nie powinien wykonywać modyfikacji treści wiadomości.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_wyslanie_sms_2.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_wyslanie_sms_3.jpg[120,220,align="center"]
+|===
+
+Po wysłaniu SMS-a użytkownik powraca do aplikacji mobilnej i klika na przycisk [Dalej]. Pojawia się okienko z pytaniem, czy wiadomość SMS została wysłana. Użytkownik potwierdza poprzez kliknięcie na przycisk [Tak, wysłałem SMS].
+
+image::cui_nowa_aktywacja_wyslanie_sms_8.jpg[120,220,align="center"]
+
+Na ekranie prezentuje się informacja, aby chwilę poczekać, gdyż trwa weryfikacja numeru telefonu.
+
+image::cui_nowa_aktywacja_wyslanie_sms_4_trwa_weryfikacja.jpg[120,220,align="center"]
+
+Gdy wszystko przebiegnie pomyślnie i wysłany SMS zostanie pozytywnie zweryfikowany, wówczas pojawia się ekran z komunikatem, że numer telefonu został potwierdzony. Użytkownik klika na opcję [Dalej], aby przejść do kolejnego kroku.
+
+image::cui_nowa_aktywacja_wyslanie_sms_5_pozytywna_weryfikacja.jpg[120,220,align="center"]
+
+WARNING: Użytkownik nie powinien modyfikować treści wiadomości SMS. +
+Użytkownik musi wysłać wiadomość z numeru telefonu, który zarejestrował w Banku.
+
+W przypadku, gdy użytkownik zmodyfikuje treść wiadomości SMS, wtedy zostanie zaprezentowany ekran z informacją, że numer telefonu nie został potwierdzony. Komunikat ten pojawia się również w momencie, gdy użytkownik wyśle prawidłową wiadomość SMS, ale z innego numeru telefonu niż ten, który został podany i zarejestrowany w Banku. Następuje przerwanie procesu parowania i wymagane jest ponowne rozpoczęcie aktywacji aplikacji.
+
+image::cui_nowa_aktywacja_wyslanie_sms_6_negatywna_weryfikacja.jpg[120,220,align="center"]
+
+
+
+
+[[vb_aktywacja_aplikacji_wpisanie_kodu_aktywacyjnego]]
+=== Odsłuchanie i wpisanie kodu aktywacyjnego
+
+W kroku *_Odsłuchaj i wpisz kod aktywacyjny_* prezentowane jest pole do wprowadzenia kodu aktywacyjnego. W momencie przejścia na ten ekran, do użytkownika dzwoni automat głosowy VoiceBot z Banku, który dyktuje kod aktywacyjny. Po odsłuchaniu wiadomości należy wpisać kod, a następnie kliknąć na przycisk [Dalej]. Brak wypełnienia pola skutkuje wyświetleniem przez aplikację komunikatu walidacyjnego.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_wpisanie_kodu_aktywacyjnego.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_wpisanie_kodu_aktywacyjnego_walidacja.jpg[120,220,align="center"]
+|===
+
+Dzięki opcji [Zadzwoń do mnie ponownie] użytkownik ma możliwość ponownego wywołania połączenia przychodzącego z Banku. Po kliknięciu na tę pozycję staje się ona na chwilę nieaktywna, aby użytkownik miał świadomość, że prawidłowo kliknął w opcję.
+
+image::cui_nowa_aktywacja_wpisanie_kodu_aktywacyjnego_zadzwon_ponownie.jpg[120,220,align="center"]
+
+System posiada wbudowane zabezpieczenie przez zbyt dużą liczbą prób wywołania połączenia przychodzącego z Banku. Po przekroczeniu limitu pięciu połączeń zostanie zaprezentowany ekran z informacją o wystąpieniu błędu. Następuje przerwanie procesu parowania i wymagane jest ponowne rozpoczęcie aktywacji aplikacji.
+
+image::cui_nowa_aktywacja_wpisanie_kodu_aktywacyjnego_blad.jpg[120,220,align="center"]
+
+
+
+
+[[vb_aktywacja_aplikacji_ustawienie_pin]]
+=== Ustawienie i potwierdzenie kodu PIN do aplikacji mobilnej
+
+W kroku *_Ustaw kod PIN do aplikacji mobilnej_* użytkownik wprowadza PIN, który będzie służył do logowania do aplikacji mobilnej oraz do autoryzacji zdarzeń w aplikacji mobilnej. System weryfikuje poprawność PIN-u, czy spełnia reguły bezpieczeństwa, które są prezentowane na ekranie. W przypadku, gdy dany warunek zostanie spełniony, wówczas przy konkretnej pozycji jest on odpowiednio oznaczony.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_ustaw_pin_1.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_ustaw_pin_2.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_ustaw_pin_3.jpg[120,220,align="center"]
+|===
+
+Ze względów bezpieczeństwa podczas wprowadzania kodu PIN system domyślnie nie prezentuje wpisanych znaków - dane są widoczne w postaci zamaskowanej. W polu wprowadzania danych dostępna jest ikonka image:icons/cui_oko_green.jpg[25,25], po kliknięciu na którą system prezentuje jawną wartość PIN-u. Ponowne kliknięcie na tę ikonkę powoduje zamaskowanie danych.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_ustaw_pin_zamaskowane.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_ustaw_pin_jawne.jpg[120,220,align="center"]
+|===
+
+Po wprowadzeniu PIN-u spełniającego politykę bezpieczeństwa należy kliknąć na opcję [Dalej]. System przechodzi do kolejnego ekranu *_Potwierdź kod PIN do aplikacji mobilnej_*, w którym należy ponownie wprowadzić kod PIN. Ze względów bezpieczeństwa podczas wprowadzania kodu PIN system domyślnie nie prezentuje wpisanych znaków - dane są widoczne w postaci zamaskowanej. W polu wprowadzania danych dostępna jest ikonka image:icons/cui_oko_green.jpg[25,25], po kliknięciu na którą system prezentuje jawną wartość PIN-u. Ponowne kliknięcie na tę ikonkę powoduje zamaskowanie danych.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_ustaw_pin_potwierdzenie_1.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_ustaw_pin_potwierdzenie_2.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_ustaw_pin_potwierdzenie_3.jpg[120,220,align="center"]
+|===
+
+NOTE: W górnej części ekranu dostępny jest przycisk image:icons/cui_wstecz_green_newUI.jpg[25,25,align="center"] umożliwiający powrót do poprzedniego kroku *_Ustaw kod PIN do aplikacji mobilnej_*.
+
+Podanie innego kodu PIN niż w poprzednim kroku skutkuje wyświetleniem komunikatu walidacyjnego i brakiem możliwości przejścia do kolejnego kroku.
+
+image::cui_nowa_aktywacja_ustaw_pin_potwierdzenie_4.jpg[120,220,align="center"]
+
+Po wprowadzeniu poprawnego PIN-u należy kliknąć na opcję [Dalej].
+
+
+
+
+[[vb_aktywacja_aplikacji_ekran_konczacy_proces]]
+=== Ekran kończący proces aktywacji aplikacji
+
+Po pozytywnym przejściu procesu parowania aplikacji użytkownikowi wyświetlany jest ekran potwierdzający aktywację i umożliwiający zalogowanie się.
+
+image::cui_nowa_aktywacja_koniec_procesu.jpg[120,220,align="center"]
+
+Następnie należy kliknąć na opcję [Zaloguj się], aby przejść do ekranu głównego aplikacji mobilnej.
+
+image::cui_nowa_aktywacja_koniec_procesu_ekran_logowania_green.jpg[120,220,align="center"]
+
+W przypadku niepowodzenia aktywacji aplikacji następuje przerwanie procesu parowania i wymagane jest ponowne rozpoczęcie aktywacji aplikacji. Poniższy ekran pojawi się np. w momencie, gdy poprawnie zdefiniowano kod PIN, ale we wcześniejszym kroku został wprowadzony nieprawidłowy kod aktywacyjny.
+
+image::cui_nowa_aktywacja_koniec_procesu_blad_1.jpg[120,220,align="center"]
+
+Podczas procesu aktywacji może pokazać się również ekran informujący o wystąpieniu błędu. Pojawi się on np. w chwili, gdy zostanie przekroczony czas ważności sesji parowania lub gdy zostanie przekroczony limit prób wywołania połączenia przychodzącego na ekranie *_<<vb_aktywacja_aplikacji_wpisanie_kodu_aktywacyjnego,Odsłuchaj i wpisz kod aktywacyjny>>_*.
+
+image::cui_nowa_aktywacja_koniec_procesu_blad_2.jpg[120,220,align="center"]
+
+
+
+
+[[vb_aktywacja_aplikacji_ekran_wlaczenia_biometrii]]
+=== Ekran włączenia biometrii przy pierwszym logowaniu
+
+Po sparowaniu aplikacji mobilnej użytkownik przechodzi do formatki logowania, wprowadza PIN, który został zdefiniowany w procesie aktywacji i klika na opcję [Zaloguj się].
+
+image::cui_nowa_aktywacja_wlaczenie_biometrii_wprowadz_pin.jpg[120,220,align="center"]
+
+Następnie pojawia się ekran umożliwiający włączenie logowania biometrycznego za pomocą odcisku palca (Touch ID) lub rysów twarzy (Face ID) - system zaprezentuje odpowiednią formatkę w zależności od zaimplementowanej metody biometrycznej na urządzeniu mobilnym.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_wlaczenie_biometrii_android.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_wlaczenie_biometrii_ios.jpg[120,220,align="center"]
+|===
+
+WARNING: Dla urządzeń mobilnych z wyłączonym skanowaniem biometrycznym oraz dla urządzeń nieposiadających takiej funkcji, ekran do włączenia biometrii nie zostanie zaprezentowany w procesie logowania.
+
+Ekran pojawia się jednorazowo przy pierwszym logowaniu zaraz po sparowaniu aplikacji mobilnej, tzn. że podczas kolejnego logowania nie zostanie on zaprezentowany. Gdy użytkownik ponownie przejdzie przez proces aktywacji aplikacji, wówczas również jednorazowo zostanie zaprezentowany ten ekran przy pierwszym logowaniu.
+
+Aby włączyć logowanie biometryczne, należy kliknąć na przycisk [Włącz] - system włącza logowanie biometryczne i przechodzi do aplikacji.
+
+Po kliknięciu na opcję [Pomiń] można zrezygnować z aktywacji biometrii i następuje przejście do aplikacji. Logowanie biometryczne można włączyć w każdej chwili w opcji *_"Ustawienia -> <<dane_biometryczne,Dane biometryczne>>"_*.
+

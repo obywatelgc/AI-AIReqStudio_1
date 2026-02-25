@@ -1,0 +1,118 @@
+:imagesdir: images
+
+== *Słownik pojęć*
+
+
+[cols="25,75",options="header",]
+|=============================================================
+|*Pojęcie* |*Opis*
+|Aplikacja mobilna, Aplikacja hybrydowa, BSGo |Hybrydowa aplikacja mobilna o nazwie 'BSGo' działająca na urządzeniach przenośnych, takich jak smartfony czy tablety, powiązana z systemem Asseco EBP.
+|Asseco EBP |System bankowości internetowej do obsługi klientów detalicznych i korporacyjnych dostarczany przez Asseco Poland S.A.
+|Użytkownik |Osoba fizyczna będąca reprezentantem klienta, której przydzielono dostęp internetowy do usług świadczonych przez Bank dla Klienta w systemie Asseco EBP. Posługuje się identyfikatorem użytkownika.  Dysponuje urządzeniem z przeglądarką WWW i dostępem do Internetu lub urządzeniem mobilnym.
+|Wydawca |Podmiot, będący uczestnikiem systemu BLIK, udostępniający swoim klientom Aplikację Mobilną w celu umożliwienia im wykonywania Transakcji Mobilnych; w niniejszym dokumencie rolę Wydawcy pełni Bank.
+|Asseco MAA |Moduł, który stanowi integralną część hybrydowej aplikacji mobilnej 'BSGo', służący do autoryzacji dyspozycji oraz logowania. Moduł ten stanowił kiedyś odrębną aplikację pod nazwą 'mToken Asseco MAA'.
+|Metody biometryczne |Rodzaj zabezpieczenia oparty na danych biometrycznych użytkownika takich jak: wizerunek twarzy (Face ID) czy zapis linii papilarnych palców (odcisk palca).
+|BLIK |System zarządzany przez PSP, umożliwiający przeprowadzanie i rozliczanie Transakcji Mobilnych.
+|PSP |Spółka Polski Standard Płatności (PSP) obsługująca Transakcje Mobilne w systemie BLIK.
+|Kod, Kod Autoryzacyjny, Kod BLIK |Jednorazowy kod, generowany przez PSP, służący do przeprowadzenia Transakcji Mobilnej.
+|Transakcja Mobilna | Operacja transferu/wypłaty środków pieniężnych realizowana na podstawie dyspozycji składanej przez użytkownika przy wykorzystaniu Aplikacji Mobilnej.
+|Zapytanie Autoryzacyjne |Proces przeprowadzany przez Wydawcę mający na celu potwierdzenie możliwości wykonania Transakcji Mobilnej przez użytkownika.
+|Blokada Autoryzacyjna |Blokada założona na rachunku użytkownika na pokrycie Transakcji Mobilnej, gwarantująca dostępność środków dla późniejszego rozliczenia Transakcji i księgowania obciążenia na rachunku użytkownika.
+|Zwykła Płatność BLIK |Transakcja dokonana z wykorzystaniem Kodu Autoryzacyjnego BLIK, który został wyświetlony użytkownikowi po zalogowaniu użytkownika do Aplikacji Mobilnej (w tym płatność POS, płatność eCommerce, wypłata gotówki w bankomacie).
+|Szybka Płatność BLIK |Transakcja Mobilna realizowana przy pomocy Kodu uzyskanego przez użytkownika bez podawania PIN do Aplikacji Mobilnej (bez konieczności logowania do Aplikacji Mobilnej).
+|Przelew P2P, Przelew na telefon BLIK |Usługa BLIK umożliwiająca nadawcy przesłanie środków przelewem do odbiorcy zarejestrowanego w usłudze BLIK P2P po podaniu jedynie jego numeru telefonu. Po pozytywnej autoryzacji przelewu, przez nadawcę w aplikacji mobilnej, środki przesyłane są przelewem natychmiastowym lub przelewem wewnętrznym na rachunek powiązany aliasem ze wskazanym przez nadawcę numerem telefonu.
+|Nadawca P2P, Nadawca|Użytkownik inicjujący przelew P2P.
+|Przelew P2PR, Prośba o przelew BLIK |Usługa BLIK umożliwiająca wysłanie prośby o przelew do odbiorcy zarejestrowanego w usłudze BLIK P2P po podaniu jedynie jego numeru telefonu. Prośba o realizację przelewu generowana jest przez Proszącego i trafia do Płatnika, który podejmuje decyzję o autoryzacji lub odrzuceniu płatności P2PR. W przypadku pozytywnej autoryzacji otrzymanej prośby, środki z rachunku Płatnika przesyłane są przelewem natychmiastowym lub przelewem wewnętrznym na rachunek powiązany z aliasem Proszącego.
+|Proszący P2PR, Proszący |Użytkownik wysyłający prośbę o przelew BLIK.
+|Płatnik P2PR, Płatnik |Użytkownik odbierający prośbę o przelew BLIK i inicjujący przelew P2PR.
+
+|=============================================================
+
+
+
+[[wprowadzenie]]
+== *Wprowadzenie*
+
+*Aplikacja hybrydowa* jest połączeniem funkcjonalności bankowości internetowej Asseco EBP oraz funkcjonalności autoryzacji i autentykacji modułu Asseco MAA.
+
+Użytkownik posiadający dostęp do *aplikacji hybrydowej* ma możliwość:
+
+* autentykacji do aplikacji hybrydowej,
+* autoryzacji logowania do systemu Asseco EBP,
+* autoryzacji dyspozycji zleconych w systemie Asseco EBP,
+* korzystania z podstawowych funkcjonalności zawartych w systemie Asseco EBP,
+* korzystania z usługi BLIK,
+* zarządzania aplikacją hybrydową,
+* obsługi powiadomień PUSH.
+
+Aplikacja zapewnia podstawowe funkcjonalności bankowości internetowej takie jak:
+
+* Rachunki,
+* Przelewy,
+* Lokaty,
+* Kredyty,
+* Karty,
+* Doładowania,
+* Przepływy,
+* Terminarz,
+* Koszyk zleceń,
+* Wiadomości,
+* Ustawienia.
+
+
+WARNING: Realizacja podstawowych funkcjonalności bankowości internetowej jest identyczna jak obsługa w systemie Asseco EBP i została opisana w dokumentacji użytkownika systemu Asseco EBP.
+
+
+Aplikacja dostosowana jest do pracy zarówno na smartfonach jak i tabletach, dla urządzeń pracujących pod kontrolą systemu iOS oraz Android w wersjach:
+
+* iOS: dla wersji 13.0 i wyższej,
+* Android: dla wersji 8.0 i wyższej.
+
+
+Aplikacja udostępniona jest w sklepach Google Play, App Store oraz AppGallery.
+
+Dostęp do hybrydowej aplikacji mobilnej zabezpieczony jest jedną z metod wybraną przez użytkownika:
+
+* kod PIN,
+* metoda biometryczna.
+
+Dla logowania do aplikacji użyte zostały natywne sprzętowe funkcje urządzeń mobilnych, co oznacza, że logowanie z użyciem metod biometrycznych użytkownika dostępne jest tylko na urządzeniach posiadających takie funkcjonalności.
+
+Autoryzacja dyspozycji w aplikacji realizowana jest poprzez moduł Asseco MAA, który stanowi integralną część hybrydowej aplikacji mobilnej.
+
+Po zainstalowaniu aplikacji użytkownik w pierwszej kolejności musi powiązać aplikację z systemem Asseco EBP. Po poprawnym zakończeniu procesu parowania, hybrydowa aplikacja mobilna zostaje powiązana z kontem użytkownika i prezentowana jest na liście powiązanych aplikacji. Od tego momentu dostęp do pełnej funkcjonalności hybrydowej aplikacji mobilnej zabezpieczony jest wybraną przez użytkownika metodą: kod PIN lub metodą biometryczną. Prośba o jej użycie pojawia się po uruchomieniu aplikacji i wybraniu akcji logowania.
+
+//W przypadku wyboru zabezpieczenia aplikacji mobilnej kodem PIN, kod ten służy również do autoryzacji zleceń wprowadzanych w hybrydowej aplikacji mobilnej. W przypadku wyboru innej metody do zabezpieczenia aplikacji mobilnej do zalogowania wymagany jest kod PIN do autoryzacji zleceń.
+
+Kod PIN służy również do autoryzacji zleceń wprowadzanych w hybrydowej aplikacji mobilnej.
+
+
+WARNING: Użytkownik może mieć zainstalowaną aplikację hybrydową tylko na jednym urządzeniu. Dodanie aplikacji hybrydowej na nowym urządzeniu wymaga usunięcia poprzedniej.
+
+
+=== Uruchomienie rozszerzonych funkcji aplikacji hybrydowej BSGo
+
+W momencie udostępnienia przez Bank swoim klientom rozszerzonych funkcjonalności aplikacji hybrydowej, zostanie użytkownikowi zaprezentowany ekran z możliwością włączenia dodatkowych opcji nowej bankowości.
+
+WARNING: Nazwa aplikacji mobilnej została zmieniona z *_"mToken Asseco MAA"_* na *_"BSGo"_*.
+
+image::bsgo_reklama_2_green.jpg[120,220,align="center"]
+
+Użytkownik może dokonać wyboru poprzez kliknięcie w opcję:
+
+*  *[Przejdź]*  - użytkownik poza dotychczasowymi funkcjonalnościami modułu Asseco MAA uzyska dostęp do nowych funkcjonalności bankowości internetowej,
+* ...kliknij *[tutaj...]* - użytkownik przekierowany zostanie do aplikacji pracującej tylko w kontekście modułu Asseco MAA.
+
+W przypadku gdy użytkownik zdecyduje się pozostać przy dotychczasowych funkcjonalnościach modułu Asseco MAA, będzie mógł w każdym momencie uruchomić rozszerzoną wersję aplikacji wybierając w menu opcję *_"Ustawienia_* -> *_Aplikacja mobilna"_*.
+
+image::ustawienia_aplikacja_mobilna_green.jpg[120,220,align="center"]
+
+
+Następnie na ekranie *_Aplikacja mobilna_* użytkownik wybiera opcję *[WŁĄCZ]*.
+
+image::aplikacja_mobilna_wlacz_green.jpg[120,220,align="center"]
+
+Po tej akcji użytkownik zostaje wylogowany z aplikacji, a przy kolejnym logowaniu uzyskuje dostęp do rozszerzonych funkcjonalności hybrydowej aplikacji mobilnej.
+
+
+

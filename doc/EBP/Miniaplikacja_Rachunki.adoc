@@ -1,0 +1,578 @@
+:imagesdir: images
+
+= Rachunki
+
+Miniaplikacja *Rachunki* zapewnia dostęp do rachunków (rozliczeniowych i oszczędnościowych), do których uprawniony jest Użytkownik.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Rachunki* z dwóch głównych poziomów:
+
+* widżetu *Rachunki* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),
+
+image::Rachunki/image1.png[image,width=248,height=261]
+
+* menu *bocznego* po wybraniu opcji _Rachunki_.
+
+image::Rachunki/image2.png[image,width=205,height=46]
+
+W każdym z poziomów miniaplikacji dostępne są dla Użytkownika formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach.
+
+Użytkownik posiadający dostęp do miniaplikacji *Rachunki* ma możliwość:
+
+* przeglądania skróconych informacji o rachunkach na widżecie miniaplikacji *Rachunki*,
+* przeglądania listy rachunków,
+* przeglądania szczegółów rachunku,
+* przeglądania i pobierania historii operacji na rachunku,
+* przeglądania blokad na rachunku,
+* przeglądania i pobierania wyciągów.
+
+NOTE: Funkcjonalność rachunków dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia: do funkcjonalności i do rachunków. Uprawnienia ustawiane są przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.
+
+== Widżet Rachunki
+
+Widżet *Rachunki* może być w dwóch rozmiarach: standardowym i rozszerzonym. W zależności od wielkości po najechaniu myszką na prawy górny róg widżetu widoczne są następujące ikony:
+
+* ikona image:Rachunki/image3.png[image,width=50,height=63]– powoduje rozszerzenie widżetu o dodatkowe informacje,
+* ikona image:Rachunki/image4.png[image,width=47,height=65]– powoduje powrót do rozmiaru standardowego.
+
+Widżet standardowy
+
+image::Rachunki/image1.png[image,width=248,height=261]
+
+Na widżecie standardowym jest możliwość:
+
+* wyboru rachunku w celu zaprezentowania skróconych informacji na temat:
+** numeru rachunku – dwie pierwsze i osiem ostatnich cyfr rachunku,
+** kwoty dostępnych środków wraz z walutą,
+** salda księgowego wraz z walutą,
+
+W dolnej części widżetu dostępna jest akcja:
+
+* [HISTORIA TRANSAKCJI] – umożliwiająca przejście do historii transakcji wybranego rachunku.
+
+Widżet rozszerzony
+
+image::Rachunki/image5.png[image,width=247,height=539]
+
+Na widżecie rozszerzonym prócz tych samych informacji co na widoku standardowym dodatkowo prezentowane są:
+
+* Ostatnia transakcja – informacje na temat ostatniej transakcji:
+
+** Kwota – kwota transakcji wraz z walutą,
+** Tytuł – tytuł transakcji,
+** Data – data transakcji
+
+* Przycisk [SZCZEGÓŁY] – przejście do szczegółów transakcji.
+* Wykres salda z możliwością filtrowania po okresie:
+
+** Ostatnie 7 dni,
+** Ostatnie 14 dni,
+** Ostatni miesiąc.
+
+image::Rachunki/image6.png[image,width=156,height=179]
+
+== Przeglądanie listy rachunków
+
+Po kliknięciu w tytuł widżetu *Rachunki* lub poprzez wybór opcji z bocznego menu _Rachunki_ wyświetlane jest okno prezentujące listę rachunków rozliczeniowych i oszczędnościowych, do których Użytkownik jest uprawniony.
+
+Ekran po zalogowaniu do systemu w kontekście zbiorczym
+
+image::Rachunki/image7.png[]
+
+Ekran po zalogowaniu do systemu w kontekście firmowym
+
+image::Rachunki/image8.png[]
+
+Domyślnie rachunki sortowane są w porządku rosnącym według identyfikatora rachunku, czyli chronologicznie według założenia rachunku.
+
+Użytkownik ma możliwość sortowania poszczególnych kolumn:
+
+* rachunek,
+* saldo księgowe,
+* dostępne środki.
+
+Na liście rachunków, dla każdego rachunku dostępne są następujące informacje:
+
+* *RACHUNEK*:
+** nazwa produktu lub nazwa własna rachunku (Użytkownik ma możliwość zmiany nazwy własnej),
+** numer rachunku – dla urządzeń o małych rozdzielczościach (smartfonów) numer rachunku prezentowany jest w postaci zamaskowanej, dla pozostałych urządzeń wyświetlany jest pełny numer rachunku,
+* *FIRMA* – nazwa firmy, kolumna prezentowana tylko dla kontekstu zbiorczego,
+* *OSTATNI WYCIĄG* - data i nazwa wyciągu,
+* *OBROTY BIEŻĄCE* - obroty bieżące na rachunku,
+* *SALDO KSIĘGOWE* – saldo rachunku wraz z walutą,
+* *DOSTĘPNE ŚRODKI* – kwota dostępnych na rachunku środków wraz z walutą.
+
+Nad listą rachunków znajduje się przycisk [HISTORIA ZBIORCZA] umożliwiający przeglądanie historii zbiorczej ze wszystkich rachunków.
+
+W górnej części formularza RACHUNKI dostępne są filtry umożliwiające filtrowanie listy rachunków:
+
+* *Filtr prosty* – filtrowanie listy rachunków następuje po wpisaniu danych w polu wyszukiwania znajdującego się nad listą:
+
+image::Rachunki/image9.png[image,width=360,height=58]
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnego rachunku w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści. Aby powrócić do pełnej listy rachunków należy kliknąć w ikonę image:Rachunki/image10.png[image,width=56,height=54]w polu wyszukiwania.
+
+* *Firma* – filtr dostępny tylko dla kontekstu zbiorczego pozwalający na wybranie z listy firmy której rachunki mają zostać zaprezentowane.
+
+image::Rachunki/image11.png[image,width=226,height=169]
+
+Pod listą rachunków dostępne jest *Podsumowanie* zawierające:
+
+* łączne (dla wszystkich rachunków) saldo (pod kolumną *Saldo księgowe*), jeżeli na liście znajdują się rachunki w różnych walutach, wówczas łączne saldo prezentowane jest oddzielnie dla każdej z walut,
+* łączną (dla wszystkich rachunków) kwotę dostępnych środków (pod kolumną *Dostępne środki*), jeżeli na liście znajdują się rachunki w różnych walutach, wówczas suma dostępnych środków prezentowana jest oddzielnie dla każdej z walut.
+
+image::Rachunki/image12.png[]
+
+Użytkownik może także wybrać liczbę wierszy, jaka będzie wyświetlać się na stronie.
+
+W górnej części formularza RACHUNKI dostępny jest przycisk:
+
+* image:Rachunki/image13.png[image,width=42,height=47]– umożliwiający wyjście do głównego menu.
+
+NOTE: Lista płac jest widoczna na historii rachunku w postaci jednej pozycji, gdzie kwota przelewu będzie prezentowana sumarycznie.
+
+*_Grupowanie rachunków w kontekście firmowym_*
+
+W opcji Ustawienia -> Konfiguracja listy rachunków rozdział
+<<konfiguracja-listy-rachunkow, Konfiguracja listy rachunków>> użytkownik
+systemu Asseco EBP ma możliwość personalizacji listy rachunków poprzez ułożenie rachunków w wybranej kolejności oraz przypisaniem rachunków do grup.
+
+NOTE: Dostęp do opcji "Konfiguracja listy rachunków" wymaga włączenia usługi *accountGroups*.
+
+Jeśli użytkownik posiada skonfigurowany zbiór grup rachunków, wówczas dostępna jest lista wyboru grupy (domyślnie Wszystkie). Wybór grupy skutkuje wyświetleniem na liście rachunków należących wyłącznie do tej grupy, z zachowaniem sortowania opisanego powyżej.
+Podsumowanie prezentowane pod listą stanowi podsumowanie rachunków należących do danej grupy.
+
+image:Rachunki/image44.jpg[]
+
+Lista grup na liście wyboru posortowana jest alfabetycznie i zawiera  również takie grupy, które nie posiadają rachunków.
+
+image:Rachunki/image45.jpg[width=242,height=97]
+
+Zmieniona została domyślna kolejność prezentacji rachunków na liście, w taki sposób, że w pierwszej kolejności prezentowane są rachunki, do których przypisano kolejność numeryczną, przy czym im mniejsza jej wartość tym wyższa pozycja rachunku na liście. W przypadku takiej samej wartości wyżej prezentowane są rachunki w walucie PLN. Kolejne kryteria kolejności pozostają bez zmian.
+Powyższe warunki nie mają zastosowania w przypadku wymuszenia przez użytkownika własnego sortowania.
+
+NOTE: Pozostałe aplikacje, w których wykorzystywana jest lista rachunków (np. składanie nowego przelewu) uwzględniają konfigurację kolejności opisaną dla listy rachunków. Przypisanie do grup nie ma wpływu na prezentację.
+
+
+
+=== Akcje na wybranym rachunku
+
+Kliknięcie w wiersz wybranego rachunku powoduje wyświetlenie dodatkowych informacji na temat rachunku.
+
+image:Rachunki/image14.png[image,width=604,height=156]
+
+Na formularzu rozszerzonym dostępne są dodatkowe informacje:
+
+* *Blokady* – suma blokad na rachunku wyrażona w walucie rachunku,
+* *Przyznany limit* – kwota przyznanego limitu na rachunku,
+* *Ostatnia transakcja* – data, opis oraz kwota wraz z walutą transakcji.
+
+Poniżej prezentowany jest określony zestaw akcji:
+
+* [HISTORIA RACHUNKU] – po naciśnięciu system przekierowuje do formularza HISTORIA RACHUNKU, umożliwiającego przeglądanie historii operacji na tym rachunku,
+* [PRZELEW] – opcja umożliwiająca wykonanie przelewu zwykłego/własnego/podatkowego/walutowego; po wybraniu opcji wyświetlany jest formularz PRZELEW (analogiczny do formularza nowego przelewu wyświetlanego z poziomu miniaplikacji *Przelewy)*,
+* [LISTA OPŁAT] – po naciśnięciu system przekierowuje do formularza ZESTAWIENIA OPŁAT, umożliwiającego przeglądanie pobranych opłat na rachunku,
+* [BLOKADY] – po naciśnięciu system przekierowuje do formularza BLOKADY RACHUNKU, umożliwiającego przeglądanie blokad założonych na tym rachunku,
+* [WYCIĄGI] – po naciśnięciu system przekierowuje do formularza WYCIĄGI, umożliwiającego przeglądanie listy dostępnych na tym rachunku wyciągów,
+* [SZCZEGÓŁY] – po naciśnięciu system przekierowuje do formularza SZCZEGÓŁY RACHUNKU, umożliwiającego przeglądanie informacji szczegółowych na temat wybranego rachunku.
+
+W przypadku rachunku bieżącego VAT przycisk [PRZELEW] nie jest dostępny.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza rachunku powoduje zwinięcie dodatkowych informacji i przycisków prezentowanych dla rachunku.
+
+=== Modyfikacja nazwy własnej rachunku
+
+W celu ułatwienia identyfikacji rachunku, Użytkownik ma możliwość modyfikacji nazwy produktu z poziomu:
+
+* listy rachunków za pomocą ikonki image:Rachunki/image15.png[image,width=50,height=53]znajdującej się przy nazwie rachunku
+
+image::Rachunki/image16.png[image,width=412,height=135]
+
+* szczegółów rachunku za pomocą ikonki image:Rachunki/image15.png[image,width=50,height=53]znajdującej się przy polu *Nazwa własna*.
+
+image::Rachunki/image17.png[image,width=525,height=78]
+
+Obok pola dostępne są przyciski:
+
+* image:Rachunki/image18.png[image,width=38,height=51]– umożliwia zapisanie zmienionej nazwy własnej rachunku. Nazwę własną rachunku zapisać można także po jej wprowadzeniu i użyciu klawisza [Enter] z klawiatury.
+* image:Rachunki/image19.png[image,width=39,height=41]– umożliwia rezygnację ze zmiany nazwy własnej rachunku.
+
+W przypadku, gdy Użytkownik usunie wprowadzoną w polu nazwę własną rachunku, system przyporządkowuje mu nazwę systemową.
+
+Nazwa własna przypisana jest do Użytkownika co oznacza, że ten sam produkt u różnych Użytkowników może posiadać różną nazwę.
+
+== Podgląd szczegółów rachunku
+
+Aby przejść do szczegółów wybranego rachunku należy kliknąć w obszar wybranego wiersza i wybrać przycisk [SZCZEGÓŁY]. System wyświetla formularz SZCZEGÓŁY RACHUNKU.
+
+image::Rachunki/image20.png[image,width=604,height=257]
+
+Na formularzu prezentowane są następujące dane:
+
+* *Numer rachunku* – numer rachunku w formacie NRB,
+* *Numer rachunku VAT* - numer powiązanego rachunku VAT,
+* *Waluta* – symbol waluty w jakiej prowadzony jest rachunek,
+* *Rodzaj rachunku*,
+* *Nazwa własna* – nazwa rachunku nadana przez klienta,
+* *Saldo* – aktualna suma środków zgromadzonych na rachunku,
+* *Dostępne środki* – aktualna suma środków pozostałych do wykorzystania na rachunku,
+* *Kwota zablokowanych środków* – suma blokad na rachunku wraz z walutą,
+* *Przyznany limit kredytowy* – kwota przyznanego limitu kredytowego wraz z walutą,
+* *Oprocentowanie* – oprocentowanie zgromadzonych środków,
+* *Data otwarcia* – data otwarcia rachunku (data w formacie DD.MM.RRRR),
+* *Twój status* – stosunek własności zalogowanego klienta względem rachunku,
+* *Właściciel* – dane właściciela rachunku,
+* *Pełnomocnicy* – dane pełnomocnika rachunku,
+* *Transakcje przez internet: Limit dzienny* – limit dzienny dla transakcji przez internet,
+* *Pozostały limit dzienny* – pozostały limit dzienny do wykorzystania,
+* *Transakcje przez internet: limit jednorazowy* – limit jednorazowy dla transakcji przez internet.
+* *Typ wyciągu* - typ wyciągu, np. miesięczny.
+
+W przypadku rachunków VAT nie są prezentowane wartości:
+
+* *Transakcje przez internet: limit dzienny,*
+* *Pozostały limit dzienny,*
+* *Transakcje przez internet: limit jednorazowy.*
+
+W górnej części formularza SZCZEGÓŁY RACHUNKU dostępne są przyciski:
+
+* image:Rachunki/image21.png[image,width=45,height=53] – umożliwiający powrót do formularza RACHUNKI,
+* image:Rachunki/image22.png[image,width=48,height=61]– umożliwiający przejście do głównego menu.
+
+Nad szczegółami rachunku dostępne są przyciski (analogiczne jak dla wybranego rachunku na liście rachunków):
+
+* [HISTORIA RACHUNKU] – przycisk umożliwiający przeglądanie historii operacji na rachunku,
+* [DODATKOWE OPCJE] - pogrupowane akcje, w skład których wchodzą:
+** *Przelew* – opcja umożliwiająca wykonanie przelewu zwykłego/własnego/podatkowego/walutowego; po wybraniu opcji wyświetlany jest formularz PRZELEW (analogiczny do formularza nowego przelewu wyświetlanego z poziomu miniaplikacji *Przelewy)*,
+** *Lista opłat* – po naciśnięciu system przekierowuje do formularza ZESTAWIENIA OPŁAT, umożliwiającego przeglądanie pobranych opłat na rachunku,
+** *Blokady* – po naciśnięciu system przekierowuje do formularza BLOKADY RACHUNKU, umożliwiającego przeglądanie blokad założonych na tym rachunku,
+** *Wyciągi* – po naciśnięciu system przekierowuje do formularza WYCIĄGI, umożliwiającego przeglądanie listy dostępnych na tym rachunku wyciągów,
+
+== Przeglądanie historii operacji na rachunku
+
+Aby przejść do historii rachunku należy nacisnąć przycisk [HISTORIA TRANSAKCJI] na widżecie Rachunki, albo należy kliknąć w obszar wybranego wiersza na liście rachunków i wybrać przycisk [HISTORIA RACHUNKU].
+
+image::Rachunki/image23.png[]
+
+Na formularzu HISTORIA RACHUNKU prezentowana jest lista operacji zaksięgowanych na rachunku:
+
+* *Data księgowania* – data księgowania operacji (data w formacie DD.MM.RRRR),
+* *Odbiorca/Nadawca* – dane odbiorcy (prezentowane w przypadku przelewu wychodzącego)/nadawcy(prezentowane w przypadku przelewu przychodzącego),
+* *Numer rachunku* – numer rachunku, którego dotyczy zestawienie,
+* *Opis operacji* – opis operacji,
+* *Kwota* – kwota operacji wraz z walutą (wpływy prezentowane w kolorze czarnym, obciążenia prezentowane w kolorze czerwonym ze znakiem ujemnym).
+
+Użytkownik ma możliwość sortowania poszczególnych kolumn.
+Domyślnie historia rachunku jest sortowana po dacie księgowania.
+
+NOTE: Zdefiniowanie sortowania zostaje odzwierciedlone na wydruku PDF historii operacji.
+
+Pod listą zaksięgowanych operacji dostępne jest:
+
+* *Podsumowanie wyszukiwania* zawierające:
+
+** Wpływy – sumaryczną wartość uznań wraz z walutą,
+** Obciążenia – sumaryczną wartość obciążeń wraz z walutą.
+
+Lista operacji jest stronicowana. Przejście na kolejne strony następuje po wyborze przycisków nawigacyjnych dostępnych pod listą .
+
+Dodatkowo Użytkownik może wybrać ile wierszy będzie się wyświetlać na jednej stronie.
+
+image::Rachunki/image24.png[]
+
+Gdy lista operacji nie jest pusta w prawym górnym rogu formularza HISTORIA RACHUNKU pojawia się opcja [POBIERZ].
+
+image::Rachunki/image25.png[image,width=603,height=67]
+
+W opcji dostępne są następujące akcje:
+
+* *Eksportuj* - wyeksportowanie listy operacji w formacie określonym w opcji _Ustawienia → Ustawienia importu i eksportu → Format eksportu historii operacji_.
+
+* *Pobierz pdf* - pobranie listy operacji w formacie _PDF_ .
+
+image::Rachunki/image26.png[image,width=191,height=121]
+
+NOTE: Szczegółowy opis struktur pliku eksportu znajduje się w odrębnej dokumentacji importu/eksportu danych w Asseco EBP.
+
+W celu zawężenia prezentacji listy operacji, Użytkownik ma możliwość zastosowania filtrów:
+
+* *Prostego* – filtrowanie listy rachunków następuje po wpisaniu danych w polu wyszukiwania znajdującego się nad listą:
+
+image::Rachunki/image27.png[image,width=356,height=63]
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej operacji w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści. Aby powrócić do pełnej listy należy kliknąć w ikonę image:Rachunki/image28.png[image,width=41,height=42]w polu wyszukiwania.
+
+* *Zaawansowanego* – użycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtru zaawansowanego.
+
+image::Rachunki/image29.png[]
+
+Użytkownik ma możliwość ustawiania filtru zaawansowanego dla następujących pól:
+
+* *Ostatnie* – liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana historia operacji, domyślnie 30 dni,
+* *Zakres dat* – zakres dat, od-do, dla których ma zostać wyświetlona historia rachunku, od miesiąca wstecz do daty bieżącej. Alternatywa dla pola *Ostatnie*. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą, którego można określić zakres dat.
+
+image::Rachunki/image30.png[image,width=359,height=410]
+
+* *Rodzaj transakcji* – pole zwierające rodzaje transakcji:
+** _Wszystkie transakcje_,
+** _Obciążenia_,
+** _Uznania_,
+
+image::Rachunki/image31.png[image,width=330,height=176]
+
+* *Kwota od*, *Kwota do* – zakres kwot (od - do), dla których ma zostać wyświetlona lista operacji,
+* *Przelew VAT* – checkbox będzie dostępny tylko dla tych rachunków, które są powiązane z rachunkami VAT. Po zaznaczeniu checkbox’a aplikacja zwróci listę operacji oznaczonych jako przelew VAT.
+* *Tylko płatności masowe* - checkbox będzie dostępny tylko w przypadku posiadania rachunków masowych. Po zaznaczeniu checkbox'a aplikacja zwróci listę płatności masowych.
+
+Zastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].
+
+=== Akcje na wybranej operacji na rachunku
+
+Kliknięcie w wiersz wybranej operacji na formularzu HISTORIA RACHUNKU, powoduje wyświetlenie dodatkowych informacji na temat operacji:
+
+image::Rachunki/image32.png[image,width=604,height=122]
+
+* *Typ operacji* – nazwa typu wykonanej operacji,
+* *Saldo po operacji* – saldo rachunku po wykonaniu operacji.
+
+Dodatkowo prezentowany jest określony zestaw akcji:
+
+* [PONÓW] – umożliwia ponowne wykonanie przelewu wychodzącego, przycisk jest dostępny wyłącznie w odniesieniu do przelewów jednorazowych: przelew zwykły, podatku, własny,
+* [SZCZEGÓŁY] – umożliwia przeglądanie informacji szczegółowych na temat wybranej transakcji,
+* [POBIERZ PDF] – umożliwia wygenerowanie wydruku potwierdzenia pojedynczej operacji historycznej w formacie _PDF_.
+
+Rachunki typu VAT w historii operacji nie posiadają przycisku [PONÓW].
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza wybranej operacji powoduje jego zwinięcie.
+
+W górnej część formularza HISTORIA RACHUNKU dostępne są przyciski:
+
+* image:Rachunki/image21.png[image,width=45,height=53] – umożliwiający powrót do formularza RACHUNKI,
+
+* image:Rachunki/image22.png[image,width=48,height=61]– umożliwiający przejście do głównego menu.
+
+=== Podgląd szczegółów transakcji
+
+Aby przejść do szczegółów wybranej operacji zaksięgowanej na rachunku, należy kliknąć w obszar wybranego wiersza na _Historia rachunku_ i wybrać przycisk [_SZCZEGÓŁY]._
+
+image::Rachunki/image33.png[image,width=604,height=227]
+
+Na formularzu SZCZEGÓŁY TRANSAKCJI prezentowane są następujące informacje dotyczące wybranej transakcji:
+
+* *Data transakcji* – data w formacie DD.MM.RRRR,
+* *Data księgowa* – data księgowania operacji (data w formacie DD.MM.RRRR),
+* *Kwota* – kwota operacji wraz z walutą,
+* *Odbiorca* – dane odbiorcy,
+* *Rachunek odbiorcy* – numer NRB odbiorcy, wraz z nazwą Banku,
+* *Opis operacji* – opis wykonanej operacji,
+* *Typ operacji* – typ wykonanej operacji,
+* *Nadawca* – dane nadawcy,
+* *Rachunek nadawcy* – numer NRB nadawcy,
+* *Saldo rachunku po operacji* – saldo po operacji na rachunku,
+* *Nr ref* – numer operacji,
+
+Lista pól prezentowanych na formularzu jest zależna od typu transakcji.
+
+Nad szczegółami transakcji dostępny jest przycisk:
+
+* [POBIERZ PDF] - umożliwiający pobranie potwierdzenia pojedynczej transakcji w formacie _PDF_,
+
+W górnej część formularza SZCZEGÓŁY TRANSAKCJI dostępne są przyciski:
+
+* image:Rachunki/image21.png[image,width=45,height=53] – umożliwiający powrót do formularza HISTORIA RACHUNKU,
+* image:Rachunki/image22.png[image,width=48,height=61]– umożliwiający przejście do głównego menu.
+
+=== Przeglądanie historii operacji z wielu rachunków
+
+System Asseco EBP umożliwia Użytkownikowi przeglądanie historii transakcji z wielu dostępnych rachunków jednocześnie.
+
+Aby przeglądnąć historię zbiorczą należy na formularzu RACHUNKI nacisnąć przycisk [HISTORIA ZBIORCZA].
+
+image::Rachunki/image34.png[]
+
+Nad szczegółami transakcji dostępne są filtry:
+
+* *Prosty* – filtrowanie transakcji następuje po wpisaniu danych w polu wyszukiwania znajdującego się nad listą:
+
+image::Rachunki/image27.png[image,width=356,height=63]
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej operacji w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści. Aby powrócić do pełnej listy należy kliknąć w ikonę image:Rachunki/image28.png[image,width=41,height=42]w polu wyszukiwania.
+
+* *Zaawansowany* – użycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtru zaawansowanego
+
+image::Rachunki/image35.png[]
+
+Użytkownik ma możliwość ustawiania filtru zaawansowanego dla następujących pól:
+
+* *Ostatnie* – liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana historia operacji, domyślnie 30 dni,
+* *Zakres dat* – zakres dat, od-do, dla których ma zostać wyświetlona historia rachunku, od miesiąca wstecz do daty bieżącej. Alternatywa dla pola *Ostatnie*. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą, którego można określić zakres dat.
+
+image::Rachunki/image30.png[image,width=359,height=410]
+
+* *Rachunki własne* – pole prezentujące listę rachunków, w którym Użytkownik można wybrać (przez zaznaczenie checkbox) kilka rachunków jednocześnie dla których system ma zaprezentować transakcje,
+
+image::Rachunki/image36.png[image,width=319,height=245]
+
+* *Rodzaj transakcji* – pole zawierające rodzaje transakcji:
+** _Wszystkie transakcje_,
+** _Obciążenia_,
+** _Uznania_,
+
+image::Rachunki/image31.png[image,width=330,height=176]
+
+* *Kwota od*, *Kwota do* – zakres kwot (od-do), dla których ma zostać wyświetlona lista operacji,
+* *Przelew VAT* – checkbox będzie dostępny tylko dla tych rachunków, które są powiązane z rachunkami VAT. Po zaznaczeniu checkbox’a aplikacja zwróci listę operacji oznaczonych jako przelew VAT.
+* *Tylko płatności masowe* - checkbox będzie dostępny tylko w przypadku posiadania rachunków masowych. Po zaznaczeniu checkbox'a aplikacja zwróci listę płatności masowych.
+
+Zastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].
+
+Nad listą transakcji dostępne są następujące akcje:
+
+* *Eksportuj* - wyeksportowanie listy operacji w formacie określonym w opcji _Ustawienia → Ustawienia importu i eksportu → Format eksportu historii operacji_,
+* *Pobierz pdf* - pobranie listy operacji w formacie _PDF_ .
+
+image::Rachunki/image26.png[image,width=191,height=121]
+
+Użytkownik ma możliwość sortowania poszczególnych kolumn: +
+- data księgowania, +
+- odbiorca / nadawca, +
+- numer rachunku, +
+- opis operacji, +
+- kwota.
+
+Domyślnie historia jest sortowana po dacie księgowania.
+
+NOTE: Zdefiniowanie sortowania zostaje odzwierciedlone na wydruku PDF historii operacji.
+
+W górnej część formularza HISTORIA RACHUNKU dostępne są przyciski:
+
+* image:Rachunki/image21.png[image,width=45,height=53] – umożliwiający powrót do formularza RACHUNKI,
+* image:Rachunki/image22.png[image,width=48,height=61]– umożliwiający przejście do głównego menu.
+
+== Wyciągi z rachunków
+
+W ramach dostępnych rachunków Użytkownik ma możliwość przeglądania wyciągów dla wybranego rachunku.
+
+Aby przeglądnąć listę wyciągów danego rachunku należy na formularzu RACHUNKI kliknąć w obszar rachunku i wybrać przycisk [WYCIĄGI]. Wyświetlany jest wówczas formularz WYCIĄGI prezentujący listę wyciągów dostępnych dla rachunku.
+
+image::Rachunki/image37.png[image,width=604,height=163]
+
+W celu zawężenia prezentacji listy wyciągów, system umożliwia zastosowania filtra zaawansowanego za pomocą przycisku [POKAŻ FILTRY]:
+
+image::Rachunki/image38.png[image,width=604,height=66]
+
+Użytkownik ma możliwość ustawienia filtru zaawansowanego dla następujących pól:
+
+* *Ostatnie* – liczba dni poprzedzających datę bieżącą, dla których ma zostać zaprezentowana lista wyciągów, domyślnie 30 dni,
+* *Zakres dat* – zakres dat, od-do, dla których ma zostać wyświetlona lista wyciągów, od miesiąca wstecz do daty bieżącej. Alternatywa dla pola *Ostatnie*. Kliknięcie w obszar pól z datami otwiera okno kalendarza, za pomocą którego można określić zakres dat.
+
+image::Rachunki/image39.png[image,width=321,height=370]
+
+Dla każdego wyciągu po kliknięciu w obszar wybranego okresu dostępne są przyciski:
+
+* [LISTA OPERACJI] – po naciśnięciu system przekierowuje na formularz HISTORIA RACHUNKU, prezentujący listy operacji danego wyciągu,
+* [EKSPORTUJ] – umożliwia wyeksportowanie listy operacji w formacie określonym w opcji _Ustawienia → Ustawienia importu i eksportu → Format eksportu historii operacji,_
+* [POBIERZ PDF] – umożliwiający pobranie listy operacji do pliku w formacie _PDF_. Pobrany plik zawiera listę wszystkich operacji wchodzących w skład wyciągu (nie ma możliwości wygenerowania raportu częściowego).
+
+Zastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].
+
+W górnej część formularza WYCIĄGI dostępne są przyciski:
+
+* image:Rachunki/image21.png[image,width=45,height=53] – umożliwiający powrót do formularza RACHUNKI,
+
+* image:Rachunki/image22.png[image,width=48,height=61]– umożliwiający przejście do głównego menu.
+
+== Przeglądanie blokad na rachunku
+
+Aby przeglądnąć listę blokad danego rachunku należy na formularzu RACHUNKI kliknąć w obszar rachunku i wybrać przycisk [BLOKADY]. Wyświetlany jest wówczas formularz BLOKADY RACHUNKU prezentujący listę blokad dla rachunku.
+
+W ramach dostępnych rachunków Użytkownik ma możliwość również przeglądania bieżących autoryzacji transakcji, które zostały dokonane na wybranym rachunku, a nie zostały jeszcze rozliczone i zaksięgowane.
+
+image::Rachunki/image40.png[image,width=604,height=250]
+
+Na formularzu BLOKADY RACHUNKU prezentowane są następujące informacje:
+
+* *Data* – data blokady (data w formacie DD.MM.RRRR),
+* *Opis blokady* – opis blokady,
+* *Kwota* – kwota blokady wraz z walutą.
+
+Zdjęcie blokady powoduje, że nie jest ona dłużej widoczna dla Użytkownika. W przypadku, gdy nie ma blokad na rachunku wyświetlany jest komunikat: _Brak blokad do wyświetlenia_.
+
+image::Rachunki/image41.png[image,width=604,height=150]
+
+Lista blokad jest stronicowana. Przejście do kolejnych stron następuje poprzez wybór przycisków nawigacyjnych znajdujących się pod listą.
+
+image::Rachunki/image42.png[image,width=301,height=75]
+
+System umożliwia także filtrowanie listy blokad po wpisaniu danych w polu wyszukiwania:
+
+image::Rachunki/image43.png[image,width=355,height=56]
+
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnej blokady w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści.
+
+W przypadku, gdy lista blokad jest stronicowana filtrowanie list dotyczy zakresu wyłącznie bieżącej strony listy.
+
+W górnej części formularza BLOKADY RACHUNKU dostępne są przyciski:
+
+* image:Rachunki/image21.png[image,width=45,height=53] – umożliwiający powrót do formularza RACHUNKI,
+
+* image:Rachunki/image22.png[image,width=48,height=61]– umożliwiający przejście do głównego menu.
+
+== Nowy rachunek
+
+NOTE: Możliwość otwarcia nowego rachunku w bankowości internetowej jest dostępna po włączenu przełącznika accountOpening
+
+Aby możliwe było otwarcie rachunku przez klienta w bankowości elektronicznej wymagana jest:
+
+* prawidłowa konfiguracja udostępnienia produktu do edycji w systemie BackOffice,
+* zgodność klasyfikacji klienta z klasyfikacją udostępnionego produktu,
+* dla klienta firmowego - nadanie użytkownikowi uprawnienia funkcjonalnego "Otwarcie rachunku".
+
+Po spełnieniu powyższych wymagań dostępna jest opcja Rachunki -> Nowy Rachunek
+
+image:Rachunki/image46.jpg[]
+
+Na formularzu nowego rachunku prezentowane są:
+
+* rodzaj rachunku (gdy możliwe jest otwarcie z poziomu bankowości internetowej więcej niż jednego produktu typu Rachunek),
+* grafika dodana w konfiguracji produktu,
+* opis dodany w formie HTML w konfiguracji produktu dla danej wersji językowej,
+* lista dokumentów i linków przypisana do danego produktu w jego konfiguracji,
+* lista dostępnych pakietów danego produktu wraz z walutą zgodnie z konfiguracją edycji produktu.
+
+Przykład: gdy więcej niż jeden produkt jest dostępny do otwarcia z poziomu bankowości internetowej:
+
+image:Rachunki/image51.png[]
+
+Przykład – gdy jeden produkt jest dostępny do otwarcia z poziomu bankowości internetowej:
+
+image:Rachunki/image47.jpg[]
+
+Wyjątki do interpretacji konfiguracji:
+
+* w przypadku braku konfiguracji grafiki prezentowana jest grafika domyślna,
+* w sytuacji, gdy dla danej wersji językowej EBP nie przypisano opisu produktu lub nazwy pakietu wykorzystywane są dane dla języka PL,
+* w sytuacji, gdy dla pakietu nie dodano żadnej nazwy, wówczas wykorzystywana jest nazwa z systemu transakcyjnego (widoczna również na formularzu konfiguracyjnym).
+
+W przypadku, gdy dla danego produktu w systemie transakcyjnym oznaczono wymóg przypisania rachunku VAT,
+wówczas podczas otwierania produktu w walucie PLN zostanie zaprezentowana sekcja wyboru rachunku VAT.
+Użytkownik może powiązać z nowym rachunkiem bieżącym posiadany rachunek VAT lub wybrać utworzenie nowego rachunku VAT dedykowanego dla tego rachunku.
+
+Otwarcie nowego rachunku wymaga podpisu przypisaną metodą autoryzacji:
+
+image:Rachunki/image48.jpg[]
+
+Zapis zostanie potwierdzony komunikatem:
+
+image:Rachunki/image49.jpg[]
+
+W przypadku, gdy użytkownik posiada już maksymalną liczbę rachunków bieżących w walucie wybranego nowego rachunku,
+wówczas zostaje wyświetlony komunikat o braku możliwości dodania rachunku w tej walucie za pośrednictwem bankowości internetowej.
+
+Wartość sterowana parametrem z poziomu BackOffice (System -> Parametry): „Maksymalna liczba rachunków
+dedykowanego produktu we wskazanej walucie”
+
+image:Rachunki/image50.jpg[]
+
+NOTE: Funkcjonalność nowych rachunków dostępna jest dla Użytkownika, który posiada odpowiednie
+uprawnienia: do funkcjonalności i do rachunków. Uprawnienia ustawiane są przez
+Administratora Użytkownikow w opcji Ustawienia → Uprawnienia Użytkownikow.

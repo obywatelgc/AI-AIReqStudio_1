@@ -1,0 +1,54 @@
+:imagesdir: images
+
+[[skanowanie_kodu_QR_dla_przelewu_zwyklego]]
+== *Skanowanie danych z kodu QR dla przelewu zwykłego*
+
+Aplikacja mobilna umożliwia użytkownikowi *skanowanie danych z kodu QR* w momencie realizacji *przelewu zwykłego*. Funkcjonalność dostępna jest zarówno w kontekście indywidualnym, jak i firmowym klienta. +
+
+NOTE: Opcja skanowania danych z kodu QR dla przelewu zwykłego jest dostępna w zależności od konfiguracji w Banku.
+
+Użytkownik po zalogowaniu się do aplikacji mobilnej ma dostęp do funkcjonalności:
+
+* *z pulpitu*:
+
+** dla użytkownika korporacyjnego (stare grafiki), +
++
+image::codeQR_pulpit_F.jpg[120,220,align="center"]
+
+* *z ekranu przelewu zwykłego*:
+
+** dla użytkownika indywidualnego (nowe grafiki), +
++
+image::codeQR_przelew_D.jpg[120,220,align="center"]
+
+** dla użytkownika korporacyjnego (stare grafiki). +
++
+image::codeQR_przelew_F.jpg[120,220,align="center"]
+
+W celu zeskanowania danych z kodu QR i realizacji przelewu zwykłego użytkownik klika na ikonkę image:icons/cui_codeQR_ikonka.jpg[45,45] lub przycisk [SKANUJ KOD QR]. System prezentuje ekran z komunikatem informacyjnym.
+
+image::codeQR_komunikat.jpg[120,220,align="center"]
+
+Po wybraniu opcji *[Dalej]* system uruchamia aparat umożliwiający zeskanowanie kodu QR.
+
+image::codeQR_skaner.jpg[120,220,align="center"]
+
+Po zeskanowaniu kodu QR, system automatycznie zaczytuje dane w polach:
+
+* Odbiorca,
+* Numer rachunku,
+* Kwota - z możliwością edycji lub bez,
+* Tytuł przelewu.
+
+Dodatkowo na ekranie prezentuje się informacja z prośbą o sprawdzenie poprawności zeskanowanych danych.
+
+image::codeQR_przelew2.jpg[120,220,align="center"]
+
+W kolejnych krokach użytkownik realizuje przelew zgodnie z dotychczasową funkcjonalnością.
+
+W przypadku, gdy kod QR nie jest zgodny ze standardem _Związku Banków Polskich_, wówczas zostanie zaprezentowany stosowny komunikat informacyjny.
+
+image::codeQR_walidacja.jpg[120,220,align="center"]
+
+Użytkownik zatwierdza odczytanie informacji poprzez wybranie opcji *[OK, rozumiem]* lub poprzez zamknięcie okna informacyjnego opcją image:icons/cui_zamknij_green.jpg[25,25], po czym system powraca do ekranu przelewu zwykłego.
+

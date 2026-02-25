@@ -1,0 +1,202 @@
+:imagesdir: images
+
+[[autoryzacja_transakcji_z_kodu_blik_t6]]
+=== Autoryzacja transakcji z kodu BLIK
+
+W  procesie autoryzacji transakcji z kodu BLIK obsługiwane są zwykłe i szybkie płatności BLIK:
+
+* <<zwykla_platnosc_blik_t6,*_Zwykła Płatność_*>> - jest to transakcja realizowana przy pomocy "kodu BLIK", który został wygenerowany po zalogowaniu użytkownika do aplikacji mobilnej,
+* <<szybka_platnosc_blik_t6,*_Szybka Płatność_*>> - jest to transakcja realizowana przy pomocy "kodu BLIK", który został wygenerowany bez zalogowania użytkownika do aplikacji mobilnej.
+
+Po prawidłowym wygenerowaniu "kodu BLIK" (opis w rozdziale <<generowanie_kodu_blik,*_Generowanie kodu BLIK_*>>) i użyciu go w celu autoryzacji płatności, użytkownikowi wyświetlane są szczegóły autoryzowanej płatności.
+
+image::BLIK_T6_platnosc_bez_PIN.jpg[120,220,align="center"]
+
+Użytkownik ma możliwość:
+
+* dokonania akceptacji poprzez wybór przycisku [Akceptuj],
+* dokonanie odrzucenia poprzez wybór przycisku [Odrzuć].
+
+Dodatkowo na urządzenie mobilne użytkownika przychodzi powiadomienie PUSH z informacją o oczekującym zleceniu autoryzacyjnym BLIK. Treść powiadomienia PUSH zależy od rodzaju transakcji BLIK (płatność, wypłata, zwrot), np.:
+
+* "_Kliknij, aby potwierdzić płatność BLIKIEM_",
+* "_Kliknij, aby potwierdzić wypłatę BLIKIEM_",
+* "_Kliknij, aby potwierdzić zwrot BLIKIEM_".
+
+Gdy użytkownik znajduje się na ekranie z "kodem BLIK" i przyjdzie powiadomienie autoryzacyjne BLIK, wówczas automatycznie otwiera się ekran szczegółów autoryzacji BLIK.
+
+W przypadku, gdy aplikacja mobilna pracuje "w tle" urządzenia i przyjdzie powiadomienie PUSH o oczekującej transakcji BLIK, wówczas po kliknięciu na powiadomienie wyświetlany jest ekran szczegółów autoryzacji BLIK.
+
+W sytuacji, gdy użytkownik jest zalogowany do aplikacji mobilnej i jest otwarty inny ekran niż "kod BLIK", wówczas w momencie otrzymania powiadomienia PUSH o oczekującej autoryzacji BLIK, użytkownik automatycznie zostaje przekierowany na ekran szczegółów autoryzacji BLIK.
+
+Użytkownik może dokonać akceptacji transakcji:
+
+* jeżeli posiada wystarczające środki na rachunku powiązanym z usługą BLIK,
+* jeżeli kwota transakcji nie przekracza indywidualnych limitów klienta zdefiniowanych przez Bank na rachunku powiązanym z usługą BLIK (weryfikacja tylko w przypadku, gdy Bank ma włączoną taką funkcjonalność),
+* jeżeli kwota transakcji nie przekracza indywidualnych limitów klienta zdefiniowanych przez Bank na poziomie kanału dostępu użytkownika (weryfikacja tylko w przypadku, gdy Bank ma włączoną taką funkcjonalność),
+* jeżeli spełnione są warunki dziennych limitów zdefiniowanych przez użytkownika w aplikacji mobilnej w opcji "_Ustawienia -> Ustawienia BLIK -> Limity BLIK_".
+
+Akceptacja dyspozycji BLIK nie wymaga potwierdzenia kodem PIN:
+
+* jeżeli transakcja jest zlecona w trybie _Szybkiej Płatności_ (z ekranu logowania) oraz są spełnione poniższe warunki:
+** jest to transakcja płatności w sklepie za pomocą terminala POS,
+** kwota autoryzacji nie przekracza "_maksymalnej kwoty pojedynczej transakcji, do której użytkownik może zrealizować Szybką Płatność w sklepie bez użycia PIN_" (wartość parametryzowana przez Bank),
+** liczba Szybkich Płatności w sklepie za pomocą terminala POS wykonanych bez potwierdzenia PIN-em nie przekracza określonej liczby (wartość parametryzowana przez Bank); metoda kasowania licznika _Szybkich Płatności_ jest uzależniona od konfiguracji w Banku:
+*** po zatwierdzeniu dowolnej transakcji z użyciem PIN-u lub po zalogowaniu się do aplikacji mobilnej (za pomocą PIN-u lub biometrii),
+***  w kolejnym dniu o godzinie 0:00,
+* jeżeli transakcja jest zlecona w trybie _Zwykłej Płatności_ (po zalogowaniu do aplikacji mobilnej) i kwota autoryzacji nie przekracza "_maksymalnej kwoty pojedynczej transakcji, do której użytkownik może zrealizować Zwykłą Płatność bez użycia PIN_" (wartość parametryzowana przez Bank).
+
+W pozostałych przypadkach niewymienionych powyżej, akceptacja dyspozycji BLIK wymaga potwierdzenia kodem PIN.
+
+WARNING: Wyjątkowym typem transakcji jest "_zwrot płatności w sklepie za pomocą terminala POS_" - dla tego typu transakcji akceptacja zawsze odbywa się bez podawania kodu PIN.
+
+[[zwykla_platnosc_blik_t6]]
+==== Zwykła Płatność
+
+*_Zwykła Płatność_* jest to transakcja realizowana przy pomocy "kodu BLIK", który został wygenerowany po zalogowaniu użytkownika do aplikacji mobilnej.
+
+W celu realizacji _Zwykłej Płatności_ użytkownik loguje się do aplikacji mobilnej i wybiera w dolnym menu opcję *[BLIK]*. System przechodzi do ekranu z wygenerowanym kodem BLIK.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_wlacz_blika--dolne_menu.jpg[120,220,align="center"]
+| image::BLIK_kod_prezentacja_salda.jpg[120,220,align="center"]
+|===
+
+Po użyciu kodu BLIK w celu autoryzacji płatności/wypłaty/zwrotu, użytkownikowi wyświetlany jest ekran ze szczegółami transakcji realizowanej w trybie _Zwykłej Płatności_. Na formatce prezentują się następujące dane:
+
+* logo BLIK,
+* informacja o rodzaju transakcji,
+* kwota transakcji,
+* szczegóły transakcji,
+* zegar odliczania czasu pozostałego na akceptację/odrzucenie dyspozycji,
+* opcja [Akceptuj] pozwalająca na akceptację transakcji,
+* opcja [Odrzuć] pozwalająca na odrzucenie transakcji.
+
+image::BLIK_T6_platnosc_bez_PIN.jpg[120,220,align="center"]
+
+Dla transakcji, która nie wymaga potwierdzenia kodem PIN, po kliknięciu na przycisk *[Akceptuj]* system akceptuje dyspozycję i użytkownikowi wyświetlany jest odpowiedni komunikat. Po kliknięciu na przycisk [Zamknij] użytkownik jest przenoszony na ekran _Pulpitu_.
+
+image::BLIK_T6_platnosc_bez_PIN_zaakceptowana.jpg[120,220,align="center"]
+
+WARNING: Jeżeli kwota autoryzacji nie przekracza parametru "_maksymalnej kwoty pojedynczej transakcji, do której użytkownik może zrealizować Zwykłą Płatność bez użycia PIN_" (wartość parametryzowana przez Bank), wówczas transakcja _Zwykłej Płatności_ nie wymaga autoryzacji przy pomocy kodu PIN.
+
+W przypadku transakcji, która wymaga potwierdzenia kodem PIN, nad przyciskiem [Akceptuj] prezentowany jest opis "_Potwierdzenie kodem PIN jest wymagane_". Wówczas po kliknięciu na *[Akceptuj]* pojawia się dodatkowo ekran do autoryzacji kodem PIN. Po wprowadzeniu prawidłowego kodu PIN system akceptuje dyspozycję i użytkownikowi wyświetlany jest odpowiedni komunikat. Po kliknięciu na przycisk [Zamknij] użytkownik jest przenoszony na ekran _Pulpitu_.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::BLIK_T6_platnosc_z_PIN.jpg[120,220,align="center"]
+| image::BLIK_T6_platnosc_z_PIN_autoryzacja.jpg[120,220,align="center"]
+| image::BLIK_T6_platnosc_z_PIN_zaakceptowana.jpg[120,220,align="center"]
+|===
+
+WARNING: Wyjątkowym typem transakcji jest "_zwrot płatności w sklepie za pomocą terminala POS_" - dla tego typu transakcji akceptacja zawsze odbywa się bez podawania kodu PIN.
+
+Jeżeli użytkownik nie dokonał akceptacji w określonym czasie, wówczas pojawia się ekran z informacją, że upłynął czas na potwierdzenie dyspozycji. System automatycznie anuluje blokadę autoryzacyjną na rachunku na kwotę transakcji.
+
+image::BLIK_T6_platnosc_przekroczony_czas.jpg[120,220,align="center"]
+
+Proces odrzucenia transakcji został opisany w rozdziale <<odrzucenie_transakcji_blik_t6,*_Odrzucenie transakcji_*>>.
+
+
+
+[[szybka_platnosc_blik_t6]]
+==== Szybka Płatność
+
+*_Szybka Płatność_* jest to transakcja realizowana przy pomocy "kodu BLIK", który został wygenerowany bez zalogowania użytkownika do aplikacji mobilnej.
+
+Szczególnym typem _Szybkiej Płatności_ jest "_płatność w sklepie za pomocą terminala POS_", która po spełnieniu określonych parametrów ilościowych i kwotowych nie wymaga autoryzacji przy pomocy PIN-u.
+
+NOTE: Parametry "_Szybkich Płatności w sklepie bez użycia PIN_" definiowane są przez Bank. Zalecane wytyczne przez PSP (Polski Standard Płatności) to 5 kolejnych transakcji w sklepie do 50 PLN.
+
+Jeżeli dla danego użytkownika liczba kolejnych "_Szybkich Płatności w sklepie bez użycia PIN_" przekroczy skonfigurowaną przez Bank maksymalną wartość, wówczas dla kolejnej "_Szybkiej Płatności w sklepie za pomocą terminala POS"_ system wymaga autoryzacji kodem PIN aż do momentu skasowania licznika.
+
+Metoda kasowania licznika "_Szybkich Płatności w sklepie bez użycia PIN_" jest uzależniona od konfiguracji w Banku:
+
+* po zatwierdzeniu dowolnej transakcji z użyciem PIN-u lub po zalogowaniu się do aplikacji mobilnej (za pomocą PIN-u lub biometrii),
+*  w kolejnym dniu o godzinie 0:00.
+
+Włączenie zgody na "_Szybkie Płatności bez PIN_" odbywa się w aplikacji mobilnej, w opcji "_Ustawienia -> Ustawienia BLIK_". Zostało to opisane w rozdziale <<BLIK_zgoda_na_realizacje_szybkich_platnosci,*_Zgoda na realizację Szybkich Płatności_*>>.
+
+WARNING: Gdy zgoda na "_Szybkie Płatności bez PIN_" jest wyłączona i użytkownik na stronie powitalnej aplikacji mobilnej wybierze opcję [Kod BLIK], wówczas otwiera się ekran logowania do aplikacji. Po prawidłowej autoryzacji użytkownik zostaje zalogowany do aplikacji mobilnej i od razu otwiera się ekran z kodem BLIK. Wówczas transakcja obsługiwana jest w formie _Zwykłej Płatności_.
+
+W pierwszej kolejności użytkownik włącza zgodę na "_Szybkie Płatności bez PIN_". Następnie w celu realizacji _Szybkiej Płatności_ użytkownik na stronie powitalnej aplikacji mobilnej wybiera opcję *[Kod BLIK]*. System przechodzi do ekranu z wygenerowanym kodem BLIK.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_ekran_logowania--zaznaczona_opcja_kod_BLIK.jpg[120,220,align="center"]
+| image::BLIK_generowanie_kodu_z_ekranu_logowania.jpg[120,220,align="center"]
+|===
+
+Po użyciu kodu BLIK w celu autoryzacji płatności/wypłaty/zwrotu, użytkownikowi wyświetlany jest ekran ze szczegółami transakcji realizowanej w trybie _Szybkiej Płatności_. Na formatce prezentują się następujące dane:
+
+* logo BLIK,
+* informacja o rodzaju transakcji,
+* kwota transakcji,
+* szczegóły transakcji,
+* zegar odliczania czasu pozostałego na akceptację/odrzucenie dyspozycji,
+* opcja [Akceptuj] pozwalająca na akceptację transakcji,
+* opcja [Odrzuć] pozwalająca na odrzucenie transakcji.
+
+image::BLIK_T6_szybka_platnosc_bez_PIN.jpg[120,220,align="center"]
+
+Jeżeli transakcja dotyczy "_płatności w sklepie za pomocą terminala POS_" i są spełnione warunki na akceptację bez podawania PIN-u (ilościowe i kwotowe), wówczas po kliknięciu na opcję *[Akceptuj]* transakcja zostaje zaakceptowana, a użytkownikowi zostaje wyświetlony stosowny komunikat. Po kliknięciu na przycisk [Zamknij] użytkownik jest przenoszony na stronę powitalną aplikacji mobilnej.
+
+image::BLIK_T6_szybka_platnosc_bez_PIN_zaakceptowana.jpg[120,220,align="center"]
+
+Jeżeli nie zostały spełnione warunki na akceptację bez podawania PIN-u, to na ekranie ze szczegółami transakcji nad przyciskiem [Akceptuj] prezentowany jest opis "_Potwierdzenie kodem PIN jest wymagane_". Wówczas po kliknięciu na *[Akceptuj]* pojawia się dodatkowo ekran do autoryzacji kodem PIN. Po wprowadzeniu prawidłowego kodu PIN system akceptuje dyspozycję i użytkownikowi wyświetlany jest odpowiedni komunikat. Natomiast po kliknięciu na przycisk [Zamknij] użytkownik jest przenoszony na stronę powitalną aplikacji mobilnej.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::BLIK_T6_szybka_platnosc_z_PIN.jpg[120,220,align="center"]
+| image::BLIK_T6_szybka_platnosc_z_PIN_autoryzacja.jpg[120,220,align="center"]
+| image::BLIK_T6_szybka_platnosc_z_PIN_zaakceptowana.jpg[120,220,align="center"]
+|===
+
+WARNING: Wyjątkowym typem transakcji jest "_zwrot płatności w sklepie za pomocą terminala POS_" - dla tego typu transakcji akceptacja zawsze odbywa się bez podawania kodu PIN.
+
+Jeżeli użytkownik nie dokonał akceptacji w określonym czasie, wówczas pojawia się ekran z informacją, że upłynął czas na potwierdzenie dyspozycji. System automatycznie anuluje blokadę autoryzacyjną na rachunku na kwotę transakcji.
+
+image::BLIK_T6_szybka_platnosc_przekroczony_czas.jpg[120,220,align="center"]
+
+Odrzucenie _Szybkiej Płatności_ odbywa się na takich samych zasadach jak dla _Zwykłej Płatności_. Szczegóły opisano w rozdziale <<odrzucenie_transakcji_blik_t6,*_Odrzucenie transakcji_*>>.
+
+
+
+[[odrzucenie_transakcji_blik_t6]]
+==== Odrzucenie transakcji
+
+Po wygenerowaniu "kodu BLIK" i użyciu go w celu autoryzacji płatności/wypłaty/zwrotu, użytkownikowi wyświetlany jest ekran ze szczegółami transakcji.
+
+image::BLIK_T6_platnosc_z_PIN.jpg[120,220,align="center"]
+
+Aby odrzucić transakcję, należy wybrać opcję *[Odrzuć]*. Transakcja zostaje odrzucona, a użytkownikowi wyświetlany jest stosowny komunikat. System automatycznie anuluje blokadę autoryzacyjną na rachunku na kwotę transakcji.
+
+image::BLIK_T6_platnosc_odrzucona.jpg[120,220,align="center"]
+
+NOTE: Odrzucenie transakcji nie wymaga akceptacji kodem PIN.
+
+Jeżeli podczas realizacji transakcji BLIK zostanie przekroczony dzienny limit (kwotowy lub ilościowy) zdefiniowany w aplikacji mobilnej w opcji "_Ustawienia -> Ustawienia BLIK -> Limity BLIK_", wówczas użytkownikowi wyświetlany jest stosowny komunikat. Treść komunikatu jest zależna od rodzaju transakcji BLIK.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_T6_platnosc_przekroczony_limit_kwotowy.jpg[120,220,align="center"]
+| image::BLIK_T6_platnosc_przekroczony_limit_ilosciowy.jpg[120,220,align="center"]
+|===
+
+[WARNING]
+====
+Jeżeli podczas realizacji transakcji BLIK kwota autoryzacji przekroczy limit jednorazowy lub limit dzienny zdefiniowany przez Bank na rachunku powiązanym z usługą BLIK, wówczas użytkownikowi wyświetlany jest stosowny komunikat: "_Przekroczyłeś limit płatności w aplikacji mobilnej_". +
+Analogiczny komunikat jest prezentowany w przypadku przekroczenia limitów zdefiniowanych przez Bank na poziomie kanału dostępu użytkownika. +
+Weryfikacja powyższych limitów wystąpi tylko w przypadku, gdy Bank ma włączoną taką funkcjonalność.
+//Steruje tym parametr "decreaseChannelLimit" definiowany w konfiguracji tenanta banku.
+====
+
+image::BLIK_T6_platnosc_przekroczony_limit_aplikacji_mobilnej.jpg[120,220,align="center"]
+
+Jeżeli podczas realizacji transakcji BLIK użytkownik nie posiada wystarczających środków na rachunku powiązanym z usługą BLIK, wówczas użytkownikowi wyświetlany jest stosowny komunikat.
+
+image::BLIK_T6_platnosc_brak_srodkow_na_rachunku.jpg[120,220,align="center"]
+
+WARNING: Wyjątkowym typem transakcji jest "_zwrot płatności w sklepie za pomocą terminala POS_" - dla tego typu transakcji nie są kontrolowane limity jednorazowe, dzienne, ilościowe oraz dostępne saldo na rachunku.
+

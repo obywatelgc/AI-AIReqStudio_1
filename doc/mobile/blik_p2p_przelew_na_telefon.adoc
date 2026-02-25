@@ -1,0 +1,175 @@
+:imagesdir: images
+
+[[przelew_na_telefon]]
+=== Przelew na telefon BLIK
+
+*_Przelew na telefon BLIK_* to usługa BLIK umożliwiająca:
+
+* wysyłanie przelewów na telefon do innych użytkowników,
+* odbieranie przelewów na telefon,
+* zarządzanie funkcjonalnością przelewu na telefon.
+
+*_Przelew na telefon BLIK_* jest to transakcja mobilna, gdzie beneficjent wskazywany jest poprzez podanie jego numeru telefonu.
+
+Obsługa takiej transakcji realizowana jest jako:
+
+* przelew zewnętrzny natychmiastowy (Express Elixir) na rachunek Odbiorcy powiązany z podanym numerem telefonu, gdy Nadawca i Odbiorca są klientami w różnych bankach,
+* przelew wewnętrzny na rachunek Odbiorcy powiązany z podanym numerem telefonu, gdy Nadawca i Odbiorca są klientami w tym samym banku.
+
+System pozwala użytkownikowi wysłać przelew na telefon BLIK w przypadku, gdy w opcji "*_Ustawienia -> Ustawienia BLIK_*" włączył on usługę BLIKA.
+
+Natomiast gdy użytkownik chce otrzymywać przelewy na telefon BLIK od innych osób, to oprócz włączonej usługi BLIKA musi w opcji "*_Ustawienia -> Ustawienia BLIK_*" dodatkowo włączyć zgodę "_Odbieraj przelewy BLIKIEM_".
+
+image::BLIK_P2PR_wlaczenie_zgod.jpg[120,220,align="center"]
+
+WARNING: Funkcjonalność *_Przelewu na telefon BLIK_* jest dostępna tylko w kontekście indywidualnym. Usługa BLIK musi być włączona w kontekście klienta indywidualnego.
+
+Użytkownikowi, który ma wyłączoną usługę BLIK, podczas próby przejścia do opcji tworzenia nowego przelewu na telefon BLIK, system prezentuje stosowny ekran z informacją, aby włączyć BLIKA.
+
+image::BLIK_P2P_wylaczony_BLIK_nowy_przelew.jpg[120,220,align="center"]
+
+
+
+[[P2P_wyslanie_przelewu_na_telefon_BLIK]]
+==== Wysłanie przelewu na telefon BLIK
+
+Opcja do tworzenia nowego przelewu na telefon BLIK jest dostępna w aplikacji mobilnej:
+
+* na formatce z kodem BLIK z poziomu ekranu logowania;
+* na formatce z kodem BLIK z poziomu ekranu po zalogowaniu do aplikacji;
+* w opcji "_Przelewy -> Wykonaj przelew_".
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2P_opcja_przelewu_na_telefon_1.jpg[120,220,align="center"]
+| image::BLIK_P2P_opcja_przelewu_na_telefon_2.jpg[120,220,align="center"]
+| image::BLIK_P2P_opcja_przelewu_na_telefon_3.jpg[120,220,align="center"]
+|===
+
+Po wybraniu opcji użytkownikowi prezentowany jest ekran *_Wykonaj przelew_* z ustawioną pozycją *_Przelew na telefon BLIK_*.
+
+image::BLIK_P2P_nowy_przelew_krok_1.jpg[120,220,align="center"]
+
+Na ekranie prezentowane są następujące dane:
+
+* *Przelew z rachunku* - sekcja zawierająca nazwę, numer oraz saldo rachunku przypisanego do usługi BLIK,
+
+* *Numer telefonu odbiorcy* - pole do wpisania numeru telefonu:
+** domyślnie uzupełnione wartością "+48" z możliwością dowolnej edycji - system akceptuje wartości z plusem na początku, a także same cyfry bez plusa,
+** minimalna możliwa do wpisania liczba cyfr to 7 cyfr bez plusa,
+** maksymalna możliwa liczba cyfr to 15 cyfr bez plusa,
+** w przypadku wybrania kontaktu z książki telefonicznej system uzupełnia pole numeru danymi z książki,
+
+* *ikona* image:icons/BLIK_ludzik_do_ksiazki_tel.jpg[25,25] - opcja dostępu do książki adresowej urządzenia:
+** możliwość wybrania odbiorcy z książki telefonicznej (dla użytkowników, którzy mają włączoną zgodę odbierania przelewów BLIKIEM, system prezentuje przy pozycji ikonę BLIKA),
+** możliwość wyszukania kontaktu w książce,
+** dostępna sekcja "_Ostatnie_" zawierająca maksymalnie 3 ostatnio wybrane pozycje,
+** dostępna sekcja "_Kontakty_" zawierająca wszystkie kontakty z książki,
+** jeżeli użytkownik nie zezwolił lub zabierze aplikacji mobilnej dostęp do kontaktów, wówczas w sekcji "_Kontakty_" system zaprezentuje komunikat "_Brak kontaktów_",
+
+image::BLIK_P2P_nowy_przelew_krok_1_lista_kontaktow.jpg[120,220,align="center"]
+
+* *Odbiorca* - pole do podania danych odbiorcy, maksymalnie 35 znaków, w przypadku wybrania kontaktu z książki telefonicznej system uzupełnia pole odbiorcy danymi z książki,
+
+* *Kwota* - pole do podania kwoty przelewu w walucie PLN,
+
+* *Tytuł przelewu* - pole domyślnie uzupełnione przez system wartością "_Przelew na telefon BLIK_", pole umożliwia podanie własnego tytułu, maksymalnie 105 znaków,
+
+* komunikat o treści: "_Klikając 'Dalej' akceptuję, że niezbędne będzie przekazanie Odbiorcy informacji o numerze rachunku, z którego dokonany zostanie przelew_",
+
+* *[Dalej]* - przycisk umożliwiający przejście do kolejnego kroku przelewu.
+
+Aby zatwierdzić wprowadzone dane, należy kliknąć na opcję *[Dalej]*, po wybraniu której system dokonuje sprawdzenia:
+
+* podania wszystkich wymaganych danych,
+* poprawności wprowadzonych danych,
+* czy podany numer telefonu odbiorcy ma włączoną opcję odbierania przelewów BLIKIEM,
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2P_nowy_przelew_krok_1_walidacja_1.jpg[120,220,align="center"]
+| image::BLIK_P2P_nowy_przelew_krok_1_walidacja_2.jpg[120,220,align="center"]
+| image::BLIK_P2P_nowy_przelew_krok_1_walidacja_3.jpg[120,220,align="center"]
+|===
+
+* czy podany numer telefonu odbiorcy nie jest taki sam jak numer telefonu nadawcy,
+* czy kwota przelewu nie przekracza dostępnych środków na rachunku,
+* limitu kwotowego pojedynczego przelewu na telefon BLIK zdefiniowanego w aplikacji mobilnej w opcji "_Ustawienia -> Ustawienia BLIK -> Limity BLIK_",
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2P_nowy_przelew_krok_1_walidacja_4.jpg[120,220,align="center"]
+| image::BLIK_P2P_nowy_przelew_krok_1_walidacja_5.jpg[120,220,align="center"]
+| image::BLIK_P2P_nowy_przelew_krok_1_walidacja_6.jpg[120,220,align="center"]
+|===
+
+* dziennego limitu kwotowego przelewów na telefon BLIK zdefiniowanego w aplikacji mobilnej w opcji "_Ustawienia -> Ustawienia BLIK -> Limity BLIK_",
+* dziennego limitu ilościowego przelewów na telefon BLIK zdefiniowanego w aplikacji mobilnej w opcji "_Ustawienia -> Ustawienia BLIK -> Limity BLIK_" (weryfikacja tylko w przypadku, gdy Bank ma włączoną taką funkcjonalność),
+* limitów jednorazowych/dziennych zdefiniowanych przez Bank na poziomie kanału dostępu użytkownika oraz limitów jednorazowych/dziennych zdefiniowanych przez Bank na rachunku użytkownika powiązanym z usługą BLIK (weryfikacja tylko w przypadku, gdy Bank ma włączoną taką funkcjonalność).
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2P_nowy_przelew_krok_1_walidacja_7.jpg[120,220,align="center"]
+| image::BLIK_P2P_nowy_przelew_krok_1_walidacja_8.jpg[120,220,align="center"]
+| image::BLIK_P2P_nowy_przelew_krok_1_walidacja_9.jpg[120,220,align="center"]
+|===
+
+Jeśli sprawdzenie nie przebiegło pomyślnie, użytkownikowi zostaną zaprezentowane odpowiednie komunikaty walidacyjne.
+
+W przypadku pozytywnego sprawdzenia wszystkich parametrów system przechodzi do kroku podsumowania.
+
+Na ekranie podsumowania prezentowane są następujące dane w trybie podglądu:
+
+* rodzaj przelewu: "_Przelew na telefon BLIK_",
+* numer rachunku użytkownika przypisany do usługi BLIK, z którego zostanie wysłany przelew,
+* dane odbiorcy przelewu zawierające nazwę odbiorcy oraz jego numer telefonu,
+* komunikat o treści: "_Numer telefonu jest zarejestrowany w BLIKU. Odbiorca otrzyma przelew natychmiast, a środki trafią na powiązany z numerem telefonu rachunek_",
+* kwota przelewu w walucie PLN,
+* tytuł przelewu,
+* informacja dotycząca prowizji za przelew.
+
+image::BLIK_P2P_nowy_przelew_krok_2_podsumowanie.jpg[120,220,align="center"]
+
+Dodatkowo system prezentuje komunikat o konieczności akceptacji dyspozycji kodem PIN, z możliwością przejścia do akceptacji lub odrzucenia transakcji.
+
+W przypadku wybrania opcji *[Odrzuć]* system anuluje dyspozycję i wyświetla odpowiedni komunikat.
+
+image::BLIK_P2P_nowy_przelew_krok_2_odrzucenie.jpg[120,220,align="center"]
+
+W przypadku wybrania opcji *[Akceptuj]* wyświetlany jest ekran autoryzacji PIN-em, umożliwiający akceptację lub odrzucenie dyspozycji.
+
+image::BLIK_P2P_nowy_przelew_krok_2_autoryzacja.jpg[120,220,align="center"]
+
+Użytkownik wykonuje autoryzację poprzez wprowadzenie prawidłowego kodu PIN i wybranie przycisku *[Akceptuj]*. System sprawdza poprawność autoryzacji, wysyła przelew do realizacji, a użytkownikowi prezentowany jest komunikat potwierdzający przekazanie transakcji do realizacji.
+
+image::BLIK_P2P_nowy_przelew_krok_2_potwierdzenie_wyslania.jpg[120,220,align="center"]
+
+Środki przesyłane są na konto Odbiorcy poprzez przelew zewnętrzny natychmiastowy (Nadawca i Odbiorca są w różnych bankach) lub poprzez przelew wewnętrzny (Nadawca i Odbiorca są w tym samym banku).
+
+Po zaksięgowaniu przelewu do użytkownika (Nadawcy przelewu) przychodzi powiadomienie PUSH o przykładowej treści: "_Zrealizowaliśmy przelew na telefon na numer: 48XXXXXXXXX_".
+
+NOTE: W przypadku, gdy podczas realizacji przelewu wystąpi problem natury technicznej i przelew nie zostanie zrealizowany, wówczas do użytkownika (Nadawcy przelewu) przychodzi powiadomienie PUSH o przykładowej treści: "_Nie udało się zrealizować przelewu na telefon na numer: 48XXXXXXXXX_".
+
+Informacja o zrealizowaniu transakcji prezentowana jest użytkownikowi w historii rachunku, z którego został wysłany przelew - czyli na rachunku, który został powiązany z usługą BLIK w opcji "_Ustawienia -> Ustawienia BLIK_".
+
+image::BLIK_P2P_przelew_wychodzacy_w_historii_transakcji.jpg[120,220,align="center"]
+
+
+
+[[P2P_odbieranie_przelewu_na_telefon_BLIK]]
+==== Odbieranie przelewu na telefon BLIK
+
+Użytkownikowi, który ma włączoną usługę BLIK oraz w opcji "_Ustawienia -> Ustawienia BLIK_" wyraził zgodę "_Odbieraj przelewy BLIKIEM_", udostępniana jest funkcjonalność odbierania przelewów na telefon.
+
+Odbieranie *_przelewu na telefon BLIK_* realizowane jest przez system w momencie otrzymania informacji o zaksięgowaniu przychodzącej transakcji przelewu na telefon. Do użytkownika przychodzi powiadomienie PUSH o przykładowej treści: "_Otrzymałeś przelew na telefon na kwotę XXX PLN_".
+
+NOTE: Powiadomienie PUSH jest wysyłane, gdy przelew na telefon jest realizowany jako przelew natychmiastowy Express Elixir. Natomiast gdy przelew na telefon jest realizowany jako przelew wewnętrzny, wówczas powiadomienie PUSH nie jest wysyłane.
+
+Po kliknięciu na powiadomienie PUSH system przechodzi na formatkę szczegółów powiadomienia. Powiadomienie standardowo zapisywane jest w opcji "_Powiadomienia_".
+
+image::BLIK_P2P_powiadomienie_o_otrzymaniu_przelewu.jpg[120,220,align="center"]
+
+Informacja o otrzymanej transakcji przelewu na telefon prezentowana jest użytkownikowi w historii rachunku, który został powiązany z usługą BLIK.
+
+image::BLIK_P2P_przelew_przychodzacy_w_historii_transakcji.jpg[120,220,align="center"]
+

@@ -1,0 +1,102 @@
+:imagesdir: images
+
+[[powiadomienia]]
+== *Powiadomienia*
+
+Funkcjonalność *Powiadomienia* udostępnia użytkownikowi:
+
+* szybką informację w postaci powiadomień PUSH,
+* listę powiadomień wraz z:
+    ** wyświetleniem szczegółów powiadomienia z możliwością usunięcia,
+    ** zbiorczym usuwaniem powiadomień,
+    ** zbiorczym odczytywaniem powiadomień.
+
+Aby przejść do listy powiadomień, należy po zalogowaniu do aplikacji mobilnej kliknąć na ikonkę image:icons/cui_menu_ludzik_green_newUI.jpg[25,25,align="center"] znajdującą się w prawym górnym rogu ekranu, a następnie wybrać opcję *[Powiadomienia]*.
+
+image::cui_powiadomienia--z_menu_ludzik_green.jpg[120,220,align="center"]
+
+System prezentuje *_licznik_* przy ikonie "_Powiadomienia_", który informuje o ilości nowych powiadomień na liście. Po usunięciu lub odczytaniu nowego powiadomienia licznik zostaje automatycznie odświeżony.
+
+
+
+=== Powiadomienia PUSH
+
+Powiadomienia PUSH dotyczą informacji związanych z:
+
+* powiadomieniami informacyjnymi (definiowane w systemie BackOffice na poziomie klienta detalicznego oraz klienta firmowego), np.:
+    ** informacja o zrealizowaniu przelewu,
+    ** informacja o poprawnym zalogowaniu do bankowości internetowej w kontekście danego użytkownika,
+* powiadomieniami informacyjnymi powiązanymi z wiadomościami wysyłanymi do wielu użytkowników poprzez system BackOffice,
+* powiadomieniami autoryzacyjnymi nowych zleceń definiowanych w systemie Asseco EBP, np.:
+    ** autoryzacja logowania,
+    ** autoryzacja przelewu,
+* powiadomieniami autoryzacyjnymi nowych zleceń BLIK.
+
+Powiadomienia PUSH wyświetlane są zarówno gdy użytkownik jest zalogowany i korzysta z aplikacji hybrydowej, jak i w momencie niekorzystania z systemu.
+Po wyświetleniu i kliknięciu na komunikat PUSH, użytkownik automatycznie zostaje przekierowany do strony logowania do aplikacji hybrydowej. +
+W przypadku gdy użytkownik jest zalogowany w aplikacji mobilnej i system otrzymuje informacje o nowym zleceniu do autoryzacji z systemu Asseco EBP, wówczas po kliknięciu na PUSH wyświetlany jest ekran autoryzacji tego zlecenia. Analogicznie jest w przypadku otrzymania powiadomienia informacyjnego (np. o zrealizowaniu przelewu) - po kliknięciu na PUSH wyświetlany jest ekran danego powiadomienia. +
+Natomiast gdy użytkownik jest zalogowany i system otrzyma powiadomienie PUSH o oczekującej autoryzacji wygenerowanej z kodu BLIK, wówczas użytkownik automatycznie zostaje przekierowany na ekran autoryzacji BLIK.
+
+
+
+=== Lista powiadomień
+
+Aby przejść do *Listy powiadomień*, należy kliknąć na ikonkę image:icons/cui_menu_ludzik_green_newUI.jpg[25,25,align="center"] znajdującą się w prawym górnym rogu ekranu, a następnie wybrać opcję *[Powiadomienia]*.
+
+image::cui_powiadomienia--z_menu_ludzik_green.jpg[120,220,align="center"]
+
+Użytkownikowi wyświetlana jest lista powiadomień.
+
+image::cui_powiadomienia_lista_green.jpg[120,220,align="center"]
+
+Lista wyświetla powiadomienia przychodzące w kolejności chronologicznej. Dla każdego powiadomienia na liście wyświetlane są następujące informacje:
+
+* czas utworzenia powiadomienia w formacie DD.MM.RRRR (dla powiadomień z poprzednich dni) lub ile sekund/minut/godzin upłynęło od nadejścia powiadomienia (dla powiadomień z dnia bieżącego),
+* tytuł powiadomienia, wyróżniony pogrubieniem dla powiadomień nieodczytanych,
+* status powiadomienia w postaci znaku graficznego:
+  ** image:icons/cui_powiadomienie_odczytane_green.jpg[30,30] - powiadomienie odczytane,
+  ** image:icons/cui_powiadomienie_nieodczytane_green.jpg[30,30] - powiadomienie nieodczytane.
+
+Wybór pozycji na liście  przenosi użytkownika do podglądu szczegółów powiadomienia, które zawiera:
+
+* podstawowe informacje: tytuł, data utworzenia powiadomienia,
+* dodatkowe informacje dotyczące wybranego typu powiadomienia,
+* [Usuń powiadomienie] - opcja umożliwiająca usunięcie powiadomienia.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_powiadomienia_szczegoly_1_green.jpg[120,220,align="center"]
+| image::cui_powiadomienia_szczegoly_2_green.jpg[120,220,align="center"]
+|===
+
+NOTE: W górnej części formatki powiadomień dostępny jest przycisk image:icons/cui_cofnij_green.jpg[25,25] umożliwiający powrót do poprzedniego ekranu.
+
+Po użyciu opcji [Usuń powiadomienie] pojawia się ekran potwierdzający usunięcie powiadomienia. Usunięcie nie wymaga akceptacji kodem PIN. Po kliknięciu na przycisk [OK] system powraca na listę powiadomień.
+
+image::cui_powiadomienia_szczegoly_potwierdzenie_usuniecia_green.jpg[120,220,align="center"]
+
+Użytkownik ma możliwość zarządzania listą poprzez *zbiorcze zarządzanie usuwaniem i odczytywaniem powiadomień*. Aby przejść do trybu edycji listy, należy w wybranym wierszu listy przytrzymać dłużej palec lub kliknąć na opcję [ZARZĄDZAJ].
+
+image::cui_powiadomienia_zarzadzaj_green.jpg[120,220,align="center"]
+
+Formularz *Powiadomienia* w trybie edycji prezentuje:
+
+* przy każdym powiadomieniu checkbox z możliwością:
+   ** image:icons/cui_checkbox_niezaznaczony.jpg[25,25,align="center"] - zaznaczenia (domyślnie checkboxy nie są zaznaczone),
+   ** image:icons/cui_checkbox_zaznaczony.jpg[25,25,align="center"] - odznaczenia,
+* dodatkowe dolne menu z akcjami:
+    ** image:icons/cui_zaznacz_powiadomienia.jpg[25,25] - umożliwia zaznaczenie/odznaczenie wszystkich powiadomień widocznych na stronie,
+    ** [Oznacz jako przeczytane] - opcja umożliwia zbiorczą zmianę statusu na powiadomienia odczytane (dla wybranych powiadomień),
+    ** image:icons/cui_usun_powiadomienia.jpg[25,25] - umożliwia zbiorcze usunięcie powiadomień z listy (dla wybranych powiadomień),
+ * dodatkową akcję [ZAKOŃCZ] w górnym menu, umożliwiającą zakończenie edycji listy powiadomień.
+
+Po zaznaczeniu powiadomień na liście i kliknięciu na opcję [Oznacz jako przeczytane], system zmienia status tych powiadomień na odczytane oraz wychodzi z trybu edycji. Akcja ta nie wymaga akceptacji kodem PIN.
+
+W przypadku zbiorczego usuwania powiadomień po kliknięciu na opcję image:icons/cui_usun_powiadomienia.jpg[25,25] system wyświetla odpowiedni komunikat ostrzegawczy. Po zaakceptowaniu przyciskiem [Usuń] wybrane powiadomienia zostają usunięte, a użytkownik zostaje poinformowany o tym fakcie. Akcja usunięcia nie wymaga akceptacji kodem PIN. Po kliknięciu na przycisk [OK] system powraca na listę powiadomień w trybie podglądu.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_powiadomienia_zarzadzaj_usun_green.jpg[120,220,align="center"]
+| image::cui_powiadomienia_zarzadzaj_usun_potwierdzenie_green.jpg[120,220,align="center"]
+|===
+

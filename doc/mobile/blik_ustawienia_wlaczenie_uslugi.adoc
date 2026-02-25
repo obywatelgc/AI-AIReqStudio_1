@@ -1,0 +1,11 @@
+:imagesdir: images
+
+==== Włączenie i wyłącznie usługi BLIK
+
+Włączenie i wyłączenie usługi BLIK realizowane jest poprzez przesunięcie suwaka na odpowiednią pozycję:
+
+* image:icons/BLIK_suwak_wylaczony.jpg[35,35] - usługa BLIK jest wyłączona i obok suwaka prezentowany jest opis "Włącz BLIKA",
+* image:icons/BLIK_suwak_wlaczony.jpg[35,35] - usługa BLIK jest włączona i obok suwaka prezentowany jest opis "Wyłącz BLIKA".
+
+Szczegółowy opis procesu został przedstawiony w rozdziale <<aktywacja_uslugi,*_Aktywacja usługi BLIK_*>> oraz <<dezaktywacja_uslugi_BLIK,*_Dezaktywacja usługi BLIK_*>>.
+

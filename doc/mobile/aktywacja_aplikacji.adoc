@@ -1,0 +1,365 @@
+:imagesdir: images
+
+[[aktywacja_aplikacji]]
+== *Aktywacja aplikacji z udziałem bankowości internetowej*
+
+Po zainstalowaniu na danym urządzeniu aplikacji hybrydowej, w pierwszej kolejności aplikacja wymaga aktywacji.
+
+//WARNING: *Aktywacja aplikacji jest czynnością jednorazową.*
+
+Aktywacja aplikacji z udziałem bankowości internetowej Asseco EBP odbywa się w przypadku, gdy:
+
+* dla wybranego Banku jest wyłączony nowy proces _aktywacji aplikacji bez udziału bankowości internetowej_;
+* dla wybranego Banku jest włączony nowy proces _aktywacji aplikacji bez udziału bankowości internetowej_ tylko dla grupy użytkowników należących do grupy _Friends & Family_ oraz dodatkowo w procesie aktywacji zostanie podany login użytkownika, który nie należy do grupy _Friends & Family_.
+
+Proces *aktywacji aplikacji* składa się z następujących kroków:
+
+1) <<old_aktywacja_aplikacji_rozpoczecie_procesu,Rozpoczęcie procesu aktywacji>>.
+
+2) <<old_aktywacja_aplikacji_wybor_banku,Wybór banku użytkownika>>.
+
+3) <<old_aktywacja_aplikacji_wpisanie_loginu,Wpisanie loginu użytkownika>>.
+
+4) <<old_aktywacja_aplikacji_wpisanie_kodu_aktywacyjnego,Wpisanie kodu aktywacyjnego wygenerowanego w bankowości internetowej>>.
+
+5) <<old_aktywacja_aplikacji_wpisanie_kodu_sms,Wpisanie kodu weryfikacyjnego otrzymanego w wiadomości SMS>>.
+
+6) <<old_aktywacja_aplikacji_ustawienie_pin,Ustawienie i potwierdzenie kodu PIN do aplikacji mobilnej>>.
+
+7) <<old_aktywacja_aplikacji_ekran_konczacy_proces,Ekran kończący proces aktywacji aplikacji>>.
+
+8) <<old_aktywacja_aplikacji_ekran_wlaczenia_biometrii,Ekran włączenia biometrii przy pierwszym logowaniu>>.
+
+
+
+
+[[old_aktywacja_aplikacji_rozpoczecie_procesu]]
+=== Rozpoczęcie procesu aktywacji
+
+Aby rozpocząć proces aktywacji aplikacji mobilnej, należy na ekranie powitalnym wybrać opcję [Aktywuj aplikację].
+
+image::cui_nowa_aktywacja_ekran_powitalny.jpg[120,220,align="center"]
+
+W przypadku, gdy w aplikacji mobilnej jest już sparowany użytkownik i chcemy sparować kolejnego, wówczas na ekranie logowania należy kliknąć na opcję image:icons/cui_dodaj_new_green.jpg[25,25] znajdującą się w prawym górnym rogu ekranu.
+
+image::cui_nowa_aktywacja_ekran_logowania.jpg[120,220,align="center"]
+
+
+
+
+[[old_aktywacja_aplikacji_wybor_banku]]
+=== Wybór banku użytkownika
+
+W kroku *_Wybierz swój bank_* należy wskazać bank, który zostanie połączony z aplikacją. Po kliknięciu na opcję [Wybierz] pojawia się lista banków, która posiada możliwość wyszukiwania. Użytkownik wybiera bank z listy, a następnie klika na opcję [Dalej].
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_wybor_banku_1.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_wybor_banku_2.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_wybor_banku_3.jpg[120,220,align="center"]
+|===
+
+Gdy nie zostanie wybrany bank i kliknie się na przycisk [Dalej], wówczas zostanie zaprezentowany stosowny komunikat walidacyjny.
+
+image::cui_nowa_aktywacja_wybor_banku_4.jpg[120,220,align="center"]
+
+WARNING: Krok *_Wybierz swój bank_* nie pojawia się w aplikacji mobilnej, która jest dedykowana dla konkretnego banku.
+
+
+
+
+[[old_aktywacja_aplikacji_wpisanie_loginu]]
+=== Wpisanie loginu użytkownika
+
+// Funkcjonalność F00628113 z Asseco EBP 6.13.0C
+
+Krok *_Wpisz swój login_* pojawia się w przypadku, gdy w wybranym Banku został włączony nowy proces _aktywacji aplikacji bez udziału bankowości internetowej_ tylko dla grupy użytkowników należących do grupy _Friends & Family_.
+
+Natomiast gdy dla danego Banku został wyłączony nowy proces _aktywacji aplikacji bez udziału bankowości internetowej_, wówczas krok wpisania loginu użytkownika nie pojawia się i system przechodzi od razu do kroku <<old_aktywacja_aplikacji_wpisanie_kodu_aktywacyjnego,_Kod aktywacyjny_>>.
+
+W kroku *_Wpisz swój login_* użytkownik wprowadza login, którego używa do logowania w bankowości internetowej i klika na opcję [Dalej]. Brak wypełnienia pola skutkuje wyświetleniem przez aplikację komunikatu walidacyjnego.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_wpisz_login_1.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_wpisz_login_2.jpg[120,220,align="center"]
+|===
+
+[WARNING]
+====
+Po wprowadzeniu loginu, który nie należy do grupy _Friends & Family_, system przechodzi do kroku <<old_aktywacja_aplikacji_wpisanie_kodu_aktywacyjnego,*_Kod aktywacyjny_*>>. +
+Natomiast po wprowadzeniu loginu należącego do grupy _Friends & Family_ system przechodzi w ścieżkę nowego parowania opisaną w rozdziale <<vb_aktywacja_aplikacji_nowy_proces,*_Aktywacja aplikacji bez udziału bankowości internetowej_*>>.
+====
+
+
+[[old_aktywacja_aplikacji_wpisanie_kodu_aktywacyjnego]]
+===  Wpisanie kodu aktywacyjnego wygenerowanego w bankowości internetowej
+
+W kroku *_Kod aktywacyjny_* użytkownik wprowadza kod aktywacyjny wygenerowany w bankowości internetowej Asseco EBP.
+
+image::cui_aktywacja_aplikacji_kod_aktywacyjny_green.jpg[120,220,align="center"]
+
+//W górnej części formularza dostępny jest przycisk image:icons/cui_cofnij_green.jpg[25,25] umożliwiający powrót do ekranu powitalnego.
+
+Po kliknięciu w link [Gdzie znajdę kod aktywacyjny?] użytkownikowi wyświetlany jest ekran informacyjny.
+
+image::cui_aktywacja_aplikacji_kod_aktywacyjny_gdzie_znajde_green.jpg[120,220,align="center"]
+
+
+////
+Pierwszą czynnością jaką musi wykonać użytkownik w celu aktywacji aplikacji jest wprowadzenie kodu aktywacyjnego wygenerowanego przez użytkownika w systemie Asseco EBP. Aby tego dokonać, należy wygenerować w bankowości internetowej kod aktywacyjny, a następnie wybrać opcję [POSIADAM KOD AKTYWACYJNY].
+
+image::cui_aktywacja_aplikacji_komunikat_green.jpg[120,240,align="center"]
+
+Wybranie opcji [NIE POSIADAM KODU AKTYWACYJNEGO] prezentuje użytkownikowi ekran informacyjny, z którego użytkownik ma również możliwość przejścia do kolejnego kroku aktywacji.
+
+image::cui_aktywacja_aplikacji_brak_kodu_2_green.jpg[120,240,align="center"]
+////
+
+
+Wygenerowanie niezbędnego do aktywacji kodu odbywa się w bankowości internetowej na dwa sposoby:
+
+* podczas logowania, gdy użytkownik posiada ustawioną metodę logowania jako _mobilny podpis_ i nie posiada sparowanego urządzenia:
+
+image::bi_aktywacja_urzadzenie_green.jpg[500,500,align="center"]
+image::icons/strzalka.jpg[21,15,align="center"]
+image::bi_aktywacja_kod_green.jpg[500,500,align="center"]
+
+* po zalogowaniu, wybierając opcję _"Ustawienia -> Aplikacja mobilna"_:
+
+image::bi_aktywacja2_urzadzenie_2_green.jpg[500,500,align="center"]
+image::icons/strzalka.jpg[21,15,align="center"]
+image::bi_aktywacja2_kod_2_green.jpg[400,500,align="center"]
+image::icons/strzalka.jpg[21,15,align="center"]
+image::bi_aktywacja_potwierdzenie_2_green.jpg[400,500,align="center"]
+image::icons/strzalka.jpg[21,15,align="center"]
+image::bi_ustawienia_urzadzenie_autoryzujace_2_green.jpg[400,500,align="center"]
+
+
+Po uzyskaniu kodu aktywacyjnego, użytkownik wprowadza go w aplikacji mobilnej.
+Przycisk z ikonką image:icons/cui_klawiatura_wyczysc_green.jpg[30,30] powoduje wyczyszczenie wcześniej wprowadzonego znaku w polu. W celu zatwierdzenia wpisanego kodu aktywacyjnego należy wybrać przycisk [Dalej].
+
+image::cui_aktywacja_aplikacji_kod_aktywacyjny_wpisane_dane_green.jpg[120,220,align="center"]
+
+System weryfikuje poprawność wprowadzonego kodu aktywacyjnego i w przypadku braku zgodności wyświetlany jest stosowny komunikat walidacyjny.
+
+image::cui_aktywacja_kod_walidacja_green.jpg[120,220,align="center"]
+
+
+
+
+[[old_aktywacja_aplikacji_wpisanie_kodu_sms]]
+=== Wpisanie kodu weryfikacyjnego otrzymanego w wiadomości SMS
+
+W kolejnym kroku na formularzu *_Kod SMS_* należy wprowadzić kod weryfikacyjny, który został wysłany do użytkownika za pomocą wiadomości SMS. Po wprowadzeniu danych w celu zatwierdzenia należy wybrać przycisk [Dalej].
+
+image::cui_aktywacja_aplikacji_sms_green.jpg[120,220,align="center"]
+
+W górnej części ekranu dostępny jest przycisk image:icons/cui_cofnij_green.jpg[25,25] umożliwiający powrót do poprzedniego kroku aktywacji.
+
+W przypadku nieotrzymania kodu SMS i wybraniu opcji [SMS nie dotarł], użytkownikowi zostanie wyświetlony poniższy komunikat wraz z możliwością ponownego rozpoczęcia procesu aktywacji po wybraniu przycisku [Rozpocznij proces parowania ponownie]. W górnej części tego formularza dostępny jest przycisk image:icons/cui_zamknij_green.jpg[25,25] umożliwiający wyjście z komunikatu.
+
+image::cui_aktywacja_aplikacji_brak_sms_green.jpg[120,220,align="center"]
+
+
+
+
+[[old_aktywacja_aplikacji_ustawienie_pin]]
+===  Ustawienie i potwierdzenie kodu PIN do aplikacji mobilnej
+
+Po wprowadzeniu kodu weryfikacyjnego wyświetlana jest informacja o kolejnym kroku jakim jest ustawienie kodu PIN służącego do logowania w aplikacji, potwierdzania transakcji oraz autoryzacji operacji. Użytkownik zatwierdza decyzję poprzez przycisk [Dalej].
+
+image::cui_aktywacja_aplikacji_nadanie_pinu_green.jpg[120,220,align="center"]
+
+W następnym kroku *_Ustaw kod PIN_* należy wprowadzić kod PIN, który będzie służył do logowania do aplikacji mobilnej oraz do autoryzacji zdarzeń w aplikacji mobilnej. System weryfikuje poprawność PIN-u, czy spełnia reguły bezpieczeństwa, które są prezentowane na ekranie. W przypadku, gdy dany warunek zostanie spełniony, wówczas przy konkretnej pozycji jest on odpowiednio oznaczony. Ze względów bezpieczeństwa podczas wprowadzania kodu PIN system nie prezentuje wpisanych znaków - dane są widoczne w postaci zamaskowanej.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::cui_aktywacja_ustaw_pin_1_green.jpg[120,220,align="center"]
+| image::cui_aktywacja_ustaw_pin_2_green.jpg[120,220,align="center"]
+| image::cui_aktywacja_ustaw_pin_3_green.jpg[120,220,align="center"]
+|===
+
+
+////
+Kod PIN musi posiadać minimum 5 a maksymalnie 8 znaków.
+image::cui_aktywacja_aplikacji_pin1_green.jpg[120,240,align="center"]
+
+Dodatkowo w procesie nadawania kodu PIN aplikacja weryfikuje wprowadzanie prostych haseł takich jak 11111, 22222, 123123, 12345. W przypadku zdefiniowania takiej kombinacji cyfr w systemie zostanie zaprezentowany komunikat walidacyjny.
+
+image::cui_aktywacja_aplikacji_pin_walidacja1_green.jpg[120,240,align="center"]
+
+image::cui_aktywacja_aplikacji_pin_walidacja2_green.jpg[120,240,align="center"]
+
+Po podaniu prawidłowej kombinacji cyfr stanowiącej unikalny identyfikator użytkownika, system informuje o tym odpowiednim komunikatem.
+
+image::cui_aktywacja_aplikacji_walidacja_pin_ok_green.jpg[120,240,align="center"]
+////
+
+
+Po wprowadzeniu PIN-u spełniającego politykę bezpieczeństwa należy kliknąć na opcję [Dalej]. System przechodzi do kolejnego ekranu *_Potwierdź kod PIN_*, w którym należy ponownie wprowadzić kod PIN. Ze względów bezpieczeństwa podczas wprowadzania kodu PIN system nie prezentuje wpisanych znaków - dane są widoczne w postaci zamaskowanej.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_aktywacja_ustaw_pin_potwierdzenie_1_green.jpg[120,220,align="center"]
+| image::cui_aktywacja_ustaw_pin_potwierdzenie_2_green.jpg[120,220,align="center"]
+|===
+
+W górnej części ekranu dostępny jest przycisk image:icons/cui_wstecz_green_newUI.jpg[25,25,align="center"] umożliwiający powrót do poprzedniego kroku *_Ustaw kod PIN_*.
+
+Podanie innego kodu PIN niż w poprzednim kroku skutkuje wyświetleniem komunikatu walidacyjnego i brakiem możliwości przejścia do kolejnego kroku.
+
+image::cui_aktywacja_ustaw_pin_potwierdzenie_3_green.jpg[120,220,align="center"]
+
+Po wprowadzeniu poprawnego PIN-u należy kliknąć na opcję [Dalej].
+
+
+////
+W kolejnym kroku *Zweryfikuj PIN* należy ponownie wprowadzić kod PIN i zatwierdzić poprzez przycisk [DALEJ].
+
+image::cui_aktywacja_potwierdz_pin_green.jpg[120,240,align="center"]
+
+System kontroluje prawidłowość i zgodność kodu PIN zdefiniowanego w polach Nowy PIN oraz Zweryfikuj PIN.
+
+image::cui_aktywacja_potwierdz_pin_walidacja_green.jpg[120,240,align="center"]
+
+W górnej części formularza *Zweryfikuj PIN* dostępny jest przycisk:
+
+    * image:icons/cui_cofnij_aktywacja_green.jpg[25,25,align="center"]- umożliwiający powrót do poprzedniego ekranu.
+////
+
+
+////
+=== Ustawienie metody logowania
+
+Po prawidłowym nadaniu PIN-u, system umożliwia użytkownikowi ustawienie metody logowania.
+
+Metody logowania udostępniane przez system to:
+
+ * kod PIN - dla systemu Android oraz iOS,
+ * metody biometryczne:
+        ** odcisk palca (Touch ID) - dla systemu Android oraz iOS,
+        ** rysy twarzy (Face ID) - dla systemu iOS,
+
+Opcja 'odcisk palca' oraz 'Face ID' może być wybrana, gdy urządzenie zostało uprzednio skonfigurowane do takiej obsługi.
+
+W celu wyboru metody system prezentuje formularz *Dane biometryczne*  udostępniający zestaw akcji:
+
+•	[CZYM SĄ DANE BIOMETRYCZNE?] - umożliwia wyświetlenie użytkownikowi komunikatu informacyjnego,
+•	[TAK] – umożliwia włączenie metody biometrycznej w procesie logowania,
+•	[NIE] – umożliwia rezygnację z metody biometrycznej, tym samym logowanie do aplikacji hybrydowej odbywać się będzie przy pomocy ustawionego kodu PIN.
+
+image::cui_aktywacja_aplikacji_dane_biometryczne_green.jpg[120,240,align="center"]
+
+image::cui_dane_biometryczne_info_green.jpg[120,240,align="center"]
+
+W górnej części formularza prezentującego informacje o danych biometrycznych dostępny jest przycisk:
+
+    * image:icons/cui_zamknij_green.jpg[30,30,align="center"]- umożliwiający powrót do poprzedniego ekranu.
+
+Po kliknięciu na opcję [ROZUMIEM] system powraca do poprzedniego ekranu.
+
+NOTE: Szczegółowe informacje dotyczące danych biometrycznych zostały opisane w rozdziale *Ustawienia* -> <<dane_biometryczne,*_Dane biometryczne_*>>.
+
+Po dokonaniu aktywacji aplikacji i ustaleniu sposobu logowania za pomocą PIN-u lub danych biometrycznych, użytkownikowi wyświetlany jest ekran informujący o  dodaniu urządzenia autoryzującego, umożliwiającego zalogowanie się do aplikacji hybrydowej wybierając przycisk [ZALOGUJ SIĘ].
+
+image::cui_aktywacja_aplikacji_dodanie_urzadzenia_green.jpg[120,240,align="center"]
+
+W przypadku niepowodzenia aktywacji aplikacji, użytkownikowi również wyświetlany jest odpowiedni komunikat.
+
+image::cui_parowanie_error_green.jpg[120,240,align="center"]
+
+Po udanym procesie aktywacji aplikacji, wyświetlany jest ekran główny aplikacji.
+
+image::cui_witaj1_green.jpg[120,240,align="center"]
+////
+
+
+
+
+[[old_aktywacja_aplikacji_ekran_konczacy_proces]]
+=== Ekran kończący proces aktywacji aplikacji
+
+Po pozytywnym przejściu procesu parowania aplikacji użytkownikowi wyświetlany jest ekran potwierdzający aktywację i umożliwiający zalogowanie się.
+
+image::cui_aktywacja_koniec_procesu_green.jpg[120,220,align="center"]
+
+Następnie należy kliknąć na opcję [Zaloguj się], aby przejść do ekranu głównego aplikacji mobilnej.
+
+image::cui_aktywacja_koniec_procesu_ekran_logowania_green.jpg[120,220,align="center"]
+
+W przypadku niepowodzenia aktywacji aplikacji następuje przerwanie procesu parowania i wymagane jest ponowne rozpoczęcie aktywacji aplikacji. Poniższy ekran pojawi się np. w momencie, gdy poprawnie zdefiniowano kod PIN, ale we wcześniejszym kroku został wprowadzony nieprawidłowy kod weryfikacyjny.
+
+image::cui_aktywacja_koniec_procesu_blad_green.jpg[120,220,align="center"]
+
+
+
+
+[[old_aktywacja_aplikacji_ekran_wlaczenia_biometrii]]
+=== Ekran włączenia biometrii przy pierwszym logowaniu
+
+Po sparowaniu aplikacji mobilnej użytkownik przechodzi do formatki logowania, wprowadza PIN, który został zdefiniowany w procesie aktywacji i klika na opcję [Zaloguj się].
+
+image::cui_nowa_aktywacja_wlaczenie_biometrii_wprowadz_pin.jpg[120,220,align="center"]
+
+Następnie pojawia się ekran umożliwiający włączenie logowania biometrycznego za pomocą odcisku palca (Touch ID) lub rysów twarzy (Face ID) - system zaprezentuje odpowiednią formatkę w zależności od zaimplementowanej metody biometrycznej na urządzeniu mobilnym.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_nowa_aktywacja_wlaczenie_biometrii_android.jpg[120,220,align="center"]
+| image::cui_nowa_aktywacja_wlaczenie_biometrii_ios.jpg[120,220,align="center"]
+|===
+
+WARNING: Dla urządzeń mobilnych z wyłączonym skanowaniem biometrycznym oraz dla urządzeń nieposiadających takiej funkcji, ekran do włączenia biometrii nie zostanie zaprezentowany w procesie logowania.
+
+Ekran pojawia się jednorazowo przy pierwszym logowaniu zaraz po sparowaniu aplikacji mobilnej, tzn. że podczas kolejnego logowania nie zostanie on zaprezentowany.
+Gdy użytkownik ponownie przejdzie przez proces aktywacji aplikacji, wówczas również jednorazowo zostanie zaprezentowany ten ekran przy pierwszym logowaniu.
+
+Aby włączyć logowanie biometryczne, należy kliknąć na przycisk [Włącz] - system włącza logowanie biometryczne i przechodzi do aplikacji. +
+
+Po kliknięciu na opcję [Pomiń] można zrezygnować z aktywacji biometrii i następuje przejście do aplikacji. Logowanie biometryczne można włączyć w każdej chwili w opcji *_"Ustawienia -> <<dane_biometryczne,Dane biometryczne>>"_*.
+
+
+
+
+[[ponowna_aktywacja_aplikacji]]
+== *Ponowna aktywacja aplikacji*
+
+Ponowne przejście przez procedurę *aktywacji aplikacji* jest niezbędne w wyjątkowych sytuacjach.
+
+&nbsp;
+
+*1) Zmiana urządzenia mobilnego na nowe:*
+
+* w celu zmiany urządzenia mobilnego na nowe należy na starym urządzeniu dezaktywować aplikację, proces został opisany w rozdziale <<dezaktywacja_aplikacji,*_Dezaktywacja aplikacji_*>>,
+
+* użytkownikowi zostaje wyświetlony ekran zawierający komunikat o zablokowaniu aplikacji,
+
+image::cui_zablokowana_aplikacja_new_green.jpg[120,220,align="center"]
+
+* następnie użytkownik dokonuje ponownej aktywacji aplikacji na nowym urządzeniu.
+
+&nbsp;
+
+*2) Konieczność odblokowania dostępu do aplikacji po zablokowaniu przez użytkownika:*
+
+* zablokowanie aplikacji następuje, gdy użytkownik poda trzykrotnie nieprawidłowy PIN w procesie autoryzacji operacji lub w procesie logowania,
+
+* użytkownikowi zostaje wyświetlony ekran zawierający komunikat o zablokowaniu aplikacji,
+
+image::cui_zablokowana_aplikacja_new_green.jpg[120,220,align="center"]
+
+* następnie użytkownik dokonuje ponownej aktywacji aplikacji.
+
+&nbsp;
+
+*3) Konieczność odblokowania dostępu do aplikacji po zablokowaniu przez pracownika Banku:*
+
+* zablokowanie aplikacji następuje, gdy użytkownik skontaktuje się z Bankiem i pracownik Banku dokona zablokowania aplikacji,
+
+* użytkownikowi zostaje wyświetlony ekran zawierający komunikat o zablokowaniu aplikacji,
+
+image::cui_zablokowana_aplikacja_new_green.jpg[120,220,align="center"]
+
+* następnie użytkownik dokonuje ponownej aktywacji aplikacji.
+

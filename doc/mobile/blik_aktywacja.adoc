@@ -1,0 +1,115 @@
+:imagesdir: images
+
+[[aktywacja_uslugi]]
+=== Aktywacja usługi BLIK
+
+W celu rozpoczęcia korzystania z usługi BLIK wymagana jest jej aktywacja.
+
+[.underline]#*Przejście do opcji włączenia usługi BLIK odbywa się w aplikacji mobilnej:*#
+
+*1) Z ekranu logowania poprzez wybranie opcji "_Kod BLIK_".*
+
+Na ekranie logowania aplikacji hybrydowej należy wybrać opcję *[Kod BLIK]*.
+Użytkownikowi wyświetlany jest ekran zachęcający do włączenia BLIKA.
+Po wybraniu opcji *[Włącz BLIKA]* prezentowany jest formularz *_Wprowadź PIN_*.
+Po wprowadzeniu prawidłowego kodu PIN i kliknięciu na *[Zaloguj się]*, użytkownik zostaje zalogowany do aplikacji i wyświetlany jest ekran <<ustawienia_blik_wlaczenie,*_Ustawienia BLIK_*>> umożliwiający włączenie BLIKA.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::BLIK_ekran_logowania--zaznaczona_opcja_kod_BLIK.jpg[120,220,align="center"]
+| image::BLIK_wlacz_blika--logowanie_komunikat.jpg[120,220,align="center"]
+| image::BLIK_wlacz_blika--logowanie_pin.jpg[120,220,align="center"]
+|===
+
+*2) Po zalogowaniu poprzez wybranie w dolnym menu opcji "_BLIK_".*
+
+Po zalogowaniu się do aplikacji hybrydowej należy z dolnego menu wybrać opcję *[BLIK]*.
+Użytkownikowi wyświetlany jest ekran zachęcający do włączenia BLIKA.
+Po wybraniu opcji *[Włącz BLIKA]* prezentowany jest ekran <<ustawienia_blik_wlaczenie,*_Ustawienia BLIK_*>> umożliwiający włączenie BLIKA.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_wlacz_blika--dolne_menu.jpg[120,220,align="center"]
+| image::BLIK_wlacz_blika--dolne_menu_komunikat.jpg[120,220,align="center"]
+|===
+
+*3) Po zalogowaniu w opcji "_Przelewy -> Wykonaj przelew -> Przelew na telefon BLIK_".*
+
+Po zalogowaniu się do aplikacji hybrydowej należy przejść do opcji *"_Przelewy -> Wykonaj przelew_"*, a następnie wybrać z listy pozycję *[Przelew na telefon BLIK]*.
+Użytkownikowi wyświetlany jest ekran zachęcający do włączenia BLIKA.
+Po wybraniu opcji *[Włącz BLIKA]* prezentowany jest ekran <<ustawienia_blik_wlaczenie,*_Ustawienia BLIK_*>> umożliwiający włączenie BLIKA.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_wlacz_blika--przelew_na_telefon.jpg[120,220,align="center"]
+| image::BLIK_wlacz_blika--przelew_na_telefon_komunikat.jpg[120,220,align="center"]
+|===
+
+NOTE: Opcja "_Przelew na telefon BLIK_" jest dostępna, gdy Bank ma włączoną funkcjonalność przelewów na telefon BLIK.
+
+*4) Po zalogowaniu w opcji "_Przelewy -> Wykonaj przelew -> Prośba o przelew BLIK_".*
+
+Po zalogowaniu się do aplikacji hybrydowej należy przejść do opcji *"_Przelewy -> Wykonaj przelew_"*, a następnie wybrać z listy pozycję *[Prośba o przelew BLIK]*.
+Użytkownikowi wyświetlany jest ekran zachęcający do włączenia BLIKA.
+Po wybraniu opcji *[Włącz BLIKA]* prezentowany jest ekran <<ustawienia_blik_wlaczenie,*_Ustawienia BLIK_*>> umożliwiający włączenie BLIKA.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_wlacz_blika--prosba_o_przelew.jpg[120,220,align="center"]
+| image::BLIK_wlacz_blika--prosba_o_przelew_komunikat.jpg[120,220,align="center"]
+|===
+
+NOTE: Opcja "_Prośba o przelew BLIK_" jest dostępna, gdy Bank ma włączoną funkcjonalność próśb o przelew BLIK.
+
+*5) Po zalogowaniu w opcji "_Lista próśb o przelew_".*
+
+Po zalogowaniu się do aplikacji hybrydowej należy kliknąć na ikonkę image:icons/cui_menu_ludzik_green_newUI.jpg[25,25,align="center"] znajdującą się w prawym górnym rogu ekranu, a następnie wybrać opcję *[Lista próśb o przelew]*.
+Użytkownikowi wyświetlany jest ekran zachęcający do włączenia BLIKA.
+Po wybraniu opcji *[Włącz BLIKA]* prezentowany jest ekran <<ustawienia_blik_wlaczenie,*_Ustawienia BLIK_*>> umożliwiający włączenie BLIKA.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_wlacz_blika--lista_prosb_menu_ludzik.jpg[120,220,align="center"]
+| image::BLIK_wlacz_blika--lista_prosb.jpg[120,220,align="center"]
+|===
+
+NOTE: Opcja "_Lista próśb o przelew_" jest dostępna, gdy Bank ma włączoną funkcjonalność próśb o przelew BLIK.
+
+[[ustawienia_blik_wlaczenie]]
+*6) Po zalogowaniu w opcji "_Ustawienia -> Ustawienia BLIK_".*
+
+Po zalogowaniu się do aplikacji hybrydowej należy przejść do opcji *"_Ustawienia -> Ustawienia BLIK_"*.
+Użytkownikowi prezentowany jest ekran *_Ustawienia BLIK_* umożliwiający włączenie BLIKA.
+
+image::BLIK_wlacz_blika--ustawienia_blik.jpg[120,220,align="center"]
+
+Aby usługa BLIK została aktywowana należy w  pierwszej kolejności zapoznać się z regulaminem i go zaakceptować. Regulamin w formacie .pdf dostępny jest po wybraniu opcji [POBIERZ].
+
+Akceptacja regulaminu jest obligatoryjna. Przy próbie włączenia BLIKA bez zaznaczenia opcji zapoznania się z regulaminem, system wyświetla użytkownikowi odpowiedni komunikat informacyjny.
+
+image::BLIK_wlacz_blika--ustawienia_blik--regulamin_komunikat.jpg[120,220,align="center"]
+
+Użytkownik akceptuje regulamin poprzez zaznaczenie opcji image:icons/cui_checkbox_zaznaczony.jpg[25,25,align="center"].
+
+image::BLIK_wlacz_blika--ustawienia_blik--regulamin_zaznaczony.jpg[120,220,align="center"]
+
+Następnie przy opcji *[Włącz BLIKA]* należy przesunąć suwak z pozycji image:icons/BLIK_suwak_wylaczony.jpg[35,35] na pozycję image:icons/BLIK_suwak_wlaczony.jpg[35,35].
+
+System wymaga potwierdzenia włączenia BLIKA poprzez podanie kodu SMS, który zostaje wysłany na telefon użytkownika.
+
+image::BLIK_wlacz_blika--ustawienia_blik--kod_sms.jpg[120,220,align="center"]
+
+System weryfikuje poprawność wprowadzonego kodu SMS. Dodatkowo po trzykrotnym wprowadzeniu nieprawidłowego kodu SMS użytkownikowi zostaje zaprezentowany stosowny komunikat.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_wlacz_blika--ustawienia_blik--kod_sms_walidacja1.jpg[120,220,align="center"]
+| image::BLIK_wlacz_blika--ustawienia_blik--kod_sms_walidacja2.jpg[120,220,align="center"]
+|===
+
+Po prawidłowej weryfikacji kodu SMS zostaje wyświetlony komunikat potwierdzający włączenie BLIKA. Od tego momentu użytkownik może korzystać z usługi BLIK.
+
+image::BLIK_wlacz_blika--ustawienia_blik--potwierdzenie_wlaczenia.jpg[120,220,align="center"]
+
+NOTE: W przypadku, gdy Bank ma wyłączoną funkcjonalność aktywacji BLIKA dodatkowym kodem SMS, wówczas podczas włączania BLIKA nie pojawia się ekran do potwierdzenia kodem SMS.
+

@@ -1,0 +1,80 @@
+:experimental:
+:sectnumlevels: 5
+= Aplikacja hybrydowa: Dokumentacja Użytkownika
+include::chapters/variables_C.adoc[]
+:documentId: DOC.UZT_Asseco_Aplikacja_hybrydowa_{revnumber2}
+:doctype: book
+:toc: left
+:toc-title: Spis treści
+:toc-chapter-label: Rozdzial
+:toclevels: 5
+:sectnums:
+:imagesdir:
+:source-highlighter: coderay
+:icons: font
+:chapter-signifier: Rozdział
+:rootpath: ./
+
+:sectnums:
+
+include::chapters/informacje_o_dok_hybryda.adoc[]
+
+include::../../shared/typografia.adoc[]
+
+include::chapters/wprowadzenie_hybryda.adoc[]
+
+include::chapters/aktywacja_aplikacji.adoc[]
+
+include::chapters/aktywacja_aplikacji_nowy_proces.adoc[]
+
+include::chapters/logowanie.adoc[]
+
+include::chapters/autoryzacja_dyspozycji.adoc[]
+
+include::chapters/rejestr_autoryzacji.adoc[]
+
+include::chapters/powiadomienia.adoc[]
+
+include::chapters/ustawienia.adoc[]
+
+
+
+include::chapters/blik.adoc[]
+
+include::chapters/blik_aktywacja.adoc[]
+
+include::chapters/blik_dezaktywacja.adoc[]
+
+include::chapters/blik_ustawienia_glowne.adoc[]
+
+include::chapters/blik_ustawienia_wlaczenie_uslugi.adoc[]
+
+include::chapters/blik_ustawienia_wybor_rachunku.adoc[]
+
+include::chapters/blik_ustawienia_limity.adoc[]
+
+include::chapters/blik_ustawienia_zgody.adoc[]
+
+include::chapters/blik_ustawienia_zablokuj_prosby_o_przelew.adoc[]
+
+include::chapters/blik_ustawienia_regulamin_blika.adoc[]
+
+include::chapters/blik_t6_generowanie_kodu.adoc[]
+
+include::chapters/blik_t6_autoryzacja_transakcji_z_kodu.adoc[]
+
+include::chapters/blik_p2p_przelew_na_telefon.adoc[]
+
+include::chapters/blik_p2pr_prosba_o_przelew.adoc[]
+
+
+
+include::chapters/wylogowanie.adoc[]
+
+include::chapters/skanowanie_kodu_QR_dla_przelewu_zwyklego.adoc[]
+
+include::chapters/logowanie_kodem_QR.adoc[]
+
+include::chapters/karty_Visiona_GAPI.adoc[]
+
+include::../../shared/footer.adoc[]

@@ -1,0 +1,316 @@
+:imagesdir: images
+
+[[ustawienia]]
+== *Ustawienia*
+
+Po zalogowaniu się do aplikacji i kliknięciu na ikonkę image:icons/cui_menu_ludzik_green_newUI.jpg[25,25,align="center"] znajdującą się w prawym górnym rogu ekranu, użytkownikowi  wyświetlana jest strona z dodatkowymi funkcjonalnościami.
+
+image::cui_ustawienia--menu_ludzik_green.jpg[120,220,align="center"]
+
+Po wybraniu pozycji *[Ustawienia]* wyświetlana jest lista opcji:
+
+* <<zarzadzanie_skrotami,*Zarządzaj skrótami*>> - formatka z możliwością włączenia/wyłączenia prezentacji dostępnych środków na ekranie początkowym aplikacji hybrydowej,
+
+* <<dane_osobowe,*Dane osobowe*>> - formatka z możliwością podglądu i edycji danych użytkownika aplikacji hybrydowej,
+
+* <<dane_firmy,*Dane firmy*>> - formatka z możliwością podglądu danych firmy,
+
+* <<zmiana_pin,*Zmiana PIN*>> - formatka umożliwia zmianę PIN-u dla aplikacji hybrydowej,
+
+* <<dane_biometryczne,*Dane biometryczne*>> - formatka umożliwia włączenie/wyłączenie logowania za pomocą danych biometrycznych do aplikacji hybrydowej,
+
+* <<ustawienia_BLIK,*Ustawienia BLIK*>> - formatka z możliwością konfiguracji parametrów BLIK,
+
+* <<domyslny_login,*Domyślny login*>> - formatka umożliwia wybranie loginu użytkownika, który będzie się domyślnie prezentował na ekranie początkowym aplikacji hybrydowej,
+
+* <<motywy_aplikacji,*Motywy aplikacji*>> - formatka umożliwia wybór motywu aplikacji hybrydowej,
+
+* <<konfiguracja_powiadomien,*Konfiguracja powiadomień*>> - formatka z możliwością konfiguracji wysyłki powiadomień SMS i PUSH,
+
+* <<informacje_o_aplikacji,*Informacje o aplikacji*>> - formatka z prezentacją informacji o aplikacji hybrydowej,
+
+* <<dezaktywacja_aplikacji,*Dezaktywacja aplikacji*>> - formatka z możliwością dezaktywacji aplikacji hybrydowej.
+
+image::cui_ustawienia_menu_green.jpg[120,220,align="center"]
+
+[NOTE]
+====
+Opcja *[Zarządzaj skrótami]* dostępna jest tylko dla domyślnego kontekstu użytkownika (tj. kontekstu, który ustawia się bezpośrednio po zalogowaniu, np. osobisty czy firmowy). W przypadku wyboru innego kontekstu niż domyślny opcja ta jest niedostępna. Domyślny kontekst użytkownika ustawia się w systemie BackOffice. +
+Opcja *[Dane firmy]* dostępna jest tylko w kontekście firmowym. +
+Opcja *[Domyślny login]* prezentuje się tylko w przypadku, gdy w aplikacji mobilnej sparowano więcej niż jednego użytkownika. +
+Opcja *[Motywy aplikacji]* dostępna jest tylko w kontekście indywidualnym.
+====
+
+
+
+[[zarzadzanie_skrotami]]
+=== Zarządzaj skrótami
+
+Opcja *[Zarządzaj skrótami]* umożliwia użytkownikowi włączenie/wyłączenie prezentacji informacji o saldzie (dostępnych środkach) na wybranym rachunku, na ekranie początkowym aplikacji hybrydowej.
+
+Aby dostępne środki prezentowały się na ekranie początkowym, należy włączyć opcję "_Dostępne środki_" przesuwając suwak na odpowiednią pozycję:
+
+* ikonka image:icons/suwak_wylaczony_green.jpg[35,35] oznacza, że opcja jest wyłączona,
+* ikonka image:icons/suwak_wlaczony_green.jpg[35,35] oznacza, że opcja jest włączona.
+
+image::cui_ustawienia_zarzadzaj_skrotami_wylaczone.jpg[120,220,align="center"]
+
+Po włączeniu opcji pojawia się przycisk [Dodaj rachunek], który kieruje na formatkę *_Dodawanie skrótu_*.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_ustawienia_zarzadzaj_skrotami--dodaj_rachunek.jpg[120,220,align="center"]
+| image::cui_ustawienia_zarzadzaj_skrotami--dodawanie_skrotu.jpg[120,220,align="center"]
+|===
+
+W polu _"Rachunek"_ użytkownik wybiera z listy rachunek, dla którego będzie prezentowane saldo na ekranie początkowym. Na liście prezentowana jest nazwa i numer rachunku oraz saldo na rachunku.
+
+image::cui_ustawienia_zarzadzaj_skrotami--dodawanie_skrotu--lista_rachunkow.jpg[120,220,align="center"]
+
+Kolejne ustawienie dotyczy formy prezentacji salda. Możliwe opcje to:
+
+* *Kwota (np. 3 500,00 PLN)* - prezentacja salda jako wartości kwotowej,
+
+image::cui_ustawienia_zarzadzaj_skrotami--dodawanie_skrotu--kwota.jpg[120,220,align="center"]
+
+* *Procent (określ ile to 100%)* - prezentacja procentowa dostępnych środków na koncie, dla której można dodatkowo zdefiniować kwotę stanowiącą 100% (system podstawia domyślnie wartość 1000,00).
+
+image::cui_ustawienia_zarzadzaj_skrotami--dodawanie_skrotu--procent.jpg[120,220,align="center"]
+
+W przypadku braku uzupełnienia wymaganych danych wyświetlane są stosowne komunikaty walidacyjne.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_ustawienia_zarzadzaj_skrotami--dodawanie_skrotu_walidacja_1.jpg[120,220,align="center"]
+| image::cui_ustawienia_zarzadzaj_skrotami--dodawanie_skrotu_walidacja_2.jpg[120,220,align="center"]
+|===
+
+W celu zapisania zmian należy kliknąć na przycisk [Dodaj]. System powraca do formatki *_Zarządzanie skrótami_*, na której prezentowana jest dodana pozycja. Dodatkowo dostępny jest przycisk [Dodaj kolejny] umożliwiający dodanie kolejnego skrótu.
+
+image::cui_ustawienia_zarzadzaj_skrotami_wlaczone.jpg[120,220,align="center"]
+
+Po dokonaniu ustawień, na ekranie początkowym zostaną zaprezentowane ustawione dane.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_witaj_skrot_1_new_green.jpg[120,220,align="center"]
+| image::cui_witaj_skrot_2_new_green.jpg[120,220,align="center"]
+|===
+
+
+[[dane_osobowe]]
+=== Dane osobowe
+
+Opcja *[Dane osobowe]* prezentuje podstawowe informacje o użytkowniku.
+Na formularzu widoczne są takie dane jak:
+
+* Dane podstawowe (np. imię i nazwisko, PESEL),
+* Dokument tożsamości (np. numer dowodu osobistego, data ważności dowodu osobistego),
+* Adres zamieszkania,
+* Adres korespondencyjny,
+* Dane kontaktowe (np. adres e-mail, numer telefonu do autoryzacji i powiadomień).
+
+image::cui_ustawienia_dane_osobowe_green.jpg[120,220,align="center"]
+
+[NOTE]
+====
+W zależności od konfiguracji w danym banku, system umożliwia dodatkowo edycję danych klienta oraz sprawdzenie zastrzeżenia numeru PESEL. +
+Działanie opcji *[Dane osobowe]* jest analogiczne jak w systemie Asseco EBP i zostało opisane w dokumentacji użytkownika systemu Asseco EBP.
+====
+
+
+
+[[dane_firmy]]
+=== Dane firmy
+
+W przypadku, gdy użytkownik jest zalogowany w kontekście firmowym, wówczas w ustawieniach prezentowana jest opcja *[Dane firmy]*.
+
+Na formularzu *_Dane firmy_* widoczne są takie dane jak:
+
+* Dane podstawowe (np. nazwa, NIP),
+* Adres firmy,
+* Adres korespondencyjny,
+* Dane kontaktowe (np. adres e-mail, numer telefonu do autoryzacji i powiadomień).
+
+image::cui_ustawienia_dane_firmy_green.jpg[120,220,align="center"]
+
+NOTE: Działanie opcji *[Dane firmy]* jest analogiczne jak w systemie Asseco EBP i zostało opisane w dokumentacji użytkownika systemu Asseco EBP.
+
+
+
+[[zmiana_pin]]
+=== Zmiana PIN
+
+Opcja *[Zmiana PIN]* umożliwia użytkownikowi zmianę obecnego kodu PIN do aplikacji hybrydowej na nowy.
+
+W pierwszym kroku zmiany kodu PIN należy wpisać obecny PIN i potwierdzić przyciskiem [Dalej].
+
+image::cui_ustawienia_zmiana_pin_green.jpg[120,220,align="center"]
+
+System sprawdza poprawność obecnego PIN-u i w przypadku niezgodności wyświetla odpowiedni komunikat.
+
+image::cui_ustawienia_zmiana_pin_walidacja_green.jpg[120,220,align="center"]
+
+W kolejnym kroku użytkownik wprowadza nowy PIN i zatwierdza przyciskiem [Dalej].
+
+image::cui_ustawienia_zmiana_pin--nowy_pin_green.jpg[120,220,align="center"]
+
+System weryfikuje poprawność obecnego PIN-u z nowym i w przypadku, gdy nowy kod PIN jest taki sam jak obecny, wówczas wyświetlany jest odpowiedni komunikat.
+
+image::cui_ustawienia_zmiana_pin--nowy_pin_walidacja1_green.jpg[120,220,align="center"]
+
+System weryfikuje również poprawność nowego PIN-u pod kątem ilości znaków (PIN powinien posiadać od 5 do 8 znaków) oraz wprowadzania prostych haseł takich jak np. 11111, 123123, 12345, 54321. W przypadku zdefiniowania takiej kombinacji cyfr w systemie zostanie zaprezentowany stosowny komunikat walidacyjny.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_ustawienia_zmiana_pin--nowy_pin_walidacja2_green.jpg[120,220,align="center"]
+| image::cui_ustawienia_zmiana_pin--nowy_pin_walidacja3_green.jpg[120,220,align="center"]
+|===
+
+Dla prawidłowej weryfikacji nowego PIN-u, wyświetlany jest stosowny komunikat.
+
+image::cui_ustawienia_zmiana_pin--nowy_pin_poprawny.jpg[120,220,align="center"]
+
+W kolejnym kroku użytkownik potwierdza nowy kod PIN. System weryfikuje poprawność nowego kodu PIN z PIN-em wprowadzonym we wcześniejszym kroku i w przypadku niezgodności wyświetlany jest odpowiedni komunikat.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_ustawienia_zmiana_pin--potwierdz_nowy_pin_green.jpg[120,220,align="center"]
+| image::cui_ustawienia_zmiana_pin--potwierdz_nowy_pin_walidacja_green.jpg[120,220,align="center"]
+|===
+
+Po poprawnej zmianie kodu PIN i zatwierdzeniu przyciskiem [Dalej], system informuje o zakończeniu procesu zmiany PIN-u.
+
+image::cui_ustawienia_zmiana_pin_potwierdzenie_green.jpg[120,220,align="center"]
+
+WARNING: W przypadku, gdy użytkownik w polu _"Wprowadź obecny kod PIN"_ wprowadzi trzykrotnie nieprawidłowy kod PIN, wówczas następuje automatyczne zablokowanie aplikacji.
+
+image::cui_zablokowana_aplikacja_new_green.jpg[120,220,align="center"]
+
+
+
+[[dane_biometryczne]]
+=== Dane biometryczne
+
+Opcja *[Dane biometryczne]* umożliwia włączenie/wyłączenie logowania się przy użyciu danych biometrycznych do aplikacji hybrydowej dla urządzeń mobilnych posiadających włączoną taką opcję.
+
+image::cui_ustawienia_biometria_wylaczona_green.jpg[120,220,align="center"]
+
+
+NOTE: Dla urządzeń mobilnych z wyłączonym inteligentnym skanowaniem oraz dla urządzeń nieposiadających takiej funkcji, opcja *[Dane biometryczne]* jest ukryta.
+
+W przypadku włączenia logowania biometrycznego na urządzeniu obsługującym odcisk palca system dodatkowo wymaga potwierdzenia poprzez przyłożenie palca do czytnika linii papilarnych.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_ustawienia_biometria_potwierdzenie_odciskiem_green.jpg[120,220,align="center"]
+| image::cui_ustawienia_biometria_wlaczona_green.jpg[120,220,align="center"]
+|===
+
+Włączenie danych biometrycznych umożliwia logowanie się do aplikacji mobilnej za pomocą odcisku palca (Touch ID) lub rysów twarzy (Face ID) bez konieczności podawania kodu PIN.
+
+Dodatkowe informacje opisane są w rozdziale <<logowanie_przy_uzyciu_metody_biometrycznej,*_Logowanie przy użyciu metody biometrycznej_*>>.
+
+
+
+=== Ustawienia BLIK
+Opcja została opisana w rozdziale <<ustawienia_BLIK,*_Zarządzanie ustawieniami BLIK_*>>.
+
+
+
+[[domyslny_login]]
+=== Domyślny login
+
+// F00553998 - funkcjonalność domyślnego loginu
+
+Opcja *[Domyślny login]* umożliwia wybranie loginu użytkownika, który będzie się domyślnie prezentował przed zalogowaniem na ekranie początkowym aplikacji mobilnej.
+
+image::cui_ustawienia_domyslny_login_green.jpg[120,220,align="center"]
+
+Przy loginie, który jest ustawiony jako domyślny, prezentuje się ikonka znacznika image:icons/cui_znacznik_green.jpg[20,20].
+W celu zmiany domyślnego loginu należy kliknąć na wybrany login. Akcja ta nie wymaga akceptacji kodem PIN.
+
+NOTE: Opcja *[Domyślny login]* prezentuje się tylko w przypadku, gdy w aplikacji mobilnej sparowano więcej niż jednego użytkownika.
+
+
+
+[[motywy_aplikacji]]
+=== Motywy aplikacji
+
+Opcja *[Motywy aplikacji]* umożliwia zmianę motywu kolorystycznego aplikacji zgodnie z preferencjami użytkownika lub zgodnie z ustawieniami systemowymi urządzenia.
+
+Aplikacja umożliwia wybór jednej pozycji z dostępnych motywów:
+
+* *Jasny motyw* - jasne tło i ciemne elementy interfejsu,
+* *Ciemny motyw* - ciemne tło i jasne elementy interfejsu,
+* *Taki jak systemu* - aplikacja dostosowuje swój wygląd zgodnie z motywem ustawionym na urządzeniu.
+
+image::cui_ustawienia_motywy_aplikacji_green.jpg[120,220,align="center"]
+
+W celu zmiany motywu użytkownik wybiera pozycję z listy, a następnie klika na opcję [Zapisz]. Akcja ta nie wymaga akceptacji kodem PIN.
+
+image::cui_ustawienia_motywy_aplikacji--zmiana_motywu_green.jpg[120,220,align="center"]
+
+Po zapisaniu zmian system ustawia wybrany motyw kolorystyczny i następuje przejście na główną listę ustawień.
+
+image::cui_ustawienia_motywy_aplikacji--ciemny_motyw_green.jpg[120,220,align="center"]
+
+NOTE: Wybrany motyw jest również ustawiany na formatkach przed zalogowaniem się użytkownika do aplikacji. W przypadku, gdy w aplikacji mobilnej sparowano więcej niż jednego użytkownika, wówczas na ekranie powitalnym system ustawia motyw z <<domyslny_login,domyślnego loginu>>.
+
+
+
+[[konfiguracja_powiadomien]]
+=== Konfiguracja powiadomień
+
+Opcja *[Konfiguracja powiadomień]* umożliwia użytkownikowi włączenie/wyłączenie wysyłki powiadomień SMS i PUSH. +
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_ustawienia_konfiguracja_powiadomien_wylaczona_green.jpg[120,220,align="center"]
+| image::cui_ustawienia_konfiguracja_powiadomien_wlaczona_green.jpg[120,220,align="center"]
+|===
+
+Po uzupełnieniu danych i kliknięciu na przycisk [Dalej] system przechodzi do kroku podsumowania, gdzie poprzez przycisk [Potwierdź PIN-em] należy wykonać akceptację kodem PIN.
+
+NOTE: Działanie opcji *[Konfiguracja powiadomień]* jest analogiczne jak w systemie Asseco EBP i zostało opisane w dokumentacji użytkownika systemu Asseco EBP.
+
+
+
+[[informacje_o_aplikacji]]
+=== Informacje o aplikacji
+
+Opcja *[Informacje o aplikacji]* prezentuje informacje o aplikacji hybrydowej, tj. nazwę oraz jej wersję. Dodatkowo na ekranie wyświetlany jest link _[Regulamin korzystania z aplikacji mobilnej]_ umożliwiający pobranie regulaminu aplikacji w formacie PDF.
+
+image::cui_ustawienia_informacje_o_aplikacji_green.jpg[120,220,align="center"]
+
+
+
+[[dezaktywacja_aplikacji]]
+=== Dezaktywacja aplikacji
+
+Opcja *[Dezaktywacja aplikacji]* umożliwia dezaktywację aplikacji hybrydowej, która skutkuje blokadą możliwości wykonania autoryzacji. W tym celu należy kliknąć w przycisk [Dezaktywuj aplikację].
+
+image::cui_ustawienia_dezaktywacja_aplikacji_green.jpg[120,220,align="center"]
+
+Następnie należy dokonać autoryzacji operacji za pomocą kodu PIN.
+
+image::cui_ustawienia_dezaktywacja_aplikacji--pin_green.jpg[120,220,align="center"]
+
+System weryfikuje poprawność wprowadzonych danych i w przypadku podania niepoprawnego kodu PIN wyświetla się stosowny komunikat.
+
+image::cui_ustawienia_dezaktywacja_aplikacji--pin_walidacja_green.jpg[120,220,align="center"]
+
+Po prawidłowej weryfikacji PIN-u, użytkownikowi zostaje wyświetlony komunikat potwierdzający dezaktywację urządzenia.
+
+image::cui_ustawienia_dezaktywacja_aplikacji--potwierdzenie_green.jpg[120,220,align="center"]
+
+WARNING: *Do ponownego używania aplikacji mobilnej wymagana jest ponowna aktywacja aplikacji.*
+
+Dodatkowo użytkownik może dezaktywować aplikację także:
+
+* poprzez kontakt telefoniczny z wybranym Call Center,
+* w placówce Banku,
+* w Bankowości Internetowej, poprzez zalogowanie się i usunięcie urządzenia w opcji "_Ustawienia -> Aplikacja mobilna -> [Usuń]_".
+
+image::bi_ustawienia--usuniecie_sparowanej_aplikacji_green.jpg[900,900,align="center"]
+

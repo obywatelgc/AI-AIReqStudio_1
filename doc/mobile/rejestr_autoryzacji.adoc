@@ -1,0 +1,65 @@
+:imagesdir: images
+
+[[rejestr_autoryzacji]]
+== *Rejestr autoryzacji*
+
+Opcja *Rejestr autoryzacji* jest listą zawierającą dyspozycję oczekującą oraz wszystkie dyspozycje zakończone w procesie autoryzacji oraz autentykacji pochodzące z systemu internetowego Asseco EBP. Funkcjonalność umożliwia autoryzację oczekującej dyspozycji oraz podgląd szczegółów wszystkich dyspozycji znajdujących się na liście.
+
+Aby przejść do rejestru, należy kliknąć na ikonkę image:icons/cui_menu_ludzik_green_newUI.jpg[25,25,align="center"] znajdującą się w prawym górnym rogu ekranu, a następnie wybrać opcję *[Rejestr autoryzacji]*.
+
+image::cui_rejestr_autoryzacji--menu_ludzik_green.jpg[120,220,align="center"]
+
+//Aby przejść do rejestru, należy wybrać opcję _Więcej_ image:icons/cui_wiecej_green.jpg[30,30] w dolnym menu aplikacji, użytkownikowi wyświetlana jest strona z dodatkowymi funkcjonalnościami.
+
+//image::cui_wiecej_rejestr_green.jpg[120,220,align="center"]
+
+//NOTE: Gdy użytkownik posiada oczekującą autoryzację do akceptacji pochodzącą z systemu Asseco EBP, wówczas system prezentuje licznik przy ikonie "Rejestr autoryzacji".
+
+Po wybraniu opcji *[Rejestr autoryzacji]* prezentowana jest lista dyspozycji złożonych w systemie bankowości internetowej Asseco EBP.
+
+image::cui_rejestr_autoryzacji_lista_green.jpg[120,220,align="center"]
+
+NOTE: W przypadku, gdy Użytkownik posiada oczekującą dyspozycję do akceptacji pochodzącą z systemu Asseco EBP, wówczas po wejściu do opcji *_Rejestr autoryzacji_* następuje automatyczne przejście na ekran autoryzacji dyspozycji.
+
+Może się zdarzyć sytuacja, że użytkownik otrzyma dyspozycję do akceptacji w momencie, gdy jest on na liście rejestru autoryzacji. W takim przypadku po odświeżeniu listy (poprzez przeciągnięcie palcem w dół ekranu) na górze ekranu pojawia się oczekująca dyspozycja.
+
+image::cui_rejestr_autoryzacji_lista--oczekujaca_dyspozycja_green.jpg[120,220,align="center"]
+
+Lista prezentuje następujące informacje:
+
+* graficzny status zlecenia,
+//* graficzny licznik odmierzający czas jaki pozostał do autoryzacji zlecenia,
+* czas utworzenia zlecenia w formacie DD.MM.RRRR (dla zleceń z poprzednich dni) lub ile sekund/minut/godzin upłynęło od otrzymania autoryzacji zlecenia (dla zleceń z dnia bieżącego),
+* tytuł zlecenia.
+
+
+Dyspozycje, które zostały obsłużone lub czekają na podpis w aplikacji hybrydowej prezentowane są w następujących statusach:
+
+* *_zaakceptowana_* - użytkownik zaakceptował autoryzację dyspozycji, ikonka image:icons/cui_rejestr_autoryzacji_ok.jpg[30,30]
+
+* *_odrzucona_* - użytkownik odrzucił autoryzację dyspozycji, ikonka image:icons/cui_rejestr_autoryzacji_error.jpg[30,30]
+
+* *_anulowana_* - użytkownik nie zaakceptował autoryzacji dyspozycji w określonym czasie, ikonka image:icons/cui_rejestr_autoryzacji_error.jpg[30,30]
+* *_oczekująca_* - użytkownik posiada oczekującą dyspozycję do akceptacji, ikonka image:icons/cui_rejestr_autoryzacji_time.jpg[30,30] odmierza czas jaki pozostał do autoryzacji zlecenia.
+
+Wybór pozycji na liście, która została obsłużona, przenosi użytkownika do podglądu szczegółów autoryzowanej dyspozycji.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::cui_rejestr_autoryzacji--szczegoly_zaakceptowana_green.jpg[120,220,align="center"]
+| image::cui_rejestr_autoryzacji--szczegoly_odrzucona_green.jpg[120,220,align="center"]
+| image::cui_rejestr_autoryzacji--szczegoly_anulowana_green.jpg[120,220,align="center"]
+|===
+
+W górnej części formatki dostępny jest przycisk image:icons/cui_cofnij_green.jpg[25,25] umożliwiający powrót do poprzedniego ekranu.
+
+Po wybraniu z listy dyspozycji oczekującej na akceptację następuje przejście na ekran autoryzacji dyspozycji, gdzie użytkownik może ją zaakceptować bądź odrzucić.
+
+WARNING: Autoryzacja zleceń w aplikacji mobilnej realizowana jest za pomocą ustawionego kodu PIN. Metody biometryczne wykorzystywane są tylko w procesie logowania do aplikacji mobilnej. Autoryzacja zleceń realizowana jest poprzez moduł Asseco MAA, który stanowi integralną część hybrydowej aplikacji mobilnej.
+
+W ramach obsługi autoryzacji dyspozycji, w danym czasie może być dostępna wyłącznie jedna oczekująca dyspozycja do autoryzacji. Dyspozycje mają określony czas ważności - gdy użytkownik nie obsłuży dyspozycji w odpowiednim czasie, wówczas system anuluje taką dyspozycję. W sytuacji, gdy użytkownik posiada oczekującą dyspozycję do autoryzacji i w tym czasie przyjdzie kolejna dyspozycja, wówczas poprzednia dyspozycja zostaje automatycznie anulowana/odrzucona.
+
+Akceptacja, odrzucenie oraz upłynięcie czasu ważności dyspozycji przebiega analogicznie jak to zostało opisane w rozdziale: <<autoryzacja_dyspozycji_zewnetrznej,*_Autoryzacja dyspozycji zewnętrznej przychodzącej przed zalogowaniem_*>>.
+
+W przypadku transakcji wymagającej autoryzacji złożonej w systemie Asseco EBP, użytkownik otrzyma powiadomienie PUSH i uzyska możliwość autoryzacji operacji w aplikacji mobilnej.
+

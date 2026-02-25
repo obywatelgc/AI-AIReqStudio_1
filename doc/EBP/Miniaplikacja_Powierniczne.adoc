@@ -1,0 +1,242 @@
+:imagesdir: images
+
+= Rachunki powiernicze
+
+Miniaplikacja *Rachunki powiernicze* zapewnia dostęp do podglądu mieszkaniowego rachunku powierniczego (MRP) wraz z rachunkami ewidencyjnymi w trybie pasywnym.
+
+System Asseco EBP zapewnia Użytkownikowi dostęp do miniaplikacji *Rachunki powiernicze* z dwóch głównych poziomów:
+
+* widżetu *Rachunki MRP* (wyświetlanego na pulpicie o ile Użytkownik nie usunął go z pulpitu),
+
+image::Powiernicze/image1.png[image,width=304,height=275]
+
+* menu bocznego po wybraniu opcji _Rachunki powiernicze_.
+
+image::Powiernicze/image2.png[image,width=226,height=50]
+
+W każdym z poziomów miniaplikacji dla Użytkownika dostępne są formatki do obsługi poszczególnych opcji biznesowych opisanych w poniższych podrozdziałach. Z poziomu formatek Użytkownik może wykonać wskazane akcje.
+
+Użytkownik posiadający dostęp do miniaplikacji *Rachunki powiernicze* ma możliwość:
+
+* przeglądania skróconych informacji o rachunkach MRP na widżecie miniaplikacji *Rachunki powiernicze*,
+* przeglądania rachunków powierniczych,
+* przeglądania rachunków ewidencyjnych,
+* przeglądania operacji na rachunkach MRP,
+* przeglądania składek do opłacenia,
+* przelewu na rachunek składkowy,
+* szczegóły rachunku,
+* rachunki ewidencyjne operacje,
+* rachunki ewidencyjne składki DFG,
+* rachunki ewidencyjne wyciągi,
+* rachunki ewidencyjne szczegóły.
+
+NOTE: Funkcjonalność rachunki powiernicze dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia: do funkcjonalności i do rachunków. Uprawnienia ustawiane są przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.
+
+== Widżet Rachunki MRP
+
+Widżet *Rachunki MRP* jest prezentowany w rozmiarze: standardowym.
+
+* ikona image:Powiernicze/image3.png[image,width=48,height=62]
+
+Na widżecie standardowym prezentowane są informacje:
+
+* *Rodzaj rachunku* – rodzaj rachunku,
+* *NRB* – numer rachunku,
+* *Składka do opłacenia* – kwota składki do DFG.
+
+Na dole widżetu dostępna jest akcja:
+
+* [POKAŻ WSZYSTKIE] - przejście do listy rachunków.
+
+== Przeglądanie listy rachunków
+
+Po kliknięciu w tytuł widżetu *Rachunki MPR* lub poprzez wybór opcji z bocznego menu _Rachunki powiernicze_ wyświetlane jest okno prezentujące listę rachunków, do których dany Użytkownik jest uprawniony.
+
+image::Powiernicze/image6.png[]
+
+Domyślnie na liście wyświetlane są rachunki aktywne.
+
+Rachunki sortowane są w pierwszej kolejności wg daty otwarcia.
+
+System umożliwia filtrowanie listy rachunków po wybraniu odpowiedniej wartości w polu _Wyszukaj:_
+System filtruje listę już po wpisaniu pierwszej litery/cyfry/znaku. Wielkość liter nie ma znaczenia. System nie wyświetli żadnego rachunku w sytuacji, gdy nie znajdzie wprowadzonej w polu wyszukiwania treści.
+
+Na liście rachunków dla każdego rachunku dostępne są następujące informacje:
+
+* *Rachunek powierniczy* – typ rachunku wraz z nazwą i numerem rachunku,
+* *Saldo księgowe* – saldo rachunku,
+* *Dostępne środki* – kwota dostępnych na rachunku środków.
+
+Pod każdym rachunkiem dostępne są następujące opcje:
+
+* [RACHUNKI EWIDENCYJNE] – naciśniecie powoduje przekierowanie Użytkownika na formularz Rachunki ewidencyjne, umożliwiający przeglądanie(operacji na rachunkach ewidencyjnych, zestawienie składek DFG, generowanie wyciągu Raport wpłat),
+* [OPERACJE NA RACH. MPR] -naciśniecie powoduje przekierowanie Użytkownika na formularz Historia rachunku, eksport listy do pliku PDF lub do zdefiniowanego w [Ustawienia importu i eksportu]
+* [SKŁADKI DO OPŁACENIA] – naciśniecie powoduje przekierowanie Użytkownika na formularz Składki do opłacenia,
+* [SZCZEGÓŁY] – naciśniecie powoduje przekierowanie Użytkownika na formularz Szczegóły rachunku powierniczego.
+
+Pod listą rachunków dostępne jest:
+
+* *Podsumowanie strony* – zawierające łączną (dla wszystkich rachunków) saldo księgowe, dostępne środki,
+
+image::Powiernicze/image8.png[image,width=604,height=62]
+
+* *Przyciski nawigacji* – przy pomocy których Użytkownik ma możliwość poruszania się pomiędzy poszczególnymi stronami z listą rachunków.
+
+image::Powiernicze/image9.png[image,width=263,height=65]
+
+W górnej części formularza Rachunki powiernicze dostępny jest przycisk:
+
+* image:Powiernicze/image11.png[image,width=48,height=51] – umożliwiający wyjście do pulpitu.
+
+== Akcje na wybranym rachunku powierniczym
+
+Kliknięcie w wiersz wybranego rachunku powoduje wyświetlenie dodatkowych informacji na temat rachunku.
+
+image::Powiernicze/image12.png[image,width=604,height=116]
+
+System prezentuje:
+
+* [RACHUNKI EWIDENCYJNE] – naciśniecie powoduje przekierowanie Użytkownika na formularz Rachunki ewidencyjne, umożliwiający przeglądanie(operacji na rachunkach ewidencyjnych, zestawienie składek DFG, generowanie wyciągu Raport wpłat),
+* [OPERACJE NA RACH. MPR] -naciśniecie powoduje przekierowanie Użytkownika na formularz Historia rachunku, eksport listy do pliku PDF lub do zdefiniowanego w [Ustawienia importu i eksportu]
+* [SKŁADKI DO OPŁACENIA] – naciśniecie powoduje przekierowanie Użytkownika na formularz Składki do opłacenia,
+* [SZCZEGÓŁY] – naciśniecie powoduje przekierowanie Użytkownika na formularz Szczegóły rachunku powierniczego.
+
+Ponowne kliknięcie w obszar rozwiniętego wiersza rachunku powoduje zwinięcie dodatkowych informacji i przycisków prezentowanych dla rachunku.
+
+== Modyfikacja nazwy własnej rachunku
+
+W celu ułatwienia identyfikacji rachunków, Użytkownik ma możliwość modyfikacji nazwy produktu z poziomu:
+
+* szczegółów lokaty za pomocą ikonki image:Powiernicze/image13.png[image,width=42,height=43] znajdującej się przy polu _Nazwa własna_.
+
+image::Powiernicze/image15.png[image,width=477,height=92]
+
+W celu ułatwienia identyfikacji rachunku, Użytkownik z poziomu szczegółów rachunku ma możliwość ustawienia nazwy własnej dla rachunku za pomocą ikony image:Powiernicze/image13.png[image,width=42,height=43]znajdującej się obok pola _Twoja nazwa_. Wybranie ikony uaktywnia pole do wprowadzenia nazwy własnej rachunku.
+
+W przypadku, gdy Użytkownik usunie wprowadzoną w polu nazwę własną rachunku, system przyporządkowuje mu nazwę systemową.
+
+Nazwa własna przypisana jest do Użytkownika, co oznacza, że ten sam produkt u różnych Użytkowników może posiadać różną nazwę.
+
+Obok pola dostępne są przyciski:
+
+* image:Powiernicze/image16.png[image,width=44,height=50] – umożliwia zapisanie nazwy własnej rachunku. Nazwę własną rachunku można zapisać również po jej wprowadzeniu i użyciu klawisza [Enter] z klawiatury.
+* image:Powiernicze/image17.png[image,width=43,height=50] – umożliwia rezygnację z ustawienia nazwy własnej rachunku.
+
+W przypadku, gdy Użytkownik usunie wprowadzoną w polu nazwę własną rachunku, system przyporządkowuje mu nazwę systemową z pola _Typ rachunku_.
+
+Nazwa własna przypisana jest do Użytkownika co oznacza, że ten sam produkt u różnych Użytkowników może posiadać różną nazwę.
+
+== Przeglądanie szczegółów rachunku
+
+Aby z listy rachunków przejść do szczegółów wybranego rachunku należy kliknąć w obszar wybranego wiersza i wybrać przycisk [SZCZEGÓŁY]. System wyświetla formularz SZCZEGÓŁY RACHUNKU POWIERNICZEGO.
+
+image::Powiernicze/image18.png[image,width=604,height=319]
+
+Na formularzu prezentowane są następujące dane:
+
+* *Numer rachunku* – numer rachunku w formacie NRB,
+* *Waluta* – symbol waluty w jakiej prowadzony jest rachunek,
+* *Rodzaj rachunku* – typ rachunku na który założona jest umowa,
+* *Nazwa własna* – nazwa rachunku nadana przez klienta,
+* *Saldo* – saldo umowy,
+* *Dostępne środki* – dostępne środki,
+* *Kwota zablokowanych środków* – kwota środków zablokowanych,
+* *Przyzany limit kredytowy –* limit kredytowy na rachunku,
+* *Oprocentowanie –* wysokość oprocentowania umowy,
+* *Data otwarcia–* data założenia umowy,
+* *Twój status–* właściciel umowy,
+* *Pełnomocnicy-* pełnomocnicy do umowy,
+* *Transakcje przez internet: limit dzienny-* limit dzienny operacji przez Internet,
+* *Pozostały limit dzienny–* pozostałą kwota z limitu dziennego,
+* *Transakcje przez internet: limit jednorazowy–* limit jednorazowy operacji przez Internet,
+
+Obok szczegółów rachunku dostępne są:
+
+* Opcje:
+
+** [RACHUNKI EWIDENCYJNE] – umożliwiająca przeglądanie rachunków ewidencyjnych,
+** [OPERACJE NA RACH. MRP] – umożliwiająca przeglądanie operacji wykonanych na rachunku powierniczym,
+** [OSKŁĄDKI DO OPŁACENIA] – umożliwiająca przeglądanie składek do opłacenia i wykonanie przelewu.
+
+
+* Przyciski:
+
+** image:Powiernicze/image19.png[image,width=45,height=53] – umożliwiający powrót do formularza RACHUNKI POWIERNICZE,
+
+** image:Powiernicze/image17.png[image,width=43,height=50] – umożliwiający wyjście do pulpitu.
+
+== Rachunki ewidencyjne
+
+Wybranie przycisku [RACHUNKI EWIDENCYJNE] dostępnego po rozwinięciu szczegółów rachunku, umożliwia Użytkownikowi podgląd rachunków ewidencyjnych powiązany z MRP i RS_DFG grupujący operacje na tych umowach w odniesieniu do nabywcy.
+
+image::Powiernicze/image20.png[image,width=604,height=221]
+
+Użytkownik ma możliwość wykonania operacji dla wszystkich rachunków lub dla wybranego:
+
+Opcje dla wszystkich rachunków ewidencyjnych:
+
+** [OPERACJE ZBIORCZE] – umożliwiająca przeglądanie operacji na rachunkach ewidencyjnych,
+** [SKŁADKI DFG ZBIORCZE] – umożliwiająca przeglądanie składek DFG,
+** [WYCIĄG ZBIORCZY] – umożliwiająca generowanie wyciągu operacji na rachunkach ewidencyjnych.
+
+Opcje dla pojedynczego rachunku ewidencyjnego:
+
+** [OPERACJE] – umożliwiająca przeglądanie operacji na rachunku ewidencyjnych,
+** [SKŁADKI DFG] – umożliwiająca przeglądanie składek DFG,
+** [WYCIĄG] – umożliwiająca generowanie wyciągu operacji na rachunku ewidencyjnym.
+** [SZCZEGÓŁY] – umożliwiająca przeglądanie szczegółów rachunku ewidencyjnego.
+
+image::Powiernicze/image21.png[image,width=604,height=221]
+
+=== Szczegóły rachunku ewidencyjnego
+
+Aby przejść do szczegółów wybranego rachunku ewidencyjnego należy kliknąć w przycisk [SZCZEGÓŁY]. System wyświetla formularz SZCZEGÓŁY RACHUNKU EWIDENCYJNEGO.
+
+image::Powiernicze/image22.png[image,width=604,height=319]
+
+Na formularzu prezentowane są następujące dane:
+
+* *Numer rachunku ewidencyjnego* – numer rachunku w formacie NRB,
+* *Waluta* – symbol waluty w jakiej prowadzony jest rachunek,
+* *Numer rachunku powierniczego* – numer rachunku powierniczego powiązanego z umową,
+* *Kapitał* – zgromadzone środki,
+* *Numer lokalu* – nazwa, identyfikator nieruchomości,
+* *Wartość lokalu* – wartość lokalu,
+* *Rachunek składkowy –* rachunek powiązanych z rachunkami ewidencyjnymi MPR,
+
+Obok szczegółów rachunku dostępne są:
+
+* Opcje:
+
+** [OPERACJE] – umożliwiająca przeglądanie operacji na rachunku ewidencyjnych,
+** [SKŁADKI DFG] – umożliwiająca przeglądanie składek DFG,
+** [WYCIĄG] – umożliwiająca generowanie wyciągu operacji na rachunku ewidencyjnym.
+
+== Składki do opłacenia
+
+W celu wykonania operacji opłacenia składki do rachunku powierniczego należy kliknąć w obszar wybranego wiersza rachunku, wybrać przycisk [SKŁADKI DO OPŁACENIA]. Opcja jest także dostępna na formularzu SZCZEGÓŁY RACHUNKU. System wyświetla formularz Składki do opłacenia wraz z danymi opłat do wykonania, umożliwiający wykonanie operacji opłaty do rachunku powierniczego.
+
+image::Powiernicze/image23.png[image,width=604,height=254]
+
+Na formularzu prezentowane są następujące dane:
+
+* *Rachunek MRP* – numer rachunku w formacie NRB,
+* *Rachunek do obciążenia* – numer rachunku do obciążenia,
+* *Automatyczne pobieranie składek* – tak/nie,
+* *Suma składek* – suma skłądek do opłacenia.
+
+Na formularzu SKŁADKI DO OPŁACENIA dostępne są:
+
+* Przyciski:
+
+** image:Powiernicze/image19.png[image,width=43,height=46] – umożliwiający przejście do formularza RACHUNKI POWIERNICZE,
+** image:Powiernicze/image17.png[image,width=49,height=57]– umożliwiający wyjście do pulpitu.
+
+* Akcja:
+
+** [OPŁAĆ] – umożliwia przejście do kroku przelewu, autoryzacji opłaty do rachunku.
+
+Po wybraniu opcji [OPŁAĆ], Użytkownik przekierowany jest do formularza PRZELEWU. Użytkownik musi wypełnić  wymagne pola
+jak podczas wykonywania  przelewu.
+
+image::Powiernicze/image30.png[image,width=604,height=243]

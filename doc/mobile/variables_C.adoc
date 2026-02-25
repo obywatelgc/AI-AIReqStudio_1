@@ -1,0 +1,6 @@
+:project_name: Asseco
+:bank: C
+:struktura_banku: Struktura banku
+:revnumber2: 6.14.1
+:documentId: DOC.UZT_Asseco_Aplikacja_hybrydowa{revnumber2}
+:informacje_bank: * *Bank*

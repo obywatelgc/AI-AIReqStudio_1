@@ -1,0 +1,11 @@
+:imagesdir: images
+
+[[regulamin_blika]]
+==== Regulamin BLIKA
+
+Na ekranie "_Ustawienia BLIK_" użytkownik ma możliwość pobrania regulaminu usługi BLIK. Regulamin w formacie .pdf dostępny jest po wybraniu opcji [POBIERZ] prezentowanej przy polu "_Regulamin BLIKA_".
+
+image::BLIK_ustawienia_regulamin_BLIKA.jpg[120,220,align="center"]
+
+Jeżeli w module BackOffice Administrator opublikuje nowy regulamin BLIKA oraz dodatkowo zleci wysyłkę powiadomień o nowym regulaminie, wówczas użytkownik otrzymuje na swoje urządzenie mobilne powiadomienie PUSH o treści: _"Został opublikowany nowy regulamin BLIK. Szczegóły dostępne w ustawieniach BLIK"_. Komunikat ten zostanie wysłany tylko w przypadku, gdy użytkownik ma włączoną usługę BLIK.
+

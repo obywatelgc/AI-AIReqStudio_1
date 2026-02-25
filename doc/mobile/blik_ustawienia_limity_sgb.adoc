@@ -1,0 +1,56 @@
+:imagesdir: images
+
+[[limity_BLIK_SGB]]
+==== Ustawienie limitów użytkownika dla płatności BLIK
+
+Użytkownik ma możliwość zmiany limitów, które zostały domyślnie przypisane w momencie włączenia usługi BLIK. W tym celu na ekranie "_Ustawienia BLIK_" należy wybrać opcję "*_Limity BLIK_*".
+
+image::BLIK_ustawienia_limity_BLIK_SGB.jpg[120,220,align="center"]
+
+Pojawia się ekran, na którym prezentowane są następujące informacje o limitach:
+
+* dzienny limit kwotowy dla płatności bezgotówkowych zarówno w sklepie jak i internecie,
+* dzienny limit kwotowy dla płatności w internecie,
+* dzienny limit kwotowy dla wypłat gotówki z bankomatu,
+* dzienny limit kwotowy oraz limit kwotowy pojedynczego przelewu na telefon BLIK (opcje dostępne, gdy Bank ma włączoną funkcjonalność przelewów na telefon BLIK).
+
+image::BLIK_ustawienia_limity_BLIK--edycja_limitow_SGB.jpg[120,220,align="center"]
+
+Użytkownik może dokonać zmiany limitów kwotowych. Przycisk [Zapisz] staje się aktywny dopiero w momencie, gdy zostanie zmieniona dowolna wartość limitu. Aby zatwierdzić zmiany należy wybrać opcję *[Zapisz]*.
+
+image::BLIK_ustawienia_limity_BLIK--edycja_limitow_zapisz_SGB.jpg[120,220,align="center"]
+
+W przypadku, gdy użytkownik wprowadzi limity mniejsze niż aktualnie ustawione, wówczas system nie wymaga autoryzacji i po kliknięciu na [Zapisz] pojawia się komunikat potwierdzający zmianę limitów.
+
+Natomiast w momencie, gdy co najmniej jedna z wartości limitu została zwiększona, wtedy wymagana jest autoryzacja poprzez podanie kodu SMS, który zostaje wysłany na telefon użytkownika.
+
+image::BLIK_ustawienia_limity_BLIK--edycja_limitow_autoryzacja_SMS_SGB.jpg[120,220,align="center"]
+
+Po prawidłowej weryfikacji kodu SMS użytkownikowi zostaje wyświetlony komunikat potwierdzający zmianę limitów.
+
+image::BLIK_ustawienia_limity_BLIK--edycja_limitow_potwierdzenie_SGB.jpg[120,220,align="center"]
+
+Podczas zapisu danych system weryfikuje poprawność wprowadzonych danych i prezentuje stosowne komunikaty walidacyjne gdy:
+
+* zostały przekroczone maksymalne limity ustawione przez Bank,
+* wprowadzono kwotę, która nie jest liczbą naturalną,
+* wprowadzono wartość limitu kwotowego pojedynczego przelewu większą od dziennego limitu kwotowego przelewów na telefon BLIK,
+* wprowadzono wartość dziennego limitu kwotowego dla "_płatności w internecie_" większą od dziennego limitu kwotowego dla "_płatności bezgotówkowych_".
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::BLIK_ustawienia_limity_BLIK--edycja_limitow_walidacja_1_SGB.jpg[120,220,align="center"]
+| image::BLIK_ustawienia_limity_BLIK--edycja_limitow_walidacja_2_SGB.jpg[120,220,align="center"]
+| image::BLIK_ustawienia_limity_BLIK--edycja_limitow_walidacja_3_SGB.jpg[120,220,align="center"]
+|===
+
+Na ekranie autoryzacji zmiany limitów system weryfikuje poprawność wprowadzonego kodu SMS. Po trzykrotnym wprowadzeniu nieprawidłowego kodu SMS użytkownikowi zostaje zaprezentowany stosowny komunikat.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_ustawienia_limity_BLIK--edycja_limitow_autoryzacja_SMS_walidacja_1_SGB.jpg[120,220,align="center"]
+| image::BLIK_ustawienia_limity_BLIK--edycja_limitow_autoryzacja_SMS_walidacja_2_SGB.jpg[120,220,align="center"]
+|===
+
+WARNING: Wyłączenie i ponowne włączenie usługi BLIK skutkuje ustawieniem wartości limitów na identyczne jakie użytkownik miał ustawione poprzednio.
+

@@ -1,0 +1,133 @@
+:imagesdir: images
+
+[[autoryzacja_dyspozycji]]
+== *Autoryzacja dyspozycji*
+
+Autoryzacja dyspozycji w aplikacji hybrydowej realizowana jest za pomocą kodu PIN ustawionego w procesie aktywacji aplikacji. Użytkownik może w każdej chwili zmienić kod PIN w opcji "_Ustawienia -> <<zmiana_pin,Zmiana PIN>>_".
+
+Autoryzacja dyspozycji w aplikacji hybrydowej obejmuje:
+
+* autoryzację dyspozycji złożonych w aplikacji hybrydowej korzystającej z funkcjonalności systemu Asseco EBP, czyli dyspozycji *_definiowanych wewnątrz_* aplikacji hybrydowej,
+
+* autoryzację dyspozycji złożonych w aplikacji internetowej Asseco EBP, w przypadku gdy użytkownik przechodzi do autoryzacji dyspozycji *_przed zalogowaniem_* się do aplikacji hybrydowej (użytkownik klika na powiadomienie autoryzacyjne PUSH w momencie, gdy _nie jest zalogowany_ do aplikacji mobilnej),
+
+* autoryzację dyspozycji złożonych w aplikacji internetowej Asseco EBP, w przypadku gdy użytkownik przechodzi do autoryzacji dyspozycji *po zalogowaniu* się do aplikacji hybrydowej (użytkownik klika na powiadomienie autoryzacyjne PUSH w momencie, gdy _jest zalogowany_ do aplikacji mobilnej).
+
+
+
+=== Autoryzacja dyspozycji składanej *_wewnątrz_* aplikacji hybrydowej
+
+
+Dyspozycje definiowane w aplikacji hybrydowej (wewnętrzne), wykorzystują funkcjonalność systemu internetowego Asseco EBP oraz Asseco MAA.
+
+*Przykładowa funkcjonalność złożenia zlecenia przebiega w następujących krokach:*
+
+1) Złożenie zlecenia w aplikacji hybrydowej.
+
+image::cui_przelew_zewnetrzny--krok1_green.jpg[120,220,align="center"]
+
+////
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::cui_przelew_zewnetrzny--krok1_czesc1_green.jpg[120,220,align="center"]
+| image::cui_przelew_zewnetrzny--krok1_czesc2_green.jpg[120,220,align="center"]
+|===
+////
+
+2) Prezentacja szczegółów podsumowania składanego zlecenia.
+
+image::cui_przelew_zewnetrzny--krok2_green.jpg[120,220,align="center"]
+
+3) Autoryzacja składanego zlecenia za pomocą kodu PIN.
+
+image::cui_przelew_zewnetrzny--krok3_green.jpg[120,220,align="center"]
+
+4) Prezentacja potwierdzenia złożonego zlecenia.
+
+image::cui_przelew_zewnetrzny--krok4_green.jpg[120,220,align="center"]
+
+NOTE: Autoryzacja zleceń składanych w aplikacji hybrydowej zachowuje wszelkie założenia i walidacje autoryzacyjne funkcjonalności systemu internetowego Asseco EBP.
+
+
+
+=== Autoryzacja dyspozycji *_zewnętrznej_* przychodzącej *_przed zalogowaniem_*
+
+
+Aplikacja mobilna posiada zintegrowany moduł Asseco MAA, dzięki czemu dla użytkowników bankowości elektronicznej Asseco EBP aplikacja hybrydowa dostarcza funkcjonalność tokena mobilnego dla autoryzacji transakcji dokonywanych z poziomu aplikacji internetowej.
+
+W przypadku autoryzacji zleceń złożonych w systemie Asseco EBP użytkownik otrzyma powiadomienie PUSH na urządzenie mobilne oraz dokona autoryzacji operacji w aplikacji mobilnej.
+
+*Proces autoryzacji dyspozycji przychodzącej z zewnątrz (z bankowości internetowej Asseco EBP), przed zalogowaniem użytkownika w aplikacji hybrydowej na urządzeniu mobilnym przebiega w następujących krokach:*
+
+1) Użytkownik składa dyspozycję w bankowości internetowej Asseco EBP  i  wybiera opcję autoryzacji dyspozycji.
+
+image::bi_przelew_krok1_green.jpg[900,900,align="center"]
+
+2) System bankowości internetowej Asseco EBP prezentuje ekran informujący o wysłaniu dyspozycji do autoryzacji na aplikację mobilną.
+
+image::bi_przelew_krok2_green.jpg[900,900,align="center"]
+
+3) System bankowości internetowej Asseco EBP wysyła do aplikacji mobilnej powiadomienie PUSH o nowej dyspozycji do autoryzacji.
+
+4) Na urządzeniu mobilnym wyświetla się baner powiadomienia PUSH z informacją o oczekującym zleceniu autoryzacyjnym. Użytkownik wybiera baner powiadomienia PUSH.
+
+image::bi_przelew_krok4_powiadomienie_PUSH.jpg[120,220,align="center"]
+
+5) Kliknięcie w baner powiadomienia PUSH powoduje uruchomienie aplikacji hybrydowej, wyświetlany jest ekran logowania do aplikacji *_Wprowadź PIN_*.
+
+image::bi_przelew_krok5_logowanie_pin_green.jpg[120,220,align="center"]
+
+6) Użytkownik loguje się do aplikacji hybrydowej za pomocą kodu PIN lub danych biometrycznych (logowanie biometryczne jest dostępne, jeżeli użytkownik włączył tę opcję w aplikacji hybrydowej).
+
+7) Aplikacja hybrydowa pobiera z systemu dane do autoryzacji.
+
+[[autoryzacja_dyspozycji_zewnetrznej]]
+8) Aplikacja hybrydowa prezentuje dane dyspozycji do autoryzacji. W celu przejścia na ekran potwierdzenia operacji należy wybrać przycisk [Akceptuj].
+
+image::bi_przelew_krok8_dane_do_autoryzacji_green.jpg[120,220,align="center"]
+
+Wybór opcji [Odrzuć] powoduje odrzucenie autoryzacji i ustawienie statusu dyspozycji na odrzuconą.
+
+image::bi_przelew_krok8_odrzucenie_hybryda_green.jpg[120,220,align="center"]
+
+W systemie bankowości internetowej Asseco EBP prezentowany jest komunikat o odrzuceniu autoryzacji dyspozycji.
+
+image::bi_przelew_krok8_odrzucenie_ebp_green.jpg[900,900,align="center"]
+
+9) W przypadku podjęcia przez użytkownika decyzji o akceptacji dyspozycji, użytkownik weryfikuje wprowadzone dane oraz potwierdza realizację dyspozycji poprzez wprowadzenie poprawnego kodu PIN oraz wybór przycisku [Akceptuj]. W tym kroku użytkownik ma również możliwość odrzucenia dyspozycji oraz możliwość powrotu do poprzedniej formatki z danymi dyspozycji do autoryzacji.
+
+image::bi_przelew_krok9_autoryzacja_pin_green.jpg[120,220,align="center"]
+
+[NOTE]
+====
+Gdy zostanie wprowadzony błędny kod PIN, to system zaprezentuje na ekranie komunikat walidacyjny _"Kod PIN jest niepoprawny"_. Użytkownik ma możliwość ponownego wprowadzenia kodu PIN. Aplikacja zabezpieczona jest przed wielokrotnym wprowadzeniem błędnego kodu PIN. Po wprowadzeniu trzykrotnie błędnego PIN-u, użytkownikowi zostanie zaprezentowany komunikat informacyjny o zablokowaniu aplikacji. W takim przypadku konieczne będzie ponowne powiązanie urządzenia mobilnego z systemem bankowości internetowej.
+====
+
+10) Aplikacja hybrydowa podpisuje dyspozycję za pomocą klucza prywatnego.
+
+11) Aplikacja hybrydowa wysyła podpisaną dyspozycję do systemu bankowości.
+
+12) System bankowości weryfikuje podpis dyspozycji złożony w aplikacji hybrydowej, przekazuje wynik do aplikacji hybrydowej oraz do systemu bankowości internetowej Asseco EBP (weryfikacja pozytywna).
+
+13) System bankowości internetowej Asseco EBP prezentuje potwierdzenie autoryzacji dyspozycji.
+
+image::bi_przelew_krok13_potwierdzenie_autoryzacji_ebp_green.jpg[900,900,align="center"]
+
+14) Aplikacja hybrydowa prezentuje potwierdzenie autoryzacji dyspozycji.
+
+image::bi_przelew_krok14_potwierdzenie_autoryzacji_hybryda_green.jpg[120,220,align="center"]
+
+W przypadku, gdy użytkownik nie zautoryzował dyspozycji w określonym czasie, wówczas w aplikacji mobilnej prezentowany jest komunikat informujący o upłynięciu czasu na akceptację.
+
+image::bi_przelew_krok14_uplyniecie_czasu_hybryda_green.jpg[120,220,align="center"]
+
+W systemie bankowości internetowej Asseco EBP na ekranie dyspozycji prezentowany jest komunikat informujący o przekroczeniu czasu oczekiwania na autoryzację.
+
+image::bi_przelew_krok14_uplyniecie_czasu_ebp_green.jpg[900,900,align="center"]
+
+
+
+=== Autoryzacja dyspozycji *_zewnętrznej_* przychodzącej *_po zalogowaniu_*
+
+Funkcjonalność autoryzacji dyspozycji złożonej w systemie internetowym Asseco EBP, dla użytkownika zalogowanego do aplikacji hybrydowej przebiega tak samo, jak dla użytkownika niezalogowanego (opisanego w poprzednim podrozdziale) z ominięciem procesu logowania do aplikacji hybrydowej (kroki: 5 i 6).
+

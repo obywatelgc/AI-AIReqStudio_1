@@ -1,0 +1,55 @@
+:imagesdir: images
+
+[[wylogowanie]]
+== *Wylogowanie*
+
+Zalogowany użytkownik ma możliwość wylogowania się z aplikacji mobilnej. W tym celu należy kliknąć na ikonkę image:icons/cui_menu_ludzik_green_newUI.jpg[25,25,align="center"] znajdującą się w prawym górnym rogu ekranu, a następnie wybrać opcję *[Wyloguj]*.
+
+image::wylogowanie_z_menu_ludzik.jpg[120,220,align="center"]
+
+Wylogowanemu użytkownikowi automatycznie wyświetlana jest strona logowania do aplikacji mobilnej. Aby ponownie korzystać z aplikacji mobilnej, wymagane jest ponowne zalogowanie.
+
+W celu zwiększenia bezpieczeństwa aplikacja mobilna dokonuje automatycznego wylogowania użytkownika, które następuje po upływie określonego czasu bezczynności (wartość zależna od konfiguracji w Banku, domyślnie jest to 5 minut). Gdy do automatycznego zakończenia sesji pozostanie 1 minuta, wówczas system wyświetla okienko informacyjne "_Twoja sesja za chwilę wygaśnie_", na którym prezentuje się licznik odliczający pozostały czas wraz z przyciskiem [Przedłuż sesję].
+
+image::wylogowanie_wygasniecie_sesji.jpg[120,220,align="center"]
+
+Po kliknięciu na przycisk [Przedłuż sesję] system zamyka okienko informacyjne i przedłuża czas ważności sesji. Natomiast gdy użytkownik nie przedłuży sesji, wtedy po upłynięciu pozostałego czasu następuje automatyczne wylogowanie z aplikacji i przejście na ekran logowania. Aby móc korzystać z aplikacji mobilnej, użytkownik musi się ponownie zalogować.
+
+
+
+[[ocena_aplikacji_mobilnej]]
+=== Ocena aplikacji mobilnej
+
+W aplikacji mobilnej została udostępniona możliwość oceny aplikacji, po wcześniejszym udostępnieniu jej przez administratora systemu. Ankieta jest wyświetlana w momencie kliknięcia na przycisk *[Wyloguj]*.
+
+W pierwszym kroku pojawia się okno z dwoma przyciskami:
+
+* *[Tak, podoba mi się]*  - opcja przekierowuje użytkownika do aplikacji sklepu _Google Play / App Store / AppGallery_ w celu oceny aplikacji przez klienta,
+* *[Nie podoba mi się]* - opcja otwiera moduł ankiet z dedykowaną ankietą dla aplikacji mobilnej, definiowanej przez administratora systemu.
+
+image::cui_ocena_popUp.jpg[120,220,align="center"]
+
+Użytkownik może taką ankietę pominąć, zamknąć całkowicie lub wypełnić i wysłać.
+
+Po kliknięciu na przycisk *[Nie podoba mi się]* pojawia się okienko z ankietą.
+
+image::cui_ocena_ankieta.jpg[120,220,align="center"]
+
+W przypadku rezygnacji z wypełnienia ankiety użytkownikowi prezentowany jest ekran umożliwiający powrót do ankiety lub pełną rezygnację.
+
+image::cui_ocena_rezygnacja.jpg[120,220,align="center"]
+
+W przypadku wypełnienia ankiety i wysłania jej, użytkownikowi prezentowany jest ekran z podziękowaniem.
+
+image::cui_ocena_podziekowanie.jpg[120,220,align="center"]
+
+Jeżeli użytkownik pominie ankietę, to po zalogowaniu pojawi się ona dopiero po "X" dniach (w zależności od definicji częstotliwości wyświetlania ankiety ustawionej przez administratora systemu).
+
+Natomiast jeżeli użytkownik wybierze, że nie chce widzieć ankiety, to pojawi się ona po "X" dniach (w zależności od definicji częstotliwości wyświetlania ankiety ustawionej przez administratora systemu).
+
+W przypadku, gdy użytkownik wypełnił ankietę i ją wysłał, to nie zaprezentuje mu się już ekran zachęcający do wypełnienia ankiety.
+
+Użytkownik niezależnie od tego, czy pominął, zamknął czy wysłał ankietę, zawsze może ją uruchomić poprzez kliknięcie na ikonkę image:icons/cui_menu_ludzik_green_newUI.jpg[25,25,align="center"] znajdującą się w prawym górnym rogu ekranu, a następnie wybranie opcji *[Oceń aplikację]*.
+
+image::cui_ocena_menu.jpg[120,220,align="center"]
+

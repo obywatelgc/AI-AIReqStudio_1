@@ -1,0 +1,21 @@
+:imagesdir: images
+
+[[logowanie_kodem_QR]]
+== *Logowanie kodem QR do bankowości internetowej*
+
+Aplikacja mobilna umożliwia użytkownikowi zalogowanie się do systemu Asseco EBP za pomocą kodu QR wyświetlanego w ramach bankowości internetowej. Jest to nowoczesna, szybka i bezpieczna forma logowania, eliminująca konieczność ręcznego wpisywania danych uwierzytelniających.
+
+Za pomocą aplikacji mobilnej należy zeskanować kod QR wygenerowany na stronie logowania systemu Asseco EBP, następnie zweryfikować dane szczegółów logowania, po czym zaakceptować dyspozycję logowania w aplikacji mobilnej.
+
+Aby zeskanować kod QR, należy w aplikacji mobilnej wybrać opcję *[Logowanie kodem QR]*, która jest dostępna na ekranie logowania oraz na ekranie _Pulpitu_ po zalogowaniu się do aplikacji.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::logowanie_kodem_QR_ekran_logowania.jpg[120,220,align="center"]
+| image::logowanie_kodem_QR_pulpit.jpg[120,220,align="center"]
+|===
+
+NOTE: Funkcjonalność logowania za pomocą kodu QR jest dostępna w zależności od konfiguracji w Banku.
+
+Proces logowania za pomocą kodu QR został opisany w dokumentacji użytkownika systemu Asseco EBP.
+

@@ -1,0 +1,14 @@
+:imagesdir: images
+
+==== Ustawienie rachunku do realizacji płatności BLIK
+
+Użytkownik ma możliwość zmiany rachunku, który został domyślnie przypisany w momencie włączenia usługi BLIK. W tym celu na ekranie "_Ustawienia BLIK_" w sekcji "_Źródło środków_" należy wybrać wiersz rachunku.
+
+image::BLIK_ustawienia_zmiana_rachunku.jpg[120,220,align="center"]
+
+Pojawia się ekran, na którym użytkownik ma możliwość wyboru innego rachunku niż domyślny spośród wszystkich swoich aktywnych rachunków w walucie PLN. Aktualnie wybrany rachunek jest oznaczony ikonką image:icons/BLIK_oznaczenie_domyslnego_rachunku_green_newUI.jpg[25,25].
+
+image::BLIK_ustawienia_zmiana_rachunku_lista_rachunkow.jpg[120,220,align="center"]
+
+WARNING: Płatności przy użyciu usługi BLIK realizowane są tylko i wyłącznie w walucie PLN oraz z aktywnych rachunków klienta prowadzonych w walucie PLN.
+

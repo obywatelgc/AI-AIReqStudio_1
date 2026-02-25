@@ -1,0 +1,176 @@
+:imagesdir: images
+
+[[Karty_Visiona_GAPI]]
+
+== *Karty Visiona GAPI*
+
+Aplikacja mobilna umożliwia użytkownikowi, w ramach systemu Asseco EBP, korzystanie z funkcjonalności *obsługi kart* debetowych, kredytowych oraz wirtualnych.
+
+W niniejszym rozdziale przedstawione zostaną zasady korzystania z kart debetowych i kredytowych, w tym: wyświetlanie danych wrażliwych, zarządzanie limitami tymczasowymi oraz dodawanie kont walutowych do kart walutowych w ramach usług bankowości elektronicznej.
+
+Funkcjonalność ta udostępniana jest przez administratora systemu i jest dostępna zarówno w kontekście indywidualnym, jak i firmowym Klienta.
+
+Dokument obejmuje obsługę kart fizycznych oraz wirtualnych, zarówno z poziomu aplikacji mobilnej, jak i systemu bankowości internetowej.
+
+** dla użytkownika indywidualnego (nowe grafiki):
+
+image::karty_pulpit.png[120,220,align="center"]
+
+** dla użytkownika korporacyjnego (stare grafiki):
+
+image::karty_pulpit_F.png[120,220,align="center"]
+
+
+
+=== Wyświetlanie danych wrażliwych karty
+
+W ramach aplikacji mobilnej użytkownik ma możliwość wyświetlenia danych wrażliwych przypisanych do aktywnej karty płatniczej (debetowej, kredytowej lub wirtualnej).
+
+** dla użytkownika indywidualnego (nowe grafiki):
+
+image::karty_lista_d.png[120,220,align="center"]
+
+** dla użytkownika korporacyjnego (stare grafiki):
+
+image::karty_lista_f.png[120,220,align="center"]
+
+Dostępne dane wrażliwe:
+
+** Numer karty (PAN),
+** Data ważności,
+** Kod CVV/CVC.
+
+Wyświetlanie danych możliwe jest wyłącznie dla kart aktywowanych.
+
+Użytkownik musi być uwierzytelniony zgodnie z zasadami silnego uwierzytelnienia (SCA).
+
+Czynność wymaga dodatkowej autoryzacji za pomocą kodu SMS lub potwierdzenia w aplikacji mobilnej (np. biometrycznie lub PIN-em aplikacyjnym).
+
+** dla użytkownika indywidualnego (nowe grafiki):
+
+image::karty_wrazli_d.png[120,220,align="center"]
+
+** dla użytkownika korporacyjnego (stare grafiki):
+
+image::karty_wrazli_f.png[120,220,align="center"]
+
+W celu wyświetlenia danych wrażliwych karty użytkownik w aplikacji mobilnej:
+
+* dla użytkownika indywidualnego (nowe grafiki):
+
+** przejdź do zakładki *Karty* i wybierz aktywną kartę,
+** wybierz opcję *[Pokaż dane]*,
+** potwierdź operację kodem SMS lub autoryzacją mobilną,
+** dane wrażliwe zostaną tymczasowo wyświetlone na ekranie (automatycznego paska postępu), po czym automatycznie ukryte lub używając opcji *[Ukryj dane]*.
+
+image::karty_wrazli_mix_d.png[image,width=604,height=315]
+
+* dla użytkownika korporacyjnego (stare grafiki):
+
+** przejdź do zakładki *Karty* i wybierz aktywną kartę,
+** wybierz szczegóły karty,
+** wybierz opcję *[Pokaż dane karty]*,
+** potwierdź operację kodem SMS lub autoryzacją mobilną,
+** wybierz opcję *[Pokaż dane karty]*,
+** dane wrażliwe zostaną tymczasowo wyświetlone na ekranie (automatycznego paska postępu), po czym automatycznie ukryte lub uzywając opcji *[Ukryj dane karty]*.
+
+image::karty_wrazli_mix_f.png[image,width=604,height=315]
+
+Po autoryzowanym odsłonięciu danych wrażliwych użytkownikowi prezentowany jest ekran z graficznym widokiem karty, zawierający:
+
+* Pełny numer karty (PAN) - na tle ilustracji karty, możliwość skopiowania (indywidualny),
+* Data ważności i CVC2 - wyświetlane w prawym dolnym rogu karty,
+* Imię i nazwisko posiadacza karty - poniżej,
+* Przycisk [Ukryj dane] - umożliwiający natychmiastowe ukrycie danych bez oczekiwania na automatyczne wygaszenie.
+
+Dane wrażliwe zostają automatycznie ukryte po upływie zdefiniowanego czasu (graficznie zobrazowanego paskiem postępu). Użytkownik może również ręcznie ukryć dane, klikając przycisk [Ukryj dane].
+
+
+
+=== Dodawanie kont walutowych do karty walutowej
+
+Aplikacja mobilna oraz system bankowości internetowej Asseco EBP umożliwiają użytkownikowi powiązanie dodatkowych rachunków walutowych z kartą wielowalutową. Dzięki temu transakcje w różnych walutach mogą być realizowane bez przewalutowania, o ile odpowiadający rachunek jest dostępny.
+
+image::karta_waluto_dod_d.png[120,220,align="center"]
+
+W celu dodania rachunków walutowych do karty użytkownik w aplikacji mobilnej:
+
+* przejdź do zakładki *Karty*, a następnie wybierz kartę walutową z listy,
+* wybierz opcję *[Ustaw]* przy pozycji "_Rachunki walutowe_",
+* z listy dostępnych rachunków wybierz odpowiedni rachunek walutowy,
+* zatwierdź wybór - operacja może wymagać dodatkowej autoryzacji (np. kodem PIN).
+
+Powiązany rachunek pojawi się na liście rachunków obsługiwanych przez daną kartę.
+
+image::karta_waluto_dod_mix.png[image,width=604,height=315]
+
+Po dodaniu rachunku, system podczas transakcji automatycznie rozpozna walutę płatności i - jeśli dostępne są środki - obciąży odpowiedni rachunek walutowy. Jeśli brak takiego rachunku lub środków, transakcja zostanie rozliczona z rachunku domyślnego, przy zastosowaniu kursu banku.
+
+
+
+=== Usunięcie kont walutowych do karty walutowej
+
+W aplikacji mobilnej oraz w systemie Asseco EBP użytkownik ma możliwość usunięcia wcześniej przypisanych kont walutowych z karty wielowalutowej - pod warunkiem że funkcjonalność ta została aktywowana przez Bank lub administratora systemu.
+
+image::karty_waluto_d.png[120,220,align="center"]
+
+W celu usunięcia rachunków walutowych do karty użytkownik w aplikacji mobilnej:
+
+* przejdź do zakładki *Karty*, a następnie wybierz kartę walutową z listy,
+* wybierz opcję *[Zmień]* przy pozycji "_Rachunki walutowe_",
+* z listy dostępnych rachunków odznacz odpowiedni rachunek walutowy,
+* zatwierdź wybór - operacja może wymagać dodatkowej autoryzacji (np. kodem PIN).
+
+image::karty_waluto_Usun_mix.png[image,width=604,height=315]
+
+NOTE: Użytkownik usuwa konto w EUR przypisane do karty wielowalutowej.
+Od tej pory transakcje kartą w strefie euro będą rozliczane z rachunku głównego (PLN), co może wiązać się z kosztami przewalutowania.
+
+
+
+=== Limity tymczasowe karty
+
+Limity tymczasowe pozwalają użytkownikowi czasowo zmienić (najczęściej zwiększyć) limity transakcji dla wybranej karty płatniczej.
+
+Tymczasowa zmiana może dotyczyć następujących rodzajów transakcji:
+
+* płatności bezgotówkowych (POS),
+* transakcji internetowych (e-commerce),
+* wypłat gotówki z bankomatów.
+
+image::karty_limit_d.png[120,220,align="center"]
+
+Zmieniony limit obowiązuje:
+
+* do końca dnia, w którym został ustawiony, lub:
+* do momentu zmiany limitów zwykłych (stałych) przez użytkownika - co automatycznie anuluje limit tymczasowy.
+
+Po upływie okresu ważności limitu tymczasowego (czyli z końcem dnia lub przy ręcznej zmianie limitów zwykłych), system automatycznie przywraca domyślne wartości limitów stałych przypisanych do danej karty.
+
+W celu ustawiania limitów tymczasowych do karty użytkownik w aplikacji mobilnej:
+
+* dla użytkownika indywidualnego (nowe  grafiki):
+
+** przejdź do zakładki *Karty*, a następnie wybierz aktywną kartę z listy,
+** wybierz opcję *[Pokaż]* przy pozycji "_Limity transakcyjne_",
+** wybierz opcję *[Edytuj limity tymczasowe]*,
+** wprowadź zmiany w limitach tymczasowych,
+** zatwierdź wybór - operacja może wymagać dodatkowej autoryzacji (np. kodem PIN).
+
+image::karty_limit_mix_d.png[image,width=604,height=315]
+
+* dla użytkownika korporacyjnego (stare grafiki):
+
+** przejdź do zakładki *Karty* i wybierz aktywną kartę,
+** wybierz szczegóły karty,
+** wybierz opcję *[Zmień limity]*,
+** zaznacz przełącznik *Limity tymczasowe*,
+** wprowadź zmiany dla limitów,
+** potwierdź operację kodem SMS lub autoryzacją mobilną.
+
+image::karty_limit_mix_f.png[image,width=604,height=315]
+
+W przypadku odrzucenia zmiany limitów prezentowany jest stosowny komunikat.
+
+image::karty_limit5_f.png[120,220,align="center"]
+

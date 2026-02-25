@@ -1,0 +1,22 @@
+:imagesdir: images
+
+[[ustawienia_BLIK]]
+=== Zarządzanie ustawieniami BLIK
+
+Użytkownik w każdym momencie posiada możliwość zarządzania usługą BLIK. Po zalogowaniu się do aplikacji mobilnej należy kliknąć na ikonkę image:icons/cui_menu_ludzik_green_newUI.jpg[25,25,align="center"] znajdującą się w prawym górnym rogu ekranu. Następnie po wybraniu opcji "*_Ustawienia -> Ustawienia BLIK_*" użytkownikowi prezentowany jest ekran umożliwiający:
+
+* włączenie i wyłączenie usługi BLIK wraz z akceptacją regulaminu,
+* ustawienie rachunku do realizacji płatności BLIK,
+* ustawienie indywidualnych limitów użytkownika dla płatności BLIK,
+* wyrażenie zgody na realizację Szybkich Płatności bez PIN,
+* wyrażenie zgody na prezentację informacji o dostępnym saldzie rachunku na ekranie z kodem BLIK,
+* wyrażenie zgody na odbieranie przelewów BLIKIEM (opcja dostępna, gdy Bank ma włączoną funkcjonalność przelewów na telefon BLIK),
+* zablokowanie odbierania próśb o przelew BLIK (opcja dostępna, gdy Bank ma włączoną funkcjonalność próśb o przelew BLIK).
+
+Dodatkowo prezentowany jest:
+
+* numer telefonu użytkownika powiązany z usługą BLIK,
+* link do pobrania regulaminu usługi BLIK.
+
+image::BLIK_ustawienia.jpg[120,220,align="center"]
+

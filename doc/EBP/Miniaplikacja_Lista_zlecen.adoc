@@ -1,0 +1,1392 @@
+:imagesdir: images
+
+= Lista zleceń
+
+Opcja _Listy zleceń_ umożliwia Użytkownikowi przeglądanie oraz obsługę zleceń, które wymagają autoryzacji.
+
+image::Lista_zlecen/image1.png[]
+
+== Lista przelewów
+
+Po wyborze opcji _Lista zleceń_ prezentowana jest lista dyspozycji przelewów do autoryzacji oraz dalszej obsługi, czyli dyspozycji, które zostały wprowadzone ręcznie przez Użytkownika lub zaimportowane z plików, ale nie zostały jeszcze podpisane i obsłużone.
+
+System umożliwia zapisanie następujących dyspozycji w celu późniejszej autoryzacji oraz obsługi:
+
+* przelewów zwykłych ELIXIR/SORBNET, podatku (również z datą przyszłą),
+
+* przelewów własnych,
+
+* przelewu walutowego,
+
+* dyspozycji zlecenia stałego (przelew zwykły ELIXIR z opcją powtarzania).
+
+Funkcjonalność Listy przelewów z opcji Lista zleceń obejmuje następujące możliwości:
+
+* filtrowania prostego, +
+* filtrowania zaawansowanego, +
+* wykonania akcji na wybranej dyspozycji *(panel akcji pojedynczych)* +
+* wykonania akcji na zaznaczonych dyspozycjach *(panel akcji zbiorczych)*
+
+NOTE: Funkcjonalność dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia. Uprawnienia ustawiane są przez Administratora w opcji Ustawienia → Uprawnienia Użytkowników.
+
+== Lista przelewów - podgląd listy
+
+Dyspozycje przelewów z poziomu Listy zleceń prezentowane są w formie listy. Na liście wyświetlane są dyspozycje z domyślnego przedziału czasowego – od miesiąca wstecz do miesiąca w przód (ze względu na dyspozycje z datą przyszłą). Lista jest stronicowana.
+
+image::Lista_zlecen/image2.png[]
+
+Dla każdej dyspozycji dostępne są następujące informacje:
+
+* *Data dostarczenia* – data realizacji dyspozycji, +
+* *Status* – status przelewu, +
+* *Odbiorca* – nazwa odbiorcy płatności, numer rachunku odbiorcy, +
+* *Referencje/Opis* – referencje/tytuł płatności przelewu, +
+* *Kwota* - kwota płatności wraz z symbolem waluty.
+
+Wybranie wiersza dyspozycji powoduje jego rozwinięcie i prezentację dodatkowych informacji:
+
+* *Rodzaj przelewu* – np. przelew zwykły, przelew podatku, +
+* *Z rachunku* – numer rachunku nadawcy.
+
+Dla każdej dyspozycji prezentowany jest *panel akcji pojedynczych* (przyciski [AKCEPTUJ] i [DODATKOWE OPCJE]), czyli zestaw akcji jakie można wykonać na dyspozycji o określonym statusie. Dodatkowo na dostępność wybranych akcji wpływają uprawnienia, które posiada Użytkownik (uprawnienia są ustawiane przez Administratora Użytkowników w opcji _Ustawienia→Uprawnienia Użytkowników_).
+
+Ponowne kliknięcie zwija wiersz dyspozycji.
+
+Pod listą prezentowane jest podsumowanie dyspozycji per strona oraz per całość, w podziale na waluty. W przypadku gdy lista rekordów na liście mieści się na jednej stronie, to system prezentuje wyłącznie podsumowanie całości.
+
+=== Możliwość zaznaczania przelewów na liście
+
+Dla przelewów, będących na _Liście zleceń_ z lewej strony wiersza znajdują się checkboxy umożliwiające zaznaczenie poszczególnych pozycji. Po zaznaczeniu wybranych pozycji pojawia się informacja o łącznej kwocie przelewów zaznaczonych.
+
+Zaznaczenie dyspozycji wykorzystywane jest podczas korzystania z *panelu akcji zbiorczych* znajdującego się nad tabelą. Są to przyciski: [AKCEPTUJ], [PRZEKAŻ DO REALIZACJI] i [DODATKOWE OPCJE].
+
+image::Lista_zlecen/image3.png[image,width=604,height=265]
+
+Przelewy pochodzące z paczek nie mają możliwości zaznaczenia (temat został przybliżony w rozdziale _Filtry_), checkbox w tym przypadku nie jest prezentowany, a więc nie jest możliwe wykonanie akcji z *panelu akcji zbiorczych* (opisanych w dalszej części dokumentacji). Nie ma również możliwości wykonania akcji z *panelu akcji pojedynczych*. Dostępna jest wyłącznie opcja przejścia do szczegółów paczki.
+
+=== Możliwość zaznaczenia wszystkich przelewów na wszystkich stronach.
+
+System umożliwia zaznaczenie wszystkich pozycji na wszystkich stronach listy przelewów, dla których jest to możliwe. Kliknięcie w nagłówku tabeli w kwadrat (pole checkbox) zaznacza na stronie wszystkie pozycje przelewów, a kliknięcie obok niego w strzałkę w dół (ikona image:Lista_zlecen/image4.png[image,width=33,height=31]) rozwija listę z opcją [NA WSZYSTKICH STRONACH]. Wybranie tej opcji powoduje zaznaczenie wszystkich pozycji na wszystkich stronach listy. Dodatkowo pojawia się informacja o łącznej kwocie wszystkich zaznaczonych przelewów.
+
+image::Lista_zlecen/image5.png[image,width=548,height=220]
+
+=== Lista przelewów - filtry
+
+W celu zawężenia prezentacji listy dyspozycji, Użytkownik ma możliwość zastosowania filtrów: prostego oraz zawansowanego.
+
+Filtr prosty umożliwia wyszukanie po treści. W tym celu należy wpisać w pole *Wyszukaj* tekst i poczekać na wyfiltrowanie rezultatów. Wyszukane dyspozycje będą z określonego przedziału czasowego (data od-do), który można zmienić.
+
+Użycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtru zaawansowanego dla następujących pól:
+
+* *Z rachunku* - numer rachunku obciążanego w postaci zamaskowanej,
+
+* *Rachunek odbiorcy* - pole do wpisania numeru rachunku odbiorcy,
+
+* *Rodzaj przelewu* – wybór z wartości: _Wszystkie, Zwykły, Własny, Walutowy, Podatkowy, Cykliczny, Sorbnet, ExpressElixir,_
+
+* *Typ dyspozycji* - wybór z wartości: _Wszystkie, Edycja cyklicznego, Anulowana,_ +
+* *Kwota od, do* - zakres kwot (od-do), dla których ma zostać wyświetlona lista dyspozycji, +
+* *Status* – status dyspozycji, wybór wartości__: Zaznacz wszystkie, Nowy, W akceptacji, Do akceptacji, Gotowy do przekazania, Przekazany do realizacji, W realizacji, Aktywny przelew odroczony, Aktywny, Anulowany, Odrzucona, Zrealizowany, Zawieszony__, +
+* *Pokaż przelewy w paczkach* – włączenie/wyłączenie prezentacji dyspozycji przelewów zawartych w paczkach,
+
+* *Typ sortowania* - wybór z wartości: _Data dostarczenia, Data wprowadzenia_, +
+* *Liczba transakcji na stronie.*
+
+image::Lista_zlecen/image6.png[image,width=604,height=251]
+
+Zastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].
+
+== Lista przelewów - panel akcji pojedynczych dla przelewu
+
+Dla każdego przelewu z listy (po kliknięciu w wiersz) dostępny jest określony zestaw akcji (*panel akcji pojedynczych* - przyciski: [AKCEPTUJ] i [DODATKOWE OPCJE]).
+
+image::Lista_zlecen/image7.png[image,width=309,height=84]
+
+Poniżej znajduje się zestaw akcji w przypadku gdy Użytkownik posiada odpowiednie uprawnienia nadane przez Administratora Użytkowników w opcji _Ustawienia → Uprawnienia Użytkowników_.
+
+image::Lista_zlecen/image8.png[image,width=604,height=220]
+
+Akcje na wybranej dyspozycji przelewu:
+
+* *Akceptuj* - autoryzacja dyspozycji przelewu (tylko dla dyspozycji w statusie _Nowy, Do akceptacji_), +
+* *Przekaż do realizacji* - przekazanie dyspozycji przelewu do realizacji (tylko dla dyspozycji w statusie _Gotowy do przekazania_), +
+* *Dodaj do paczki* - dodanie dyspozycji przelewu do istniejącej paczki (tylko dla dyspozycji w statusie _Nowy_), +
+* *Szczegóły* – prezentacja szczegółów przelewu, +
+* *Kopiuj* - skopiowanie dyspozycji przelewu (dla statusów: _Nowy, W akceptacji, Do akceptacji, Gotowa do przekazania, Przekazana do realizacji_), +
+* *Edytuj* - edycja danych dyspozycji przelewu (tylko dla dyspozycji w statusie _Nowy_), +
+* *Anuluj* - anulowanie dyspozycji przelewu (tylko dla dyspozycji w statusie _Nowy_), +
+* *Wycofaj akcept* - wycofanie akceptów dyspozycji przelewu (tylko dla dyspozycji w statusie _Do akceptacji, W akceptacji, Gotowy do przekazania_).
+
+== Lista przelewów - panel akcji zbiorczych
+
+Zaznaczenie pozycji na liście przelewów wykorzystuje się do zbiorczego wykonania akcji na tej grupie dyspozycji przelewów - przyciski: [AKCEPTUJ], [PRZEKAŻ DO REALIZACJI] i [DODATKOWE OPCJE] nad tabelą.
+
+image::Lista_zlecen/image9.png[image,width=604,height=192]
+
+Poniżej znajduje się zestaw akcji w przypadku gdy Użytkownik posiada odpowiednie uprawnienia nadane przez Administratora Użytkowników w opcji _Ustawienia→Uprawnienia Użytkowników._
+
+Akcje na zaznaczonych dyspozycjach przelewów:
+
+* *Akceptuj* - autoryzacja dyspozycji przelewów (tylko dla dyspozycji w statusie _Nowy, Do akceptacji_),
+
+* *Przekaż do realizacji* - przekazanie dyspozycji przelewów do realizacji (tylko dla dyspozycji w statusie _Gotowy do przekazania_),
+
+* *Dodatkowe opcje:*
+
+** *Utwórz paczkę* - utworzenie paczki z zaznaczonych dyspozycji przelewów (tylko dla dyspozycji przelewów w statusie _Nowy_) - opcja zależna od usługi paczki,
+
+** *Kopiuj przelewy* – kopiowanie przelewów zaznaczonych, skopiowane przelewy otrzymują status _Nowy_,
+
+** *Wycofaj akcept* - wycofanie akceptów dyspozycji przelewów (tylko dla dyspozycji w statusie _Do akceptacji, W akceptacji, Gotowy do przekazania_),
+
+** *Anuluj* - anulowanie dyspozycji przelewów (tylko dla dyspozycji w statusie _Nowy_),
+
+** *Dodaj do paczki* - dodanie dyspozycji przelewów do istniejącej paczki (tylko dla dyspozycji przelewów w statusie _Nowy_) - opcja zależna od usługi paczki,
+
+** *Pobierz PDF* – wygenerowane zestawienie zgodnie ze zdefiniowanym filtrem ze wszystkich dyspozycji przelewów, 
+
+** *Pobierz PDF (zaznaczone)* – wygenerowanie zestawienia zgodnie ze zdefiniowanym filtrem z dyspozycji przelewów wybranych przez Użytkownika (checkbox).
+
+== Lista przelewów - opis wybranych akcji
+
+=== Dostępność akcji w zależności od statusu zlecenia
+
+System udostępnia (wyświetla) Użytkownikowi jedynie te akcje na dyspozycji, (akcje pojedyncze, zbiorcze, na szczegółach), które są możliwe do wykonania z uwagi na uprawnienia Użytkownika oraz stan dyspozycji. Przykładowo dla dyspozycji przelewu dostępna jest akcja edycji danych dyspozycji, jeśli dyspozycja znajduje się w statusie _Nowy_ oraz Użytkownik posiada uprawnienie do edycji.
+
+=== Podgląd szczegółów przelewu
+
+Podgląd szczegółów przelewu dostępny jest z poziomu *panelu akcji pojedynczych*. Zakres prezentowanych danych zależy od typu przelewu.
+
+Z poziomu szczegółów przelewu Użytkownik ma możliwość akceptacji przelewu (dla statusu przelewu _Nowy, Do akceptacji_).
+
+Z poziomu szczegółów przelewu Użytkownik ma możliwość podglądu informacji o akcjach jakie miały miejsce na danym zleceniu (np. utworzenie zlecenia). W tym celu należy wybrać przycisk [POKAŻ HISTORIĘ OPERACJI] prezentowany na dole formatki. System rejestruje oraz prezentuje akcje:
+
+* utworzenia zlecenia,
+
+* akceptacji zlecenia,
+
+* edycji zlecenia,
+
+* przekazania do realizacji,
+
+* skopiowania zlecenia,
+
+* anulowania zlecenia.
+
+Sekcja zawiera informacje o imieniu, nazwisku Użytkownika, który daną akcję wykonał oraz dacie i godzinie, w której akcja nastąpiła np.:
+
+image::Lista_zlecen/image10.png[image,width=473,height=215]
+
+W sekcji prezentującej akcje dla przelewu informacje prezentowane są narastająco (najnowszy wpis jest umieszczony na górze listy).
+
+Kliknięcie [UKRYJ HISTORIĘ OPERACJI] chowa informacje o wykonanych akcjach.
+
+=== Edycja przelewu z Listy zleceń
+
+Edycja przelewu z Listy zleceń może być wykonana z poziomu:
+
+* listy zleceń, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*), wybraniu [DODATKOWE OPCJE], a następnie użyciu opcji *Edytuj*.
+
+image::Lista_zlecen/image11.png[image,width=604,height=218]
+
+Wybór opcji *Edytuj* powoduje wyświetlenie okna prezentującego szczegółowe informacje dla przelewu w trybie edycji. Po zmodyfikowaniu danych należy potwierdzić zmiany. Edycja przelewów z listy zleceń możliwa jest dla wszystkich typów dyspozycji obsługiwanych na liście zleceń. W procesie edycji przelewu data realizacji przelewu ustawiana jest na najbliższy dzień roboczy. Walidacje przy edycji są takie jak dla nowego przelewu.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do edycji przelewów. Edycja dostępna jest dla przelewów o statusie _Nowy_.
+
+=== Kopiowanie pojedynczego przelewu z Listy zleceń
+
+Kopiowanie pojedynczego przelewu z Listy zleceń może być wykonane z poziomu:
+
+* listy przelewów, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*), ), wybraniu [DODATKOWE OPCJE], a następnie użycia opcji *Kopiuj*.
+
+image::Lista_zlecen/image12.png[image,width=604,height=181]
+
+Wybór opcji *Kopiuj* powoduje otwarcie okna wprowadzania nowego przelewu z danymi zaczerpniętymi z oryginalnego przelewu. W systemie nie ma nakładanych ograniczeń na sposób zapisu przelewu - może zostać zrealizowany ścieżką standardową lub poprzez dodanie dyspozycji do listy przelewów na _Liście zleceń_.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do dodawania przelewów. Kopiowanie dostępne jest dla każdego statusu przelewu.
+
+=== Kopiowanie zbiorcze przelewów z Listy zleceń
+
+Akcja kopiowania zbiorczego przelewów dostępna jest w *panelu akcji zbiorczych*. W celu skorzystania z kopiowania zbiorczego należy zaznaczyć przelewy z _Listy zleceń_ , a następnie wybrać akcję zbiorczą *Kopiuj przelewy*. System zaprezentuje okno z pytaniem, czy skopiować przelewy z informacją, że aktywne przelewy odroczone i przelewy cykliczne zostaną pominięte.
+
+image::Lista_zlecen/image13.png[image,width=579,height=291]
+
+Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia.
+
+image::Lista_zlecen/image14.png[image,width=514,height=321]
+
+Skopiowane dyspozycje przelewów otrzymują status _Nowy_.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do dodawania przelewów. Kopiowanie dostępne jest dla każdego statusu przelewu.
+
+=== Anulowanie pojedynczego przelewu z Listy zleceń
+
+Anulowanie przelewu z _Listy zleceń_ może być wykonane z poziomu:
+
+* listy przelewów, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*), wybraniu [DODATKOWE OPCJE], a następnie użyciu opcji *Anuluj*.
+
+Wybór opcji *Anuluj* powoduje otwarcie okna, na którym wyświetlone są dane przelewu. Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia.
+
+image::Lista_zlecen/image15.png[image,width=368,height=248]
+
+Operacja anulowania przelewu nie wymaga autoryzacji.
+Anulowane dyspozycje przelewów są widoczne na liście zleceń ze statusem _Anulowany_.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do usuwania przelewów. Anulowanie dostępne jest dla przelewu o statusie _Nowy_.
+
+=== Anulowanie zbiorcze przelewów z Listy zleceń
+
+Akcja anulowania zbiorczego przelewów dostępna jest w *panelu akcji zbiorczych*.
+W celu skorzystania z anulowania zbiorczego przelewów należy zaznaczyć przelewy z _Listy zleceń_, a następnie wybrać akcję zbiorczą *Anuluj*. System zaprezentuje podsumowanie zaznaczonych przelewów.
+
+image::Lista_zlecen/image16.png[image,width=604,height=224]
+
+Po wybraniu opcji [SZCZEGÓŁY] system prezentuje listę dyspozycji:
+
+image::Lista_zlecen/image105.png[image,width=604,height=224]
+
+Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do usuwania przelewów. Anulowanie dostępne jest dla przelewów o statusie _Nowy_.
+
+=== Akceptacja pojedynczego przelewu z Listy zleceń
+
+Akceptacja przelewu może być wykonana z poziomu:
+
+* listy przelewów, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*),
+
+* *panelu akcji zbiorczych* po uprzednim jego zaznaczeniu, a następnie użyciu opcji *Akceptuj*.
+
+Wybór opcji *Akceptuj* powoduje wyświetlenie szczegółów przelewu wraz z sekcją do podpisu. Po zaakceptowaniu przelewu zostanie wyświetlone okno potwierdzenia.
+
+Proces akceptacji weryfikuje schemat akceptacji oraz limit kwotowy akceptacji.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do akceptowania przelewów. Akceptowanie dostępne jest dla statusu przelewu _Nowy_.
+
+NOTE: W przypadku włączonej usługi recipientWhiteList przelewy dodatkowo podlegaja weryfikacji wg <<akc-poj-biala-lista-podatnikow,białej listy podatników VAT>>
+
+[[akc-poj-biala-lista-podatnikow]]
+==== Akceptacja pojedyncza - biała lista podatników VAT
+
+W przypadku włączonej usługi *recipientWhiteList* przelewy podczas akceptacji dodatkowo podlegają weryfikacji wg białej listy podatników VAT.
+Na formatce akceptacji dyspozycji prezentowany jest aktualny wynik weryfikacji podatnika na białej liście zgodny z danymi przy dyspozycji.
+Wynik weryfikacji zapisywany jest w momencie wejścia na formatkę akceptacji.
+
+Przykład negatywnej weryfikacji podatnika na białej liście podatników VAT:
+
+image::Lista_zlecen/image67.jpg[]
+
+Przykład pozytywnej weryfikacji podatnika na białej liście podatników VAT:
+
+image::Lista_zlecen/image68.jpg[]
+
+
+=== Akceptacja zbiorcza wielu przelewów z Listy zleceń
+
+Akcja akceptacji zbiorczej wielu przelewów dostępna jest w *panelu akcji zbiorczych*. W celu skorzystania z akceptacji zbiorczej przelewów należy zaznaczyć przelewy na liście, a następnie wybrać akcję zbiorczą *Akceptuj*. System zaprezentuje podsumowanie zaznaczonych przelewów wraz z sekcją do podpisu.
+
+image::Lista_zlecen/image17.png[image,width=604,height=287]
+
+Proces akceptacji weryfikuje schemat akceptacji oraz limit kwotowy akceptacji.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do akceptowania przelewów. Akceptowanie dostępne jest dla statusu przelewów _Nowy_.
+
+NOTE: Istnieje parametr systemowy, który decyduje o tym ile jednorazowo można zaznaczyć przelewów do akceptacji. W przypadku przekroczenia tej liczby system prezentuje odpowiedni komunikat.
+
+NOTE: W przypadku włączonej usługi recipientWhiteList przelewy dodatkowo podlegaja walidacji wg <<akc-zb-biala-lista-podatnikow,białej listy podatników VAT>>
+
+[[akc-zb-biala-lista-podatnikow]]
+==== Akceptacja zbiorcza - biała lista podatników VAT
+
+W przypadku włączonej usługi *recipientWhiteList* przelewy podczas akceptacji dodatkowo podlegają weryfikacji wg białej listy podatników.
+Wynik ww. weryfikacji prezentowany jest w kolumnie _Dyspozycje (weryfikacja podatników)_ pod postacią informacji
+o liczbie pozytywnie i negatywnie zweryfikowanych przelewów pod kątem białej listy.
+
+image::Lista_zlecen/image62.jpg[]
+
+Po najechaniu na ikonkę image:Lista_zlecen/image64.JPG[image,width=33,height=31] wyświetlona zostaje legenda dot. weryfikacji przelewów:
+
+image::Lista_zlecen/image63.jpg[image,width=344,height=292]
+
+Lista przelewów, które zostały negatywnie zweryfikowane jest dostępna po wybraniu liczby w kolorze żółtym (zgodnie z legendą:
+"Żółty - Wynik weryfikacji jest niedostępny lub rachunek nie figuruje w rejestrze VAT").
+
+Prezentowana jest lista przelewów negatywnie zweryfikowanych. Każda pozycja zawiera m.in. szczegóły tej weryfikacji.
+
+image::Lista_zlecen/image65.jpg[]
+
+Po rozwinięciu rekordu danych podstawowych prezentowane są dodatkowe dane przelewu - w tym szczegóły negatywnej weryfikacji w polu _Status podatnika VAT_.
+
+image::Lista_zlecen/image66.jpg[]
+
+
+=== Wycofanie akceptu
+
+Użytkownik ma możliwość wycofania akceptów dla dyspozycji przelewów z poziomu:
+
+* listy przelewów, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*), +
+* *panelu akcji zbiorczych* po uprzednim zaznaczeniu dyspozycji, a następnie użyciu opcji *Wycofaj akcept*.
+
+System zaprezentuje okno z pytaniem czy wycofać akcepty.
+
+image::Lista_zlecen/image18.png[image,width=568,height=247]
+
+Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia.
+
+image::Lista_zlecen/image19.png[image,width=557,height=315]
+
+Wycofanie akceptów usuwa wszystkie podpisy oraz ustawia status dyspozycji przelewów na _Nowy._
+
+=== Przekazanie pojedynczego przelewu do realizacji z Listy zleceń
+
+Przekazanie do realizacji przelewu z _Listy zleceń_ może być wykonane z poziomu:
+
+* listy przelewów, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*),
+
+System weryfikuje limit transakcji – dzienny i jednorazowy limit kwotowy jaki Użytkownik może zrealizować. Następnie zaprezentuje okno z pytaniem, czy przekazać dyspozycję do realizacji. Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia. Przekazana dyspozycja przelewu otrzymuje status _Przekazany do realizacji_.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do przekazywania przelewów. Przekazywanie dostępne jest dla statusu _Gotowy do przekazania_.
+
+NOTE: W przypadku włączonej usługi recipientWhiteList przelewy dodatkowo podlegaja weryfikacji wg <<przekazanie-poj-biala-lista-podatnikow,białej listy podatników VAT>>
+
+[[przekazanie-poj-biala-lista-podatnikow]]
+==== Przekazanie pojedynczego przelewu do realizacji - biała lista podatników VAT
+
+W przypadku włączonej usługi *recipientWhiteList* przelewy podczas przekazywania do realizacji dodatkowo podlegają weryfikacji wg białej listy podatników VAT.
+Na formatce akceptacji dyspozycji prezentowany jest aktualny wynik weryfikacji podatnika na białej liście zgodny z danymi przy dyspozycji.
+Wynik weryfikacji zapisywany jest w momencie wejścia na formatkę akceptacji.
+
+Przykład negatywnej weryfikacji podatnika na białej liście podatników VAT:
+
+image::Lista_zlecen/image67.jpg[]
+
+Przykład pozytywnej weryfikacji podatnika na białej liście podatników VAT:
+
+image::Lista_zlecen/image68.jpg[]
+
+=== Przekazanie zbiorcze przelewów do realizacji z Listy zleceń
+
+Akcja przekazania zbiorczego przelewów do realizacji dostępna jest w *panelu akcji zbiorczych*. W celu skorzystania z przekazywania zbiorczego należy zaznaczyć przelewy z _Listy zleceń_, a następnie wybrać akcję zbiorczą *Przekaż do realizacji* w [DODATKOWE OPCJE].
+
+image::Lista_zlecen/image20.png[image,width=604,height=264]
+
+System weryfikuje limit transakcji – dzienny limit kwotowy jaki Użytkownik może zrealizować. Następnie zaprezentuje okno z pytaniem czy przekazać przelewy do realizacji. Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia. Przekazane dyspozycje przelewów otrzymują status _Przekazany do realizacji_.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do przekazywania przelewów. Przekazywanie dostępne jest dla statusu _Gotowy do przekazania_.
+
+NOTE: W przypadku włączonej usługi recipientWhiteList przelewy dodatkowo podlegaja walidacji wg <<przekazanie-zb-biala-lista-podatnikow,białej listy podatników VAT>>
+
+[[przekazanie-zb-biala-lista-podatnikow]]
+==== Przekazanie zbiorcze - biała lista podatników VAT
+
+W przypadku włączonej usługi *recipientWhiteList* przelewy podczas przekazywania do realizacji dodatkowo podlegają weryfikacji wg białej listy podatników VAT.
+Wynik ww. weryfikacji prezentowany jest w kolumnie _Dyspozycje (weryfikacja podatników)_ pod postacią informacji
+o liczbie pozytywnie i negatywnie zweryfikowanych przelewów pod kątem białej listy.
+
+image::Lista_zlecen/image62.jpg[]
+
+Po najechaniu na ikonkę image:Lista_zlecen/image64.JPG[image,width=33,height=31] wyświetlona zostaje legenda dot. weryfikacji przelewów:
+
+image::Lista_zlecen/image63.jpg[image,width=344,height=292]
+
+Lista przelewów, które zostały negatywnie zweryfikowane jest dostępna po wybraniu liczby w kolorze żółtym (zgodnie z legendą:
+"Żółty - Wynik weryfikacji jest niedostępny lub rachunek nie figuruje w rejestrze VAT").
+
+Prezentowana jest lista przelewów negatywnie zweryfikowanych. Każda pozycja zawiera m.in. szczegóły tej weryfikacji.
+
+image::Lista_zlecen/image65.jpg[]
+
+Po rozwinięciu rekordu danych podstawowych prezentowane są dodatkowe dane przelewu - w tym szczegóły negatywnej weryfikacji w polu _Status podatnika VAT_.
+
+image::Lista_zlecen/image66.jpg[]
+
+
+== Paczki przelewów
+
+Paczki przelewów to zbiór pogrupowanych przelewów w jedną całość. Obsługa paczek znajduje się w opcji _Lista zleceń_ w zakładce _Paczki przelewów_.
+
+System pozwala utworzyć paczki z poziomu:
+
+* Dyspozycji przelewów z _Listy zleceń_,
+
+* Importu przelewów w opcji _Przelewy_.
+
+Funkcjonalność _Listy paczek_ obejmuje następujące możliwości:
+
+* filtrowania,
+
+* wykonania akcji na wybranej paczce (*panel akcji pojedynczych*),
+
+* wykonania akcji na zaznaczonych paczkach (*panel akcji zbiorczych*).
+
+NOTE: Funkcjonalność paczek dostępna jest dla Użytkownika, który posiada odpowiednie uprawnienia do paczek.
+
+== Lista przelewów - tworzenie paczki przelewów
+
+=== Tworzenie paczki przelewów z Listy zleceń
+
+Użytkownik ma możliwość utworzenia paczki z:
+
+* przelewów z różnych rachunków (z ograniczeniem do grupy rachunków wynikających ze schematów akceptacji (schemat na modulo w BackOffice oraz w rozróżnieniu na dodane modula podrzędne))
+
+* przelewów z różnych typów (np. razem zwykły, podatku, zagraniczny),
+
+* przelewów z różnych walut (np. PLN, USD, EUR),
+
+* przelewów z różnymi datami (razem bieżące i odroczone).
+
+W celu stworzenia nowej paczki należy zaznaczyć dyspozycje na liście przelewów, które mają wchodzić w skład danej paczki oraz wybrać akcję *Utwórz paczkę* dostępną w *panelu akcji zbiorczych*. Przelewy muszą posiadać status _Nowy_.
+
+Zaznaczenie przelewów i wybranie akcji *Utwórz paczkę* w [DODATKOWE OPCJE] spowoduje uruchomienie formatki _Tworzenie paczek._
+
+image::Lista_zlecen/image21.png[image,width=604,height=192]
+
+Na formatce prezentowane są dane:
+
+* *Lp* - numer wiersza paczki,
+
+* *Referencje* - pole tekstowe edytowalne dla Użytkownika umożliwiające podanie referencji danej paczki, pole opcjonalne,
+
+* *Nazwa paczki* - pole tekstowe wypełnione domyślnie datą z dokładnością do sekund (np. 20200204033436_1), edytowalne dla Użytkownika, pole wymagalne,
+
+* *Przelewy* - liczba przelewów w paczce,
+
+* *Łączna kwota* - łączna kwota przelewów znajdujących się w paczce.
+
+image::Lista_zlecen/image22.png[image,width=604,height=177]
+
+Po naciśnięciu przycisku [UTWÓRZ] zostanie wyświetlone okno potwierdzenia.
+
+image::Lista_zlecen/image23.png[image,width=571,height=323]
+
+Nowo utworzona paczka otrzymuje status _Nowa_.
+
+NOTE: Istnieje parametr systemowy (*TRANSFER_LIMIT_FOR_PACKAGE),* który decyduje ile można dodać przelewów do paczki (domyślnie 5000). W przypadku przekroczenia tej liczby system prezentuje odpowiedni komunikat.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do dodawania paczek.
+
+=== Tworzenie paczki przelewów z importu przelewów
+
+Podczas importu przelewów (opcja _Przelewy_) Użytkownik ma możliwość utworzenia paczki przelewów. Dotyczy to wszystkich typów przelewów w imporcie, czyli zwykłych i podatku.
+
+Możliwość utworzenia paczki znajduje się na drugim kroku importu przelewów. Za pomocą przycisku [ZAPISZ I STWÓRZ PACZKĘ] system przenosi do opcji tworzenia paczki.
+
+image::Lista_zlecen/image24.png[image,width=604,height=199]
+
+Nowo utworzona paczka otrzymuje status _Nowa_.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do przeglądania i importu przelewów, przeglądania i dodawania paczek.
+
+=== Dodawanie przelewu do paczki (istniejącej paczki)
+
+Do istniejącej paczki Użytkownik ma możliwość dodawania kolejnych dyspozycji przelewów. Istniejąca paczka musi mieć status _Nowa_, a istniejące przelewy status _Nowy_.
+
+Akcja dodawania przelewów do paczki może być wykonana z poziomu:
+
+* listy przelewów, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*),
+
+* z *panelu akcji zbiorczych*, a następnie użycia opcji *Dodaj do paczki*.
+
+Po wybraniu lub zaznaczeniu dyspozycji przelewów i wybraniu opcji *Dodaj do paczki* zaprezentowany zostanie formularz z listą paczek w statusie _Nowa_.
+
+image::Lista_zlecen/image25.png[image,width=604,height=166]
+
+Po wskazaniu paczki za pomocą przycisku [WYBIERZ] zostanie wyświetlone okno potwierdzenia.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do przeglądania i dodawania paczek.
+
+== Paczki przelewów - podgląd listy paczek
+
+Paczki przelewów prezentowane są w formie listy. Lista jest stronicowana. Dla każdej paczki dostępne są następujące informacje:
+
+* *Utworzono* – data utworzenia paczki,
+
+* *Status* – status paczki,
+
+* *Nazwa paczki* – nazwa paczki - pole wypełnione domyślnie datą utworzenia paczki z dokładnością do sekund (np. 20200204035216_1), o ile nie zostało zmienione przez Użytkownika,
+
+* *Referencje* – referencje paczki,
+
+* *Zlecenia* – liczba przelewów w paczce,
+
+* *Kwota* - łączna kwota przelewów znajdujących się w paczce, w podziale na waluty.
+
+Kliknięcie w wybrany wiersz dyspozycji powoduje rozwinięcie wiersza i prezentację *panelu akcji pojedynczych* (przyciski [AKCEPTUJ] i [DODATKOWE OPCJE]), czyli zestaw akcji jakie można wykonać na paczce o określonym statusie.
+
+image::Lista_zlecen/image26.png[image,width=604,height=225]
+
+Dodatkowo na dostępność wybranych akcji wpływają uprawnienia, które posiada Użytkownik (uprawnienia są ustawiane przez Administratora Użytkowników w opcji _Ustawienia→Uprawnienia Użytkowników_).
+
+Ponownie kliknięcie zwija wiersz paczki .
+
+Pod listą prezentowane jest podsumowanie paczek per strona oraz per całość, w podziale na waluty. W przypadku, gdy lista rekordów na liście mieści się na jednej stronie, to system prezentuje wyłącznie podsumowanie całości.
+
+=== Możliwość zaznaczania paczek na liście
+
+Dla paczek, które mają status inny niż _Przekazany do realizacji_ z lewej strony wiersza znajdują się checkboxy umożliwiające zaznaczenie poszczególnych pozycji. Zaznaczenie paczek wykorzystywane jest podczas korzystania z *panelu akcji zbiorczych* znajdującego się nad tabelą. Są to przyciski: [AKCEPTUJ] i [DODATKOWE OPCJE].
+
+image::Lista_zlecen/image27.png[image,width=604,height=164]
+
+=== Filtry
+
+W celu zawężenia prezentacji listy dyspozycji, Użytkownik ma możliwość zastosowania filtrów: prostego oraz zawansowanego.
+
+Filtr prosty umożliwia wyszukanie po treści w polach: nazwa paczki, referencje. W tym celu należy wpisać w pole *Wyszukaj* tekst. Wyszukane zostaną paczki utworzone z określonego przedziału czasowego (data od-do), który można zmienić.
+
+Użycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtru zaawansowanego dla następujących pól:
+
+* *Kwota od, do* - zakres kwot (od-do), dla których ma zostać wyświetlona lista paczek,
+
+* *Status* – status paczki,
+
+* *Liczba transakcji na stronie* - liczba paczek na stronie (zakres od 1 do 100). Domyślnie liczba pozycji na stronie to 20.
+
+image::Lista_zlecen/20paczki.png[image,width=550,height=150]
+
+Zastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].
+
+== Paczki przelewów - panel akcji pojedynczych dla paczki
+
+Dla każdej paczki z listy (po kliknięciu w wiersz) dostępny jest określony zestaw akcji (*panel akcji pojedynczych*) - przyciski: [AKCEPTUJ] i [DODATKOWE OPCJE]) dla każdej paczki.
+
+Poniżej znajduje się zestaw akcji w przypadku gdy Użytkownik posiada odpowiednie uprawnienia nadane przez Administratora Użytkowników w opcji _Ustawienia→Uprawnienia Użytkowników._
+
+image::Lista_zlecen/image29.png[image,width=604,height=253]
+
+Akcje na wybranej paczce:
+
+* *Akceptuj* - autoryzacja paczki (tylko dla paczki w statusie _Nowa, Do akceptacji_) oraz pogrupowane w [DODATKOWE OPCJE],
+
+* *Przekaż do realizacji* - przekazanie paczki do realizacji (tylko dla paczki w statusie _Gotowa do przekazania_),
+
+* *Rozpakuj* - rozpakowanie paczki (tylko dla paczki w statusie _Nowa_),
+
+* *Edytuj* - edycja danych paczki (tylko dla paczki w statusie _Nowa_),
+
+* *Kopiuj* - skopiowanie paczki,
+
+* *Usuń* - usunięcie paczki (tylko dla paczki w statusie Nowa),
+
+* *Wycofaj akcept* - wycofanie akceptów paczki (tylko dla paczki w statusie _Do akceptacji, W akceptacji, Gotowa do przekazania_),
+
+* *Szczegóły* - szczegóły paczki, skąd można przejść do listy przelewów w paczce.
+
+== Paczki przelewów - panel akcji zbiorczych
+
+Zaznaczenie pozycji na liście paczek przelewów wykorzystuje się do zbiorczego wykonania akcji na tej grupie paczek - przyciski: [AKCEPTUJ] i [DODATKOWE OPCJE] nad tabelą.
+
+image::Lista_zlecen/image30.png[image,width=604,height=167]
+
+Poniżej znajduje się zestaw akcji w przypadku, gdy Użytkownik posiada odpowiednie uprawnienia nadane przez Administratora Użytkowników w opcji _Ustawienia→Uprawnienia Użytkowników_.
+
+Akcje na zaznaczonych paczkach:
+
+* *Akceptuj* - autoryzacja zbiorcza paczek (tylko dla paczek w statusie _Nowa, Do akceptacji_) oraz pogrupowane w [DODATKOWE OPCJE],
+
+* *Akceptuj pojedynczo* - autoryzacja pojedynczej paczki (tylko dla paczek w statusie _Nowa, Do akceptacji_) prezentowane są formularze akceptacji poszczególnych paczek, każda paczka na osobnym formularzu z możliwością pominięcia paczki,
+
+* *Przekaż do realizacji* - przekazanie paczek do realizacji (tylko dla paczek w statusie _Gotowa do przekazania_),
+
+* *Usuń* - usunięcie paczek (tylko dla paczki w statusie _Nowa_),
+
+* *Wycofaj akcept* - wycofanie akceptów paczek (tylko dla paczek w statusie _Do akceptacji, W akceptacji, Gotowa do przekazania_).
+
+Dostępność checkboxu dla paczki jest zależna od statusu paczki - dla statusu _Przekazane do realizacji_ checkbox będzie niedostępny.
+
+== Paczki przelewów - opis wybranych akcji
+
+=== Dostępność akcji w zależności od statusu paczki
+
+System udostępnia (wyświetla) Użytkownikowi jedynie te akcje na paczce (akcje pojedyncze, zbiorcze, na szczegółach), które są możliwe do wykonania z uwagi na uprawnienia Użytkownika oraz stan paczki. Przykładowo dla paczki dostępna jest akcja edycji danych paczki, jeśli dyspozycja znajduje się w statusie _Nowa_ oraz Użytkownik posiada uprawnienie do edycji.
+
+W przypadku gdy nie zaznaczono żadnej paczki albo dla zaznaczonych nie ma żadnej akcji zbiorczej, przyciski w *panelu akcji zbiorczych* są nieaktywne.
+
+== Podgląd szczegółów paczki
+
+Podgląd szczegółów paczki dostępny jest z poziomu *panelu akcji pojedynczych*. Na formatce prezentowane są następujące dane:
+
+* *Typ* - typ dyspozycji – paczka,
+
+* *Nazwa* - nazwa paczki,
+
+* *Status* - status paczki,
+
+* *Referencje* - referencje paczki,
+
+* *Liczba przelewów* - liczba przelewów w paczce.
+
+image::Lista_zlecen/image31.png[image,width=604,height=202]
+
+Dodatkowo wyświetlane jest zestawienie informacji dotyczących przelewów zawartych w paczce:
+
+* Listę rachunków obciążanych i liczba przelewów złożonych z poszczególnych rachunków, łączną kwotą wraz z walutą,
+
+* Listę typów przelewów zawartych w paczce z łączną kwotą z podziałem na waluty,
+
+* Listę walut, liczbę przelewów w danej walucie wraz z łączną kwotą.
+
+image::Lista_zlecen/image32.png[image,width=604,height=240]
+
+Z poziomu szczegółów paczki dostępne są także następujące akcje:
+
+* *Akceptuj* - autoryzacja paczki (tylko dla paczki w statusie _Nowa, Do akceptacji_),
+
+* *Lista przelewów* - podgląd listy przelewów w paczce,
+
+oraz pogrupowane w [DODATKOWE OPCJE]
+
+* *Przekaż do realizacji* - przekazanie paczki do realizacji (tylko dla paczki w statusie _Gotowa do przekazania_),
+
+* *Rozpakuj* - rozpakowanie paczki (tylko dla paczki w statusie _Nowa_),
+
+* *Edytuj* - edycja danych paczki (tylko dla paczki w statusie _Nowa_),
+
+* *Kopiuj* - kopiowanie paczki przelewów (skopiowana paczka otrzyma status _Nowa_),
+
+* *Usuń* - usunięcie paczki (tylko dla paczki w statusie _Nowa_),
+
+* *Kopiuj przelewy* - kopiowanie przelewów z paczki,
+
+* *Wycofaj akcept* - wycofanie akceptów paczki (tylko dla paczki w statusie _Do akceptacji, W akceptacji_).
+
+== Edycja paczki przelewów
+
+Edycja paczki przelewów może być wykonana z poziomu:
+
+* listy paczek, po kliknięciu w wiersz wybranej paczki (*panel akcji pojedynczych*),
+
+* szczegółów paczki,
+
+a następnie użyciu opcji *Edytuj*.
+
+Wybór opcji *Edytuj* powoduje wyświetlenie okna prezentującego szczegółowe informacje dla paczki w trybie edycji.
+
+image::Lista_zlecen/image33.png[image,width=604,height=258]
+
+Edycja obejmuje:
+
+* nazwę paczki (wymagane),
+
+* pole referencje (niewymagane).
+
+Po zmodyfikowaniu danych należy zapisać zmiany. System zapisuje wprowadzone zmiany oraz prezentuje okno z potwierdzeniem.
+
+image::Lista_zlecen/image34.png[image,width=555,height=318]
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do edycji paczek. Edycja dostępna jest dla paczek o statusie _Nowa_.
+
+== Kopiowanie paczki przelewów
+
+Kopiowanie paczki przelewów (wraz z przelewami) może być wykonane z poziomu:
+
+* listy paczek, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*),
+
+* szczegółów paczki,
+
+a następnie użycia opcji *Kopiuj*.
+
+Wybór opcji *Kopiuj* powoduje otwarcie okna z pytaniem czy skopiować paczkę.
+
+image::Lista_zlecen/a.png[image,width=560,height=253]
+
+Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia.
+
+image::Lista_zlecen/image36.png[image,width=559,height=318]
+
+Skopiowana paczka otrzyma status _Nowa._
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do dodawania paczek. Kopiowanie dostępne jest dla każdego statusu paczki.
+
+== Kopiowanie wszystkich przelewów z paczki
+
+Kopiowanie wszystkich przelewów z paczki jest możliwe z poziomu akcji *Kopiuj przelewy* na szczegółach paczki.
+
+image::Lista_zlecen/image37.png[image,width=604,height=170]
+
+Skopiowanie przelewów z paczki powoduje, że nie są one umieszczane w paczce, tylko ich kopia zostaje utworzona na liście przelewów w opcji _Lista zleceń_ w statusie _Nowy_.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do dodawania przelewów.
+
+== Akceptacja paczek
+
+=== Akceptacja pojedynczej paczki
+
+Akceptacja pojedynczej paczki może być wykonane z poziomu:
+
+* listy paczek, po kliknięciu w wiersz wybranej paczki (*panel akcji pojedynczych*),
+
+* szczegółów paczki,
+
+a następnie użyciu opcji *Akceptuj*.
+
+image::Lista_zlecen/image38.png[image,width=604,height=78]
+
+Wybór opcji *Akceptuj* powoduje wyświetlenie szczegółów paczki wraz z sekcją do podpisu.
+
+Użytkownik ma możliwość od razu zaakceptować paczkę zdefiniowanym urządzeniem autoryzacyjnym, albo zanim to zrobi podejrzeć listę przelewów w paczce – opcja _Lista przelewów_. Powrót z listy przelewów kieruje ponownie na szczegóły paczki z sekcją do podpisu.
+
+Proces akceptacji weryfikuje schemat akceptacji oraz limit kwotowy akceptacji.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do akceptowania paczek. Akceptowanie dostępne jest dla paczki o statusie _Nowa_.
+
+NOTE: W przypadku włączonej usługi recipientWhiteList dane kontrahenta dodatkowo podlegają weryfikacji wg <<akc-paczki-biala-lista-podatnikow,białej listy podatników VAT>>
+
+[[akc-paczki-biala-lista-podatnikow]]
+==== Akceptacja pojedynczej paczki - biała lista podatników VAT
+
+W przypadku włączonej usługi *recipientWhiteList* podczas akceptacji pojedynczej paczki przelewów weryfikacji dodatkowo podlegają dane kontrahentów wg białej listy podatników VAT.
+Wynik ww. weryfikacji prezentowany jest w kolumnie _Dyspozycje (weryfikacja podatników)_ pod postacią informacji
+o liczbie pozytywnie i negatywnie zweryfikowanych przelewów pod kątem białej listy.
+
+image::Lista_zlecen/image72.jpg[]
+
+Po najechaniu na ikonkę image:Lista_zlecen/image64.JPG[image,width=33,height=31] wyświetlona zostaje legenda dot. weryfikacji przelewów:
+
+image::Lista_zlecen/image70.jpg[image,width=344,height=292]
+
+Lista przelewów, które zostały negatywnie zweryfikowane jest dostępna po wybraniu liczby w kolorze żółtym (zgodnie z legendą:
+"Żółty - Wynik weryfikacji jest niedostępny lub rachunek nie figuruje w rejestrze VAT").
+
+Prezentowana jest lista przelewów negatywnie zweryfikowanych. Każda pozycja zawiera m.in. szczegóły tej weryfikacji.
+Po rozwinięciu rekordu danych podstawowych prezentowane są dodatkowe dane przelewu - w tym szczegóły negatywnej weryfikacji w polu _Status podatnika VAT_.
+
+image::Lista_zlecen/image73.jpg[]
+
+=== Akceptacja wielu paczek pojedynczo
+
+Akcja pojedynczej akceptacji wielu paczek dostępna jest w *panelu akcji zbiorczych*. W celu skorzystania z pojedynczej akceptacji wielu paczek należy zaznaczyć paczki na liście, a następnie wybrać akcję zbiorczą *Akceptuj pojedynczo*.
+
+image::Lista_zlecen/image39.png[image,width=604,height=175]
+
+System wyświetli szczegóły pierwszej paczki wraz z sekcją do podpisu.
+
+image::Lista_zlecen/image40.png[image,width=318,height=382]
+
+Użytkownik ma możliwość:
+
+* od razu zaakceptować paczkę zdefiniowanym urządzeniem autoryzacyjnym, albo zanim to zrobi podejrzeć listę przelewów w paczce – opcja _Lista przelewów_. Powrót z listy przelewów kieruje ponownie na szczegóły paczki z sekcją do podpisu.
+
+* pominąć akceptację paczki – link *POMIŃ AKCEPTACJĘ* – system przenosi do szczegółów kolejnej paczki.
+
+Proces akceptacji weryfikuje schemat akceptacji oraz limit kwotowy akceptacji.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do akceptowania paczek. Akceptowanie dostępne jest dla paczki o statusie _Nowa._
+
+NOTE: W przypadku włączonej usługi recipientWhiteList dane kontrahenta dodatkowo podlegają weryfikacji wg <<akc-paczki-biala-lista-podatnikow,białej listy podatników VAT>>
+
+
+=== Akceptacja zbiorcza wielu paczek
+
+Akcja akceptacja zbiorcza wielu paczek dostępna jest w *panelu akcji zbiorczych*. W celu skorzystania z akceptacji zbiorczej paczek należy zaznaczyć paczki na liście, a następnie wybrać akcję zbiorczą *Akceptuj*.
+
+image::Lista_zlecen/image41.png[image,width=604,height=176]
+
+System zaprezentuje podsumowanie zaznaczonych paczek.
+
+Użytkownik ma możliwość od razu zaakceptować zaznaczone paczki zdefiniowanym urządzeniem autoryzacyjnym, albo zanim to zrobi podejrzeć listę wszystkich przelewów w zaznaczonych paczkach – opcja _Lista przelewów_. Powrót z listy przelewów kieruje ponownie na formatkę podsumowania z sekcją do podpisu.
+
+image::Lista_zlecen/image42.png[image,width=604,height=235]
+
+Proces akceptacji weryfikuje schemat akceptacji oraz limit kwotowy akceptacji.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do akceptowania paczek. Akceptowanie dostępne jest dla statusu paczki _Nowa_.
+
+NOTE: W przypadku włączonej usługi recipientWhiteList dane kontrahenta dodatkowo podlegają weryfikacji wg <<akc-zb-paczek-biala-lista-podatnikow,białej listy podatników VAT>>
+
+[[akc-zb-paczek-biala-lista-podatnikow]]
+==== Akceptacja zbiorcza wielu paczek - biała lista podatników VAT
+
+W przypadku włączonej usługi *recipientWhiteList* podczas akceptacji zbiorczej wielu paczek przelewów weryfikacji dodatkowo podlegają dane kontrahentów wg białej listy podatników VAT.
+Wynik ww. weryfikacji prezentowany jest w polu _Weryfikacja podatników_ pod postacią informacji
+o liczbie pozytywnie i negatywnie zweryfikowanych przelewów pod kątem białej listy.
+
+image::Lista_zlecen/image69.jpg[]
+
+Po najechaniu na ikonkę image:Lista_zlecen/image64.JPG[image,width=33,height=31] wyświetlona zostaje legenda dot. weryfikacji przelewów:
+
+image::Lista_zlecen/image70.jpg[image,width=344,height=292]
+
+Lista przelewów, które zostały negatywnie zweryfikowane jest dostępna po wybraniu liczby w kolorze żółtym (zgodnie z legendą:
+"Żółty - Wynik weryfikacji jest niedostępny lub rachunek nie figuruje w rejestrze VAT").
+
+Prezentowana jest lista przelewów negatywnie zweryfikowanych. Każda pozycja zawiera m.in. szczegóły tej weryfikacji.
+Po rozwinięciu rekordu danych podstawowych prezentowane są dodatkowe dane przelewu - w tym szczegóły negatywnej weryfikacji w polu _Status podatnika VAT_.
+
+image::Lista_zlecen/image71.jpg[]
+
+
+== Wycofanie akceptu
+
+Użytkownik ma możliwość wycofania akceptów dla paczek z poziomu:
+
+* listy paczek, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*),
+
+* *panelu akcji zbiorczych* po uprzednim zaznaczeniu paczki/paczek,
+
+a następnie użyciu opcji *Wycofaj akcept*.
+
+image::Lista_zlecen/image43.png[image,width=604,height=152]
+
+System zaprezentuje okno z pytaniem, czy wycofać akcepty.
+
+image::Lista_zlecen/image44.png[image,width=580,height=258]
+
+Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia. Wycofanie akceptów usuwa wszystkie podpisy oraz ustawia status paczki na _Nowa_, a przelewów w paczce na _Nowy_.
+
+== Przekazanie paczek
+
+=== Przekazanie pojedynczej paczki do realizacji
+
+Przekazanie do realizacji paczki może być wykonane z poziomu:
+
+* listy paczek, po kliknięciu w wiersz wybranej paczki (*panel akcji pojedynczych*),
+
+* szczegółów paczki,
+
+a następnie użyciu opcji *Przekaż do realizacji*.
+
+System weryfikuje limit transakcji – dzienny limit kwotowy jaki Użytkownik może zrealizować. Następnie zaprezentuje okno z pytaniem, czy przekazać dyspozycję do realizacji. Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia.
+
+Przekazana paczka otrzymuje status _Przekazana do realizacji_.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do przekazywania paczek. Przekazywanie dostępne jest dla statusu _Gotowa do przekazania_.
+
+=== Przekazanie zbiorcze paczek do realizacji
+
+Akcja przekazywania zbiorczego paczek do realizacji dostępna jest w *panelu akcji zbiorczych*. W celu skorzystania z przekazywania zbiorczego należy zaznaczyć *paczki na liście*, a następnie wybrać akcję zbiorczą poprzez wybranie *Przekaż do realizacji* w [DODATKOWE OPCJE].
+
+image::Lista_zlecen/image46.png[image,width=604,height=215]
+
+System weryfikuje limit transakcji – dzienny limit kwotowy jaki Użytkownik może zrealizować.
+
+Następnie zaprezentuje okno z pytaniem, czy przekazać paczki do realizacji. Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia.
+
+Przekazane paczki otrzymują status _Przekazana do realizacji_.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do przekazywania paczek. Przekazywanie dostępne jest dla statusu _Gotowa do przekazania_.
+
+== Informacja o dacie realizacji przelewów
+
+Informacja o dacie realizacji przelewów prezentowana jest na
+
+* liście paczek przelewów podczas:
+
+** akceptacji paczki (jedna paczka, wielu paczek pojedynczo)
+
+* liście przelewów w paczce (w szczegółach przelewu) - w przypadku, gdy przelew został dodany do Listy zleceń przed COT i nie został zrealizowany przed COT system będzie zmieniał automatycznie datę realizacji na najbliższy dzień roboczy.
+
+NOTE: COT, czyli Cut-Off Time (czas odcięcia) oznacza godzinę w ciągu dnia, po której realizacja płatności odbywa się w kolejnym dniu roboczym.
+
+== Lista przelewów w paczce
+
+Funkcjonalność opcji Listy przelewów z poziomu szczegółów paczki obejmuje następujące możliwości:
+
+* filtrowania prostego,
+
+* filtrowania zaawansowanego,
+
+* wykonania akcji na wybranej dyspozycji (*panel akcji pojedynczych*):
+
+** [DODATKOWE OPCJE]:
+
+*** Kopiuj,
+
+*** Szczegóły,
+
+*** Wypakuj z paczki,
+
+*** Edytuj,
+
+*** Usuń,
+
+* wykonania akcji na zaznaczonych dyspozycjach (*panel akcji zbiorczych*):
+
+** Wypakuj z paczki,
+
+** Usuń,
+
+** Kopiuj.
+
+=== Lista przelewów w paczce - podgląd listy
+
+Dyspozycje przelewów w paczce prezentowane są w formie listy. Na liście wyświetlane są dyspozycje od miesiąca wstecz. Lista jest stronicowana. Dla każdej dyspozycji dostępne są następujące informacje:
+
+* *Data dostarczenia* – data utworzenia dyspozycji,
+
+* *Status* – status przelewu,
+
+* *Odbiorca* – nazwa odbiorcy płatności i nr NRB odbiorcy,
+
+* *Referencje/Opis* – referencje/tytuł płatności przelewu,
+
+* *Kwota* - kwota płatności wraz z symbolem waluty.
+
+image::Lista_zlecen/image47.png[image,width=604,height=478]
+
+Kliknięcie w wybrany wiersz dyspozycji powoduje rozwinięcie wiersza i prezentację uzupełniających informacji:
+
+* Rodzaj przelewu – np. przelew zwykły, przelew podatku,
+
+* Z rachunku – numer rachunku nadawcy,
+
+image::Lista_zlecen/image48.png[image,width=604,height=123]
+
+Dodatkowo dla każdej dyspozycji prezentowany jest *panel akcji pojedynczych* (przycisk [DODATKOWE OPCJE]), czyli zestaw akcji jakie można wykonać na dyspozycji o określonym statusie.
+
+Dodatkowo na dostępność wybranych akcji wpływają uprawnienia, które posiada Użytkownik (uprawnienia są ustawiane przez Administratora Użytkowników w opcji _Ustawienia→Uprawnienia Użytkowników_).
+
+Ponowne kliknięcie zwija wiersz dyspozycji.
+
+Pod listą prezentowane jest podsumowanie dyspozycji per strona oraz per całość, w podziale na waluty. W przypadku gdy lista rekordów na liście mieści się na jednej stronie, to system prezentuje wyłącznie podsumowanie całości.
+
+=== Lista przelewów w paczce - filtry
+
+W celu zawężenia prezentacji listy dyspozycji, Użytkownik ma możliwość zastosowania filtrów: prostego oraz zawansowanego.
+
+Filtr prosty umożliwia wyszukanie po treści w polach: nazwa odbiorcy, referencje, opis (tytuł przelewu). W tym celu należy wpisać w pole *Wyszukaj* tekst. Wyszukane dyspozycje będą z określonego przedziału czasowego (data od-do), który można zmienić.
+
+Użycie przycisku [POKAŻ FILTRY] umożliwia ustawienie filtru zaawansowanego dla następujących pól:
+
+* *Z rachunku* - numer rachunku obciążanego w postaci zamaskowanej,
+
+* *Rachunek odbiorcy* - pole do wpisania numeru rachunku odbiorcy,
+
+* *Rodzaj przelewu* – wybór z wartości: _Wszystkie, Zwykły, Własny, Walutowy, Podatkowy, Cykliczny, Sorbnet, Express Elixir_,
+
+* *Typ dyspozycji* – wybór z wartości: _Wszystkie, Edycja cyklicznego, Anulowania,_
+
+* *Kwota od-do* - zakres kwot (od-do), dla których ma zostać wyświetlona lista dyspozycji,
+
+* *Status – status* dyspozycji, wybór wartości__: Zaznacz wszystkie, Nowy, W akceptacji, Do akceptacji, Gotowy do przekazania, Przekazany do realizacji, W realizacji, Aktywny przelew odroczony, Aktywny, Odrzucona, Zakończony, Usunięty__,
+
+* *Typ sortowania* – możliwość sortowania po dacie wprowadzenia lub dostarczenia,
+
+* *Liczba transakcji na stronie* – umożliwia wybranie ilości dyspozycji zleceń prezentowanych na stronie (zakres 1-100). Domyślnie liczba pozycji na stronie to 20.
+
+image::Lista_zlecen/image49.png[image,width=604,height=258]
+
+Zastosowanie filtru zaawansowanego aktywuje się za pomocą przycisku [FILTRUJ].
+
+== Lista przelewów w paczce - panel akcji pojedynczych dla przelewu
+
+Dla każdego przelewu z listy (po kliknięciu w wiersz) dostępny jest określony zestaw akcji (*panel akcji pojedynczych*) - przycisk: [DODATKOWE OPCJE]) dla każdego przelewu.
+
+Poniżej znajduje się zestaw akcji w przypadku gdy Użytkownik posiada odpowiednie uprawnienia nadane przez Administratora Użytkowników w opcji _Ustawienia→Uprawnienia Użytkowników_.
+
+image::Lista_zlecen/image50.png[image,width=604,height=229]
+
+Akcje na wybranej dyspozycji przelewu w paczce:
+
+* *Kopiuj* - skopiowanie dyspozycji przelewu poza paczkę (przelew nie jest dodawany do paczki),
+
+* *Szczegóły* - szczegóły przelewu,
+
+* *Wypakuj z paczki* - wypakowanie dyspozycji przelewu z paczki (tylko dla dyspozycji w statusie _Nowy_),
+
+* *Edytuj* - edycja danych dyspozycji przelewu (tylko dla dyspozycji w statusie _Nowy_),
+
+* *Usuń* - usunięcie dyspozycji przelewu (tylko dla dyspozycji w statusie _Nowy_).
+
+== Lista przelewów w paczce - panel akcji zbiorczych
+
+Zaznaczenie pozycji na liście przelewów w paczce wykorzystuje się do zbiorczego wykonania akcji na tej grupie dyspozycji przelewów.
+
+Poniżej znajduje się zestaw akcji w przypadku, gdy Użytkownik posiada odpowiednie uprawnienia nadane przez Administratora Użytkowników w opcji _Ustawienia→Uprawnienia Użytkowników_.
+
+image::Lista_zlecen/image47.png[image,width=604,height=478]
+
+Akcje na zaznaczonych dyspozycjach przelewów:
+
+* *Wypakuj z paczki* - wypakowanie wybranych dyspozycji przelewu z paczki (tylko dla dyspozycji w statusie _Nowy_),
+
+* *Usuń* - usunięcie wybranych dyspozycji przelewu (tylko dla dyspozycji w statusie _Nowy_),
+
+* *Kopiuj* - skopiowanie dyspozycji przelewu poza paczkę (przelew nie jest dodawany do paczki).
+
+== Podgląd szczegółów przelewu w paczce
+
+Podgląd szczegółów przelewu dostępny jest z poziomu *panelu akcji pojedynczych*. Zakres prezentowanych danych zależy od typu przelewu.
+
+Z poziomu szczegółów przelewu Użytkownik ma możliwość podglądu informacji o akcjach jakie miały miejsce na danym zleceniu (np. utworzenie zlecenia). W tym celu należy wybrać przycisk [POKAŻ HISTORIĘ OPERACJI] prezentowany na dole formatki. System rejestruje oraz prezentuje akcje:
+
+image::Lista_zlecen/image51.png[image,width=206,height=71]
+
+* utworzenia zlecenia,
+
+* akceptacji zlecenia,
+
+* edycji zlecenia,
+
+* przekazania do realizacji,
+
+* skopiowania zlecenia,
+
+* usunięcia zlecenia.
+
+Sekcja zawiera informacje o imieniu, nazwisku Użytkownika, który daną akcję wykonał oraz dacie i godzinie, w której akcja nastąpiła.
+
+W sekcji prezentującej akcje dla przelewu informacje prezentowane są narastająco (najnowszy wpis jest umieszczony na górze listy).
+
+image::Lista_zlecen/image52.png[image,width=541,height=236]
+
+Kliknięcie [UKRYJ HISTORIĘ OPERACJI] chowa informacje o wykonanych akcjach.
+
+== Edycja przelewu z paczki
+
+Edycja przelewu z paczki może być wykonana z poziomu:
+
+* listy przelewów, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*),
+
+a następnie użyciu opcji *Edytuj* w [DODATKOWE OPCJE]:
+
+image::Lista_zlecen/image53.png[image,width=604,height=230]
+
+Wybór opcji *Edytuj* powoduje wyświetlenie okna prezentującego szczegółowe informacje dla przelewu w trybie edycji. Po zmodyfikowaniu danych należy potwierdzić zmiany. Edycja przelewów z listy zleceń możliwa jest dla wszystkich typów dyspozycji obsługiwanych na liście zleceń. W procesie edycji przelewu data realizacji przelewu ustawiana jest na najbliższy dzień roboczy. Walidacje przy edycji są takie jak dla nowego przelewu,
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do edycji przelewów. Edycja dostępna jest dla przelewów o statusie _Nowy_.
+
+== Wypakowanie przelewu z paczki
+
+Wypakowanie przelewu z paczki możliwe jest z poziomu:
+
+* listy przelewów, po kliknięciu w wiersz wybranego przelewu (*panel akcji pojedynczych*),
+
+* *panelu akcji zbiorczych* po uprzednim jego zaznaczeniu,
+
+a następnie użyciu opcji *Wypakuj z paczki*.
+
+image::Lista_zlecen/image54.png[image,width=604,height=478]
+
+System zaprezentuje okno z pytaniem, czy wypakować przelewy z paczki.
+
+image::Lista_zlecen/image55.png[image,width=566,height=245]
+
+Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia. Wypakowane przelewy zostaną przeniesione z paczki _do Listy zleceń_ na listę przelewów.
+
+W przypadku wypakowania wszystkich przelewów z paczki - paczka jest usuwana.
+
+NOTE: Wypakowanie paczki dostępne jest dla paczek o statusie _Nowa_.
+
+== Rozpakowanie paczki
+
+Rozpakowanie paczki możliwe jest z poziomu:
+
+* listy paczek, po kliknięciu w wiersz wybranej paczki (*panel akcji pojedynczych*),
+
+* szczegółów paczki,
+
+a następnie użyciu opcji *Rozpakuj*.
+
+image::Lista_zlecen/image56.png[image,width=604,height=186]
+
+System zaprezentuje okno z pytaniem czy wypakować przelewy z paczki i usunąć paczkę. Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia. Rozpakowanie paczki usuwa paczkę, ale nie usuwa zleceń przelewów w paczce. Przelewy przenoszone są do _Listy zleceń_ na listę przelewów. Paczka otrzymuje status _Usunięta_. Po wejściu na listę przelewów w paczce prezentowana jest komunikat o braku przelewów na liście.
+
+NOTE: Rozpakowanie paczki dostępne jest dla paczek o statusie _Nowa_.
+
+== Usuwanie paczki/paczek przelewów
+
+Użytkownik może usunąć paczkę z poziomu:
+
+* listy paczek, po kliknięciu w wiersz wybranej paczki (*panel akcji pojedynczych*),
+
+* *panelu akcji zbiorczych* po uprzednim zaznaczeniu paczki/paczek,
+
+* szczegółów paczki,
+
+a następnie użyciu opcji *Usuń.*
+
+image::Lista_zlecen/image57.png[image,width=604,height=201]
+
+System zaprezentuje okno z pytaniem, czy usunąć paczkę/paczki. Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia. Operacja usunięcia paczki nie wymaga autoryzacji. Paczka otrzymuje status _Usunięta_ oraz przelewy status _Usunięty_.
+
+NOTE: Opcja dostępna jest dla Użytkownika, który posiada uprawnienie do usuwania paczek. Usuwanie paczki dostępne jest dla paczek o statusie _Nowa_.
+
+== Lista płac
+
+Lista płac to zbiór pogrupowanych przelewów w paczkę. Obsługa  znajduje się w opcji _Lista zleceń_ w zakładce _Lista płac_.
+
+System pozwala utworzyć paczki tylko z poziomu:
+
+* Importu przelewów w opcji _Przelewy_.
+
+Podczas importu przelewów (opcja _Przelewy_) Użytkownik ma możliwość utworzenia paczki przelewów z importu Listy płac.
+
+Możliwość utworzenia paczki znajduje się na drugim kroku importu przelewów. Za pomocą przycisku [ZAPISZ I STWÓRZ LISTĘ PŁAC] system przenosi do opcji tworzenia paczki.
+
+image::Lista_zlecen/58.png[]
+
+Nowo utworzona paczka otrzymuje status _Nowa_.
+
+NOTE: Importowane przelewy do listy zleceń nie mają obsługi pola „data przelewu”, są to przelewy z datą bieżącą. Import paczki nie będzie podlegał autoryzacji. Autoryzacji podlegać będzie paczka na etapie jej realizacji.
+
+
+Funkcjonalność _Listy płac_ obejmuje następujące możliwości:
+
+* filtrowania,
+
+* wykonania akcji na wybranej paczce (*panel akcji pojedynczych*),
+
+* wykonania akcji na zaznaczonych paczkach (*panel akcji zbiorczych*).
+
+NOTE: Funkcjonalność Listy płac dostępna jest dla Użytkownika korzystającego z systemów bankowości opartej na Def3000/CB,  który posiada odpowiednie uprawnienia do listy płac.
+
+WARNING: Jeśli chociaż jeden przelew z listy płac zostanie odrzucony przez system transakcyjny, cała paczka zostanie odrzucona.
+
+Pozostałe opcje są analogiczne do opisu funkcjonalności dla paczek przelewów.
+
+== Lista lokat
+
+Po wyborze opcji Lista lokat (Lista zleceń -> Lista lokat) prezentowana jest lista
+dyspozycji lokat do autoryzacji oraz dalszej obsługi.
+
+Funkcjonalność Listy lokat obejmuje następujące możliwości:
+
+* filtrowania prostego,
+* filtrowania zaawansowanego,
+* wykonania akcji na wybranej dyspozycji (panel akcji pojedynczych),
+* wykonania akcji na wybranych dyspozycjach (panel akcji zbiorczych).
+
+Funkcjonalność wymaga włączenia usługi multisignatureForDeposits i jest dostępna
+dla użytkowników z odpowiednimi uprawnieniami. Uprawnienia ustawiane są przez Administratora
+w opcji Ustawienia → Uprawnienia Użytkowników.
+
+image::Lista_zlecen/image74.png[image,width=604,height=186]
+
+*Lista lokat - podgląd listy*
+
+Dyspozycje lokat prezentowane są w formie listy.
+Na liście lokat wyświetlane są dyspozycje lokat domyślnie z ostatniego miesiąca.
+Lista jest stronicowana.
+
+image::Lista_zlecen/image75.png[]
+
+Dla każdej dyspozycji dostępne są następujące informacje:
+
+* Utworzono - data wprowadzenia lokaty,
+* Status – status lokaty,
+* Typ lokaty – opis lokaty,
+* Typ dyspozycji – otwarcie, zerwanie,
+* Kwota - kwota lokaty wraz z symbolem waluty.
+
+Wybranie wiersza dyspozycji powoduje jego rozwinięcie i prezentację dodatkowych informacji:
+
+* Oprocentowanie - oprocentowanie lokaty,
+* Okres lokaty - długość trwania lokaty.
+* panel akcji pojedynczych - dla każdej dyspozycji prezentowany jest panel akcji pojedynczych.
+
+image::Lista_zlecen/image103.png[image,width=604,height=186]
+
+Ponowne kliknięcie zwija wiersz dyspozycji.
+Pod listą prezentowane jest podsumowanie dyspozycji per strona oraz per całość w podziale na waluty.
+
+W celu zawężenia prezentacji listy dyspozycji, użytkownik ma możliwość zastosowania filtrów:
+prostego oraz zawansowanego.
+
+*Filtr prosty* umożliwia wyszukanie dyspozycji po dacie i treści. Wyszukiwanie odbywa się dynamicznie.
+
+image::Lista_zlecen/image76.png[image,width=604,height=186]
+
+*Filtr zaawansowany* - [POKAŻ FILTRY] - wyszukiwanie dyspozycji możliwe jest dodatkowo według
+"Statusu" i "Typu dyspozycji". Po wybraniu [FILTRUJ] lista dyspozycji zostaje zawężona
+zgodnie ze wskazanymi dodatkowymi warunkami wyszukiwania.
+
+image::Lista_zlecen/image77.png[image,width=604,height=186]
+
+*Możliwość wybrania dyspozycji z listy lokat*
+
+Przy każdej dyspozycji znajduje się pole wyboru umożliwiające wskazanie konkretnej dyspozycji z listy.
+Po wskazaniu wybranych pozycji pojawia się informacja o łącznej kwocie zaznaczonych
+dyspozycji lokat.
+
+image::Lista_zlecen/image104.png[]
+
+System umożliwia zaznaczenie:
+
+* *wszystkich dyspozycji na danej stronie* - zaznaczenie pola wyboru w nagłówku tabeli - wybiera na stronie wszystkie dyspozycje,
+
+image::Lista_zlecen/image78.png[image,width=404,height=156]
+
+* *wszystkich dyspozycji na liście (wszystkie strony)* - wybranie opcji [NA WSZYSTKICH STRONACH] po rozwinięciu listy za pomocą ikony image:Lista_zlecen/image4.png[image,width=33,height=31]
+
+image::Lista_zlecen/image79.png[image,width=404,height=156]
+
+IMPORTANT: Wskazanie dyspozycji z listy uaktywnia dostęp do *panelu akcji zbiorczych*
+w zależności od: uprawnień użytkownika, schematu wielopodpisu, limitu akceptacji i statusu dyspozycji.
+
+image::Lista_zlecen/image80.png[]
+
+NOTE: Zbiorcza obsługa dyspozycji z listy wymaga spójności danych wybranych dyspozycji lokat.
+
+System udostępnia użytkownikowi jedynie te akcje dla dyspozycji (akcje panelu pojedyncze/zbiorcze),
+które są możliwe do wykonania z uwagi na uprawnienia użytkownika oraz stan dyspozycji.
+
+Wybrana opcja panelu akcji zbiorczych jest dostępna, gdy wszystkie wybrane dyspozycje są w odpowiednim statusie do obsłużenia a użytkownik ma odpowiednie uprawnienia.
+
+_Przykładowo wskazanie dyspozycji w statusie:_
+
+* _"Nowa" i "Do akceptacji" uaktywni opcję [Akceptuj] - jeżeli użytkownik ma prawo podpisu, spełniony jest schemat akceptacji i limit akceptacji._
+* _"Nowa" i "Gotowa do przekazania" - nie uaktywni żadnej wspólnej akcji. Statusy obu dyspozycji wykluczają się w zbiorczej obsłudze._
+
+*Panel akcji pojedynczych i zbiorczych*
+
+Zakres dostępnych akcji uzależniony jest od:
+
+* uprawnień użytkownika (uprawnienia są ustawiane przez Administratora Użytkowników w opcji Ustawienia → Uprawnienia Użytkowników),
+* schematu wielopodpisu (definicję schematu wielopodpisu konfiguruje operator systemu Asseco EBP BackOffice),
+* limitów akceptacji (definicję schematu wielopodpisu konfiguruje operator systemu Asseco EBP BackOffice),
+* oraz statusu dyspozycji lokaty.
+
+Panel akcji pojedynczych/ zbiorczych może zawierać opcje:
+
+* *Akceptuj* - autoryzacja dyspozycji lokaty - tylko dla dyspozycji w statusie: *Nowa*, *Do akceptacji*,
+* *Przekaż do realizacji* - przekazanie dyspozycji lokaty do realizacji - tylko dla dyspozycji w statusie: *Gotowa do przekazania* (zebrany komplet podpisów),
+* *Szczegóły* – opcja w panelu akcji pojedynczych - prezentacja szczegółów dyspozycji lokaty,
+* *Usuń* - usunięcie dyspozycji lokaty - tylko dla dyspozycji w statusie *Nowa*,
+* *Wycofaj akcept* - wycofanie akceptów dyspozycji lokaty - tylko dla dyspozycji w statusie *Do akceptacji*, *W akceptacji*, *Gotowa do przekazania*.
+
+
+*Akceptacja dyspozycji lokaty*
+
+IMPORTANT:  Proces akceptacji weryfikuje schemat wielopodpisu oraz limit kwotowy akceptacji.
+Opcja dostępna jest dla użytkownika, który posiada uprawnienie do akceptowania
+lokat. Akceptowanie dostępne jest dla statusu lokaty "Nowy" i "Do akceptu".
+
+Akceptacja dyspozycji lokaty może być wykonana z poziomu:
+
+* panelu akcji pojedynczej w wierszu wybranej dyspozycji - opcja [Akceptuj],
+* panelu akcji zbiorczych po uprzednim wybraniu dyspozycji lokaty z listy, a następnie użyciu opcji [Akceptuj].
+
+Wybór opcji [Akceptuj] z poziomu panelu akcji pojedynczych powoduje wyświetlenie szczegółów
+dyspozycji lokaty wraz z sekcją autoryzacji (zgodnie z przypisaną do użytkownika metodą autoryzacji).
+
+image::Lista_zlecen/image81.png[image,width=604,height=186]
+
+Po zaakceptowaniu lokaty zostanie wyświetlone okno potwierdzenia.
+
+image::Lista_zlecen/image82.png[image,width=304,height=186]
+
+*Akcja akceptacji zbiorczej* wielu dyspozycji dostępna jest w panelu akcji zbiorczych.
+
+NOTE: W celu skorzystania z akceptacji zbiorczej należy wybrać dyspozycje na liście lokat.
+
+*Opcja [Akceptuj] jest dostępna, jeżeli:*
+
+* wszystkie wybrane dyspozycje są w odpowiednim statusie,
+* użytkownik ma odpowiednie uprawnienie,
+* użytkownik ma prawo podpisu (schemat wielopodpisu),
+* nie został przekroczony limit akceptacji.
+
+_Przykład - gdy przekroczony limit akceptacji dla dyspozycji lokaty:_
+
+_Opcja [Akceptuj] jest nieaktywna dla danej dyspozycji w panelu akcji zbiorczej.
+W panelu akcji pojedynczych opcja [Akceptuj] jest ukryta:_
+
+image::Lista_zlecen/image85.png[image,width=604,height=186]
+
+NOTE: Proces akceptacji weryfikuje schemat akceptacji oraz limit kwotowy akceptacji.
+
+Jeżeli wskazane dyspozycje spełniają ww. kryteria, po wybraniu [Akceptuj] w panelu akcji zbiorczych,
+następuje przeniesienie do formatki z podsumowaniem wybranych dyspozycji wraz z sekcją podpisu
+zgodną z przypisaną do użytkownika metodą autoryzacji.
+
+image::Lista_zlecen/image83.png[image,width=604,height=186]
+
+Po zaakceptowaniu dyspozycji lokat zostanie wyświetlone okno potwierdzenia:
+
+image::Lista_zlecen/image84.png[image,width=304,height=186]
+
+*Wycofanie akceptu*
+
+Użytkownik ma możliwość wycofania akceptów dla dyspozycji lokat z poziomu:
+
+* panelu akcji pojedynczej w wierszu wybranej dyspozycji - opcja [Wycofaj akcept],
+
+image::Lista_zlecen/image89.png[image,width=604,height=186]
+
+* panelu akcji zbiorczych po uprzednim wybraniu dyspozycji lokaty z listy, a następnie użyciu opcji [Wycofaj akcept].
+
+image::Lista_zlecen/image86.png[image,width=604,height=186]
+
+System zaprezentuje okno z pytaniem czy wycofać akcepty.
+
+image::Lista_zlecen/image90.png[image,width=304,height=186]
+
+NOTE: Wycofanie akceptów usuwa wszystkie podpisy oraz ustawia status dyspozycji lokaty na Nowa.
+
+image::Lista_zlecen/image88.png[image,width=304,height=186]
+
+*Przekazanie dyspozycji lokaty do realizacji*
+
+Opcja [Przekaż do realizacji] jest dostępna dla użytkownika z prawem do przekazywania lokat.
+Przekazanie do realizacji jest możliwe dla dyspozycji lokat w statusise "Gotowa do przekazania".
+
+Przekazanie do realizacji dyspozycji lokaty może być wykonane z poziomu:
+
+* panelu akcji pojedynczej w wierszu wybranej dyspozycji - opcja [Przekaż do realizacji],
+* panelu akcji zbiorczych po uprzednim wybraniu dyspozycji lokaty z listy,
+a następnie użyciu opcji [Przekaż do realizacji].
+
+image::Lista_zlecen/image92.png[image,width=604,height=186]
+
+Wybór opcji [Przekaż do realizacji] z poziomu panelu akcji pojedynczych powoduje
+wyświetlenie szczegółów dyspozycji lokaty:
+
+image::Lista_zlecen/image93.png[image,width=604,height=486]
+
+Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia:
+
+image::Lista_zlecen/image94.png[image,width=304,height=186]
+
+Po wybraniu [Przekaż do realizacji] w panelu akcji zbiorczych,
+następuje przeniesienie do formatki z podsumowaniem wybranych dyspozycji:
+
+image::Lista_zlecen/image95.png[image,width=604,height=486]
+
+Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia:
+
+image::Lista_zlecen/image96.png[image,width=304,height=186]
+
+Dyspozycje lokat przekazane do realizacji znajdują się w aplikacji Lokaty.
+
+*Usuwanie dyspozycji lokaty*
+
+Usunięcie dyspozycji lokaty jest możliwe z poziomu panelu akcji pojedynczych i zbiorczych po wybraniu opcji [DODATKOWE OPCJE] a następnie opcji [Usuń].
+
+Opcja [Usuń] dostępna jest dla użytkownika, który posiada uprawnienie do usuwania lokat.
+Usuwanie dostępne jest dla dypozycji o statusie Nowa.
+
+W przypadku usuwania pojedynczej dyspozycji zostaje wyświetlona formatka z danymi usuwanej
+dyspozycji. Usunięcie wymaga akceptacji. Operacja usunięcia dyspozycji lokaty nie wymaga autoryzacji.
+
+image::Lista_zlecen/image98.png[image,width=604,height=486]
+
+Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia:
+
+image::Lista_zlecen/image99.png[image,width=304,height=186]
+
+W przypadku usuwania równocześnie kilku dyspozycji zostaje wyświetlona formatka
+z danymi usuwanych dyspozycji. System prezentuje podsumowanie wybranych dyspozycji.
+
+image::Lista_zlecen/image100.png[image,width=604,height=486]
+
+Po zaakceptowaniu akcji zostanie wyświetlone okno potwierdzenia.
+
+image::Lista_zlecen/image101.png[image,width=304,height=186]
+
+Usunięte dyspozycje lokat są widoczne na liście ze statusem Usunięta.
+
+image::Lista_zlecen/image102.png[image,width=604,height=486]
+
+*Podgląd szczegółów lokaty*
+
+Podgląd szczegółów dyspozycji lokaty dostępny jest z poziomu panelu akcji pojedynczych.
+Zakres prezentowanych danych zależy od typu lokaty.
+Z poziomu szczegółów dyspozycji lokaty użytkownik ma możliwość:
+
+* akceptacji dyspozycji - dla statusu dyspozycji "Nowa", "Do akceptacji",
+* podglądu historii dyspozycji [Pokaż historię operacji] prezentowanej na dole formatki.
+Sekcja zawiera informacje dot. historii dyspozycji ułożone malejąco wg daty:
+
+image::Lista_zlecen/image97.png[image,width=304,height=186]
+
+Wybranie [Ukryj historię operacji] ukrywa sekcję historii.

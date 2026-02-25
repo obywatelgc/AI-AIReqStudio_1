@@ -1,0 +1,94 @@
+:imagesdir: images
+
+[[ustawienia_BLIK_zablokuj_prosby_o_przelew]]
+==== Blokowanie odbierania próśb o przelew
+
+
+W opcji "*_Ustawienia_* -> *_Ustawienia BLIK_* -> *_Zablokuj prośby o przelew_*" użytkownik ma możliwość:
+
+* zablokowania otrzymywania wszystkich próśb o przelew na telefon,
+* zablokowania otrzymywania próśb tylko od wybranych numerów telefonów.
+
+NOTE: Opcja "_Zablokuj prośby o przelew_" jest dostępna, gdy Bank ma włączoną funkcjonalność próśb o przelew BLIK.
+
+Włączenie i wyłączenie blokowania odbierania wszystkich próśb o przelew odbywa się poprzez przesunięcie suwaka "_Zablokuj wszystkie prośby o przelew na telefon_" na odpowiednią pozycję:
+
+* ikonka image:icons/BLIK_suwak_wylaczony.jpg[35,35] oznacza, że opcja jest wyłączona,
+* ikonka image:icons/BLIK_suwak_wlaczony.jpg[35,35] oznacza, że opcja jest włączona.
+
+image::P2PR_ustawienia--zablokuj_prosby--opcja_wylaczona.jpg[120,220,align="center"]
+
+Jeżeli opcja zablokowania wszystkich próśb jest wyłączona, wówczas użytkownik ma możliwość dodania numeru telefonu do listy zablokowanych poprzez przycisk [Dodaj nowy]. Informuje o tym komunikat: _"Jeżeli chcesz zablokować pojedyncze numery, wybierz poniższą opcję 'Dodaj nowy'"_, który pojawia się tylko w momencie, gdy lista kontaktów zablokowanych jest pusta.
+
+Na liście przy dodanych kontaktach prezentuje się opcja [ODBLOKUJ] pozwalająca na usunięcie numeru z listy zablokowanych kontaktów. Odblokowanie nie wymaga akceptacji kodem PIN. Po kliknięciu na ten przycisk system od razu usuwa wybrany numer z listy.
+
+Lista zablokowanych kontaktów jest sortowana alfabetycznie.
+
+image::P2PR_ustawienia--zablokuj_prosby--lista_zablokowanych_kontaktow.jpg[120,220,align="center"]
+
+W przypadku włączenia opcji zablokowania wszystkich próśb, system ukrywa przycisk [Dodaj nowy] oraz listę z zablokowanymi kontaktami.
+
+image::P2PR_ustawienia--zablokuj_prosby--opcja_wlaczona.jpg[120,220,align="center"]
+
+NOTE: Po wyłączeniu opcji blokowania wszystkich próśb, na ekranie są prezentowane dodane wcześniej zablokowane kontakty oraz jest prezentowany przycisk [Dodaj nowy].
+
+&nbsp;
+
+*Dodanie numeru do listy zablokowanych kontaktów*
+
+Po kliknięciu na przycisk *[Dodaj nowy]* użytkownikowi prezentowany jest ekran "_Zablokuj kontakt_".
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::P2PR_ustawienia--zablokuj_prosby--lista_zablokowanych_kontaktow.jpg[120,220,align="center"]
+| image::P2PR_ustawienia--zablokuj_prosby--dodaj_nowy.jpg[120,220,align="center"]
+|===
+
+Formatka zawiera następujące pola:
+
+* *Numer telefonu proszącego* - pole do wpisania numeru telefonu:
+** minimalna możliwa liczba cyfr to 7,
+** maksymalna możliwa liczba cyfr to 15,
+** w przypadku wybrania kontaktu z książki telefonicznej system uzupełnia pole numeru danymi z książki,
+** pole jest wymagane,
+
+* *ikona* image:icons/BLIK_ludzik_do_ksiazki_tel.jpg[25,25] - opcja dostępu do książki adresowej urządzenia:
+** możliwość wybrania kontaktu z książki telefonicznej,
+** możliwość wyszukania kontaktu w książce,
+** dostępna sekcja "_Kontakty_" zawierająca wszystkie kontakty z książki,
+** jeżeli użytkownik nie zezwolił aplikacji mobilnej na dostęp do kontaktów, wówczas na liście wyboru kontaktu system zaprezentuje komunikat "Brak kontaktów",
+
+image::P2PR_ustawienia--zablokuj_prosby--dodaj_nowy_lista_kontaktow.jpg[120,220,align="center"]
+
+* *Proszący* - pole do podania danych Proszącego:
+** możliwość wprowadzenia maksymalnie 35 znaków,
+** w przypadku wybrania kontaktu z książki telefonicznej system uzupełnia pole danymi z książki,
+** pole niewymagane.
+
+Aby zatwierdzić wprowadzone dane, należy wybrać opcję *[Potwierdź]*. System dokonuje sprawdzenia:
+
+* podania wymaganych danych,
+* poprawności wprowadzonych danych,
+* czy podany numer telefonu jest już na liście zablokowanych kontaktów.
+
+Jeśli sprawdzenie nie przebiegło pomyślnie, wówczas zostaną zaprezentowane odpowiednie komunikaty walidacyjne.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::P2PR_ustawienia--zablokuj_prosby--dodaj_nowy_walidacja_1.jpg[120,220,align="center"]
+| image::P2PR_ustawienia--zablokuj_prosby--dodaj_nowy_walidacja_2.jpg[120,220,align="center"]
+| image::P2PR_ustawienia--zablokuj_prosby--dodaj_nowy_walidacja_3.jpg[120,220,align="center"]
+|===
+
+NOTE: Dodanie kontaktu nie wymaga akceptacji kodem PIN.
+
+W przypadku pozytywnego sprawdzenia wszystkich parametrów użytkownikowi prezentowany jest komunikat potwierdzający dodanie kontaktu do listy zablokowanych.
+
+image::P2PR_ustawienia--zablokuj_prosby--dodaj_nowy_potwierdzenie.jpg[120,220,align="center"]
+
+Po kliknięciu na przycisk [OK] system przechodzi do ekranu z listą zablokowanych kontaktów, gdzie jest widoczna nowo dodana pozycja.
+
+image::P2PR_ustawienia--zablokuj_prosby--lista_zablokowanych_kontaktow_po_dodaniu.jpg[120,220,align="center"]
+
+W przypadku, gdy podczas dodawania nowego kontaktu do zablokowania użytkownik wpisze w numerze 9 cyfr, wówczas system uznaje go za numer polski i na liście do numeru jest dodawana na początku wartość "48".
+

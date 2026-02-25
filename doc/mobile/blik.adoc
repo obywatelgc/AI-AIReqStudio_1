@@ -1,0 +1,73 @@
+:imagesdir: images
+
+[[usluga_BLIK]]
+== *Usługa BLIK*
+
+Usługa BLIK umożliwia przeprowadzanie i rozliczanie Transakcji Mobilnych zarządzanych przez system PSP.
+
+Usługa BLIK umożliwia:
+
+* zainicjowanie i potwierdzenie _Płatności BLIK_ (Zwykłej Płatności, Szybkiej Płatności),
+* realizację _Przelewu na telefon BLIK_,
+* realizację _Prośby o przelew BLIK_.
+
+NOTE: Dostęp do poszczególnych usług BLIKA jest zależny od konfiguracji w danym Banku.
+
+&nbsp;
+
+*PŁATNOŚĆ BLIK*
+
+*_Płatności BLIK_* przeprowadzane są z wykorzystaniem "kodu BLIK".
+
+Obsługiwane są zwykłe i szybkie płatności BLIK:
+
+* _Zwykła Płatność_ jest to transakcja realizowana przy pomocy "kodu BLIK", który został wyświetlony po zalogowaniu użytkownika do aplikacji mobilnej,
+* _Szybka Płatność_ jest to transakcja realizowana przy pomocy "kodu BLIK", który został wyświetlony bez zalogowania użytkownika do aplikacji mobilnej.
+
+System pozwala na obsługę następujących rodzajów operacji:
+
+* płatności w sklepie za pomocą terminala POS,
+* płatności w Internecie (w sklepach internetowych),
+* wypłata gotówki z bankomatu,
+* wypłata gotówki w sklepie za pomocą terminala POS,
+* zwrot płatności w sklepie za pomocą terminala POS.
+
+Ponadto obsługiwany jest zwrot płatności w sklepie internetowym, który odbywa się bez udziału użytkownika.
+
+
+W celu umożliwienia pełnej obsługi płatności BLIK, w systemie są dostępne następujące funkcjonalności:
+
+* *zarządzanie usługą BLIK* - możliwość zarządzania parametrami takimi jak:
+** włączenie/wyłączenie usługi BLIK,
+** definiowanie rachunku do obciążeń,
+** definiowanie indywidualnych limitów dla płatności w sklepach stacjonarnych, internetowych oraz wypłat z bankomatu,
+** wyrażenie zgody na obsługę wybranych operacji (Szybkie Płatności bez PIN, prezentacja dostępnych środków),
+
+* *obsługa generowania "kodu BLIK"* - możliwość generowania jednorazowego kodu służącego do przeprowadzenia płatności BLIK,
+
+* *autoryzacja płatności BLIK* - proces mający na celu potwierdzenie lub odrzucenie wykonania danej operacji (płatności, wypłaty gotówki lub zwrotu) przez użytkownika.
+
+&nbsp;
+
+*PRZELEW NA TELEFON BLIK*
+
+*_Przelew na telefon BLIK_* _(P2P)_ jest to przelew między dwoma posiadaczami Konta Mobilnego wykonany przez Nadawcę za pośrednictwem systemu PSP, gdzie Odbiorca wskazywany jest poprzez podanie jego numeru telefonu.
+
+Obsługa takiej transakcji realizowana jest jako:
+
+* przelew zewnętrzny natychmiastowy (Express Elixir) na rachunek Odbiorcy powiązany z podanym numerem telefonu - gdy Nadawca i Odbiorca są klientami innego Wydawcy,
+* przelew wewnętrzny na rachunek Odbiorcy powiązany z podanym numerem telefonu - gdy Nadawca i Odbiorca są klientami tego samego Wydawcy.
+
+&nbsp;
+
+*PROŚBA O PRZELEW BLIK*
+
+*_Prośba o przelew BLIK_* _(P2PR)_ to usługa BLIK umożliwiająca utworzenie prośby o przesłanie środków przelewem za pośrednictwem systemu PSP.
+
+Prośba generowana jest przez Proszącego, który wskazuje Płatnika poprzez podanie jego numeru telefonu. Następnie prośba trafia do Płatnika, który po otrzymaniu powiadomienia podejmuje decyzję o autoryzacji lub odrzuceniu płatności P2PR.
+
+W przypadku pozytywnej autoryzacji otrzymanej prośby przez Płatnika środki przesyłane są na konto Proszącego poprzez:
+
+* przelew zewnętrzny natychmiastowy (Express Elixir) - gdy Proszący i Płatnik są klientami innego Wydawcy,
+* przelew wewnętrzny - gdy Proszący i Płatnik są klientami tego samego Wydawcy.
+

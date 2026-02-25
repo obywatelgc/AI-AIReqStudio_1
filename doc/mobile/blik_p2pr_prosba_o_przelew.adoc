@@ -1,0 +1,620 @@
+:imagesdir: images
+
+// Funkcjonalność F00620044 z Asseco EBP 6.13.5C
+
+[[P2PR_prosba_o_przelew_blik]]
+=== Prośba o przelew BLIK
+
+*_Prośba o przelew BLIK_* to usługa BLIK umożliwiająca:
+
+* wysłanie prośby o przelew na telefon do innego użytkownika (zwanego Płatnikiem);
+* akceptację lub odrzucenie prośby o przelew otrzymanej od innego Użytkownika (zwanego Proszącym);
+* anulowanie przez Proszącego wysłanej prośby o przelew;
+* zablokowanie otrzymywania próśb o przelew (wszystkich lub tylko od wybranych numerów telefonów).
+
+Prośba o realizację przelewu generowana jest przez Proszącego i trafia do Płatnika, który po otrzymaniu powiadomienia o przychodzącej prośbie podejmuje decyzję o odrzuceniu prośby lub decyzję o akceptacji prośby poprzez autoryzację płatności przelewu na telefon BLIK.
+
+W przypadku pozytywnej autoryzacji otrzymanej prośby, środki przesyłane są na konto Proszącego poprzez przelew natychmiastowy (Proszący i Płatnik są w różnych bankach) lub przelew wewnętrzny (Proszący i Płatnik są w tym samym banku).
+
+System pozwala użytkownikowi utworzyć nową prośbę o przelew w przypadku, gdy w opcji "*_Ustawienia -> Ustawienia BLIK_*" włączył on usługę BLIKA.
+
+Natomiast gdy użytkownik chce otrzymywać prośby od innych osób, to oprócz włączonej usługi BLIKA musi w opcji "*_Ustawienia -> Ustawienia BLIK_*" dodatkowo włączyć zgodę "_Odbieraj przelewy BLIKIEM_".
+
+image::BLIK_P2PR_wlaczenie_zgod.jpg[120,220,align="center"]
+
+WARNING: Funkcjonalność *_Prośby o przelew BLIK_* jest dostępna tylko w kontekście indywidualnym. Usługa BLIK musi być włączona w kontekście klienta indywidualnego.
+//i powiązana z rachunkiem indywidualnym.
+
+Użytkownikowi, który ma wyłączoną usługę BLIK, podczas próby przejścia do opcji tworzenia nowej prośby o przelew czy do opcji z listą próśb o przelew, system prezentuje stosowny ekran z informacją, aby włączyć BLIKA.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_wylaczony_BLIK_nowa_prosba.jpg[120,220,align="center"]
+| image::BLIK_P2PR_wylaczony_BLIK_lista_prosb.jpg[120,220,align="center"]
+|===
+
+
+
+[[P2PR_wyslanie_prosby_o_przelew]]
+==== Wysłanie prośby o przelew BLIK
+
+Opcja do tworzenia nowej prośby o przelew BLIK jest dostępna w aplikacji mobilnej:
+
+* na formatce z kodem BLIK z poziomu ekranu logowania;
+* na formatce z kodem BLIK z poziomu ekranu po zalogowaniu do aplikacji;
+* w opcji "_Przelewy -> Wykonaj przelew_";
+* w opcji "_Lista próśb o przelew_".
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_opcja_nowej_prosby_1.jpg[120,220,align="center"]
+| image::BLIK_P2PR_opcja_nowej_prosby_2.jpg[120,220,align="center"]
+|===
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_opcja_nowej_prosby_3.jpg[120,220,align="center"]
+| image::BLIK_P2PR_opcja_nowej_prosby_4.jpg[120,220,align="center"]
+|===
+
+Po wybraniu opcji użytkownikowi prezentowany jest ekran *_Wyślij prośbę_* z ustawioną pozycją *_Prośba o przelew BLIK_*.
+
+image::BLIK_P2PR_nowa_prosba_krok_1.jpg[120,220,align="center"]
+
+Na ekranie prezentowane są następujące dane:
+
+* *Numer telefonu odbiorcy* - pole do wpisania numeru telefonu:
+** domyślnie uzupełnione wartością "+48" z możliwością dowolnej edycji - system akceptuje wartości z plusem na początku, a także same cyfry bez plusa,
+** minimalna możliwa do wpisania liczba cyfr to 7 cyfr bez plusa,
+** maksymalna możliwa liczba cyfr to 15 cyfr bez plusa,
+** w przypadku wybrania kontaktu z książki telefonicznej system uzupełnia pole numeru danymi z książki,
+
+* *ikona* image:icons/BLIK_ludzik_do_ksiazki_tel.jpg[25,25] - opcja dostępu do książki adresowej urządzenia:
+** możliwość wybrania odbiorcy z książki telefonicznej (dla użytkowników, którzy mają włączoną zgodę odbierania przelewów/próśb BLIKIEM, system prezentuje przy pozycji ikonę BLIKA),
+** możliwość wyszukania kontaktu w książce,
+** dostępna sekcja "_Ostatnie_" zawierająca maksymalnie 3 ostatnio wybrane pozycje,
+** dostępna sekcja "_Kontakty_" zawierająca wszystkie kontakty z książki,
+** jeżeli użytkownik nie zezwolił lub zabierze aplikacji mobilnej dostęp do kontaktów, wówczas w sekcji "_Kontakty_" system zaprezentuje komunikat "_Brak kontaktów_",
+
+image::BLIK_P2PR_nowa_prosba_krok_1_lista_kontaktow.jpg[120,220,align="center"]
+
+* *Odbiorca* - pole do podania danych odbiorcy, maksymalnie 35 znaków, w przypadku wybrania kontaktu z książki telefonicznej system uzupełnia pole odbiorcy danymi z książki,
+
+* *Kwota* - pole do podania kwoty przelewu w walucie PLN,
+
+* *Tytuł prośby* - pole domyślnie uzupełnione przez system wartością "_Prośba o przelew BLIK_", pole umożliwia podanie własnego tytułu, maksymalnie 105 znaków,
+
+* *[Dalej]* - przycisk umożliwiający przejście do kolejnego kroku prośby,
+
+* *[Lista próśb o przelew]* - przycisk umożliwiający przejście do opcji "*_Lista próśb o przelew_*".
+
+Aby zatwierdzić wprowadzone dane, należy wybrać opcję *[Dalej]*, po wybraniu której system dokonuje sprawdzenia:
+
+* podania wszystkich wymaganych danych,
+* poprawności wprowadzonych danych,
+* czy podany numer telefonu odbiorcy ma włączoną opcję odbierania przelewów/próśb BLIKIEM,
+* czy podany numer telefonu odbiorcy nie jest taki sam jak numer telefonu nadawcy,
+* limitu kwotowego pojedynczej prośby o przelew.
+
+Jeśli sprawdzenie nie przebiegło pomyślnie, użytkownikowi zostaną zaprezentowane odpowiednie komunikaty walidacyjne.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_nowa_prosba_krok_1_walidacja_1.jpg[120,220,align="center"]
+| image::BLIK_P2PR_nowa_prosba_krok_1_walidacja_2.jpg[120,220,align="center"]
+|===
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_nowa_prosba_krok_1_walidacja_3.jpg[120,220,align="center"]
+| image::BLIK_P2PR_nowa_prosba_krok_1_walidacja_4.jpg[120,220,align="center"]
+| image::BLIK_P2PR_nowa_prosba_krok_1_walidacja_5.jpg[120,220,align="center"]
+|===
+
+W przypadku pozytywnego sprawdzenia wszystkich parametrów system przechodzi do kroku podsumowania.
+
+Na ekranie podsumowania prezentowane są dane składanej prośby:
+
+* dane odbiorcy prośby zawierające wprowadzoną nazwę odbiorcy oraz numer telefonu,
+* komunikat o treści: "_Numer telefonu jest zarejestrowany w BLIKU. Odbiorca otrzyma Twoją prośbę natychmiast_",
+* kwota przelewu w PLN,
+* tytuł prośby.
+
+image::BLIK_P2PR_nowa_prosba_krok_2.jpg[120,220,align="center"]
+
+Dodatkowo system prezentuje komunikat o konieczności akceptacji dyspozycji kodem PIN, z możliwością przejścia do akceptacji lub odrzucenia transakcji.
+
+W przypadku wybrania opcji *[Odrzuć]* system anuluje dyspozycję i wyświetla odpowiedni komunikat.
+
+image::BLIK_P2PR_nowa_prosba_krok_2_odrzucenie.jpg[120,220,align="center"]
+
+W przypadku wybrania opcji *[Akceptuj]* wyświetlany jest ekran autoryzacji PIN-em, umożliwiający akceptację lub odrzucenie dyspozycji.
+
+image::BLIK_P2PR_nowa_prosba_krok_2_autoryzacja.jpg[120,220,align="center"]
+
+Użytkownik wykonuje autoryzację poprzez wprowadzenie prawidłowego kodu PIN i wybranie przycisku *[Akceptuj]*. System sprawdza poprawność autoryzacji, wysyła prośbę do odbiorcy, a użytkownikowi prezentowany jest komunikat potwierdzający wysłanie prośby.
+
+image::BLIK_P2PR_nowa_prosba_krok_2_potwierdzenie_wyslania.jpg[120,220,align="center"]
+
+Informacja o wysłanej prośbie prezentowana jest użytkownikowi na liście wysłanych próśb w opcji "*_Lista próśb o przelew_*". Jeżeli Odbiorca nie zablokował otrzymywania próśb, wówczas wysłana prośba otrzymuje status "_Oczekuje na akceptację_".
+
+image::BLIK_P2PR_nowa_prosba_prezentacja_na_liscie.jpg[120,220,align="center"]
+
+
+
+[[P2PR_wyslanie_prosby_gdy_zablokowano_otrzymywanie]]
+==== Wysłanie prośby do Płatnika, który zablokował odbieranie próśb
+
+Podczas wysyłania prośby o przelew BLIK może okazać się, że Płatnik zablokował odbieranie próśb. Płatnik może przykładowo zablokować odbieranie wszystkich próśb o przelew lub zablokować odbieranie próśb tylko od wybranych numerów telefonów. W takim przypadku po wysłaniu prośby zostanie ona automatycznie odrzucona przez bank Płatnika.
+
+&nbsp;
+
+*Wysłanie prośby do Płatnika, który zablokował odbieranie wszystkich próśb o przelew na telefon BLIK*
+
+Użytkownik przechodzi do opcji tworzenia nowej prośby o przelew BLIK i wysyła ją do Płatnika, który zablokował otrzymywanie wszystkich próśb o przelew.
+
+Bank Płatnika automatycznie odrzuca taką prośbę i do użytkownika przychodzi powiadomienie PUSH o przykładowej treści: "_Twoja Prośba o przelew BLIK na kwotę 51,00 PLN, została odrzucona przez odbiorcę. Zobacz szczegóły_".
+
+image::BLIK_P2PR_blokada_wszystkich_prosb--proszacy--PUSH.jpg[120,220,align="center"]
+
+Po kliknięciu na powiadomienie PUSH system przechodzi na formatkę szczegółów odrzuconej prośby, na której dodatkowo prezentowany jest powód odrzucenia.
+
+image::BLIK_P2PR_blokada_wszystkich_prosb--proszacy--szczegoly_prosby.jpg[120,220,align="center"]
+
+Użytkownik przechodzi do opcji "*_Lista próśb o przelew_*" i wybiera z listy pozycję "Wysłane prośby". Prośba znajduje się w sekcji zakończonych próśb i otrzymuje status "Odrzucona" z powodem odrzucenia, że odbiorca zablokował otrzymywanie próśb.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_blokada_wszystkich_prosb--proszacy--lista_prosb.jpg[120,220,align="center"]
+| image::BLIK_P2PR_blokada_wszystkich_prosb--proszacy--lista_prosb_szczegoly.jpg[120,220,align="center"]
+|===
+
+&nbsp;
+
+*Wysłanie prośby do Płatnika, który zablokował odbieranie próśb o przelew na telefon BLIK od wybranych numerów telefonów*
+
+Użytkownik przechodzi do opcji tworzenia nowej prośby o przelew BLIK i wysyła ją do Płatnika, który zablokował odbieranie próśb dla wybranych numerów telefonów i zablokował numer użytkownika proszącego.
+
+Bank Płatnika automatycznie odrzuca taką prośbę i do użytkownika przychodzi powiadomienie PUSH o przykładowej treści: "_Twoja Prośba o przelew BLIK na kwotę 52,00 PLN, została odrzucona. Zobacz szczegóły_".
+
+image::BLIK_P2PR_blokada_wybranych_numerow--proszacy--PUSH.jpg[120,220,align="center"]
+
+Po kliknięciu na powiadomienie PUSH system przechodzi na formatkę szczegółów odrzuconej prośby, na której dodatkowo prezentowany jest powód odrzucenia.
+
+image::BLIK_P2PR_blokada_wybranych_numerow--proszacy--szczegoly_prosby.jpg[120,220,align="center"]
+
+Użytkownik przechodzi do opcji "*_Lista próśb o przelew_*" i wybiera z listy pozycję "Wysłane prośby". Prośba znajduje się w sekcji zakończonych próśb i otrzymuje status "Odrzucona" z powodem odrzucenia, że nadawca został zablokowany.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_blokada_wybranych_numerow--proszacy--lista_prosb.jpg[120,220,align="center"]
+| image::BLIK_P2PR_blokada_wybranych_numewrow--proszacy--lista_prosb_szczegoly.jpg[120,220,align="center"]
+|===
+
+
+
+[[P2PR_blokowanie_przychodzacych_prosb_o_przelew]]
+==== Blokowanie przychodzących próśb o przelew
+
+W opcji "*_Ustawienia -> Ustawienia BLIK -> Zablokuj prośby o przelew_*" użytkownik ma możliwość:
+
+* zablokowania otrzymywania wszystkich próśb o przelew na telefon,
+* zablokowania otrzymywania próśb tylko od wybranych numerów telefonów.
+
+NOTE: Funkcjonalność włączenia blokowania próśb została opisana w rozdziale <<ustawienia_BLIK_zablokuj_prosby_o_przelew,*_Blokowanie odbierania próśb o przelew_*>>.
+
+Gdy użytkownik zablokuje odbieranie wszystkich próśb o przelew, wówczas w momencie przyjścia prośby system automatycznie ją blokuje.
+
+Analogicznie jest w przypadku, gdy użytkownik zablokuje tylko wybrane numery telefonów i przyjdzie prośba od Proszącego, który znajduje się na liście zablokowanych kontaktów. Tutaj również system automatycznie blokuje taką prośbę.
+
+System do banku Proszącego wysyła informację, że prośba została odrzucona.
+
+Użytkownik nie otrzymuje powiadomienia PUSH o przychodzącej prośbie oraz że prośba ta została automatycznie zablokowana.
+
+Po przejściu do opcji "*_Lista próśb o przelew_*" i wybraniu z listy pozycji "Otrzymane prośby", prośba prezentowana jest w sekcji zakończonych próśb i otrzymuje status "Zablokowana".
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_blokada_prosb--platnik--lista_prosb.jpg[120,220,align="center"]
+| image::BLIK_P2PR_blokada_prosb--platnik--lista_prosb_szczegoly.jpg[120,220,align="center"]
+|===
+
+
+
+[[P2PR_anulowanie_prosby_przez_proszacego]]
+==== Anulowanie przez Proszącego wysłanej prośby o przelew
+
+Użytkownik ma możliwość anulowania wysłanej prośby, jeżeli nie została ona jeszcze zaakceptowana lub odrzucona.
+
+W celu anulowania prośby należy przejść do opcji "*_Lista próśb o przelew_*" i wybrać z listy pozycję "Wysłane prośby". Następnie w sekcji "Aktywne prośby" użytkownik rozwija szczegóły wybranej prośby i klika na opcję *[ANULUJ PROŚBĘ]*.
+
+image::BLIK_P2PR_anulowanie_1--proszacy--opcja_anulowania.jpg[120,220,align="center"]
+
+Pojawia się okienko z pytaniem, czy użytkownik na pewno chce anulować swoją prośbę o przelew. Aby potwierdzić, należy kliknąć na przycisk *[Anuluj prośbę o przelew]*.
+
+image::BLIK_P2PR_anulowanie_2--proszacy--pytanie_o_anulowanie.jpg[120,220,align="center"]
+
+Pojawia się komunikat potwierdzający, że prośba o przelew została anulowana.
+
+image::BLIK_P2PR_anulowanie_3--proszacy--potwierdzenie_anulowania.jpg[120,220,align="center"]
+
+W opcji "*_Lista próśb o przelew_*" prośba otrzymuje status "Anulowana" i znajduje się w sekcji wysłanych zakończonych próśb.
+
+image::BLIK_P2PR_anulowanie_4--proszacy--lista_z_anulowana_prosba.jpg[120,220,align="center"]
+
+System do banku Płatnika wysyła informację, że Proszący anulował swoją prośbę.
+
+NOTE: Może się zdarzyć sytuacja, że Płatnik odrzuci bądź zaakceptuje prośbę, natomiast u Proszącego jeszcze przez chwilę taka prośba będzie posiadać status "Oczekuje na akceptację". W takim przypadku, gdy Proszący wykona akcję anulowania takiej prośby, wówczas system zaprezentuje stosowny komunikat.
+
+image::BLIK_P2PR_anulowanie_5--proszacy--odrzucenie_anulowania.jpg[120,220,align="center"]
+
+
+
+[[P2PR_poinformowanie_platnika_o_anulowanej_prosbie]]
+==== Poinformowanie Płatnika o anulowanej prośbie przez Proszącego
+
+Użytkownik otrzymuje prośbę o przelew. Prośba jest widoczna w opcji "*_Lista próśb o przelew_*" jako otrzymana aktywna prośba w statusie "Do akceptacji".
+
+image::BLIK_P2PR_anulowanie_6--platnik--lista_prosb.jpg[120,220,align="center"]
+
+Gdy prośba zostanie anulowana przez Proszącego, to do użytkownika (Płatnika) przychodzi powiadomienie PUSH o przykładowej treści: "_Prośba o przelew BLIK na kwotę 50,00 PLN, oczekująca na Twoją akceptację została anulowana. Zobacz szczegóły_".
+
+image::BLIK_P2PR_anulowanie_7--platnik--PUSH.jpg[120,220,align="center"]
+
+Po kliknięciu na powiadomienie PUSH system przechodzi na formatkę szczegółów anulowanej prośby.
+
+image::BLIK_P2PR_anulowanie_8--platnik--szczegoly_prosby.jpg[120,220,align="center"]
+
+Użytkownik (Płatnik) przechodzi do opcji "*_Lista próśb o przelew_*". Na liście otrzymanych próśb nie jest prezentowana anulowana prośba.
+
+image::BLIK_P2PR_anulowanie_9--platnik--lista_prosb.jpg[120,220,align="center"]
+
+
+
+[[P2PR_akceptacja_prosby_przez_platnika]]
+==== Akceptacja przez Płatnika przychodzącej prośby o przelew
+
+W momencie nadejścia prośby o przelew, użytkownik otrzymuje powiadomienie PUSH o przykładowej treści: "Czeka na Ciebie Prośba o przelew BLIK na kwotę 70,00 PLN. Zobacz szczegóły".
+
+image::BLIK_P2PR_akceptacja_PUSH.jpg[120,220,align="center"]
+
+Po kliknięciu na powiadomienie PUSH system przechodzi na formatkę ze szczegółami otrzymanej prośby.
+
+image::BLIK_P2PR_akceptacja_krok_1_szczegoly.jpg[120,220,align="center"]
+
+Powyższy ekran zostanie również zaprezentowany, gdy użytkownik przejdzie do opcji "*_Lista próśb o przelew_*", wybierze z listy pozycję "Otrzymane prośby", a następnie w sekcji "Aktywne prośby" rozwinie szczegóły wybranej prośby i kliknie na opcję *[AKCEPTUJ PROŚBĘ]*.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_akceptacja_lista_prosb.jpg[120,220,align="center"]
+| image::BLIK_P2PR_akceptacja_krok_1_szczegoly.jpg[120,220,align="center"]
+|===
+
+Na ekranie szczegółów "*_Prośba o przelew_*" prezentowane są dane otrzymanej prośby:
+
+* dane proszącego zawierające nazwę proszącego oraz jego numer telefonu,
+* gdy telefon proszącego znajduje się w książce telefonicznej użytkownika, wówczas prezentowany jest komunikat: "_Ten numer znajduje się w Twoich kontaktach. Odbiorca otrzyma przelew natychmiast_",
+* gdy telefon proszącego nie znajduje się w książce telefonicznej użytkownika, wówczas prezentowany jest komunikat: "_Ten numer nie znajduje się w Twoich kontaktach. Odbiorca otrzyma przelew natychmiast_",
+* kwota w walucie PLN,
+* tytuł przelewu,
+* data ważności prośby,
+* data wpłynięcia prośby,
+* komunikat o treści: "_Dane nadawcy prośby zostały zweryfikowane przez bank nadawcy_",
+* [Wyślij przelew] - przycisk umożliwiający przejście do kroku wysyłania przelewu,
+* [Odrzuć] - przycisk umożliwiający odrzucenie prośby.
+
+Po kliknięciu na przycisk *[Wyślij przelew]* użytkownik przechodzi do kroku "*_Przelew na prośbę_*".
+
+image::BLIK_P2PR_akceptacja_krok_2_dane_przelewu.jpg[120,220,align="center"]
+
+
+System prezentuje na ekranie następujące dane w trybie podglądu (oprócz pola "Tytuł przelewu", które udostępnione jest w trybie edycji):
+
+* nazwa i numer rachunku użytkownika, z którego zostanie wysłany przelew, prezentowany jest rachunek, który został powiązany z usługą BLIK w opcji "_Ustawienia -> Ustawienia BLIK_",
+* dane proszącego zawierające nazwę proszącego oraz jego numer telefonu,
+* gdy telefon proszącego znajduje się w książce telefonicznej użytkownika, wówczas prezentowany jest komunikat: "_Ten numer znajduje się w Twoich kontaktach. Odbiorca otrzyma przelew natychmiast_",
+* gdy telefon proszącego nie znajduje się w książce telefonicznej użytkownika, wówczas prezentowany jest komunikat: "_Ten numer nie znajduje się w Twoich kontaktach. Odbiorca otrzyma przelew natychmiast_",
+* kwota w walucie PLN,
+* tytuł przelewu - pole zawiera opis wprowadzony przez proszącego, użytkownik ma możliwość edycji tytułu z maksymalną ilością 105 znaków,
+* data ważności prośby,
+* data wpłynięcia prośby,
+* komunikat o treści: "_Dane nadawcy prośby zostały zweryfikowane przez bank nadawcy_",
+* [Dalej] - przycisk umożliwiający przejście do kolejnego kroku przelewu.
+
+Aby zatwierdzić dane, należy wybrać opcję *[Dalej]*, po wybraniu której system dokonuje sprawdzenia:
+
+* limitu kwotowego pojedynczego przelewu na telefon BLIK,
+* dziennego limitu kwotowego przelewów na telefon BLIK,
+* dziennego limitu ilościowego przelewów na telefon BLIK,
+* poprawności wprowadzonych danych w polu "Tytuł przelewu".
+
+Jeśli sprawdzenie nie przebiegło pomyślnie, użytkownikowi zostaną zaprezentowane odpowiednie komunikaty walidacyjne.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_akceptacja_krok_2_dane_przelewu_walidacja_1.jpg[120,220,align="center"]
+| image::BLIK_P2PR_akceptacja_krok_2_dane_przelewu_walidacja_2.jpg[120,220,align="center"]
+| image::BLIK_P2PR_akceptacja_krok_2_dane_przelewu_walidacja_3.jpg[120,220,align="center"]
+|===
+
+W przypadku pozytywnego sprawdzenia wszystkich parametrów system przechodzi do ekranu podsumowania, na którym prezentowane są dane z poprzedniego kroku w trybie podglądu.
+
+image::BLIK_P2PR_akceptacja_krok_3_podsumowanie.jpg[120,220,align="center"]
+
+Dodatkowo prezentowany jest przycisk [Akceptuj] wraz z komunikatem o konieczności akceptacji dyspozycji kodem PIN.
+
+Po wybraniu opcji *[Akceptuj]* wyświetlany jest ekran autoryzacji PIN-em, umożliwiający akceptację lub odrzucenie dyspozycji.
+
+image::BLIK_P2PR_akceptacja_krok_4_autoryzacja.jpg[120,220,align="center"]
+
+NOTE: Wybór opcji [ODRZUĆ] powoduje odrzucenie dyspozycji przelewu, natomiast status prośby nie ulega zmianie i nadal oczekuje na akceptację.
+
+Użytkownik wykonuje autoryzację poprzez wprowadzenie prawidłowego kodu PIN i wybranie przycisku *[Akceptuj]*. System sprawdza poprawność autoryzacji i wysyła przelew do realizacji. Użytkownikowi prezentowany jest ekran potwierdzający przyjęcie dyspozycji do realizacji, z poziomu którego  ma możliwość przejścia do listy próśb za pomocą opcji [Przejdź do listy próśb] lub przejścia do pulpitu po wybraniu pozycji [Wróć do pulpitu].
+
+image::BLIK_P2PR_akceptacja_krok_5_potwierdzenie_wyslania.jpg[120,220,align="center"]
+
+System do banku Proszącego wysyła informację, że prośba została zaakceptowana. Środki przesyłane są na konto Proszącego poprzez przelew natychmiastowy (Proszący i Płatnik są w różnych bankach) lub przelew wewnętrzny (Proszący i Płatnik są w tym samym banku).
+
+Informacja o realizacji transakcji prezentowana jest użytkownikowi w historii rachunku, z którego został wysłany przelew - czyli na rachunku, który został powiązany z usługą BLIK w opcji "_Ustawienia -> Ustawienia BLIK_".
+
+W opcji "*_Lista próśb o przelew_*" prośba otrzymuje status "Zaakceptowana" i znajduje się w sekcji otrzymanych zakończonych próśb.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_akceptacja_prezentacja_na_liscie_1.jpg[120,220,align="center"]
+| image::BLIK_P2PR_akceptacja_prezentacja_na_liscie_2.jpg[120,220,align="center"]
+|===
+
+
+
+[[P2PR_poinformowanie_proszacego_o_zaakceptowanej_prosbie]]
+==== Poinformowanie Proszącego o zaakceptowanej prośbie przez Płatnika
+
+Użytkownik tworzy nową prośbę o przelew BLIK i wysyła ją do Płatnika, który akceptuje prośbę.
+
+Do użytkownika przychodzi powiadomienie PUSH o przykładowej treści: "_Twoja prośba o przelew BLIK na kwotę 70,00 PLN, została zrealizowana. Zobacz szczegóły_".
+
+image::BLIK_P2PR_akceptacja--proszacy--PUSH.jpg[120,220,align="center"]
+
+Po kliknięciu na powiadomienie PUSH system przechodzi na formatkę szczegółów prośby.
+
+image::BLIK_P2PR_akceptacja--proszacy--szczegoly_prosby.jpg[120,220,align="center"]
+
+Użytkownik przechodzi do opcji "*_Lista próśb o przelew_*" i wybiera z listy pozycję "Wysłane prośby". Prośba znajduje się w sekcji zakończonych próśb i otrzymuje status "Zakończona".
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_akceptacja--proszacy--lista_prosb.jpg[120,220,align="center"]
+| image::BLIK_P2PR_akceptacja--proszacy--lista_prosb_szczegoly.jpg[120,220,align="center"]
+|===
+
+Środki przesyłane są na konto użytkownika poprzez przelew natychmiastowy (Proszący i Płatnik są w różnych bankach) lub przelew wewnętrzny (Proszący i Płatnik są w tym samym banku).
+
+Informacja o realizacji transakcji prezentowana jest użytkownikowi w historii rachunku, który został powiązany z usługą BLIK (powiązany rachunek prezentowany jest w opcji "_Ustawienia -> Ustawienia BLIK_").
+
+
+
+[[P2PR_odrzucenie_prosby_przez_platnika]]
+==== Odrzucenie przez Płatnika przychodzącej prośby o przelew
+
+W momencie nadejścia prośby o przelew, użytkownik otrzymuje powiadomienie PUSH o przykładowej treści: "Czeka na Ciebie Prośba o przelew BLIK na kwotę 80,00 PLN. Zobacz szczegóły".
+
+image::BLIK_P2PR_odrzucenie--platnik--PUSH.jpg[120,220,align="center"]
+
+Po kliknięciu na powiadomienie PUSH system przechodzi na formatkę ze szczegółami otrzymanej prośby.
+
+image::BLIK_P2PR_odrzucenie--platnik--szczegoly.jpg[120,220,align="center"]
+
+Powyższy ekran zostanie również zaprezentowany, gdy użytkownik przejdzie do opcji "*_Lista próśb o przelew_*", wybierze z listy pozycję "Otrzymane prośby", a następnie w sekcji "Aktywne prośby" rozwinie szczegóły wybranej prośby i kliknie na opcję *[AKCEPTUJ PROŚBĘ]*.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_odrzucenie--platnik--lista_opcja_akceptacji.jpg[120,220,align="center"]
+| image::BLIK_P2PR_odrzucenie--platnik--szczegoly.jpg[120,220,align="center"]
+|===
+
+Na ekranie szczegółów "*_Prośba o przelew_*" prezentowane są dane otrzymanej prośby wraz z opcjami [Wyślij przelew] oraz [Odrzuć]. Użytkownik klika na opcję *[Odrzuć]*.
+
+[[P2PR_odrzucenie_z_formatki_szczegolow]]
+Pojawia się okienko z pytaniem, czy użytkownik na pewno chce odrzucić prośbę o przelew. Dodatkowo na ekranie prezentowane są dane:
+
+* *Powód odrzucenia* - pole do podania powodu odrzucenia, maksymalnie 105 znaków, pole nieobowiązkowe,
+* *[Odrzuć prośbę o przelew]* - przycisk do potwierdzenia odrzucenia prośby,
+* *[Wróć]* - przycisk zamyka okno do odrzucenia prośby.
+
+image::BLIK_P2PR_odrzucenie--platnik--pytanie_o_odrzucenie.jpg[120,220,align="center"]
+
+Aby odrzucić prośbę, należy kliknąć na przycisk *[Odrzuć prośbę o przelew]*. Odrzucenie prośby nie wymaga akceptacji kodem PIN.
+
+Pojawia się komunikat potwierdzający, że prośba o przelew została odrzucona.
+
+image::BLIK_P2PR_odrzucenie--platnik--potwierdzenie_odrzucenia.jpg[120,220,align="center"]
+
+System wysyła informację do banku Proszącego, że prośba została odrzucona.
+
+W opcji "*_Lista próśb o przelew_*" prośba otrzymuje status "Odrzucona" i znajduje się w sekcji otrzymanych zakończonych próśb.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_odrzucenie--platnik--lista_z_odrzucona_prosba_1.jpg[120,220,align="center"]
+| image::BLIK_P2PR_odrzucenie--platnik--lista_z_odrzucona_prosba_2_bez_powodu.jpg[120,220,align="center"]
+|===
+
+Jeżeli podczas odrzucania prośby użytkownik nie uzupełni pola powodu odrzucenia, wówczas na liście próśb przy danej pozycji system nie będzie prezentował pola "Powód odrzucenia". +
+Natomiast w przypadku, gdy użytkownik wprowadzi powód odrzucenia i odrzuci prośbę, wówczas na liście próśb przy danej pozycji zostanie zaprezentowane pole "Powód odrzucenia" z treścią wprowadzoną przez użytkownika.
+
+image::BLIK_P2PR_odrzucenie--platnik--lista_z_odrzucona_prosba_3_z_powodem.jpg[120,220,align="center"]
+
+Użytkownik ma możliwość odrzucenia prośby również z poziomu listy próśb. Po przejściu do opcji "*_Lista próśb o przelew_*" należy wybrać z listy pozycję "Otrzymane prośby". Następnie w sekcji "Aktywne prośby" użytkownik rozwija szczegóły wybranej prośby i klika na opcję *[ODRZUĆ PROŚBĘ]*. +
+Pojawia się okienko z pytaniem, czy użytkownik na pewno chce odrzucić prośbę o przelew. W tym miejscu proces przebiega analogicznie jak w przypadku <<P2PR_odrzucenie_z_formatki_szczegolow,odrzucenia prośby z poziomu formatki szczegółów prośby>>.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_odrzucenie--platnik--lista_opcja_odrzucenia_1.jpg[120,220,align="center"]
+| image::BLIK_P2PR_odrzucenie--platnik--lista_opcja_odrzucenia_2.jpg[120,220,align="center"]
+|===
+
+
+
+[[P2PR_poinformowanie_proszacego_o_odrzuconej_prosbie]]
+==== Poinformowanie Proszącego o odrzuconej prośbie przez Płatnika
+
+Użytkownik tworzy nową prośbę o przelew BLIK i wysyła ją do Płatnika, który odrzuca prośbę.
+
+Do użytkownika przychodzi powiadomienie PUSH o przykładowej treści: "_Twoja Prośba o przelew BLIK na kwotę 80,00 PLN, została odrzucona. Zobacz szczegóły_".
+
+image::BLIK_P2PR_odrzucenie--proszacy--PUSH.jpg[120,220,align="center"]
+
+Po kliknięciu na powiadomienie PUSH system przechodzi na formatkę szczegółów prośby.
+
+image::BLIK_P2PR_odrzucenie--proszacy--szczegoly_prosby.jpg[120,220,align="center"]
+
+Użytkownik przechodzi do opcji "*_Lista próśb o przelew_*" i wybiera z listy pozycję "Wysłane prośby". Prośba znajduje się w sekcji zakończonych próśb i otrzymuje status "Odrzucona".
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_odrzucenie--proszacy--lista_prosb.jpg[120,220,align="center"]
+| image::BLIK_P2PR_odrzucenie--proszacy--lista_prosb_szczegoly.jpg[120,220,align="center"]
+|===
+
+Jeżeli Płatnik podczas odrzucania prośby wpisał treść powodu odrzucenia, wówczas użytkownikowi na formatce szczegółów prośby oraz na liście próśb o przelew zostanie zaprezentowane dodatkowe pole "Powód odrzucenia" z treścią wprowadzoną przez Płatnika.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_odrzucenie--proszacy--szczegoly_prosby_z_powodem_odrzucenia.jpg[120,220,align="center"]
+| image::BLIK_P2PR_odrzucenie--proszacy--lista_prosb_z_powodem_odrzucenia.jpg[120,220,align="center"]
+|===
+
+
+
+[[P2PR_uplyniecie_czasu_waznosci_prosby]]
+==== Upłynięcie czasu ważności prośby
+
+Po wysłaniu prośby o przelew system ustawia czas ważności prośby na 72 godziny. Informacja ta jest prezentowana w opcji "*_Lista próśb o przelew_*" zarówno dla Proszącego przy aktywnej wysłanej prośbie, jak i dla Płatnika przy aktywnej otrzymanej prośbie.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_przeterminowanie--proszacy_lista_prosb_aktywnych.jpg[120,220,align="center"]
+| image::BLIK_P2PR_przeterminowanie--platnik_lista_prosb_aktywnych.jpg[120,220,align="center"]
+|===
+
+W przypadku, gdy Płatnik nie wykona akceptacji lub odrzucenia prośby oraz Proszący nie anuluje prośby, to po upływie 72 godzin od wpłynięcia prośby, do Proszącego przychodzi powiadomienie PUSH o przykładowej treści: "_Minął czas na akceptację wysłanej Prośby o przelew BLIK na kwotę 60,00 PLN. Zobacz szczegóły_".
+
+image::BLIK_P2PR_przeterminowanie--proszacy_PUSH.jpg[120,220,align="center"]
+
+Po kliknięciu na powiadomienie PUSH system przechodzi na formatkę szczegółów odrzuconej prośby, na której dodatkowo prezentowany jest powód odrzucenia, że został przekroczony czas ważności prośby.
+
+image::BLIK_P2PR_przeterminowanie--proszacy_szczegoly_prosby.jpg[120,220,align="center"]
+
+Użytkownik Proszący przechodzi do opcji "*_Lista próśb o przelew_*" i wybiera z listy pozycję "Wysłane prośby". Prośba znajduje się w sekcji zakończonych próśb i otrzymuje status "Odrzucona" z powodem odrzucenia, że został przekroczony czas ważności prośby.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_przeterminowanie--proszacy_lista_prosb_zakonczonych.jpg[120,220,align="center"]
+| image::BLIK_P2PR_przeterminowanie--proszacy_lista_prosb_zakonczonych_szczegoly.jpg[120,220,align="center"]
+|===
+
+Natomiast użytkownik Płatnik po upływie 72 godzin od wpłynięcia prośby nie otrzymuje powiadomienia PUSH, że minął czas na obsługę otrzymanej prośby. +
+Gdy Płatnik przejdzie do opcji "*_Lista próśb o przelew_*" i wybierze z listy pozycję "Otrzymane prośby", to prośba prezentowana jest w sekcji zakończonych próśb ze statusem "Przeterminowana".
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_przeterminowanie--platnik_lista_prosb_zakonczonych.jpg[120,220,align="center"]
+| image::BLIK_P2PR_przeterminowanie--platnik_lista_prosb_zakonczonych_szczegoly.jpg[120,220,align="center"]
+|===
+
+
+
+[[P2PR_lista_prosb_o_przelew]]
+==== Lista próśb o przelew
+
+W opcji "*_Lista próśb o przelew_*" wyświetlane są prośby wysłane przez użytkownika oraz prośby otrzymane od innych osób. Domyślnie po przejściu do opcji prezentowane są otrzymane prośby.
+
+System prezentuje na ekranie następujące dane:
+
+* [Poproś o przelew] - przycisk umożliwiający przejście do formatki tworzenia nowej prośby o przelew BLIK,
+* lista wyboru zawierająca pozycje: "Otrzymane prośby" oraz "Wysłane prośby",
+* sekcja "Aktywne prośby" zawierająca prośby oczekujące na obsługę,
+* sekcja "Zakończone prośby" zawierająca prośby, których procesowanie zostało zakończone.
+
+[cols=">a,a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_lista_prosb--otrzymane_zwiniete.jpg[120,220,align="center"]
+| image::BLIK_P2PR_lista_prosb--lista_wyboru.jpg[120,220,align="center"]
+| image::BLIK_P2PR_lista_prosb--wyslane_zwiniete.jpg[120,220,align="center"]
+|===
+
+Gdy użytkownik nie posiada żadnych aktywnych czy zakończonych próśb, wówczas pod odpowiednią sekcją prezentowane są stosowne komunikaty.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_lista_prosb--pusta_lista_otrzymanych.jpg[120,220,align="center"]
+| image::BLIK_P2PR_lista_prosb--pusta_lista_wyslanych.jpg[120,220,align="center"]
+|===
+
+Użytkownikowi, który ma wyłączoną usługę BLIK, podczas próby przejścia do opcji "*_Lista próśb o przelew_*" zostanie zaprezentowany ekran z informacją, aby włączyć BLIKA.
+
+image::BLIK_P2PR_wylaczony_BLIK_lista_prosb.jpg[120,220,align="center"]
+
+[WARNING]
+====
+W przypadku, gdy użytkownik wyłączy usługę BLIK, a następnie ją włączy, wówczas po przejściu do opcji "_Lista próśb o przelew_" lista wysłanych i otrzymanych próśb będzie pusta. +
+W przypadku, gdy w opcji "_Ustawienia -> Ustawienia BLIK"_ użytkownik zmieni rachunek powiązany z BLIKIEM, wówczas po przejściu do opcji "Lista próśb o przelew" lista wysłanych i otrzymanych próśb będzie pusta.
+====
+
+System prezentuje licznik przy ikonie "_Lista próśb o przelew_", który informuje o łącznej ilości aktywnych wysłanych próśb i aktywnych otrzymanych próśb.
+
+image::BLIK_P2PR_lista_prosb--licznik_prosb.jpg[120,220,align="center"]
+
+&nbsp;
+
+*Prezentacja wysłanych próśb*
+
+Po wybraniu z listy pozycji "Wysłane prośby" na ekranie widoczne są prośby wysłane przez użytkownika.
+
+image::BLIK_P2PR_lista_prosb--wyslane_zwiniete.jpg[120,220,align="center"]
+
+W sekcji "*_Aktywne prośby_*" dostępne są wysłane prośby o statusie "Oczekuje na akceptację", które oczekują na akceptację przez Płatnika. Po kliknięciu na wybraną pozycję system rozwija szczegóły prośby, na której dodatkowo dostępna jest opcja [ANULUJ PROŚBĘ] pozwalająca na anulowanie wysłanej prośby. +
+W sekcji prezentują się domyślnie maksymalnie trzy aktywne prośby, natomiast gdy próśb jest więcej niż trzy, to pojawia się przycisk [POKAŻ WSZYSTKIE AKTYWNE PROŚBY]. Po kliknięciu na ten przycisk wyświetlane są pozostałe aktywne prośby przy użyciu techniki "lazy loading". Prośby są sortowane po dacie wpłynięcia (najnowsze na górze).
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_lista_prosb--wyslane_aktywne_prosby--szczegoly.jpg[120,220,align="center"]
+| image::BLIK_P2PR_lista_prosb--wyslane_aktywne_prosby--pokaz_wszystkie.jpg[120,220,align="center"]
+|===
+
+W sekcji "*_Zakończone prośby_*" system prezentuje wszystkie wysłane zakończone prośby przy użyciu techniki "lazy loading". Prośby są sortowane po dacie wpłynięcia (najnowsze na górze). +
+Po kliknięciu na wybraną pozycję rozwijane są szczegóły prośby.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_lista_prosb--wyslane_zakonczone_prosby--kilka_pozycji.jpg[120,220,align="center"]
+| image::BLIK_P2PR_lista_prosb--wyslane_zakonczone_prosby--szczegoly.jpg[120,220,align="center"]
+|===
+
+&nbsp;
+
+*Prezentacja otrzymanych próśb*
+
+Po wybraniu z listy pozycji "Otrzymane prośby" na ekranie widoczne są prośby otrzymane od innych osób.
+
+image::BLIK_P2PR_lista_prosb--otrzymane_zwiniete.jpg[120,220,align="center"]
+
+W sekcji "Aktywne prośby" dostępne są otrzymane prośby o statusie "Do akceptacji", które oczekują na akceptację przez użytkownika. Po kliknięciu na wybraną pozycję system rozwija szczegóły prośby, na której dodatkowo dostępna jest opcja [AKCEPTUJ PROŚBĘ] pozwalająca na akceptację otrzymanej prośby oraz opcja [ODRZUĆ PROŚBĘ] pozwalająca na odrzucenie otrzymanej prośby. +
+W sekcji prezentują się domyślnie maksymalnie trzy prośby, natomiast gdy próśb jest więcej niż trzy, to pojawia się przycisk [POKAŻ WSZYSTKIE AKTYWNE PROŚBY]. Po kliknięciu na ten przycisk wyświetlane są pozostałe aktywne prośby przy użyciu techniki "lazy loading". Prośby są sortowane po dacie wpłynięcia (najnowsze na górze).
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_lista_prosb--otrzymane_aktywne_prosby--szczegoly.jpg[120,220,align="center"]
+| image::BLIK_P2PR_lista_prosb--otrzymane_aktywne_prosby--pokaz_wszystkie.jpg[120,220,align="center"]
+|===
+
+W sekcji "Zakończone prośby" system prezentuje wszystkie otrzymane zakończone prośby przy użyciu techniki "lazy loading". Prośby są sortowane po dacie wpłynięcia (najnowsze na górze). +
+Po kliknięciu na wybraną pozycję rozwijane są szczegóły prośby.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_P2PR_lista_prosb--otrzymane_zakonczone_prosby--kilka_pozycji.jpg[120,220,align="center"]
+| image::BLIK_P2PR_lista_prosb--otrzymane_zakonczone_prosby--szczegoly.jpg[120,220,align="center"]
+|===
+

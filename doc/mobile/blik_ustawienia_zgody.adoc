@@ -1,0 +1,91 @@
+:imagesdir: images
+
+[[BLIK_zgoda_na_realizacje_szybkich_platnosci]]
+==== Zgoda na realizację Szybkich Płatności
+
+Użytkownik ma możliwość zmiany zgody na realizację Szybkich Płatności. W tym celu na ekranie "_Ustawienia BLIK_" należy przy pozycji "_Szybkie płatności bez PIN_" przesunąć suwak na odpowiednią pozycję:
+
+* ikonka image:icons/BLIK_suwak_wylaczony.jpg[35,35] oznacza, że zgoda jest wyłączona,
+* ikonka image:icons/BLIK_suwak_wlaczony.jpg[35,35] oznacza, że zgoda jest włączona.
+
+image::BLIK_ustawienia_zgoda_na_szybkie_platnosci.jpg[120,220,align="center"]
+
+WARNING: Po włączeniu usługi BLIK system ustawia domyślnie zgodę "_Szybkie płatności bez PIN_" na wyłączoną. W przypadku, gdy użytkownik wyłączy usługę BLIK i ponownie ją włączy, wówczas system również ustawia domyślnie zgodę na wyłączoną.
+
+Gdy zgoda na "_Szybkie płatności bez PIN_" jest włączona i użytkownik na stronie powitalnej aplikacji mobilnej wybierze opcję *[Kod BLIK]*, wówczas otwiera się ekran z wygenerowanym kodem BLIK.
+
+Natomiast gdy zgoda na "_Szybkie płatności bez PIN_" jest wyłączona i użytkownik na stronie powitalnej aplikacji mobilnej wybierze opcję *[Kod BLIK]*, wówczas otwiera się ekran logowania do aplikacji. Po prawidłowej autoryzacji użytkownik zostaje zalogowany do aplikacji mobilnej i od razu otwiera się ekran z kodem BLIK.
+
+
+[[BLIK_zgoda_na_prezentacje_dostepnych_srodkow]]
+==== Zgoda na prezentację dostępnych środków
+
+Użytkownik ma możliwość zmiany zgody na prezentację salda rachunku na ekranie z kodem BLIK. W tym celu na ekranie "_Ustawienia BLIK_" należy przy pozycji "_Dostępne środki_" przesunąć suwak na odpowiednią pozycję:
+
+* ikonka image:icons/BLIK_suwak_wylaczony.jpg[35,35] oznacza, że zgoda jest wyłączona,
+* ikonka image:icons/BLIK_suwak_wlaczony.jpg[35,35] oznacza, że zgoda jest włączona.
+
+image::BLIK_ustawienia_zgoda_na_dostepne_srodki.jpg[120,220,align="center"]
+
+WARNING: Po włączeniu usługi BLIK system ustawia domyślnie zgodę "_Dostępne środki_" na wyłączoną. W przypadku, gdy użytkownik wyłączy usługę BLIK i ponownie ją włączy, wówczas system również ustawia domyślnie zgodę na wyłączoną.
+
+Gdy zgoda na prezentację dostępnych środków jest włączona, wówczas na ekranie z kodem BLIK system prezentuje saldo rachunku obok nazwy rachunku. Saldo rachunku jest prezentowane tylko na ekranie z kodem BLIK wygenerowanym po zalogowaniu się do aplikacji mobilnej. W przypadku, gdy użytkownik wygeneruje kod BLIK ze strony logowania (bez logowania się do aplikacji mobilnej), wówczas na ekranie jest prezentowana tylko nazwa rachunku.
+
+Gdy zgoda na prezentację dostępnych środków jest wyłączona, wówczas na ekranie z kodem BLIK system nie prezentuje salda rachunku.
+
+
+
+[[zgoda_P2P]]
+==== Zgoda na odbieranie przelewów BLIKIEM
+
+Użytkownik ma możliwość wyrażenia zgody na odbieranie przelewów BLIKIEM.
+W tym celu na ekranie "_Ustawienia BLIK_" należy przy pozycji "_Odbieraj przelewy BLIKIEM_" przesunąć suwak na odpowiednią pozycję:
+
+* ikonka image:icons/BLIK_suwak_wylaczony.jpg[35,35] oznacza, że zgoda jest wyłączona,
+* ikonka image:icons/BLIK_suwak_wlaczony.jpg[35,35] oznacza, że zgoda jest włączona.
+
+image::BLIK_ustawienia_zgoda_p2p.jpg[120,220,align="center"]
+
+[NOTE]
+====
+Opcja "_Odbieraj przelewy BLIKIEM_" jest dostępna, gdy Bank ma włączoną funkcjonalność przelewów na telefon BLIK. Opcja jest wspólna dla funkcjonalności przelewów na telefon BLIK oraz dla funkcjonalności próśb o przelew BLIK. +
+Gdy Bank ma włączoną tylko funkcjonalność przelewów na telefon BLIK, wówczas na formatkach włączenia i wyłączenia opcji prezentuje się informacja dotycząca tylko przelewów na telefon BLIK. +
+Natomiast gdy Bank ma włączoną funkcjonalność przelewów na telefon BLIK oraz próśb o przelew BLIK, wówczas na formatkach włączenia i wyłączenia opcji prezentuje się informacja dotycząca przelewów na telefon BLIK oraz próśb o przelew BLIK.
+====
+
+Podczas włączania zgody system wymaga akceptacji oświadczenia. Użytkownik zaznacza checkbox potwierdzający zapoznanie się treścią oświadczenia i klika na przycisk [Akceptuj].
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_ustawienia_zgoda_p2p_wlaczenie--checkbox_niezaznaczony.jpg[120,220,align="center"]
+| image::BLIK_ustawienia_zgoda_p2p_wlaczenie--checkbox_zaznaczony.jpg[120,220,align="center"]
+|===
+
+Następnie pojawia się sekcja do wprowadzenia kodu weryfikacyjnego, który został wysłany do użytkownika za pomocą wiadomości SMS. Po wprowadzeniu kodu SMS należy wybrać przycisk [Potwierdź].
+
+image::BLIK_ustawienia_zgoda_p2p_wlaczenie--autoryzacja_SMS.jpg[120,220,align="center"]
+
+Pojawia się komunikat potwierdzający, że numer telefonu został zarejestrowany i zgoda "_Odbieraj przelewy BLIKIEM_" zostaje włączona.
+
+image::BLIK_ustawienia_zgoda_p2p_wlaczenie--potwierdzenie.jpg[120,220,align="center"]
+
+NOTE: System weryfikuje poprawność wprowadzonego kodu SMS. Po trzykrotnym wprowadzeniu nieprawidłowego kodu SMS użytkownikowi zostaje zaprezentowany stosowny komunikat.
+
+[cols=">a,<a", frame=none, grid=none]
+|===
+| image::BLIK_ustawienia_zgoda_p2p_wlaczenie--autoryzacja_SMS-walidacja_1.jpg[120,220,align="center"]
+| image::BLIK_ustawienia_zgoda_p2p_wlaczenie--autoryzacja_SMS-walidacja_2.jpg[120,220,align="center"]
+|===
+
+Podczas wyłączania zgody "_Odbieraj przelewy BLIKIEM_" system prezentuje ekran z komunikatem, czy użytkownik na pewno chce wyłączyć opcję. W celu potwierdzenia należy kliknąć na przycisk [Wyłącz]. Wyłączenie zgody nie wymaga akceptacji kodem PIN.
+
+image::BLIK_ustawienia_zgoda_p2p_wylaczenie--pytanie.jpg[120,220,align="center"]
+
+Po zatwierdzeniu następuje wyłączenie zgody użytkownikowi i pojawia się komunikat potwierdzający, że numer telefonu został wyrejestrowany.
+
+image::BLIK_ustawienia_zgoda_p2p_wylaczenie--potwierdzenie.jpg[120,220,align="center"]
+
+Gdy w systemie bankowym operator zmieni numer telefonu użytkownika, który jest przypisany do usługi BLIK, wówczas system automatycznie wyłącza zgodę "_Odbieraj przelewy BLIKIEM_", a użytkownik otrzymuje na swoje urządzenie mobilne powiadomienie PUSH informujące o wyłączeniu zgody (przykładowa treść powiadomienia: "_Twój numer telefonu został zmieniony. Zgoda na odbieranie przelewów na telefon oraz próśb o przelew BLIK została wyłączona_"). W celu korzystania z funkcjonalności należy ponownie wyrazić zgodę.
+
+W przypadku, gdy użytkownik włączy opcję odbierania przelewów na telefon BLIK w innym Banku i ma tam przypisany ten sam numer telefonu, wówczas system automatycznie wyłącza zgodę "_Odbieraj przelewy BLIKIEM_", a użytkownik otrzymuje na swoje urządzenie mobilne powiadomienie PUSH o przykładowej treści: "_Numer telefonu, którego używasz do odbierania Przelewów na telefon BLIK został przypisany do innego rachunku_".
+
