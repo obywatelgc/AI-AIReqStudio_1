@@ -63,7 +63,7 @@ Opis:
 Dodanie opcji pobrania ostatniego wyciągu.
 
 Stan obecny:
-[Opis stanu obecnego as-is na podstawie /doc/**]
+[Opis stanu obecnego as-is na podstawie /doc/**. UWAGA! Jeżeli nie znaleziono informacji o danej funkcjonalności w systemie to należy dodać opis, że danej funkcjonlaności nie ma w systemie!]
 Obecnie w sytemie Asseco EBP użytkonik ma możliwość przejścia z poziomu rachunku do opcji podglądu listy wyciągów danego rachunku. System po wejściu w opcję, prezentuje listę wyciągów z możliwością pobrania w formacie pdf, csv.
 
 Opis modyfikacji:
