@@ -106,7 +106,7 @@ Nie generuj treści, dopóki nie potwierdzisz konfiguracji.
 Na podstawie src/* oraz doc/* uzupełnij spec/10-spw.md.
 Wymagania:
 - ID: RQ-###
-- każde wymaganie: opis, uzasadnienie, AC (Given/When/Then)
+- każde wymaganie: opis, staon obecny (jeżeli istnieje), opis modyfikacji na podstawie wymagań, AC (Given/When/Then)
 - sekcje: Obsługa błędów i Zagadnienia otwarte muszą pozostać
 - bez domysłów: brak danych -> OPEN-QUESTION-###
 - nie modyfikuj sekcji z "Generowanie: POMIŃ"
