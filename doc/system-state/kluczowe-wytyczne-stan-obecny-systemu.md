@@ -39,3 +39,19 @@ Mimo jasnego podziału odpowiedzialności i podziału kontekstów Banki często 
 - `doc/EBP/**`
 - `doc/CBP/**`
 - `doc/BO/BackofficeUserGuide-pl_basic.adoc`
+
+## 8. Wybrane zagadnienia funkcjonalne i architektoniczne
+### 1. Rachunki
+
+### 1. Przelewy
+#### 1. W ramach projektu ELIXIR XML obsługa:
+  - rejestracji przelewu odroczonego / zlecenia stałego
+  - edycji przelewu odroczonego / zlecenia stałego
+  - pobierania przelewów odroczonych / zleceń stałych
+  - pobierania realizacji zleceń stałych
+będzie realizowana przez API REST Asseco CB 
+
+Rejestracja przelewu odroczonego / zlecenia stałego
+Zlecenie stałe: POST /application/api/current-account/current-accounts/{contractId}/standing-orders
+Przelew odroczony: POST /application/api/payment-order/sepa-payment-orders/outgoing lub POST /application/api/payment-order/swift-payment-orders/outgoing/{incarnation} 
+

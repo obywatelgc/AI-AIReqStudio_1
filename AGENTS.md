@@ -56,7 +56,7 @@ W przypadku konfliktu informacji stosuj priorytety:
 ## 4. Wytyczne stylu i tonu
 1. **Cel:** Techniczny, zwięzły i autorytatywny styl. Skup się na jasności i precyzji odpowiednich dla dokumentów System Vision.
 2. **Głos:** Preferuj stronę czynną. Unikaj konstrukcji biernych, gdy to możliwe (np. użyj "System waliduje dane wejściowe" zamiast "Dane wejściowe są walidowane przez system").
-3. **Język:** Polski (chyba że terminy techniczne wymagają angielskiego). Unikaj anglicyzmów, gdy istnieje dobry polski odpowiednik, ale zachowuj branżowe terminy angielskie (np. `Deployment`, `Commit`, `Branch`), jeśli są czytelniejsze dla deweloperów.
+3. **Język:** Polski, pełna obsługa pl-PL (UTF-8, z polskimi znakami), chyba że terminy techniczne wymagają angielskiego). Unikaj anglicyzmów, gdy istnieje dobry polski odpowiednik, ale zachowuj branżowe terminy angielskie (np. `Deployment`, `Commit`, `Branch`), jeśli są czytelniejsze dla deweloperów.
 4. **Frazy zabronione:** Unikaj marketingowego języka i wypełniaczy, takich jak:
    - "W dzisiejszym cyfrowym świecie..."
    - "To rozwiązanie jest innowacyjne..." (chyba że udowodnisz DLACZEGO)
