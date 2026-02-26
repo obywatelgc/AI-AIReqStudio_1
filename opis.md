@@ -94,8 +94,10 @@ Pracujemy w tym repo. Najpierw wczytaj:
 - project-parameters.md
 - project-prompt.md
 - spec/00-outline.md
+- plik specyfikacji: `spec/10-spw.md`
 - pliki źródłowe z src/ (wymagania klienta, zmiany któryc oczekuje klienta)
-- wszystkie pliki dokumentacji systemu z doc/ oraz pliki z katalogów podrzędnych(dokumentacja systemu, stan obecny systemu, przed zmianami o które wnioskuje klient)
+- kanoniczny AS-IS z `doc/system-state/*`
+- wszystkie pliki dokumentacji systemu z `doc/**/*.md`, `doc/**/*.adoc`, `doc/**/*.txt` (dokumentacja systemu, stan obecny systemu, przed zmianami o które wnioskuje klient)
 
 Następnie potwierdź: projekt, klient, język, styl, zakres.
 Nie generuj treści, dopóki nie potwierdzisz konfiguracji.
@@ -106,7 +108,7 @@ Nie generuj treści, dopóki nie potwierdzisz konfiguracji.
 Na podstawie src/* oraz doc/* uzupełnij spec/10-spw.md.
 Wymagania:
 - ID: RQ-###
-- każde wymaganie: opis, uzasadnienie, AC (Given/When/Then)
+- każde wymaganie: opis, staon obecny (jeżeli istnieje), opis modyfikacji na podstawie wymagań, AC (Given/When/Then)
 - sekcje: Obsługa błędów i Zagadnienia otwarte muszą pozostać
 - bez domysłów: brak danych -> OPEN-QUESTION-###
 - nie modyfikuj sekcji z "Generowanie: POMIŃ"
