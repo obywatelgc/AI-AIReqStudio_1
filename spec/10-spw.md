@@ -69,7 +69,11 @@ Obecnie w sytemie Asseco EBP użytkonik ma możliwość przejścia z poziomu rac
 Opis modyfikacji:
 [Opis modyfikacji to-be na postawie wymagań Klieta /src/wymagania.md]
 Zmiana polegała będzie na dodaniu na poziomoie listy rachunków (miniaplikacja Rachunki) nowej opcji "Ostatni wyciąg". Opcja pozwoli użytkownikowi na pobiranie ostatniego (najnowszego) wyciągu bez potrzeby wchodzenia w listę wyciągów.
-Źródła: Wymagania klienta: src/*
+
+Źródła: 
+Wymagania klienta: src/*
+Stan obecny (as-is): doc/**
+AC: (pilnuj wcięć dla każej z lini Given/When/Then)
 -->
 ### 3.1 Wymagania funkcjonalne
 
