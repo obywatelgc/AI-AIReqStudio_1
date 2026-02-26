@@ -1,4 +1,4 @@
-﻿# Opis projektu
+# Opis projektu
 To jest framework dokumentacyjny/MVP procesu analitycznego. Służy do systematycznego generowania i utrzymywania specyfikacji wymagań na podstawie dokumentów wejściowych, z kontrolą jakości i śladowaniem źródeł.
 Aktualnie repo zawiera głównie szablony, reguły i przykładowe dane wejściowe.
 
