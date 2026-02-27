@@ -92,6 +92,7 @@ Prompty:
 ```markdown
 Pracujemy w tym repo. Najpierw wczytaj:
 - project-parameters.md
+- AGENTS.md
 - project-prompt.md
 - spec/00-outline.md
 - plik specyfikacji: `spec/10-spw.md`
