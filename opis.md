@@ -4,34 +4,6 @@ Aktualnie repo zawiera głównie szablony, reguły i przykładowe dane wejściow
 
 
 
-AI-AIReqStudio_1/
-├── doc/
-│   ├── glossary.md
-│   ├── BO/
-│   │   └── BackofficeUserGuide-pl_basic.adoc
-│   ├── CBP/
-│   │   ├── Main.adoc
-│   │   └── Miniaplikacja_*.adoc
-│   └── EBP/
-│       ├── Main.adoc
-│       └── Miniaplikacja_*.adoc
-│   └── system-state/
-│       └── kluczowe-wytyczne-stan-obecny-systemu.md
-├── spec/
-│   ├── 00-outline.md
-│   ├── 10-spw.md
-│   └── 10-spw temp v4.md
-├── src/
-│   └── wymagania.md
-├── tools/
-│   └── render-placeholders.ps1
-├── opis.md
-├── project-parameters.md
-├── project-prompt.md
-├── README.md
-├── requirements.txt
-└── zagadnienia otwarte.md
-
 Zagadnienia 
 1) Dokumentacja wymagań (SPW) powinna powstać w odniesieniu do dokumetnacji systemu Bankowość Internetowej (desktop, mobile). DOdatkowo powinna uezględniać architektórę systemu (mikroserwisy) oraz możliwości API. Dokumentacja systemu to około 800 stron. Jak można rozbudować ten framework aby LLM wiedział jak działa obecnie system i gdzie trzeba zrealizować zmiany będące wymaganiami klienta?
 
@@ -92,6 +64,7 @@ Prompty:
 ```markdown
 Pracujemy w tym repo. Najpierw wczytaj:
 - project-parameters.md
+- AGENTS.md
 - project-prompt.md
 - spec/00-outline.md
 - plik specyfikacji: `spec/10-spw.md`
