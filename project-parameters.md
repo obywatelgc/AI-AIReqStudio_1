@@ -2,9 +2,9 @@
 
 ## 1. Zmienne projektowe
 
-- **Nazwa projektu (`PROJECT_NAME`):** `[UZUPELNIJ_NAZWE_PROJEKTU]`
-- **ID projektu (`PROJECT_ID`):** `[UZUPELNIJ_ID_PROJEKTU]`
-- **Nazwa klienta (`CUSTOMER_NAME`):** `[UZUPELNIJ_NAZWE_KLIENTA]`
+- **Nazwa projektu (`PROJECT_NAME`):** `BPS Blokowanie dostępu do BE po dacie ważnosci dokumentu tożsamości`
+- **ID projektu (`PROJECT_ID`):** `BSP_2`
+- **Nazwa klienta (`CUSTOMER_NAME`):** `BPS`
 
 ## 2. Konfiguracja operacyjna
 
