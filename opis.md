@@ -97,35 +97,6 @@ Zrób review spójności:
 ```
 
 
-##################################### POPRZEDNI OPIS
-
-
-# Minimalny „standard promptów” do pracy w czacie w VSC
-Żeby praca była powtarzalna, przygotuj sobie 6–8 gotowych komend (snippetów). Przykłady (do używania na zaznaczeniu albo pliku):
-
-* „Zrób wymagania z materiałów od Klienta”
-„Na podstawie /src/ zaproponuj wymagania w formacie RQ-###. Dodaj kryteria akceptacji i przypadki negatywne.”
-
-* „Utestowalnij”
-„Przerób wymagania na testowalne. Każde wymaganie ma mieć: warunek, działanie, wynik. Usuń ogólniki.”
-
-* „Wykryj luki”
-„Wskaż brakujące wymagania: bezpieczeństwo, audyt, błędy, retry, idempotency, zgodność danych.”
-
-* „Zrób macierz śledzenia”
-„Zrób tabelę: ID wymagania → źródło → test/AC → zależności.”
-
-* „Wersja na review”
-„Przeredaguj pod czytelnika biznesowego, bez utraty jednoznaczności.”
-
-* „Lista pytań otwartych”
-„Wypisz decyzje wymagane od biznesu/architekta + konsekwencje wyborów.”
-
-
-
-Lista tematów do rozważenia:
-- skrypt który dzieli całą dokumentację na obszary
-
 
 # TOOLS
 
